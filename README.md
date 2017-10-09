@@ -1,32 +1,26 @@
 Features:
 
 - Chams
-- Item and enemy ESP
-- No-spread and instant reload
-- Improved aimbot with line of sight check and autofire.
+- Item and Enemy ESP
 - Doesn't target downed enemies or teammates. Prioritizes targets near your crosshair.
 - Aims at the head at short range and torso at mid/ long range.
 
-Hold *Mouse 5* to use the aimbot.
-
-Press *Mouse 4* to toggle autofire.
+Hold *Right Mouse* to use the aimbot.
+Hold *Mouse 5* to temporary disable the aimbot.
 
 Press *F8* to toggle the chams.
 
 Press *F9* to toggle ESP.
 
-If autofire is off the aimbot will lock-on through walls.
-
 Compile in release x64 if you just want to use it.
 
 Usage:
 
-1. Have d3d11hook.dll and mininject.exe in the same folder
+1. Build or download FortHook.dll
 
-2. Start mininject.exe
+2. Inject with any injector of your choice
 
-3. Run the game, enjoy!
-
+Fork from https://github.com/sevenseassinbad/d3d11hook
 Original code by zoomy500
 Credits to NSeven, TJ888, and UMO
 

@@ -5,7 +5,8 @@ Features:
 - Doesn't target downed enemies or teammates. Prioritizes targets near your crosshair.
 - Aims at the head at short range and torso at mid/ long range.
 
-Aimbot enabled again, undetected after 150MB update on 10.10.17
+Aimbot enabled again, undetected after 150MB update on 10.10.17.
+
 Hold *Right Mouse* to use the aimbot.
 Hold *Mouse 5* to temporary disable the aimbot.
 

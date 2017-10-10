@@ -17,7 +17,7 @@ Compile in release x64 if you just want to use it.
 
 Usage:
 
-1. Build or download FortHook.dll
+1. Build or download ESPHook.dll
 
 2. Inject with any injector of your choice
 

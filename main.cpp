@@ -57,7 +57,12 @@ void FindAddresses()
 }
 
 std::chrono::high_resolution_clock timer;
-auto delay = timer.now();
+auto delay = timer.now() + std::chrono::milliseconds(2000);
+
+wstring toggleinfo = L"FortHook injected";
+Color infocolor{ 1.f, 1.f, 1.f, 0.95f };
+Color red{ 1.f, 0.35f, 0.35f, 0.95f };
+Color green{ 0.35f, 1.f, 0.35f, 0.95f };
 
 HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
@@ -79,13 +84,49 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
     {
         cfg.m_EnableESP = !cfg.m_EnableESP;
         delay = timer.now();
+		if (cfg.m_EnableESP)
+		{
+			infocolor = green;
+			toggleinfo = L"ESP Enabled";
+		}
+		else
+		{
+			infocolor = red;
+			toggleinfo = L"ESP Disabled";
+		}
     }
 
     if ((GetAsyncKeyState(cfg.m_ChamsHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
     {
         cfg.m_EnableChams = !cfg.m_EnableChams;
         delay = timer.now();
+		if (cfg.m_EnableChams)
+		{
+			infocolor = green;
+			toggleinfo = L"Chams Enabled";
+		}
+		else
+		{
+			infocolor = red;
+			toggleinfo = L"Chams Disabled";
+		}
     }
+
+	if ((GetAsyncKeyState(cfg.m_AimbotToggle) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
+	{
+		cfg.m_EnableAimbot = !cfg.m_EnableAimbot;
+		delay = timer.now();
+		if (cfg.m_EnableAimbot)
+		{
+			infocolor = green;
+			toggleinfo = L"Aimbot Enabled";
+		}
+		else
+		{
+			infocolor = red;
+			toggleinfo = L"Aimbot Disabled";
+		}
+	}
 
     if (Global::m_LocalPlayer)
     {
@@ -140,6 +181,11 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 
     renderer->begin();
     esp.Draw(cfg, *renderer);
+
+	if ((timer.now() - delay) < std::chrono::milliseconds(1000))
+	{
+		renderer->drawText(Vec2(10, 10), toggleinfo.c_str(), infocolor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
+	}
 
     renderer->draw();
     renderer->end();

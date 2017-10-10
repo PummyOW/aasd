@@ -13,6 +13,8 @@ class Config
     // Aimbot
     unsigned char m_AimbotHotkey = VK_RBUTTON;
 	unsigned char m_IgnoreHotkey = VK_XBUTTON2;
+	unsigned char m_AimbotToggle = VK_F7;
+	bool m_EnableAimbot = true;
     float m_AimbotFieldOfViewPixels = 140.0f;
     float m_MaxAimbotLockDistance = 6000.0f;
     float m_MinAimbotHeadshotDistance = 450.0f;

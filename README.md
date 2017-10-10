@@ -1,5 +1,6 @@
 Thread: https://www.unknowncheats.me/forum/fortnite/237519-fortnite-cheat-aimbot-esp-boxes-items-etc.html
-
+***
+***
 Features:
 
 Aimbot:
@@ -9,12 +10,12 @@ Aimbot:
 -Activates on Aim (Right Mouse)
 
 -Hold Mouse5 to temporarily disable Aimbot
-
+***
 
 Chams:
 
 -Color based on visibility
-
+***
 Player ESP:
 
 -Name
@@ -32,7 +33,7 @@ Player ESP:
 -Box
 
 -Rarity (Box and Upper Text Color)
-
+***
 
 Item ESP:
 
@@ -41,14 +42,14 @@ Item ESP:
 -Distance
 
 -Rarity (Text Color)
-
+***
 
 Ammo ESP:
 
 -Name
 
 -Distance
-
+***
 
 Item Grabber (Teleport):
 
@@ -57,11 +58,12 @@ Item Grabber (Teleport):
 -Resources (Ammo, Traps, Building Resources)
 
 ***
+***
 
 Aimbot does not autoshoot.
 
 Look down when using Item Grabber for best results.
-
+***
 
 Hold U to activate the Resource Grabber.
 

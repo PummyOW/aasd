@@ -30,6 +30,10 @@ class Config
 	Color m_InfoTextColor = Color{ 0.7f, 0.7f, 0.9f, 0.95f };
     const wchar_t* m_DefaultFont = L"Verdana";
     float m_TextSize = 11.0f;
+
+	//  Teleport
+	unsigned char m_TeleportHotkey = VK_F6;
+	unsigned char m_AmmoHotkey = 0x55; // U Key
 };
 
 #endif

@@ -24,6 +24,7 @@
 #include "aimbot.h"
 #include "esp.h"
 #include "chams.h"
+#include "teleport.h"
 
 #include "main.h" //helper funcs
 #include "util.h"
@@ -35,6 +36,7 @@ std::unique_ptr<Renderer> renderer;
 Aimbot aimbot;
 ESP esp;
 Chams chams;
+Teleport teleport;
 
 void FindAddresses()
 {
@@ -126,6 +128,20 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 			infocolor = red;
 			toggleinfo = L"Aimbot Disabled";
 		}
+	}
+
+	if ((GetAsyncKeyState(cfg.m_TeleportHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
+	{
+		teleport.GetWeapons(cfg);
+		infocolor = green;
+		toggleinfo = L"WeaponGrabber active";
+	}
+
+	else if ((GetAsyncKeyState(cfg.m_AmmoHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
+	{
+		teleport.GetResources(cfg);
+		infocolor = green;
+		toggleinfo = L"ResourceGrabber active";
 	}
 
     if (Global::m_LocalPlayer)

@@ -128,6 +128,9 @@
     <ClInclude Include="chams.h">
       <Filter>Source</Filter>
     </ClInclude>
+    <ClInclude Include="teleport.h">
+      <Filter>Source</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FW1FontWrapper\CFW1ColorRGBA.cpp">

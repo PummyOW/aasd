@@ -97,6 +97,7 @@
     <ClCompile Include="renderer.cpp" />
     <ClInclude Include="SDK.hpp" />
     <ClInclude Include="shader.h" />
+    <ClInclude Include="teleport.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="global.h" />
   </ItemGroup>

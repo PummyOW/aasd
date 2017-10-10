@@ -65,14 +65,23 @@ class Aimbot
     {
         using namespace Util;
 
-        SDK::FVector localPos = m_Player->PlayerCameraManager->TransformComponent->Location;
-        SDK::FVector relativePos = position - localPos;
-        float tmp = atan2(relativePos.Y, relativePos.X) * 180.0f / M_PI;
-        float yaw = tmp;
-        float pitch = -((acos(relativePos.Z / GetDistance(localPos, position)) * 180.0f / M_PI) - 90.0f);
-
-        m_Player->ControlRotation.Pitch = pitch;
-        m_Player->ControlRotation.Yaw = yaw;
+		int screenSizeX, screenSizeY;
+		m_Player->GetViewportSize(&screenSizeX, &screenSizeY);
+		SDK::FVector2D centerScreen{ (float)screenSizeX / 2, (float)screenSizeY / 2 };
+		SDK::FVector2D screenPos;
+		if (Engine::WorldToScreen(m_Player, position, &screenPos))
+		{
+			auto enemyDir = screenPos - centerScreen;
+			m_Agressiveness += (Len(enemyDir) / cfg.m_AimbotFieldOfViewPixels) * deltaTime;
+			m_AimVelocity = m_AimVelocity + enemyDir * cfg.m_AimbotSmoothing * m_Agressiveness * deltaTime;
+			Util::MoveMouse(m_AimVelocity.X, m_AimVelocity.Y);
+		}
+		m_AimVelocity = m_AimVelocity * cfg.m_AimVelocityDamping * deltaTime;
+		m_Agressiveness *= 0.95f;
+		if (m_Agressiveness < 1.0f)
+		{
+			m_Agressiveness = 1.0f;
+		}
     }
 
     SDK::AActor* GetTargetPlayer() const

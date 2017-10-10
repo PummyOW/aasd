@@ -92,7 +92,7 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
         auto playerController = Global::m_LocalPlayer->PlayerController;
         if (playerController && playerController->AcknowledgedPawn)
         {
-            //aimbot.Run(cfg, Global::m_LocalPlayer->PlayerController);
+            aimbot.Run(cfg, Global::m_LocalPlayer->PlayerController);
         }
     }
 

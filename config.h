@@ -16,6 +16,8 @@ class Config
     float m_AimbotFieldOfViewPixels = 140.0f;
     float m_MaxAimbotLockDistance = 6000.0f;
     float m_MinAimbotHeadshotDistance = 450.0f;
+	float m_AimbotSmoothing = 570.0f;
+	float m_AimVelocityDamping = 0.85f;
 
     // ESP
     unsigned char m_ESPHotkey = VK_F9;

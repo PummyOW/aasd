@@ -31,7 +31,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <TargetName>FortHook</TargetName>
+    <TargetName>ESPHook</TargetName>
     <OutDir>$(SolutionDir)</OutDir>
     <EmbedManifest>false</EmbedManifest>
     <GenerateManifest>false</GenerateManifest>

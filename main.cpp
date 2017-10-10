@@ -1,4 +1,4 @@
-﻿//d3d11 w2s finder by n7
+//d3d11 w2s finder by n7
 #include <vector>
 #include <sstream>
 #include <chrono>
@@ -92,7 +92,7 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
         auto playerController = Global::m_LocalPlayer->PlayerController;
         if (playerController && playerController->AcknowledgedPawn)
         {
-            aimbot.Run(cfg, Global::m_LocalPlayer->PlayerController);
+            //aimbot.Run(cfg, Global::m_LocalPlayer->PlayerController);
         }
     }
 

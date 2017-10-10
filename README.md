@@ -8,6 +8,7 @@ Features:
 Aimbot enabled again, undetected after 150MB update on 10.10.17.
 
 Hold *Right Mouse* to use the aimbot.
+
 Hold *Mouse 5* to temporary disable the aimbot.
 
 Press *F8* to toggle the chams.

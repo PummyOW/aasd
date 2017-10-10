@@ -5,8 +5,9 @@ Features:
 - Doesn't target downed enemies or teammates. Prioritizes targets near your crosshair.
 - Aims at the head at short range and torso at mid/ long range.
 
-Hold *Right Mouse* to use the aimbot.
-Hold *Mouse 5* to temporary disable the aimbot.
+Aimbot currently disabled!
+(Hold *Right Mouse* to use the aimbot.
+Hold *Mouse 5* to temporary disable the aimbot.)
 
 Press *F8* to toggle the chams.
 

@@ -11,7 +11,6 @@
 
 class ESP
 {
-
     public:
     void Draw(Config& cfg, Renderer& renderer)
     {

@@ -16,6 +16,11 @@ class Aimbot
 
     void Run(Config& cfg, SDK::APlayerController* playerController)
     {
+		if (!cfg.m_EnableAimbot)
+		{
+			return;
+		}
+
         auto now = m_Timer.now();
         auto deltaTime = std::chrono::duration_cast<std::chrono::milliseconds>(now - m_LastTime);
         m_LastTime = now;

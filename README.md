@@ -1,30 +1,46 @@
+Thread: https://www.unknowncheats.me/forum/fortnite/237519-fortnite-cheat-aimbot-esp-boxes-items-etc.html
+
 Features:
 
-- Chams
-- Item and Enemy ESP
-- Doesn't target downed enemies or teammates. Prioritizes targets near your crosshair.
-- Aims at the head at short range and torso at mid/ long range.
+Aimbot:
+-Aims on Head if close enough, otherwise body aim
+-Activates on Aim (Right Mouse)
+-Hold Mouse5 to temporarily disable Aimbot
 
-Aimbot enabled again, undetected after 150MB update on 10.10.17.
+Chams:
+-Color based on visibility
 
-Hold *Right Mouse* to use the aimbot.
+Player ESP:
+-Name
+-Distance
+-Weapon
+-Health
+-Shield
+-Ammo
+-Box
+-Rarity (Box and Upper Text Color)
 
-Hold *Mouse 5* to temporary disable the aimbot.
+Item ESP:
+-Name
+-Distance
+-Rarity (Text Color)
 
-Press *F8* to toggle the chams.
+Ammo ESP:
+-Name
+-Distance
 
-Press *F9* to toggle ESP.
+Item Grabber (Teleport):
+-Weapons
+-Resources (Ammo, Traps, Building Resources)
 
-Compile in release x64 if you just want to use it.
+//=====================================================================//
 
-Usage:
+Aimbot does not autoshoot.
+Look down when using Item Grabber for best results.
 
-1. Build or download FortHookV2.dll
-
-2. Inject with any injector of your choice
-
-Fork from https://github.com/sevenseassinbad/d3d11hook
-Original code by zoomy500
-Credits to NSeven, TJ888, and UMO
-
-Additional contributions from: NewbieH4x, Randshot, xzyxzy
+Hold U to activate the Resource Grabber.
+Hold F6 to activate the Weapon Grabber.
+Press F7 to toggle the Aimbot.
+Press F8 to toggle the Chams.
+Press F9 to toggle ESP.
+Inject using any injector.

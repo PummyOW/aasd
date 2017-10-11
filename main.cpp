@@ -130,6 +130,14 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 		}
 	}
 
+	if ((GetAsyncKeyState(cfg.m_ObjHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
+	{
+		esp.cached = false;
+		delay = timer.now();
+		infocolor = green;
+		toggleinfo = L"Chest and AmmoBox ESP refreshed";
+	}
+
 	if ((GetAsyncKeyState(cfg.m_TeleportHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
 	{
 		teleport.GetWeapons(cfg);

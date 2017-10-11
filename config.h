@@ -18,13 +18,14 @@ class Config
     float m_AimbotFieldOfViewPixels = 140.0f;
     float m_MaxAimbotLockDistance = 6000.0f;
     float m_MinAimbotHeadshotDistance = 450.0f;
-	float m_AimbotSmoothing = 570.0f;
+	float m_AimbotSmoothing = 320.0f;
 	float m_AimVelocityDamping = 0.85f;
 
     // ESP
     unsigned char m_ESPHotkey = VK_F9;
+	unsigned char m_ObjHotkey = 0x4B; // K Key
     bool m_EnableESP = true;
-    float m_MaxESPRange = 8000.0f; // may cause crashes if set to a large value
+    float m_MaxESPRange = 30000.0f; // may cause crashes if set to a large value
     unsigned int m_MaxESPLabelsCount = 256u;
     Color m_EnemyTextColor = Color{ 0.9f, 0.9f, 0.15f, 0.95f };
 	Color m_InfoTextColor = Color{ 0.7f, 0.7f, 0.9f, 0.95f };

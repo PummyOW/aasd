@@ -227,7 +227,7 @@ class ESP
 				}
 				else if (actor->IsA(SDK::AB_Pickups_C::StaticClass()))
 				{
-					if (itemsDrawn >= cfg.m_MaxESPLabelsCount)
+					if (itemsDrawn >= cfg.m_MaxESPLabelsCount || GetAsyncKeyState(cfg.m_IgnoreHotkey) & 0x8000 || GetAsyncKeyState(cfg.m_AimbotHotkey) & 0x8000)
 					{
 						continue;
 					}
@@ -316,7 +316,7 @@ class ESP
 				}
 				else if (actor->GetName().find("AthenaSupplyDrop_02_C") != std::string::npos)
 				{
-					if (itemsDrawn >= cfg.m_MaxESPLabelsCount)
+					if (itemsDrawn >= cfg.m_MaxESPLabelsCount || GetAsyncKeyState(cfg.m_IgnoreHotkey) & 0x8000 || GetAsyncKeyState(cfg.m_AimbotHotkey) & 0x8000)
 					{
 						continue;
 					}
@@ -386,6 +386,11 @@ class ESP
 						AmmoLoc.push_back(BLoc);
 					}
 				}
+			}
+
+			if (GetAsyncKeyState(cfg.m_IgnoreHotkey) & 0x8000 || GetAsyncKeyState(cfg.m_AimbotHotkey) & 0x8000)
+			{
+				return;
 			}
 
 			if(cached)

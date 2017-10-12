@@ -138,7 +138,7 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 		toggleinfo = L"Chest and AmmoBox ESP refreshed";
 	}
 
-	if ((GetAsyncKeyState(cfg.m_TeleportHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
+	/*if ((GetAsyncKeyState(cfg.m_TeleportHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
 	{
 		teleport.GetWeapons(cfg);
 		infocolor = green;
@@ -150,7 +150,7 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 		teleport.GetResources(cfg);
 		infocolor = green;
 		toggleinfo = L"ResourceGrabber active";
-	}
+	}*/
 
     if (Global::m_LocalPlayer)
     {
@@ -504,7 +504,6 @@ DWORD __stdcall InitializeHook(LPVOID)
 }
 
 //==========================================================================================================================
-
 BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 {
     switch (dwReason)

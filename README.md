@@ -1,3 +1,5 @@
+FOR EDUCATIONAL PURPOSES ONLY
+***
 Thread:
 
 https://www.unknowncheats.me/forum/fortnite/237972-forthook-final-release-aimbot-teleloot-chest-esp.html
@@ -107,4 +109,4 @@ Inject using any injector.
 ***
 
 Source Code:
-[url]https://github.com/JokerakaXRAY/FortHook[/url]
+https://github.com/JokerakaXRAY/FortHook

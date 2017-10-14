@@ -410,15 +410,12 @@ class ESP
 					if (distance > 30000.f)
 						continue;
 
-					SDK::FVector2D screenPos, screenPosLT, screenPosLB, screenPosRT, screenPosRB;
+					SDK::FVector2D screenPos;
 
 					if (!Util::Engine::WorldToScreen(Global::m_LocalPlayer->PlayerController, BLoc, &screenPos))
 					{
 						continue;
 					}
-
-					float height = abs(screenPosLT.Y - screenPosLB.Y);
-					float width = abs(screenPosLB.X - screenPosRB.X);
 
 					std::wstringstream ss;
 

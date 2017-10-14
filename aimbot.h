@@ -30,8 +30,6 @@ class Aimbot
             return;
         }
 
-		auto m_LocalPawn = static_cast<SDK::AFortPawn*>(playerController->AcknowledgedPawn);
-
 		if (GetAsyncKeyState(cfg.m_AimbotHotkey) & 0x8000 && !(GetAsyncKeyState(cfg.m_IgnoreHotkey) & 0x8000)) // Ignore Aimbot when Mouse5 pressed
 		{
             if (m_TargetPlayer == nullptr)

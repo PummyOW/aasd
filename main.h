@@ -4,11 +4,7 @@
 
 //globals
 
-DWORD Daimkey = VK_RBUTTON;		//aimkey
 int aimheight = 46;				//aim height value
-unsigned int asdelay = 90;		//use x-999 (shoot for xx millisecs, looks more legit)
-bool IsPressed = false;			//
-DWORD astime = timeGetTime();	//autoshoot timer
 
 //init only once
 bool firstTime = true;

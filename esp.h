@@ -112,7 +112,6 @@ class ESP
 
 					if (curWeapon && curWeapon->WeaponData)
 					{
-
 						auto itemDef = static_cast<SDK::UFortWorldItemDefinition*>(curWeapon->WeaponData);
 
 						switch (itemDef->Tier.GetValue())
@@ -140,20 +139,20 @@ class ESP
 						case SDK::EFortItemTier::X:
 							BoxColor = Color{ 1.0f, 0.0f, 1.0f, 0.95f };
 							break;
-						}
+						}					
 
 						if (itemDef->ItemType == SDK::EFortItemType::WeaponRanged || itemDef->ItemType == SDK::EFortItemType::WeaponMelee || itemDef->ItemType == SDK::EFortItemType::WeaponHarvest)
 							ss << name << L" [" << Util::DistanceToString(distance) << L"] " << itemDef->DisplayName.Get();
 						else
 							ss << name << L" [" << Util::DistanceToString(distance) << L"]";
 
-						info << health << L" HP | " << shield << L" Shield | " << curWeapon->AmmoCount << L" Ammo";
+						info << health << L" HP | " << shield << L" S | " << curWeapon->AmmoCount << L" A";
 					}
 
 					else
 					{
 						ss << name << L" [" << Util::DistanceToString(distance) << L"]";
-						info << health << L" HP | " << shield << L" Shield";
+						info << health << L" HP | " << shield << L" S";
 					}
 
 					//  Draw Skeleton here so we always set back to solid mode
@@ -215,7 +214,6 @@ class ESP
 						renderer.drawLine(Vec2(Skel_Leg_R2D.X, Skel_Leg_R2D.Y), Vec2(Skel_Knee_R2D.X, Skel_Knee_R2D.Y), skel_color);
 						renderer.drawLine(Vec2(Skel_Knee_R2D.X, Skel_Knee_R2D.Y), Vec2(Skel_Foot_R2D.X, Skel_Foot_R2D.Y), skel_color);
 					}
-					//
 
 					auto size = renderer.getTextExtent(ss.str(), cfg.m_TextSize, cfg.m_DefaultFont);
 					auto isize = renderer.getTextExtent(info.str(), cfg.m_TextSize, cfg.m_DefaultFont);
@@ -412,11 +410,15 @@ class ESP
 					if (distance > 30000.f)
 						continue;
 
-					SDK::FVector2D screenPos;
+					SDK::FVector2D screenPos, screenPosLT, screenPosLB, screenPosRT, screenPosRB;
+
 					if (!Util::Engine::WorldToScreen(Global::m_LocalPlayer->PlayerController, BLoc, &screenPos))
 					{
 						continue;
 					}
+
+					float height = abs(screenPosLT.Y - screenPosLB.Y);
+					float width = abs(screenPosLB.X - screenPosRB.X);
 
 					std::wstringstream ss;
 
@@ -454,7 +456,7 @@ class ESP
 					ss << L"AmmoBox" << L" [" << Util::DistanceToString(distance) << L"]";
 
 					auto size = renderer.getTextExtent(ss.str(), cfg.m_TextSize, cfg.m_DefaultFont);
-					renderer.drawText(Vec2(screenPos.X - size.x * 0.5f, screenPos.Y - size.y - 16.0f), ss.str(), Color{ 1.f, 1.f, 1.f, 0.95f }, 0, cfg.m_TextSize, cfg.m_DefaultFont);
+					renderer.drawText(Vec2(screenPos.X - size.x * 0.5f, screenPos.Y - size.y - 16.0f), ss.str(), Color{ 0.8f, 0.8f, 0.8f, 0.35f }, 0, cfg.m_TextSize, cfg.m_DefaultFont);
 				}
 			}
 		}

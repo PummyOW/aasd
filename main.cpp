@@ -1,4 +1,5 @@
 //d3d11 w2s finder by n7
+#include "stdafx.h"
 #include <vector>
 #include <sstream>
 #include <chrono>
@@ -20,7 +21,7 @@
 #include "hooks.h"
 #include "renderer.h"
 
-#include "nospread.h"
+#include "wmods.h"
 #include "aimbot.h"
 #include "esp.h"
 #include "chams.h"
@@ -37,6 +38,7 @@ Aimbot aimbot;
 ESP esp;
 Chams chams;
 Teleport teleport;
+WeaponMods wmods;
 
 void FindAddresses()
 {
@@ -138,6 +140,16 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
 		toggleinfo = L"Chest and AmmoBox ESP refreshed";
 	}
 
+	// WIP
+	/*if (((timer.now() - delay) > std::chrono::milliseconds(250)))
+	{
+		infocolor = Color{ 1.f, 1.f, 1.f, 0.95f };
+		std::wstringstream ss;
+		ss << L"KnockbackMag: " << wmods.KnockbackMag << L" | KnockbackZ: " << wmods.KnockbackZ;
+		toggleinfo = ss.str();
+	}*/
+
+
 	/*if ((GetAsyncKeyState(cfg.m_TeleportHotkey) & 0x8000) && ((timer.now() - delay) > std::chrono::milliseconds(250)))
 	{
 		teleport.GetWeapons(cfg);
@@ -158,6 +170,7 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
         if (playerController && playerController->AcknowledgedPawn)
         {
             aimbot.Run(cfg, Global::m_LocalPlayer->PlayerController);
+			wmods.Run(Global::m_LocalPlayer->PlayerController);
         }
     }
 
@@ -503,55 +516,55 @@ DWORD __stdcall InitializeHook(LPVOID)
     return NULL;
 }
 
-//==========================================================================================================================
+//===============================================================================================//
 BOOL __stdcall DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID lpReserved)
 {
-    switch (dwReason)
-    {
-    case DLL_PROCESS_ATTACH: // A process is loading the DLL.
-        DisableThreadLibraryCalls(hModule);
-        GetModuleFileName(hModule, dlldir, 512);
-        for (size_t i = strlen(dlldir); i > 0; i--)
-        {
-            if (dlldir[i] == '\\')
-            {
-                dlldir[i + 1] = 0; break;
-            }
-        }
-        CreateThread(NULL, 0, InitializeHook, NULL, 0, NULL);
-        break;
+	switch (dwReason)
+	{
+	case DLL_PROCESS_ATTACH: // A process is loading the DLL.
+		DisableThreadLibraryCalls(hModule);
+		GetModuleFileName(hModule, dlldir, 512);
+		for (size_t i = strlen(dlldir); i > 0; i--)
+		{
+			if (dlldir[i] == '\\')
+			{
+				dlldir[i + 1] = 0; break;
+			}
+		}
+		CreateThread(NULL, 0, InitializeHook, NULL, 0, NULL);
+		break;
 
-    case DLL_PROCESS_DETACH: // A process unloads the DLL.
-        if (MH_Uninitialize() != MH_OK)
-        {
-            return 1;
-        }
-        if (MH_DisableHook((DWORD_PTR*)pSwapChainVtable[8]) != MH_OK)
-        {
-            return 1;
-        }
-        if (MH_DisableHook((DWORD_PTR*)pContextVTable[12]) != MH_OK)
-        {
-            return 1;
-        }
-        if (MH_DisableHook((DWORD_PTR*)pContextVTable[13]) != MH_OK)
-        {
-            return 1;
-        }
-        if (MH_DisableHook((DWORD_PTR*)pContextVTable[8]) != MH_OK)
-        {
-            return 1;
-        }
-        if (MH_DisableHook((DWORD_PTR*)pContextVTable[7]) != MH_OK)
-        {
-            return 1;
-        }
-        if (MH_DisableHook((DWORD_PTR*)pContextVTable[10]) != MH_OK)
-        {
-            return 1;
-        }
-        break;
-    }
+	case DLL_PROCESS_DETACH: // A process unloads the DLL.
+		if (MH_Uninitialize() != MH_OK)
+		{
+			return 1;
+		}
+		if (MH_DisableHook((DWORD_PTR*)pSwapChainVtable[8]) != MH_OK)
+		{
+			return 1;
+		}
+		if (MH_DisableHook((DWORD_PTR*)pContextVTable[12]) != MH_OK)
+		{
+			return 1;
+		}
+		if (MH_DisableHook((DWORD_PTR*)pContextVTable[13]) != MH_OK)
+		{
+			return 1;
+		}
+		if (MH_DisableHook((DWORD_PTR*)pContextVTable[8]) != MH_OK)
+		{
+			return 1;
+		}
+		if (MH_DisableHook((DWORD_PTR*)pContextVTable[7]) != MH_OK)
+		{
+			return 1;
+		}
+		if (MH_DisableHook((DWORD_PTR*)pContextVTable[10]) != MH_OK)
+		{
+			return 1;
+		}
+		break;
+	}
 
-    return TRUE;
+	return TRUE;
 }

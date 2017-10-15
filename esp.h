@@ -152,7 +152,7 @@ class ESP
 						else
 							ss << name << L" [" << Util::DistanceToString(distance) << L"]";
 
-						if(distance > 100.f)
+						if(distance > 10000.f)
 							info << health << L" HP | " << shield << L" S";
 
 						else if (itemDef->ItemType == SDK::EFortItemType::WeaponRanged)
@@ -240,11 +240,45 @@ class ESP
 					if (!pawn->bIsDBNO)
 					{
 						renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
-						if(health > 0)
+						if(health > 0 && distance < 10000.f)
 						renderer.drawOutlinedRect(Vec4(hPos.X - width * 0.8f, hPos.Y + height, bwidth, -1*hpheight), 1.f, Color{ 0.f , 0.f, 0.f, 0.7f }, Color{ 0.f, 0.8f, 0.f, 0.95f });
-						if(shield > 0)
+						if(shield > 0 && distance < 10000.f)
 						renderer.drawOutlinedRect(Vec4(hPos.X + width * 0.8f, hPos.Y + height, bwidth, -1*sheight), 1.f, Color{ 0.f , 0.f, 0.f, 0.7f }, Color{ 0.f, 0.f, 0.8f, 0.95f });
 					}
+					itemsDrawn++;
+				}
+				else if (actor->IsA(SDK::ABuildingTrap::StaticClass()))
+				{
+					if (itemsDrawn >= cfg.m_MaxESPLabelsCount)
+					{
+						continue;
+					}
+
+					SDK::FVector2D screenPos;
+
+					if (!Util::Engine::WorldToScreen(Global::m_LocalPlayer->PlayerController, actor->RootComponent->Location, &screenPos))
+					{
+						continue;
+					}
+
+					auto trap = static_cast<SDK::ABuildingTrap*>(actor);
+
+					if (actor->RootComponent == nullptr)
+					{
+						continue;
+					}
+
+					auto distance = Util::GetDistance(localPos, actor->RootComponent->Location);
+					if (distance > cfg.m_MaxESPRange)
+					{
+						continue;
+					}					
+
+					std::wstringstream ss;
+					ss << L"Trap" << L" [" << Util::DistanceToString(distance) << L"]"; // Todo: Find name of Trap
+
+					auto size = renderer.getTextExtent(ss.str(), cfg.m_TextSize, cfg.m_DefaultFont);
+					renderer.drawText(Vec2(screenPos.X - size.x, screenPos.Y - size.y), ss.str(), Color{ 1.f, 0.f, 0.f, 0.95f }, 0, cfg.m_TextSize, cfg.m_DefaultFont);
 					itemsDrawn++;
 				}
 				else if (actor->IsA(SDK::AB_Pickups_C::StaticClass()))

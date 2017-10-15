@@ -106,6 +106,12 @@ class ESP
 					float height = abs(hPos.Y - iPos.Y);
 					float width = height * 0.65f;
 
+					float hpheight = (height / 100) * health;
+					float sheight = (height / 100) * shield;
+					float bwidth = width * 0.05f;
+					if (bwidth < 4.f)
+						bwidth = 4.f;
+
 					std::wstringstream ss;
 					std::wstringstream info;
 					Color BoxColor = cfg.m_EnemyTextColor;
@@ -146,14 +152,24 @@ class ESP
 						else
 							ss << name << L" [" << Util::DistanceToString(distance) << L"]";
 
-						info << health << L" HP | " << shield << L" S | " << curWeapon->AmmoCount << L" A";
+						if(distance > 100.f)
+							info << health << L" HP | " << shield << L" S";
+
+						else if (itemDef->ItemType == SDK::EFortItemType::WeaponRanged)
+							info << curWeapon->AmmoCount << L" Ammo";						
+					}
+
+					else if (pawn->bIsDBNO)
+					{
+						ss << name << L" [" << Util::DistanceToString(distance) << L"]";
+						info << health << L" HP | " << L"Is Dying";
 					}
 
 					else
 					{
 						ss << name << L" [" << Util::DistanceToString(distance) << L"]";
-						info << health << L" HP | " << shield << L" S";
-					}
+						info << health << L" HP";
+					}					
 
 					//  Draw Skeleton here so we always set back to solid mode
 					Color skel_color{ 1.f, 1.f ,1.f ,0.95f };
@@ -220,7 +236,15 @@ class ESP
 
 					renderer.drawText(Vec2(screenPos.X - size.x * 0.5f, screenPos.Y - size.y - 16.0f), ss.str(), BoxColor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
 					renderer.drawText(Vec2(iPos.X - isize.x * 0.5f, iPos.Y - isize.y + 16.0f), info.str(), cfg.m_InfoTextColor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
-					renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
+
+					if (!pawn->bIsDBNO)
+					{
+						renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
+						if(health > 0)
+						renderer.drawOutlinedRect(Vec4(hPos.X - width * 0.8f, hPos.Y + height, bwidth, -1*hpheight), 1.f, Color{ 0.f , 0.f, 0.f, 0.7f }, Color{ 0.f, 0.8f, 0.f, 0.95f });
+						if(shield > 0)
+						renderer.drawOutlinedRect(Vec4(hPos.X + width * 0.8f, hPos.Y + height, bwidth, -1*sheight), 1.f, Color{ 0.f , 0.f, 0.f, 0.7f }, Color{ 0.f, 0.f, 0.8f, 0.95f });
+					}
 					itemsDrawn++;
 				}
 				else if (actor->IsA(SDK::AB_Pickups_C::StaticClass()))

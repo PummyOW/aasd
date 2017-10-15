@@ -32,8 +32,8 @@ ID3D11Texture2D* RenderTargetTexture;
 ID3D11RenderTargetView* RenderTargetView = NULL;
 
 //shader
-ID3D11PixelShader* psRed = NULL;
-ID3D11PixelShader* psGreen = NULL;
+ID3D11PixelShader* psNotVis = NULL;
+ID3D11PixelShader* psVis = NULL;
 
 //pssetshaderresources
 UINT pssrStartSlot;

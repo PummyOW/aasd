@@ -167,11 +167,13 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
     if (Global::m_LocalPlayer)
     {
         auto playerController = Global::m_LocalPlayer->PlayerController;
-        if (playerController && playerController->AcknowledgedPawn)
-        {
-            aimbot.Run(cfg, Global::m_LocalPlayer->PlayerController);
+		if (playerController && playerController->AcknowledgedPawn)
+		{
+			aimbot.Run(cfg, Global::m_LocalPlayer->PlayerController);
 			wmods.Run(Global::m_LocalPlayer->PlayerController);
-        }
+		}
+		else
+			esp.cached = false; // Should reset chest ESP on new map
     }
 
     if (firstTime)
@@ -198,14 +200,14 @@ HRESULT __stdcall hookD3D11Present(IDXGISwapChain* pSwapChain, UINT SyncInterval
     }
 
     // shaders
-    if (!psRed)
+    if (!psNotVis)
     {
-        GenerateShader(pDevice, &psRed, 0.85f, 0.0f, 0.0f);
+        GenerateShader(pDevice, &psNotVis, 0.75f, 0.75f, 0.75f);
     }
 
-    if (!psGreen)
+    if (!psVis)
     {
-        GenerateShader(pDevice, &psGreen, 0.0f, 0.85f, 0.0f);
+        GenerateShader(pDevice, &psVis, 0.75f, 0.0f, 0.0f);
     }
 
     // viewport
@@ -265,9 +267,9 @@ void __stdcall hookD3D11DrawIndexed(ID3D11DeviceContext* pContext, UINT IndexCou
     if (Stride == 24 && pscdesc.ByteWidth == 4096 && cfg.m_EnableChams)
     {
         SetDepthStencilState(DISABLED);
-        pContext->PSSetShader(psRed, NULL, NULL);
+        pContext->PSSetShader(psNotVis, NULL, NULL);
         phookD3D11DrawIndexed(pContext, IndexCount, StartIndexLocation, BaseVertexLocation);
-        pContext->PSSetShader(psGreen, NULL, NULL);
+        pContext->PSSetShader(psVis, NULL, NULL);
         SetDepthStencilState(READ_NO_WRITE);
     }
 

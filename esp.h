@@ -237,9 +237,10 @@ class ESP
 					renderer.drawText(Vec2(screenPos.X - size.x * 0.5f, screenPos.Y - size.y - 16.0f), ss.str(), BoxColor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
 					renderer.drawText(Vec2(iPos.X - isize.x * 0.5f, iPos.Y - isize.y + 16.0f), info.str(), cfg.m_InfoTextColor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
 
+					
+						renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
 					if (!pawn->bIsDBNO)
 					{
-						renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
 						if(health > 0 && distance < 10000.f)
 						renderer.drawOutlinedRect(Vec4(hPos.X - width * 0.8f, hPos.Y + height, bwidth, -1*hpheight), 1.f, Color{ 0.f , 0.f, 0.f, 0.7f }, Color{ 0.f, 0.8f, 0.f, 0.95f });
 						if(shield > 0 && distance < 10000.f)
@@ -261,12 +262,7 @@ class ESP
 						continue;
 					}
 
-					auto trap = static_cast<SDK::ABuildingTrap*>(actor);
-
-					if (actor->RootComponent == nullptr)
-					{
-						continue;
-					}
+					auto trap = static_cast<SDK::ABuildingTrap*>(actor);	
 
 					auto distance = Util::GetDistance(localPos, actor->RootComponent->Location);
 					if (distance > cfg.m_MaxESPRange)

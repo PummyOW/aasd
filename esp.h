@@ -156,7 +156,7 @@ class ESP
 							info << health << L" HP | " << shield << L" S";
 
 						else if (itemDef->ItemType == SDK::EFortItemType::WeaponRanged)
-							info << curWeapon->AmmoCount << L" Ammo";						
+							info << curWeapon->AmmoCount << L" Ammo";
 					}
 
 					else if (pawn->bIsDBNO)
@@ -238,7 +238,7 @@ class ESP
 					renderer.drawText(Vec2(iPos.X - isize.x * 0.5f, iPos.Y - isize.y + 16.0f), info.str(), cfg.m_InfoTextColor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
 
 					
-						renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
+					renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
 					if (!pawn->bIsDBNO)
 					{
 						if(health > 0 && distance < 10000.f)
@@ -268,10 +268,10 @@ class ESP
 					if (distance > cfg.m_MaxESPRange)
 					{
 						continue;
-					}					
+					}
 
 					std::wstringstream ss;
-					ss << L"Trap" << L" [" << Util::DistanceToString(distance) << L"]"; // Todo: Find name of Trap
+					ss << trap->DisplayName.Get() << L" [" << Util::DistanceToString(distance) << L"]"; // Todo: Find name of Trap
 
 					auto size = renderer.getTextExtent(ss.str(), cfg.m_TextSize, cfg.m_DefaultFont);
 					renderer.drawText(Vec2(screenPos.X - size.x, screenPos.Y - size.y), ss.str(), Color{ 1.f, 0.f, 0.f, 0.95f }, 0, cfg.m_TextSize, cfg.m_DefaultFont);

@@ -95,7 +95,8 @@ class Aimbot
 			auto enemyDir = screenPos - centerScreen;
 			m_Agressiveness += (Len(enemyDir) / cfg.m_AimbotFieldOfViewPixels) * deltaTime;
 			m_AimVelocity = m_AimVelocity + enemyDir * cfg.m_AimbotSmoothing * m_Agressiveness * deltaTime;
-			Util::MoveMouse(m_AimVelocity.X, m_AimVelocity.Y);
+			//Util::MoveMouse(m_AimVelocity.X, m_AimVelocity.Y);
+			mouse_event(MOUSEEVENTF_MOVE, floor(enemyDir.X / 2.7f), floor(enemyDir.Y / 2.7f), NULL, NULL);
 		}
 		m_AimVelocity = m_AimVelocity * cfg.m_AimVelocityDamping * deltaTime;
 		m_Agressiveness *= 0.95f;

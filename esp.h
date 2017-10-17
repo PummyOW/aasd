@@ -236,7 +236,6 @@ class ESP
 
 					renderer.drawText(Vec2(screenPos.X - size.x * 0.5f, screenPos.Y - size.y - 16.0f), ss.str(), BoxColor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
 					renderer.drawText(Vec2(iPos.X - isize.x * 0.5f, iPos.Y - isize.y + 16.0f), info.str(), cfg.m_InfoTextColor, 0, cfg.m_TextSize, cfg.m_DefaultFont);
-
 					
 					renderer.drawOutlinedRect(Vec4(hPos.X - (width / 2), hPos.Y, width, height), 1.f, BoxColor, Color{ 0.f , 0.f, 0.f, 0.2f });
 					if (!pawn->bIsDBNO)
@@ -262,7 +261,7 @@ class ESP
 						continue;
 					}
 
-					auto trap = static_cast<SDK::ABuildingTrap*>(actor);	
+					auto trap = static_cast<SDK::ABuildingTrap*>(actor);
 
 					auto distance = Util::GetDistance(localPos, actor->RootComponent->Location);
 					if (distance > cfg.m_MaxESPRange)
@@ -270,8 +269,15 @@ class ESP
 						continue;
 					}
 
+					if (!trap->TrapData)
+					{
+						continue;
+					}
+
+					auto trapdata = trap->TrapData;
+
 					std::wstringstream ss;
-					ss << trap->DisplayName.Get() << L" [" << Util::DistanceToString(distance) << L"]"; // Todo: Find name of Trap
+					ss << trapdata->DisplayName.Get() << L" [" << Util::DistanceToString(distance) << L"]"; // Todo: Find name of Trap
 
 					auto size = renderer.getTextExtent(ss.str(), cfg.m_TextSize, cfg.m_DefaultFont);
 					renderer.drawText(Vec2(screenPos.X - size.x, screenPos.Y - size.y), ss.str(), Color{ 1.f, 0.f, 0.f, 0.95f }, 0, cfg.m_TextSize, cfg.m_DefaultFont);

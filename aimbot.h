@@ -60,6 +60,22 @@ class Aimbot
             if (dist < cfg.m_MinAimbotHeadshotDistance)
             {
                 Util::Engine::GetBoneLocation(static_cast<SDK::ACharacter*>(m_TargetPlayer)->Mesh, &playerLoc, eBone::BONE_HEAD);
+
+				// Uncomment lower part if you want aimspot randomization
+				// Untested, probably switches like mad
+				// Also the randomization seed should be changed after enemy change or sth else
+				/*
+				switch (rand() % 4 + 1)
+				{
+				case 1:
+					Util::Engine::GetBoneLocation(static_cast<SDK::ACharacter*>(m_TargetPlayer)->Mesh, &playerLoc, eBone::BONE_HEAD);
+				case 2:
+					Util::Engine::GetBoneLocation(static_cast<SDK::ACharacter*>(m_TargetPlayer)->Mesh, &playerLoc, eBone::BONE_CHEST_TOP_1);
+				case 3:
+					Util::Engine::GetBoneLocation(static_cast<SDK::ACharacter*>(m_TargetPlayer)->Mesh, &playerLoc, eBone::BONE_CHEST);
+				case 4:
+					Util::Engine::GetBoneLocation(static_cast<SDK::ACharacter*>(m_TargetPlayer)->Mesh, &playerLoc, eBone::BONE_CHEST_TOP_2);
+				}*/
             }
 
             LookAt(cfg, playerController, playerLoc, deltaTime.count() / 1000.0f);

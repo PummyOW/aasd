@@ -41,8 +41,6 @@ class WeaponMods
         auto weaponStats = m_GetWeaponStatsRow(&m_LocalPawn->CurrentWeapon->WeaponData->WeaponStatHandle, &SDK::FString(L"UFortKismetLibrary::GetWeaponStatsRow"), 0, 0);
         if (weaponStats != nullptr)
         {
-			KnockbackMag = weaponStats->KnockbackMagnitude;
-			KnockbackZ = weaponStats->KnockbackZAngle;
 			// Currently work in progress
 			// Attempt to remove sniper bullet drop
         }

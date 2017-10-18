@@ -43,7 +43,9 @@ public:
 	void HandleMcpFailure();
 	void UpdateVariableCache(bool* Success);
 	void UserConstructionScript();
+	void OnCanceled_C2C889344301B8DBF8F046A2A175D133();
 	void OnAllClientsReady_C2C889344301B8DBF8F046A2A175D133();
+	void OnCanceled_856A325D44ECC73B857CE5B35313D7CD();
 	void OnAllClientsReady_856A325D44ECC73B857CE5B35313D7CD();
 	void OnFailure_0A5ABC9C483947108FD9FB9980E7C62F();
 	void OnIgnored_0A5ABC9C483947108FD9FB9980E7C62F();

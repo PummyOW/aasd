@@ -392,7 +392,8 @@ public:
 	}
 };
 
-class FTextData {
+class FTextData 
+{
 public:
 	char pad_0x0000[0x28];  //0x0000
 	wchar_t* Name;          //0x0028 
@@ -400,12 +401,15 @@ public:
 
 };
 
-struct FText {
+struct FText 
+{
 	FTextData* Data;
 	char UnknownData[0x10];
 
-	wchar_t* Get() const {
-		if (Data) {
+	wchar_t* Get() const 
+	{
+		if (Data) 
+		{
 			return Data->Name;
 		}
 

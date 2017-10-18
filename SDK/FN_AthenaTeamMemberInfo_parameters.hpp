@@ -14,6 +14,23 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetTalking
+struct UAthenaTeamMemberInfo_C_SetTalking_Params
+{
+	bool                                               NewTalking;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdateMicIcon
+struct UAthenaTeamMemberInfo_C_UpdateMicIcon_Params
+{
+};
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetMuted
+struct UAthenaTeamMemberInfo_C_SetMuted_Params
+{
+	bool                                               NewMuted;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.ShowPlayerInfo
 struct UAthenaTeamMemberInfo_C_ShowPlayerInfo_Params
 {

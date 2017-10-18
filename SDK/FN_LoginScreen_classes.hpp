@@ -52,7 +52,6 @@ public:
 	}
 
 
-	void CloseAnyConfirmationsOpen();
 	void SafePopContent();
 	void ShowAccountSelectWindow();
 	void CheckSkipSplashScreen();

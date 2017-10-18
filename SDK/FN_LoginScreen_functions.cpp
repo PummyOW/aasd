@@ -12,23 +12,6 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function LoginScreen.LoginScreen_C.CloseAnyConfirmationsOpen
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void ULoginScreen_C::CloseAnyConfirmationsOpen()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.CloseAnyConfirmationsOpen");
-
-	ULoginScreen_C_CloseAnyConfirmationsOpen_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function LoginScreen.LoginScreen_C.SafePopContent
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 

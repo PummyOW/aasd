@@ -110,6 +110,7 @@ public:
 	void RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
 	void RemoveAllInputActionHandlers();
 	void PopPanel();
+	void OnInputModeChanged(bool bUsingGamepad);
 	void OnDeactivated();
 	void OnBeginOutro();
 	void OnBeginIntro();

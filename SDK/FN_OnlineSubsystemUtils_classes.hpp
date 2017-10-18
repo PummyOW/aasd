@@ -450,11 +450,11 @@ public:
 
 
 // Class OnlineSubsystemUtils.IpConnection
-// 0x0020 (0x33678 - 0x33658)
+// 0x0020 (0x33760 - 0x33740)
 class UIpConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x33658(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x33740(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -466,19 +466,19 @@ public:
 
 
 // Class OnlineSubsystemUtils.IpNetDriver
-// 0x0030 (0x0438 - 0x0408)
+// 0x0030 (0x0440 - 0x0410)
 class UIpNetDriver : public UNetDriver
 {
 public:
-	unsigned char                                      LogPortUnreach : 1;                                       // 0x0408(0x0001) (CPF_Config)
-	unsigned char                                      AllowPlayerPortUnreach : 1;                               // 0x0408(0x0001) (CPF_Config)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0409(0x0003) MISSED OFFSET
-	uint32_t                                           MaxPortCountToTry;                                        // 0x040C(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x18];                                      // 0x0410(0x0018) MISSED OFFSET
-	uint32_t                                           ServerDesiredSocketReceiveBufferBytes;                    // 0x0428(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x042C(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x0430(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x0434(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      LogPortUnreach : 1;                                       // 0x0410(0x0001) (CPF_Config)
+	unsigned char                                      AllowPlayerPortUnreach : 1;                               // 0x0410(0x0001) (CPF_Config)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0411(0x0003) MISSED OFFSET
+	uint32_t                                           MaxPortCountToTry;                                        // 0x0414(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x18];                                      // 0x0418(0x0018) MISSED OFFSET
+	uint32_t                                           ServerDesiredSocketReceiveBufferBytes;                    // 0x0430(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	uint32_t                                           ServerDesiredSocketSendBufferBytes;                       // 0x0434(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketReceiveBufferBytes;                    // 0x0438(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	uint32_t                                           ClientDesiredSocketSendBufferBytes;                       // 0x043C(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

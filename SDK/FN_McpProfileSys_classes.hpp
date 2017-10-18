@@ -32,7 +32,7 @@ public:
 class UMcpProfile : public UObject
 {
 public:
-	bool                                               bAllowSubscriptionToNotificationsService;                 // 0x0028(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	EServerClientFlag                                  AllowSubscriptionToNotificationsService;                  // 0x0028(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0xA7];                                      // 0x0029(0x00A7) MISSED OFFSET
 	struct FString                                     DebugName;                                                // 0x00D0(0x0010) (CPF_ZeroConstructor)
 	bool                                               bProfileLockOperationPending;                             // 0x00E0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)

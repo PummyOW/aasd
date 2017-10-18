@@ -35,6 +35,7 @@ public:
 	}
 
 
+	void HandleGamepadMappingInfoChange();
 	void Handle_Mode_Toggled();
 	void Update_Data();
 	void Initialize_Data();

@@ -14,6 +14,27 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function SquadStatsWidget.SquadStatsWidget_C.HandleAbilitySystemChanged
+struct USquadStatsWidget_C_HandleAbilitySystemChanged_Params
+{
+};
+
+// Function SquadStatsWidget.SquadStatsWidget_C.BindToAttributeChanges
+struct USquadStatsWidget_C_BindToAttributeChanges_Params
+{
+};
+
+// Function SquadStatsWidget.SquadStatsWidget_C.HandleActivityChanged
+struct USquadStatsWidget_C_HandleActivityChanged_Params
+{
+	bool                                               IsActive;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function SquadStatsWidget.SquadStatsWidget_C.HandleAttributeChanged
+struct USquadStatsWidget_C_HandleAttributeChanged_Params
+{
+};
+
 // Function SquadStatsWidget.SquadStatsWidget_C.HighlightStat
 struct USquadStatsWidget_C_HighlightStat_Params
 {
@@ -33,18 +54,6 @@ struct USquadStatsWidget_C_UnbindDelegates_Params
 // Function SquadStatsWidget.SquadStatsWidget_C.ToggleBetweenStats
 struct USquadStatsWidget_C_ToggleBetweenStats_Params
 {
-};
-
-// Function SquadStatsWidget.SquadStatsWidget_C.HandlePlayerStateChanged
-struct USquadStatsWidget_C_HandlePlayerStateChanged_Params
-{
-	struct FFortTeamMemberInfo                         PlayerState;                                              // (CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-};
-
-// Function SquadStatsWidget.SquadStatsWidget_C.HandlePlayerInfoChanged
-struct USquadStatsWidget_C_HandlePlayerInfoChanged_Params
-{
-	struct FUniqueNetIdRepl                            PlayerID;                                                 // (CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
 };
 
 // Function SquadStatsWidget.SquadStatsWidget_C.BindDelegates

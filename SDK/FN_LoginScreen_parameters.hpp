@@ -14,11 +14,6 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function LoginScreen.LoginScreen_C.CloseAnyConfirmationsOpen
-struct ULoginScreen_C_CloseAnyConfirmationsOpen_Params
-{
-};
-
 // Function LoginScreen.LoginScreen_C.SafePopContent
 struct ULoginScreen_C_SafePopContent_Params
 {

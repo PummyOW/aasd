@@ -13,12 +13,12 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Athena_PlayerController.Athena_PlayerController_C
-// 0x0010 (0x3180 - 0x3170)
+// 0x0010 (0x32A0 - 0x3290)
 class AAthena_PlayerController_C : public AFortPlayerControllerAthena
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x3170(0x0008) (CPF_Transient, CPF_DuplicateTransient)
-	class USceneComponent*                             ListenerOverride;                                         // 0x3178(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x3290(0x0008) (CPF_Transient, CPF_DuplicateTransient)
+	class USceneComponent*                             ListenerOverride;                                         // 0x3298(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

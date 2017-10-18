@@ -899,6 +899,24 @@ struct FFortTabListRegistrationInfo
 	class UWidget*                                     CreatedTabContentWidget;                                  // 0x00C8(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
 };
 
+// ScriptStruct FortniteUI.LeaderboardFilter
+// 0x0018
+struct FLeaderboardFilter
+{
+	class UDataTable*                                  LeaderboardDisplayData;                                   // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0008(0x0010) MISSED OFFSET
+};
+
+// ScriptStruct FortniteUI.AthenaPlaylistLeaderboardData
+// 0x0048
+struct FAthenaPlaylistLeaderboardData
+{
+	struct FName                                       StatId;                                                   // 0x0000(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       StatDisplayName;                                          // 0x0008(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FText                                       TabDisplayName;                                           // 0x0020(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FString                                     BaseGameplayTag;                                          // 0x0038(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+};
+
 // ScriptStruct FortniteUI.FortErrorInfo
 // 0x0080
 struct FFortErrorInfo
@@ -1843,6 +1861,15 @@ struct FGridSortKey
 struct FFortAthenaItemManagementInventoryFilterTabLabelInfo : public FFortTabButtonLabelInfo
 {
 	struct FName                                       FilterTabNameId;                                          // 0x00A8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_EditConst, CPF_IsPlainOldData)
+};
+
+// ScriptStruct FortniteUI.AthenaLeaderboardData
+// 0x0018 (0x0020 - 0x0008)
+struct FAthenaLeaderboardData : public FTableRowBase
+{
+	EFortAthenaPlaylist                                Playlist;                                                 // 0x0008(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0009(0x0007) MISSED OFFSET
+	TArray<struct FAthenaPlaylistLeaderboardData>      Stats;                                                    // 0x0010(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
 };
 
 // ScriptStruct FortniteUI.FortSquadIconData

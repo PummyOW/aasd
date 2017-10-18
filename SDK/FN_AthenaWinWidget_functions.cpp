@@ -52,6 +52,23 @@ void UAthenaWinWidget_C::PreConstruct(bool* IsDesignTime)
 }
 
 
+// Function AthenaWinWidget.AthenaWinWidget_C.OnActivated
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UAthenaWinWidget_C::OnActivated()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaWinWidget.AthenaWinWidget_C.OnActivated");
+
+	UAthenaWinWidget_C_OnActivated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaWinWidget.AthenaWinWidget_C.ExecuteUbergraph_AthenaWinWidget
 // ()
 // Parameters:

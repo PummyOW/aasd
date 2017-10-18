@@ -28,6 +28,8 @@ public:
 	}
 
 
+	void HandleTeamMutedChanged(TArray<bool>* TeamMuted);
+	void HandleTeamTalkingChanged(TArray<bool>* TeamTalking);
 	void HandleTeamMemberRemoved();
 	void HandleTeamRevivingChanged(TArray<bool>* TeamReviving);
 	void HandleTeamMemberPlayerNamesChanged();

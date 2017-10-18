@@ -12,6 +12,23 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaRotator.AthenaRotator_C.NewFunction_1
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaRotator_C::NewFunction_1()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.NewFunction_1");
+
+	UAthenaRotator_C_NewFunction_1_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaRotator.AthenaRotator_C.ChangeDirection
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -102,6 +119,43 @@ void UAthenaRotator_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 	UAthenaRotator_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
 	params.InDeltaTime = InDeltaTime;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaRotator.AthenaRotator_C.PreConstruct
+// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// bool*                          IsDesignTime                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaRotator_C::PreConstruct(bool* IsDesignTime)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.PreConstruct");
+
+	UAthenaRotator_C_PreConstruct_Params params;
+	params.IsDesignTime = IsDesignTime;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaRotator.AthenaRotator_C.OnClicked
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UAthenaRotator_C::OnClicked()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.OnClicked");
+
+	UAthenaRotator_C_OnClicked_Params params;
 
 	auto flags = fn->FunctionFlags;
 

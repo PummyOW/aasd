@@ -12,6 +12,63 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetTalking
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           NewTalking                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaTeamMemberInfo_C::SetTalking(bool NewTalking)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetTalking");
+
+	UAthenaTeamMemberInfo_C_SetTalking_Params params;
+	params.NewTalking = NewTalking;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdateMicIcon
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaTeamMemberInfo_C::UpdateMicIcon()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdateMicIcon");
+
+	UAthenaTeamMemberInfo_C_UpdateMicIcon_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetMuted
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           NewMuted                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaTeamMemberInfo_C::SetMuted(bool NewMuted)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetMuted");
+
+	UAthenaTeamMemberInfo_C_SetMuted_Params params;
+	params.NewMuted = NewMuted;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.ShowPlayerInfo
 // (FUNC_Protected, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 

@@ -46,17 +46,17 @@ void APlayerPawn_Athena_C::UserConstructionScript()
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Applied.Commando.MakeItRain
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// TEnumAsByte<EGameplayCueEvent> EventType                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FGameplayCueParameters  Parameters                     (CPF_Parm)
+// TEnumAsByte<EGameplayCueEvent>* EventType                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FGameplayCueParameters* Parameters                     (CPF_Parm)
 
-void APlayerPawn_Athena_C::GameplayCue_Abilities_Applied_Commando_MakeItRain(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
+void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(TEnumAsByte<EGameplayCueEvent>* EventType, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Applied.Commando.MakeItRain");
+	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
 
-	APlayerPawn_Athena_C_GameplayCue_Abilities_Applied_Commando_MakeItRain_Params params;
+	APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params params;
 	params.EventType = EventType;
 	params.Parameters = Parameters;
 
@@ -79,28 +79,6 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
 
 	APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params params;
-	params.EventType = EventType;
-	params.Parameters = Parameters;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// TEnumAsByte<EGameplayCueEvent>* EventType                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FGameplayCueParameters* Parameters                     (CPF_Parm)
-
-void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(TEnumAsByte<EGameplayCueEvent>* EventType, struct FGameplayCueParameters* Parameters)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
-
-	APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params params;
 	params.EventType = EventType;
 	params.Parameters = Parameters;
 
@@ -143,28 +121,6 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Commando_Shockwave(T
 	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Commando.Shockwave");
 
 	APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave_Params params;
-	params.EventType = EventType;
-	params.Parameters = Parameters;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Applied.Commando.IncendiaryRounds
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// TEnumAsByte<EGameplayCueEvent> EventType                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FGameplayCueParameters  Parameters                     (CPF_Parm)
-
-void APlayerPawn_Athena_C::GameplayCue_Abilities_Applied_Commando_IncendiaryRounds(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Applied.Commando.IncendiaryRounds");
-
-	APlayerPawn_Athena_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds_Params params;
 	params.EventType = EventType;
 	params.Parameters = Parameters;
 

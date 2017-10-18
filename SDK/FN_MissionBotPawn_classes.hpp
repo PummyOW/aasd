@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass MissionBotPawn.MissionBotPawn_C
-// 0x0000 (0x1AD0 - 0x1AD0)
+// 0x0000 (0x1AF0 - 0x1AF0)
 class AMissionBotPawn_C : public AFortBotPawn
 {
 public:

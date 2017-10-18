@@ -12,6 +12,50 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMutedChanged
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// TArray<bool>                   TeamMuted                      (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+
+void UAthenaTeamInfo_C::HandleTeamMutedChanged(TArray<bool>* TeamMuted)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMutedChanged");
+
+	UAthenaTeamInfo_C_HandleTeamMutedChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (TeamMuted != nullptr)
+		*TeamMuted = params.TeamMuted;
+}
+
+
+// Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamTalkingChanged
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// TArray<bool>                   TeamTalking                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+
+void UAthenaTeamInfo_C::HandleTeamTalkingChanged(TArray<bool>* TeamTalking)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamTalkingChanged");
+
+	UAthenaTeamInfo_C_HandleTeamTalkingChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (TeamTalking != nullptr)
+		*TeamTalking = params.TeamTalking;
+}
+
+
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMemberRemoved
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 

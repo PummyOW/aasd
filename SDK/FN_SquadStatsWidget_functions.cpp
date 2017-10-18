@@ -12,6 +12,77 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function SquadStatsWidget.SquadStatsWidget_C.HandleAbilitySystemChanged
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void USquadStatsWidget_C::HandleAbilitySystemChanged()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandleAbilitySystemChanged");
+
+	USquadStatsWidget_C_HandleAbilitySystemChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SquadStatsWidget.SquadStatsWidget_C.BindToAttributeChanges
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void USquadStatsWidget_C::BindToAttributeChanges()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.BindToAttributeChanges");
+
+	USquadStatsWidget_C_BindToAttributeChanges_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SquadStatsWidget.SquadStatsWidget_C.HandleActivityChanged
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           IsActive                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void USquadStatsWidget_C::HandleActivityChanged(bool IsActive)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandleActivityChanged");
+
+	USquadStatsWidget_C_HandleActivityChanged_Params params;
+	params.IsActive = IsActive;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function SquadStatsWidget.SquadStatsWidget_C.HandleAttributeChanged
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void USquadStatsWidget_C::HandleAttributeChanged()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandleAttributeChanged");
+
+	USquadStatsWidget_C_HandleAttributeChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function SquadStatsWidget.SquadStatsWidget_C.HighlightStat
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -80,50 +151,6 @@ void USquadStatsWidget_C::ToggleBetweenStats()
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-}
-
-
-// Function SquadStatsWidget.SquadStatsWidget_C.HandlePlayerStateChanged
-// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// struct FFortTeamMemberInfo     PlayerState                    (CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-
-void USquadStatsWidget_C::HandlePlayerStateChanged(struct FFortTeamMemberInfo* PlayerState)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandlePlayerStateChanged");
-
-	USquadStatsWidget_C_HandlePlayerStateChanged_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (PlayerState != nullptr)
-		*PlayerState = params.PlayerState;
-}
-
-
-// Function SquadStatsWidget.SquadStatsWidget_C.HandlePlayerInfoChanged
-// (FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// struct FUniqueNetIdRepl        PlayerID                       (CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-
-void USquadStatsWidget_C::HandlePlayerInfoChanged(struct FUniqueNetIdRepl* PlayerID)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandlePlayerInfoChanged");
-
-	USquadStatsWidget_C_HandlePlayerInfoChanged_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (PlayerID != nullptr)
-		*PlayerID = params.PlayerID;
 }
 
 

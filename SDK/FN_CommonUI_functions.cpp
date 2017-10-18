@@ -725,6 +725,26 @@ void UCommonActivatablePanel::PopPanel()
 }
 
 
+// Function CommonUI.CommonActivatablePanel.OnInputModeChanged
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bUsingGamepad                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonActivatablePanel::OnInputModeChanged(bool bUsingGamepad)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function CommonUI.CommonActivatablePanel.OnInputModeChanged");
+
+	UCommonActivatablePanel_OnInputModeChanged_Params params;
+	params.bUsingGamepad = bUsingGamepad;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function CommonUI.CommonActivatablePanel.OnDeactivated
 // (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 

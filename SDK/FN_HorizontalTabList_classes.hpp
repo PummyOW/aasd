@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass HorizontalTabList.HorizontalTabList_C
-// 0x005B (0x03BB - 0x0360)
+// 0x0064 (0x03C4 - 0x0360)
 class UHorizontalTabList_C : public UFortTabListWidgetBase
 {
 public:
@@ -30,6 +30,9 @@ public:
 	bool                                               UseButtonStyle;                                           // 0x03B8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               ShowGamePadInputPrompt;                                   // 0x03B9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               ShowRail;                                                 // 0x03BA(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x1];                                       // 0x03BB(0x0001) MISSED OFFSET
+	int                                                MinTabWidth;                                              // 0x03BC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                NewVar_1;                                                 // 0x03C0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

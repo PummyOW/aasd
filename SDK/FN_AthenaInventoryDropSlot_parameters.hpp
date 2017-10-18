@@ -23,17 +23,6 @@ struct UAthenaInventoryDropSlot_C_OnDrop_Params
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
-// Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.Construct
-struct UAthenaInventoryDropSlot_C_Construct_Params
-{
-};
-
-// Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnFocusLost
-struct UAthenaInventoryDropSlot_C_OnFocusLost_Params
-{
-	struct FFocusEvent*                                InFocusEvent;                                             // (CPF_Parm)
-};
-
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.Tick
 struct UAthenaInventoryDropSlot_C_Tick_Params
 {

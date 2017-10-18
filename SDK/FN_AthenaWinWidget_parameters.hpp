@@ -26,6 +26,11 @@ struct UAthenaWinWidget_C_PreConstruct_Params
 	bool*                                              IsDesignTime;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function AthenaWinWidget.AthenaWinWidget_C.OnActivated
+struct UAthenaWinWidget_C_OnActivated_Params
+{
+};
+
 // Function AthenaWinWidget.AthenaWinWidget_C.ExecuteUbergraph_AthenaWinWidget
 struct UAthenaWinWidget_C_ExecuteUbergraph_AthenaWinWidget_Params
 {

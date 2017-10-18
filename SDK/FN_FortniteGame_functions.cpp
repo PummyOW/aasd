@@ -19671,6 +19671,58 @@ void AFortPawn::StartPushMomentum(const struct FVector& NewPushMomentum, float D
 }
 
 
+// Function FortniteGame.FortPawn.SpawnCameraLensEffectDirectional
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// class UClass*                  LensEffectEmitterClass         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AFortPawn*               DamageDealer                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FHitResult              HitInfo                        (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// class AFortEmitterCameraLensEffectDirectional* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AFortEmitterCameraLensEffectDirectional* AFortPawn::SpawnCameraLensEffectDirectional(class UClass* LensEffectEmitterClass, class AFortPawn* DamageDealer, const struct FHitResult& HitInfo)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPawn.SpawnCameraLensEffectDirectional");
+
+	AFortPawn_SpawnCameraLensEffectDirectional_Params params;
+	params.LensEffectEmitterClass = LensEffectEmitterClass;
+	params.DamageDealer = DamageDealer;
+	params.HitInfo = HitInfo;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteGame.FortPawn.SpawnCameraLensEffect
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UClass*                  LensEffectEmitterClass         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AEmitterCameraLensEffectBase* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AEmitterCameraLensEffectBase* AFortPawn::SpawnCameraLensEffect(class UClass* LensEffectEmitterClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPawn.SpawnCameraLensEffect");
+
+	AFortPawn_SpawnCameraLensEffect_Params params;
+	params.LensEffectEmitterClass = LensEffectEmitterClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function FortniteGame.FortPawn.SetSpawnSpot
 // (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -21260,6 +21312,28 @@ float AFortPawn::GetMaxControlResistance()
 }
 
 
+// Function FortniteGame.FortPawn.GetLocalViewingPlayerController
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class APlayerController*       ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class APlayerController* AFortPawn::GetLocalViewingPlayerController()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPawn.GetLocalViewingPlayerController");
+
+	AFortPawn_GetLocalViewingPlayerController_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function FortniteGame.FortPawn.GetKnockbackThreshold
 // (FUNC_Final, FUNC_RequiredAPI, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
 // Parameters:
@@ -22657,6 +22731,42 @@ void AFortAIPawn::OnEndSleepEffects()
 	AFortAIPawn_OnEndSleepEffects_Params params;
 
 	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableRangedAttacking
+// (FUNC_Final, FUNC_Native, FUNC_Public)
+
+void AFortAIPawn::OnEncounterSpawnEnableRangedAttacking()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableRangedAttacking");
+
+	AFortAIPawn_OnEncounterSpawnEnableRangedAttacking_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableMeleeAttacking
+// (FUNC_Final, FUNC_Native, FUNC_Public)
+
+void AFortAIPawn::OnEncounterSpawnEnableMeleeAttacking()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableMeleeAttacking");
+
+	AFortAIPawn_OnEncounterSpawnEnableMeleeAttacking_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(fn, &params);
 
@@ -27228,6 +27338,24 @@ void AFortPlayerPawn::RandomizeCharacter(const struct FString& GenderString)
 }
 
 
+// Function FortniteGame.FortPlayerPawn.OnRep_IsTargeting
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void AFortPlayerPawn::OnRep_IsTargeting()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerPawn.OnRep_IsTargeting");
+
+	AFortPlayerPawn_OnRep_IsTargeting_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortPlayerPawn.OnRep_IsDBNO
 // (FUNC_Native, FUNC_Protected)
 
@@ -27808,6 +27936,37 @@ void AFortPlayerPawnAthena::OnRep_DrivingCar()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerPawnAthena.OnRep_DrivingCar");
 
 	AFortPlayerPawnAthena_OnRep_DrivingCar_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortPlayerPawnAthena.OnCapsuleBeginOverlap
+// (FUNC_Final, FUNC_Native, FUNC_Protected, FUNC_HasOutParms)
+// Parameters:
+// class UPrimitiveComponent*     OverlappedComp                 (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// class AActor*                  OtherActor                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UPrimitiveComponent*     OtherComp                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// int                            OtherBodyIndex                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bFromSweep                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FHitResult              SweepResult                    (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+
+void AFortPlayerPawnAthena::OnCapsuleBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerPawnAthena.OnCapsuleBeginOverlap");
+
+	AFortPlayerPawnAthena_OnCapsuleBeginOverlap_Params params;
+	params.OverlappedComp = OverlappedComp;
+	params.OtherActor = OtherActor;
+	params.OtherComp = OtherComp;
+	params.OtherBodyIndex = OtherBodyIndex;
+	params.bFromSweep = bFromSweep;
+	params.SweepResult = SweepResult;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -31536,6 +31695,26 @@ bool AFortWindManager::SetWindImpulse(const struct FFortWindImpulseHandle& Impul
 }
 
 
+// Function FortniteGame.FortWindManager.RemoveWindParticleSystemComponent
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UParticleSystemComponent* ParticleSystemComponent        (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void AFortWindManager::RemoveWindParticleSystemComponent(class UParticleSystemComponent* ParticleSystemComponent)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortWindManager.RemoveWindParticleSystemComponent");
+
+	AFortWindManager_RemoveWindParticleSystemComponent_Params params;
+	params.ParticleSystemComponent = ParticleSystemComponent;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortWindManager.RemoveWindImpulse
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -32058,6 +32237,26 @@ void AFortWindManager::STATIC_BreakWindImpulseCylinder(const struct FFortWindImp
 		*ImpulseMagnitude = params.ImpulseMagnitude;
 	if (ImpulseDirection != nullptr)
 		*ImpulseDirection = params.ImpulseDirection;
+}
+
+
+// Function FortniteGame.FortWindManager.AddWindParticleSystemComponent
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UParticleSystemComponent* ParticleSystemComponent        (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void AFortWindManager::AddWindParticleSystemComponent(class UParticleSystemComponent* ParticleSystemComponent)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortWindManager.AddWindParticleSystemComponent");
+
+	AFortWindManager_AddWindParticleSystemComponent_Params params;
+	params.ParticleSystemComponent = ParticleSystemComponent;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
 }
 
 
@@ -37211,34 +37410,6 @@ bool AFortPlayerController::StartReadyCheck(const struct FText& QueryText, const
 }
 
 
-// Function FortniteGame.FortPlayerController.SpawnCameraLensEffectDirectional
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
-// Parameters:
-// class UClass*                  LensEffectEmitterClass         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class AFortPawn*               DamageDealer                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FHitResult              HitInfo                        (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// class AFortEmitterCameraLensEffectDirectional* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class AFortEmitterCameraLensEffectDirectional* AFortPlayerController::SpawnCameraLensEffectDirectional(class UClass* LensEffectEmitterClass, class AFortPawn* DamageDealer, const struct FHitResult& HitInfo)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.SpawnCameraLensEffectDirectional");
-
-	AFortPlayerController_SpawnCameraLensEffectDirectional_Params params;
-	params.LensEffectEmitterClass = LensEffectEmitterClass;
-	params.DamageDealer = DamageDealer;
-	params.HitInfo = HitInfo;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function FortniteGame.FortPlayerController.SetRotatePawnToCamera
 // (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -37991,13 +38162,17 @@ void AFortPlayerController::ServerRequestAIDebug()
 // (FUNC_Net, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetServer, FUNC_NetValidate)
 // Parameters:
 // float                          ClientAvgFPS                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// unsigned char                  ClientAvgFrameScore            (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// unsigned char                  ClientMaxFrameScore            (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AFortPlayerController::ServerReportClientFPS(float ClientAvgFPS)
+void AFortPlayerController::ServerReportClientFPS(float ClientAvgFPS, unsigned char ClientAvgFrameScore, unsigned char ClientMaxFrameScore)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.ServerReportClientFPS");
 
 	AFortPlayerController_ServerReportClientFPS_Params params;
 	params.ClientAvgFPS = ClientAvgFPS;
+	params.ClientAvgFrameScore = ClientAvgFrameScore;
+	params.ClientMaxFrameScore = ClientMaxFrameScore;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -38403,6 +38578,29 @@ void AFortPlayerController::ServerGiftInventoryItemToOtherPlayer(const struct FG
 	params.ItemGuid = ItemGuid;
 	params.PlayerID = PlayerID;
 	params.Quantity = Quantity;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortPlayerController.ServerFinishedInteractionInZoneReport
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetServer, FUNC_NetValidate)
+// Parameters:
+// int                            FinishedInteractionState       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// TArray<uint64_t>               FinishedInteractionReport      (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_ReferenceParm)
+
+void AFortPlayerController::ServerFinishedInteractionInZoneReport(int FinishedInteractionState, TArray<uint64_t> FinishedInteractionReport)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.ServerFinishedInteractionInZoneReport");
+
+	AFortPlayerController_ServerFinishedInteractionInZoneReport_Params params;
+	params.FinishedInteractionState = FinishedInteractionState;
+	params.FinishedInteractionReport = FinishedInteractionReport;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -39661,6 +39859,28 @@ bool AFortPlayerController::GetRotatePawnToCamera()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.GetRotatePawnToCamera");
 
 	AFortPlayerController_GetRotatePawnToCamera_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteGame.FortPlayerController.GetRegisteredPlayerInfo
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class UFortRegisteredPlayerInfo* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UFortRegisteredPlayerInfo* AFortPlayerController::GetRegisteredPlayerInfo()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.GetRegisteredPlayerInfo");
+
+	AFortPlayerController_GetRegisteredPlayerInfo_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -42200,6 +42420,42 @@ void UFortCheatManager::TestJoin()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortCheatManager.TestJoin");
 
 	UFortCheatManager_TestJoin_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortCheatManager.TestInvalidRPCCall
+// (FUNC_Final, FUNC_Exec, FUNC_Native, FUNC_Public)
+
+void UFortCheatManager::TestInvalidRPCCall()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortCheatManager.TestInvalidRPCCall");
+
+	UFortCheatManager_TestInvalidRPCCall_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortCheatManager.TestInfJumps
+// (FUNC_Final, FUNC_Exec, FUNC_Native, FUNC_Public)
+
+void UFortCheatManager::TestInfJumps()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortCheatManager.TestInfJumps");
+
+	UFortCheatManager_TestInfJumps_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -57497,6 +57753,42 @@ void AFortPlayerControllerPvP::ClientReceiveKillNotification(class AFortPlayerSt
 }
 
 
+// Function FortniteGame.FortPlayerControllerAthena.VoiceChatReconnected
+// (FUNC_Final, FUNC_Native, FUNC_Public)
+
+void AFortPlayerControllerAthena::VoiceChatReconnected()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.VoiceChatReconnected");
+
+	AFortPlayerControllerAthena_VoiceChatReconnected_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortPlayerControllerAthena.VoiceChatChannelJoinFailed
+// (FUNC_Final, FUNC_Native, FUNC_Public)
+
+void AFortPlayerControllerAthena::VoiceChatChannelJoinFailed()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.VoiceChatChannelJoinFailed");
+
+	AFortPlayerControllerAthena_VoiceChatChannelJoinFailed_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortPlayerControllerAthena.UpdateRichPresenceTimer
 // (FUNC_Final, FUNC_Native, FUNC_Protected)
 
@@ -57554,6 +57846,42 @@ void AFortPlayerControllerAthena::SpawnCar(const struct FString& Command)
 }
 
 
+// Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatRejoinChannel
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetServer, FUNC_NetValidate)
+
+void AFortPlayerControllerAthena::ServerVoiceChatRejoinChannel()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatRejoinChannel");
+
+	AFortPlayerControllerAthena_ServerVoiceChatRejoinChannel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatReconnected
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetServer, FUNC_NetValidate)
+
+void AFortPlayerControllerAthena::ServerVoiceChatReconnected()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatReconnected");
+
+	AFortPlayerControllerAthena_ServerVoiceChatReconnected_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortPlayerControllerAthena.ServerRemoveMapCursor
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_NetServer, FUNC_NetValidate)
 
@@ -57583,6 +57911,24 @@ void AFortPlayerControllerAthena::ServerPlaceMapCursor(const struct FVector_NetQ
 
 	AFortPlayerControllerAthena_ServerPlaceMapCursor_Params params;
 	params.CursorPos = CursorPos;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortPlayerControllerAthena.ServerFollowNextTeammate
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_NetServer, FUNC_NetValidate)
+
+void AFortPlayerControllerAthena::ServerFollowNextTeammate()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.ServerFollowNextTeammate");
+
+	AFortPlayerControllerAthena_ServerFollowNextTeammate_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -57767,6 +58113,29 @@ bool AFortPlayerControllerAthena::IsInAircraft()
 }
 
 
+// Function FortniteGame.FortPlayerControllerAthena.GetTeamTalking
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// TArray<bool>                   TalkingStates                  (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+
+void AFortPlayerControllerAthena::GetTeamTalking(TArray<bool>* TalkingStates)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.GetTeamTalking");
+
+	AFortPlayerControllerAthena_GetTeamTalking_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (TalkingStates != nullptr)
+		*TalkingStates = params.TalkingStates;
+}
+
+
 // Function FortniteGame.FortPlayerControllerAthena.GetTeamReviving
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -57787,6 +58156,29 @@ void AFortPlayerControllerAthena::GetTeamReviving(TArray<bool>* RevivingStates)
 
 	if (RevivingStates != nullptr)
 		*RevivingStates = params.RevivingStates;
+}
+
+
+// Function FortniteGame.FortPlayerControllerAthena.GetTeamMuted
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// TArray<bool>                   MutedStates                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+
+void AFortPlayerControllerAthena::GetTeamMuted(TArray<bool>* MutedStates)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.GetTeamMuted");
+
+	AFortPlayerControllerAthena_GetTeamMuted_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (MutedStates != nullptr)
+		*MutedStates = params.MutedStates;
 }
 
 
@@ -58026,6 +58418,24 @@ void AFortPlayerControllerAthena::FullscreenMapCursorHorizontal(float Value)
 }
 
 
+// Function FortniteGame.FortPlayerControllerAthena.FollowNextTeammate
+// (FUNC_Final, FUNC_Native, FUNC_Protected, FUNC_BlueprintCallable)
+
+void AFortPlayerControllerAthena::FollowNextTeammate()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.FollowNextTeammate");
+
+	AFortPlayerControllerAthena_FollowNextTeammate_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortPlayerControllerAthena.DumpTeamMemberState
 // (FUNC_Final, FUNC_Exec, FUNC_Native, FUNC_Public)
 
@@ -58083,15 +58493,15 @@ void AFortPlayerControllerAthena::CycleHeroBackward()
 // Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatLogin
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 // Parameters:
-// struct FString                 VoiceChatPlayerName            (CPF_Parm, CPF_ZeroConstructor)
+// struct FString                 InVoiceChatPlayerName          (CPF_Parm, CPF_ZeroConstructor)
 // struct FString                 LoginToken                     (CPF_Parm, CPF_ZeroConstructor)
 
-void AFortPlayerControllerAthena::ClientVoiceChatLogin(const struct FString& VoiceChatPlayerName, const struct FString& LoginToken)
+void AFortPlayerControllerAthena::ClientVoiceChatLogin(const struct FString& InVoiceChatPlayerName, const struct FString& LoginToken)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatLogin");
 
 	AFortPlayerControllerAthena_ClientVoiceChatLogin_Params params;
-	params.VoiceChatPlayerName = VoiceChatPlayerName;
+	params.InVoiceChatPlayerName = InVoiceChatPlayerName;
 	params.LoginToken = LoginToken;
 
 	auto flags = fn->FunctionFlags;
@@ -58106,17 +58516,17 @@ void AFortPlayerControllerAthena::ClientVoiceChatLogin(const struct FString& Voi
 // Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatChannelJoin
 // (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetClient)
 // Parameters:
-// struct FString                 VoiceChatPlayerName            (CPF_Parm, CPF_ZeroConstructor)
-// struct FString                 VoiceChatChannel               (CPF_Parm, CPF_ZeroConstructor)
+// struct FString                 InVoiceChatPlayerName          (CPF_Parm, CPF_ZeroConstructor)
+// struct FString                 InVoiceChatChannel             (CPF_Parm, CPF_ZeroConstructor)
 // struct FString                 JoinToken                      (CPF_Parm, CPF_ZeroConstructor)
 
-void AFortPlayerControllerAthena::ClientVoiceChatChannelJoin(const struct FString& VoiceChatPlayerName, const struct FString& VoiceChatChannel, const struct FString& JoinToken)
+void AFortPlayerControllerAthena::ClientVoiceChatChannelJoin(const struct FString& InVoiceChatPlayerName, const struct FString& InVoiceChatChannel, const struct FString& JoinToken)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatChannelJoin");
 
 	AFortPlayerControllerAthena_ClientVoiceChatChannelJoin_Params params;
-	params.VoiceChatPlayerName = VoiceChatPlayerName;
-	params.VoiceChatChannel = VoiceChatChannel;
+	params.InVoiceChatPlayerName = InVoiceChatPlayerName;
+	params.InVoiceChatChannel = InVoiceChatChannel;
 	params.JoinToken = JoinToken;
 
 	auto flags = fn->FunctionFlags;
@@ -67776,6 +68186,43 @@ void UFortKismetLibrary::STATIC_BroadcastSound(class UObject* WorldContextObject
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortKismetLibrary.BroadcastPlayerImpactAtLocation
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class APlayerController*       Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FVector                 Position                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// float                          Loudness                       (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          Duration                       (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bRelativePosition              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UFortKismetLibrary::STATIC_BroadcastPlayerImpactAtLocation(class UObject* WorldContextObject, class APlayerController* Player, const struct FVector& Position, bool bRelativePosition, float* Loudness, float* Duration)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortKismetLibrary.BroadcastPlayerImpactAtLocation");
+
+	UFortKismetLibrary_BroadcastPlayerImpactAtLocation_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Player = Player;
+	params.Position = Position;
+	params.bRelativePosition = bRelativePosition;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Loudness != nullptr)
+		*Loudness = params.Loudness;
+	if (Duration != nullptr)
+		*Duration = params.Duration;
+
+	return params.ReturnValue;
 }
 
 

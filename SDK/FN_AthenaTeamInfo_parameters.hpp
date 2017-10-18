@@ -14,6 +14,18 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMutedChanged
+struct UAthenaTeamInfo_C_HandleTeamMutedChanged_Params
+{
+	TArray<bool>                                       TeamMuted;                                                // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+};
+
+// Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamTalkingChanged
+struct UAthenaTeamInfo_C_HandleTeamTalkingChanged_Params
+{
+	TArray<bool>                                       TeamTalking;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+};
+
 // Function AthenaTeamInfo.AthenaTeamInfo_C.HandleTeamMemberRemoved
 struct UAthenaTeamInfo_C_HandleTeamMemberRemoved_Params
 {

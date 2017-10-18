@@ -13,15 +13,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Class EpicCMSUIFramework.EpicCMSScreenBase
-// 0x0070 (0x0450 - 0x03E0)
+// 0x0080 (0x0460 - 0x03E0)
 class UEpicCMSScreenBase : public UCommonActivatablePanel
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x03E0(0x0008) MISSED OFFSET
-	TAssetPtr<class UDataTable>                        TileTypeToTileClassDataTable;                             // 0x03E8(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            LayoutErrorClass;                                         // 0x0408(0x0020) (CPF_Edit)
-	TAssetPtr<class UDataTable>                        LayoutTypeToLayoutClassDataTable;                         // 0x0428(0x0020) (CPF_Edit)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0448(0x0008) MISSED OFFSET
+	struct FString                                     TileSetFieldName;                                         // 0x03E0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TAssetPtr<class UDataTable>                        TileTypeToTileClassDataTable;                             // 0x03F0(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            LayoutErrorClass;                                         // 0x0410(0x0020) (CPF_Edit)
+	TAssetPtr<class UDataTable>                        LayoutTypeToLayoutClassDataTable;                         // 0x0430(0x0020) (CPF_Edit)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0450(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

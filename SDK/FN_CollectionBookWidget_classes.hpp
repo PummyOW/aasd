@@ -13,11 +13,11 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass CollectionBookWidget.CollectionBookWidget_C
-// 0x0008 (0x0438 - 0x0430)
+// 0x0008 (0x0448 - 0x0440)
 class UCollectionBookWidget_C : public UFortCollectionBookWidget
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0430(0x0008) (CPF_Transient, CPF_DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x0440(0x0008) (CPF_Transient, CPF_DuplicateTransient)
 
 	static UClass* StaticClass()
 	{

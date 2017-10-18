@@ -176,6 +176,23 @@ void UGAB_AthenaDBNO_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* E
 }
 
 
+// Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.K2_OnEndAbility
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UGAB_AthenaDBNO_C::K2_OnEndAbility()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.K2_OnEndAbility");
+
+	UGAB_AthenaDBNO_C_K2_OnEndAbility_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.ExecuteUbergraph_GAB_AthenaDBNO
 // (FUNC_HasDefaults)
 // Parameters:

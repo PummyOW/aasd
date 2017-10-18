@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass AthenaQuickBarSlot.AthenaQuickBarSlot_C
-// 0x0000 (0x0338 - 0x0338)
+// 0x0000 (0x0378 - 0x0378)
 class UAthenaQuickBarSlot_C : public UQuickbarSlot_C
 {
 public:

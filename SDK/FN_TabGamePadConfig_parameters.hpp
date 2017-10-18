@@ -14,6 +14,11 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function TabGamePadConfig.TabGamePadConfig_C.HandleGamepadMappingInfoChange
+struct UTabGamePadConfig_C_HandleGamepadMappingInfoChange_Params
+{
+};
+
 // Function TabGamePadConfig.TabGamePadConfig_C.Handle Mode Toggled
 struct UTabGamePadConfig_C_Handle_Mode_Toggled_Params
 {

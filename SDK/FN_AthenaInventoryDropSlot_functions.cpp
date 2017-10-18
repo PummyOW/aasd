@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnDrop
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // struct FGeometry*              MyGeometry                     (CPF_Parm, CPF_IsPlainOldData)
 // struct FPointerEvent*          PointerEvent                   (CPF_Parm)
@@ -36,43 +36,6 @@ bool UAthenaInventoryDropSlot_C::OnDrop(struct FGeometry* MyGeometry, struct FPo
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
-}
-
-
-// Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.Construct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UAthenaInventoryDropSlot_C::Construct()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.Construct");
-
-	UAthenaInventoryDropSlot_C_Construct_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnFocusLost
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// struct FFocusEvent*            InFocusEvent                   (CPF_Parm)
-
-void UAthenaInventoryDropSlot_C::OnFocusLost(struct FFocusEvent* InFocusEvent)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnFocusLost");
-
-	UAthenaInventoryDropSlot_C_OnFocusLost_Params params;
-	params.InFocusEvent = InFocusEvent;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
 }
 
 

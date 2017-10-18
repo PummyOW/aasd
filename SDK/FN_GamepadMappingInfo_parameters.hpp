@@ -14,13 +14,25 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function GamepadMappingInfo.GamepadMappingInfo_C.ComputeActiveWidgetIndex
-struct UGamepadMappingInfo_C_ComputeActiveWidgetIndex_Params
+// Function GamepadMappingInfo.GamepadMappingInfo_C.HandleConfigChanged
+struct UGamepadMappingInfo_C_HandleConfigChanged_Params
 {
-	int                                                platform;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                Mode;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Configuration;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+	int                                                Config;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function GamepadMappingInfo.GamepadMappingInfo_C.HandleConfigChanged_Athena
+struct UGamepadMappingInfo_C_HandleConfigChanged_Athena_Params
+{
+	int                                                Mode;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Config;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function GamepadMappingInfo.GamepadMappingInfo_C.OnConfigChanged
+struct UGamepadMappingInfo_C_OnConfigChanged_Params
+{
+	int                                                Mode;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Config;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function GamepadMappingInfo.GamepadMappingInfo_C.Update Displayed Mapping

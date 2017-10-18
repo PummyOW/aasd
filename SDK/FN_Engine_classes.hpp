@@ -1169,6 +1169,28 @@ public:
 };
 
 
+// Class Engine.AnimNotify_PlayParticleEffect
+// 0x0048 (0x0080 - 0x0038)
+class UAnimNotify_PlayParticleEffect : public UAnimNotify
+{
+public:
+	class UParticleSystem*                             PSTemplate;                                               // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FVector                                     LocationOffset;                                           // 0x0040(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
+	struct FRotator                                    RotationOffset;                                           // 0x004C(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0058(0x0018) MISSED OFFSET
+	unsigned char                                      Attached : 1;                                             // 0x0070(0x0001) (CPF_Edit, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
+	struct FName                                       SocketName;                                               // 0x0078(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class Engine.AnimNotify_PlayParticleEffect");
+		return ptr;
+	}
+
+};
+
+
 // Class Engine.AnimNotifyState
 // 0x0008 (0x0030 - 0x0028)
 class UAnimNotifyState : public UObject
@@ -1989,7 +2011,7 @@ public:
 
 
 // Class Engine.GameMode
-// 0x0040 (0x0468 - 0x0428)
+// 0x0048 (0x0470 - 0x0428)
 class AGameMode : public AGameModeBase
 {
 public:
@@ -2004,8 +2026,9 @@ public:
 	class UClass*                                      EngineMessageClass;                                       // 0x0448(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	TArray<class APlayerState*>                        InactivePlayerArray;                                      // 0x0450(0x0010) (CPF_ZeroConstructor)
 	float                                              InactivePlayerStateLifeSpan;                              // 0x0460(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bHandleDedicatedServerReplays;                            // 0x0464(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0465(0x0003) MISSED OFFSET
+	int                                                MaxInactivePlayers;                                       // 0x0464(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bHandleDedicatedServerReplays;                            // 0x0468(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0469(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -8739,28 +8762,6 @@ public:
 };
 
 
-// Class Engine.AnimNotify_PlayParticleEffect
-// 0x0048 (0x0080 - 0x0038)
-class UAnimNotify_PlayParticleEffect : public UAnimNotify
-{
-public:
-	class UParticleSystem*                             PSTemplate;                                               // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FVector                                     LocationOffset;                                           // 0x0040(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
-	struct FRotator                                    RotationOffset;                                           // 0x004C(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0058(0x0018) MISSED OFFSET
-	unsigned char                                      Attached : 1;                                             // 0x0070(0x0001) (CPF_Edit, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
-	struct FName                                       SocketName;                                               // 0x0078(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotify_PlayParticleEffect");
-		return ptr;
-	}
-
-};
-
-
 // Class Engine.AnimNotify_ResetClothingSimulation
 // 0x0000 (0x0038 - 0x0038)
 class UAnimNotify_ResetClothingSimulation : public UAnimNotify
@@ -12074,7 +12075,7 @@ public:
 
 
 // Class Engine.NetDriver
-// 0x03E0 (0x0408 - 0x0028)
+// 0x03E8 (0x0410 - 0x0028)
 class UNetDriver : public UObject
 {
 public:
@@ -12098,14 +12099,15 @@ public:
 	TArray<class UNetConnection*>                      ClientConnections;                                        // 0x0078(0x0010) (CPF_ZeroConstructor)
 	unsigned char                                      UnknownData03[0x18];                                      // 0x0088(0x0018) MISSED OFFSET
 	class UWorld*                                      World;                                                    // 0x00A0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x20];                                      // 0x00A8(0x0020) MISSED OFFSET
-	class UClass*                                      NetConnectionClass;                                       // 0x00C8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UProperty*                                   RoleProperty;                                             // 0x00D0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UProperty*                                   RemoteRoleProperty;                                       // 0x00D8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       NetDriverName;                                            // 0x00E0(0x0008) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x8];                                       // 0x00E8(0x0008) MISSED OFFSET
-	float                                              Time;                                                     // 0x00F0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x314];                                     // 0x00F4(0x0314) MISSED OFFSET
+	class UPackage*                                    WorldPackage;                                             // 0x00A8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x20];                                      // 0x00B0(0x0020) MISSED OFFSET
+	class UClass*                                      NetConnectionClass;                                       // 0x00D0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UProperty*                                   RoleProperty;                                             // 0x00D8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UProperty*                                   RemoteRoleProperty;                                       // 0x00E0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       NetDriverName;                                            // 0x00E8(0x0008) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x8];                                       // 0x00F0(0x0008) MISSED OFFSET
+	float                                              Time;                                                     // 0x00F8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x314];                                     // 0x00FC(0x0314) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -12133,7 +12135,7 @@ public:
 
 
 // Class Engine.NetConnection
-// 0x33610 (0x33658 - 0x0048)
+// 0x336F8 (0x33740 - 0x0048)
 class UNetConnection : public UPlayer
 {
 public:
@@ -12150,9 +12152,9 @@ public:
 	struct FUniqueNetIdRepl                            PlayerID;                                                 // 0x0150(0x0018)
 	unsigned char                                      UnknownData01[0x68];                                      // 0x0168(0x0068) MISSED OFFSET
 	double                                             LastReceiveTime;                                          // 0x01D0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x33448];                                   // 0x01D8(0x33448) MISSED OFFSET
-	TArray<class UChannel*>                            ChannelsToTick;                                           // 0x33620(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData03[0x28];                                      // 0x33630(0x0028) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x33530];                                   // 0x01D8(0x33530) MISSED OFFSET
+	TArray<class UChannel*>                            ChannelsToTick;                                           // 0x33708(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData03[0x28];                                      // 0x33718(0x0028) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -12164,11 +12166,11 @@ public:
 
 
 // Class Engine.DemoNetConnection
-// 0x0020 (0x33678 - 0x33658)
+// 0x0020 (0x33760 - 0x33740)
 class UDemoNetConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x33658(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x33740(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -12180,13 +12182,13 @@ public:
 
 
 // Class Engine.DemoNetDriver
-// 0x0528 (0x0930 - 0x0408)
+// 0x0520 (0x0930 - 0x0410)
 class UDemoNetDriver : public UNetDriver
 {
 public:
-	unsigned char                                      UnknownData00[0xF8];                                      // 0x0408(0x00F8) MISSED OFFSET
-	TMap<struct FString, struct FRollbackNetStartupActorInfo> RollbackNetStartupActors;                                 // 0x0500(0x0050) (CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData01[0x3E0];                                     // 0x0550(0x03E0) MISSED OFFSET
+	unsigned char                                      UnknownData00[0xF8];                                      // 0x0410(0x00F8) MISSED OFFSET
+	TMap<struct FString, struct FRollbackNetStartupActorInfo> RollbackNetStartupActors;                                 // 0x0508(0x0050) (CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData01[0x3D8];                                     // 0x0558(0x03D8) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -19690,11 +19692,11 @@ public:
 
 
 // Class Engine.ChildConnection
-// 0x0008 (0x33660 - 0x33658)
+// 0x0008 (0x33748 - 0x33740)
 class UChildConnection : public UNetConnection
 {
 public:
-	class UNetConnection*                              Parent;                                                   // 0x33658(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UNetConnection*                              Parent;                                                   // 0x33740(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

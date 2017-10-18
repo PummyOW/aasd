@@ -12,6 +12,23 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function TabGamePadConfig.TabGamePadConfig_C.HandleGamepadMappingInfoChange
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UTabGamePadConfig_C::HandleGamepadMappingInfoChange()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.HandleGamepadMappingInfoChange");
+
+	UTabGamePadConfig_C_HandleGamepadMappingInfoChange_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function TabGamePadConfig.TabGamePadConfig_C.Handle Mode Toggled
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 

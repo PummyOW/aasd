@@ -62,6 +62,11 @@ struct UGAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent_Params
 	struct FGameplayEventData*                         EventData;                                                // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
 };
 
+// Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.K2_OnEndAbility
+struct UGAB_AthenaDBNO_C_K2_OnEndAbility_Params
+{
+};
+
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.ExecuteUbergraph_GAB_AthenaDBNO
 struct UGAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO_Params
 {

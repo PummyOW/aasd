@@ -36,8 +36,6 @@ public:
 
 
 	bool OnDrop(struct FGeometry* MyGeometry, struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation);
-	void Construct();
-	void OnFocusLost(struct FFocusEvent* InFocusEvent);
 	void Tick(struct FGeometry* MyGeometry, float* InDeltaTime);
 	void ExecuteUbergraph_AthenaInventoryDropSlot(int EntryPoint);
 	void OnEquipRequested__DelegateSignature(int SlotIndex);

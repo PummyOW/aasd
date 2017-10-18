@@ -41,6 +41,7 @@ public:
 	void OnStateInterrupted_C85094F843D5075FE4872C95AFC5D6B6();
 	void OnStateEnded_C85094F843D5075FE4872C95AFC5D6B6();
 	void K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData);
+	void K2_OnEndAbility();
 	void ExecuteUbergraph_GAB_AthenaDBNO(int EntryPoint);
 };
 

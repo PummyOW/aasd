@@ -5730,6 +5730,22 @@ struct AFortPawn_StartPushMomentum_Params
 	float                                              Duration;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPawn.SpawnCameraLensEffectDirectional
+struct AFortPawn_SpawnCameraLensEffectDirectional_Params
+{
+	class UClass*                                      LensEffectEmitterClass;                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortPawn*                                   DamageDealer;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FHitResult                                  HitInfo;                                                  // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+	class AFortEmitterCameraLensEffectDirectional*     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteGame.FortPawn.SpawnCameraLensEffect
+struct AFortPawn_SpawnCameraLensEffect_Params
+{
+	class UClass*                                      LensEffectEmitterClass;                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AEmitterCameraLensEffectBase*                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
 // Function FortniteGame.FortPawn.SetSpawnSpot
 struct AFortPawn_SetSpawnSpot_Params
 {
@@ -6204,6 +6220,12 @@ struct AFortPawn_GetMaxControlResistance_Params
 	float                                              ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPawn.GetLocalViewingPlayerController
+struct AFortPawn_GetLocalViewingPlayerController_Params
+{
+	class APlayerController*                           ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
 // Function FortniteGame.FortPawn.GetKnockbackThreshold
 struct AFortPawn_GetKnockbackThreshold_Params
 {
@@ -6606,6 +6628,16 @@ struct AFortAIPawn_OnFinishedEncounterSpawn_Params
 
 // Function FortniteGame.FortAIPawn.OnEndSleepEffects
 struct AFortAIPawn_OnEndSleepEffects_Params
+{
+};
+
+// Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableRangedAttacking
+struct AFortAIPawn_OnEncounterSpawnEnableRangedAttacking_Params
+{
+};
+
+// Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableMeleeAttacking
+struct AFortAIPawn_OnEncounterSpawnEnableMeleeAttacking_Params
 {
 };
 
@@ -7949,6 +7981,11 @@ struct AFortPlayerPawn_RandomizeCharacter_Params
 	struct FString                                     GenderString;                                             // (CPF_Parm, CPF_ZeroConstructor)
 };
 
+// Function FortniteGame.FortPlayerPawn.OnRep_IsTargeting
+struct AFortPlayerPawn_OnRep_IsTargeting_Params
+{
+};
+
 // Function FortniteGame.FortPlayerPawn.OnRep_IsDBNO
 struct AFortPlayerPawn_OnRep_IsDBNO_Params
 {
@@ -8112,6 +8149,17 @@ struct AFortPlayerPawnAthena_OnRep_GliderType_Params
 // Function FortniteGame.FortPlayerPawnAthena.OnRep_DrivingCar
 struct AFortPlayerPawnAthena_OnRep_DrivingCar_Params
 {
+};
+
+// Function FortniteGame.FortPlayerPawnAthena.OnCapsuleBeginOverlap
+struct AFortPlayerPawnAthena_OnCapsuleBeginOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComp;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class AActor*                                      OtherActor;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UPrimitiveComponent*                         OtherComp;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	int                                                OtherBodyIndex;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bFromSweep;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FHitResult                                  SweepResult;                                              // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
 };
 
 // Function FortniteGame.FortPlayerPawnAthena.NetMulticast_InvokeGameplayCuesExecuted_WithParams
@@ -9195,6 +9243,12 @@ struct AFortWindManager_SetWindImpulse_Params
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortWindManager.RemoveWindParticleSystemComponent
+struct AFortWindManager_RemoveWindParticleSystemComponent_Params
+{
+	class UParticleSystemComponent*                    ParticleSystemComponent;                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+};
+
 // Function FortniteGame.FortWindManager.RemoveWindImpulse
 struct AFortWindManager_RemoveWindImpulse_Params
 {
@@ -9352,6 +9406,12 @@ struct AFortWindManager_BreakWindImpulseCylinder_Params
 	float                                              ImpulseOuterRadius;                                       // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	float                                              ImpulseMagnitude;                                         // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FVector                                     ImpulseDirection;                                         // (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteGame.FortWindManager.AddWindParticleSystemComponent
+struct AFortWindManager_AddWindParticleSystemComponent_Params
+{
+	class UParticleSystemComponent*                    ParticleSystemComponent;                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 };
 
 // Function FortniteGame.FortWindManager.AddWindImpulseCylinder
@@ -10871,15 +10931,6 @@ struct AFortPlayerController_StartReadyCheck_Params
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
-// Function FortniteGame.FortPlayerController.SpawnCameraLensEffectDirectional
-struct AFortPlayerController_SpawnCameraLensEffectDirectional_Params
-{
-	class UClass*                                      LensEffectEmitterClass;                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortPawn*                                   DamageDealer;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FHitResult                                  HitInfo;                                                  // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-	class AFortEmitterCameraLensEffectDirectional*     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
 // Function FortniteGame.FortPlayerController.SetRotatePawnToCamera
 struct AFortPlayerController_SetRotatePawnToCamera_Params
 {
@@ -11104,6 +11155,8 @@ struct AFortPlayerController_ServerRequestAIDebug_Params
 struct AFortPlayerController_ServerReportClientFPS_Params
 {
 	float                                              ClientAvgFPS;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      ClientAvgFrameScore;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      ClientMaxFrameScore;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function FortniteGame.FortPlayerController.ServerReplyToReadyCheck
@@ -11227,6 +11280,13 @@ struct AFortPlayerController_ServerGiftInventoryItemToOtherPlayer_Params
 	struct FGuid                                       ItemGuid;                                                 // (CPF_Parm, CPF_IsPlainOldData)
 	struct FUniqueNetIdRepl                            PlayerID;                                                 // (CPF_Parm)
 	int                                                Quantity;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteGame.FortPlayerController.ServerFinishedInteractionInZoneReport
+struct AFortPlayerController_ServerFinishedInteractionInZoneReport_Params
+{
+	int                                                FinishedInteractionState;                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<uint64_t>                                   FinishedInteractionReport;                                // (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_ReferenceParm)
 };
 
 // Function FortniteGame.FortPlayerController.ServerExecutePresetTeamChat
@@ -11591,6 +11651,12 @@ struct AFortPlayerController_GivePlayerAmmo_Params
 struct AFortPlayerController_GetRotatePawnToCamera_Params
 {
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteGame.FortPlayerController.GetRegisteredPlayerInfo
+struct AFortPlayerController_GetRegisteredPlayerInfo_Params
+{
+	class UFortRegisteredPlayerInfo*                   ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
 // Function FortniteGame.FortPlayerController.GetQuestManager
@@ -12316,6 +12382,16 @@ struct UFortCheatManager_TestKnockback_Params
 
 // Function FortniteGame.FortCheatManager.TestJoin
 struct UFortCheatManager_TestJoin_Params
+{
+};
+
+// Function FortniteGame.FortCheatManager.TestInvalidRPCCall
+struct UFortCheatManager_TestInvalidRPCCall_Params
+{
+};
+
+// Function FortniteGame.FortCheatManager.TestInfJumps
+struct UFortCheatManager_TestInfJumps_Params
 {
 };
 
@@ -16764,6 +16840,16 @@ struct AFortPlayerControllerPvP_ClientReceiveKillNotification_Params
 	class AFortPlayerStateZone*                        Killed;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.VoiceChatReconnected
+struct AFortPlayerControllerAthena_VoiceChatReconnected_Params
+{
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.VoiceChatChannelJoinFailed
+struct AFortPlayerControllerAthena_VoiceChatChannelJoinFailed_Params
+{
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.UpdateRichPresenceTimer
 struct AFortPlayerControllerAthena_UpdateRichPresenceTimer_Params
 {
@@ -16780,6 +16866,16 @@ struct AFortPlayerControllerAthena_SpawnCar_Params
 	struct FString                                     Command;                                                  // (CPF_Parm, CPF_ZeroConstructor)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatRejoinChannel
+struct AFortPlayerControllerAthena_ServerVoiceChatRejoinChannel_Params
+{
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatReconnected
+struct AFortPlayerControllerAthena_ServerVoiceChatReconnected_Params
+{
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.ServerRemoveMapCursor
 struct AFortPlayerControllerAthena_ServerRemoveMapCursor_Params
 {
@@ -16789,6 +16885,11 @@ struct AFortPlayerControllerAthena_ServerRemoveMapCursor_Params
 struct AFortPlayerControllerAthena_ServerPlaceMapCursor_Params
 {
 	struct FVector_NetQuantize                         CursorPos;                                                // (CPF_Parm)
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.ServerFollowNextTeammate
+struct AFortPlayerControllerAthena_ServerFollowNextTeammate_Params
+{
 };
 
 // Function FortniteGame.FortPlayerControllerAthena.ServerDBNOReviveStarted
@@ -16840,10 +16941,22 @@ struct AFortPlayerControllerAthena_IsInAircraft_Params
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.GetTeamTalking
+struct AFortPlayerControllerAthena_GetTeamTalking_Params
+{
+	TArray<bool>                                       TalkingStates;                                            // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.GetTeamReviving
 struct AFortPlayerControllerAthena_GetTeamReviving_Params
 {
 	TArray<bool>                                       RevivingStates;                                           // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.GetTeamMuted
+struct AFortPlayerControllerAthena_GetTeamMuted_Params
+{
+	TArray<bool>                                       MutedStates;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 };
 
 // Function FortniteGame.FortPlayerControllerAthena.GetTeamHitPointFractions
@@ -16911,6 +17024,11 @@ struct AFortPlayerControllerAthena_FullscreenMapCursorHorizontal_Params
 	float                                              Value;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.FollowNextTeammate
+struct AFortPlayerControllerAthena_FollowNextTeammate_Params
+{
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.DumpTeamMemberState
 struct AFortPlayerControllerAthena_DumpTeamMemberState_Params
 {
@@ -16929,15 +17047,15 @@ struct AFortPlayerControllerAthena_CycleHeroBackward_Params
 // Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatLogin
 struct AFortPlayerControllerAthena_ClientVoiceChatLogin_Params
 {
-	struct FString                                     VoiceChatPlayerName;                                      // (CPF_Parm, CPF_ZeroConstructor)
+	struct FString                                     InVoiceChatPlayerName;                                    // (CPF_Parm, CPF_ZeroConstructor)
 	struct FString                                     LoginToken;                                               // (CPF_Parm, CPF_ZeroConstructor)
 };
 
 // Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatChannelJoin
 struct AFortPlayerControllerAthena_ClientVoiceChatChannelJoin_Params
 {
-	struct FString                                     VoiceChatPlayerName;                                      // (CPF_Parm, CPF_ZeroConstructor)
-	struct FString                                     VoiceChatChannel;                                         // (CPF_Parm, CPF_ZeroConstructor)
+	struct FString                                     InVoiceChatPlayerName;                                    // (CPF_Parm, CPF_ZeroConstructor)
+	struct FString                                     InVoiceChatChannel;                                       // (CPF_Parm, CPF_ZeroConstructor)
 	struct FString                                     JoinToken;                                                // (CPF_Parm, CPF_ZeroConstructor)
 };
 
@@ -19765,6 +19883,18 @@ struct UFortKismetLibrary_BroadcastSound_Params
 	class USoundBase*                                  InSound;                                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	float                                              VolumeMultiplier;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	float                                              PitchMultiplier;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteGame.FortKismetLibrary.BroadcastPlayerImpactAtLocation
+struct UFortKismetLibrary_BroadcastPlayerImpactAtLocation_Params
+{
+	class UObject*                                     WorldContextObject;                                       // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class APlayerController*                           Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FVector                                     Position;                                                 // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+	float                                              Loudness;                                                 // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              Duration;                                                 // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bRelativePosition;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
 // Function FortniteGame.FortKismetLibrary.BroadcastMessage

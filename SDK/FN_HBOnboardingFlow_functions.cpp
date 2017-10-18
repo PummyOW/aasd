@@ -102,6 +102,23 @@ void AHBOnboardingFlow_C::UserConstructionScript()
 }
 
 
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnCanceled_C2C889344301B8DBF8F046A2A175D133
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void AHBOnboardingFlow_C::OnCanceled_C2C889344301B8DBF8F046A2A175D133()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function HBOnboardingFlow.HBOnboardingFlow_C.OnCanceled_C2C889344301B8DBF8F046A2A175D133");
+
+	AHBOnboardingFlow_C_OnCanceled_C2C889344301B8DBF8F046A2A175D133_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function HBOnboardingFlow.HBOnboardingFlow_C.OnAllClientsReady_C2C889344301B8DBF8F046A2A175D133
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -110,6 +127,23 @@ void AHBOnboardingFlow_C::OnAllClientsReady_C2C889344301B8DBF8F046A2A175D133()
 	static auto fn = UObject::FindObject<UFunction>("Function HBOnboardingFlow.HBOnboardingFlow_C.OnAllClientsReady_C2C889344301B8DBF8F046A2A175D133");
 
 	AHBOnboardingFlow_C_OnAllClientsReady_C2C889344301B8DBF8F046A2A175D133_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnCanceled_856A325D44ECC73B857CE5B35313D7CD
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void AHBOnboardingFlow_C::OnCanceled_856A325D44ECC73B857CE5B35313D7CD()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function HBOnboardingFlow.HBOnboardingFlow_C.OnCanceled_856A325D44ECC73B857CE5B35313D7CD");
+
+	AHBOnboardingFlow_C_OnCanceled_856A325D44ECC73B857CE5B35313D7CD_Params params;
 
 	auto flags = fn->FunctionFlags;
 

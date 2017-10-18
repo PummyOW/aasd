@@ -24,22 +24,15 @@ struct APlayerPawn_Athena_C_UserConstructionScript_Params
 {
 };
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Applied.Commando.MakeItRain
-struct APlayerPawn_Athena_C_GameplayCue_Abilities_Applied_Commando_MakeItRain_Params
-{
-	TEnumAsByte<EGameplayCueEvent>                     EventType;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FGameplayCueParameters                      Parameters;                                               // (CPF_Parm)
-};
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
-struct APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
+struct APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params
 {
 	TEnumAsByte<EGameplayCueEvent>*                    EventType;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FGameplayCueParameters*                     Parameters;                                               // (CPF_Parm)
 };
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2
-struct APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
+struct APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params
 {
 	TEnumAsByte<EGameplayCueEvent>*                    EventType;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FGameplayCueParameters*                     Parameters;                                               // (CPF_Parm)
@@ -53,13 +46,6 @@ struct APlayerPawn_Athena_C_ReceivePossessed_Params
 
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Commando.Shockwave
 struct APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave_Params
-{
-	TEnumAsByte<EGameplayCueEvent>                     EventType;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FGameplayCueParameters                      Parameters;                                               // (CPF_Parm)
-};
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Applied.Commando.IncendiaryRounds
-struct APlayerPawn_Athena_C_GameplayCue_Abilities_Applied_Commando_IncendiaryRounds_Params
 {
 	TEnumAsByte<EGameplayCueEvent>                     EventType;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FGameplayCueParameters                      Parameters;                                               // (CPF_Parm)

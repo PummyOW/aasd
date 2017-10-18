@@ -226,6 +226,12 @@ struct UCommonActivatablePanel_PopPanel_Params
 {
 };
 
+// Function CommonUI.CommonActivatablePanel.OnInputModeChanged
+struct UCommonActivatablePanel_OnInputModeChanged_Params
+{
+	bool                                               bUsingGamepad;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function CommonUI.CommonActivatablePanel.OnDeactivated
 struct UCommonActivatablePanel_OnDeactivated_Params
 {

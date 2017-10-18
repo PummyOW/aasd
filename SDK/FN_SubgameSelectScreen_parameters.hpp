@@ -14,6 +14,16 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function SubgameSelectScreen.SubgameSelectScreen_C.InitializeShortDescriptions
+struct USubgameSelectScreen_C_InitializeShortDescriptions_Params
+{
+};
+
+// Function SubgameSelectScreen.SubgameSelectScreen_C.InitializeReedemButton
+struct USubgameSelectScreen_C_InitializeReedemButton_Params
+{
+};
+
 // Function SubgameSelectScreen.SubgameSelectScreen_C.IsBusyMatchmakingOrPartyTransitioning
 struct USubgameSelectScreen_C_IsBusyMatchmakingOrPartyTransitioning_Params
 {

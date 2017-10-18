@@ -53,7 +53,7 @@ namespace Util
         return 0;
     }
 
-    SDK::FVector operator+(const SDK::FVector& point1, const SDK::FVector& point2)
+   /* SDK::FVector operator+(const SDK::FVector& point1, const SDK::FVector& point2)
     {
         SDK::FVector vector{ 0, 0, 0 };
         vector.X = point1.X + point2.X;
@@ -112,14 +112,20 @@ namespace Util
 		vector.X = point1.X - point2.X;
 		vector.Y = point1.Y - point2.Y;
 		return vector;
-	}
+	}*/
 
 	namespace Engine
 	{
 		DWORD_PTR w2sAddress;
 		bool WorldToScreen(SDK::APlayerController* m_Player, SDK::FVector WorldPosition, SDK::FVector2D* ScreenPosition)
 		{
-			return reinterpret_cast<char(__fastcall*)(SDK::APlayerController*, SDK::FVector, SDK::FVector2D *, char)>(w2sAddress)(m_Player, WorldPosition, ScreenPosition, 0);
+			//return reinterpret_cast<char(__fastcall*)(SDK::APlayerController*, SDK::FVector, SDK::FVector2D *, char)>(w2sAddress)(m_Player, WorldPosition, ScreenPosition, 0);		
+			m_Player->ProjectWorldLocationToScreen(WorldPosition, true, ScreenPosition);
+
+			if (ScreenPosition->X == 0 && ScreenPosition->Y == 0)
+				return false;
+			else
+				return true;
 		}
 
 		DWORD_PTR boneAddress;

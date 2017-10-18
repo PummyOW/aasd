@@ -14,6 +14,11 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaRotator.AthenaRotator_C.NewFunction_1
+struct UAthenaRotator_C_NewFunction_1_Params
+{
+};
+
 // Function AthenaRotator.AthenaRotator_C.ChangeDirection
 struct UAthenaRotator_C_ChangeDirection_Params
 {
@@ -42,6 +47,17 @@ struct UAthenaRotator_C_Tick_Params
 {
 	struct FGeometry*                                  MyGeometry;                                               // (CPF_Parm, CPF_IsPlainOldData)
 	float*                                             InDeltaTime;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function AthenaRotator.AthenaRotator_C.PreConstruct
+struct UAthenaRotator_C_PreConstruct_Params
+{
+	bool*                                              IsDesignTime;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function AthenaRotator.AthenaRotator_C.OnClicked
+struct UAthenaRotator_C_OnClicked_Params
+{
 };
 
 // Function AthenaRotator.AthenaRotator_C.ExecuteUbergraph_AthenaRotator

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass CollectionHeader-PageProgress.CollectionHeader-PageProgress_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x62364a41);
 		return ptr;
 	}
 

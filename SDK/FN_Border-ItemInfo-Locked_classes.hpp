@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Border-ItemInfo-Locked.Border-ItemInfo-Locked_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x59eea23);
 		return ptr;
 	}
 

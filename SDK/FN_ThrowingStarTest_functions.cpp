@@ -21,7 +21,8 @@ namespace SDK
 
 bool UThrowingStarTest_C::OnExecute(class AActor** MyTarget, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThrowingStarTest.ThrowingStarTest_C.OnExecute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde57b0e5);
 
 	UThrowingStarTest_C_OnExecute_Params params;
 	params.MyTarget = MyTarget;

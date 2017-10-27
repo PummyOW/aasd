@@ -17,7 +17,8 @@ namespace SDK
 
 void ADuplicateResOutMesh_C::Make_internal_mids_and_append_external_and_intermal_mids_to_mid_array()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.Make internal mids and append external and intermal mids to mid array");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2abe75d5);
 
 	ADuplicateResOutMesh_C_Make_internal_mids_and_append_external_and_intermal_mids_to_mid_array_Params params;
 
@@ -34,7 +35,8 @@ void ADuplicateResOutMesh_C::Make_internal_mids_and_append_external_and_intermal
 
 void ADuplicateResOutMesh_C::Make_and_slave_internal_meshes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.Make and slave internal meshes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54fd827d);
 
 	ADuplicateResOutMesh_C_Make_and_slave_internal_meshes_Params params;
 
@@ -51,7 +53,8 @@ void ADuplicateResOutMesh_C::Make_and_slave_internal_meshes()
 
 void ADuplicateResOutMesh_C::Spawn__Light()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.Spawn  Light");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59a1c4fc);
 
 	ADuplicateResOutMesh_C_Spawn__Light_Params params;
 
@@ -68,7 +71,8 @@ void ADuplicateResOutMesh_C::Spawn__Light()
 
 void ADuplicateResOutMesh_C::Find_Bounds()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.Find Bounds");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x309522e5);
 
 	ADuplicateResOutMesh_C_Find_Bounds_Params params;
 
@@ -85,7 +89,8 @@ void ADuplicateResOutMesh_C::Find_Bounds()
 
 void ADuplicateResOutMesh_C::initializeExternalSkeletalMeshArray()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.initializeExternalSkeletalMeshArray");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14efcdcd);
 
 	ADuplicateResOutMesh_C_initializeExternalSkeletalMeshArray_Params params;
 
@@ -102,7 +107,8 @@ void ADuplicateResOutMesh_C::initializeExternalSkeletalMeshArray()
 
 void ADuplicateResOutMesh_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf35567f0);
 
 	ADuplicateResOutMesh_C_UserConstructionScript_Params params;
 
@@ -119,7 +125,8 @@ void ADuplicateResOutMesh_C::UserConstructionScript()
 
 void ADuplicateResOutMesh_C::CharacterSpawnInTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.CharacterSpawnInTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x610741d3);
 
 	ADuplicateResOutMesh_C_CharacterSpawnInTimeline__FinishedFunc_Params params;
 
@@ -136,7 +143,8 @@ void ADuplicateResOutMesh_C::CharacterSpawnInTimeline__FinishedFunc()
 
 void ADuplicateResOutMesh_C::CharacterSpawnInTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.CharacterSpawnInTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a95720e);
 
 	ADuplicateResOutMesh_C_CharacterSpawnInTimeline__UpdateFunc_Params params;
 
@@ -153,7 +161,8 @@ void ADuplicateResOutMesh_C::CharacterSpawnInTimeline__UpdateFunc()
 
 void ADuplicateResOutMesh_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33115797);
 
 	ADuplicateResOutMesh_C_ReceiveBeginPlay_Params params;
 
@@ -172,7 +181,8 @@ void ADuplicateResOutMesh_C::ReceiveBeginPlay()
 
 void ADuplicateResOutMesh_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c75343d);
 
 	ADuplicateResOutMesh_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -193,7 +203,8 @@ void ADuplicateResOutMesh_C::ReceiveTick(float* DeltaSeconds)
 
 void ADuplicateResOutMesh_C::UpdateExternalParameters(TArray<class UMaterialInstanceDynamic*> MID_Array, TArray<class USkeletalMeshComponent*> External_MEsh_Component_Array)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.UpdateExternalParameters");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5b43589);
 
 	ADuplicateResOutMesh_C_UpdateExternalParameters_Params params;
 	params.MID_Array = MID_Array;
@@ -214,7 +225,8 @@ void ADuplicateResOutMesh_C::UpdateExternalParameters(TArray<class UMaterialInst
 
 void ADuplicateResOutMesh_C::ExecuteUbergraph_DuplicateResOutMesh(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DuplicateResOutMesh.DuplicateResOutMesh_C.ExecuteUbergraph_DuplicateResOutMesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a3a4d7b);
 
 	ADuplicateResOutMesh_C_ExecuteUbergraph_DuplicateResOutMesh_Params params;
 	params.EntryPoint = EntryPoint;

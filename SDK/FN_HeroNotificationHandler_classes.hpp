@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass HeroNotificationHandler.HeroNotificationHandler_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x77c2d381);
 		return ptr;
 	}
 

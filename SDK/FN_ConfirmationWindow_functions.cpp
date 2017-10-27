@@ -17,7 +17,8 @@ namespace SDK
 
 void UConfirmationWindow_C::TriggerCameraMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.TriggerCameraMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4d0d7e3);
 
 	UConfirmationWindow_C_TriggerCameraMode_Params params;
 
@@ -34,7 +35,8 @@ void UConfirmationWindow_C::TriggerCameraMode()
 
 void UConfirmationWindow_C::TriggerCursorMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.TriggerCursorMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74aea79c);
 
 	UConfirmationWindow_C_TriggerCursorMode_Params params;
 
@@ -51,7 +53,8 @@ void UConfirmationWindow_C::TriggerCursorMode()
 
 void UConfirmationWindow_C::CloseConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.CloseConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x819d19dc);
 
 	UConfirmationWindow_C_CloseConfirmation_Params params;
 
@@ -68,7 +71,8 @@ void UConfirmationWindow_C::CloseConfirmation()
 
 void UConfirmationWindow_C::CenterFirstButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.CenterFirstButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0115624);
 
 	UConfirmationWindow_C_CenterFirstButton_Params params;
 
@@ -85,7 +89,8 @@ void UConfirmationWindow_C::CenterFirstButton()
 
 void UConfirmationWindow_C::SetupAdditionalContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.SetupAdditionalContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64cce27e);
 
 	UConfirmationWindow_C_SetupAdditionalContent_Params params;
 
@@ -102,7 +107,8 @@ void UConfirmationWindow_C::SetupAdditionalContent()
 
 void UConfirmationWindow_C::SetupLeftAdditionalContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.SetupLeftAdditionalContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d89b417);
 
 	UConfirmationWindow_C_SetupLeftAdditionalContent_Params params;
 
@@ -119,7 +125,8 @@ void UConfirmationWindow_C::SetupLeftAdditionalContent()
 
 void UConfirmationWindow_C::SetupNonInteractiveContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.SetupNonInteractiveContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b0ca316);
 
 	UConfirmationWindow_C_SetupNonInteractiveContent_Params params;
 
@@ -136,7 +143,8 @@ void UConfirmationWindow_C::SetupNonInteractiveContent()
 
 void UConfirmationWindow_C::ClickButtonIfBot()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.ClickButtonIfBot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46ee0545);
 
 	UConfirmationWindow_C_ClickButtonIfBot_Params params;
 
@@ -155,7 +163,8 @@ void UConfirmationWindow_C::ClickButtonIfBot()
 
 void UConfirmationWindow_C::OnWaitForExternalLatentAction(const struct FFortDialogExternalLatentActionHandle& LatentActionHandle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.OnWaitForExternalLatentAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd00fc83f);
 
 	UConfirmationWindow_C_OnWaitForExternalLatentAction_Params params;
 	params.LatentActionHandle = LatentActionHandle;
@@ -173,7 +182,8 @@ void UConfirmationWindow_C::OnWaitForExternalLatentAction(const struct FFortDial
 
 void UConfirmationWindow_C::StopWaitingForLatentAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.StopWaitingForLatentAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79ec0f5f);
 
 	UConfirmationWindow_C_StopWaitingForLatentAction_Params params;
 
@@ -192,7 +202,8 @@ void UConfirmationWindow_C::StopWaitingForLatentAction()
 
 void UConfirmationWindow_C::GetLatentActionWaitHandle(struct FFortDialogExternalLatentActionHandle* LatentActionHandle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.GetLatentActionWaitHandle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa41f318a);
 
 	UConfirmationWindow_C_GetLatentActionWaitHandle_Params params;
 
@@ -214,7 +225,8 @@ void UConfirmationWindow_C::GetLatentActionWaitHandle(struct FFortDialogExternal
 
 void UConfirmationWindow_C::Set_Hover_Description(class UCommonButton* Button_to_Hover)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.Set Hover Description");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2816ad3);
 
 	UConfirmationWindow_C_Set_Hover_Description_Params params;
 	params.Button_to_Hover = Button_to_Hover;
@@ -232,7 +244,8 @@ void UConfirmationWindow_C::Set_Hover_Description(class UCommonButton* Button_to
 
 void UConfirmationWindow_C::SetupLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.SetupLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x258a33b3);
 
 	UConfirmationWindow_C_SetupLeft_Params params;
 
@@ -249,7 +262,8 @@ void UConfirmationWindow_C::SetupLeft()
 
 void UConfirmationWindow_C::SetupTitleAndDescription()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.SetupTitleAndDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87d159c9);
 
 	UConfirmationWindow_C_SetupTitleAndDescription_Params params;
 
@@ -266,7 +280,8 @@ void UConfirmationWindow_C::SetupTitleAndDescription()
 
 void UConfirmationWindow_C::SetupMainIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.SetupMainIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7bca9538);
 
 	UConfirmationWindow_C_SetupMainIcon_Params params;
 
@@ -283,7 +298,8 @@ void UConfirmationWindow_C::SetupMainIcon()
 
 void UConfirmationWindow_C::Deinitialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.Deinitialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a15d1a6);
 
 	UConfirmationWindow_C_Deinitialize_Params params;
 
@@ -300,7 +316,8 @@ void UConfirmationWindow_C::Deinitialize()
 
 void UConfirmationWindow_C::KillCurrentConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.KillCurrentConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7321b247);
 
 	UConfirmationWindow_C_KillCurrentConfirmation_Params params;
 
@@ -320,7 +337,8 @@ void UConfirmationWindow_C::KillCurrentConfirmation()
 
 void UConfirmationWindow_C::GetResultName(class UIconTextButton_C* ConfirmButton, struct FName* ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.GetResultName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3e9dcc1);
 
 	UConfirmationWindow_C_GetResultName_Params params;
 	params.ConfirmButton = ConfirmButton;
@@ -345,7 +363,8 @@ void UConfirmationWindow_C::GetResultName(class UIconTextButton_C* ConfirmButton
 
 struct FDataTableRowHandle UConfirmationWindow_C::GetInputAction(const struct FName& RowName, bool UseInputAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.GetInputAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd855195f);
 
 	UConfirmationWindow_C_GetInputAction_Params params;
 	params.RowName = RowName;
@@ -369,7 +388,8 @@ struct FDataTableRowHandle UConfirmationWindow_C::GetInputAction(const struct FN
 
 void UConfirmationWindow_C::AddSingleConfirmButton(const struct FConfirmationDialogAction& ConfirmDialogAction, bool UseInputAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.AddSingleConfirmButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8416d16);
 
 	UConfirmationWindow_C_AddSingleConfirmButton_Params params;
 	params.ConfirmDialogAction = ConfirmDialogAction;
@@ -390,7 +410,8 @@ void UConfirmationWindow_C::AddSingleConfirmButton(const struct FConfirmationDia
 
 bool UConfirmationWindow_C::HasAnyConfirmAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.HasAnyConfirmAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1a0871f);
 
 	UConfirmationWindow_C_HasAnyConfirmAction_Params params;
 
@@ -411,7 +432,8 @@ bool UConfirmationWindow_C::HasAnyConfirmAction()
 
 void UConfirmationWindow_C::ConfirmActionClicked(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.ConfirmActionClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cb070c);
 
 	UConfirmationWindow_C_ConfirmActionClicked_Params params;
 	params.Button = Button;
@@ -431,7 +453,8 @@ void UConfirmationWindow_C::ConfirmActionClicked(class UCommonButton* Button)
 
 bool UConfirmationWindow_C::IsSimpleConfirmAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.IsSimpleConfirmAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4ad1c03);
 
 	UConfirmationWindow_C_IsSimpleConfirmAction_Params params;
 
@@ -452,7 +475,8 @@ bool UConfirmationWindow_C::IsSimpleConfirmAction()
 
 void UConfirmationWindow_C::DeclineActionClicked(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.DeclineActionClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdafee47a);
 
 	UConfirmationWindow_C_DeclineActionClicked_Params params;
 	params.Button = Button;
@@ -470,7 +494,8 @@ void UConfirmationWindow_C::DeclineActionClicked(class UCommonButton* Button)
 
 void UConfirmationWindow_C::AddDeclineButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.AddDeclineButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x910dd014);
 
 	UConfirmationWindow_C_AddDeclineButton_Params params;
 
@@ -487,7 +512,8 @@ void UConfirmationWindow_C::AddDeclineButton()
 
 void UConfirmationWindow_C::AddConfirmButtons()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.AddConfirmButtons");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa8547d91);
 
 	UConfirmationWindow_C_AddConfirmButtons_Params params;
 
@@ -504,7 +530,8 @@ void UConfirmationWindow_C::AddConfirmButtons()
 
 void UConfirmationWindow_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba00448f);
 
 	UConfirmationWindow_C_Initialize_Params params;
 
@@ -523,7 +550,8 @@ void UConfirmationWindow_C::Initialize()
 
 void UConfirmationWindow_C::SetDescription(const struct FFortDialogDescription_NUI& NewDescription)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.SetDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x429a66ab);
 
 	UConfirmationWindow_C_SetDescription_Params params;
 	params.NewDescription = NewDescription;
@@ -541,7 +569,8 @@ void UConfirmationWindow_C::SetDescription(const struct FFortDialogDescription_N
 
 void UConfirmationWindow_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a9dd448);
 
 	UConfirmationWindow_C_Construct_Params params;
 
@@ -558,7 +587,8 @@ void UConfirmationWindow_C::Construct()
 
 void UConfirmationWindow_C::HandleIntroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.HandleIntroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96ce64c9);
 
 	UConfirmationWindow_C_HandleIntroEnded_Params params;
 
@@ -575,7 +605,8 @@ void UConfirmationWindow_C::HandleIntroEnded()
 
 void UConfirmationWindow_C::HandleOutroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.HandleOutroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d5be378);
 
 	UConfirmationWindow_C_HandleOutroEnded_Params params;
 
@@ -592,7 +623,8 @@ void UConfirmationWindow_C::HandleOutroEnded()
 
 void UConfirmationWindow_C::OnBeginIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.OnBeginIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11432921);
 
 	UConfirmationWindow_C_OnBeginIntro_Params params;
 
@@ -609,7 +641,8 @@ void UConfirmationWindow_C::OnBeginIntro()
 
 void UConfirmationWindow_C::OnBeginOutro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.OnBeginOutro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89647916);
 
 	UConfirmationWindow_C_OnBeginOutro_Params params;
 
@@ -628,7 +661,8 @@ void UConfirmationWindow_C::OnBeginOutro()
 
 void UConfirmationWindow_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2486bcd7);
 
 	UConfirmationWindow_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -646,7 +680,8 @@ void UConfirmationWindow_C::PreConstruct(bool* IsDesignTime)
 
 void UConfirmationWindow_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe20f0a37);
 
 	UConfirmationWindow_C_OnActivated_Params params;
 
@@ -663,7 +698,8 @@ void UConfirmationWindow_C::OnActivated()
 
 void UConfirmationWindow_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e526e67);
 
 	UConfirmationWindow_C_Destruct_Params params;
 
@@ -682,7 +718,8 @@ void UConfirmationWindow_C::Destruct()
 
 void UConfirmationWindow_C::ExecuteUbergraph_ConfirmationWindow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConfirmationWindow.ConfirmationWindow_C.ExecuteUbergraph_ConfirmationWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeddea0a6);
 
 	UConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow_Params params;
 	params.EntryPoint = EntryPoint;

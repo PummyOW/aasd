@@ -22,7 +22,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd189d5);
 		return ptr;
 	}
 

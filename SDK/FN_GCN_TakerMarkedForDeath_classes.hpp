@@ -29,7 +29,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8588a35);
 		return ptr;
 	}
 

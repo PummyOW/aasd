@@ -34,7 +34,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass PartyInfo.PartyInfo_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9804c6bd);
 		return ptr;
 	}
 

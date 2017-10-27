@@ -23,7 +23,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BuildWatermark.BuildWatermark_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf13370dd);
 		return ptr;
 	}
 

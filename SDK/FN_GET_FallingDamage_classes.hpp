@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GET_FallingDamage.GET_FallingDamage_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc85d95e9);
 		return ptr;
 	}
 

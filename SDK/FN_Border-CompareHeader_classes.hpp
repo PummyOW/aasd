@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Border-CompareHeader.Border-CompareHeader_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9fda1a8f);
 		return ptr;
 	}
 

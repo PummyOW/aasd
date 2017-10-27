@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass AthenaMinimapContainer.AthenaMinimapContainer_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x554de93f);
 		return ptr;
 	}
 

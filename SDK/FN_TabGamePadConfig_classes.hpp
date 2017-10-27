@@ -30,7 +30,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass TabGamePadConfig.TabGamePadConfig_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x899d46e5);
 		return ptr;
 	}
 

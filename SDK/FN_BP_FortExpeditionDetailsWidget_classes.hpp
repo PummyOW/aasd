@@ -44,7 +44,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55d9b68b);
 		return ptr;
 	}
 

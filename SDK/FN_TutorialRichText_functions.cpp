@@ -17,7 +17,8 @@ namespace SDK
 
 void UTutorialRichText_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialRichText.TutorialRichText_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2246dec8);
 
 	UTutorialRichText_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UTutorialRichText_C::Construct()
 
 void UTutorialRichText_C::ExecuteUbergraph_TutorialRichText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialRichText.TutorialRichText_C.ExecuteUbergraph_TutorialRichText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26c7d8a0);
 
 	UTutorialRichText_C_ExecuteUbergraph_TutorialRichText_Params params;
 	params.EntryPoint = EntryPoint;

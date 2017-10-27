@@ -27,7 +27,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass MicIndicator.MicIndicator_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8b961d5);
 		return ptr;
 	}
 

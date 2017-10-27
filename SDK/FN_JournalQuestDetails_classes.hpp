@@ -44,7 +44,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass JournalQuestDetails.JournalQuestDetails_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x91297639);
 		return ptr;
 	}
 
@@ -56,7 +57,7 @@ public:
 	void IsQuestAudioPlaying(bool* IsQuestAudioPlaying);
 	void StartConversation(class UFortConversation* Conversation, class UFortQuestItem* QuestItem, bool IsOutro_);
 	void StopConversation();
-	void AbandonQuest(bool* questAbandoned_);
+	void AbandonQuest(class UFortQuestItem* QuestToAbandon, bool* questAbandoned_);
 	void UpdatePanelInfo();
 	void UpdatePlayButtonState();
 	void UpdateButtonStates();

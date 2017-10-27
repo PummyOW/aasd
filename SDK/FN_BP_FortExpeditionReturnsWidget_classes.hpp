@@ -29,7 +29,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd5439695);
 		return ptr;
 	}
 
@@ -39,9 +40,9 @@ public:
 	void Set_Expedition_Return_Progress(class UFortExpeditionItem* Item);
 	void Set_Expedition_Return_Time(class UFortExpeditionItem* Item);
 	void Refresh_In_Progress_Widgets(class UFortExpeditionItem* Item);
-	void SetData(class UFortExpeditionItem** InItem);
 	void OnExpeditionInProgressUpdated();
 	void Construct();
+	void SetData(class UFortExpeditionItem** InItem);
 	void PreConstruct(bool* IsDesignTime);
 	void ExecuteUbergraph_BP_FortExpeditionReturnsWidget(int EntryPoint);
 	void OnExpeditionCompleted__DelegateSignature(class UFortExpeditionItem* Item);

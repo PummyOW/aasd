@@ -12,6 +12,27 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.HandleRewardsIgnored
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFrontEndRewards_Widget_C* RewardsWidget                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void ACheckFrontEndRewardsAction_C::HandleRewardsIgnored(class UFrontEndRewards_Widget_C* RewardsWidget)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ed38c07);
+
+	ACheckFrontEndRewardsAction_C_HandleRewardsIgnored_Params params;
+	params.RewardsWidget = RewardsWidget;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.CanShowFrontendRewards
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
 // Parameters:
@@ -19,7 +40,8 @@ namespace SDK
 
 bool ACheckFrontEndRewardsAction_C::CanShowFrontendRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.CanShowFrontendRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26c854d4);
 
 	ACheckFrontEndRewardsAction_C_CanShowFrontendRewards_Params params;
 
@@ -40,7 +62,8 @@ bool ACheckFrontEndRewardsAction_C::CanShowFrontendRewards()
 
 void ACheckFrontEndRewardsAction_C::Is_FrontEndRewards_Running(bool* bRunning)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.Is FrontEndRewards Running");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcbdff4f2);
 
 	ACheckFrontEndRewardsAction_C_Is_FrontEndRewards_Running_Params params;
 
@@ -60,7 +83,8 @@ void ACheckFrontEndRewardsAction_C::Is_FrontEndRewards_Running(bool* bRunning)
 
 void ACheckFrontEndRewardsAction_C::PopulateMissionAlertRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateMissionAlertRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb92d933);
 
 	ACheckFrontEndRewardsAction_C_PopulateMissionAlertRewards_Params params;
 
@@ -79,7 +103,8 @@ void ACheckFrontEndRewardsAction_C::PopulateMissionAlertRewards()
 
 void ACheckFrontEndRewardsAction_C::HandleRewardsClaimError(class UFrontEndRewards_Widget_C* RewardsWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.HandleRewardsClaimError");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0d53cd5);
 
 	ACheckFrontEndRewardsAction_C_HandleRewardsClaimError_Params params;
 	params.RewardsWidget = RewardsWidget;
@@ -97,7 +122,8 @@ void ACheckFrontEndRewardsAction_C::HandleRewardsClaimError(class UFrontEndRewar
 
 void ACheckFrontEndRewardsAction_C::Clear()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.Clear");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60897f5e);
 
 	ACheckFrontEndRewardsAction_C_Clear_Params params;
 
@@ -116,7 +142,8 @@ void ACheckFrontEndRewardsAction_C::Clear()
 
 void ACheckFrontEndRewardsAction_C::HandleRewardsClaimed(class UFrontEndRewards_Widget_C* RewardsWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.HandleRewardsClaimed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd9653e72);
 
 	ACheckFrontEndRewardsAction_C_HandleRewardsClaimed_Params params;
 	params.RewardsWidget = RewardsWidget;
@@ -134,7 +161,8 @@ void ACheckFrontEndRewardsAction_C::HandleRewardsClaimed(class UFrontEndRewards_
 
 void ACheckFrontEndRewardsAction_C::PopulateCollectionBookRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateCollectionBookRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65c2fcd2);
 
 	ACheckFrontEndRewardsAction_C_PopulateCollectionBookRewards_Params params;
 
@@ -151,7 +179,8 @@ void ACheckFrontEndRewardsAction_C::PopulateCollectionBookRewards()
 
 void ACheckFrontEndRewardsAction_C::PopulateRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd54157);
 
 	ACheckFrontEndRewardsAction_C_PopulateRewards_Params params;
 
@@ -168,7 +197,8 @@ void ACheckFrontEndRewardsAction_C::PopulateRewards()
 
 void ACheckFrontEndRewardsAction_C::OpenFrontEndRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.OpenFrontEndRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a927d25);
 
 	ACheckFrontEndRewardsAction_C_OpenFrontEndRewards_Params params;
 
@@ -187,7 +217,8 @@ void ACheckFrontEndRewardsAction_C::OpenFrontEndRewards()
 
 void ACheckFrontEndRewardsAction_C::PopulateUnseenQuests(EFortQuestType QuestType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateUnseenQuests");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa534b268);
 
 	ACheckFrontEndRewardsAction_C_PopulateUnseenQuests_Params params;
 	params.QuestType = QuestType;
@@ -207,7 +238,8 @@ void ACheckFrontEndRewardsAction_C::PopulateUnseenQuests(EFortQuestType QuestTyp
 
 void ACheckFrontEndRewardsAction_C::GetCompletedQuests(TArray<class UFortQuestItem*>* Completed_Quests)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.GetCompletedQuests");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3aacf151);
 
 	ACheckFrontEndRewardsAction_C_GetCompletedQuests_Params params;
 
@@ -227,7 +259,8 @@ void ACheckFrontEndRewardsAction_C::GetCompletedQuests(TArray<class UFortQuestIt
 
 void ACheckFrontEndRewardsAction_C::PopulateNewQuests()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateNewQuests");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46c7be08);
 
 	ACheckFrontEndRewardsAction_C_PopulateNewQuests_Params params;
 
@@ -244,7 +277,8 @@ void ACheckFrontEndRewardsAction_C::PopulateNewQuests()
 
 void ACheckFrontEndRewardsAction_C::PopulateQuestRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateQuestRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15c09067);
 
 	ACheckFrontEndRewardsAction_C_PopulateQuestRewards_Params params;
 
@@ -261,7 +295,8 @@ void ACheckFrontEndRewardsAction_C::PopulateQuestRewards()
 
 void ACheckFrontEndRewardsAction_C::PopulateMissionRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.PopulateMissionRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49dca2e7);
 
 	ACheckFrontEndRewardsAction_C_PopulateMissionRewards_Params params;
 
@@ -278,7 +313,8 @@ void ACheckFrontEndRewardsAction_C::PopulateMissionRewards()
 
 void ACheckFrontEndRewardsAction_C::CompleteRewardsAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.CompleteRewardsAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c815710);
 
 	ACheckFrontEndRewardsAction_C_CompleteRewardsAction_Params params;
 
@@ -295,7 +331,8 @@ void ACheckFrontEndRewardsAction_C::CompleteRewardsAction()
 
 void ACheckFrontEndRewardsAction_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb8eecb0);
 
 	ACheckFrontEndRewardsAction_C_UserConstructionScript_Params params;
 
@@ -314,7 +351,8 @@ void ACheckFrontEndRewardsAction_C::UserConstructionScript()
 
 void ACheckFrontEndRewardsAction_C::Execute(struct FFortScriptedActionParams* Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.Execute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27494b80);
 
 	ACheckFrontEndRewardsAction_C_Execute_Params params;
 	params.Params = Params;
@@ -334,7 +372,8 @@ void ACheckFrontEndRewardsAction_C::Execute(struct FFortScriptedActionParams* Pa
 
 void ACheckFrontEndRewardsAction_C::ExecuteUbergraph_CheckFrontEndRewardsAction(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.ExecuteUbergraph_CheckFrontEndRewardsAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ef2517d);
 
 	ACheckFrontEndRewardsAction_C_ExecuteUbergraph_CheckFrontEndRewardsAction_Params params;
 	params.EntryPoint = EntryPoint;

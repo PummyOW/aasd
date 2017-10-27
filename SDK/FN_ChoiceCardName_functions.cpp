@@ -20,7 +20,8 @@ namespace SDK
 
 void UChoiceCardName_C::UpdateText(const struct FText& DisplayText, EFortRarity Rarity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChoiceCardName.ChoiceCardName_C.UpdateText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9116b88d);
 
 	UChoiceCardName_C_UpdateText_Params params;
 	params.DisplayText = DisplayText;

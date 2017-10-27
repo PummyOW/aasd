@@ -22,7 +22,8 @@ namespace SDK
 
 void UItemTransformConfirmationModal_C::UpdateTransformInfo(class UFortItem* TransformKey, int SacrificePoints, int CurrentTier, TArray<class UFortItem*>* SacrificeItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.UpdateTransformInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5cf52e02);
 
 	UItemTransformConfirmationModal_C_UpdateTransformInfo_Params params;
 	params.TransformKey = TransformKey;
@@ -47,7 +48,8 @@ void UItemTransformConfirmationModal_C::UpdateTransformInfo(class UFortItem* Tra
 
 void UItemTransformConfirmationModal_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x157e93fd);
 
 	UItemTransformConfirmationModal_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -67,7 +69,8 @@ void UItemTransformConfirmationModal_C::BndEvt__CancelButton_K2Node_ComponentBou
 
 void UItemTransformConfirmationModal_C::BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa66a6c68);
 
 	UItemTransformConfirmationModal_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -85,7 +88,8 @@ void UItemTransformConfirmationModal_C::BndEvt__ConfirmButton_K2Node_ComponentBo
 
 void UItemTransformConfirmationModal_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb50ebb17);
 
 	UItemTransformConfirmationModal_C_OnActivated_Params params;
 
@@ -104,7 +108,8 @@ void UItemTransformConfirmationModal_C::OnActivated()
 
 void UItemTransformConfirmationModal_C::ExecuteUbergraph_ItemTransformConfirmationModal(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.ExecuteUbergraph_ItemTransformConfirmationModal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5f112e2);
 
 	UItemTransformConfirmationModal_C_ExecuteUbergraph_ItemTransformConfirmationModal_Params params;
 	params.EntryPoint = EntryPoint;
@@ -122,7 +127,8 @@ void UItemTransformConfirmationModal_C::ExecuteUbergraph_ItemTransformConfirmati
 
 void UItemTransformConfirmationModal_C::OnConfirm__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.OnConfirm__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc26048b9);
 
 	UItemTransformConfirmationModal_C_OnConfirm__DelegateSignature_Params params;
 
@@ -139,7 +145,8 @@ void UItemTransformConfirmationModal_C::OnConfirm__DelegateSignature()
 
 void UItemTransformConfirmationModal_C::OnCancel__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformConfirmationModal.ItemTransformConfirmationModal_C.OnCancel__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe56e1583);
 
 	UItemTransformConfirmationModal_C_OnCancel__DelegateSignature_Params params;
 

@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function B_Ranged_Generic.B_Ranged_Generic_C.ActivateOrDeactivateWindParticle
+struct AB_Ranged_Generic_C_ActivateOrDeactivateWindParticle_Params
+{
+	bool                                               bNewActive;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function B_Ranged_Generic.B_Ranged_Generic_C.DeactivateMuzzleFX
 struct AB_Ranged_Generic_C_DeactivateMuzzleFX_Params
 {
@@ -59,7 +65,7 @@ struct AB_Ranged_Generic_C_Muzzle_Play_Reload_FX_Params
 // Function B_Ranged_Generic.B_Ranged_Generic_C.Muzzle Flash FX
 struct AB_Ranged_Generic_C_Muzzle_Flash_FX_Params
 {
-	bool                                               Condition;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               Persistent_Fire;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.SetWpnRarity
@@ -77,13 +83,13 @@ struct AB_Ranged_Generic_C_UserConstructionScript_Params
 {
 };
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__FinishedFunc
-struct AB_Ranged_Generic_C_Timeline_0__FinishedFunc_Params
+// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__FinishedFunc
+struct AB_Ranged_Generic_C_AnimateScopePostProcess__FinishedFunc_Params
 {
 };
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__UpdateFunc
-struct AB_Ranged_Generic_C_Timeline_0__UpdateFunc_Params
+// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__UpdateFunc
+struct AB_Ranged_Generic_C_AnimateScopePostProcess__UpdateFunc_Params
 {
 };
 
@@ -127,6 +133,22 @@ struct AB_Ranged_Generic_C_OnStopWeaponFireFX_Params
 struct AB_Ranged_Generic_C_OnPlayReloadFX_Params
 {
 	TEnumAsByte<EFortReloadFXState>*                   ReloadStage;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.OnSetTargeting
+struct AB_Ranged_Generic_C_OnSetTargeting_Params
+{
+	bool*                                              bNewIsTargeting;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.K2_OnUnEquip
+struct AB_Ranged_Generic_C_K2_OnUnEquip_Params
+{
+};
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.InitializeScopeVariables
+struct AB_Ranged_Generic_C_InitializeScopeVariables_Params
+{
 };
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.Update Enemy Custom Depths
@@ -178,19 +200,8 @@ struct AB_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep_Params
 	int                                                TargetLimit;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.InitializeScopeVariables
-struct AB_Ranged_Generic_C_InitializeScopeVariables_Params
-{
-};
-
-// Function B_Ranged_Generic.B_Ranged_Generic_C.OnSetTargeting
-struct AB_Ranged_Generic_C_OnSetTargeting_Params
-{
-	bool*                                              bNewIsTargeting;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function B_Ranged_Generic.B_Ranged_Generic_C.K2_OnUnEquip
-struct AB_Ranged_Generic_C_K2_OnUnEquip_Params
+// Function B_Ranged_Generic.B_Ranged_Generic_C.ReceiveBeginPlay
+struct AB_Ranged_Generic_C_ReceiveBeginPlay_Params
 {
 };
 

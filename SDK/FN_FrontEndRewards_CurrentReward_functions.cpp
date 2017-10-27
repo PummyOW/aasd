@@ -17,7 +17,8 @@ namespace SDK
 
 void UFrontEndRewards_CurrentReward_C::Reset_Canvas_Panel_Slot_Alignment_and_Anchors()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Reset Canvas Panel Slot Alignment and Anchors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1560508);
 
 	UFrontEndRewards_CurrentReward_C_Reset_Canvas_Panel_Slot_Alignment_and_Anchors_Params params;
 
@@ -34,7 +35,8 @@ void UFrontEndRewards_CurrentReward_C::Reset_Canvas_Panel_Slot_Alignment_and_Anc
 
 void UFrontEndRewards_CurrentReward_C::Reset_Reward_Icon_Translation_and_Scale()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Reset Reward Icon Translation and Scale");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b09598);
 
 	UFrontEndRewards_CurrentReward_C_Reset_Reward_Icon_Translation_and_Scale_Params params;
 
@@ -51,7 +53,8 @@ void UFrontEndRewards_CurrentReward_C::Reset_Reward_Icon_Translation_and_Scale()
 
 void UFrontEndRewards_CurrentReward_C::Play_Open_Animation_Sound()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Play Open Animation Sound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69d87790);
 
 	UFrontEndRewards_CurrentReward_C_Play_Open_Animation_Sound_Params params;
 
@@ -68,7 +71,8 @@ void UFrontEndRewards_CurrentReward_C::Play_Open_Animation_Sound()
 
 void UFrontEndRewards_CurrentReward_C::Play_Pop_Animation_Sound()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Play Pop Animation Sound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7b47123);
 
 	UFrontEndRewards_CurrentReward_C_Play_Pop_Animation_Sound_Params params;
 
@@ -85,7 +89,8 @@ void UFrontEndRewards_CurrentReward_C::Play_Pop_Animation_Sound()
 
 void UFrontEndRewards_CurrentReward_C::Play_Drop_Animation_Sound()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Play Drop Animation Sound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f180d3f);
 
 	UFrontEndRewards_CurrentReward_C_Play_Drop_Animation_Sound_Params params;
 
@@ -102,7 +107,8 @@ void UFrontEndRewards_CurrentReward_C::Play_Drop_Animation_Sound()
 
 void UFrontEndRewards_CurrentReward_C::SkipPopAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.SkipPopAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd011bff);
 
 	UFrontEndRewards_CurrentReward_C_SkipPopAnimation_Params params;
 
@@ -119,7 +125,8 @@ void UFrontEndRewards_CurrentReward_C::SkipPopAnimation()
 
 void UFrontEndRewards_CurrentReward_C::StopBounceAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.StopBounceAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5166133);
 
 	UFrontEndRewards_CurrentReward_C_StopBounceAnimation_Params params;
 
@@ -136,7 +143,8 @@ void UFrontEndRewards_CurrentReward_C::StopBounceAnimation()
 
 void UFrontEndRewards_CurrentReward_C::PlayFadeOutAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayFadeOutAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1dab0c1);
 
 	UFrontEndRewards_CurrentReward_C_PlayFadeOutAnimation_Params params;
 
@@ -153,7 +161,8 @@ void UFrontEndRewards_CurrentReward_C::PlayFadeOutAnimation()
 
 void UFrontEndRewards_CurrentReward_C::SkipOpenAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.SkipOpenAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x330a9cc4);
 
 	UFrontEndRewards_CurrentReward_C_SkipOpenAnimation_Params params;
 
@@ -170,7 +179,8 @@ void UFrontEndRewards_CurrentReward_C::SkipOpenAnimation()
 
 void UFrontEndRewards_CurrentReward_C::updateFade()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.updateFade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecb1e1d2);
 
 	UFrontEndRewards_CurrentReward_C_updateFade_Params params;
 
@@ -187,7 +197,8 @@ void UFrontEndRewards_CurrentReward_C::updateFade()
 
 void UFrontEndRewards_CurrentReward_C::HandleOpenAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.HandleOpenAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6808fdaf);
 
 	UFrontEndRewards_CurrentReward_C_HandleOpenAnimationFinished_Params params;
 
@@ -204,7 +215,8 @@ void UFrontEndRewards_CurrentReward_C::HandleOpenAnimationFinished()
 
 void UFrontEndRewards_CurrentReward_C::HandleDropAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.HandleDropAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ed0db6);
 
 	UFrontEndRewards_CurrentReward_C_HandleDropAnimationFinished_Params params;
 
@@ -221,7 +233,8 @@ void UFrontEndRewards_CurrentReward_C::HandleDropAnimationFinished()
 
 void UFrontEndRewards_CurrentReward_C::HandlePopAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.HandlePopAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe37a70a);
 
 	UFrontEndRewards_CurrentReward_C_HandlePopAnimationFinished_Params params;
 
@@ -238,7 +251,8 @@ void UFrontEndRewards_CurrentReward_C::HandlePopAnimationFinished()
 
 void UFrontEndRewards_CurrentReward_C::PlayOpenAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayOpenAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2a58449);
 
 	UFrontEndRewards_CurrentReward_C_PlayOpenAnimation_Params params;
 
@@ -255,7 +269,8 @@ void UFrontEndRewards_CurrentReward_C::PlayOpenAnimation()
 
 void UFrontEndRewards_CurrentReward_C::PlayPopAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayPopAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x278898c8);
 
 	UFrontEndRewards_CurrentReward_C_PlayPopAnimation_Params params;
 
@@ -272,7 +287,8 @@ void UFrontEndRewards_CurrentReward_C::PlayPopAnimation()
 
 void UFrontEndRewards_CurrentReward_C::PlayDropAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayDropAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a74e9c4);
 
 	UFrontEndRewards_CurrentReward_C_PlayDropAnimation_Params params;
 
@@ -289,7 +305,8 @@ void UFrontEndRewards_CurrentReward_C::PlayDropAnimation()
 
 void UFrontEndRewards_CurrentReward_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6669a18a);
 
 	UFrontEndRewards_CurrentReward_C_Construct_Params params;
 
@@ -306,7 +323,8 @@ void UFrontEndRewards_CurrentReward_C::Construct()
 
 void UFrontEndRewards_CurrentReward_C::fadeIconToWhite()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.fadeIconToWhite");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x108c442c);
 
 	UFrontEndRewards_CurrentReward_C_fadeIconToWhite_Params params;
 
@@ -325,7 +343,8 @@ void UFrontEndRewards_CurrentReward_C::fadeIconToWhite()
 
 void UFrontEndRewards_CurrentReward_C::ExecuteUbergraph_FrontEndRewards_CurrentReward(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.ExecuteUbergraph_FrontEndRewards_CurrentReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24545816);
 
 	UFrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward_Params params;
 	params.EntryPoint = EntryPoint;
@@ -343,7 +362,8 @@ void UFrontEndRewards_CurrentReward_C::ExecuteUbergraph_FrontEndRewards_CurrentR
 
 void UFrontEndRewards_CurrentReward_C::OnOpenAnimationFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnOpenAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b1220c7);
 
 	UFrontEndRewards_CurrentReward_C_OnOpenAnimationFinished__DelegateSignature_Params params;
 
@@ -360,7 +380,8 @@ void UFrontEndRewards_CurrentReward_C::OnOpenAnimationFinished__DelegateSignatur
 
 void UFrontEndRewards_CurrentReward_C::OnOpenAnimationStarted__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnOpenAnimationStarted__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ae4687c);
 
 	UFrontEndRewards_CurrentReward_C_OnOpenAnimationStarted__DelegateSignature_Params params;
 
@@ -377,7 +398,8 @@ void UFrontEndRewards_CurrentReward_C::OnOpenAnimationStarted__DelegateSignature
 
 void UFrontEndRewards_CurrentReward_C::OnPopAnimationFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnPopAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcaf082ba);
 
 	UFrontEndRewards_CurrentReward_C_OnPopAnimationFinished__DelegateSignature_Params params;
 
@@ -394,7 +416,8 @@ void UFrontEndRewards_CurrentReward_C::OnPopAnimationFinished__DelegateSignature
 
 void UFrontEndRewards_CurrentReward_C::OnDropAnimationFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.OnDropAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba878c98);
 
 	UFrontEndRewards_CurrentReward_C_OnDropAnimationFinished__DelegateSignature_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UTooltipStatWidget_C::Init()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWidget.TooltipStatWidget_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d8f2c51);
 
 	UTooltipStatWidget_C_Init_Params params;
 
@@ -34,7 +35,8 @@ void UTooltipStatWidget_C::Init()
 
 void UTooltipStatWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWidget.TooltipStatWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ce7a5fe);
 
 	UTooltipStatWidget_C_Construct_Params params;
 
@@ -51,7 +53,8 @@ void UTooltipStatWidget_C::Construct()
 
 void UTooltipStatWidget_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1026_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWidget.TooltipStatWidget_C.BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1026_OnButtonHoverEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b60d12d);
 
 	UTooltipStatWidget_C_BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1026_OnButtonHoverEvent__DelegateSignature_Params params;
 
@@ -68,7 +71,8 @@ void UTooltipStatWidget_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1026_O
 
 void UTooltipStatWidget_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWidget.TooltipStatWidget_C.BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_OnButtonHoverEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa18952e3);
 
 	UTooltipStatWidget_C_BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_OnButtonHoverEvent__DelegateSignature_Params params;
 
@@ -87,7 +91,8 @@ void UTooltipStatWidget_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_O
 
 void UTooltipStatWidget_C::ExecuteUbergraph_TooltipStatWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWidget.TooltipStatWidget_C.ExecuteUbergraph_TooltipStatWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca3e482);
 
 	UTooltipStatWidget_C_ExecuteUbergraph_TooltipStatWidget_Params params;
 	params.EntryPoint = EntryPoint;

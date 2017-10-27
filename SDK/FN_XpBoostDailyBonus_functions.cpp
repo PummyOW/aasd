@@ -19,7 +19,8 @@ namespace SDK
 
 void UXpBoostDailyBonus_C::Get_Current_Boost(int* Boost_Amount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostDailyBonus.XpBoostDailyBonus_C.Get Current Boost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x618bd47f);
 
 	UXpBoostDailyBonus_C_Get_Current_Boost_Params params;
 
@@ -39,7 +40,8 @@ void UXpBoostDailyBonus_C::Get_Current_Boost(int* Boost_Amount)
 
 void UXpBoostDailyBonus_C::Update_Daily_Bonus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostDailyBonus.XpBoostDailyBonus_C.Update Daily Bonus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32f57a3e);
 
 	UXpBoostDailyBonus_C_Update_Daily_Bonus_Params params;
 
@@ -56,7 +58,8 @@ void UXpBoostDailyBonus_C::Update_Daily_Bonus()
 
 void UXpBoostDailyBonus_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostDailyBonus.XpBoostDailyBonus_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8cd25a1e);
 
 	UXpBoostDailyBonus_C_Construct_Params params;
 
@@ -75,7 +78,8 @@ void UXpBoostDailyBonus_C::Construct()
 
 void UXpBoostDailyBonus_C::ExecuteUbergraph_XpBoostDailyBonus(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostDailyBonus.XpBoostDailyBonus_C.ExecuteUbergraph_XpBoostDailyBonus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4700e7d4);
 
 	UXpBoostDailyBonus_C_ExecuteUbergraph_XpBoostDailyBonus_Params params;
 	params.EntryPoint = EntryPoint;

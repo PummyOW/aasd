@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Targeting3PCamera_LongRange.Targeting3PCamera_LongRange_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa6feeb45);
 		return ptr;
 	}
 

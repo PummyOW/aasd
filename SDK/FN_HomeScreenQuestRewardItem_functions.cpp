@@ -17,7 +17,8 @@ namespace SDK
 
 void UHomeScreenQuestRewardItem_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HomeScreenQuestRewardItem.HomeScreenQuestRewardItem_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd9e80d6);
 
 	UHomeScreenQuestRewardItem_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UHomeScreenQuestRewardItem_C::Construct()
 
 void UHomeScreenQuestRewardItem_C::ExecuteUbergraph_HomeScreenQuestRewardItem(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HomeScreenQuestRewardItem.HomeScreenQuestRewardItem_C.ExecuteUbergraph_HomeScreenQuestRewardItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34c35954);
 
 	UHomeScreenQuestRewardItem_C_ExecuteUbergraph_HomeScreenQuestRewardItem_Params params;
 	params.EntryPoint = EntryPoint;

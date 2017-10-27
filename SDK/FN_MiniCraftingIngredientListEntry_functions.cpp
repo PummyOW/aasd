@@ -17,7 +17,8 @@ namespace SDK
 
 void UMiniCraftingIngredientListEntry_C::RefreshBeingPreviewed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.RefreshBeingPreviewed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23d2ac24);
 
 	UMiniCraftingIngredientListEntry_C_RefreshBeingPreviewed_Params params;
 
@@ -34,7 +35,8 @@ void UMiniCraftingIngredientListEntry_C::RefreshBeingPreviewed()
 
 void UMiniCraftingIngredientListEntry_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x399838f4);
 
 	UMiniCraftingIngredientListEntry_C_Refresh_Params params;
 
@@ -53,7 +55,8 @@ void UMiniCraftingIngredientListEntry_C::Refresh()
 
 void UMiniCraftingIngredientListEntry_C::HandleDifferentItemOrQuantitySetBP(bool* IsBeingReset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.HandleDifferentItemOrQuantitySetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a0b9e39);
 
 	UMiniCraftingIngredientListEntry_C_HandleDifferentItemOrQuantitySetBP_Params params;
 	params.IsBeingReset = IsBeingReset;
@@ -71,7 +74,8 @@ void UMiniCraftingIngredientListEntry_C::HandleDifferentItemOrQuantitySetBP(bool
 
 void UMiniCraftingIngredientListEntry_C::PreviewStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.PreviewStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b234474);
 
 	UMiniCraftingIngredientListEntry_C_PreviewStarted_Params params;
 
@@ -88,7 +92,8 @@ void UMiniCraftingIngredientListEntry_C::PreviewStarted()
 
 void UMiniCraftingIngredientListEntry_C::PreviewEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.PreviewEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd9148027);
 
 	UMiniCraftingIngredientListEntry_C_PreviewEnded_Params params;
 
@@ -107,7 +112,8 @@ void UMiniCraftingIngredientListEntry_C::PreviewEnded()
 
 void UMiniCraftingIngredientListEntry_C::ExecuteUbergraph_MiniCraftingIngredientListEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.ExecuteUbergraph_MiniCraftingIngredientListEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe86421f);
 
 	UMiniCraftingIngredientListEntry_C_ExecuteUbergraph_MiniCraftingIngredientListEntry_Params params;
 	params.EntryPoint = EntryPoint;

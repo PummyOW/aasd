@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIHotSpotManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x92cc9afd);
 		return ptr;
 	}
 
@@ -35,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.GenericTeamAgentInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd9b6d73);
 		return ptr;
 	}
 
@@ -55,7 +57,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PathFollowingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd90d570a);
 		return ptr;
 	}
 
@@ -82,7 +85,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.CrowdFollowingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2dcbd80e);
 		return ptr;
 	}
 
@@ -116,7 +120,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x162e19bf);
 		return ptr;
 	}
 
@@ -154,7 +159,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIDataProvider");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc86928);
 		return ptr;
 	}
 
@@ -177,7 +183,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIPerceptionComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc511b127);
 		return ptr;
 	}
 
@@ -204,7 +211,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIPerceptionSystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ed57dd);
 		return ptr;
 	}
 
@@ -245,7 +253,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f230ac0);
 		return ptr;
 	}
 
@@ -264,7 +273,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AITask");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd502b6f0);
 		return ptr;
 	}
 
@@ -283,7 +293,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AITask_MoveTo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c285e7f);
 		return ptr;
 	}
 
@@ -304,7 +315,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BrainComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe83a3718);
 		return ptr;
 	}
 
@@ -325,7 +337,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BehaviorTreeComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ba3be4c);
 		return ptr;
 	}
 
@@ -349,7 +362,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4bdb6bbb);
 		return ptr;
 	}
 
@@ -365,7 +379,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTAuxiliaryNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbda3cad);
 		return ptr;
 	}
 
@@ -385,7 +400,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c1499de);
 		return ptr;
 	}
 
@@ -401,7 +417,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_BlackboardBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa812fb49);
 		return ptr;
 	}
 
@@ -421,7 +438,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTService");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc06fa7c0);
 		return ptr;
 	}
 
@@ -437,7 +455,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTService_BlackboardBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9da042a3);
 		return ptr;
 	}
 
@@ -455,7 +474,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTaskNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3a2450c4);
 		return ptr;
 	}
 
@@ -471,7 +491,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_BlackboardBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x553eea63);
 		return ptr;
 	}
 
@@ -488,7 +509,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_GameplayTaskBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6bfac4a3);
 		return ptr;
 	}
 
@@ -517,7 +539,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_MoveTo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x379205cf);
 		return ptr;
 	}
 
@@ -546,7 +569,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.CrowdManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x87be77e1);
 		return ptr;
 	}
 
@@ -561,7 +585,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7decec73);
 		return ptr;
 	}
 
@@ -578,7 +603,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5a70cee6);
 		return ptr;
 	}
 
@@ -597,7 +623,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x921d34f1);
 		return ptr;
 	}
 
@@ -616,7 +643,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_ActorsOfClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70716dbf);
 		return ptr;
 	}
 
@@ -632,7 +660,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_ProjectedPoints");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x92b09ad5);
 		return ptr;
 	}
 
@@ -663,7 +692,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_OnCircle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5db3e24b);
 		return ptr;
 	}
 
@@ -679,7 +709,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryItemType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c2b8b07);
 		return ptr;
 	}
 
@@ -694,7 +725,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryItemType_VectorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a4ed220);
 		return ptr;
 	}
 
@@ -709,7 +741,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryItemType_ActorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7cc06f6);
 		return ptr;
 	}
 
@@ -724,7 +757,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryItemType_Point");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82d4ae48);
 		return ptr;
 	}
 
@@ -764,7 +798,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14069c5a);
 		return ptr;
 	}
 
@@ -779,7 +814,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIResourceInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2969a544);
 		return ptr;
 	}
 
@@ -797,7 +833,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIAsyncTaskBlueprintProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b12da39);
 		return ptr;
 	}
 
@@ -814,7 +851,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIBlueprintHelperLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9e85d0d);
 		return ptr;
 	}
 
@@ -840,7 +878,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIPerceptionListenerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8d4bc0b);
 		return ptr;
 	}
 
@@ -855,7 +894,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.DetourCrowdAIController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x783a342b);
 		return ptr;
 	}
 
@@ -870,7 +910,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.GridPathAIController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x58f045f6);
 		return ptr;
 	}
 
@@ -890,7 +931,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIDataProvider_QueryParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbac73ccb);
 		return ptr;
 	}
 
@@ -909,7 +951,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIDataProvider_Random");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb756ed06);
 		return ptr;
 	}
 
@@ -932,7 +975,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41e2839f);
 		return ptr;
 	}
 
@@ -950,7 +994,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIPerceptionStimuliSourceComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc3b013d5);
 		return ptr;
 	}
 
@@ -970,7 +1015,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIResource_Movement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18596161);
 		return ptr;
 	}
 
@@ -985,7 +1031,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AIResource_Logic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb69e38f8);
 		return ptr;
 	}
 
@@ -1004,7 +1051,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense_Blueprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd0ac9e3);
 		return ptr;
 	}
 
@@ -1028,7 +1076,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense_Damage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc49cb01);
 		return ptr;
 	}
 
@@ -1048,7 +1097,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense_Hearing");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x237365a2);
 		return ptr;
 	}
 
@@ -1066,7 +1116,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense_Prediction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6f27e39);
 		return ptr;
 	}
 
@@ -1093,7 +1144,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense_Sight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c280a1);
 		return ptr;
 	}
 
@@ -1109,7 +1161,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense_Team");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf16e8765);
 		return ptr;
 	}
 
@@ -1125,7 +1178,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISense_Touch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda6a9123);
 		return ptr;
 	}
 
@@ -1140,7 +1194,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseBlueprintListener");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff2b8da8);
 		return ptr;
 	}
 
@@ -1159,7 +1214,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76a8fe25);
 		return ptr;
 	}
 
@@ -1175,7 +1231,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig_Blueprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4925819);
 		return ptr;
 	}
 
@@ -1191,7 +1248,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig_Damage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb3f345cb);
 		return ptr;
 	}
 
@@ -1212,7 +1270,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig_Hearing");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x39ee3b0);
 		return ptr;
 	}
 
@@ -1227,7 +1286,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig_Prediction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a491047);
 		return ptr;
 	}
 
@@ -1249,7 +1309,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig_Sight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x979824e3);
 		return ptr;
 	}
 
@@ -1264,7 +1325,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig_Team");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ed0a323);
 		return ptr;
 	}
 
@@ -1279,7 +1341,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseConfig_Touch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x97bd15cd);
 		return ptr;
 	}
 
@@ -1294,7 +1357,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseEvent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc80dfad);
 		return ptr;
 	}
 
@@ -1310,7 +1374,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseEvent_Damage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc5068c63);
 		return ptr;
 	}
 
@@ -1326,7 +1391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISenseEvent_Hearing");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16596418);
 		return ptr;
 	}
 
@@ -1341,7 +1407,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AISightTargetInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d3f7376);
 		return ptr;
 	}
 
@@ -1356,7 +1423,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.AITask_LockLogic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8b802a8);
 		return ptr;
 	}
 
@@ -1371,7 +1439,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BehaviorTreeTypes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x75264a62);
 		return ptr;
 	}
 
@@ -1389,7 +1458,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTCompositeNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f960a74);
 		return ptr;
 	}
 
@@ -1409,7 +1479,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BehaviorTree");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f21b08b);
 		return ptr;
 	}
 
@@ -1428,7 +1499,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BehaviorTreeManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13876198);
 		return ptr;
 	}
 
@@ -1444,7 +1516,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc17aecbf);
 		return ptr;
 	}
 
@@ -1463,7 +1536,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fb470e2);
 		return ptr;
 	}
 
@@ -1483,7 +1557,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x132ac87f);
 		return ptr;
 	}
 
@@ -1523,7 +1598,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Bool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae91c126);
 		return ptr;
 	}
 
@@ -1539,7 +1615,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Class");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd791b6aa);
 		return ptr;
 	}
 
@@ -1558,7 +1635,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Enum");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f5e92ad);
 		return ptr;
 	}
 
@@ -1573,7 +1651,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Float");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad4aa6c);
 		return ptr;
 	}
 
@@ -1588,7 +1667,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Int");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e68f2cd);
 		return ptr;
 	}
 
@@ -1603,7 +1683,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Name");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e822e77);
 		return ptr;
 	}
 
@@ -1620,7 +1701,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_NativeEnum");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa82e097c);
 		return ptr;
 	}
 
@@ -1636,7 +1718,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Object");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f3179d7);
 		return ptr;
 	}
 
@@ -1651,7 +1734,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Rotator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x26260d45);
 		return ptr;
 	}
 
@@ -1667,7 +1751,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_String");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xee74ba0d);
 		return ptr;
 	}
 
@@ -1682,7 +1767,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BlackboardKeyType_Vector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8b8f6df);
 		return ptr;
 	}
 
@@ -1697,7 +1783,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c748140);
 		return ptr;
 	}
 
@@ -1747,7 +1834,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_Blackboard");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1add48a);
 		return ptr;
 	}
 
@@ -1762,7 +1850,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_ConditionalLoop");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4c24d4e1);
 		return ptr;
 	}
 
@@ -1786,7 +1875,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_IsAtLocation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb0f8bf7);
 		return ptr;
 	}
 
@@ -1802,7 +1892,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_IsBBEntryOfClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6821af08);
 		return ptr;
 	}
 
@@ -1825,7 +1916,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_BlueprintBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9d71d785);
 		return ptr;
 	}
 
@@ -1860,7 +1952,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_CheckGameplayTagsOnActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d5231e);
 		return ptr;
 	}
 
@@ -1879,7 +1972,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_CompareBBEntries");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc302637e);
 		return ptr;
 	}
 
@@ -1900,7 +1994,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_ConeCheck");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2a0afa0);
 		return ptr;
 	}
 
@@ -1917,7 +2012,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_Cooldown");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x53298c0e);
 		return ptr;
 	}
 
@@ -1939,7 +2035,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_DoesPathExist");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x552abc8);
 		return ptr;
 	}
 
@@ -1954,7 +2051,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_ForceSuccess");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa176a917);
 		return ptr;
 	}
 
@@ -1976,7 +2074,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_KeepInCone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4d52c51a);
 		return ptr;
 	}
 
@@ -1996,7 +2095,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_Loop");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd6961ff);
 		return ptr;
 	}
 
@@ -2011,7 +2111,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_ReachedMoveGoal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb338825b);
 		return ptr;
 	}
 
@@ -2030,7 +2131,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_SetTagCooldown");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2832fe2);
 		return ptr;
 	}
 
@@ -2050,7 +2152,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_TagCooldown");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x238f5678);
 		return ptr;
 	}
 
@@ -2067,7 +2170,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTDecorator_TimeLimit");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x15ff5b37);
 		return ptr;
 	}
 
@@ -2084,7 +2188,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTService_DefaultFocus");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16f3475e);
 		return ptr;
 	}
 
@@ -2099,7 +2204,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTypes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe229acfd);
 		return ptr;
 	}
 
@@ -2116,7 +2222,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTService_RunEQS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaaaa52b7);
 		return ptr;
 	}
 
@@ -2137,7 +2244,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTService_BlueprintBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40f80597);
 		return ptr;
 	}
 
@@ -2162,7 +2270,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTComposite_Selector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8dc87bfc);
 		return ptr;
 	}
 
@@ -2177,7 +2286,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTComposite_Sequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed0ef8d0);
 		return ptr;
 	}
 
@@ -2192,7 +2302,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTComposite_SimpleParallel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x81f03d0);
 		return ptr;
 	}
 
@@ -2211,7 +2322,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_MoveDirectlyToward");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac3c8b1b);
 		return ptr;
 	}
 
@@ -2228,7 +2340,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_RotateToFaceBBEntry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66b3174e);
 		return ptr;
 	}
 
@@ -2253,7 +2366,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_RunEQSQuery");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37f560b1);
 		return ptr;
 	}
 
@@ -2273,7 +2387,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_BlueprintBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0f3fc57);
 		return ptr;
 	}
 
@@ -2303,7 +2418,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_MakeNoise");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9d71a3d9);
 		return ptr;
 	}
 
@@ -2318,7 +2434,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_PawnActionBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5bd3bd4);
 		return ptr;
 	}
 
@@ -2334,7 +2451,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_PushPawnAction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83804d5b);
 		return ptr;
 	}
 
@@ -2356,7 +2474,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_PlayAnimation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8575bea9);
 		return ptr;
 	}
 
@@ -2372,7 +2491,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_PlaySound");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe759d2ce);
 		return ptr;
 	}
 
@@ -2388,7 +2508,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_RunBehavior");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x35f7eecc);
 		return ptr;
 	}
 
@@ -2406,7 +2527,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_RunBehaviorDynamic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7f7383f);
 		return ptr;
 	}
 
@@ -2425,7 +2547,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_SetTagCooldown");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8c08d4ac);
 		return ptr;
 	}
 
@@ -2442,7 +2565,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_Wait");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68ea8768);
 		return ptr;
 	}
 
@@ -2458,7 +2582,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.BTTask_WaitBlackboardTime");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x750a6078);
 		return ptr;
 	}
 
@@ -2473,7 +2598,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.CrowdAgentInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9f95b68);
 		return ptr;
 	}
 
@@ -2490,7 +2616,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQuery");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c49e7e2);
 		return ptr;
 	}
 
@@ -2506,7 +2633,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryContext_BlueprintBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x820f12b0);
 		return ptr;
 	}
 
@@ -2526,7 +2654,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryContext_Item");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb737db83);
 		return ptr;
 	}
 
@@ -2541,7 +2670,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryContext_Querier");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42ecc5d3);
 		return ptr;
 	}
 
@@ -2556,7 +2686,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryDebugHelpers");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c4947a2);
 		return ptr;
 	}
 
@@ -2571,7 +2702,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EQSQueryResultSourceInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb247765b);
 		return ptr;
 	}
 
@@ -2593,7 +2725,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryInstanceBlueprintWrapper");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa35df29d);
 		return ptr;
 	}
 
@@ -2614,7 +2747,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryItemType_Actor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0269c3d);
 		return ptr;
 	}
 
@@ -2629,7 +2763,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryItemType_Direction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6952ef61);
 		return ptr;
 	}
 
@@ -2654,7 +2789,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68c0e9cf);
 		return ptr;
 	}
 
@@ -2675,7 +2811,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_BlueprintBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a48836e);
 		return ptr;
 	}
 
@@ -2700,7 +2837,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_Composite");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x52cf7b7d);
 		return ptr;
 	}
 
@@ -2716,7 +2854,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_CurrentLocation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x81c6f146);
 		return ptr;
 	}
 
@@ -2738,7 +2877,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_Cone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe40e86a5);
 		return ptr;
 	}
 
@@ -2764,7 +2904,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_Donut");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6164718);
 		return ptr;
 	}
 
@@ -2782,7 +2923,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_SimpleGrid");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1d077be2);
 		return ptr;
 	}
 
@@ -2800,7 +2942,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryGenerator_PathingGrid");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x87b1ba7b);
 		return ptr;
 	}
 
@@ -2818,7 +2961,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_Distance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5d8e0e4);
 		return ptr;
 	}
 
@@ -2838,7 +2982,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_Dot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x594f0f0a);
 		return ptr;
 	}
 
@@ -2858,7 +3003,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_GameplayTags");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfd48a43e);
 		return ptr;
 	}
 
@@ -2874,7 +3020,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_Overlap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb266bb32);
 		return ptr;
 	}
 
@@ -2895,7 +3042,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_Pathfinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd6911583);
 		return ptr;
 	}
 
@@ -2911,7 +3059,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_PathfindingBatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37daa095);
 		return ptr;
 	}
 
@@ -2927,7 +3076,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_Project");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c16a3f0);
 		return ptr;
 	}
 
@@ -2942,7 +3092,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_Random");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f10475c);
 		return ptr;
 	}
 
@@ -2962,7 +3113,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryTest_Trace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb7250a8);
 		return ptr;
 	}
 
@@ -2979,7 +3131,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EnvQueryOption");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc715eee1);
 		return ptr;
 	}
 
@@ -2995,7 +3148,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EQSRenderingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x453ba6bb);
 		return ptr;
 	}
 
@@ -3026,7 +3180,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.EQSTestingPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5011982c);
 		return ptr;
 	}
 
@@ -3041,7 +3196,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.NavFilter_AIControllerDefault");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a9ebfb2);
 		return ptr;
 	}
 
@@ -3057,7 +3213,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.NavLocalGridManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3627e2a);
 		return ptr;
 	}
 
@@ -3080,7 +3237,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.GridPathFollowingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5583b9a6);
 		return ptr;
 	}
 
@@ -3106,7 +3264,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnAction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6b5e8f5);
 		return ptr;
 	}
 
@@ -3125,7 +3284,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnAction_BlueprintBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8c83623a);
 		return ptr;
 	}
 
@@ -3158,7 +3318,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnAction_Move");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14e0429f);
 		return ptr;
 	}
 
@@ -3177,7 +3338,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnAction_Repeat");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc90f8e5);
 		return ptr;
 	}
 
@@ -3197,7 +3359,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnAction_Sequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf82b4dbf);
 		return ptr;
 	}
 
@@ -3214,7 +3377,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnAction_Wait");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7ba450b);
 		return ptr;
 	}
 
@@ -3234,7 +3398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnActionsComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16d09b91);
 		return ptr;
 	}
 
@@ -3268,7 +3433,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.PawnSensingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2707f403);
 		return ptr;
 	}
 
@@ -3291,7 +3457,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AIModule.VisualLoggerExtension");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd2ccbcc);
 		return ptr;
 	}
 

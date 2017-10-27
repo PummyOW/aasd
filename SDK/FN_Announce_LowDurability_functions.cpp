@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_LowDurability_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_LowDurability.Announce_LowDurability_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea3bef0e);
 
 	AAnnounce_LowDurability_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_LowDurability_C::UserConstructionScript()
 
 void AAnnounce_LowDurability_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_LowDurability.Announce_LowDurability_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x175d8d16);
 
 	AAnnounce_LowDurability_C_OnClientAnnouncementStart_Params params;
 
@@ -53,7 +55,8 @@ void AAnnounce_LowDurability_C::OnClientAnnouncementStart()
 
 void AAnnounce_LowDurability_C::ExecuteUbergraph_Announce_LowDurability(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_LowDurability.Announce_LowDurability_C.ExecuteUbergraph_Announce_LowDurability");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb1f99c6);
 
 	AAnnounce_LowDurability_C_ExecuteUbergraph_Announce_LowDurability_Params params;
 	params.EntryPoint = EntryPoint;

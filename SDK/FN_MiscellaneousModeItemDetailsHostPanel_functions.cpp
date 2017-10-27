@@ -17,7 +17,8 @@ namespace SDK
 
 void UMiscellaneousModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiscellaneousModeItemDetailsHostPanel.MiscellaneousModeItemDetailsHostPanel_C.HandleHasItemMarkedForMulchingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2717aca);
 
 	UMiscellaneousModeItemDetailsHostPanel_C_HandleHasItemMarkedForMulchingChanged_Params params;
 
@@ -36,7 +37,8 @@ void UMiscellaneousModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingCha
 
 void UMiscellaneousModeItemDetailsHostPanel_C::ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiscellaneousModeItemDetailsHostPanel.MiscellaneousModeItemDetailsHostPanel_C.ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66c9301b);
 
 	UMiscellaneousModeItemDetailsHostPanel_C_ExecuteUbergraph_MiscellaneousModeItemDetailsHostPanel_Params params;
 	params.EntryPoint = EntryPoint;

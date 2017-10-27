@@ -22,7 +22,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Announce_BackpackFull.Announce_BackpackFull_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc297e8cd);
 		return ptr;
 	}
 

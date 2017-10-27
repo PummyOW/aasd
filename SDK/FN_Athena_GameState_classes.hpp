@@ -13,15 +13,16 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass Athena_GameState.Athena_GameState_C
-// 0x0008 (0x14E8 - 0x14E0)
+// 0x0008 (0x14F8 - 0x14F0)
 class AAthena_GameState_C : public AFortGameStateAthena
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x14E0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x14F0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Athena_GameState.Athena_GameState_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5bd598f);
 		return ptr;
 	}
 

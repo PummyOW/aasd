@@ -21,7 +21,8 @@ namespace SDK
 
 void UUsedPlacementActorsContext_C::ProvideActorsSet(class UObject** QuerierObject, class AActor** QuerierActor, TArray<class AActor*>* ResultingActorsSet)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UsedPlacementActorsContext.UsedPlacementActorsContext_C.ProvideActorsSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd3b745e);
 
 	UUsedPlacementActorsContext_C_ProvideActorsSet_Params params;
 	params.QuerierObject = QuerierObject;

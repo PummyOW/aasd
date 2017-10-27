@@ -27,7 +27,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass OutpostScreenStormShield.OutpostScreenStormShield_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdcd3ecf5);
 		return ptr;
 	}
 

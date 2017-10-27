@@ -17,7 +17,8 @@ namespace SDK
 
 void UNewsEntry_C::SetFocus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NewsEntry.NewsEntry_C.SetFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea49fcc7);
 
 	UNewsEntry_C_SetFocus_Params params;
 
@@ -34,7 +35,8 @@ void UNewsEntry_C::SetFocus()
 
 void UNewsEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NewsEntry.NewsEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeadb681e);
 
 	UNewsEntry_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UNewsEntry_C::Construct()
 
 void UNewsEntry_C::BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NewsEntry.NewsEntry_C.BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe690f99a);
 
 	UNewsEntry_C_BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -73,7 +76,8 @@ void UNewsEntry_C::BndEvt__ButtonEntry_K2Node_ComponentBoundEvent_201_CommonButt
 
 void UNewsEntry_C::ExecuteUbergraph_NewsEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NewsEntry.NewsEntry_C.ExecuteUbergraph_NewsEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1ab87b2);
 
 	UNewsEntry_C_ExecuteUbergraph_NewsEntry_Params params;
 	params.EntryPoint = EntryPoint;
@@ -93,7 +97,8 @@ void UNewsEntry_C::ExecuteUbergraph_NewsEntry(int EntryPoint)
 
 void UNewsEntry_C::HandleEntrySelected__DelegateSignature(const struct FText& BodyText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NewsEntry.NewsEntry_C.HandleEntrySelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc201aaef);
 
 	UNewsEntry_C_HandleEntrySelected__DelegateSignature_Params params;
 	params.BodyText = BodyText;

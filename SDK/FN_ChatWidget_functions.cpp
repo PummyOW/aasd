@@ -17,7 +17,8 @@ namespace SDK
 
 void UChatWidget_C::InitializeChat()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.InitializeChat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8056de37);
 
 	UChatWidget_C_InitializeChat_Params params;
 
@@ -34,7 +35,8 @@ void UChatWidget_C::InitializeChat()
 
 void UChatWidget_C::BindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.BindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfeff32b2);
 
 	UChatWidget_C_BindDelegates_Params params;
 
@@ -55,7 +57,8 @@ void UChatWidget_C::BindDelegates()
 
 void UChatWidget_C::HandleCursorModeChanged(bool bEnabled, const struct FName& ActionName, class UUserWidget* Widget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.HandleCursorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe135dfa6);
 
 	UChatWidget_C_HandleCursorModeChanged_Params params;
 	params.bEnabled = bEnabled;
@@ -78,7 +81,8 @@ void UChatWidget_C::HandleCursorModeChanged(bool bEnabled, const struct FName& A
 
 void UChatWidget_C::HandleShowChatWindow(EFortUIFeature Feature, EFortUIFeatureState FeatureState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.HandleShowChatWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf6636e4);
 
 	UChatWidget_C_HandleShowChatWindow_Params params;
 	params.Feature = Feature;
@@ -99,7 +103,8 @@ void UChatWidget_C::HandleShowChatWindow(EFortUIFeature Feature, EFortUIFeatureS
 
 void UChatWidget_C::HandeChatEnteredEvent(bool bEnteringChat)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.HandeChatEnteredEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3343d168);
 
 	UChatWidget_C_HandeChatEnteredEvent_Params params;
 	params.bEnteringChat = bEnteringChat;
@@ -119,7 +124,8 @@ void UChatWidget_C::HandeChatEnteredEvent(bool bEnteringChat)
 
 void UChatWidget_C::UpdateChatUserListIcon(bool Open)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.UpdateChatUserListIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c6e771c);
 
 	UChatWidget_C_UpdateChatUserListIcon_Params params;
 	params.Open = Open;
@@ -139,7 +145,8 @@ void UChatWidget_C::UpdateChatUserListIcon(bool Open)
 
 void UChatWidget_C::Set_Chat_Shortcut_Visibility(ESlateVisibility New_Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.Set Chat Shortcut Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66283b7b);
 
 	UChatWidget_C_Set_Chat_Shortcut_Visibility_Params params;
 	params.New_Visibility = New_Visibility;
@@ -159,7 +166,8 @@ void UChatWidget_C::Set_Chat_Shortcut_Visibility(ESlateVisibility New_Visibility
 
 void UChatWidget_C::Set_Chat_Visibility(ESlateVisibility New_Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.Set Chat Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9dec9527);
 
 	UChatWidget_C_Set_Chat_Visibility_Params params;
 	params.New_Visibility = New_Visibility;
@@ -179,7 +187,8 @@ void UChatWidget_C::Set_Chat_Visibility(ESlateVisibility New_Visibility)
 
 void UChatWidget_C::BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce238ad);
 
 	UChatWidget_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -199,7 +208,8 @@ void UChatWidget_C::BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_14_Co
 
 void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature(bool bEnteringChat)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeeea664d);
 
 	UChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature_Params params;
 	params.bEnteringChat = bEnteringChat;
@@ -219,7 +229,8 @@ void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEntered
 
 void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature(bool bOpen)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x909c6319);
 
 	UChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature_Params params;
 	params.bOpen = bOpen;
@@ -237,7 +248,8 @@ void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChan
 
 void UChatWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f433f6e);
 
 	UChatWidget_C_Construct_Params params;
 
@@ -256,7 +268,8 @@ void UChatWidget_C::Construct()
 
 void UChatWidget_C::HandleInputMethodChanged(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.HandleInputMethodChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19ba4a68);
 
 	UChatWidget_C_HandleInputMethodChanged_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -274,7 +287,8 @@ void UChatWidget_C::HandleInputMethodChanged(bool bUsingGamepad)
 
 void UChatWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa322980d);
 
 	UChatWidget_C_Destruct_Params params;
 
@@ -293,7 +307,8 @@ void UChatWidget_C::Destruct()
 
 void UChatWidget_C::ExecuteUbergraph_ChatWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.ExecuteUbergraph_ChatWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0bed8e9);
 
 	UChatWidget_C_ExecuteUbergraph_ChatWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -311,7 +326,8 @@ void UChatWidget_C::ExecuteUbergraph_ChatWidget(int EntryPoint)
 
 void UChatWidget_C::AboutToEnterChat__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChatWidget.ChatWidget_C.AboutToEnterChat__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5a3e7b6);
 
 	UChatWidget_C_AboutToEnterChat__DelegateSignature_Params params;
 

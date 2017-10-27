@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_Outlander_FragmentTeamSpeedBoost.GE_Outlander_FragmentTeamSpeedBoost_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x433d2e5);
 		return ptr;
 	}
 

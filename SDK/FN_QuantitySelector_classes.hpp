@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass QuantitySelector.QuantitySelector_C
-// 0x0778 (0x0B88 - 0x0410)
+// 0x077B (0x0B8B - 0x0410)
 class UQuantitySelector_C : public UFortActivatablePanel
 {
 public:
@@ -36,14 +36,20 @@ public:
 	struct FSliderStyle                                SliderStyle_MouseKeyboard;                                // 0x0498(0x0250) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
 	struct FSliderStyle                                SliderStyle_XboxOne;                                      // 0x06E8(0x0250) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
 	struct FSliderStyle                                SliderStyle_PS4;                                          // 0x0938(0x0250) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
+	bool                                               bShowConfirmButton;                                       // 0x0B88(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShowCancelButton;                                        // 0x0B89(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bAllowZeroQuantity;                                       // 0x0B8A(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass QuantitySelector.QuantitySelector_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xec538a95);
 		return ptr;
 	}
 
 
+	void SetCurrentValue(int NewValue);
+	void GetCurrentValue(int* CurrentValue);
 	void SetupForInputMode(bool IsUsingGamepad);
 	void SliderValueChanged();
 	void HandleCancelPressed(bool* PassThrough);

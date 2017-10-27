@@ -17,7 +17,8 @@ namespace SDK
 
 void UBluGloInventory_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloInventory.BluGloInventory_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60666c94);
 
 	UBluGloInventory_C_Update_Params params;
 
@@ -37,7 +38,8 @@ void UBluGloInventory_C::Update()
 
 void UBluGloInventory_C::HandleOnWorldItemListChanged(TArray<class UFortWorldItem*>* Items_Added, TArray<class UFortWorldItem*>* Items_Removed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloInventory.BluGloInventory_C.HandleOnWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfee134e9);
 
 	UBluGloInventory_C_HandleOnWorldItemListChanged_Params params;
 
@@ -59,7 +61,8 @@ void UBluGloInventory_C::HandleOnWorldItemListChanged(TArray<class UFortWorldIte
 
 void UBluGloInventory_C::HandleWorldItemsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloInventory.BluGloInventory_C.HandleWorldItemsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2fde02c3);
 
 	UBluGloInventory_C_HandleWorldItemsChanged_Params params;
 
@@ -79,7 +82,8 @@ void UBluGloInventory_C::HandleWorldItemsChanged()
 
 void UBluGloInventory_C::HandleItemPickedUp(class UFortWorldItem* New_Item, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloInventory.BluGloInventory_C.HandleItemPickedUp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc611e63);
 
 	UBluGloInventory_C_HandleItemPickedUp_Params params;
 	params.New_Item = New_Item;
@@ -98,7 +102,8 @@ void UBluGloInventory_C::HandleItemPickedUp(class UFortWorldItem* New_Item, int 
 
 void UBluGloInventory_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloInventory.BluGloInventory_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6323e07e);
 
 	UBluGloInventory_C_Construct_Params params;
 
@@ -117,7 +122,8 @@ void UBluGloInventory_C::Construct()
 
 void UBluGloInventory_C::ExecuteUbergraph_BluGloInventory(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloInventory.BluGloInventory_C.ExecuteUbergraph_BluGloInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ef90772);
 
 	UBluGloInventory_C_ExecuteUbergraph_BluGloInventory_Params params;
 	params.EntryPoint = EntryPoint;

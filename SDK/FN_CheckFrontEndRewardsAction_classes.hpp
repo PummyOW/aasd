@@ -25,11 +25,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2b38c755);
 		return ptr;
 	}
 
 
+	void HandleRewardsIgnored(class UFrontEndRewards_Widget_C* RewardsWidget);
 	bool CanShowFrontendRewards();
 	void Is_FrontEndRewards_Running(bool* bRunning);
 	void PopulateMissionAlertRewards();

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_Commando_DefaultRangeDamageBonus.GE_Commando_DefaultRangeDamageBonus_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe76c7a75);
 		return ptr;
 	}
 

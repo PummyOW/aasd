@@ -17,7 +17,8 @@ namespace SDK
 
 void UStickyNotification_C::CloseSticky()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.CloseSticky");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6769a4a4);
 
 	UStickyNotification_C_CloseSticky_Params params;
 
@@ -34,7 +35,8 @@ void UStickyNotification_C::CloseSticky()
 
 void UStickyNotification_C::BindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.BindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe09ef5a);
 
 	UStickyNotification_C_BindDelegates_Params params;
 
@@ -51,7 +53,8 @@ void UStickyNotification_C::BindDelegates()
 
 void UStickyNotification_C::InitializeNotification()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.InitializeNotification");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56c4e08c);
 
 	UStickyNotification_C_InitializeNotification_Params params;
 
@@ -68,7 +71,8 @@ void UStickyNotification_C::InitializeNotification()
 
 void UStickyNotification_C::Handle_OutroFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.Handle_OutroFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5ba0e7);
 
 	UStickyNotification_C_Handle_OutroFinished_Params params;
 
@@ -85,7 +89,8 @@ void UStickyNotification_C::Handle_OutroFinished()
 
 void UStickyNotification_C::Handle_ShowContentsFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.Handle_ShowContentsFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc004118f);
 
 	UStickyNotification_C_Handle_ShowContentsFinished_Params params;
 
@@ -102,7 +107,8 @@ void UStickyNotification_C::Handle_ShowContentsFinished()
 
 void UStickyNotification_C::Handle_HideFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.Handle_HideFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb915f66);
 
 	UStickyNotification_C_Handle_HideFinished_Params params;
 
@@ -119,7 +125,8 @@ void UStickyNotification_C::Handle_HideFinished()
 
 void UStickyNotification_C::Handle_IntroFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.Handle_IntroFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff9f0718);
 
 	UStickyNotification_C_Handle_IntroFinished_Params params;
 
@@ -138,7 +145,8 @@ void UStickyNotification_C::Handle_IntroFinished()
 
 void UStickyNotification_C::BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_826_FortBaseButtonClicked__DelegateSignature(class UFortBaseButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_826_FortBaseButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda1b410f);
 
 	UStickyNotification_C_BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_826_FortBaseButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -156,7 +164,8 @@ void UStickyNotification_C::BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent
 
 void UStickyNotification_C::Handle_IntroStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.Handle_IntroStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d45b7a5);
 
 	UStickyNotification_C_Handle_IntroStarted_Params params;
 
@@ -175,7 +184,8 @@ void UStickyNotification_C::Handle_IntroStarted()
 
 void UStickyNotification_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3380489a);
 
 	UStickyNotification_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -196,7 +206,8 @@ void UStickyNotification_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UStickyNotification_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7804ee7d);
 
 	UStickyNotification_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -217,7 +228,8 @@ void UStickyNotification_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FP
 
 void UStickyNotification_C::BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_1161_On_Mouse_Hovered_Changed__DelegateSignature(bool Is_Hovered)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_1161_On Mouse Hovered Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbbe2de30);
 
 	UStickyNotification_C_BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent_1161_On_Mouse_Hovered_Changed__DelegateSignature_Params params;
 	params.Is_Hovered = Is_Hovered;
@@ -237,7 +249,8 @@ void UStickyNotification_C::BndEvt__ButtonIconText_Go_K2Node_ComponentBoundEvent
 
 void UStickyNotification_C::BndEvt__ButtonIconText_Close_K2Node_ComponentBoundEvent_1644_FortBaseButtonClicked__DelegateSignature(class UFortBaseButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.BndEvt__ButtonIconText_Close_K2Node_ComponentBoundEvent_1644_FortBaseButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0f67e68);
 
 	UStickyNotification_C_BndEvt__ButtonIconText_Close_K2Node_ComponentBoundEvent_1644_FortBaseButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -255,7 +268,8 @@ void UStickyNotification_C::BndEvt__ButtonIconText_Close_K2Node_ComponentBoundEv
 
 void UStickyNotification_C::Handle_OpenFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.Handle_OpenFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x837df9c6);
 
 	UStickyNotification_C_Handle_OpenFinished_Params params;
 
@@ -272,7 +286,8 @@ void UStickyNotification_C::Handle_OpenFinished()
 
 void UStickyNotification_C::HandleAccepted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.HandleAccepted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30c79052);
 
 	UStickyNotification_C_HandleAccepted_Params params;
 
@@ -289,7 +304,8 @@ void UStickyNotification_C::HandleAccepted()
 
 void UStickyNotification_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab5810a6);
 
 	UStickyNotification_C_Construct_Params params;
 
@@ -308,7 +324,8 @@ void UStickyNotification_C::Construct()
 
 void UStickyNotification_C::ExecuteUbergraph_StickyNotification(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StickyNotification.StickyNotification_C.ExecuteUbergraph_StickyNotification");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20e7025b);
 
 	UStickyNotification_C_ExecuteUbergraph_StickyNotification_Params params;
 	params.EntryPoint = EntryPoint;

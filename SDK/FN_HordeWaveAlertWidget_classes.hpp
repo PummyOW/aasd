@@ -36,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass HordeWaveAlertWidget.HordeWaveAlertWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc5a55003);
 		return ptr;
 	}
 

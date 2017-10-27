@@ -20,7 +20,8 @@ namespace SDK
 
 void AGCNL_GM_OnDmgReceived_Slow_C::OnWhileActiveParticleSystemActivate(class UParticleSystemComponent** WhileActiveParticleSysComponent, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_OnDmgReceived_Slow.GCNL_GM_OnDmgReceived_Slow_C.OnWhileActiveParticleSystemActivate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5735f24f);
 
 	AGCNL_GM_OnDmgReceived_Slow_C_OnWhileActiveParticleSystemActivate_Params params;
 	params.WhileActiveParticleSysComponent = WhileActiveParticleSysComponent;
@@ -39,7 +40,8 @@ void AGCNL_GM_OnDmgReceived_Slow_C::OnWhileActiveParticleSystemActivate(class UP
 
 void AGCNL_GM_OnDmgReceived_Slow_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_OnDmgReceived_Slow.GCNL_GM_OnDmgReceived_Slow_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x130e295c);
 
 	AGCNL_GM_OnDmgReceived_Slow_C_UserConstructionScript_Params params;
 

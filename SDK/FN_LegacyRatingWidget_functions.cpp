@@ -19,7 +19,8 @@ namespace SDK
 
 void ULegacyRatingWidget_C::SetShouldShowTeamPowerRating(bool ShowTeamRating)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.SetShouldShowTeamPowerRating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa8c8d36c);
 
 	ULegacyRatingWidget_C_SetShouldShowTeamPowerRating_Params params;
 	params.ShowTeamRating = ShowTeamRating;
@@ -42,7 +43,8 @@ void ULegacyRatingWidget_C::SetShouldShowTeamPowerRating(bool ShowTeamRating)
 
 void ULegacyRatingWidget_C::Override_Default_Color_Set(bool Override, const struct FLinearColor& Light_Color, const struct FLinearColor& Medium_Color, const struct FLinearColor& Dark_Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Override Default Color Set");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22096859);
 
 	ULegacyRatingWidget_C_Override_Default_Color_Set_Params params;
 	params.Override = Override;
@@ -67,7 +69,8 @@ void ULegacyRatingWidget_C::Override_Default_Color_Set(bool Override, const stru
 
 void ULegacyRatingWidget_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class UMaterialInstanceDynamic* Mid, const struct FName& Parameter, const struct FFortMultiSizeBrush& MBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Set Texture2D Parameter From Multi Size Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x790ef7d);
 
 	ULegacyRatingWidget_C_Set_Texture2D_Parameter_From_Multi_Size_Brush_Params params;
 	params.Mid = Mid;
@@ -87,7 +90,8 @@ void ULegacyRatingWidget_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class 
 
 void ULegacyRatingWidget_C::Update_Base_Material()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Update Base Material");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x205cf6f6);
 
 	ULegacyRatingWidget_C_Update_Base_Material_Params params;
 
@@ -104,7 +108,8 @@ void ULegacyRatingWidget_C::Update_Base_Material()
 
 void ULegacyRatingWidget_C::Update_From_Unique_ID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Update From Unique ID");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x148f8404);
 
 	ULegacyRatingWidget_C_Update_From_Unique_ID_Params params;
 
@@ -123,7 +128,8 @@ void ULegacyRatingWidget_C::Update_From_Unique_ID()
 
 void ULegacyRatingWidget_C::Set_Unique_ID(const struct FUniqueNetIdRepl& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Set Unique ID");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3418ffc9);
 
 	ULegacyRatingWidget_C_Set_Unique_ID_Params params;
 	params.ID = ID;
@@ -141,7 +147,8 @@ void ULegacyRatingWidget_C::Set_Unique_ID(const struct FUniqueNetIdRepl& ID)
 
 void ULegacyRatingWidget_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe0b76dc);
 
 	ULegacyRatingWidget_C_Update_Params params;
 
@@ -158,7 +165,8 @@ void ULegacyRatingWidget_C::Update()
 
 void ULegacyRatingWidget_C::Set_Padding()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Set Padding");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe71bddd6);
 
 	ULegacyRatingWidget_C_Set_Padding_Params params;
 
@@ -175,7 +183,8 @@ void ULegacyRatingWidget_C::Set_Padding()
 
 void ULegacyRatingWidget_C::Set_Size_Box()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Set Size Box");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf48af2e3);
 
 	ULegacyRatingWidget_C_Set_Size_Box_Params params;
 
@@ -194,7 +203,8 @@ void ULegacyRatingWidget_C::Set_Size_Box()
 
 void ULegacyRatingWidget_C::Update_Rating_Value(int Rating)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Update Rating Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd9fc4b88);
 
 	ULegacyRatingWidget_C_Update_Rating_Value_Params params;
 	params.Rating = Rating;
@@ -214,7 +224,8 @@ void ULegacyRatingWidget_C::Update_Rating_Value(int Rating)
 
 void ULegacyRatingWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed3009cd);
 
 	ULegacyRatingWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -234,7 +245,8 @@ void ULegacyRatingWidget_C::PreConstruct(bool* IsDesignTime)
 
 void ULegacyRatingWidget_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& UniqueId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.PlayerInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5dad1e8);
 
 	ULegacyRatingWidget_C_PlayerInfoChanged_Params params;
 	params.UniqueId = UniqueId;
@@ -252,7 +264,8 @@ void ULegacyRatingWidget_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& Uni
 
 void ULegacyRatingWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9785b6);
 
 	ULegacyRatingWidget_C_Construct_Params params;
 
@@ -271,7 +284,8 @@ void ULegacyRatingWidget_C::Construct()
 
 void ULegacyRatingWidget_C::PlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.PlayerStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0d55611);
 
 	ULegacyRatingWidget_C_PlayerStateChanged_Params params;
 	params.PlayerInfo = PlayerInfo;
@@ -291,7 +305,8 @@ void ULegacyRatingWidget_C::PlayerStateChanged(const struct FFortTeamMemberInfo&
 
 void ULegacyRatingWidget_C::ExecuteUbergraph_LegacyRatingWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyRatingWidget.LegacyRatingWidget_C.ExecuteUbergraph_LegacyRatingWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc8aa6a5);
 
 	ULegacyRatingWidget_C_ExecuteUbergraph_LegacyRatingWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UFriendCodeConsole_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodeConsole.FriendCodeConsole_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf067ffde);
 
 	UFriendCodeConsole_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UFriendCodeConsole_C::Construct()
 
 void UFriendCodeConsole_C::OnSendFriendCodeMessageComplete(bool bMessageSent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodeConsole.FriendCodeConsole_C.OnSendFriendCodeMessageComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b4a384f);
 
 	UFriendCodeConsole_C_OnSendFriendCodeMessageComplete_Params params;
 	params.bMessageSent = bMessageSent;
@@ -54,7 +56,8 @@ void UFriendCodeConsole_C::OnSendFriendCodeMessageComplete(bool bMessageSent)
 
 void UFriendCodeConsole_C::OnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodeConsole.FriendCodeConsole_C.OnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x794248a3);
 
 	UFriendCodeConsole_C_OnClicked_Params params;
 
@@ -73,7 +76,8 @@ void UFriendCodeConsole_C::OnClicked()
 
 void UFriendCodeConsole_C::ExecuteUbergraph_FriendCodeConsole(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodeConsole.FriendCodeConsole_C.ExecuteUbergraph_FriendCodeConsole");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe70f7c7);
 
 	UFriendCodeConsole_C_ExecuteUbergraph_FriendCodeConsole_Params params;
 	params.EntryPoint = EntryPoint;

@@ -47,7 +47,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_Hex_CriticalMission.BP_Hex_CriticalMission_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3177ebd1);
 		return ptr;
 	}
 

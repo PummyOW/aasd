@@ -36,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass NormalBangWrapper.NormalBangWrapper_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ff97d29);
 		return ptr;
 	}
 

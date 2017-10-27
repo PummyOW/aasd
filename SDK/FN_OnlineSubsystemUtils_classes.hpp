@@ -25,7 +25,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeacon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6181cdb9);
 		return ptr;
 	}
 
@@ -44,7 +45,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeaconClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe52217dc);
 		return ptr;
 	}
 
@@ -64,7 +66,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeaconHostObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9da63d86);
 		return ptr;
 	}
 
@@ -89,7 +92,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.PartyBeaconState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83f3f9e3);
 		return ptr;
 	}
 
@@ -108,7 +112,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc7e55f97);
 		return ptr;
 	}
 
@@ -127,7 +132,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineSessionClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa25adc3e);
 		return ptr;
 	}
 
@@ -149,7 +155,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.PartyBeaconClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6dd43751);
 		return ptr;
 	}
 
@@ -179,7 +186,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.PartyBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb5941a5a);
 		return ptr;
 	}
 
@@ -194,7 +202,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.AchievementBlueprintLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a3993eb);
 		return ptr;
 	}
 
@@ -215,7 +224,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.AchievementQueryCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x74539bd2);
 		return ptr;
 	}
 
@@ -236,7 +246,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.AchievementWriteCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x292ffc15);
 		return ptr;
 	}
 
@@ -256,7 +267,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.ConnectionCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe88cc693);
 		return ptr;
 	}
 
@@ -276,7 +288,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.CreateSessionCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9008ac9b);
 		return ptr;
 	}
 
@@ -296,7 +309,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.DestroySessionCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7e8b31);
 		return ptr;
 	}
 
@@ -316,7 +330,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.EndMatchCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66ae8529);
 		return ptr;
 	}
 
@@ -336,7 +351,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.EndTurnCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99958de5);
 		return ptr;
 	}
 
@@ -356,7 +372,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.FindSessionsCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe0290b65);
 		return ptr;
 	}
 
@@ -380,7 +397,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4218d5f);
 		return ptr;
 	}
 
@@ -400,7 +418,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd3c530e);
 		return ptr;
 	}
 
@@ -420,7 +439,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x91bad8ac);
 		return ptr;
 	}
 
@@ -440,7 +460,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe61e0f92);
 		return ptr;
 	}
 
@@ -450,15 +471,16 @@ public:
 
 
 // Class OnlineSubsystemUtils.IpConnection
-// 0x0020 (0x33760 - 0x33740)
+// 0x0020 (0x337B0 - 0x33790)
 class UIpConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x33740(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x33790(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.IpConnection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f35da3);
 		return ptr;
 	}
 
@@ -482,7 +504,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.IpNetDriver");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x25d46ca);
 		return ptr;
 	}
 
@@ -500,7 +523,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.JoinSessionCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9f98d37);
 		return ptr;
 	}
 
@@ -517,7 +541,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.LeaderboardBlueprintLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x325e0523);
 		return ptr;
 	}
 
@@ -537,7 +562,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x385b8c30);
 		return ptr;
 	}
 
@@ -557,7 +583,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c67e89a);
 		return ptr;
 	}
 
@@ -577,7 +604,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.LogoutCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9409d381);
 		return ptr;
 	}
 
@@ -594,7 +622,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.TestBeaconClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18a6aa69);
 		return ptr;
 	}
 
@@ -612,7 +641,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.TestBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa2b261e2);
 		return ptr;
 	}
 
@@ -629,7 +659,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x90d80766);
 		return ptr;
 	}
 
@@ -647,7 +678,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.OnlinePIESettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c35253a);
 		return ptr;
 	}
 
@@ -665,7 +697,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.QuitMatchCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa05c8853);
 		return ptr;
 	}
 
@@ -685,7 +718,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.ShowLoginUICallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8c7753b);
 		return ptr;
 	}
 
@@ -702,7 +736,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystemUtils.TurnBasedBlueprintLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd291594);
 		return ptr;
 	}
 

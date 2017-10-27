@@ -22,7 +22,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass KillerPortraitWidget.KillerPortraitWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc112f315);
 		return ptr;
 	}
 

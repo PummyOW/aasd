@@ -17,7 +17,8 @@ namespace SDK
 
 void UOutpostScreenStormShield_C::CenterPermissionsWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.CenterPermissionsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97979e74);
 
 	UOutpostScreenStormShield_C_CenterPermissionsWidget_Params params;
 
@@ -34,7 +35,8 @@ void UOutpostScreenStormShield_C::CenterPermissionsWidget()
 
 void UOutpostScreenStormShield_C::CenterStormShieldWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.CenterStormShieldWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1595a4e4);
 
 	UOutpostScreenStormShield_C_CenterStormShieldWidget_Params params;
 
@@ -53,7 +55,8 @@ void UOutpostScreenStormShield_C::CenterStormShieldWidget()
 
 void UOutpostScreenStormShield_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfde59e4c);
 
 	UOutpostScreenStormShield_C_HandleBack_Params params;
 
@@ -73,7 +76,8 @@ void UOutpostScreenStormShield_C::HandleBack(bool* PassThrough)
 
 void UOutpostScreenStormShield_C::AddInputHandlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.AddInputHandlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12696c7);
 
 	UOutpostScreenStormShield_C_AddInputHandlers_Params params;
 
@@ -92,7 +96,8 @@ void UOutpostScreenStormShield_C::AddInputHandlers()
 
 void UOutpostScreenStormShield_C::SetCoreBuilding(class AFortOutpostBuilding* NewCoreBuilding)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.SetCoreBuilding");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f965928);
 
 	UOutpostScreenStormShield_C_SetCoreBuilding_Params params;
 	params.NewCoreBuilding = NewCoreBuilding;
@@ -110,7 +115,8 @@ void UOutpostScreenStormShield_C::SetCoreBuilding(class AFortOutpostBuilding* Ne
 
 void UOutpostScreenStormShield_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f84363e);
 
 	UOutpostScreenStormShield_C_Construct_Params params;
 
@@ -129,7 +135,8 @@ void UOutpostScreenStormShield_C::Construct()
 
 void UOutpostScreenStormShield_C::BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6de19a81);
 
 	UOutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -150,7 +157,8 @@ void UOutpostScreenStormShield_C::BndEvt__ContentOrPermissionsTab_K2Node_Compone
 
 void UOutpostScreenStormShield_C::BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f6da36d);
 
 	UOutpostScreenStormShield_C_BndEvt__ContentOrPermissionsTab_K2Node_ComponentBoundEvent_36_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -171,7 +179,8 @@ void UOutpostScreenStormShield_C::BndEvt__ContentOrPermissionsTab_K2Node_Compone
 
 void UOutpostScreenStormShield_C::ExecuteUbergraph_OutpostScreenStormShield(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.ExecuteUbergraph_OutpostScreenStormShield");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x181e5d19);
 
 	UOutpostScreenStormShield_C_ExecuteUbergraph_OutpostScreenStormShield_Params params;
 	params.EntryPoint = EntryPoint;
@@ -189,7 +198,8 @@ void UOutpostScreenStormShield_C::ExecuteUbergraph_OutpostScreenStormShield(int 
 
 void UOutpostScreenStormShield_C::CloseOutpostScreen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShield.OutpostScreenStormShield_C.CloseOutpostScreen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ae8285c);
 
 	UOutpostScreenStormShield_C_CloseOutpostScreen__DelegateSignature_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UHitPointBar_C::UpdateVolatileForUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.UpdateVolatileForUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c2834ca);
 
 	UHitPointBar_C_UpdateVolatileForUpdate_Params params;
 
@@ -34,7 +35,8 @@ void UHitPointBar_C::UpdateVolatileForUpdate()
 
 void UHitPointBar_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62128444);
 
 	UHitPointBar_C_Update_Params params;
 
@@ -51,7 +53,8 @@ void UHitPointBar_C::Update()
 
 void UHitPointBar_C::Update_Delta_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.Update Delta Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6edbabd);
 
 	UHitPointBar_C_Update_Delta_Bar_Params params;
 
@@ -68,7 +71,8 @@ void UHitPointBar_C::Update_Delta_Bar()
 
 void UHitPointBar_C::Initialize_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.Initialize Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6aa85a72);
 
 	UHitPointBar_C_Initialize_Bar_Params params;
 
@@ -87,7 +91,8 @@ void UHitPointBar_C::Initialize_Bar()
 
 void UHitPointBar_C::UpdateCurrentValueWithoutReason(float Current)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.UpdateCurrentValueWithoutReason");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6aefef06);
 
 	UHitPointBar_C_UpdateCurrentValueWithoutReason_Params params;
 	params.Current = Current;
@@ -105,7 +110,8 @@ void UHitPointBar_C::UpdateCurrentValueWithoutReason(float Current)
 
 void UHitPointBar_C::Update_Fill_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.Update Fill Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf893f208);
 
 	UHitPointBar_C_Update_Fill_Bar_Params params;
 
@@ -125,7 +131,8 @@ void UHitPointBar_C::Update_Fill_Bar()
 
 void UHitPointBar_C::UpdateCurrentValue(float Current, EFortHitPointModificationReason Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.UpdateCurrentValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe440e702);
 
 	UHitPointBar_C_UpdateCurrentValue_Params params;
 	params.Current = Current;
@@ -146,7 +153,8 @@ void UHitPointBar_C::UpdateCurrentValue(float Current, EFortHitPointModification
 
 void UHitPointBar_C::UpdateMaxValue(float Max)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.UpdateMaxValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0a026c9);
 
 	UHitPointBar_C_UpdateMaxValue_Params params;
 	params.Max = Max;
@@ -166,7 +174,8 @@ void UHitPointBar_C::UpdateMaxValue(float Max)
 
 void UHitPointBar_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1ada55);
 
 	UHitPointBar_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -184,7 +193,8 @@ void UHitPointBar_C::PreConstruct(bool* IsDesignTime)
 
 void UHitPointBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb73a55ce);
 
 	UHitPointBar_C_Construct_Params params;
 
@@ -204,7 +214,8 @@ void UHitPointBar_C::Construct()
 
 void UHitPointBar_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda659194);
 
 	UHitPointBar_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -225,7 +236,8 @@ void UHitPointBar_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UHitPointBar_C::ExecuteUbergraph_HitPointBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HitPointBar.HitPointBar_C.ExecuteUbergraph_HitPointBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x712be4f3);
 
 	UHitPointBar_C_ExecuteUbergraph_HitPointBar_Params params;
 	params.EntryPoint = EntryPoint;

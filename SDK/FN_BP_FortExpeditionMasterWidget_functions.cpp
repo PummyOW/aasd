@@ -19,7 +19,8 @@ namespace SDK
 
 void UBP_FortExpeditionMasterWidget_C::HandleSortExpeditionListAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleSortExpeditionListAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x523a990e);
 
 	UBP_FortExpeditionMasterWidget_C_HandleSortExpeditionListAction_Params params;
 
@@ -41,7 +42,8 @@ void UBP_FortExpeditionMasterWidget_C::HandleSortExpeditionListAction(bool* Pass
 
 void UBP_FortExpeditionMasterWidget_C::Disable_Input_Action(const struct FDataTableRowHandle& InputActionRow)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Disable Input Action");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x517fbe7d);
 
 	UBP_FortExpeditionMasterWidget_C_Disable_Input_Action_Params params;
 	params.InputActionRow = InputActionRow;
@@ -61,7 +63,8 @@ void UBP_FortExpeditionMasterWidget_C::Disable_Input_Action(const struct FDataTa
 
 void UBP_FortExpeditionMasterWidget_C::HandleCollectExpeditionAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleCollectExpeditionAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91f5e08a);
 
 	UBP_FortExpeditionMasterWidget_C_HandleCollectExpeditionAction_Params params;
 
@@ -83,7 +86,8 @@ void UBP_FortExpeditionMasterWidget_C::HandleCollectExpeditionAction(bool* PassT
 
 void UBP_FortExpeditionMasterWidget_C::HandleAbandonExpeditionAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleAbandonExpeditionAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5dd76197);
 
 	UBP_FortExpeditionMasterWidget_C_HandleAbandonExpeditionAction_Params params;
 
@@ -105,7 +109,8 @@ void UBP_FortExpeditionMasterWidget_C::HandleAbandonExpeditionAction(bool* PassT
 
 void UBP_FortExpeditionMasterWidget_C::HandleBuildExpeditionAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleBuildExpeditionAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92100864);
 
 	UBP_FortExpeditionMasterWidget_C_HandleBuildExpeditionAction_Params params;
 
@@ -125,7 +130,8 @@ void UBP_FortExpeditionMasterWidget_C::HandleBuildExpeditionAction(bool* PassThr
 
 void UBP_FortExpeditionMasterWidget_C::Present_Reward_UI()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Present Reward UI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd9a920ad);
 
 	UBP_FortExpeditionMasterWidget_C_Present_Reward_UI_Params params;
 
@@ -144,7 +150,8 @@ void UBP_FortExpeditionMasterWidget_C::Present_Reward_UI()
 
 void UBP_FortExpeditionMasterWidget_C::Show_Input_Action(const struct FDataTableRowHandle& InputActionRow)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Show Input Action");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbbef85ae);
 
 	UBP_FortExpeditionMasterWidget_C_Show_Input_Action_Params params;
 	params.InputActionRow = InputActionRow;
@@ -164,7 +171,8 @@ void UBP_FortExpeditionMasterWidget_C::Show_Input_Action(const struct FDataTable
 
 void UBP_FortExpeditionMasterWidget_C::Hide_Input_Action(const struct FDataTableRowHandle& InputActionRow)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Hide Input Action");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51e57307);
 
 	UBP_FortExpeditionMasterWidget_C_Hide_Input_Action_Params params;
 	params.InputActionRow = InputActionRow;
@@ -182,7 +190,8 @@ void UBP_FortExpeditionMasterWidget_C::Hide_Input_Action(const struct FDataTable
 
 void UBP_FortExpeditionMasterWidget_C::Update_Master_Widget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Update Master Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4f682ce);
 
 	UBP_FortExpeditionMasterWidget_C_Update_Master_Widget_Params params;
 
@@ -199,7 +208,8 @@ void UBP_FortExpeditionMasterWidget_C::Update_Master_Widget()
 
 void UBP_FortExpeditionMasterWidget_C::Setup_Bindings()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Setup Bindings");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84dfa904);
 
 	UBP_FortExpeditionMasterWidget_C_Setup_Bindings_Params params;
 
@@ -216,7 +226,8 @@ void UBP_FortExpeditionMasterWidget_C::Setup_Bindings()
 
 void UBP_FortExpeditionMasterWidget_C::Setup_Input_Action_Handlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Setup Input Action Handlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa032e3af);
 
 	UBP_FortExpeditionMasterWidget_C_Setup_Input_Action_Handlers_Params params;
 
@@ -235,7 +246,8 @@ void UBP_FortExpeditionMasterWidget_C::Setup_Input_Action_Handlers()
 
 void UBP_FortExpeditionMasterWidget_C::Handle_Back(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Handle Back");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3c9a3a);
 
 	UBP_FortExpeditionMasterWidget_C_Handle_Back_Params params;
 
@@ -255,7 +267,8 @@ void UBP_FortExpeditionMasterWidget_C::Handle_Back(bool* PassThrough)
 
 void UBP_FortExpeditionMasterWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe960519e);
 
 	UBP_FortExpeditionMasterWidget_C_Construct_Params params;
 
@@ -272,7 +285,8 @@ void UBP_FortExpeditionMasterWidget_C::Construct()
 
 void UBP_FortExpeditionMasterWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7121cdd);
 
 	UBP_FortExpeditionMasterWidget_C_Destruct_Params params;
 
@@ -289,7 +303,8 @@ void UBP_FortExpeditionMasterWidget_C::Destruct()
 
 void UBP_FortExpeditionMasterWidget_C::HandleAllCompletedExpeditionsCollected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HandleAllCompletedExpeditionsCollected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x863b0dc);
 
 	UBP_FortExpeditionMasterWidget_C_HandleAllCompletedExpeditionsCollected_Params params;
 
@@ -306,7 +321,8 @@ void UBP_FortExpeditionMasterWidget_C::HandleAllCompletedExpeditionsCollected()
 
 void UBP_FortExpeditionMasterWidget_C::HACK_OnActivate_UpdateMasterWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.HACK_OnActivate_UpdateMasterWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6189de03);
 
 	UBP_FortExpeditionMasterWidget_C_HACK_OnActivate_UpdateMasterWidget_Params params;
 
@@ -323,7 +339,8 @@ void UBP_FortExpeditionMasterWidget_C::HACK_OnActivate_UpdateMasterWidget()
 
 void UBP_FortExpeditionMasterWidget_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea7aa435);
 
 	UBP_FortExpeditionMasterWidget_C_OnActivated_Params params;
 
@@ -342,7 +359,8 @@ void UBP_FortExpeditionMasterWidget_C::OnActivated()
 
 void UBP_FortExpeditionMasterWidget_C::ExecuteUbergraph_BP_FortExpeditionMasterWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionMasterWidget.BP_FortExpeditionMasterWidget_C.ExecuteUbergraph_BP_FortExpeditionMasterWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbdef7bd8);
 
 	UBP_FortExpeditionMasterWidget_C_ExecuteUbergraph_BP_FortExpeditionMasterWidget_Params params;
 	params.EntryPoint = EntryPoint;

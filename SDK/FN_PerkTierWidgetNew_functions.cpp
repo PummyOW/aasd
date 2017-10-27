@@ -22,7 +22,8 @@ namespace SDK
 
 void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName, bool bIncludeDescription, TEnumAsByte<EFortBrushSize> IconSize, const struct FFortUIPerkTier& FortPerkTier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkTierWidgetNew.PerkTierWidgetNew_C.InitializeSettings");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x596168e2);
 
 	UPerkTierWidgetNew_C_InitializeSettings_Params params;
 	params.bIncludeName = bIncludeName;
@@ -43,7 +44,8 @@ void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName, bool bIncludeDe
 
 void UPerkTierWidgetNew_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkTierWidgetNew.PerkTierWidgetNew_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab7f2076);
 
 	UPerkTierWidgetNew_C_Construct_Params params;
 
@@ -63,7 +65,8 @@ void UPerkTierWidgetNew_C::Construct()
 
 void UPerkTierWidgetNew_C::OnGeneratePerk(struct FFortUIPerk* Perk, class UFortPerkWidget_NUI** PerkWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkTierWidgetNew.PerkTierWidgetNew_C.OnGeneratePerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff73a95d);
 
 	UPerkTierWidgetNew_C_OnGeneratePerk_Params params;
 	params.Perk = Perk;
@@ -84,7 +87,8 @@ void UPerkTierWidgetNew_C::OnGeneratePerk(struct FFortUIPerk* Perk, class UFortP
 
 void UPerkTierWidgetNew_C::ExecuteUbergraph_PerkTierWidgetNew(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkTierWidgetNew.PerkTierWidgetNew_C.ExecuteUbergraph_PerkTierWidgetNew");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x202dab1f);
 
 	UPerkTierWidgetNew_C_ExecuteUbergraph_PerkTierWidgetNew_Params params;
 	params.EntryPoint = EntryPoint;

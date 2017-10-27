@@ -20,7 +20,8 @@ namespace SDK
 
 void UAthenaPlayerActionAlert_C::AlertPlayer(EAthenaPlayerActionAlert* Alert, struct FText* DetailText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.AlertPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd181b6bc);
 
 	UAthenaPlayerActionAlert_C_AlertPlayer_Params params;
 	params.Alert = Alert;
@@ -41,7 +42,8 @@ void UAthenaPlayerActionAlert_C::AlertPlayer(EAthenaPlayerActionAlert* Alert, st
 
 void UAthenaPlayerActionAlert_C::OnAnimationFinished(class UWidgetAnimation** Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.OnAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xadb3a0b0);
 
 	UAthenaPlayerActionAlert_C_OnAnimationFinished_Params params;
 	params.Animation = Animation;
@@ -61,7 +63,8 @@ void UAthenaPlayerActionAlert_C::OnAnimationFinished(class UWidgetAnimation** An
 
 void UAthenaPlayerActionAlert_C::ExecuteUbergraph_AthenaPlayerActionAlert(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPlayerActionAlert.AthenaPlayerActionAlert_C.ExecuteUbergraph_AthenaPlayerActionAlert");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60fb6e9b);
 
 	UAthenaPlayerActionAlert_C_ExecuteUbergraph_AthenaPlayerActionAlert_Params params;
 	params.EntryPoint = EntryPoint;

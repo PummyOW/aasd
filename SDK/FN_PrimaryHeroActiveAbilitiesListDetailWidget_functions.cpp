@@ -17,7 +17,8 @@ namespace SDK
 
 void UPrimaryHeroActiveAbilitiesListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a4404cf);
 
 	UPrimaryHeroActiveAbilitiesListDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -34,7 +35,8 @@ void UPrimaryHeroActiveAbilitiesListDetailWidget_C::HandlePostDifferentItemToDet
 
 void UPrimaryHeroActiveAbilitiesListDetailWidget_C::HandlePostDifferentSquadSlotSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C.HandlePostDifferentSquadSlotSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86718830);
 
 	UPrimaryHeroActiveAbilitiesListDetailWidget_C_HandlePostDifferentSquadSlotSetBP_Params params;
 
@@ -51,7 +53,8 @@ void UPrimaryHeroActiveAbilitiesListDetailWidget_C::HandlePostDifferentSquadSlot
 
 void UPrimaryHeroActiveAbilitiesListDetailWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf456b10);
 
 	UPrimaryHeroActiveAbilitiesListDetailWidget_C_Construct_Params params;
 
@@ -70,7 +73,8 @@ void UPrimaryHeroActiveAbilitiesListDetailWidget_C::Construct()
 
 void UPrimaryHeroActiveAbilitiesListDetailWidget_C::ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrimaryHeroActiveAbilitiesListDetailWidget.PrimaryHeroActiveAbilitiesListDetailWidget_C.ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb413abb0);
 
 	UPrimaryHeroActiveAbilitiesListDetailWidget_C_ExecuteUbergraph_PrimaryHeroActiveAbilitiesListDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

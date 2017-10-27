@@ -26,7 +26,8 @@ namespace SDK
 
 void UTooltipLibrary_C::STATIC_CreateXPTooltip(class APlayerController* Owner, const struct FText& Header, const struct FText& CommanderXP, const struct FText& BoostXP, const struct FText& RestXP, const struct FText& Body, class UObject* __WorldContext, class UCommonUserWidget** Out)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.CreateXPTooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d07b238);
 
 	UTooltipLibrary_C_CreateXPTooltip_Params params;
 	params.Owner = Owner;
@@ -59,7 +60,8 @@ void UTooltipLibrary_C::STATIC_CreateXPTooltip(class APlayerController* Owner, c
 
 void UTooltipLibrary_C::STATIC_Create_Core_Stat_Tooltip(class APlayerController* Owning_Player, const struct FHeroCoreStat& Data, float Value, class UObject* __WorldContext, class UUserWidget** Output)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.Create Core Stat Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf843b4b);
 
 	UTooltipLibrary_C_Create_Core_Stat_Tooltip_Params params;
 	params.Owning_Player = Owning_Player;
@@ -90,7 +92,8 @@ void UTooltipLibrary_C::STATIC_Create_Core_Stat_Tooltip(class APlayerController*
 
 void UTooltipLibrary_C::STATIC_Create_Basic_Multi_Line_Tooltip(class APlayerController* Owning_Player, const struct FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, TArray<struct FText>* Body_Text, class UUserWidget** Output)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.Create Basic Multi Line Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d2ba625);
 
 	UTooltipLibrary_C_Create_Basic_Multi_Line_Tooltip_Params params;
 	params.Owning_Player = Owning_Player;
@@ -124,7 +127,8 @@ void UTooltipLibrary_C::STATIC_Create_Basic_Multi_Line_Tooltip(class APlayerCont
 
 void UTooltipLibrary_C::STATIC_Create_Compare_Item_Tooltip(class APlayerController* Owning_Player, const struct FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, class UFortItem* ComparedItem, class UObject* __WorldContext, class UWidget** Return_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.Create Compare Item Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d4e651e);
 
 	UTooltipLibrary_C_Create_Compare_Item_Tooltip_Params params;
 	params.Owning_Player = Owning_Player;
@@ -158,7 +162,8 @@ void UTooltipLibrary_C::STATIC_Create_Compare_Item_Tooltip(class APlayerControll
 
 void UTooltipLibrary_C::STATIC_Create_Item_Tooltip(class APlayerController* Owning_Player, const struct FText& Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, int OverrideQuantity, class UObject* __WorldContext, class UWidget** Return_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.Create Item Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9a96301);
 
 	UTooltipLibrary_C_Create_Item_Tooltip_Params params;
 	params.Owning_Player = Owning_Player;
@@ -189,7 +194,8 @@ void UTooltipLibrary_C::STATIC_Create_Item_Tooltip(class APlayerController* Owni
 
 void UTooltipLibrary_C::STATIC_Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool Enabled, const struct FText& Tooltip_Text, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.Set Enabled And Tooltip Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11d8799d);
 
 	UTooltipLibrary_C_Set_Enabled_And_Tooltip_Text_Params params;
 	params.Widget = Widget;
@@ -217,7 +223,8 @@ void UTooltipLibrary_C::STATIC_Set_Enabled_And_Tooltip_Text(class UWidget* Widge
 
 void UTooltipLibrary_C::STATIC_Create_Custom_Tooltip(class APlayerController* Owning_Player, const struct FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UUserWidget* Widget, class UObject* __WorldContext, class UUserWidget** Output)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.Create Custom Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60a65215);
 
 	UTooltipLibrary_C_Create_Custom_Tooltip_Params params;
 	params.Owning_Player = Owning_Player;
@@ -249,7 +256,8 @@ void UTooltipLibrary_C::STATIC_Create_Custom_Tooltip(class APlayerController* Ow
 
 void UTooltipLibrary_C::STATIC_Create_Basic_Tooltip(class APlayerController* Owning_Player, const struct FText& Body_Text, const struct FText& Header_Text, class USlateBrushAsset* Icon_Brush, class UObject* __WorldContext, class UUserWidget** Output)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipLibrary.TooltipLibrary_C.Create Basic Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21c892c8);
 
 	UTooltipLibrary_C_Create_Basic_Tooltip_Params params;
 	params.Owning_Player = Owning_Player;

@@ -19,12 +19,6 @@ struct UItemInspectEvolutionConfirmation_C_SetEvolutionRestrictions_Params
 {
 };
 
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.UnselectOtherEvolutions
-struct UItemInspectEvolutionConfirmation_C_UnselectOtherEvolutions_Params
-{
-	int                                                SelectedIndex;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ClearEvolutionRepresented
 struct UItemInspectEvolutionConfirmation_C_ClearEvolutionRepresented_Params
 {
@@ -63,19 +57,6 @@ struct UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionSelected_Params
 	int                                                RecipeIndex;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionUnhovered
-struct UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionUnhovered_Params
-{
-	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionHovered
-struct UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionHovered_Params
-{
-	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                RecipeIndex;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetEvolutionToRepresent
 struct UItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent_Params
 {
@@ -93,6 +74,11 @@ struct UItemInspectEvolutionConfirmation_C_SetItemToRepresent_Params
 struct UItemInspectEvolutionConfirmation_C_BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params
 {
 	class UCommonButton*                               Button;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.Construct
+struct UItemInspectEvolutionConfirmation_C_Construct_Params
+{
 };
 
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ExecuteUbergraph_ItemInspectEvolutionConfirmation

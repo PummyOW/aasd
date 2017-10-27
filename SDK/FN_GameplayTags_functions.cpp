@@ -20,7 +20,8 @@ namespace SDK
 
 bool UGameplayTagAssetInterface::HasMatchingGameplayTag(const struct FGameplayTag& TagToCheck)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.GameplayTagAssetInterface.HasMatchingGameplayTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a032e56);
 
 	UGameplayTagAssetInterface_HasMatchingGameplayTag_Params params;
 	params.TagToCheck = TagToCheck;
@@ -44,7 +45,8 @@ bool UGameplayTagAssetInterface::HasMatchingGameplayTag(const struct FGameplayTa
 
 bool UGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGameplayTagContainer& TagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.GameplayTagAssetInterface.HasAnyMatchingGameplayTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bfb5c51);
 
 	UGameplayTagAssetInterface_HasAnyMatchingGameplayTags_Params params;
 	params.TagContainer = TagContainer;
@@ -68,7 +70,8 @@ bool UGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGamepl
 
 bool UGameplayTagAssetInterface::HasAllMatchingGameplayTags(const struct FGameplayTagContainer& TagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.GameplayTagAssetInterface.HasAllMatchingGameplayTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31cf75fe);
 
 	UGameplayTagAssetInterface_HasAllMatchingGameplayTags_Params params;
 	params.TagContainer = TagContainer;
@@ -91,7 +94,8 @@ bool UGameplayTagAssetInterface::HasAllMatchingGameplayTags(const struct FGamepl
 
 void UGameplayTagAssetInterface::GetOwnedGameplayTags(struct FGameplayTagContainer* TagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.GameplayTagAssetInterface.GetOwnedGameplayTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e2307e9);
 
 	UGameplayTagAssetInterface_GetOwnedGameplayTags_Params params;
 
@@ -116,7 +120,8 @@ void UGameplayTagAssetInterface::GetOwnedGameplayTags(struct FGameplayTagContain
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagTag(const struct FGameplayTag& A, const struct FString& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_TagTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb66ec336);
 
 	UBlueprintGameplayTagLibrary_NotEqual_TagTag_Params params;
 	params.A = A;
@@ -142,7 +147,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagTag(const struct FGameplay
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagContainerTagContainer(const struct FGameplayTagContainer& A, const struct FString& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_TagContainerTagContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x675a602e);
 
 	UBlueprintGameplayTagLibrary_NotEqual_TagContainerTagContainer_Params params;
 	params.A = A;
@@ -168,7 +174,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_TagContainerTagContainer(cons
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_GameplayTagContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb002e9eb);
 
 	UBlueprintGameplayTagLibrary_NotEqual_GameplayTagContainer_Params params;
 	params.A = A;
@@ -194,7 +201,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTagContainer(const st
 
 bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.NotEqual_GameplayTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2dc5f8e);
 
 	UBlueprintGameplayTagLibrary_NotEqual_GameplayTag_Params params;
 	params.A = A;
@@ -221,7 +229,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_NotEqual_GameplayTag(const struct FGam
 
 bool UBlueprintGameplayTagLibrary::STATIC_MatchesTag(const struct FGameplayTag& TagOne, const struct FGameplayTag& TagTwo, bool bExactMatch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.MatchesTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x345570e7);
 
 	UBlueprintGameplayTagLibrary_MatchesTag_Params params;
 	params.TagOne = TagOne;
@@ -249,7 +258,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_MatchesTag(const struct FGameplayTag& 
 
 bool UBlueprintGameplayTagLibrary::STATIC_MatchesAnyTags(const struct FGameplayTag& TagOne, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.MatchesAnyTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf92b48e);
 
 	UBlueprintGameplayTagLibrary_MatchesAnyTags_Params params;
 	params.TagOne = TagOne;
@@ -275,7 +285,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_MatchesAnyTags(const struct FGameplayT
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTagContainer(const struct FGameplayTagContainer& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTagContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb735c500);
 
 	UBlueprintGameplayTagLibrary_MakeLiteralGameplayTagContainer_Params params;
 	params.Value = Value;
@@ -299,7 +310,8 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGam
 
 struct FGameplayTag UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTag(const struct FGameplayTag& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.MakeLiteralGameplayTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12c170a7);
 
 	UBlueprintGameplayTagLibrary_MakeLiteralGameplayTag_Params params;
 	params.Value = Value;
@@ -323,7 +335,8 @@ struct FGameplayTag UBlueprintGameplayTagLibrary::STATIC_MakeLiteralGameplayTag(
 
 struct FGameplayTagQuery UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagQuery(const struct FGameplayTagQuery& TagQuery)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagQuery");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e586ba4);
 
 	UBlueprintGameplayTagLibrary_MakeGameplayTagQuery_Params params;
 	params.TagQuery = TagQuery;
@@ -347,7 +360,8 @@ struct FGameplayTagQuery UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagQue
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagContainerFromTag(const struct FGameplayTag& SingleTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagContainerFromTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x553ebaa3);
 
 	UBlueprintGameplayTagLibrary_MakeGameplayTagContainerFromTag_Params params;
 	params.SingleTag = SingleTag;
@@ -371,7 +385,8 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTa
 
 struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTagContainerFromArray(TArray<struct FGameplayTag> GameplayTags)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.MakeGameplayTagContainerFromArray");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91ef98d8);
 
 	UBlueprintGameplayTagLibrary_MakeGameplayTagContainerFromArray_Params params;
 	params.GameplayTags = GameplayTags;
@@ -395,7 +410,8 @@ struct FGameplayTagContainer UBlueprintGameplayTagLibrary::STATIC_MakeGameplayTa
 
 bool UBlueprintGameplayTagLibrary::STATIC_IsGameplayTagValid(const struct FGameplayTag& GameplayTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.IsGameplayTagValid");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4a6673c);
 
 	UBlueprintGameplayTagLibrary_IsGameplayTagValid_Params params;
 	params.GameplayTag = GameplayTag;
@@ -421,7 +437,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_IsGameplayTagValid(const struct FGamep
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasTag(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag, bool bExactMatch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.HasTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ed5f6e2);
 
 	UBlueprintGameplayTagLibrary_HasTag_Params params;
 	params.TagContainer = TagContainer;
@@ -449,7 +466,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasTag(const struct FGameplayTagContai
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasAnyTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.HasAnyTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5eb5fcf3);
 
 	UBlueprintGameplayTagLibrary_HasAnyTags_Params params;
 	params.TagContainer = TagContainer;
@@ -477,7 +495,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasAnyTags(const struct FGameplayTagCo
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasAllTags(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagContainer& OtherContainer, bool bExactMatch)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.HasAllTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0ac8c0);
 
 	UBlueprintGameplayTagLibrary_HasAllTags_Params params;
 	params.TagContainer = TagContainer;
@@ -504,7 +523,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasAllTags(const struct FGameplayTagCo
 
 bool UBlueprintGameplayTagLibrary::STATIC_HasAllMatchingGameplayTags(const TScriptInterface<class UGameplayTagAssetInterface>& TagContainerInterface, const struct FGameplayTagContainer& OtherContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.HasAllMatchingGameplayTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66bf4f9);
 
 	UBlueprintGameplayTagLibrary_HasAllMatchingGameplayTags_Params params;
 	params.TagContainerInterface = TagContainerInterface;
@@ -529,7 +549,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_HasAllMatchingGameplayTags(const TScri
 
 struct FName UBlueprintGameplayTagLibrary::STATIC_GetTagName(const struct FGameplayTag& GameplayTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.GetTagName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b2de173);
 
 	UBlueprintGameplayTagLibrary_GetTagName_Params params;
 	params.GameplayTag = GameplayTag;
@@ -553,7 +574,8 @@ struct FName UBlueprintGameplayTagLibrary::STATIC_GetTagName(const struct FGamep
 
 int UBlueprintGameplayTagLibrary::STATIC_GetNumGameplayTagsInContainer(const struct FGameplayTagContainer& TagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.GetNumGameplayTagsInContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4385b765);
 
 	UBlueprintGameplayTagLibrary_GetNumGameplayTagsInContainer_Params params;
 	params.TagContainer = TagContainer;
@@ -577,7 +599,8 @@ int UBlueprintGameplayTagLibrary::STATIC_GetNumGameplayTagsInContainer(const str
 
 struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTagContainer(const struct FGameplayTagContainer& TagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.GetDebugStringFromGameplayTagContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12875499);
 
 	UBlueprintGameplayTagLibrary_GetDebugStringFromGameplayTagContainer_Params params;
 	params.TagContainer = TagContainer;
@@ -601,7 +624,8 @@ struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTa
 
 struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTag(const struct FGameplayTag& GameplayTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.GetDebugStringFromGameplayTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f9dfde4);
 
 	UBlueprintGameplayTagLibrary_GetDebugStringFromGameplayTag_Params params;
 	params.GameplayTag = GameplayTag;
@@ -627,7 +651,8 @@ struct FString UBlueprintGameplayTagLibrary::STATIC_GetDebugStringFromGameplayTa
 
 void UBlueprintGameplayTagLibrary::STATIC_GetAllActorsOfClassMatchingTagQuery(class UObject* WorldContextObject, class UClass* ActorClass, const struct FGameplayTagQuery& GameplayTagQuery, TArray<class AActor*>* OutActors)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.GetAllActorsOfClassMatchingTagQuery");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c763de3);
 
 	UBlueprintGameplayTagLibrary_GetAllActorsOfClassMatchingTagQuery_Params params;
 	params.WorldContextObject = WorldContextObject;
@@ -655,7 +680,8 @@ void UBlueprintGameplayTagLibrary::STATIC_GetAllActorsOfClassMatchingTagQuery(cl
 
 bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTagContainer(const struct FGameplayTagContainer& A, const struct FGameplayTagContainer& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.EqualEqual_GameplayTagContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7010d00);
 
 	UBlueprintGameplayTagLibrary_EqualEqual_GameplayTagContainer_Params params;
 	params.A = A;
@@ -681,7 +707,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTagContainer(const 
 
 bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTag(const struct FGameplayTag& A, const struct FGameplayTag& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.EqualEqual_GameplayTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x675b08a7);
 
 	UBlueprintGameplayTagLibrary_EqualEqual_GameplayTag_Params params;
 	params.A = A;
@@ -707,7 +734,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_EqualEqual_GameplayTag(const struct FG
 
 bool UBlueprintGameplayTagLibrary::STATIC_DoesTagAssetInterfaceHaveTag(const TScriptInterface<class UGameplayTagAssetInterface>& TagContainerInterface, const struct FGameplayTag& Tag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.DoesTagAssetInterfaceHaveTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa29779e0);
 
 	UBlueprintGameplayTagLibrary_DoesTagAssetInterfaceHaveTag_Params params;
 	params.TagContainerInterface = TagContainerInterface;
@@ -733,7 +761,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_DoesTagAssetInterfaceHaveTag(const TSc
 
 bool UBlueprintGameplayTagLibrary::STATIC_DoesContainerMatchTagQuery(const struct FGameplayTagContainer& TagContainer, const struct FGameplayTagQuery& TagQuery)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.DoesContainerMatchTagQuery");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40bd2509);
 
 	UBlueprintGameplayTagLibrary_DoesContainerMatchTagQuery_Params params;
 	params.TagContainer = TagContainer;
@@ -758,7 +787,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_DoesContainerMatchTagQuery(const struc
 
 void UBlueprintGameplayTagLibrary::STATIC_BreakGameplayTagContainer(const struct FGameplayTagContainer& GameplayTagContainer, TArray<struct FGameplayTag>* GameplayTags)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.BreakGameplayTagContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72108202);
 
 	UBlueprintGameplayTagLibrary_BreakGameplayTagContainer_Params params;
 	params.GameplayTagContainer = GameplayTagContainer;
@@ -783,7 +813,8 @@ void UBlueprintGameplayTagLibrary::STATIC_BreakGameplayTagContainer(const struct
 
 void UBlueprintGameplayTagLibrary::STATIC_AppendGameplayTagContainers(const struct FGameplayTagContainer& InTagContainer, struct FGameplayTagContainer* InOutTagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.AppendGameplayTagContainers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4bce00a);
 
 	UBlueprintGameplayTagLibrary_AppendGameplayTagContainers_Params params;
 	params.InTagContainer = InTagContainer;
@@ -809,7 +840,8 @@ void UBlueprintGameplayTagLibrary::STATIC_AppendGameplayTagContainers(const stru
 
 bool UBlueprintGameplayTagLibrary::STATIC_AddGameplayTagToContainer(const struct FGameplayTag& Tag, struct FGameplayTagContainer* TagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.AddGameplayTagToContainer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e2b85d7);
 
 	UBlueprintGameplayTagLibrary_AddGameplayTagToContainer_Params params;
 	params.Tag = Tag;
@@ -836,7 +868,8 @@ bool UBlueprintGameplayTagLibrary::STATIC_AddGameplayTagToContainer(const struct
 
 void UBlueprintGameplayTagLibrary::STATIC_AddGameplayTag(const struct FGameplayTag& Tag, struct FGameplayTagContainer* InOutTagContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GameplayTags.BlueprintGameplayTagLibrary.AddGameplayTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92ac8a49);
 
 	UBlueprintGameplayTagLibrary_AddGameplayTag_Params params;
 	params.Tag = Tag;

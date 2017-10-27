@@ -13,14 +13,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass ItemInspectionItemExtraDetailsHostPanel.ItemInspectionItemExtraDetailsHostPanel_C
-// 0x0000 (0x0290 - 0x0290)
+// 0x0000 (0x02A0 - 0x02A0)
 class UItemInspectionItemExtraDetailsHostPanel_C : public UFortItemDetailsHostPanel
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ItemInspectionItemExtraDetailsHostPanel.ItemInspectionItemExtraDetailsHostPanel_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x58e00815);
 		return ptr;
 	}
 

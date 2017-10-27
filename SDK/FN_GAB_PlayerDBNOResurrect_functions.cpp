@@ -20,7 +20,8 @@ namespace SDK
 
 void UGAB_PlayerDBNOResurrect_C::Completed_0B41E4DC44D3371D619734A714E9FE50(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Completed_0B41E4DC44D3371D619734A714E9FE50");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70842c7);
 
 	UGAB_PlayerDBNOResurrect_C_Completed_0B41E4DC44D3371D619734A714E9FE50_Params params;
 	params.TargetData = TargetData;
@@ -42,7 +43,8 @@ void UGAB_PlayerDBNOResurrect_C::Completed_0B41E4DC44D3371D619734A714E9FE50(cons
 
 void UGAB_PlayerDBNOResurrect_C::Cancelled_0B41E4DC44D3371D619734A714E9FE50(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_0B41E4DC44D3371D619734A714E9FE50");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x712cd86d);
 
 	UGAB_PlayerDBNOResurrect_C_Cancelled_0B41E4DC44D3371D619734A714E9FE50_Params params;
 	params.TargetData = TargetData;
@@ -64,7 +66,8 @@ void UGAB_PlayerDBNOResurrect_C::Cancelled_0B41E4DC44D3371D619734A714E9FE50(cons
 
 void UGAB_PlayerDBNOResurrect_C::Triggered_0B41E4DC44D3371D619734A714E9FE50(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Triggered_0B41E4DC44D3371D619734A714E9FE50");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d39d597);
 
 	UGAB_PlayerDBNOResurrect_C_Triggered_0B41E4DC44D3371D619734A714E9FE50_Params params;
 	params.TargetData = TargetData;
@@ -86,7 +89,8 @@ void UGAB_PlayerDBNOResurrect_C::Triggered_0B41E4DC44D3371D619734A714E9FE50(cons
 
 void UGAB_PlayerDBNOResurrect_C::Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf03b9de);
 
 	UGAB_PlayerDBNOResurrect_C_Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6_Params params;
 	params.TargetData = TargetData;
@@ -108,7 +112,8 @@ void UGAB_PlayerDBNOResurrect_C::Cancelled_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(cons
 
 void UGAB_PlayerDBNOResurrect_C::Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2490213);
 
 	UGAB_PlayerDBNOResurrect_C_Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6_Params params;
 	params.TargetData = TargetData;
@@ -129,7 +134,8 @@ void UGAB_PlayerDBNOResurrect_C::Targeted_8E1AEF7D40AE1D4CCBACC68EEB3D87D6(const
 
 void UGAB_PlayerDBNOResurrect_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa85448ba);
 
 	UGAB_PlayerDBNOResurrect_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -147,7 +153,8 @@ void UGAB_PlayerDBNOResurrect_C::K2_ActivateAbilityFromEvent(struct FGameplayEve
 
 void UGAB_PlayerDBNOResurrect_C::K2_OnEndAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.K2_OnEndAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa03fb023);
 
 	UGAB_PlayerDBNOResurrect_C_K2_OnEndAbility_Params params;
 
@@ -166,7 +173,8 @@ void UGAB_PlayerDBNOResurrect_C::K2_OnEndAbility()
 
 void UGAB_PlayerDBNOResurrect_C::ExecuteUbergraph_GAB_PlayerDBNOResurrect(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNOResurrect.GAB_PlayerDBNOResurrect_C.ExecuteUbergraph_GAB_PlayerDBNOResurrect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x846eb53);
 
 	UGAB_PlayerDBNOResurrect_C_ExecuteUbergraph_GAB_PlayerDBNOResurrect_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_LowHeath_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_LowHeath.Announce_LowHeath_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82d87d80);
 
 	AAnnounce_LowHeath_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_LowHeath_C::UserConstructionScript()
 
 void AAnnounce_LowHeath_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_LowHeath.Announce_LowHeath_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ffad598);
 
 	AAnnounce_LowHeath_C_OnClientAnnouncementStart_Params params;
 
@@ -53,7 +55,8 @@ void AAnnounce_LowHeath_C::OnClientAnnouncementStart()
 
 void AAnnounce_LowHeath_C::ExecuteUbergraph_Announce_LowHeath(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_LowHeath.Announce_LowHeath_C.ExecuteUbergraph_Announce_LowHeath");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d81e23d);
 
 	AAnnounce_LowHeath_C_ExecuteUbergraph_Announce_LowHeath_Params params;
 	params.EntryPoint = EntryPoint;

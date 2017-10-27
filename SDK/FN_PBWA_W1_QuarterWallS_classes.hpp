@@ -13,15 +13,16 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C
-// 0x0008 (0x10B8 - 0x10B0)
+// 0x0008 (0x10C8 - 0x10C0)
 class APBWA_W1_QuarterWallS_C : public ABuildingWall
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x10B0(0x0008) (CPF_Transient, CPF_DuplicateTransient)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x10C0(0x0008) (CPF_Transient, CPF_DuplicateTransient)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass PBWA_W1_QuarterWallS.PBWA_W1_QuarterWallS_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5d8707ff);
 		return ptr;
 	}
 

@@ -19,7 +19,8 @@ namespace SDK
 
 void UAnnouncement_ZoneModifiers_C::UpdateWidgetData(class AFortClientAnnouncement** Announcement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.UpdateWidgetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b8452b8);
 
 	UAnnouncement_ZoneModifiers_C_UpdateWidgetData_Params params;
 	params.Announcement = Announcement;
@@ -37,7 +38,8 @@ void UAnnouncement_ZoneModifiers_C::UpdateWidgetData(class AFortClientAnnounceme
 
 void UAnnouncement_ZoneModifiers_C::OnDisplayTimerFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.OnDisplayTimerFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41bb4ba3);
 
 	UAnnouncement_ZoneModifiers_C_OnDisplayTimerFinished_Params params;
 
@@ -54,7 +56,8 @@ void UAnnouncement_ZoneModifiers_C::OnDisplayTimerFinished()
 
 void UAnnouncement_ZoneModifiers_C::OnConversationDelayFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.OnConversationDelayFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8d235d0);
 
 	UAnnouncement_ZoneModifiers_C_OnConversationDelayFinished_Params params;
 
@@ -71,7 +74,8 @@ void UAnnouncement_ZoneModifiers_C::OnConversationDelayFinished()
 
 void UAnnouncement_ZoneModifiers_C::WidgetCachingHack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.WidgetCachingHack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc1661d5);
 
 	UAnnouncement_ZoneModifiers_C_WidgetCachingHack_Params params;
 
@@ -90,7 +94,8 @@ void UAnnouncement_ZoneModifiers_C::WidgetCachingHack()
 
 void UAnnouncement_ZoneModifiers_C::ExecuteUbergraph_Announcement_ZoneModifiers(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_ZoneModifiers.Announcement_ZoneModifiers_C.ExecuteUbergraph_Announcement_ZoneModifiers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f729b7b);
 
 	UAnnouncement_ZoneModifiers_C_ExecuteUbergraph_Announcement_ZoneModifiers_Params params;
 	params.EntryPoint = EntryPoint;

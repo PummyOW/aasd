@@ -20,7 +20,8 @@ namespace SDK
 
 void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Update Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4033f69);
 
 	UQuestsCountIconTabButton_C_Update_Bang_State_Params params;
 	params.bBangEnabled = bBangEnabled;
@@ -39,7 +40,8 @@ void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled, int Count
 
 void UQuestsCountIconTabButton_C::Update_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Update Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf351dd1d);
 
 	UQuestsCountIconTabButton_C_Update_Text_Params params;
 
@@ -58,7 +60,8 @@ void UQuestsCountIconTabButton_C::Update_Text()
 
 void UQuestsCountIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTutorialBorderStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeda7387c);
 
 	UQuestsCountIconTabButton_C_SetTutorialBorderStyle_Params params;
 	params.BorderStyle = BorderStyle;
@@ -76,7 +79,8 @@ void UQuestsCountIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderSty
 
 void UQuestsCountIconTabButton_C::ShowText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.ShowText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72cac9b5);
 
 	UQuestsCountIconTabButton_C_ShowText_Params params;
 
@@ -95,7 +99,8 @@ void UQuestsCountIconTabButton_C::ShowText()
 
 void UQuestsCountIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca1472e8);
 
 	UQuestsCountIconTabButton_C_Set_Icon_Params params;
 	params.IconBrush = IconBrush;
@@ -115,7 +120,8 @@ void UQuestsCountIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UQuestsCountIconTabButton_C::Set_Text(const struct FText& ButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x910f0452);
 
 	UQuestsCountIconTabButton_C_Set_Text_Params params;
 	params.ButtonText = ButtonText;
@@ -133,7 +139,8 @@ void UQuestsCountIconTabButton_C::Set_Text(const struct FText& ButtonText)
 
 void UQuestsCountIconTabButton_C::OnCurrentTextStyleChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnCurrentTextStyleChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0135f6f);
 
 	UQuestsCountIconTabButton_C_OnCurrentTextStyleChanged_Params params;
 
@@ -152,7 +159,8 @@ void UQuestsCountIconTabButton_C::OnCurrentTextStyleChanged()
 
 void UQuestsCountIconTabButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99b77059);
 
 	UQuestsCountIconTabButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -172,7 +180,8 @@ void UQuestsCountIconTabButton_C::PreConstruct(bool* IsDesignTime)
 
 void UQuestsCountIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTabLabelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ead19d0);
 
 	UQuestsCountIconTabButton_C_SetTabLabelInfo_Params params;
 	params.TabLabelInfo = TabLabelInfo;
@@ -190,7 +199,8 @@ void UQuestsCountIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLab
 
 void UQuestsCountIconTabButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9515257);
 
 	UQuestsCountIconTabButton_C_OnSelected_Params params;
 
@@ -207,7 +217,8 @@ void UQuestsCountIconTabButton_C::OnSelected()
 
 void UQuestsCountIconTabButton_C::OnDeselected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnDeselected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f55b5aa);
 
 	UQuestsCountIconTabButton_C_OnDeselected_Params params;
 
@@ -224,7 +235,8 @@ void UQuestsCountIconTabButton_C::OnDeselected()
 
 void UQuestsCountIconTabButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b540212);
 
 	UQuestsCountIconTabButton_C_Construct_Params params;
 
@@ -241,7 +253,8 @@ void UQuestsCountIconTabButton_C::Construct()
 
 void UQuestsCountIconTabButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9150cf5);
 
 	UQuestsCountIconTabButton_C_OnHovered_Params params;
 
@@ -258,7 +271,8 @@ void UQuestsCountIconTabButton_C::OnHovered()
 
 void UQuestsCountIconTabButton_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ba88a92);
 
 	UQuestsCountIconTabButton_C_OnUnhovered_Params params;
 
@@ -275,7 +289,8 @@ void UQuestsCountIconTabButton_C::OnUnhovered()
 
 void UQuestsCountIconTabButton_C::Handle_Quest_Count_Updated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.Handle Quest Count Updated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x973734df);
 
 	UQuestsCountIconTabButton_C_Handle_Quest_Count_Updated_Params params;
 
@@ -294,7 +309,8 @@ void UQuestsCountIconTabButton_C::Handle_Quest_Count_Updated()
 
 void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.ExecuteUbergraph_QuestsCountIconTabButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c67e46d);
 
 	UQuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton_Params params;
 	params.EntryPoint = EntryPoint;

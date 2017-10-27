@@ -17,7 +17,8 @@ namespace SDK
 
 void UQuestInfo_BulletListEntry_C::ShowBorder()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.ShowBorder");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4fd6e3a6);
 
 	UQuestInfo_BulletListEntry_C_ShowBorder_Params params;
 
@@ -37,7 +38,8 @@ void UQuestInfo_BulletListEntry_C::ShowBorder()
 
 struct FVector2D UQuestInfo_BulletListEntry_C::CalcBrushSize(const struct FVector2D& InImageSize)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.CalcBrushSize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3705237);
 
 	UQuestInfo_BulletListEntry_C_CalcBrushSize_Params params;
 	params.InImageSize = InImageSize;
@@ -60,7 +62,8 @@ struct FVector2D UQuestInfo_BulletListEntry_C::CalcBrushSize(const struct FVecto
 
 void UQuestInfo_BulletListEntry_C::InitBrush(const struct FText& EntryText, const struct FSlateBrush& EntryIconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.InitBrush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30094573);
 
 	UQuestInfo_BulletListEntry_C_InitBrush_Params params;
 	params.EntryText = EntryText;
@@ -81,7 +84,8 @@ void UQuestInfo_BulletListEntry_C::InitBrush(const struct FText& EntryText, cons
 
 void UQuestInfo_BulletListEntry_C::InitBullet(const struct FText& EntryText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletListEntry.QuestInfo_BulletListEntry_C.InitBullet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19feb579);
 
 	UQuestInfo_BulletListEntry_C_InitBullet_Params params;
 	params.EntryText = EntryText;

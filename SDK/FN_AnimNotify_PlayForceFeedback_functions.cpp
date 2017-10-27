@@ -21,7 +21,8 @@ namespace SDK
 
 bool UAnimNotify_PlayForceFeedback_C::Received_Notify(class USkeletalMeshComponent** MeshComp, class UAnimSequenceBase** Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C.Received_Notify");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdda08544);
 
 	UAnimNotify_PlayForceFeedback_C_Received_Notify_Params params;
 	params.MeshComp = MeshComp;

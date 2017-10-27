@@ -19,7 +19,8 @@ namespace SDK
 
 void UMissionTooltip_C::HandleGameplayModifiers(TArray<class UFortGameplayModifierItemDefinition*>* GameplayModifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTooltip.MissionTooltip_C.HandleGameplayModifiers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2540452f);
 
 	UMissionTooltip_C_HandleGameplayModifiers_Params params;
 
@@ -39,7 +40,8 @@ void UMissionTooltip_C::HandleGameplayModifiers(TArray<class UFortGameplayModifi
 
 void UMissionTooltip_C::HandleMissionRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTooltip.MissionTooltip_C.HandleMissionRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad74e2a1);
 
 	UMissionTooltip_C_HandleMissionRewards_Params params;
 
@@ -58,7 +60,8 @@ void UMissionTooltip_C::HandleMissionRewards()
 
 void UMissionTooltip_C::UpdateMissionInfo(class ABP_Hex_PARENT_C* Mission_Details)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTooltip.MissionTooltip_C.UpdateMissionInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdffcd084);
 
 	UMissionTooltip_C_UpdateMissionInfo_Params params;
 	params.Mission_Details = Mission_Details;
@@ -76,7 +79,8 @@ void UMissionTooltip_C::UpdateMissionInfo(class ABP_Hex_PARENT_C* Mission_Detail
 
 void UMissionTooltip_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTooltip.MissionTooltip_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8879118);
 
 	UMissionTooltip_C_Construct_Params params;
 
@@ -95,7 +99,8 @@ void UMissionTooltip_C::Construct()
 
 void UMissionTooltip_C::InitFromObject(class UObject* InitObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTooltip.MissionTooltip_C.InitFromObject");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d4e237a);
 
 	UMissionTooltip_C_InitFromObject_Params params;
 	params.InitObject = InitObject;
@@ -115,7 +120,8 @@ void UMissionTooltip_C::InitFromObject(class UObject* InitObject)
 
 void UMissionTooltip_C::ExecuteUbergraph_MissionTooltip(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTooltip.MissionTooltip_C.ExecuteUbergraph_MissionTooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94df0f06);
 
 	UMissionTooltip_C_ExecuteUbergraph_MissionTooltip_Params params;
 	params.EntryPoint = EntryPoint;

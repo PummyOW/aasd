@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_PlayerShieldDamage_CameraLensEffect_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b922308);
 
 	AB_PlayerShieldDamage_CameraLensEffect_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void AB_PlayerShieldDamage_CameraLensEffect_C::UserConstructionScript()
 
 void AB_PlayerShieldDamage_CameraLensEffect_C::PassParticle_Parameter_Shield(float NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C.PassParticle_Parameter_Shield");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x811597f6);
 
 	AB_PlayerShieldDamage_CameraLensEffect_C_PassParticle_Parameter_Shield_Params params;
 	params.NewParam = NewParam;
@@ -56,7 +58,8 @@ void AB_PlayerShieldDamage_CameraLensEffect_C::PassParticle_Parameter_Shield(flo
 
 void AB_PlayerShieldDamage_CameraLensEffect_C::ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_PlayerShieldDamage_CameraLensEffect.B_PlayerShieldDamage_CameraLensEffect_C.ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d83a202);
 
 	AB_PlayerShieldDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerShieldDamage_CameraLensEffect_Params params;
 	params.EntryPoint = EntryPoint;

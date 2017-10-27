@@ -17,7 +17,8 @@ namespace SDK
 
 void UTeamScoreDetailsContent_C::TrimUnusedRows()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.TrimUnusedRows");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68cd040e);
 
 	UTeamScoreDetailsContent_C_TrimUnusedRows_Params params;
 
@@ -36,7 +37,8 @@ void UTeamScoreDetailsContent_C::TrimUnusedRows()
 
 void UTeamScoreDetailsContent_C::SetRowData(int RowIdx)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.SetRowData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x205dcc13);
 
 	UTeamScoreDetailsContent_C_SetRowData_Params params;
 	params.RowIdx = RowIdx;
@@ -54,7 +56,8 @@ void UTeamScoreDetailsContent_C::SetRowData(int RowIdx)
 
 void UTeamScoreDetailsContent_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ca1134e);
 
 	UTeamScoreDetailsContent_C_Construct_Params params;
 
@@ -71,7 +74,8 @@ void UTeamScoreDetailsContent_C::Construct()
 
 void UTeamScoreDetailsContent_C::OnScoreReportChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.OnScoreReportChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54373bc);
 
 	UTeamScoreDetailsContent_C_OnScoreReportChanged_Params params;
 
@@ -90,7 +94,8 @@ void UTeamScoreDetailsContent_C::OnScoreReportChanged()
 
 void UTeamScoreDetailsContent_C::ExecuteUbergraph_TeamScoreDetailsContent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreDetailsContent.TeamScoreDetailsContent_C.ExecuteUbergraph_TeamScoreDetailsContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa7017e3);
 
 	UTeamScoreDetailsContent_C_ExecuteUbergraph_TeamScoreDetailsContent_Params params;
 	params.EntryPoint = EntryPoint;

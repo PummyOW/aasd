@@ -19,7 +19,8 @@ namespace SDK
 
 void UTeamScoreToPlayerXPRewardWidget_C::Initialize(const struct FFortUIXpInfo& XPinfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2340e501);
 
 	UTeamScoreToPlayerXPRewardWidget_C_Initialize_Params params;
 	params.XPinfo = XPinfo;
@@ -39,7 +40,8 @@ void UTeamScoreToPlayerXPRewardWidget_C::Initialize(const struct FFortUIXpInfo& 
 
 void UTeamScoreToPlayerXPRewardWidget_C::Update_XP_LERP(float LERP_Factor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Update XP LERP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb80322df);
 
 	UTeamScoreToPlayerXPRewardWidget_C_Update_XP_LERP_Params params;
 	params.LERP_Factor = LERP_Factor;
@@ -57,7 +59,8 @@ void UTeamScoreToPlayerXPRewardWidget_C::Update_XP_LERP(float LERP_Factor)
 
 void UTeamScoreToPlayerXPRewardWidget_C::OnLevelChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.OnLevelChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7079a7e6);
 
 	UTeamScoreToPlayerXPRewardWidget_C_OnLevelChanged_Params params;
 
@@ -74,7 +77,8 @@ void UTeamScoreToPlayerXPRewardWidget_C::OnLevelChanged()
 
 void UTeamScoreToPlayerXPRewardWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73040b26);
 
 	UTeamScoreToPlayerXPRewardWidget_C_Construct_Params params;
 
@@ -93,7 +97,8 @@ void UTeamScoreToPlayerXPRewardWidget_C::Construct()
 
 void UTeamScoreToPlayerXPRewardWidget_C::ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamScoreToPlayerXPRewardWidget.TeamScoreToPlayerXPRewardWidget_C.ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdec494d7);
 
 	UTeamScoreToPlayerXPRewardWidget_C_ExecuteUbergraph_TeamScoreToPlayerXPRewardWidget_Params params;
 	params.EntryPoint = EntryPoint;

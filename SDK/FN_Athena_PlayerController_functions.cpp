@@ -17,7 +17,8 @@ namespace SDK
 
 void AAthena_PlayerController_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Athena_PlayerController.Athena_PlayerController_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5c5ec58);
 
 	AAthena_PlayerController_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAthena_PlayerController_C::UserConstructionScript()
 
 void AAthena_PlayerController_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Athena_PlayerController.Athena_PlayerController_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x429eddcf);
 
 	AAthena_PlayerController_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +55,8 @@ void AAthena_PlayerController_C::ReceiveBeginPlay()
 
 void AAthena_PlayerController_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Athena_PlayerController.Athena_PlayerController_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71650945);
 
 	AAthena_PlayerController_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -71,7 +74,8 @@ void AAthena_PlayerController_C::ReceiveTick(float* DeltaSeconds)
 
 void AAthena_PlayerController_C::PlayWinEffects()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Athena_PlayerController.Athena_PlayerController_C.PlayWinEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde65ddad);
 
 	AAthena_PlayerController_C_PlayWinEffects_Params params;
 
@@ -90,7 +94,8 @@ void AAthena_PlayerController_C::PlayWinEffects()
 
 void AAthena_PlayerController_C::ExecuteUbergraph_Athena_PlayerController(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Athena_PlayerController.Athena_PlayerController_C.ExecuteUbergraph_Athena_PlayerController");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6be5f4f6);
 
 	AAthena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController_Params params;
 	params.EntryPoint = EntryPoint;

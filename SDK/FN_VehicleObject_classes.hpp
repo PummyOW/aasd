@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass VehicleObject.VehicleObject_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16aceefd);
 		return ptr;
 	}
 

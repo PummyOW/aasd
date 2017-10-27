@@ -17,7 +17,8 @@ namespace SDK
 
 void ACheckRateExperienceAction_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckRateExperienceAction.CheckRateExperienceAction_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa319c330);
 
 	ACheckRateExperienceAction_C_UserConstructionScript_Params params;
 
@@ -38,7 +39,8 @@ void ACheckRateExperienceAction_C::UserConstructionScript()
 
 void ACheckRateExperienceAction_C::HandleClientEvent_FinishedModalQueue(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckRateExperienceAction.CheckRateExperienceAction_C.HandleClientEvent_FinishedModalQueue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11dbbe65);
 
 	ACheckRateExperienceAction_C_HandleClientEvent_FinishedModalQueue_Params params;
 	params.EventSource = EventSource;
@@ -60,7 +62,8 @@ void ACheckRateExperienceAction_C::HandleClientEvent_FinishedModalQueue(class UO
 
 void ACheckRateExperienceAction_C::Execute(struct FFortScriptedActionParams* Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckRateExperienceAction.CheckRateExperienceAction_C.Execute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d8f1700);
 
 	ACheckRateExperienceAction_C_Execute_Params params;
 	params.Params = Params;
@@ -80,7 +83,8 @@ void ACheckRateExperienceAction_C::Execute(struct FFortScriptedActionParams* Par
 
 void ACheckRateExperienceAction_C::ExecuteUbergraph_CheckRateExperienceAction(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckRateExperienceAction.CheckRateExperienceAction_C.ExecuteUbergraph_CheckRateExperienceAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7754f0b1);
 
 	ACheckRateExperienceAction_C_ExecuteUbergraph_CheckRateExperienceAction_Params params;
 	params.EntryPoint = EntryPoint;

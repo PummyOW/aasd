@@ -17,7 +17,8 @@ namespace SDK
 
 void ULightbox_C::RemoveContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.RemoveContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5387187c);
 
 	ULightbox_C_RemoveContent_Params params;
 
@@ -36,7 +37,8 @@ void ULightbox_C::RemoveContent()
 
 void ULightbox_C::AddContent(class UCommonUserWidget* Content)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.AddContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa42c11d9);
 
 	ULightbox_C_AddContent_Params params;
 	params.Content = Content;
@@ -54,7 +56,8 @@ void ULightbox_C::AddContent(class UCommonUserWidget* Content)
 
 void ULightbox_C::Outro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.Outro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x757f7456);
 
 	ULightbox_C_Outro_Params params;
 
@@ -71,7 +74,8 @@ void ULightbox_C::Outro()
 
 void ULightbox_C::Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb783361);
 
 	ULightbox_C_Intro_Params params;
 
@@ -88,7 +92,8 @@ void ULightbox_C::Intro()
 
 void ULightbox_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a4f05f7);
 
 	ULightbox_C_Destruct_Params params;
 
@@ -105,7 +110,8 @@ void ULightbox_C::Destruct()
 
 void ULightbox_C::BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33b83c8c);
 
 	ULightbox_C_BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -122,7 +128,8 @@ void ULightbox_C::BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationP
 
 void ULightbox_C::BndEvt__FadeOut_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.BndEvt__FadeOut_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe941ba3a);
 
 	ULightbox_C_BndEvt__FadeOut_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -141,7 +148,8 @@ void ULightbox_C::BndEvt__FadeOut_K2Node_ComponentBoundEvent_1_OnWidgetAnimation
 
 void ULightbox_C::ExecuteUbergraph_Lightbox(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.ExecuteUbergraph_Lightbox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3f4aade);
 
 	ULightbox_C_ExecuteUbergraph_Lightbox_Params params;
 	params.EntryPoint = EntryPoint;
@@ -159,7 +167,8 @@ void ULightbox_C::ExecuteUbergraph_Lightbox(int EntryPoint)
 
 void ULightbox_C::OutroEnded__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.OutroEnded__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe62586e5);
 
 	ULightbox_C_OutroEnded__DelegateSignature_Params params;
 
@@ -176,7 +185,8 @@ void ULightbox_C::OutroEnded__DelegateSignature()
 
 void ULightbox_C::IntroEnded__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lightbox.Lightbox_C.IntroEnded__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb27324e);
 
 	ULightbox_C_IntroEnded__DelegateSignature_Params params;
 

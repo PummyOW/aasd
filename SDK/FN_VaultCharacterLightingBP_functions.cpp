@@ -17,7 +17,8 @@ namespace SDK
 
 void AVaultCharacterLightingBP_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterLightingBP.VaultCharacterLightingBP_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf44a95ba);
 
 	AVaultCharacterLightingBP_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void AVaultCharacterLightingBP_C::UserConstructionScript()
 
 void AVaultCharacterLightingBP_C::LightControl(bool NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterLightingBP.VaultCharacterLightingBP_C.LightControl");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cf960c6);
 
 	AVaultCharacterLightingBP_C_LightControl_Params params;
 	params.NewParam = NewParam;
@@ -54,7 +56,8 @@ void AVaultCharacterLightingBP_C::LightControl(bool NewParam)
 
 void AVaultCharacterLightingBP_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterLightingBP.VaultCharacterLightingBP_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1cc1c7d);
 
 	AVaultCharacterLightingBP_C_ReceiveBeginPlay_Params params;
 
@@ -73,7 +76,8 @@ void AVaultCharacterLightingBP_C::ReceiveBeginPlay()
 
 void AVaultCharacterLightingBP_C::ExecuteUbergraph_VaultCharacterLightingBP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterLightingBP.VaultCharacterLightingBP_C.ExecuteUbergraph_VaultCharacterLightingBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ec30e42);
 
 	AVaultCharacterLightingBP_C_ExecuteUbergraph_VaultCharacterLightingBP_Params params;
 	params.EntryPoint = EntryPoint;

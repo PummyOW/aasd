@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemTransformKeyInfo_C::SetKeyToRepresent(class UFortItem* Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyInfo.ItemTransformKeyInfo_C.SetKeyToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95561eeb);
 
 	UItemTransformKeyInfo_C_SetKeyToRepresent_Params params;
 	params.Key = Key;
@@ -37,7 +38,8 @@ void UItemTransformKeyInfo_C::SetKeyToRepresent(class UFortItem* Key)
 
 void UItemTransformKeyInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyInfo.ItemTransformKeyInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x452e8fb6);
 
 	UItemTransformKeyInfo_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UItemTransformKeyInfo_C::Construct()
 
 void UItemTransformKeyInfo_C::ExecuteUbergraph_ItemTransformKeyInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyInfo.ItemTransformKeyInfo_C.ExecuteUbergraph_ItemTransformKeyInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda05373f);
 
 	UItemTransformKeyInfo_C_ExecuteUbergraph_ItemTransformKeyInfo_Params params;
 	params.EntryPoint = EntryPoint;

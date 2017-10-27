@@ -17,7 +17,8 @@ namespace SDK
 
 void UFrontEndRewardWrapperWidget_C::IntroAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.IntroAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4cb81bb);
 
 	UFrontEndRewardWrapperWidget_C_IntroAnimation_Params params;
 
@@ -37,7 +38,8 @@ void UFrontEndRewardWrapperWidget_C::IntroAnimation()
 
 void UFrontEndRewardWrapperWidget_C::AddToWrapper(class UWidget* Widget, const struct FText& DisplayName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.AddToWrapper");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7491de4);
 
 	UFrontEndRewardWrapperWidget_C_AddToWrapper_Params params;
 	params.Widget = Widget;
@@ -56,7 +58,8 @@ void UFrontEndRewardWrapperWidget_C::AddToWrapper(class UWidget* Widget, const s
 
 void UFrontEndRewardWrapperWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ecc8016);
 
 	UFrontEndRewardWrapperWidget_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UFrontEndRewardWrapperWidget_C::Construct()
 
 void UFrontEndRewardWrapperWidget_C::Go_Trigger()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.Go_Trigger");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x53021be0);
 
 	UFrontEndRewardWrapperWidget_C_Go_Trigger_Params params;
 
@@ -92,7 +96,8 @@ void UFrontEndRewardWrapperWidget_C::Go_Trigger()
 
 void UFrontEndRewardWrapperWidget_C::ExecuteUbergraph_FrontEndRewardWrapperWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.ExecuteUbergraph_FrontEndRewardWrapperWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4883025f);
 
 	UFrontEndRewardWrapperWidget_C_ExecuteUbergraph_FrontEndRewardWrapperWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -110,7 +115,8 @@ void UFrontEndRewardWrapperWidget_C::ExecuteUbergraph_FrontEndRewardWrapperWidge
 
 void UFrontEndRewardWrapperWidget_C::EventDispatcher_Go_Trigger__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewardWrapperWidget.FrontEndRewardWrapperWidget_C.EventDispatcher_Go_Trigger__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa312dc31);
 
 	UFrontEndRewardWrapperWidget_C_EventDispatcher_Go_Trigger__DelegateSignature_Params params;
 

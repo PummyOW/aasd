@@ -19,7 +19,8 @@ namespace SDK
 
 void UChoiceCardCount_C::UpdateText(int InventoryCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChoiceCardCount.ChoiceCardCount_C.UpdateText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc26a6511);
 
 	UChoiceCardCount_C_UpdateText_Params params;
 	params.InventoryCount = InventoryCount;

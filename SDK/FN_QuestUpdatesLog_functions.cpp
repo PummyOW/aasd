@@ -19,7 +19,8 @@ namespace SDK
 
 void UQuestUpdatesLog_C::CanDisplayAnotherObjective(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.CanDisplayAnotherObjective");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1dd8769d);
 
 	UQuestUpdatesLog_C_CanDisplayAnotherObjective_Params params;
 
@@ -41,7 +42,8 @@ void UQuestUpdatesLog_C::CanDisplayAnotherObjective(bool* Result)
 
 void UQuestUpdatesLog_C::GetTotalDisplayedObjectives(int* NumObjectives)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.GetTotalDisplayedObjectives");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a1fcbf2);
 
 	UQuestUpdatesLog_C_GetTotalDisplayedObjectives_Params params;
 
@@ -63,7 +65,8 @@ void UQuestUpdatesLog_C::GetTotalDisplayedObjectives(int* NumObjectives)
 
 void UQuestUpdatesLog_C::CreateAnnouncementUpdate(const struct FDynamicQuestUpdateInfo& UpdateInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.CreateAnnouncementUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89e51d19);
 
 	UQuestUpdatesLog_C_CreateAnnouncementUpdate_Params params;
 	params.UpdateInfo = UpdateInfo;
@@ -83,7 +86,8 @@ void UQuestUpdatesLog_C::CreateAnnouncementUpdate(const struct FDynamicQuestUpda
 
 void UQuestUpdatesLog_C::HandleQuestUpdateWidgetFinished(class UQuestUpdateEntry_C* UpdateWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.HandleQuestUpdateWidgetFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed6a0218);
 
 	UQuestUpdatesLog_C_HandleQuestUpdateWidgetFinished_Params params;
 	params.UpdateWidget = UpdateWidget;
@@ -104,7 +108,8 @@ void UQuestUpdatesLog_C::HandleQuestUpdateWidgetFinished(class UQuestUpdateEntry
 
 void UQuestUpdatesLog_C::GetAvailableQuestUpdateWidget(const struct FDynamicQuestUpdateInfo& UpdateInfo, class UQuestUpdateEntry_C** AvailableWIdget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.GetAvailableQuestUpdateWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb597ef3);
 
 	UQuestUpdatesLog_C_GetAvailableQuestUpdateWidget_Params params;
 	params.UpdateInfo = UpdateInfo;
@@ -125,7 +130,8 @@ void UQuestUpdatesLog_C::GetAvailableQuestUpdateWidget(const struct FDynamicQues
 
 void UQuestUpdatesLog_C::TryDisplayDynamicQuestStatusUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.TryDisplayDynamicQuestStatusUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1cf9f612);
 
 	UQuestUpdatesLog_C_TryDisplayDynamicQuestStatusUpdate_Params params;
 
@@ -142,7 +148,8 @@ void UQuestUpdatesLog_C::TryDisplayDynamicQuestStatusUpdate()
 
 void UQuestUpdatesLog_C::CreateQuestUpdateWIdgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.CreateQuestUpdateWIdgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ee6a20b);
 
 	UQuestUpdatesLog_C_CreateQuestUpdateWIdgets_Params params;
 
@@ -163,7 +170,8 @@ void UQuestUpdatesLog_C::CreateQuestUpdateWIdgets()
 
 void UQuestUpdatesLog_C::HandleDisplayDynamicQuestUpdate(class UFortQuestObjectiveInfo* QuestObjective, bool bDisplayStatusUpdate, bool bDisplayAnnouncementUpdate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.HandleDisplayDynamicQuestUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e97a041);
 
 	UQuestUpdatesLog_C_HandleDisplayDynamicQuestUpdate_Params params;
 	params.QuestObjective = QuestObjective;
@@ -183,7 +191,8 @@ void UQuestUpdatesLog_C::HandleDisplayDynamicQuestUpdate(class UFortQuestObjecti
 
 void UQuestUpdatesLog_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5888140e);
 
 	UQuestUpdatesLog_C_Construct_Params params;
 
@@ -202,7 +211,8 @@ void UQuestUpdatesLog_C::Construct()
 
 void UQuestUpdatesLog_C::ExecuteUbergraph_QuestUpdatesLog(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdatesLog.QuestUpdatesLog_C.ExecuteUbergraph_QuestUpdatesLog");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc28118e3);
 
 	UQuestUpdatesLog_C_ExecuteUbergraph_QuestUpdatesLog_Params params;
 	params.EntryPoint = EntryPoint;

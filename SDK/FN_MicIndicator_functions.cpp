@@ -19,7 +19,8 @@ namespace SDK
 
 void UMicIndicator_C::OnPlayerTalkingChanged(bool* bIsTalking)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MicIndicator.MicIndicator_C.OnPlayerTalkingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e13695d);
 
 	UMicIndicator_C_OnPlayerTalkingChanged_Params params;
 	params.bIsTalking = bIsTalking;
@@ -39,7 +40,8 @@ void UMicIndicator_C::OnPlayerTalkingChanged(bool* bIsTalking)
 
 void UMicIndicator_C::OnPlayerMuted(bool* bIsMuted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MicIndicator.MicIndicator_C.OnPlayerMuted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x226712f8);
 
 	UMicIndicator_C_OnPlayerMuted_Params params;
 	params.bIsMuted = bIsMuted;
@@ -59,7 +61,8 @@ void UMicIndicator_C::OnPlayerMuted(bool* bIsMuted)
 
 void UMicIndicator_C::ExecuteUbergraph_MicIndicator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MicIndicator.MicIndicator_C.ExecuteUbergraph_MicIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa627885b);
 
 	UMicIndicator_C_ExecuteUbergraph_MicIndicator_Params params;
 	params.EntryPoint = EntryPoint;

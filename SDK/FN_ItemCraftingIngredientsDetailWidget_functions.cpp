@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientsDetailWidget.ItemCraftingIngredientsDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34876a95);
 
 	UItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -34,7 +35,8 @@ void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet(
 
 void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientsDetailWidget.ItemCraftingIngredientsDetailWidget_C.HandlePostDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2f06cc7);
 
 	UItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params params;
 
@@ -53,7 +55,8 @@ void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWit
 
 void UItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_ItemCraftingIngredientsDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientsDetailWidget.ItemCraftingIngredientsDetailWidget_C.ExecuteUbergraph_ItemCraftingIngredientsDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2e51b27);
 
 	UItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_ItemCraftingIngredientsDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

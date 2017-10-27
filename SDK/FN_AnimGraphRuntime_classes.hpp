@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AnimGraphRuntime.AnimCustomInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x929fe501);
 		return ptr;
 	}
 
@@ -35,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AnimGraphRuntime.AnimSequencerInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x720d2bd1);
 		return ptr;
 	}
 

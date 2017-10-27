@@ -22,7 +22,8 @@ namespace SDK
 
 class UFortSquadSlotSelectorButton* UBP_ExpeditionSquadSlotsView_C::CreateAndAddSquadSlotButton(int* SquadSlotIndex, struct FHomebaseSquadSlot* SquadSlotDefinition, class UWidget** OutSquadSlotButtonHost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.CreateAndAddSquadSlotButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5842e93);
 
 	UBP_ExpeditionSquadSlotsView_C_CreateAndAddSquadSlotButton_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;
@@ -48,7 +49,8 @@ class UFortSquadSlotSelectorButton* UBP_ExpeditionSquadSlotsView_C::CreateAndAdd
 
 void UBP_ExpeditionSquadSlotsView_C::HandleSquadSlotSelected(int SquadSlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.HandleSquadSlotSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92658426);
 
 	UBP_ExpeditionSquadSlotsView_C_HandleSquadSlotSelected_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;
@@ -68,7 +70,8 @@ void UBP_ExpeditionSquadSlotsView_C::HandleSquadSlotSelected(int SquadSlotIndex)
 
 void UBP_ExpeditionSquadSlotsView_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ec1c915);
 
 	UBP_ExpeditionSquadSlotsView_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -86,7 +89,8 @@ void UBP_ExpeditionSquadSlotsView_C::PreConstruct(bool* IsDesignTime)
 
 void UBP_ExpeditionSquadSlotsView_C::HandleSquadSlotOpened()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.HandleSquadSlotOpened");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb229a71a);
 
 	UBP_ExpeditionSquadSlotsView_C_HandleSquadSlotOpened_Params params;
 
@@ -105,7 +109,8 @@ void UBP_ExpeditionSquadSlotsView_C::HandleSquadSlotOpened()
 
 void UBP_ExpeditionSquadSlotsView_C::ExecuteUbergraph_BP_ExpeditionSquadSlotsView(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.ExecuteUbergraph_BP_ExpeditionSquadSlotsView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xabc1438f);
 
 	UBP_ExpeditionSquadSlotsView_C_ExecuteUbergraph_BP_ExpeditionSquadSlotsView_Params params;
 	params.EntryPoint = EntryPoint;
@@ -123,7 +128,8 @@ void UBP_ExpeditionSquadSlotsView_C::ExecuteUbergraph_BP_ExpeditionSquadSlotsVie
 
 void UBP_ExpeditionSquadSlotsView_C::OnSquadSlotOpened__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.OnSquadSlotOpened__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f5fa858);
 
 	UBP_ExpeditionSquadSlotsView_C_OnSquadSlotOpened__DelegateSignature_Params params;
 
@@ -142,7 +148,8 @@ void UBP_ExpeditionSquadSlotsView_C::OnSquadSlotOpened__DelegateSignature()
 
 void UBP_ExpeditionSquadSlotsView_C::OnSquadSlotSelected__DelegateSignature(int SquadSlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ExpeditionSquadSlotsView.BP_ExpeditionSquadSlotsView_C.OnSquadSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d11fa50);
 
 	UBP_ExpeditionSquadSlotsView_C_OnSquadSlotSelected__DelegateSignature_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;

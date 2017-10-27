@@ -23,7 +23,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass EquippedItem-Bandolier.EquippedItem-Bandolier_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66aecf97);
 		return ptr;
 	}
 

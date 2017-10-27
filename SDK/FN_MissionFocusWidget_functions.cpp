@@ -17,7 +17,8 @@ namespace SDK
 
 void UMissionFocusWidget_C::UpdateVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionFocusWidget.MissionFocusWidget_C.UpdateVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7484c7fc);
 
 	UMissionFocusWidget_C_UpdateVisibility_Params params;
 
@@ -36,7 +37,8 @@ void UMissionFocusWidget_C::UpdateVisibility()
 
 void UMissionFocusWidget_C::HandleFocusedMission(class AFortMission* FocusedMission)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionFocusWidget.MissionFocusWidget_C.HandleFocusedMission");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa65d5a);
 
 	UMissionFocusWidget_C_HandleFocusedMission_Params params;
 	params.FocusedMission = FocusedMission;
@@ -56,7 +58,8 @@ void UMissionFocusWidget_C::HandleFocusedMission(class AFortMission* FocusedMiss
 
 void UMissionFocusWidget_C::HandleTimerComponentChanged(class UFortMissionTimerComponent* TimerComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionFocusWidget.MissionFocusWidget_C.HandleTimerComponentChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c6c1513);
 
 	UMissionFocusWidget_C_HandleTimerComponentChanged_Params params;
 	params.TimerComponent = TimerComponent;
@@ -74,7 +77,8 @@ void UMissionFocusWidget_C::HandleTimerComponentChanged(class UFortMissionTimerC
 
 void UMissionFocusWidget_C::UpdateTimer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionFocusWidget.MissionFocusWidget_C.UpdateTimer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d7fe1bb);
 
 	UMissionFocusWidget_C_UpdateTimer_Params params;
 
@@ -91,7 +95,8 @@ void UMissionFocusWidget_C::UpdateTimer()
 
 void UMissionFocusWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionFocusWidget.MissionFocusWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66024632);
 
 	UMissionFocusWidget_C_Construct_Params params;
 
@@ -110,7 +115,8 @@ void UMissionFocusWidget_C::Construct()
 
 void UMissionFocusWidget_C::ExecuteUbergraph_MissionFocusWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionFocusWidget.MissionFocusWidget_C.ExecuteUbergraph_MissionFocusWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88cbfd01);
 
 	UMissionFocusWidget_C_ExecuteUbergraph_MissionFocusWidget_Params params;
 	params.EntryPoint = EntryPoint;

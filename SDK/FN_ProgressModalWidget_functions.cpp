@@ -21,7 +21,8 @@ namespace SDK
 
 struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(struct FGeometry* MyGeometry, struct FAnalogInputEvent* InAnalogInputEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.OnAnalogValueChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c249d49);
 
 	UProgressModalWidget_C_OnAnalogValueChanged_Params params;
 	params.MyGeometry = MyGeometry;
@@ -44,7 +45,8 @@ struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(struct FGeometry
 
 void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.SetIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68640102);
 
 	UProgressModalWidget_C_SetIcon_Params params;
 	params.Icon = Icon;
@@ -64,7 +66,8 @@ void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Icon)
 
 void UProgressModalWidget_C::SetDescription(const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.SetDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5328561);
 
 	UProgressModalWidget_C_SetDescription_Params params;
 	params.Description = Description;
@@ -84,7 +87,8 @@ void UProgressModalWidget_C::SetDescription(const struct FText& Description)
 
 void UProgressModalWidget_C::SetTitle(const struct FText& Title)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.SetTitle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x733ca9cd);
 
 	UProgressModalWidget_C_SetTitle_Params params;
 	params.Title = Title;
@@ -102,7 +106,8 @@ void UProgressModalWidget_C::SetTitle(const struct FText& Title)
 
 void UProgressModalWidget_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x386f7b15);
 
 	UProgressModalWidget_C_Initialize_Params params;
 
@@ -119,7 +124,8 @@ void UProgressModalWidget_C::Initialize()
 
 void UProgressModalWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e72db4a);
 
 	UProgressModalWidget_C_Construct_Params params;
 
@@ -136,7 +142,8 @@ void UProgressModalWidget_C::Construct()
 
 void UProgressModalWidget_C::HandleIntroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.HandleIntroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcbf3ecdb);
 
 	UProgressModalWidget_C_HandleIntroEnded_Params params;
 
@@ -153,7 +160,8 @@ void UProgressModalWidget_C::HandleIntroEnded()
 
 void UProgressModalWidget_C::HandleOutroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.HandleOutroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1be4e3ca);
 
 	UProgressModalWidget_C_HandleOutroEnded_Params params;
 
@@ -170,7 +178,8 @@ void UProgressModalWidget_C::HandleOutroEnded()
 
 void UProgressModalWidget_C::OnBeginIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.OnBeginIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e6b83b7);
 
 	UProgressModalWidget_C_OnBeginIntro_Params params;
 
@@ -187,7 +196,8 @@ void UProgressModalWidget_C::OnBeginIntro()
 
 void UProgressModalWidget_C::OnBeginOutro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.OnBeginOutro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde1abae4);
 
 	UProgressModalWidget_C_OnBeginOutro_Params params;
 
@@ -204,7 +214,8 @@ void UProgressModalWidget_C::OnBeginOutro()
 
 void UProgressModalWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87ee2c11);
 
 	UProgressModalWidget_C_Destruct_Params params;
 
@@ -223,7 +234,8 @@ void UProgressModalWidget_C::Destruct()
 
 void UProgressModalWidget_C::ExecuteUbergraph_ProgressModalWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressModalWidget.ProgressModalWidget_C.ExecuteUbergraph_ProgressModalWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x760ad7d9);
 
 	UProgressModalWidget_C_ExecuteUbergraph_ProgressModalWidget_Params params;
 	params.EntryPoint = EntryPoint;

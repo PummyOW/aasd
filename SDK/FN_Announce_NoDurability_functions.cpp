@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_NoDurability_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NoDurability.Announce_NoDurability_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37d2ec90);
 
 	AAnnounce_NoDurability_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_NoDurability_C::UserConstructionScript()
 
 void AAnnounce_NoDurability_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NoDurability.Announce_NoDurability_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fa0c168);
 
 	AAnnounce_NoDurability_C_OnClientAnnouncementStart_Params params;
 
@@ -53,7 +55,8 @@ void AAnnounce_NoDurability_C::OnClientAnnouncementStart()
 
 void AAnnounce_NoDurability_C::ExecuteUbergraph_Announce_NoDurability(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NoDurability.Announce_NoDurability_C.ExecuteUbergraph_Announce_NoDurability");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1134d89);
 
 	AAnnounce_NoDurability_C_ExecuteUbergraph_Announce_NoDurability_Params params;
 	params.EntryPoint = EntryPoint;

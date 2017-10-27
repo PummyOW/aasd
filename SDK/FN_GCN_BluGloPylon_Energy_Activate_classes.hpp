@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCN_BluGloPylon_Energy_Activate.GCN_BluGloPylon_Energy_Activate_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56fef11);
 		return ptr;
 	}
 

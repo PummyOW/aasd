@@ -21,7 +21,8 @@ namespace SDK
 
 bool UAnimNotifyState_DisablePawnRotation_C::Received_NotifyEnd(class USkeletalMeshComponent** MeshComp, class UAnimSequenceBase** Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C.Received_NotifyEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76ae5fa5);
 
 	UAnimNotifyState_DisablePawnRotation_C_Received_NotifyEnd_Params params;
 	params.MeshComp = MeshComp;
@@ -47,7 +48,8 @@ bool UAnimNotifyState_DisablePawnRotation_C::Received_NotifyEnd(class USkeletalM
 
 bool UAnimNotifyState_DisablePawnRotation_C::Received_NotifyBegin(class USkeletalMeshComponent** MeshComp, class UAnimSequenceBase** Animation, float* TotalDuration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C.Received_NotifyBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29a2cafd);
 
 	UAnimNotifyState_DisablePawnRotation_C_Received_NotifyBegin_Params params;
 	params.MeshComp = MeshComp;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaDeathWidget_C::UpdateFollowNextTeammateVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.UpdateFollowNextTeammateVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x594a206c);
 
 	UAthenaDeathWidget_C_UpdateFollowNextTeammateVisibility_Params params;
 
@@ -37,7 +38,8 @@ void UAthenaDeathWidget_C::UpdateFollowNextTeammateVisibility()
 
 void UAthenaDeathWidget_C::AddTeamMemberIndicator(class AFortPlayerStateAthena* Player_State, int Team_Member_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.AddTeamMemberIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16419ac0);
 
 	UAthenaDeathWidget_C_AddTeamMemberIndicator_Params params;
 	params.Player_State = Player_State;
@@ -59,7 +61,8 @@ void UAthenaDeathWidget_C::AddTeamMemberIndicator(class AFortPlayerStateAthena* 
 
 void UAthenaDeathWidget_C::AnyTeamMembersStillAlive(class AFortPlayerControllerAthena* PlayerController, bool* AnyAlive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.AnyTeamMembersStillAlive");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cabcac);
 
 	UAthenaDeathWidget_C_AnyTeamMembersStillAlive_Params params;
 	params.PlayerController = PlayerController;
@@ -82,7 +85,8 @@ void UAthenaDeathWidget_C::AnyTeamMembersStillAlive(class AFortPlayerControllerA
 
 void UAthenaDeathWidget_C::OnWinnerAnnounced(const struct FString& Winner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.OnWinnerAnnounced");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd37c18c);
 
 	UAthenaDeathWidget_C_OnWinnerAnnounced_Params params;
 	params.Winner = Winner;
@@ -100,7 +104,8 @@ void UAthenaDeathWidget_C::OnWinnerAnnounced(const struct FString& Winner)
 
 void UAthenaDeathWidget_C::HideExtraStuffForSpectating()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.HideExtraStuffForSpectating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafd20b24);
 
 	UAthenaDeathWidget_C_HideExtraStuffForSpectating_Params params;
 
@@ -117,7 +122,8 @@ void UAthenaDeathWidget_C::HideExtraStuffForSpectating()
 
 void UAthenaDeathWidget_C::OnViewTargetChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.OnViewTargetChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xace38d98);
 
 	UAthenaDeathWidget_C_OnViewTargetChanged_Params params;
 
@@ -134,7 +140,8 @@ void UAthenaDeathWidget_C::OnViewTargetChanged()
 
 void UAthenaDeathWidget_C::OnPlaceChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.OnPlaceChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0f123c3);
 
 	UAthenaDeathWidget_C_OnPlaceChanged_Params params;
 
@@ -153,7 +160,8 @@ void UAthenaDeathWidget_C::OnPlaceChanged()
 
 void UAthenaDeathWidget_C::OnPawnDied(struct FFortPlayerDeathReport* DeathReport)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.OnPawnDied");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27f81004);
 
 	UAthenaDeathWidget_C_OnPawnDied_Params params;
 
@@ -175,7 +183,8 @@ void UAthenaDeathWidget_C::OnPawnDied(struct FFortPlayerDeathReport* DeathReport
 
 void UAthenaDeathWidget_C::BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde9a601f);
 
 	UAthenaDeathWidget_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -193,7 +202,8 @@ void UAthenaDeathWidget_C::BndEvt__LeaveButton_K2Node_ComponentBoundEvent_76_Com
 
 void UAthenaDeathWidget_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5dec87f5);
 
 	UAthenaDeathWidget_C_OnActivated_Params params;
 
@@ -210,7 +220,8 @@ void UAthenaDeathWidget_C::OnActivated()
 
 void UAthenaDeathWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6071e95e);
 
 	UAthenaDeathWidget_C_Construct_Params params;
 
@@ -227,7 +238,8 @@ void UAthenaDeathWidget_C::Construct()
 
 void UAthenaDeathWidget_C::On_Kill_Feed_Updated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.On Kill Feed Updated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf91e721);
 
 	UAthenaDeathWidget_C_On_Kill_Feed_Updated_Params params;
 
@@ -244,29 +256,10 @@ void UAthenaDeathWidget_C::On_Kill_Feed_Updated()
 
 void UAthenaDeathWidget_C::TeamMemberChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.TeamMemberChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ff606d6);
 
 	UAthenaDeathWidget_C_TeamMemberChanged_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AthenaDeathWidget.AthenaDeathWidget_C.PreConstruct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// bool*                          IsDesignTime                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UAthenaDeathWidget_C::PreConstruct(bool* IsDesignTime)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.PreConstruct");
-
-	UAthenaDeathWidget_C_PreConstruct_Params params;
-	params.IsDesignTime = IsDesignTime;
 
 	auto flags = fn->FunctionFlags;
 
@@ -283,7 +276,8 @@ void UAthenaDeathWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaDeathWidget_C::BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca72804f);
 
 	UAthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -303,7 +297,8 @@ void UAthenaDeathWidget_C::BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent
 
 void UAthenaDeathWidget_C::ExecuteUbergraph_AthenaDeathWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaDeathWidget.AthenaDeathWidget_C.ExecuteUbergraph_AthenaDeathWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3803ae0);
 
 	UAthenaDeathWidget_C_ExecuteUbergraph_AthenaDeathWidget_Params params;
 	params.EntryPoint = EntryPoint;

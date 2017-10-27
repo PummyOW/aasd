@@ -21,7 +21,8 @@ namespace SDK
 
 float UXpBar_C::ScaledCommanderBalance(int LeveXP, int InInt2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.ScaledCommanderBalance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81b887eb);
 
 	UXpBar_C_ScaledCommanderBalance_Params params;
 	params.LeveXP = LeveXP;
@@ -45,7 +46,8 @@ float UXpBar_C::ScaledCommanderBalance(int LeveXP, int InInt2)
 
 int UXpBar_C::ScaledRestBalance(int AmountToLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.ScaledRestBalance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc8d2ef5);
 
 	UXpBar_C_ScaledRestBalance_Params params;
 	params.AmountToLevel = AmountToLevel;
@@ -68,7 +70,8 @@ int UXpBar_C::ScaledRestBalance(int AmountToLevel)
 
 int UXpBar_C::ScaledBoostBalance(int AmountToLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.ScaledBoostBalance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3a1d052);
 
 	UXpBar_C_ScaledBoostBalance_Params params;
 	params.AmountToLevel = AmountToLevel;
@@ -90,7 +93,8 @@ int UXpBar_C::ScaledBoostBalance(int AmountToLevel)
 
 class UWidget* UXpBar_C::GetExperienceToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.GetExperienceToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69bc1596);
 
 	UXpBar_C_GetExperienceToolTipWidget_Params params;
 
@@ -111,7 +115,8 @@ class UWidget* UXpBar_C::GetExperienceToolTipWidget()
 
 void UXpBar_C::Update_Xp_Bar(const struct FFortPublicAccountInfo& Account_Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.Update Xp Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4b522ab);
 
 	UXpBar_C_Update_Xp_Bar_Params params;
 	params.Account_Info = Account_Info;
@@ -129,7 +134,8 @@ void UXpBar_C::Update_Xp_Bar(const struct FFortPublicAccountInfo& Account_Info)
 
 void UXpBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b9735b6);
 
 	UXpBar_C_Construct_Params params;
 
@@ -148,7 +154,8 @@ void UXpBar_C::Construct()
 
 void UXpBar_C::Account_Info_Changed(const struct FFortPublicAccountInfo& NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.Account Info Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc7af794);
 
 	UXpBar_C_Account_Info_Changed_Params params;
 	params.NewInfo = NewInfo;
@@ -168,7 +175,8 @@ void UXpBar_C::Account_Info_Changed(const struct FFortPublicAccountInfo& NewInfo
 
 void UXpBar_C::Xp_Boost_Changed(int BoostAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.Xp Boost Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c98e6a6);
 
 	UXpBar_C_Xp_Boost_Changed_Params params;
 	params.BoostAmount = BoostAmount;
@@ -188,7 +196,8 @@ void UXpBar_C::Xp_Boost_Changed(int BoostAmount)
 
 void UXpBar_C::ExecuteUbergraph_XpBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBar.XpBar_C.ExecuteUbergraph_XpBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x53fcf7e);
 
 	UXpBar_C_ExecuteUbergraph_XpBar_Params params;
 	params.EntryPoint = EntryPoint;

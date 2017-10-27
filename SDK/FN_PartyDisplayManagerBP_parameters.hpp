@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetMeshForCurrentDisplayedItem
+struct APartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem_Params
+{
+	class UMeshComponent*                              OutDisplayedMesh;                                         // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemDefinitionToShow
 struct APartyDisplayManagerBP_C_GetItemDefinitionToShow_Params
 {

@@ -19,7 +19,8 @@ namespace SDK
 
 void UHUD_TeamMemberInfo_C::SetHealth(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.SetHealth");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c3c5a65);
 
 	UHUD_TeamMemberInfo_C_SetHealth_Params params;
 	params.Value = Value;
@@ -39,7 +40,8 @@ void UHUD_TeamMemberInfo_C::SetHealth(float Value)
 
 void UHUD_TeamMemberInfo_C::Update(const struct FFortTeamMemberInfo& UpdatedMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d4e7692);
 
 	UHUD_TeamMemberInfo_C_Update_Params params;
 	params.UpdatedMemberInfo = UpdatedMemberInfo;
@@ -57,7 +59,8 @@ void UHUD_TeamMemberInfo_C::Update(const struct FFortTeamMemberInfo& UpdatedMemb
 
 void UHUD_TeamMemberInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e215520);
 
 	UHUD_TeamMemberInfo_C_Construct_Params params;
 
@@ -76,7 +79,8 @@ void UHUD_TeamMemberInfo_C::Construct()
 
 void UHUD_TeamMemberInfo_C::ExecuteUbergraph_HUD_TeamMemberInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD-TeamMemberInfo.HUD-TeamMemberInfo_C.ExecuteUbergraph_HUD-TeamMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc375fe24);
 
 	UHUD_TeamMemberInfo_C_ExecuteUbergraph_HUD_TeamMemberInfo_Params params;
 	params.EntryPoint = EntryPoint;

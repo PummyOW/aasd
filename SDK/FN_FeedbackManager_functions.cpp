@@ -17,7 +17,8 @@ namespace SDK
 
 void AFeedbackManager_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FeedbackManager.FeedbackManager_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x201afe0);
 
 	AFeedbackManager_C_UserConstructionScript_Params params;
 

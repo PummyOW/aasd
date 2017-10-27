@@ -17,7 +17,8 @@ namespace SDK
 
 void UFortMediaSubtitlesPlayer::Stop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubtitlesWidgets.FortMediaSubtitlesPlayer.Stop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x626f95b6);
 
 	UFortMediaSubtitlesPlayer_Stop_Params params;
 
@@ -37,7 +38,8 @@ void UFortMediaSubtitlesPlayer::Stop()
 
 void UFortMediaSubtitlesPlayer::SetSubtitles(class UOverlays* Subtitles)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubtitlesWidgets.FortMediaSubtitlesPlayer.SetSubtitles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef5f59d5);
 
 	UFortMediaSubtitlesPlayer_SetSubtitles_Params params;
 	params.Subtitles = Subtitles;
@@ -56,7 +58,8 @@ void UFortMediaSubtitlesPlayer::SetSubtitles(class UOverlays* Subtitles)
 
 void UFortMediaSubtitlesPlayer::Play()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubtitlesWidgets.FortMediaSubtitlesPlayer.Play");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce91cc3c);
 
 	UFortMediaSubtitlesPlayer_Play_Params params;
 
@@ -76,7 +79,8 @@ void UFortMediaSubtitlesPlayer::Play()
 
 void UFortMediaSubtitlesPlayer::BindToMediaPlayer(class UMediaPlayer* InMediaPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubtitlesWidgets.FortMediaSubtitlesPlayer.BindToMediaPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa53bb373);
 
 	UFortMediaSubtitlesPlayer_BindToMediaPlayer_Params params;
 	params.InMediaPlayer = InMediaPlayer;
@@ -97,7 +101,8 @@ void UFortMediaSubtitlesPlayer::BindToMediaPlayer(class UMediaPlayer* InMediaPla
 
 bool USubtitleDisplay::HasSubtitles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubtitlesWidgets.SubtitleDisplay.HasSubtitles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8cbeb354);
 
 	USubtitleDisplay_HasSubtitles_Params params;
 

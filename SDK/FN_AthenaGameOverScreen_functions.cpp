@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaGameOverScreen_C::On_Player_Died(const struct FFortPlayerDeathReport& DeathReport)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGameOverScreen.AthenaGameOverScreen_C.On Player Died");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5511c8d);
 
 	UAthenaGameOverScreen_C_On_Player_Died_Params params;
 	params.DeathReport = DeathReport;
@@ -37,7 +38,8 @@ void UAthenaGameOverScreen_C::On_Player_Died(const struct FFortPlayerDeathReport
 
 void UAthenaGameOverScreen_C::On_Player_Won()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGameOverScreen.AthenaGameOverScreen_C.On Player Won");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9fc81cd);
 
 	UAthenaGameOverScreen_C_On_Player_Won_Params params;
 
@@ -54,7 +56,8 @@ void UAthenaGameOverScreen_C::On_Player_Won()
 
 void UAthenaGameOverScreen_C::HandleRevived()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGameOverScreen.AthenaGameOverScreen_C.HandleRevived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe34ee1f8);
 
 	UAthenaGameOverScreen_C_HandleRevived_Params params;
 
@@ -71,7 +74,8 @@ void UAthenaGameOverScreen_C::HandleRevived()
 
 void UAthenaGameOverScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGameOverScreen.AthenaGameOverScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d4b6ea8);
 
 	UAthenaGameOverScreen_C_Construct_Params params;
 
@@ -88,7 +92,8 @@ void UAthenaGameOverScreen_C::Construct()
 
 void UAthenaGameOverScreen_C::Clear_GameOver_Screen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGameOverScreen.AthenaGameOverScreen_C.Clear GameOver Screen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48acbd2c);
 
 	UAthenaGameOverScreen_C_Clear_GameOver_Screen_Params params;
 
@@ -105,7 +110,8 @@ void UAthenaGameOverScreen_C::Clear_GameOver_Screen()
 
 void UAthenaGameOverScreen_C::On_Team_Won()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGameOverScreen.AthenaGameOverScreen_C.On Team Won");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea48b99d);
 
 	UAthenaGameOverScreen_C_On_Team_Won_Params params;
 
@@ -124,7 +130,8 @@ void UAthenaGameOverScreen_C::On_Team_Won()
 
 void UAthenaGameOverScreen_C::ExecuteUbergraph_AthenaGameOverScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGameOverScreen.AthenaGameOverScreen_C.ExecuteUbergraph_AthenaGameOverScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9852b814);
 
 	UAthenaGameOverScreen_C_ExecuteUbergraph_AthenaGameOverScreen_Params params;
 	params.EntryPoint = EntryPoint;

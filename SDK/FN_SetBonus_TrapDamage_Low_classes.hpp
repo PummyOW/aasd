@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass SetBonus_TrapDamage_Low.SetBonus_TrapDamage_Low_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x47c46691);
 		return ptr;
 	}
 

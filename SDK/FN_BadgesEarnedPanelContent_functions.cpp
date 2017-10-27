@@ -24,7 +24,8 @@ namespace SDK
 
 void UBadgesEarnedPanelContent_C::Get_Badge_And_Count_For_Player(class AFortPlayerController* InFortPC, const struct FEarnedBadgeEntry& EarnedBadgeEntry, bool* Found, class AFortPlayerController** FortPC, class UFortBadgeItemDefinition** Badge, int* Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.Get Badge And Count For Player");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa361bd72);
 
 	UBadgesEarnedPanelContent_C_Get_Badge_And_Count_For_Player_Params params;
 	params.InFortPC = InFortPC;
@@ -52,7 +53,8 @@ void UBadgesEarnedPanelContent_C::Get_Badge_And_Count_For_Player(class AFortPlay
 
 void UBadgesEarnedPanelContent_C::HandleMissionsUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.HandleMissionsUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f1bb1dd);
 
 	UBadgesEarnedPanelContent_C_HandleMissionsUpdated_Params params;
 
@@ -69,7 +71,8 @@ void UBadgesEarnedPanelContent_C::HandleMissionsUpdated()
 
 void UBadgesEarnedPanelContent_C::UpdatePotentialBadges()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.UpdatePotentialBadges");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x150a4bf2);
 
 	UBadgesEarnedPanelContent_C_UpdatePotentialBadges_Params params;
 
@@ -86,7 +89,8 @@ void UBadgesEarnedPanelContent_C::UpdatePotentialBadges()
 
 void UBadgesEarnedPanelContent_C::HandlePotentialBadgesChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.HandlePotentialBadgesChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4e404ef);
 
 	UBadgesEarnedPanelContent_C_HandlePotentialBadgesChanged_Params params;
 
@@ -103,7 +107,8 @@ void UBadgesEarnedPanelContent_C::HandlePotentialBadgesChanged()
 
 void UBadgesEarnedPanelContent_C::UpdateBadgeWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.UpdateBadgeWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf07204);
 
 	UBadgesEarnedPanelContent_C_UpdateBadgeWidgets_Params params;
 
@@ -120,7 +125,8 @@ void UBadgesEarnedPanelContent_C::UpdateBadgeWidgets()
 
 void UBadgesEarnedPanelContent_C::HandleEarnedBadgesChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.HandleEarnedBadgesChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe2517a50);
 
 	UBadgesEarnedPanelContent_C_HandleEarnedBadgesChanged_Params params;
 
@@ -137,7 +143,8 @@ void UBadgesEarnedPanelContent_C::HandleEarnedBadgesChanged()
 
 void UBadgesEarnedPanelContent_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0ac00b6);
 
 	UBadgesEarnedPanelContent_C_Construct_Params params;
 
@@ -156,7 +163,8 @@ void UBadgesEarnedPanelContent_C::Construct()
 
 void UBadgesEarnedPanelContent_C::ExecuteUbergraph_BadgesEarnedPanelContent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BadgesEarnedPanelContent.BadgesEarnedPanelContent_C.ExecuteUbergraph_BadgesEarnedPanelContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d70992f);
 
 	UBadgesEarnedPanelContent_C_ExecuteUbergraph_BadgesEarnedPanelContent_Params params;
 	params.EntryPoint = EntryPoint;

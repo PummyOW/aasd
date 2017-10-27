@@ -20,7 +20,8 @@ namespace SDK
 
 void AGCNL_GM_ReflectDamage_C::OnStartParticleSystemSpawned(class UParticleSystemComponent** SpawnedParticleSysComponent, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_ReflectDamage.GCNL_GM_ReflectDamage_C.OnStartParticleSystemSpawned");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8549929);
 
 	AGCNL_GM_ReflectDamage_C_OnStartParticleSystemSpawned_Params params;
 	params.SpawnedParticleSysComponent = SpawnedParticleSysComponent;
@@ -39,7 +40,8 @@ void AGCNL_GM_ReflectDamage_C::OnStartParticleSystemSpawned(class UParticleSyste
 
 void AGCNL_GM_ReflectDamage_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_ReflectDamage.GCNL_GM_ReflectDamage_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19162400);
 
 	AGCNL_GM_ReflectDamage_C_UserConstructionScript_Params params;
 
@@ -56,7 +58,8 @@ void AGCNL_GM_ReflectDamage_C::UserConstructionScript()
 
 void AGCNL_GM_ReflectDamage_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_ReflectDamage.GCNL_GM_ReflectDamage_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4d3a8a7);
 
 	AGCNL_GM_ReflectDamage_C_ReceiveBeginPlay_Params params;
 
@@ -75,7 +78,8 @@ void AGCNL_GM_ReflectDamage_C::ReceiveBeginPlay()
 
 void AGCNL_GM_ReflectDamage_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_ReflectDamage.GCNL_GM_ReflectDamage_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda84838d);
 
 	AGCNL_GM_ReflectDamage_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -95,7 +99,8 @@ void AGCNL_GM_ReflectDamage_C::ReceiveTick(float* DeltaSeconds)
 
 void AGCNL_GM_ReflectDamage_C::ExecuteUbergraph_GCNL_GM_ReflectDamage(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_ReflectDamage.GCNL_GM_ReflectDamage_C.ExecuteUbergraph_GCNL_GM_ReflectDamage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde6e87ef);
 
 	AGCNL_GM_ReflectDamage_C_ExecuteUbergraph_GCNL_GM_ReflectDamage_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UKeybindWidget_C::ShowHoldBackPlate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.ShowHoldBackPlate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf97a4ae);
 
 	UKeybindWidget_C_ShowHoldBackPlate_Params params;
 
@@ -36,7 +37,8 @@ void UKeybindWidget_C::ShowHoldBackPlate()
 
 void UKeybindWidget_C::SetOpacity(float InOpacity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.SetOpacity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc93343cc);
 
 	UKeybindWidget_C_SetOpacity_Params params;
 	params.InOpacity = InOpacity;
@@ -56,7 +58,8 @@ void UKeybindWidget_C::SetOpacity(float InOpacity)
 
 void UKeybindWidget_C::Get_Bound_Action(struct FName* Action)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.Get Bound Action");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb3f1d0d);
 
 	UKeybindWidget_C_Get_Bound_Action_Params params;
 
@@ -78,7 +81,8 @@ void UKeybindWidget_C::Get_Bound_Action(struct FName* Action)
 
 void UKeybindWidget_C::Set_Brush_Size(TEnumAsByte<EFortBrushSize> Brush_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.Set Brush Size");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1e185f8);
 
 	UKeybindWidget_C_Set_Brush_Size_Params params;
 	params.Brush_Size = Brush_Size;
@@ -98,7 +102,8 @@ void UKeybindWidget_C::Set_Brush_Size(TEnumAsByte<EFortBrushSize> Brush_Size)
 
 void UKeybindWidget_C::Get_Brush_Size(TEnumAsByte<EFortBrushSize>* Brush_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.Get Brush Size");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d1edd84);
 
 	UKeybindWidget_C_Get_Brush_Size_Params params;
 
@@ -118,7 +123,8 @@ void UKeybindWidget_C::Get_Brush_Size(TEnumAsByte<EFortBrushSize>* Brush_Size)
 
 void UKeybindWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a4ee56a);
 
 	UKeybindWidget_C_Construct_Params params;
 
@@ -135,7 +141,8 @@ void UKeybindWidget_C::Construct()
 
 void UKeybindWidget_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf77495b0);
 
 	UKeybindWidget_C_Update_Params params;
 
@@ -154,7 +161,8 @@ void UKeybindWidget_C::Update()
 
 void UKeybindWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68f243e1);
 
 	UKeybindWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -172,7 +180,8 @@ void UKeybindWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UKeybindWidget_C::UpdateFrameSize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.UpdateFrameSize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8af4a55c);
 
 	UKeybindWidget_C_UpdateFrameSize_Params params;
 
@@ -191,7 +200,8 @@ void UKeybindWidget_C::UpdateFrameSize()
 
 void UKeybindWidget_C::ExecuteUbergraph_KeybindWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KeybindWidget.KeybindWidget_C.ExecuteUbergraph_KeybindWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaff271b5);
 
 	UKeybindWidget_C_ExecuteUbergraph_KeybindWidget_Params params;
 	params.EntryPoint = EntryPoint;

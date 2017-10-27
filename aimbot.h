@@ -92,18 +92,6 @@ class Aimbot
 		m_Player->GetViewportSize(&screenSizeX, &screenSizeY);
 		SDK::FVector2D centerScreen{ (float)screenSizeX / 2, (float)screenSizeY / 2 };
 		SDK::FVector2D screenPos;
-		srand(time(NULL));
-		switch (rand() % 4 + 1)
-		{
-		case 1:
-			position.X += 10;
-		case 2:
-			position.X -= 10;
-		case 3:
-			position.Y += 10;
-		case 4:
-			position.Y -= 10;
-		}
 		if (Engine::WorldToScreen(m_Player, position, &screenPos))
 		{
 			auto enemyDir = screenPos - centerScreen;		

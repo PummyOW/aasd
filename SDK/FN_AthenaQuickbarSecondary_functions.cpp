@@ -12,12 +12,31 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMaximizeShowing
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaQuickbarSecondary_C::HandleMaximizeShowing()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47dbf630);
+
+	UAthenaQuickbarSecondary_C_HandleMaximizeShowing_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleShowHideRail
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
 void UAthenaQuickbarSecondary_C::HandleShowHideRail()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleShowHideRail");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97ce571e);
 
 	UAthenaQuickbarSecondary_C_HandleShowHideRail_Params params;
 
@@ -34,26 +53,10 @@ void UAthenaQuickbarSecondary_C::HandleShowHideRail()
 
 void UAthenaQuickbarSecondary_C::HandleMinimizeHiding()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMinimizeHiding");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6583b1b4);
 
 	UAthenaQuickbarSecondary_C_HandleMinimizeHiding_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleUpdateSlots
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UAthenaQuickbarSecondary_C::HandleUpdateSlots()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleUpdateSlots");
-
-	UAthenaQuickbarSecondary_C_HandleUpdateSlots_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -68,7 +71,8 @@ void UAthenaQuickbarSecondary_C::HandleUpdateSlots()
 
 void UAthenaQuickbarSecondary_C::HandleKeyBindsChange()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleKeyBindsChange");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf44b3656);
 
 	UAthenaQuickbarSecondary_C_HandleKeyBindsChange_Params params;
 
@@ -87,7 +91,8 @@ void UAthenaQuickbarSecondary_C::HandleKeyBindsChange()
 
 void UAthenaQuickbarSecondary_C::Show_Secondary_Quickbar_Rail(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Show Secondary Quickbar Rail");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d8ee98e);
 
 	UAthenaQuickbarSecondary_C_Show_Secondary_Quickbar_Rail_Params params;
 	params.Show = Show;
@@ -105,7 +110,8 @@ void UAthenaQuickbarSecondary_C::Show_Secondary_Quickbar_Rail(bool Show)
 
 void UAthenaQuickbarSecondary_C::Maximize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Maximize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcad4ecb5);
 
 	UAthenaQuickbarSecondary_C_Maximize_Params params;
 
@@ -122,7 +128,8 @@ void UAthenaQuickbarSecondary_C::Maximize()
 
 void UAthenaQuickbarSecondary_C::Minimize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Minimize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ea47caf);
 
 	UAthenaQuickbarSecondary_C_Minimize_Params params;
 
@@ -139,7 +146,8 @@ void UAthenaQuickbarSecondary_C::Minimize()
 
 void UAthenaQuickbarSecondary_C::HandleKeybindsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleKeybindsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdcb86546);
 
 	UAthenaQuickbarSecondary_C_HandleKeybindsChanged_Params params;
 
@@ -158,7 +166,8 @@ void UAthenaQuickbarSecondary_C::HandleKeybindsChanged()
 
 void UAthenaQuickbarSecondary_C::HandleInputMethodChanged_Bind(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleInputMethodChanged_Bind");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc40fa13a);
 
 	UAthenaQuickbarSecondary_C_HandleInputMethodChanged_Bind_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -176,7 +185,8 @@ void UAthenaQuickbarSecondary_C::HandleInputMethodChanged_Bind(bool bUsingGamepa
 
 void UAthenaQuickbarSecondary_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd827abd);
 
 	UAthenaQuickbarSecondary_C_Destruct_Params params;
 
@@ -196,7 +206,8 @@ void UAthenaQuickbarSecondary_C::Destruct()
 
 void UAthenaQuickbarSecondary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars QuickbarIndex, int Slot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.OnQuickBarSlotFocusChanged_Bind");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32fada72);
 
 	UAthenaQuickbarSecondary_C_OnQuickBarSlotFocusChanged_Bind_Params params;
 	params.QuickbarIndex = QuickbarIndex;
@@ -215,7 +226,8 @@ void UAthenaQuickbarSecondary_C::OnQuickBarSlotFocusChanged_Bind(EFortQuickBars 
 
 void UAthenaQuickbarSecondary_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d049ffe);
 
 	UAthenaQuickbarSecondary_C_Construct_Params params;
 
@@ -234,7 +246,8 @@ void UAthenaQuickbarSecondary_C::Construct()
 
 void UAthenaQuickbarSecondary_C::OnQuickbarContentsChanged(EFortQuickBars* QuickbarIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.OnQuickbarContentsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc88c3312);
 
 	UAthenaQuickbarSecondary_C_OnQuickbarContentsChanged_Params params;
 	params.QuickbarIndex = QuickbarIndex;
@@ -254,7 +267,8 @@ void UAthenaQuickbarSecondary_C::OnQuickbarContentsChanged(EFortQuickBars* Quick
 
 void UAthenaQuickbarSecondary_C::ExecuteUbergraph_AthenaQuickbarSecondary(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.ExecuteUbergraph_AthenaQuickbarSecondary");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8051d10);
 
 	UAthenaQuickbarSecondary_C_ExecuteUbergraph_AthenaQuickbarSecondary_Params params;
 	params.EntryPoint = EntryPoint;

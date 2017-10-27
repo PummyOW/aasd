@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_ZoneModifiers_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_ZoneModifiers.Announce_ZoneModifiers_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4db44920);
 
 	AAnnounce_ZoneModifiers_C_UserConstructionScript_Params params;
 

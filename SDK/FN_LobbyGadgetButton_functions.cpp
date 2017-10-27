@@ -19,7 +19,8 @@ namespace SDK
 
 void ULobbyGadgetButton_C::GetLocked(bool* bLocked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.GetLocked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56b5cf4b);
 
 	ULobbyGadgetButton_C_GetLocked_Params params;
 
@@ -41,7 +42,8 @@ void ULobbyGadgetButton_C::GetLocked(bool* bLocked)
 
 void ULobbyGadgetButton_C::SetLocked(bool bLocked)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.SetLocked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7193351f);
 
 	ULobbyGadgetButton_C_SetLocked_Params params;
 	params.bLocked = bLocked;
@@ -61,7 +63,8 @@ void ULobbyGadgetButton_C::SetLocked(bool bLocked)
 
 void ULobbyGadgetButton_C::GetGadgetItem(class UFortWorldItem** GadgetItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.GetGadgetItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef8bc818);
 
 	ULobbyGadgetButton_C_GetGadgetItem_Params params;
 
@@ -83,7 +86,8 @@ void ULobbyGadgetButton_C::GetGadgetItem(class UFortWorldItem** GadgetItem)
 
 void ULobbyGadgetButton_C::Refresh(class UFortWorldItem* WorldItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5cc98034);
 
 	ULobbyGadgetButton_C_Refresh_Params params;
 	params.WorldItem = WorldItem;
@@ -103,7 +107,8 @@ void ULobbyGadgetButton_C::Refresh(class UFortWorldItem* WorldItem)
 
 void ULobbyGadgetButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc48df65);
 
 	ULobbyGadgetButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -123,7 +128,8 @@ void ULobbyGadgetButton_C::PreConstruct(bool* IsDesignTime)
 
 void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfabaf572);
 
 	ULobbyGadgetButton_C_BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -143,7 +149,8 @@ void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonBu
 
 void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa11f8482);
 
 	ULobbyGadgetButton_C_BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -163,7 +170,8 @@ void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonBu
 
 void ULobbyGadgetButton_C::ExecuteUbergraph_LobbyGadgetButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.ExecuteUbergraph_LobbyGadgetButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77c5d051);
 
 	ULobbyGadgetButton_C_ExecuteUbergraph_LobbyGadgetButton_Params params;
 	params.EntryPoint = EntryPoint;
@@ -183,7 +191,8 @@ void ULobbyGadgetButton_C::ExecuteUbergraph_LobbyGadgetButton(int EntryPoint)
 
 void ULobbyGadgetButton_C::OnButtonHovered__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.OnButtonHovered__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8d00548);
 
 	ULobbyGadgetButton_C_OnButtonHovered__DelegateSignature_Params params;
 	params.GadgetButton = GadgetButton;
@@ -203,7 +212,8 @@ void ULobbyGadgetButton_C::OnButtonHovered__DelegateSignature(class ULobbyGadget
 
 void ULobbyGadgetButton_C::OnButtonClicked__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyGadgetButton.LobbyGadgetButton_C.OnButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa57bb32a);
 
 	ULobbyGadgetButton_C_OnButtonClicked__DelegateSignature_Params params;
 	params.GadgetButton = GadgetButton;

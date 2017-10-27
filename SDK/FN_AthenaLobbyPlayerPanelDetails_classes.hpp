@@ -25,11 +25,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7edf6ff9);
 		return ptr;
 	}
 
 
+	void RefreshBanner();
 	void SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo);
 	void InitializeContextEvents();
 	void OnActiveFriendsCountUpdated(int ActiveFriendsCount);

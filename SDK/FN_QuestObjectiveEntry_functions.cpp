@@ -17,7 +17,8 @@ namespace SDK
 
 void UQuestObjectiveEntry_C::PlayAppearAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestObjectiveEntry.QuestObjectiveEntry_C.PlayAppearAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9096d8f8);
 
 	UQuestObjectiveEntry_C_PlayAppearAnimation_Params params;
 
@@ -37,7 +38,8 @@ void UQuestObjectiveEntry_C::PlayAppearAnimation()
 
 void UQuestObjectiveEntry_C::Update(class UFortQuestObjectiveInfo* Objective, int AchievedCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestObjectiveEntry.QuestObjectiveEntry_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba86a0c0);
 
 	UQuestObjectiveEntry_C_Update_Params params;
 	params.Objective = Objective;
@@ -59,7 +61,8 @@ void UQuestObjectiveEntry_C::Update(class UFortQuestObjectiveInfo* Objective, in
 
 void UQuestObjectiveEntry_C::UpdateProgress(class UFortQuestObjectiveInfo* Objective, int AchievedCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestObjectiveEntry.QuestObjectiveEntry_C.UpdateProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba54799);
 
 	UQuestObjectiveEntry_C_UpdateProgress_Params params;
 	params.Objective = Objective;
@@ -80,7 +83,8 @@ void UQuestObjectiveEntry_C::UpdateProgress(class UFortQuestObjectiveInfo* Objec
 
 void UQuestObjectiveEntry_C::SetData(class UObject* InData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestObjectiveEntry.QuestObjectiveEntry_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20100afd);
 
 	UQuestObjectiveEntry_C_SetData_Params params;
 	params.InData = InData;
@@ -100,7 +104,8 @@ void UQuestObjectiveEntry_C::SetData(class UObject* InData)
 
 void UQuestObjectiveEntry_C::ExecuteUbergraph_QuestObjectiveEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestObjectiveEntry.QuestObjectiveEntry_C.ExecuteUbergraph_QuestObjectiveEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c9d9f80);
 
 	UQuestObjectiveEntry_C_ExecuteUbergraph_QuestObjectiveEntry_Params params;
 	params.EntryPoint = EntryPoint;

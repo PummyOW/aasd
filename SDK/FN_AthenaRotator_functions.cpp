@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaRotator_C::NewFunction_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.NewFunction_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3b353e3);
 
 	UAthenaRotator_C_NewFunction_1_Params params;
 
@@ -36,7 +37,8 @@ void UAthenaRotator_C::NewFunction_1()
 
 void UAthenaRotator_C::ChangeDirection(bool bDirection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.ChangeDirection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0ab0172);
 
 	UAthenaRotator_C_ChangeDirection_Params params;
 	params.bDirection = bDirection;
@@ -54,7 +56,8 @@ void UAthenaRotator_C::ChangeDirection(bool bDirection)
 
 void UAthenaRotator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d9e85aa);
 
 	UAthenaRotator_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UAthenaRotator_C::Construct()
 
 void UAthenaRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc85c417);
 
 	UAthenaRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -93,7 +97,8 @@ void UAthenaRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonBut
 
 void UAthenaRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93a52d69);
 
 	UAthenaRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -114,7 +119,8 @@ void UAthenaRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonB
 
 void UAthenaRotator_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86defd8);
 
 	UAthenaRotator_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -135,7 +141,8 @@ void UAthenaRotator_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UAthenaRotator_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3dfbe921);
 
 	UAthenaRotator_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -153,7 +160,8 @@ void UAthenaRotator_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaRotator_C::OnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.OnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4bf5d2ff);
 
 	UAthenaRotator_C_OnClicked_Params params;
 
@@ -172,7 +180,8 @@ void UAthenaRotator_C::OnClicked()
 
 void UAthenaRotator_C::ExecuteUbergraph_AthenaRotator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaRotator.AthenaRotator_C.ExecuteUbergraph_AthenaRotator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee667e91);
 
 	UAthenaRotator_C_ExecuteUbergraph_AthenaRotator_Params params;
 	params.EntryPoint = EntryPoint;

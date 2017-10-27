@@ -17,7 +17,8 @@ namespace SDK
 
 void UFrontEndRewards_Expedition_C::HandleTransitionInComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.HandleTransitionInComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4454caa4);
 
 	UFrontEndRewards_Expedition_C_HandleTransitionInComplete_Params params;
 
@@ -34,7 +35,8 @@ void UFrontEndRewards_Expedition_C::HandleTransitionInComplete()
 
 void UFrontEndRewards_Expedition_C::ContinueSuccess()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ContinueSuccess");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef3e6819);
 
 	UFrontEndRewards_Expedition_C_ContinueSuccess_Params params;
 
@@ -51,7 +53,8 @@ void UFrontEndRewards_Expedition_C::ContinueSuccess()
 
 void UFrontEndRewards_Expedition_C::ContinueFail()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ContinueFail");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x332251ec);
 
 	UFrontEndRewards_Expedition_C_ContinueFail_Params params;
 
@@ -68,7 +71,8 @@ void UFrontEndRewards_Expedition_C::ContinueFail()
 
 void UFrontEndRewards_Expedition_C::Check()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.Check");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3767b999);
 
 	UFrontEndRewards_Expedition_C_Check_Params params;
 
@@ -85,7 +89,8 @@ void UFrontEndRewards_Expedition_C::Check()
 
 void UFrontEndRewards_Expedition_C::SetSuccessChanceFromExpedition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.SetSuccessChanceFromExpedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd55a6d7f);
 
 	UFrontEndRewards_Expedition_C_SetSuccessChanceFromExpedition_Params params;
 
@@ -102,7 +107,8 @@ void UFrontEndRewards_Expedition_C::SetSuccessChanceFromExpedition()
 
 void UFrontEndRewards_Expedition_C::SetTitleFromExpedition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.SetTitleFromExpedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xabce8238);
 
 	UFrontEndRewards_Expedition_C_SetTitleFromExpedition_Params params;
 
@@ -119,7 +125,8 @@ void UFrontEndRewards_Expedition_C::SetTitleFromExpedition()
 
 void UFrontEndRewards_Expedition_C::SetBrushFromExpedition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.SetBrushFromExpedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe661b82e);
 
 	UFrontEndRewards_Expedition_C_SetBrushFromExpedition_Params params;
 
@@ -138,7 +145,8 @@ void UFrontEndRewards_Expedition_C::SetBrushFromExpedition()
 
 void UFrontEndRewards_Expedition_C::PopulateFromExpedition(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.PopulateFromExpedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3d06b80);
 
 	UFrontEndRewards_Expedition_C_PopulateFromExpedition_Params params;
 	params.Item = Item;
@@ -156,7 +164,8 @@ void UFrontEndRewards_Expedition_C::PopulateFromExpedition(class UFortExpedition
 
 void UFrontEndRewards_Expedition_C::TransitionInBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.TransitionInBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4807b996);
 
 	UFrontEndRewards_Expedition_C_TransitionInBegin_Params params;
 
@@ -173,7 +182,8 @@ void UFrontEndRewards_Expedition_C::TransitionInBegin()
 
 void UFrontEndRewards_Expedition_C::TransitionOutBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.TransitionOutBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4448a1d);
 
 	UFrontEndRewards_Expedition_C_TransitionOutBegin_Params params;
 
@@ -194,7 +204,8 @@ void UFrontEndRewards_Expedition_C::TransitionOutBegin()
 
 void UFrontEndRewards_Expedition_C::OnCollectExpeditionCompleted(class UFortExpeditionItem** Expedition, bool* bSucceeded, TArray<struct FFortItemInstanceQuantityPair>* Rewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.OnCollectExpeditionCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4020253e);
 
 	UFrontEndRewards_Expedition_C_OnCollectExpeditionCompleted_Params params;
 	params.Expedition = Expedition;
@@ -214,7 +225,8 @@ void UFrontEndRewards_Expedition_C::OnCollectExpeditionCompleted(class UFortExpe
 
 void UFrontEndRewards_Expedition_C::OnPrimaryAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.OnPrimaryAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee7508f8);
 
 	UFrontEndRewards_Expedition_C_OnPrimaryAction_Params params;
 
@@ -231,7 +243,8 @@ void UFrontEndRewards_Expedition_C::OnPrimaryAction()
 
 void UFrontEndRewards_Expedition_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfb129e5a);
 
 	UFrontEndRewards_Expedition_C_Construct_Params params;
 
@@ -250,7 +263,8 @@ void UFrontEndRewards_Expedition_C::Construct()
 
 void UFrontEndRewards_Expedition_C::ExecuteUbergraph_FrontEndRewards_Expedition(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.ExecuteUbergraph_FrontEndRewards_Expedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3976c3fd);
 
 	UFrontEndRewards_Expedition_C_ExecuteUbergraph_FrontEndRewards_Expedition_Params params;
 	params.EntryPoint = EntryPoint;
@@ -271,7 +285,8 @@ void UFrontEndRewards_Expedition_C::ExecuteUbergraph_FrontEndRewards_Expedition(
 
 void UFrontEndRewards_Expedition_C::OnExpeditionCompleted__DelegateSignature(bool Succeeded, TArray<struct FFortItemInstanceQuantityPair>* Rewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Expedition.FrontEndRewards_Expedition_C.OnExpeditionCompleted__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90fc08e7);
 
 	UFrontEndRewards_Expedition_C_OnExpeditionCompleted__DelegateSignature_Params params;
 	params.Succeeded = Succeeded;

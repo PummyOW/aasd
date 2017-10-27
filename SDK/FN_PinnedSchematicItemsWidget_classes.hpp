@@ -24,7 +24,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe0f662f);
 		return ptr;
 	}
 

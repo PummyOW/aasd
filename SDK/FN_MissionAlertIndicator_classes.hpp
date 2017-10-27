@@ -25,7 +25,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass MissionAlertIndicator.MissionAlertIndicator_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd109c9a9);
 		return ptr;
 	}
 

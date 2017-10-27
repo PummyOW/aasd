@@ -29,7 +29,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass HUD_TeamInfo.HUD_TeamInfo_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0998f83);
 		return ptr;
 	}
 

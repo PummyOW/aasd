@@ -19,7 +19,8 @@ namespace SDK
 
 void ULobbyPlayerPadTop_C::RefreshReadyState(bool Ready)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshReadyState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfdcf2224);
 
 	ULobbyPlayerPadTop_C_RefreshReadyState_Params params;
 	params.Ready = Ready;
@@ -40,7 +41,8 @@ void ULobbyPlayerPadTop_C::RefreshReadyState(bool Ready)
 
 void ULobbyPlayerPadTop_C::OnAthenaReadyStateChanged(bool Ready, struct FUniqueNetIdRepl* Member_Id)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnAthenaReadyStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9f50a97);
 
 	ULobbyPlayerPadTop_C_OnAthenaReadyStateChanged_Params params;
 	params.Ready = Ready;
@@ -63,7 +65,8 @@ void ULobbyPlayerPadTop_C::OnAthenaReadyStateChanged(bool Ready, struct FUniqueN
 
 void ULobbyPlayerPadTop_C::OnLobbyPlayerUnhovered(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbbe22e27);
 
 	ULobbyPlayerPadTop_C_OnLobbyPlayerUnhovered_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -83,7 +86,8 @@ void ULobbyPlayerPadTop_C::OnLobbyPlayerUnhovered(int PlayerIndex)
 
 void ULobbyPlayerPadTop_C::Initialize(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4665dbf9);
 
 	ULobbyPlayerPadTop_C_Initialize_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -101,7 +105,8 @@ void ULobbyPlayerPadTop_C::Initialize(int PlayerIndex)
 
 void ULobbyPlayerPadTop_C::InitializeContextEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.InitializeContextEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8688e13d);
 
 	ULobbyPlayerPadTop_C_InitializeContextEvents_Params params;
 
@@ -120,7 +125,8 @@ void ULobbyPlayerPadTop_C::InitializeContextEvents()
 
 void ULobbyPlayerPadTop_C::OnLobbyPlayerHovered(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyPlayerHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b93e9bc);
 
 	ULobbyPlayerPadTop_C_OnLobbyPlayerHovered_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -140,7 +146,8 @@ void ULobbyPlayerPadTop_C::OnLobbyPlayerHovered(int PlayerIndex)
 
 void ULobbyPlayerPadTop_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.SetTeamMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad9d5ab0);
 
 	ULobbyPlayerPadTop_C_SetTeamMemberInfo_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -158,7 +165,8 @@ void ULobbyPlayerPadTop_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& T
 
 void ULobbyPlayerPadTop_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x108c4d94);
 
 	ULobbyPlayerPadTop_C_Refresh_Params params;
 
@@ -175,7 +183,8 @@ void ULobbyPlayerPadTop_C::Refresh()
 
 void ULobbyPlayerPadTop_C::RefreshPlayerName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshPlayerName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4afc51de);
 
 	ULobbyPlayerPadTop_C_RefreshPlayerName_Params params;
 
@@ -192,7 +201,8 @@ void ULobbyPlayerPadTop_C::RefreshPlayerName()
 
 void ULobbyPlayerPadTop_C::RefreshHomeBasePower()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.RefreshHomeBasePower");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b64ea45);
 
 	ULobbyPlayerPadTop_C_RefreshHomeBasePower_Params params;
 
@@ -211,7 +221,8 @@ void ULobbyPlayerPadTop_C::RefreshHomeBasePower()
 
 void ULobbyPlayerPadTop_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2db4ac05);
 
 	ULobbyPlayerPadTop_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -229,7 +240,8 @@ void ULobbyPlayerPadTop_C::PreConstruct(bool* IsDesignTime)
 
 void ULobbyPlayerPadTop_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ecdcd9e);
 
 	ULobbyPlayerPadTop_C_Construct_Params params;
 
@@ -246,7 +258,8 @@ void ULobbyPlayerPadTop_C::Construct()
 
 void ULobbyPlayerPadTop_C::OnLobbyStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ac56887);
 
 	ULobbyPlayerPadTop_C_OnLobbyStarted_Params params;
 
@@ -266,7 +279,8 @@ void ULobbyPlayerPadTop_C::OnLobbyStarted()
 
 void ULobbyPlayerPadTop_C::OnUpdateLobbyPlayerPadTop(const struct FUniqueNetIdRepl& PlayerNetId, bool bIsReady)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnUpdateLobbyPlayerPadTop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ceb4fba);
 
 	ULobbyPlayerPadTop_C_OnUpdateLobbyPlayerPadTop_Params params;
 	params.PlayerNetId = PlayerNetId;
@@ -285,7 +299,8 @@ void ULobbyPlayerPadTop_C::OnUpdateLobbyPlayerPadTop(const struct FUniqueNetIdRe
 
 void ULobbyPlayerPadTop_C::OnLobbyDisconnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.OnLobbyDisconnected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf168ca1);
 
 	ULobbyPlayerPadTop_C_OnLobbyDisconnected_Params params;
 
@@ -304,7 +319,8 @@ void ULobbyPlayerPadTop_C::OnLobbyDisconnected()
 
 void ULobbyPlayerPadTop_C::ExecuteUbergraph_LobbyPlayerPadTop(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadTop.LobbyPlayerPadTop_C.ExecuteUbergraph_LobbyPlayerPadTop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbeea0936);
 
 	ULobbyPlayerPadTop_C_ExecuteUbergraph_LobbyPlayerPadTop_Params params;
 	params.EntryPoint = EntryPoint;

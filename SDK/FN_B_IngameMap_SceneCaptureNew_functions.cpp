@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_IngameMap_SceneCaptureNew_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_IngameMap_SceneCaptureNew.B_IngameMap_SceneCaptureNew_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a7365ac);
 
 	AB_IngameMap_SceneCaptureNew_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AB_IngameMap_SceneCaptureNew_C::UserConstructionScript()
 
 void AB_IngameMap_SceneCaptureNew_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_IngameMap_SceneCaptureNew.B_IngameMap_SceneCaptureNew_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f0d4353);
 
 	AB_IngameMap_SceneCaptureNew_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +55,8 @@ void AB_IngameMap_SceneCaptureNew_C::ReceiveBeginPlay()
 
 void AB_IngameMap_SceneCaptureNew_C::ExecuteUbergraph_B_IngameMap_SceneCaptureNew(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_IngameMap_SceneCaptureNew.B_IngameMap_SceneCaptureNew_C.ExecuteUbergraph_B_IngameMap_SceneCaptureNew");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x986df89c);
 
 	AB_IngameMap_SceneCaptureNew_C_ExecuteUbergraph_B_IngameMap_SceneCaptureNew_Params params;
 	params.EntryPoint = EntryPoint;

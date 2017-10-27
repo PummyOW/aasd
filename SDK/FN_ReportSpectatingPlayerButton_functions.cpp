@@ -19,7 +19,8 @@ namespace SDK
 
 void UReportSpectatingPlayerButton_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe971375d);
 
 	UReportSpectatingPlayerButton_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -37,7 +38,8 @@ void UReportSpectatingPlayerButton_C::BndEvt__IconTextButton_K2Node_ComponentBou
 
 void UReportSpectatingPlayerButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1fb5a24);
 
 	UReportSpectatingPlayerButton_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UReportSpectatingPlayerButton_C::Construct()
 
 void UReportSpectatingPlayerButton_C::ExecuteUbergraph_ReportSpectatingPlayerButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReportSpectatingPlayerButton.ReportSpectatingPlayerButton_C.ExecuteUbergraph_ReportSpectatingPlayerButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb596fde0);
 
 	UReportSpectatingPlayerButton_C_ExecuteUbergraph_ReportSpectatingPlayerButton_Params params;
 	params.EntryPoint = EntryPoint;

@@ -62,7 +62,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass Results_BadgeLoot.Results_BadgeLoot_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe691ab5);
 		return ptr;
 	}
 

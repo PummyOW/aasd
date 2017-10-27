@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AttributeSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4e0706db);
 		return ptr;
 	}
 
@@ -72,7 +73,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb13a10f);
 		return ptr;
 	}
 
@@ -167,7 +169,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2272af1);
 		return ptr;
 	}
 
@@ -281,7 +284,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemGlobals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xee5a1b10);
 		return ptr;
 	}
 
@@ -302,7 +306,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6fb19694);
 		return ptr;
 	}
 
@@ -328,7 +333,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x173b3651);
 		return ptr;
 	}
 
@@ -360,7 +366,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueNotify_Actor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27143ced);
 		return ptr;
 	}
 
@@ -387,7 +394,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueNotify_Static");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2452edc);
 		return ptr;
 	}
 
@@ -409,7 +417,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x771d0fa3);
 		return ptr;
 	}
 
@@ -426,7 +435,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectExecutionCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x81083ca9);
 		return ptr;
 	}
 
@@ -443,7 +453,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectUIData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc2f6384e);
 		return ptr;
 	}
 
@@ -460,7 +471,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x48b1cb00);
 		return ptr;
 	}
 
@@ -477,7 +489,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaff20805);
 		return ptr;
 	}
 
@@ -495,7 +508,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemBlueprintLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x62380fe);
 		return ptr;
 	}
 
@@ -622,7 +636,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9656758);
 		return ptr;
 	}
 
@@ -637,7 +652,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemReplicationProxyInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71125e87);
 		return ptr;
 	}
 
@@ -652,7 +668,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemDebugHUD");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20a88c70);
 		return ptr;
 	}
 
@@ -667,7 +684,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0d5445d);
 		return ptr;
 	}
 
@@ -684,7 +702,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemTestPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c14ff6a);
 		return ptr;
 	}
 
@@ -707,7 +726,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_ApplyRootMotion_Base");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x46ca34d5);
 		return ptr;
 	}
 
@@ -729,7 +749,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_ApplyRootMotionConstantForce");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa2b7d248);
 		return ptr;
 	}
 
@@ -758,7 +779,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_ApplyRootMotionJumpForce");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1201f6a8);
 		return ptr;
 	}
 
@@ -794,7 +816,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_ApplyRootMotionMoveToActorForce");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56fe2ec7);
 		return ptr;
 	}
 
@@ -823,7 +846,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_ApplyRootMotionMoveToForce");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc64e3c98);
 		return ptr;
 	}
 
@@ -856,7 +880,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_ApplyRootMotionRadialForce");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x794cb193);
 		return ptr;
 	}
 
@@ -881,7 +906,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_MoveToLocation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x268e6a5e);
 		return ptr;
 	}
 
@@ -900,7 +926,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_NetworkSyncPoint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x10ff6d98);
 		return ptr;
 	}
 
@@ -923,7 +950,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_PlayMontageAndWait");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe230cbac);
 		return ptr;
 	}
 
@@ -946,7 +974,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_Repeat");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57cc2512);
 		return ptr;
 	}
 
@@ -966,7 +995,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_SpawnActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2a56e57);
 		return ptr;
 	}
 
@@ -988,7 +1018,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_StartAbilityState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x763425b8);
 		return ptr;
 	}
 
@@ -1012,7 +1043,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityWorldReticle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9958faf3);
 		return ptr;
 	}
 
@@ -1051,7 +1083,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityTargetActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d82850b);
 		return ptr;
 	}
 
@@ -1071,7 +1104,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_VisualizeTargeting");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3615ec18);
 		return ptr;
 	}
 
@@ -1093,7 +1127,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitAbilityActivate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9d7b60f9);
 		return ptr;
 	}
 
@@ -1114,7 +1149,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitAbilityCommit");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb212e5d);
 		return ptr;
 	}
 
@@ -1134,7 +1170,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitAttributeChange");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x59191bac);
 		return ptr;
 	}
 
@@ -1154,7 +1191,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitAttributeChangeRatioThreshold");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b88607e);
 		return ptr;
 	}
 
@@ -1173,7 +1211,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitAttributeChangeThreshold");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4e448075);
 		return ptr;
 	}
 
@@ -1192,7 +1231,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitCancel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4c22af62);
 		return ptr;
 	}
 
@@ -1213,7 +1253,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitConfirm");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd79be024);
 		return ptr;
 	}
 
@@ -1234,7 +1275,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitConfirmCancel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0e0a08a);
 		return ptr;
 	}
 
@@ -1257,7 +1299,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitDelay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5e03f9);
 		return ptr;
 	}
 
@@ -1277,7 +1320,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayEffectApplied");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x74c11fa2);
 		return ptr;
 	}
 
@@ -1296,7 +1340,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Self");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x31f2067f);
 		return ptr;
 	}
 
@@ -1315,7 +1360,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayEffectApplied_Target");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x10b4dc4a);
 		return ptr;
 	}
 
@@ -1336,7 +1382,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayEffectBlockedImmunity");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c1f74c7);
 		return ptr;
 	}
 
@@ -1356,7 +1403,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayEffectRemoved");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c28e03d);
 		return ptr;
 	}
 
@@ -1377,7 +1425,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayEffectStackChange");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7a090c2d);
 		return ptr;
 	}
 
@@ -1399,7 +1448,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayEvent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3db66708);
 		return ptr;
 	}
 
@@ -1419,7 +1469,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayTag");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe4e583b0);
 		return ptr;
 	}
 
@@ -1437,7 +1488,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayTagAdded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x330184d6);
 		return ptr;
 	}
 
@@ -1455,7 +1507,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitGameplayTagRemoved");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf595d6bc);
 		return ptr;
 	}
 
@@ -1474,7 +1527,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitInputPress");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x92c7e28d);
 		return ptr;
 	}
 
@@ -1494,7 +1548,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitInputRelease");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b7c604f);
 		return ptr;
 	}
 
@@ -1514,7 +1569,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitMovementModeChange");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2f66596);
 		return ptr;
 	}
 
@@ -1533,7 +1589,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitOverlap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1492765);
 		return ptr;
 	}
 
@@ -1556,7 +1613,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitTargetData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x550ec4c7);
 		return ptr;
 	}
 
@@ -1583,7 +1641,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilityTask_WaitVelocityChange");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc41d8071);
 		return ptr;
 	}
 
@@ -1616,7 +1675,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.AbilitySystemTestAttributeSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7a5232b8);
 		return ptr;
 	}
 
@@ -1631,7 +1691,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbility_CharacterJump");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1be1b233);
 		return ptr;
 	}
 
@@ -1651,7 +1712,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbility_Montage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6871bd81);
 		return ptr;
 	}
 
@@ -1666,7 +1728,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityBlueprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9ff14d0);
 		return ptr;
 	}
 
@@ -1682,7 +1745,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilitySet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc48830e9);
 		return ptr;
 	}
 
@@ -1697,7 +1761,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityTargetActor_Radius");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61d31770);
 		return ptr;
 	}
 
@@ -1715,7 +1780,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityTargetActor_Trace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6715d48d);
 		return ptr;
 	}
 
@@ -1731,7 +1797,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityTargetActor_GroundTrace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c049b42);
 		return ptr;
 	}
 
@@ -1748,7 +1815,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityTargetActor_ActorPlacement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaaf7392e);
 		return ptr;
 	}
 
@@ -1763,7 +1831,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityTargetActor_SingleLineTrace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2864563);
 		return ptr;
 	}
 
@@ -1780,7 +1849,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayAbilityWorldReticle_ActorVisualization");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1bc0c2e7);
 		return ptr;
 	}
 
@@ -1795,7 +1865,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueTranslator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13b3b4ee);
 		return ptr;
 	}
 
@@ -1810,7 +1881,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueTranslator_Test");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa98a1171);
 		return ptr;
 	}
 
@@ -1827,7 +1899,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueNotify_HitImpact");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d4c5577);
 		return ptr;
 	}
 
@@ -1844,7 +1917,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayCueSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf50a3b14);
 		return ptr;
 	}
 
@@ -1859,7 +1933,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectTemplate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x88743396);
 		return ptr;
 	}
 
@@ -1874,7 +1949,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectCustomApplicationRequirement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5d86890a);
 		return ptr;
 	}
 
@@ -1893,7 +1969,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectExtension");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1735668f);
 		return ptr;
 	}
 
@@ -1909,7 +1986,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectExtension_LifestealTest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2fe7bde9);
 		return ptr;
 	}
 
@@ -1925,7 +2003,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectExtension_ShieldTest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcfad2c65);
 		return ptr;
 	}
 
@@ -1941,7 +2020,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayEffectUIData_TextOnly");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd28aa2e);
 		return ptr;
 	}
 
@@ -1958,7 +2038,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.GameplayTagReponseTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a019453);
 		return ptr;
 	}
 
@@ -1975,7 +2056,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayAbilities.TickableAttributeSetInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe8b61fa9);
 		return ptr;
 	}
 

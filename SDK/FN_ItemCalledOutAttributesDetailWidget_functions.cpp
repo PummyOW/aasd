@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemCalledOutAttributesDetailWidget_C::UpdateStats()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.UpdateStats");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf32c935);
 
 	UItemCalledOutAttributesDetailWidget_C_UpdateStats_Params params;
 
@@ -36,7 +37,8 @@ void UItemCalledOutAttributesDetailWidget_C::UpdateStats()
 
 void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArray<struct FFortDisplayAttribute>* Attributes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.GetDisplayAttributesToCallOut");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefc80373);
 
 	UItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut_Params params;
 
@@ -56,7 +58,8 @@ void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArra
 
 void UItemCalledOutAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47f00de5);
 
 	UItemCalledOutAttributesDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -75,7 +78,8 @@ void UItemCalledOutAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet(
 
 void UItemCalledOutAttributesDetailWidget_C::ExecuteUbergraph_ItemCalledOutAttributesDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.ExecuteUbergraph_ItemCalledOutAttributesDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc37802f);
 
 	UItemCalledOutAttributesDetailWidget_C_ExecuteUbergraph_ItemCalledOutAttributesDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

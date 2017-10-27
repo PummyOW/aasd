@@ -19,7 +19,8 @@ namespace SDK
 
 void UPackResource_C::UpdateType(TEnumAsByte<EFortResourceType> ResourceType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PackResource.PackResource_C.UpdateType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12b0856a);
 
 	UPackResource_C_UpdateType_Params params;
 	params.ResourceType = ResourceType;
@@ -37,7 +38,8 @@ void UPackResource_C::UpdateType(TEnumAsByte<EFortResourceType> ResourceType)
 
 void UPackResource_C::UpdateCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PackResource.PackResource_C.UpdateCount");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb321937);
 
 	UPackResource_C_UpdateCount_Params params;
 
@@ -54,7 +56,8 @@ void UPackResource_C::UpdateCount()
 
 void UPackResource_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PackResource.PackResource_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b51bfe8);
 
 	UPackResource_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UPackResource_C::Construct()
 
 void UPackResource_C::ExecuteUbergraph_PackResource(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PackResource.PackResource_C.ExecuteUbergraph_PackResource");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e870a22);
 
 	UPackResource_C_ExecuteUbergraph_PackResource_Params params;
 	params.EntryPoint = EntryPoint;

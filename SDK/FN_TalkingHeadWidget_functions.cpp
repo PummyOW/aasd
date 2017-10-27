@@ -17,7 +17,8 @@ namespace SDK
 
 void UTalkingHeadWidget_C::HandleTalkingHeadEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TalkingHeadWidget.TalkingHeadWidget_C.HandleTalkingHeadEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6879b0a);
 
 	UTalkingHeadWidget_C_HandleTalkingHeadEnd_Params params;
 
@@ -39,7 +40,8 @@ void UTalkingHeadWidget_C::HandleTalkingHeadEnd()
 
 void UTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, const struct FText& Title, const struct FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TalkingHeadWidget.TalkingHeadWidget_C.HandleTalkingHeadBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d161706);
 
 	UTalkingHeadWidget_C_HandleTalkingHeadBegin_Params params;
 	params.Image = Image;
@@ -62,7 +64,8 @@ void UTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, const
 
 void UTalkingHeadWidget_C::SetTalkingHeadSubtitle(const struct FText& Subtitle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadSubtitle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81f36677);
 
 	UTalkingHeadWidget_C_SetTalkingHeadSubtitle_Params params;
 	params.Subtitle = Subtitle;
@@ -82,7 +85,8 @@ void UTalkingHeadWidget_C::SetTalkingHeadSubtitle(const struct FText& Subtitle)
 
 void UTalkingHeadWidget_C::SetTalkingHeadName(const struct FText& Title)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x78c99e0e);
 
 	UTalkingHeadWidget_C_SetTalkingHeadName_Params params;
 	params.Title = Title;
@@ -102,7 +106,8 @@ void UTalkingHeadWidget_C::SetTalkingHeadName(const struct FText& Title)
 
 void UTalkingHeadWidget_C::SetTalkingHeadImage(class UTexture2D* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TalkingHeadWidget.TalkingHeadWidget_C.SetTalkingHeadImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c5e0d62);
 
 	UTalkingHeadWidget_C_SetTalkingHeadImage_Params params;
 	params.Icon = Icon;
@@ -120,7 +125,8 @@ void UTalkingHeadWidget_C::SetTalkingHeadImage(class UTexture2D* Icon)
 
 void UTalkingHeadWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TalkingHeadWidget.TalkingHeadWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf03366a);
 
 	UTalkingHeadWidget_C_Construct_Params params;
 
@@ -139,7 +145,8 @@ void UTalkingHeadWidget_C::Construct()
 
 void UTalkingHeadWidget_C::ExecuteUbergraph_TalkingHeadWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TalkingHeadWidget.TalkingHeadWidget_C.ExecuteUbergraph_TalkingHeadWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e162de1);
 
 	UTalkingHeadWidget_C_ExecuteUbergraph_TalkingHeadWidget_Params params;
 	params.EntryPoint = EntryPoint;

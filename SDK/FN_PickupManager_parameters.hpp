@@ -64,6 +64,11 @@ struct UPickupManager_C_Destruct_Params
 {
 };
 
+// Function PickupManager.PickupManager_C.HandleBuildingMaterialChanged
+struct UPickupManager_C_HandleBuildingMaterialChanged_Params
+{
+};
+
 // Function PickupManager.PickupManager_C.ExecuteUbergraph_PickupManager
 struct UPickupManager_C_ExecuteUbergraph_PickupManager_Params
 {

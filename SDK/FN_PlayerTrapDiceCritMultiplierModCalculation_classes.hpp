@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass PlayerTrapDiceCritMultiplierModCalculation.PlayerTrapDiceCritMultiplierModCalculation_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0204847);
 		return ptr;
 	}
 

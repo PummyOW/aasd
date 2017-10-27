@@ -17,7 +17,8 @@ namespace SDK
 
 void ULocalPlayerHitPointInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LocalPlayerHitPointInfo.LocalPlayerHitPointInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x234a81ba);
 
 	ULocalPlayerHitPointInfo_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void ULocalPlayerHitPointInfo_C::Construct()
 
 void ULocalPlayerHitPointInfo_C::ExecuteUbergraph_LocalPlayerHitPointInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LocalPlayerHitPointInfo.LocalPlayerHitPointInfo_C.ExecuteUbergraph_LocalPlayerHitPointInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb52b0c4);
 
 	ULocalPlayerHitPointInfo_C_ExecuteUbergraph_LocalPlayerHitPointInfo_Params params;
 	params.EntryPoint = EntryPoint;

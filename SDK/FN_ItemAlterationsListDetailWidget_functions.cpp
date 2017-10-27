@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemAlterationsListDetailWidget_C::SetState(EFortAlterationWidgetState State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.SetState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe893cb34);
 
 	UItemAlterationsListDetailWidget_C_SetState_Params params;
 	params.State = State;
@@ -37,7 +38,8 @@ void UItemAlterationsListDetailWidget_C::SetState(EFortAlterationWidgetState Sta
 
 void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59fb7ec5);
 
 	UItemAlterationsListDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -54,7 +56,8 @@ void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.HandlePostDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0a31f7);
 
 	UItemAlterationsListDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params params;
 
@@ -73,7 +76,8 @@ void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToCompareWithSet
 
 void UItemAlterationsListDetailWidget_C::ExecuteUbergraph_ItemAlterationsListDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.ExecuteUbergraph_ItemAlterationsListDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f4a9fdf);
 
 	UItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

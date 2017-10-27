@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaKillFeedItem_C::SetText(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillFeedItem.AthenaKillFeedItem_C.SetText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac4ba87c);
 
 	UAthenaKillFeedItem_C_SetText_Params params;
 	params.Text = Text;

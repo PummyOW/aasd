@@ -23,7 +23,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass TutorialRichText.TutorialRichText_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac325a4b);
 		return ptr;
 	}
 

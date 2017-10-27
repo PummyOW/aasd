@@ -17,7 +17,8 @@ namespace SDK
 
 void UWorkerTooltipStatsWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf49e4de);
 
 	UWorkerTooltipStatsWidget_C_Construct_Params params;
 
@@ -37,7 +38,8 @@ void UWorkerTooltipStatsWidget_C::Construct()
 
 void UWorkerTooltipStatsWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51b7b884);
 
 	UWorkerTooltipStatsWidget_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -56,7 +58,8 @@ void UWorkerTooltipStatsWidget_C::Tick(struct FGeometry* MyGeometry, float* InDe
 
 void UWorkerTooltipStatsWidget_C::On_Worker_Preview_State_Changed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.On Worker Preview State Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26aca829);
 
 	UWorkerTooltipStatsWidget_C_On_Worker_Preview_State_Changed_Params params;
 
@@ -75,7 +78,8 @@ void UWorkerTooltipStatsWidget_C::On_Worker_Preview_State_Changed()
 
 void UWorkerTooltipStatsWidget_C::ExecuteUbergraph_WorkerTooltipStatsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WorkerTooltipStatsWidget.WorkerTooltipStatsWidget_C.ExecuteUbergraph_WorkerTooltipStatsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x542bddbf);
 
 	UWorkerTooltipStatsWidget_C_ExecuteUbergraph_WorkerTooltipStatsWidget_Params params;
 	params.EntryPoint = EntryPoint;

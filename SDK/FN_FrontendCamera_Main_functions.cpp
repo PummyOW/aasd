@@ -17,7 +17,8 @@ namespace SDK
 
 void AFrontendCamera_Main_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontendCamera_Main.FrontendCamera_Main_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc62c3044);
 
 	AFrontendCamera_Main_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AFrontendCamera_Main_C::UserConstructionScript()
 
 void AFrontendCamera_Main_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontendCamera_Main.FrontendCamera_Main_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d18b299);
 
 	AFrontendCamera_Main_C_OnActivated_Params params;
 
@@ -53,7 +55,8 @@ void AFrontendCamera_Main_C::OnActivated()
 
 void AFrontendCamera_Main_C::ExecuteUbergraph_FrontendCamera_Main(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontendCamera_Main.FrontendCamera_Main_C.ExecuteUbergraph_FrontendCamera_Main");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21d97e72);
 
 	AFrontendCamera_Main_C_ExecuteUbergraph_FrontendCamera_Main_Params params;
 	params.EntryPoint = EntryPoint;

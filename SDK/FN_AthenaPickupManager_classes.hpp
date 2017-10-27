@@ -32,7 +32,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass AthenaPickupManager.AthenaPickupManager_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x273bd415);
 		return ptr;
 	}
 
@@ -46,6 +47,7 @@ public:
 	void HandleWorldItemsChanged();
 	void HandleWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved);
 	void Destruct();
+	void HandleBuildingMaterialChanged();
 	void ExecuteUbergraph_AthenaPickupManager(int EntryPoint);
 };
 

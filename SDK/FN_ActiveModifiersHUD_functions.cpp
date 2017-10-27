@@ -19,7 +19,8 @@ namespace SDK
 
 void UActiveModifiersHUD_C::PopulateModifiers(TArray<class UFortGameplayModifierItemDefinition*>* inModifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifiersHUD.ActiveModifiersHUD_C.PopulateModifiers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f73103f);
 
 	UActiveModifiersHUD_C_PopulateModifiers_Params params;
 
@@ -41,7 +42,8 @@ void UActiveModifiersHUD_C::PopulateModifiers(TArray<class UFortGameplayModifier
 
 void UActiveModifiersHUD_C::OnActiveGameplayModifiersChanged(TArray<class UFortGameplayModifierItemDefinition*> AppliedModifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifiersHUD.ActiveModifiersHUD_C.OnActiveGameplayModifiersChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30cff786);
 
 	UActiveModifiersHUD_C_OnActiveGameplayModifiersChanged_Params params;
 	params.AppliedModifiers = AppliedModifiers;
@@ -59,7 +61,8 @@ void UActiveModifiersHUD_C::OnActiveGameplayModifiersChanged(TArray<class UFortG
 
 void UActiveModifiersHUD_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifiersHUD.ActiveModifiersHUD_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54af2a98);
 
 	UActiveModifiersHUD_C_Construct_Params params;
 
@@ -78,7 +81,8 @@ void UActiveModifiersHUD_C::Construct()
 
 void UActiveModifiersHUD_C::ExecuteUbergraph_ActiveModifiersHUD(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifiersHUD.ActiveModifiersHUD_C.ExecuteUbergraph_ActiveModifiersHUD");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d49d4be);
 
 	UActiveModifiersHUD_C_ExecuteUbergraph_ActiveModifiersHUD_Params params;
 	params.EntryPoint = EntryPoint;

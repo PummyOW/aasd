@@ -17,7 +17,8 @@ namespace SDK
 
 void UPerksList_C::ResetVariables()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerksList.PerksList_C.ResetVariables");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4c55e3b);
 
 	UPerksList_C_ResetVariables_Params params;
 
@@ -37,7 +38,8 @@ void UPerksList_C::ResetVariables()
 
 void UPerksList_C::OnGeneratePerkTier(struct FFortUIPerkTier* FortPerkTier, class UFortPerkTierWidget_NUI** PerkTierWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerksList.PerksList_C.OnGeneratePerkTier");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92c6178d);
 
 	UPerksList_C_OnGeneratePerkTier_Params params;
 	params.FortPerkTier = FortPerkTier;
@@ -59,7 +61,8 @@ void UPerksList_C::OnGeneratePerkTier(struct FFortUIPerkTier* FortPerkTier, clas
 
 void UPerksList_C::OnGeneratePerk(struct FFortUIPerk* FortPerk, class UFortPerkWidget_NUI** PerkWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerksList.PerksList_C.OnGeneratePerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61c420cd);
 
 	UPerksList_C_OnGeneratePerk_Params params;
 	params.FortPerk = FortPerk;
@@ -78,7 +81,8 @@ void UPerksList_C::OnGeneratePerk(struct FFortUIPerk* FortPerk, class UFortPerkW
 
 void UPerksList_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerksList.PerksList_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33cab7a6);
 
 	UPerksList_C_Construct_Params params;
 
@@ -95,7 +99,8 @@ void UPerksList_C::Construct()
 
 void UPerksList_C::OnHeroChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerksList.PerksList_C.OnHeroChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb143d99c);
 
 	UPerksList_C_OnHeroChanged_Params params;
 
@@ -112,7 +117,8 @@ void UPerksList_C::OnHeroChanged()
 
 void UPerksList_C::OnStateChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerksList.PerksList_C.OnStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e300af1);
 
 	UPerksList_C_OnStateChanged_Params params;
 
@@ -131,7 +137,8 @@ void UPerksList_C::OnStateChanged()
 
 void UPerksList_C::ExecuteUbergraph_PerksList(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerksList.PerksList_C.ExecuteUbergraph_PerksList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6df63642);
 
 	UPerksList_C_ExecuteUbergraph_PerksList_Params params;
 	params.EntryPoint = EntryPoint;

@@ -27,7 +27,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass AthenaKillFeedWidget.AthenaKillFeedWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7cd6acf7);
 		return ptr;
 	}
 

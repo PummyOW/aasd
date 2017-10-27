@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_Homebase_CombinedRatings.GE_Homebase_CombinedRatings_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5779b22d);
 		return ptr;
 	}
 

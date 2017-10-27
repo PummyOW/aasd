@@ -17,7 +17,8 @@ namespace SDK
 
 void USquadSlotItemPickerTileButton_C::UpdateOverlays()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.UpdateOverlays");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45ceaf3f);
 
 	USquadSlotItemPickerTileButton_C_UpdateOverlays_Params params;
 
@@ -37,7 +38,8 @@ void USquadSlotItemPickerTileButton_C::UpdateOverlays()
 
 void USquadSlotItemPickerTileButton_C::SetData(class UObject** InData, class UCommonListView** OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f017629);
 
 	USquadSlotItemPickerTileButton_C_SetData_Params params;
 	params.InData = InData;
@@ -58,7 +60,8 @@ void USquadSlotItemPickerTileButton_C::SetData(class UObject** InData, class UCo
 
 void USquadSlotItemPickerTileButton_C::HandleItemSlottedToDifferentSquad(struct FHomebaseSquadSlotId* SquadSlotId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.HandleItemSlottedToDifferentSquad");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e0fac8b);
 
 	USquadSlotItemPickerTileButton_C_HandleItemSlottedToDifferentSquad_Params params;
 	params.SquadSlotId = SquadSlotId;
@@ -76,7 +79,8 @@ void USquadSlotItemPickerTileButton_C::HandleItemSlottedToDifferentSquad(struct 
 
 void USquadSlotItemPickerTileButton_C::HandleSlottingRestrictionReasonsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.HandleSlottingRestrictionReasonsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4969e00);
 
 	USquadSlotItemPickerTileButton_C_HandleSlottingRestrictionReasonsChanged_Params params;
 
@@ -95,7 +99,8 @@ void USquadSlotItemPickerTileButton_C::HandleSlottingRestrictionReasonsChanged()
 
 void USquadSlotItemPickerTileButton_C::ExecuteUbergraph_SquadSlotItemPickerTileButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.ExecuteUbergraph_SquadSlotItemPickerTileButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12fd983c);
 
 	USquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton_Params params;
 	params.EntryPoint = EntryPoint;

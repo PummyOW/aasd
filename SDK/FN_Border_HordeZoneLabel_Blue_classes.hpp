@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Border_HordeZoneLabel_Blue.Border_HordeZoneLabel_Blue_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41df2e1d);
 		return ptr;
 	}
 

@@ -32,7 +32,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BasicRatingWidget.BasicRatingWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x52e18cdd);
 		return ptr;
 	}
 

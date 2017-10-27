@@ -17,7 +17,8 @@ namespace SDK
 
 void UEulaTab_C::Activate_Scroll_Box()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaTab.EulaTab_C.Activate Scroll Box");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3ed3ca0);
 
 	UEulaTab_C_Activate_Scroll_Box_Params params;
 
@@ -34,7 +35,8 @@ void UEulaTab_C::Activate_Scroll_Box()
 
 void UEulaTab_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaTab.EulaTab_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab58d412);
 
 	UEulaTab_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UEulaTab_C::Construct()
 
 void UEulaTab_C::ExecuteUbergraph_EulaTab(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaTab.EulaTab_C.ExecuteUbergraph_EulaTab");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdba4a8f9);
 
 	UEulaTab_C_ExecuteUbergraph_EulaTab_Params params;
 	params.EntryPoint = EntryPoint;

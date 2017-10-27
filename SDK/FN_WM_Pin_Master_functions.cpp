@@ -17,7 +17,8 @@ namespace SDK
 
 void AWM_Pin_Master_C::UpdateSelectionState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.UpdateSelectionState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f641971);
 
 	AWM_Pin_Master_C_UpdateSelectionState_Params params;
 
@@ -36,7 +37,8 @@ void AWM_Pin_Master_C::UpdateSelectionState()
 
 void AWM_Pin_Master_C::OnQuestsCompleted(TArray<class UFortQuestItem*>* QuestItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.OnQuestsCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe2a9f668);
 
 	AWM_Pin_Master_C_OnQuestsCompleted_Params params;
 
@@ -58,7 +60,8 @@ void AWM_Pin_Master_C::OnQuestsCompleted(TArray<class UFortQuestItem*>* QuestIte
 
 void AWM_Pin_Master_C::OnTheaterSelected(const struct FString& TheaterId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.OnTheaterSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31f9496c);
 
 	AWM_Pin_Master_C_OnTheaterSelected_Params params;
 	params.TheaterId = TheaterId;
@@ -78,7 +81,8 @@ void AWM_Pin_Master_C::OnTheaterSelected(const struct FString& TheaterId)
 
 void AWM_Pin_Master_C::OnSetPreviewedSceneTheater(const struct FString& PreviewedTheaterId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.OnSetPreviewedSceneTheater");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22ec2614);
 
 	AWM_Pin_Master_C_OnSetPreviewedSceneTheater_Params params;
 	params.PreviewedTheaterId = PreviewedTheaterId;
@@ -96,7 +100,8 @@ void AWM_Pin_Master_C::OnSetPreviewedSceneTheater(const struct FString& Previewe
 
 void AWM_Pin_Master_C::InitializeContextEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.InitializeContextEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf56e4df9);
 
 	AWM_Pin_Master_C_InitializeContextEvents_Params params;
 
@@ -113,7 +118,8 @@ void AWM_Pin_Master_C::InitializeContextEvents()
 
 void AWM_Pin_Master_C::UpdateVisuals()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.UpdateVisuals");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3a40dbf);
 
 	AWM_Pin_Master_C_UpdateVisuals_Params params;
 
@@ -132,7 +138,8 @@ void AWM_Pin_Master_C::UpdateVisuals()
 
 void AWM_Pin_Master_C::GetRequiredText(struct FText* RequirementText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.GetRequiredText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7dba030f);
 
 	AWM_Pin_Master_C_GetRequiredText_Params params;
 
@@ -154,7 +161,8 @@ void AWM_Pin_Master_C::GetRequiredText(struct FText* RequirementText)
 
 void AWM_Pin_Master_C::CanAccessPin(bool* Accessible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.CanAccessPin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c9b0fda);
 
 	AWM_Pin_Master_C_CanAccessPin_Params params;
 
@@ -176,7 +184,8 @@ void AWM_Pin_Master_C::CanAccessPin(bool* Accessible)
 
 void AWM_Pin_Master_C::IsLeader(bool* Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.IsLeader");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x303f96d8);
 
 	AWM_Pin_Master_C_IsLeader_Params params;
 
@@ -196,7 +205,8 @@ void AWM_Pin_Master_C::IsLeader(bool* Enabled)
 
 void AWM_Pin_Master_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x911efe64);
 
 	AWM_Pin_Master_C_UserConstructionScript_Params params;
 
@@ -213,7 +223,8 @@ void AWM_Pin_Master_C::UserConstructionScript()
 
 void AWM_Pin_Master_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9db739b);
 
 	AWM_Pin_Master_C_ReceiveBeginPlay_Params params;
 
@@ -233,7 +244,8 @@ void AWM_Pin_Master_C::ReceiveBeginPlay()
 
 void AWM_Pin_Master_C::HandleOnClicked(class AActor* TouchedActor, const struct FKey& ButtonPressed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.HandleOnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf54cda79);
 
 	AWM_Pin_Master_C_HandleOnClicked_Params params;
 	params.TouchedActor = TouchedActor;
@@ -254,7 +266,8 @@ void AWM_Pin_Master_C::HandleOnClicked(class AActor* TouchedActor, const struct 
 
 void AWM_Pin_Master_C::HandleOnBeginCursorOver(class AActor* TouchedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.HandleOnBeginCursorOver");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14b7f4dd);
 
 	AWM_Pin_Master_C_HandleOnBeginCursorOver_Params params;
 	params.TouchedActor = TouchedActor;
@@ -274,7 +287,8 @@ void AWM_Pin_Master_C::HandleOnBeginCursorOver(class AActor* TouchedActor)
 
 void AWM_Pin_Master_C::HandleOnEndCursorOver(class AActor* TouchedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.HandleOnEndCursorOver");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7866e495);
 
 	AWM_Pin_Master_C_HandleOnEndCursorOver_Params params;
 	params.TouchedActor = TouchedActor;
@@ -292,7 +306,8 @@ void AWM_Pin_Master_C::HandleOnEndCursorOver(class AActor* TouchedActor)
 
 void AWM_Pin_Master_C::OnTheaterIdSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.OnTheaterIdSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ab608e0);
 
 	AWM_Pin_Master_C_OnTheaterIdSet_Params params;
 
@@ -311,7 +326,8 @@ void AWM_Pin_Master_C::OnTheaterIdSet()
 
 void AWM_Pin_Master_C::ExecuteUbergraph_WM_Pin_Master(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Pin_Master.WM_Pin_Master_C.ExecuteUbergraph_WM_Pin_Master");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2320695c);
 
 	AWM_Pin_Master_C_ExecuteUbergraph_WM_Pin_Master_Params params;
 	params.EntryPoint = EntryPoint;

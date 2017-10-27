@@ -22,7 +22,8 @@ namespace SDK
 
 void UAthenaCompass_C::UpdateMarker(class UImage* MarkerImage, const struct FVector2D& MarkerWorldPosition, const struct FRotator& CameraRotation, const struct FVector& PawnLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaCompass.AthenaCompass_C.UpdateMarker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa53050ae);
 
 	UAthenaCompass_C_UpdateMarker_Params params;
 	params.MarkerImage = MarkerImage;
@@ -45,7 +46,8 @@ void UAthenaCompass_C::UpdateMarker(class UImage* MarkerImage, const struct FVec
 
 void UAthenaCompass_C::UpdateCompassMaterial(const struct FRotator& InRot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaCompass.AthenaCompass_C.UpdateCompassMaterial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xace9428b);
 
 	UAthenaCompass_C_UpdateCompassMaterial_Params params;
 	params.InRot = InRot;
@@ -63,7 +65,8 @@ void UAthenaCompass_C::UpdateCompassMaterial(const struct FRotator& InRot)
 
 void UAthenaCompass_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaCompass.AthenaCompass_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a9ee9ba);
 
 	UAthenaCompass_C_Construct_Params params;
 
@@ -83,7 +86,8 @@ void UAthenaCompass_C::Construct()
 
 void UAthenaCompass_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaCompass.AthenaCompass_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5da0e308);
 
 	UAthenaCompass_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -104,7 +108,8 @@ void UAthenaCompass_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UAthenaCompass_C::ExecuteUbergraph_AthenaCompass(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaCompass.AthenaCompass_C.ExecuteUbergraph_AthenaCompass");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7cde772);
 
 	UAthenaCompass_C_ExecuteUbergraph_AthenaCompass_Params params;
 	params.EntryPoint = EntryPoint;

@@ -23,7 +23,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystem.NamedInterfaces");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb96f5686);
 		return ptr;
 	}
 
@@ -38,7 +39,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OnlineSubsystem.TurnBasedMatchInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e9fd313);
 		return ptr;
 	}
 

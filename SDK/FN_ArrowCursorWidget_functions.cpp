@@ -19,7 +19,8 @@ namespace SDK
 
 struct FSlateBrush UArrowCursorWidget_C::GetBackground_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ArrowCursorWidget.ArrowCursorWidget_C.GetBackground_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ae91dd9);
 
 	UArrowCursorWidget_C_GetBackground_1_Params params;
 

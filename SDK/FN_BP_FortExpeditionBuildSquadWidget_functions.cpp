@@ -19,7 +19,8 @@ namespace SDK
 
 struct FTimespan UBP_FortExpeditionBuildSquadWidget_C::Get_Utc_Now_Offset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Utc Now Offset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeac74860);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Utc_Now_Offset_Params params;
 
@@ -40,7 +41,8 @@ struct FTimespan UBP_FortExpeditionBuildSquadWidget_C::Get_Utc_Now_Offset()
 
 class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSuccessChanceTooltipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.GetSuccessChanceTooltipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8c68be3);
 
 	UBP_FortExpeditionBuildSquadWidget_C_GetSuccessChanceTooltipWidget_Params params;
 
@@ -61,7 +63,8 @@ class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSuccessChanceTooltipWidg
 
 class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSquadRatingTooltipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.GetSquadRatingTooltipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff3520bb);
 
 	UBP_FortExpeditionBuildSquadWidget_C_GetSquadRatingTooltipWidget_Params params;
 
@@ -87,7 +90,8 @@ class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSquadRatingTooltipWidget
 
 void UBP_FortExpeditionBuildSquadWidget_C::Get_Bonus_Display_Name_and_Brush(const struct FGameplayTag& Tag, bool Condition, EFortRarity Rarity, struct FSlateBrush* OutBrush_Brush_M, struct FText* OutDisplayName, struct FLinearColor* OutRarityColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Bonus Display Name and Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8207438);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Bonus_Display_Name_and_Brush_Params params;
 	params.Tag = Tag;
@@ -116,7 +120,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Get_Bonus_Display_Name_and_Brush(cons
 
 class UFortItem* UBP_FortExpeditionBuildSquadWidget_C::Get_Item_In_Selected_Squad_Slot()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Item In Selected Squad Slot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e0b8d10);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Item_In_Selected_Squad_Slot_Params params;
 
@@ -135,7 +140,8 @@ class UFortItem* UBP_FortExpeditionBuildSquadWidget_C::Get_Item_In_Selected_Squa
 
 void UBP_FortExpeditionBuildSquadWidget_C::HACK_SetCursorToSquadPicker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.HACK_SetCursorToSquadPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde69f910);
 
 	UBP_FortExpeditionBuildSquadWidget_C_HACK_SetCursorToSquadPicker_Params params;
 
@@ -152,7 +158,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::HACK_SetCursorToSquadPicker()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Determine_Inspect_Item_for_Squad_Slot()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Inspect Item for Squad Slot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x358b1fe8);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Determine_Inspect_Item_for_Squad_Slot_Params params;
 
@@ -171,7 +178,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Determine_Inspect_Item_for_Squad_Slot
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Inspect(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Inspect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa673dc11);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Inspect_Params params;
 
@@ -193,7 +201,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Inspect(bool* PassThrough)
 
 int UBP_FortExpeditionBuildSquadWidget_C::Get_Selected_Slot__SAFE_()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Selected Slot (SAFE)");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22239e7c);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Selected_Slot__SAFE__Params params;
 
@@ -214,7 +223,8 @@ int UBP_FortExpeditionBuildSquadWidget_C::Get_Selected_Slot__SAFE_()
 
 EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Purchase_Slot_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Purchase Slot State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x310e6f41);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Purchase_Slot_State_Params params;
 
@@ -235,7 +245,8 @@ EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Purchase_Slot_State(
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Purchase_Slot(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Purchase Slot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63798c72);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Purchase_Slot_Params params;
 
@@ -258,7 +269,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Purchase_Slot(bool* PassThroug
 
 float UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Angle_for_Preview_State(EFortBuffState Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Buff Arrow Angle for Preview State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb16522d);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Determine_Buff_Arrow_Angle_for_Preview_State_Params params;
 	params.Index = Index;
@@ -281,7 +293,8 @@ float UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Angle_for_Previ
 
 struct FLinearColor UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Color_for_Preview_State(EFortBuffState Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Buff Arrow Color for Preview State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc62b1ac1);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Determine_Buff_Arrow_Color_for_Preview_State_Params params;
 	params.Index = Index;
@@ -303,7 +316,8 @@ struct FLinearColor UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_C
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Chance_Buff_Arrow_for_Preview(EFortBuffState Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Chance Buff Arrow for Preview");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbfe4570d);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_Chance_Buff_Arrow_for_Preview_Params params;
 	params.Index = Index;
@@ -323,7 +337,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Chance_Buff_Arrow_for_Preview(
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Rating_Buff_Arrow_for_Preview(EFortBuffState Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Rating Buff Arrow for Preview");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd93ef4f4);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_Rating_Buff_Arrow_for_Preview_Params params;
 	params.Index = Index;
@@ -344,7 +359,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Rating_Buff_Arrow_for_Preview(
 
 ESlateVisibility UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Visiblity_From_Preview_State(EFortBuffState Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Buff Arrow Visiblity From Preview State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7fcd51c);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Determine_Buff_Arrow_Visiblity_From_Preview_State_Params params;
 	params.Index = Index;
@@ -367,7 +383,8 @@ ESlateVisibility UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Visi
 
 class UClass* UBP_FortExpeditionBuildSquadWidget_C::Determine_Text_Style_from_Preview_State(EFortBuffState Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Text Style from Preview State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x381d7b8f);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Determine_Text_Style_from_Preview_State_Params params;
 	params.Index = Index;
@@ -390,7 +407,8 @@ class UClass* UBP_FortExpeditionBuildSquadWidget_C::Determine_Text_Style_from_Pr
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Power_and_Rating_for_Preview(class UFortItem* Item, TArray<class UFortItem*>* SlottedItems1)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Power and Rating for Preview");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6ad62ce);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_Power_and_Rating_for_Preview_Params params;
 	params.Item = Item;
@@ -415,7 +433,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Power_and_Rating_for_Preview(c
 
 void UBP_FortExpeditionBuildSquadWidget_C::Determine_Preview_State(float Preview, float Current, EFortBuffState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Preview State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b12095d);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Determine_Preview_State_Params params;
 	params.Preview = Preview;
@@ -439,7 +458,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Determine_Preview_State(float Preview
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_For_Preview(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update For Preview");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcca2f7e9);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_For_Preview_Params params;
 	params.Item = Item;
@@ -459,7 +479,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_For_Preview(class UFortItem* I
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Back with Squad Clear");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1605764b);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Back_with_Squad_Clear_Params params;
 
@@ -481,7 +502,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* Pa
 
 EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Slot_Item_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Slot Item State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c865d63);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Slot_Item_State_Params params;
 
@@ -502,7 +524,8 @@ EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Slot_Item_State()
 
 EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Open_Picker_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Open Picker State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3054344);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Open_Picker_State_Params params;
 
@@ -523,7 +546,8 @@ EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Open_Picker_State()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Vehicle_Selected(const struct FName& CurrentSquadId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Vehicle Selected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc76ea2af);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_Vehicle_Selected_Params params;
 	params.CurrentSquadId = CurrentSquadId;
@@ -543,7 +567,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Vehicle_Selected(const struct 
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Open_Picker(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Open Picker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x738e515f);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Open_Picker_Params params;
 
@@ -565,7 +590,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Open_Picker(bool* PassThrough)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Start Expedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x25a29f92);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Start_Expedition_Params params;
 
@@ -585,7 +611,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* PassThr
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Picker_Closed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Squad Picker Closed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc68b8ac1);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Squad_Picker_Closed_Params params;
 
@@ -602,7 +629,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Picker_Closed()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Slot_Selected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Squad Slot Selected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf7816a0);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Squad_Slot_Selected_Params params;
 
@@ -619,7 +647,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Slot_Selected()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Selected_Item_Committed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Selected Item Committed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9703524b);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Selected_Item_Committed_Params params;
 
@@ -638,7 +667,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Selected_Item_Committed()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Close_Picker_Action(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Close Picker Action");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72baec35);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Close_Picker_Action_Params params;
 
@@ -660,7 +690,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Close_Picker_Action(bool* Pass
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Slot_Item_Action(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Slot Item Action");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f20304e);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Slot_Item_Action_Params params;
 
@@ -680,7 +711,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Slot_Item_Action(bool* PassThr
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Start_Expedition_Widget_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Start Expedition Widget State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4575e780);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_Start_Expedition_Widget_State_Params params;
 
@@ -697,7 +729,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Start_Expedition_Widget_State(
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Expedition_Expired()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Expedition Expired");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f2bb581);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Expedition_Expired_Params params;
 
@@ -714,7 +747,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Expedition_Expired()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Try_to_Auto_Select_First_Vehicle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Try to Auto Select First Vehicle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98b52f8c);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Try_to_Auto_Select_First_Vehicle_Params params;
 
@@ -733,7 +767,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Try_to_Auto_Select_First_Vehicle()
 
 class UObject* UBP_FortExpeditionBuildSquadWidget_C::Get_Selected_Item()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Selected Item");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7fc2c4a9);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Selected_Item_Params params;
 
@@ -754,7 +789,8 @@ class UObject* UBP_FortExpeditionBuildSquadWidget_C::Get_Selected_Item()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Get_Picker_List_View(class UFortItemTileView** PickerTileView)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Picker List View");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e302f4a);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Picker_List_View_Params params;
 
@@ -774,7 +810,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Get_Picker_List_View(class UFortItemT
 
 void UBP_FortExpeditionBuildSquadWidget_C::HACK_SetCursorToSquadSlotSlotted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.HACK_SetCursorToSquadSlotSlotted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ece7429);
 
 	UBP_FortExpeditionBuildSquadWidget_C_HACK_SetCursorToSquadSlotSlotted_Params params;
 
@@ -794,7 +831,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::HACK_SetCursorToSquadSlotSlotted()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Bonus_Criteria(class UFortExpeditionItem* Item, TArray<class UFortItem*> SlottedItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Bonus Criteria");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29f7e1bf);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Bonus_Criteria_Params params;
 	params.Item = Item;
@@ -813,7 +851,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Bonus_Criteria(class UFortExpedit
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Expedition_Power()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Expedition Power");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7eee082e);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_Expedition_Power_Params params;
 
@@ -832,7 +871,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Expedition_Power()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Squad_Slot_Pickers(int SelectedSquadIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Squad Slot Pickers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9212328b);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Update_Squad_Slot_Pickers_Params params;
 	params.SelectedSquadIndex = SelectedSquadIndex;
@@ -852,7 +892,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Squad_Slot_Pickers(int Selecte
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Expedition_Costs(class UFortExpeditionItemDefinition* ItemDef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Expedition Costs");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2243c98);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Expedition_Costs_Params params;
 	params.ItemDef = ItemDef;
@@ -872,7 +913,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Expedition_Costs(class UFortExped
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Requirements(class UFortExpeditionItemDefinition* ItemDef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Requirements");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x728e4377);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Requirements_Params params;
 	params.ItemDef = ItemDef;
@@ -892,7 +934,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Requirements(class UFortExpeditio
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Remaining_Expiration_Time(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Remaining Expiration Time");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x609eec83);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Remaining_Expiration_Time_Params params;
 	params.Item = Item;
@@ -910,7 +953,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Remaining_Expiration_Time(class U
 
 void UBP_FortExpeditionBuildSquadWidget_C::Clear_Vehicle_Widgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Clear Vehicle Widgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4fb75a9);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Clear_Vehicle_Widgets_Params params;
 
@@ -929,7 +973,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Clear_Vehicle_Widgets()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Vehicle_Name(const struct FHomebaseSquad& HomebaseSquad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Vehicle Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe8e4c3e);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Vehicle_Name_Params params;
 	params.HomebaseSquad = HomebaseSquad;
@@ -947,7 +992,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Vehicle_Name(const struct FHomeba
 
 void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Squad_Widgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Refresh Squad Widgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfdae5125);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Refresh_Squad_Widgets_Params params;
 
@@ -966,7 +1012,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Squad_Widgets()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Change_Vehicle(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Change Vehicle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf228b22b);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Change_Vehicle_Params params;
 
@@ -988,7 +1035,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Change_Vehicle(bool* PassThrou
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Rewards(class UFortExpeditionItemDefinition* ItemDef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Rewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a413f4d);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Rewards_Params params;
 	params.ItemDef = ItemDef;
@@ -1008,7 +1056,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Rewards(class UFortExpeditionItem
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Rarity(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Rarity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcecd832);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Rarity_Params params;
 	params.Item = Item;
@@ -1028,7 +1077,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Rarity(class UFortItem* Item)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Duration(class UFortExpeditionItemDefinition* ItemDef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Duration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc72ab04b);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Duration_Params params;
 	params.ItemDef = ItemDef;
@@ -1049,7 +1099,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Duration(class UFortExpeditionIte
 
 void UBP_FortExpeditionBuildSquadWidget_C::Get_Expedition_Item_Definition(class UFortExpeditionItem* Item, class UFortExpeditionItemDefinition** ItemDef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Expedition Item Definition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3385cae);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Get_Expedition_Item_Definition_Params params;
 	params.Item = Item;
@@ -1070,7 +1121,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Get_Expedition_Item_Definition(class 
 
 void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Item_Data()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Refresh Item Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7681cecb);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Refresh_Item_Data_Params params;
 
@@ -1089,7 +1141,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Item_Data()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Rating(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Rating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e4823f4);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Rating_Params params;
 	params.Item = Item;
@@ -1109,7 +1162,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Rating(class UFortExpeditionItem*
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Description(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Description");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecad3607);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Description_Params params;
 	params.Item = Item;
@@ -1129,7 +1183,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Description(class UFortItem* Item
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Name(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Set Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0293326);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Set_Name_Params params;
 	params.Item = Item;
@@ -1147,7 +1202,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Name(class UFortItem* Item)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Setup_Input_Action_Handlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Setup Input Action Handlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3e25ed7);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Setup_Input_Action_Handlers_Params params;
 
@@ -1166,7 +1222,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Setup_Input_Action_Handlers()
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Back");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x782b7822);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Handle_Back_Params params;
 
@@ -1191,7 +1248,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back(bool* PassThrough)
 
 void UBP_FortExpeditionBuildSquadWidget_C::DialogResult_B738291040F33B805332A7B633B3ACBD(EFortDialogResult Result, const struct FName& ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.DialogResult_B738291040F33B805332A7B633B3ACBD");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80f4b413);
 
 	UBP_FortExpeditionBuildSquadWidget_C_DialogResult_B738291040F33B805332A7B633B3ACBD_Params params;
 	params.Result = Result;
@@ -1212,7 +1270,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::DialogResult_B738291040F33B805332A7B6
 
 void UBP_FortExpeditionBuildSquadWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6978f586);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Construct_Params params;
 
@@ -1231,7 +1290,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Construct()
 
 void UBP_FortExpeditionBuildSquadWidget_C::SetData(class UFortExpeditionItem** InItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d437761);
 
 	UBP_FortExpeditionBuildSquadWidget_C_SetData_Params params;
 	params.InItem = InItem;
@@ -1251,7 +1311,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::SetData(class UFortExpeditionItem** I
 
 void UBP_FortExpeditionBuildSquadWidget_C::HandleVechicleSelected(const struct FName& SquadId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.HandleVechicleSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13635ad1);
 
 	UBP_FortExpeditionBuildSquadWidget_C_HandleVechicleSelected_Params params;
 	params.SquadId = SquadId;
@@ -1269,7 +1330,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::HandleVechicleSelected(const struct F
 
 void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__SquadSlotItemPicker_K2Node_ComponentBoundEvent_9_OnSelectionCommitted__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.BndEvt__SquadSlotItemPicker_K2Node_ComponentBoundEvent_9_OnSelectionCommitted__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44a03cfe);
 
 	UBP_FortExpeditionBuildSquadWidget_C_BndEvt__SquadSlotItemPicker_K2Node_ComponentBoundEvent_9_OnSelectionCommitted__DelegateSignature_Params params;
 
@@ -1286,7 +1348,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__SquadSlotItemPicker_K2Node_Co
 
 void UBP_FortExpeditionBuildSquadWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbec70095);
 
 	UBP_FortExpeditionBuildSquadWidget_C_Destruct_Params params;
 
@@ -1303,7 +1366,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Destruct()
 
 void UBP_FortExpeditionBuildSquadWidget_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4e9bb4d);
 
 	UBP_FortExpeditionBuildSquadWidget_C_OnActivated_Params params;
 
@@ -1320,7 +1384,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnActivated()
 
 void UBP_FortExpeditionBuildSquadWidget_C::HACK_Select_Item_in_Picker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.HACK Select Item in Picker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3f9ea70);
 
 	UBP_FortExpeditionBuildSquadWidget_C_HACK_Select_Item_in_Picker_Params params;
 
@@ -1337,7 +1402,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::HACK_Select_Item_in_Picker()
 
 void UBP_FortExpeditionBuildSquadWidget_C::OnRefreshBuildSquadWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.OnRefreshBuildSquadWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0a80ebf);
 
 	UBP_FortExpeditionBuildSquadWidget_C_OnRefreshBuildSquadWidget_Params params;
 
@@ -1356,7 +1422,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnRefreshBuildSquadWidget()
 
 void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__ViewInfoButton_NoText_K2Node_ComponentBoundEvent_35_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.BndEvt__ViewInfoButton_NoText_K2Node_ComponentBoundEvent_35_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x891bac9f);
 
 	UBP_FortExpeditionBuildSquadWidget_C_BndEvt__ViewInfoButton_NoText_K2Node_ComponentBoundEvent_35_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1376,7 +1443,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__ViewInfoButton_NoText_K2Node_
 
 void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__SquadSlotItemPicker_K2Node_ComponentBoundEvent_20_OnItemSelectionEvent__DelegateSignature(class UFortItem* SelectedItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.BndEvt__SquadSlotItemPicker_K2Node_ComponentBoundEvent_20_OnItemSelectionEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99712284);
 
 	UBP_FortExpeditionBuildSquadWidget_C_BndEvt__SquadSlotItemPicker_K2Node_ComponentBoundEvent_20_OnItemSelectionEvent__DelegateSignature_Params params;
 	params.SelectedItem = SelectedItem;
@@ -1394,7 +1462,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__SquadSlotItemPicker_K2Node_Co
 
 void UBP_FortExpeditionBuildSquadWidget_C::OnStartExpedition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.OnStartExpedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac9839e9);
 
 	UBP_FortExpeditionBuildSquadWidget_C_OnStartExpedition_Params params;
 
@@ -1411,7 +1480,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnStartExpedition()
 
 void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__ExpeditionSquadSlotsView_K2Node_ComponentBoundEvent_45_OnSquadSlotOpened__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.BndEvt__ExpeditionSquadSlotsView_K2Node_ComponentBoundEvent_45_OnSquadSlotOpened__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb959ea7d);
 
 	UBP_FortExpeditionBuildSquadWidget_C_BndEvt__ExpeditionSquadSlotsView_K2Node_ComponentBoundEvent_45_OnSquadSlotOpened__DelegateSignature_Params params;
 
@@ -1430,7 +1500,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__ExpeditionSquadSlotsView_K2No
 
 void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__ExpeditionSquadSlotsView_K2Node_ComponentBoundEvent_77_OnSquadSlotSelected__DelegateSignature(int SquadSlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.BndEvt__ExpeditionSquadSlotsView_K2Node_ComponentBoundEvent_77_OnSquadSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b6f79f4);
 
 	UBP_FortExpeditionBuildSquadWidget_C_BndEvt__ExpeditionSquadSlotsView_K2Node_ComponentBoundEvent_77_OnSquadSlotSelected__DelegateSignature_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;
@@ -1450,7 +1521,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__ExpeditionSquadSlotsView_K2No
 
 void UBP_FortExpeditionBuildSquadWidget_C::OnGamepadStateChanged(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.OnGamepadStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5a0fc0);
 
 	UBP_FortExpeditionBuildSquadWidget_C_OnGamepadStateChanged_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -1468,7 +1540,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnGamepadStateChanged(bool bUsingGame
 
 void UBP_FortExpeditionBuildSquadWidget_C::OnStartExpeditionCompleted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.OnStartExpeditionCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4376374);
 
 	UBP_FortExpeditionBuildSquadWidget_C_OnStartExpeditionCompleted_Params params;
 
@@ -1488,7 +1561,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnStartExpeditionCompleted()
 
 void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_20_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int ActiveWidgetIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_20_OnActiveWidgetChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdcb3b89d);
 
 	UBP_FortExpeditionBuildSquadWidget_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_20_OnActiveWidgetChanged__DelegateSignature_Params params;
 	params.ActiveWidget = ActiveWidget;
@@ -1507,7 +1581,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::BndEvt__CommonWidgetSwitcher_0_K2Node
 
 void UBP_FortExpeditionBuildSquadWidget_C::OnRequestClosePicker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.OnRequestClosePicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a0cd42f);
 
 	UBP_FortExpeditionBuildSquadWidget_C_OnRequestClosePicker_Params params;
 
@@ -1526,7 +1601,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnRequestClosePicker()
 
 void UBP_FortExpeditionBuildSquadWidget_C::ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa23a301c);
 
 	UBP_FortExpeditionBuildSquadWidget_C_ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget_Params params;
 	params.EntryPoint = EntryPoint;

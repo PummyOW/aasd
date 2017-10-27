@@ -17,7 +17,8 @@ namespace SDK
 
 void UZoneScoreWidget_C::BindEndOfDayHeaderText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.BindEndOfDayHeaderText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5788d42);
 
 	UZoneScoreWidget_C_BindEndOfDayHeaderText_Params params;
 
@@ -34,7 +35,8 @@ void UZoneScoreWidget_C::BindEndOfDayHeaderText()
 
 void UZoneScoreWidget_C::ShowTeamScoreContributions()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.ShowTeamScoreContributions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22963418);
 
 	UZoneScoreWidget_C_ShowTeamScoreContributions_Params params;
 
@@ -51,7 +53,8 @@ void UZoneScoreWidget_C::ShowTeamScoreContributions()
 
 void UZoneScoreWidget_C::ShowXPReward()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.ShowXPReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2444c9d5);
 
 	UZoneScoreWidget_C_ShowXPReward_Params params;
 
@@ -70,7 +73,8 @@ void UZoneScoreWidget_C::ShowXPReward()
 
 void UZoneScoreWidget_C::UpdateXPLERP(float LERP_Factor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.UpdateXPLERP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2234663);
 
 	UZoneScoreWidget_C_UpdateXPLERP_Params params;
 	params.LERP_Factor = LERP_Factor;
@@ -88,7 +92,8 @@ void UZoneScoreWidget_C::UpdateXPLERP(float LERP_Factor)
 
 void UZoneScoreWidget_C::BeginTweeningXP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.BeginTweeningXP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf9c34f1);
 
 	UZoneScoreWidget_C_BeginTweeningXP_Params params;
 
@@ -107,7 +112,8 @@ void UZoneScoreWidget_C::BeginTweeningXP()
 
 void UZoneScoreWidget_C::UpdateScoresLERP(float LERP_Factor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.UpdateScoresLERP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5addb35e);
 
 	UZoneScoreWidget_C_UpdateScoresLERP_Params params;
 	params.LERP_Factor = LERP_Factor;
@@ -125,7 +131,8 @@ void UZoneScoreWidget_C::UpdateScoresLERP(float LERP_Factor)
 
 void UZoneScoreWidget_C::BeginTweeningScores()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.BeginTweeningScores");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b148104);
 
 	UZoneScoreWidget_C_BeginTweeningScores_Params params;
 
@@ -142,7 +149,8 @@ void UZoneScoreWidget_C::BeginTweeningScores()
 
 void UZoneScoreWidget_C::StartEndOfDayRecapAfterAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.StartEndOfDayRecapAfterAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x619ff9fc);
 
 	UZoneScoreWidget_C_StartEndOfDayRecapAfterAnimation_Params params;
 
@@ -159,7 +167,8 @@ void UZoneScoreWidget_C::StartEndOfDayRecapAfterAnimation()
 
 void UZoneScoreWidget_C::OnXPTweenEndEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.OnXPTweenEndEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb654cfe8);
 
 	UZoneScoreWidget_C_OnXPTweenEndEvent_Params params;
 
@@ -176,7 +185,8 @@ void UZoneScoreWidget_C::OnXPTweenEndEvent()
 
 void UZoneScoreWidget_C::OnScoreTweenEndEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.OnScoreTweenEndEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90c30736);
 
 	UZoneScoreWidget_C_OnScoreTweenEndEvent_Params params;
 
@@ -196,7 +206,8 @@ void UZoneScoreWidget_C::OnScoreTweenEndEvent()
 
 void UZoneScoreWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8e68828);
 
 	UZoneScoreWidget_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -215,7 +226,8 @@ void UZoneScoreWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UZoneScoreWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fbb615a);
 
 	UZoneScoreWidget_C_Construct_Params params;
 
@@ -234,7 +246,8 @@ void UZoneScoreWidget_C::Construct()
 
 void UZoneScoreWidget_C::OnEndOfDayRecap(const struct FEndOfDayRecap& EndOfDayRecap)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.OnEndOfDayRecap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc942fd0b);
 
 	UZoneScoreWidget_C_OnEndOfDayRecap_Params params;
 	params.EndOfDayRecap = EndOfDayRecap;
@@ -254,7 +267,8 @@ void UZoneScoreWidget_C::OnEndOfDayRecap(const struct FEndOfDayRecap& EndOfDayRe
 
 void UZoneScoreWidget_C::ExecuteUbergraph_ZoneScoreWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.ExecuteUbergraph_ZoneScoreWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9eb4d46d);
 
 	UZoneScoreWidget_C_ExecuteUbergraph_ZoneScoreWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -272,7 +286,8 @@ void UZoneScoreWidget_C::ExecuteUbergraph_ZoneScoreWidget(int EntryPoint)
 
 void UZoneScoreWidget_C::OnEndOfDayRecapEnded__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneScoreWidget.ZoneScoreWidget_C.OnEndOfDayRecapEnded__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd03a4ae8);
 
 	UZoneScoreWidget_C_OnEndOfDayRecapEnded__DelegateSignature_Params params;
 

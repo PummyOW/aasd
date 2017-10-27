@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_Badge_C::DoDesignTimeRandomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.DoDesignTimeRandomization");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15b8cb34);
 
 	UResults_Badge_C_DoDesignTimeRandomization_Params params;
 
@@ -34,7 +35,8 @@ void UResults_Badge_C::DoDesignTimeRandomization()
 
 void UResults_Badge_C::SkipToFinalState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.SkipToFinalState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e1479b2);
 
 	UResults_Badge_C_SkipToFinalState_Params params;
 
@@ -51,7 +53,8 @@ void UResults_Badge_C::SkipToFinalState()
 
 void UResults_Badge_C::SetSkippingToEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.SetSkippingToEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x656c7b12);
 
 	UResults_Badge_C_SetSkippingToEnd_Params params;
 
@@ -70,7 +73,8 @@ void UResults_Badge_C::SetSkippingToEnd()
 
 void UResults_Badge_C::Initialize(float PlayRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf61661d9);
 
 	UResults_Badge_C_Initialize_Params params;
 	params.PlayRate = PlayRate;
@@ -90,7 +94,8 @@ void UResults_Badge_C::Initialize(float PlayRate)
 
 void UResults_Badge_C::HasValidItem(bool* HasValidItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.HasValidItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31874f10);
 
 	UResults_Badge_C_HasValidItem_Params params;
 
@@ -112,7 +117,8 @@ void UResults_Badge_C::HasValidItem(bool* HasValidItem)
 
 void UResults_Badge_C::SetItem(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.SetItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48eb1414);
 
 	UResults_Badge_C_SetItem_Params params;
 	params.Item = Item;
@@ -130,7 +136,8 @@ void UResults_Badge_C::SetItem(class UFortItem* Item)
 
 void UResults_Badge_C::Intro_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.Intro Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71e8c98e);
 
 	UResults_Badge_C_Intro_Sequence_Params params;
 
@@ -147,7 +154,8 @@ void UResults_Badge_C::Intro_Sequence()
 
 void UResults_Badge_C::Convert_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.Convert Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6495077);
 
 	UResults_Badge_C_Convert_Sequence_Params params;
 
@@ -164,7 +172,8 @@ void UResults_Badge_C::Convert_Sequence()
 
 void UResults_Badge_C::BndEvt__Anim_Convert_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.BndEvt__Anim_Convert_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x990f3a17);
 
 	UResults_Badge_C_BndEvt__Anim_Convert_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -183,7 +192,8 @@ void UResults_Badge_C::BndEvt__Anim_Convert_K2Node_ComponentBoundEvent_1_OnWidge
 
 void UResults_Badge_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16c31c25);
 
 	UResults_Badge_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -201,7 +211,8 @@ void UResults_Badge_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_Badge_C::Reset_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.Reset Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1dfb128f);
 
 	UResults_Badge_C_Reset_Sequence_Params params;
 
@@ -220,7 +231,8 @@ void UResults_Badge_C::Reset_Sequence()
 
 void UResults_Badge_C::ExecuteUbergraph_Results_Badge(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.ExecuteUbergraph_Results_Badge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefea5947);
 
 	UResults_Badge_C_ExecuteUbergraph_Results_Badge_Params params;
 	params.EntryPoint = EntryPoint;
@@ -238,7 +250,8 @@ void UResults_Badge_C::ExecuteUbergraph_Results_Badge(int EntryPoint)
 
 void UResults_Badge_C::ConvertFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Badge.Results_Badge_C.ConvertFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x393a5505);
 
 	UResults_Badge_C_ConvertFinished__DelegateSignature_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void AMusicManager_C::ResetMusicBools()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.ResetMusicBools");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24aa51ac);
 
 	AMusicManager_C_ResetMusicBools_Params params;
 
@@ -34,7 +35,8 @@ void AMusicManager_C::ResetMusicBools()
 
 void AMusicManager_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd85824c0);
 
 	AMusicManager_C_UserConstructionScript_Params params;
 
@@ -55,7 +57,8 @@ void AMusicManager_C::UserConstructionScript()
 
 void AMusicManager_C::OnDayPhaseChanged(TEnumAsByte<EFortDayPhase>* CurrentDayPhase, TEnumAsByte<EFortDayPhase>* PreviousDayPhase, bool* bAtCreation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.OnDayPhaseChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48587065);
 
 	AMusicManager_C_OnDayPhaseChanged_Params params;
 	params.CurrentDayPhase = CurrentDayPhase;
@@ -75,7 +78,8 @@ void AMusicManager_C::OnDayPhaseChanged(TEnumAsByte<EFortDayPhase>* CurrentDayPh
 
 void AMusicManager_C::OnUpdateMusic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.OnUpdateMusic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb852c4a0);
 
 	AMusicManager_C_OnUpdateMusic_Params params;
 
@@ -92,7 +96,8 @@ void AMusicManager_C::OnUpdateMusic()
 
 void AMusicManager_C::PlayAmbientMusic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.PlayAmbientMusic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35ced564);
 
 	AMusicManager_C_PlayAmbientMusic_Params params;
 
@@ -109,7 +114,8 @@ void AMusicManager_C::PlayAmbientMusic()
 
 void AMusicManager_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x353eb967);
 
 	AMusicManager_C_ReceiveBeginPlay_Params params;
 
@@ -126,7 +132,8 @@ void AMusicManager_C::ReceiveBeginPlay()
 
 void AMusicManager_C::StartMusic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.StartMusic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9249d98e);
 
 	AMusicManager_C_StartMusic_Params params;
 
@@ -143,7 +150,8 @@ void AMusicManager_C::StartMusic()
 
 void AMusicManager_C::StopMusic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.StopMusic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ee6ad64);
 
 	AMusicManager_C_StopMusic_Params params;
 
@@ -162,7 +170,8 @@ void AMusicManager_C::StopMusic()
 
 void AMusicManager_C::ExecuteUbergraph_MusicManager(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MusicManager.MusicManager_C.ExecuteUbergraph_MusicManager");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ea2b59);
 
 	AMusicManager_C_ExecuteUbergraph_MusicManager_Params params;
 	params.EntryPoint = EntryPoint;

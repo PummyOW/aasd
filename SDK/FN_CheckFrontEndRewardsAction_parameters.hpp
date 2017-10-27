@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.HandleRewardsIgnored
+struct ACheckFrontEndRewardsAction_C_HandleRewardsIgnored_Params
+{
+	class UFrontEndRewards_Widget_C*                   RewardsWidget;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.CanShowFrontendRewards
 struct ACheckFrontEndRewardsAction_C_CanShowFrontendRewards_Params
 {

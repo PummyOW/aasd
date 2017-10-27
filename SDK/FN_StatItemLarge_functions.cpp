@@ -22,7 +22,8 @@ namespace SDK
 
 void UStatItemLarge_C::UpdateValue(float NewValue, float CurrentValue, EFortStatValueDisplayType DisplayType, EFortBuffState BuffState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.UpdateValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe42e2383);
 
 	UStatItemLarge_C_UpdateValue_Params params;
 	params.NewValue = NewValue;
@@ -43,7 +44,8 @@ void UStatItemLarge_C::UpdateValue(float NewValue, float CurrentValue, EFortStat
 
 void UStatItemLarge_C::UpdateIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.UpdateIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7057cf93);
 
 	UStatItemLarge_C_UpdateIcon_Params params;
 
@@ -60,7 +62,8 @@ void UStatItemLarge_C::UpdateIcon()
 
 void UStatItemLarge_C::UpdateDisplayData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.UpdateDisplayData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x880f1a8a);
 
 	UStatItemLarge_C_UpdateDisplayData_Params params;
 
@@ -79,7 +82,8 @@ void UStatItemLarge_C::UpdateDisplayData()
 
 void UStatItemLarge_C::GetLocalPlayerId(struct FUniqueNetIdRepl* LocalPlayerNetId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.GetLocalPlayerId");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdaa75b82);
 
 	UStatItemLarge_C_GetLocalPlayerId_Params params;
 
@@ -99,7 +103,8 @@ void UStatItemLarge_C::GetLocalPlayerId(struct FUniqueNetIdRepl* LocalPlayerNetI
 
 void UStatItemLarge_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d3e557a);
 
 	UStatItemLarge_C_Construct_Params params;
 
@@ -116,7 +121,8 @@ void UStatItemLarge_C::Construct()
 
 void UStatItemLarge_C::DisplayAttributeChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.DisplayAttributeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8efc650b);
 
 	UStatItemLarge_C_DisplayAttributeChanged_Params params;
 
@@ -135,7 +141,8 @@ void UStatItemLarge_C::DisplayAttributeChanged()
 
 void UStatItemLarge_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93f283d1);
 
 	UStatItemLarge_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -153,7 +160,8 @@ void UStatItemLarge_C::PreConstruct(bool* IsDesignTime)
 
 void UStatItemLarge_C::PreviewStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.PreviewStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfaa401b0);
 
 	UStatItemLarge_C_PreviewStarted_Params params;
 
@@ -170,7 +178,8 @@ void UStatItemLarge_C::PreviewStarted()
 
 void UStatItemLarge_C::PreviewEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.PreviewEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b6abe2b);
 
 	UStatItemLarge_C_PreviewEnded_Params params;
 
@@ -189,7 +198,8 @@ void UStatItemLarge_C::PreviewEnded()
 
 void UStatItemLarge_C::ValueChanged(float* Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.ValueChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6f5718e);
 
 	UStatItemLarge_C_ValueChanged_Params params;
 	params.Delta = Delta;
@@ -209,7 +219,8 @@ void UStatItemLarge_C::ValueChanged(float* Delta)
 
 void UStatItemLarge_C::ExecuteUbergraph_StatItemLarge(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatItemLarge.StatItemLarge_C.ExecuteUbergraph_StatItemLarge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac87edb9);
 
 	UStatItemLarge_C_ExecuteUbergraph_StatItemLarge_Params params;
 	params.EntryPoint = EntryPoint;

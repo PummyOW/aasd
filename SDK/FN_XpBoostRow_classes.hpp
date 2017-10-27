@@ -32,7 +32,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass XpBoostRow.XpBoostRow_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5bf3bdf);
 		return ptr;
 	}
 
@@ -47,7 +48,7 @@ public:
 	void OnMCPRequestComplete_59B43F5044B96A114CC64595A3818F3C();
 	void BndEvt__GiveXPButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void ExecuteUbergraph_XpBoostRow(int EntryPoint);
-	void Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_To_Boost);
+	void Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_to_Boost);
 };
 
 

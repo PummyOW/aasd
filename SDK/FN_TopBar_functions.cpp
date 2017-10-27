@@ -17,7 +17,8 @@ namespace SDK
 
 void UTopBar_C::ConfigureVisibleItemsForSubGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.ConfigureVisibleItemsForSubGame");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd476314);
 
 	UTopBar_C_ConfigureVisibleItemsForSubGame_Params params;
 
@@ -34,7 +35,8 @@ void UTopBar_C::ConfigureVisibleItemsForSubGame()
 
 void UTopBar_C::OpenSocialMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.OpenSocialMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x319c470b);
 
 	UTopBar_C_OpenSocialMenu_Params params;
 
@@ -51,7 +53,8 @@ void UTopBar_C::OpenSocialMenu()
 
 void UTopBar_C::FireOpenAnalyticsEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.FireOpenAnalyticsEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x794596cb);
 
 	UTopBar_C_FireOpenAnalyticsEvent_Params params;
 
@@ -68,7 +71,8 @@ void UTopBar_C::FireOpenAnalyticsEvent()
 
 void UTopBar_C::HideMTXPlusButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.HideMTXPlusButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8135c18);
 
 	UTopBar_C_HideMTXPlusButton_Params params;
 
@@ -85,7 +89,8 @@ void UTopBar_C::HideMTXPlusButton()
 
 void UTopBar_C::ForceMenuClosed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.ForceMenuClosed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba6b093d);
 
 	UTopBar_C_ForceMenuClosed_Params params;
 
@@ -104,7 +109,8 @@ void UTopBar_C::ForceMenuClosed()
 
 class UWidget* UTopBar_C::GetMainMenuTooltipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.GetMainMenuTooltipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x617761d8);
 
 	UTopBar_C_GetMainMenuTooltipWidget_Params params;
 
@@ -125,7 +131,8 @@ class UWidget* UTopBar_C::GetMainMenuTooltipWidget()
 
 class UWidget* UTopBar_C::GetFriendsTooltipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.GetFriendsTooltipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x474b46d9);
 
 	UTopBar_C_GetFriendsTooltipWidget_Params params;
 
@@ -146,7 +153,8 @@ class UWidget* UTopBar_C::GetFriendsTooltipWidget()
 
 void UTopBar_C::HandleActiveInvitesCountChanged(int ActiveInvitesCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.HandleActiveInvitesCountChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9521b74);
 
 	UTopBar_C_HandleActiveInvitesCountChanged_Params params;
 	params.ActiveInvitesCount = ActiveInvitesCount;
@@ -167,7 +175,8 @@ void UTopBar_C::HandleActiveInvitesCountChanged(int ActiveInvitesCount)
 
 void UTopBar_C::HandleAccountPickerResult(int ControllerIndex, bool UserSwitched)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.HandleAccountPickerResult");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d74577f);
 
 	UTopBar_C_HandleAccountPickerResult_Params params;
 	params.ControllerIndex = ControllerIndex;
@@ -186,7 +195,8 @@ void UTopBar_C::HandleAccountPickerResult(int ControllerIndex, bool UserSwitched
 
 void UTopBar_C::UnbindActiveFriendsCountChangedEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.UnbindActiveFriendsCountChangedEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x636d28f1);
 
 	UTopBar_C_UnbindActiveFriendsCountChangedEvent_Params params;
 
@@ -205,7 +215,8 @@ void UTopBar_C::UnbindActiveFriendsCountChangedEvent()
 
 void UTopBar_C::HandleActiveFriendsCountChanged(int ActiveFriendsCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.HandleActiveFriendsCountChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44b9c605);
 
 	UTopBar_C_HandleActiveFriendsCountChanged_Params params;
 	params.ActiveFriendsCount = ActiveFriendsCount;
@@ -223,7 +234,8 @@ void UTopBar_C::HandleActiveFriendsCountChanged(int ActiveFriendsCount)
 
 void UTopBar_C::BindActiveFriendsCountChangedEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BindActiveFriendsCountChangedEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f066284);
 
 	UTopBar_C_BindActiveFriendsCountChangedEvent_Params params;
 
@@ -240,7 +252,8 @@ void UTopBar_C::BindActiveFriendsCountChangedEvent()
 
 void UTopBar_C::BindSwitchProfileAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BindSwitchProfileAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfb7924ab);
 
 	UTopBar_C_BindSwitchProfileAction_Params params;
 
@@ -259,7 +272,8 @@ void UTopBar_C::BindSwitchProfileAction()
 
 void UTopBar_C::HandleSwitchProfileAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.HandleSwitchProfileAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90f0dc4a);
 
 	UTopBar_C_HandleSwitchProfileAction_Params params;
 
@@ -281,7 +295,8 @@ void UTopBar_C::HandleSwitchProfileAction(bool* PassThrough)
 
 void UTopBar_C::HandleFeatureSwitchOp(EFortUIFeature Feature)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.HandleFeatureSwitchOp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2203fb28);
 
 	UTopBar_C_HandleFeatureSwitchOp_Params params;
 	params.Feature = Feature;
@@ -299,7 +314,8 @@ void UTopBar_C::HandleFeatureSwitchOp(EFortUIFeature Feature)
 
 void UTopBar_C::UnbindNavigationDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.UnbindNavigationDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc1124eb);
 
 	UTopBar_C_UnbindNavigationDelegates_Params params;
 
@@ -316,7 +332,8 @@ void UTopBar_C::UnbindNavigationDelegates()
 
 void UTopBar_C::BindNavigationDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BindNavigationDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23951300);
 
 	UTopBar_C_BindNavigationDelegates_Params params;
 
@@ -333,7 +350,8 @@ void UTopBar_C::BindNavigationDelegates()
 
 void UTopBar_C::ForceMenuOpen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.ForceMenuOpen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd31dca95);
 
 	UTopBar_C_ForceMenuOpen_Params params;
 
@@ -352,7 +370,8 @@ void UTopBar_C::ForceMenuOpen()
 
 class UWidget* UTopBar_C::GetSocialMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.GetSocialMenuContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5c808c0);
 
 	UTopBar_C_GetSocialMenuContent_Params params;
 
@@ -371,7 +390,8 @@ class UWidget* UTopBar_C::GetSocialMenuContent()
 
 void UTopBar_C::CreateWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.CreateWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1eafa33e);
 
 	UTopBar_C_CreateWidgets_Params params;
 
@@ -390,7 +410,8 @@ void UTopBar_C::CreateWidgets()
 
 void UTopBar_C::HandleCloseAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.HandleCloseAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89940b81);
 
 	UTopBar_C_HandleCloseAction_Params params;
 
@@ -410,7 +431,8 @@ void UTopBar_C::HandleCloseAction(bool* PassThrough)
 
 void UTopBar_C::BindPanelControl()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BindPanelControl");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ecbdfb3);
 
 	UTopBar_C_BindPanelControl_Params params;
 
@@ -427,7 +449,8 @@ void UTopBar_C::BindPanelControl()
 
 void UTopBar_C::CloseMainMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.CloseMainMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbce6e4ff);
 
 	UTopBar_C_CloseMainMenu_Params params;
 
@@ -444,7 +467,8 @@ void UTopBar_C::CloseMainMenu()
 
 void UTopBar_C::OpenMainMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.OpenMainMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1fdafb9);
 
 	UTopBar_C_OpenMainMenu_Params params;
 
@@ -464,7 +488,8 @@ void UTopBar_C::OpenMainMenu()
 
 void UTopBar_C::DialogResult_32D813B145A5E184B01A15AABE16B774(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.DialogResult_32D813B145A5E184B01A15AABE16B774");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19795834);
 
 	UTopBar_C_DialogResult_32D813B145A5E184B01A15AABE16B774_Params params;
 	params.Result = Result;
@@ -483,7 +508,8 @@ void UTopBar_C::DialogResult_32D813B145A5E184B01A15AABE16B774(EFortDialogResult 
 
 void UTopBar_C::OnBeginIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.OnBeginIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e55e483);
 
 	UTopBar_C_OnBeginIntro_Params params;
 
@@ -500,7 +526,8 @@ void UTopBar_C::OnBeginIntro()
 
 void UTopBar_C::OnBeginOutro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.OnBeginOutro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b5ab258);
 
 	UTopBar_C_OnBeginOutro_Params params;
 
@@ -517,7 +544,8 @@ void UTopBar_C::OnBeginOutro()
 
 void UTopBar_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6813810d);
 
 	UTopBar_C_OnActivated_Params params;
 
@@ -534,7 +562,8 @@ void UTopBar_C::OnActivated()
 
 void UTopBar_C::Hidden()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.Hidden");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81ee294b);
 
 	UTopBar_C_Hidden_Params params;
 
@@ -551,7 +580,8 @@ void UTopBar_C::Hidden()
 
 void UTopBar_C::BndEvt__MainMenu_K2Node_ComponentBoundEvent_48_OnRequestShowFeedbackWidget__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BndEvt__MainMenu_K2Node_ComponentBoundEvent_48_OnRequestShowFeedbackWidget__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97143f35);
 
 	UTopBar_C_BndEvt__MainMenu_K2Node_ComponentBoundEvent_48_OnRequestShowFeedbackWidget__DelegateSignature_Params params;
 
@@ -570,7 +600,8 @@ void UTopBar_C::BndEvt__MainMenu_K2Node_ComponentBoundEvent_48_OnRequestShowFeed
 
 void UTopBar_C::BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x854d53ec);
 
 	UTopBar_C_BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -590,7 +621,8 @@ void UTopBar_C::BndEvt__Social_K2Node_ComponentBoundEvent_64_CommonButtonClicked
 
 void UTopBar_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x856106fd);
 
 	UTopBar_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -608,7 +640,8 @@ void UTopBar_C::PreConstruct(bool* IsDesignTime)
 
 void UTopBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44cd6e46);
 
 	UTopBar_C_Construct_Params params;
 
@@ -625,7 +658,8 @@ void UTopBar_C::Construct()
 
 void UTopBar_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f17955);
 
 	UTopBar_C_Destruct_Params params;
 
@@ -644,7 +678,8 @@ void UTopBar_C::Destruct()
 
 void UTopBar_C::OnAnimationFinished(class UWidgetAnimation** Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.OnAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x751042f0);
 
 	UTopBar_C_OnAnimationFinished_Params params;
 	params.Animation = Animation;
@@ -662,7 +697,8 @@ void UTopBar_C::OnAnimationFinished(class UWidgetAnimation** Animation)
 
 void UTopBar_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_101_StreamTimerStarted__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_101_StreamTimerStarted__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f1c3741);
 
 	UTopBar_C_BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_101_StreamTimerStarted__DelegateSignature_Params params;
 
@@ -679,7 +715,8 @@ void UTopBar_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoun
 
 void UTopBar_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_108_StreamTimerExpired__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_108_StreamTimerExpired__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe15bfcb8);
 
 	UTopBar_C_BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_108_StreamTimerExpired__DelegateSignature_Params params;
 
@@ -698,7 +735,8 @@ void UTopBar_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoun
 
 void UTopBar_C::ShowSocialConfirmation(const struct FText& MESSAGE)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.ShowSocialConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97fa0646);
 
 	UTopBar_C_ShowSocialConfirmation_Params params;
 	params.MESSAGE = MESSAGE;
@@ -716,7 +754,8 @@ void UTopBar_C::ShowSocialConfirmation(const struct FText& MESSAGE)
 
 void UTopBar_C::On_Power_Increased()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.On Power Increased");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ab9b2df);
 
 	UTopBar_C_On_Power_Increased_Params params;
 
@@ -735,7 +774,8 @@ void UTopBar_C::On_Power_Increased()
 
 void UTopBar_C::BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfb315024);
 
 	UTopBar_C_BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -755,7 +795,8 @@ void UTopBar_C::BndEvt__MainMenuButton_K2Node_ComponentBoundEvent_70_CommonButto
 
 void UTopBar_C::ExecuteUbergraph_TopBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.ExecuteUbergraph_TopBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x801fb1b);
 
 	UTopBar_C_ExecuteUbergraph_TopBar_Params params;
 	params.EntryPoint = EntryPoint;
@@ -773,7 +814,8 @@ void UTopBar_C::ExecuteUbergraph_TopBar(int EntryPoint)
 
 void UTopBar_C::OpenAccountPicker__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.OpenAccountPicker__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4261251);
 
 	UTopBar_C_OpenAccountPicker__DelegateSignature_Params params;
 
@@ -792,7 +834,8 @@ void UTopBar_C::OpenAccountPicker__DelegateSignature()
 
 void UTopBar_C::MainMenuStateChanged__DelegateSignature(bool Open)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TopBar.TopBar_C.MainMenuStateChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x607445cf);
 
 	UTopBar_C_MainMenuStateChanged__DelegateSignature_Params params;
 	params.Open = Open;

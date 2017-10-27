@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass SkillTreeGroupBG-H-Wide.SkillTreeGroupBG-H-Wide_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf50f6445);
 		return ptr;
 	}
 

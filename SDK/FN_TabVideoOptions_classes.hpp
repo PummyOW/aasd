@@ -40,7 +40,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass TabVideoOptions.TabVideoOptions_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b207409);
 		return ptr;
 	}
 

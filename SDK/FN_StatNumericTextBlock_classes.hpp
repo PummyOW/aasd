@@ -26,7 +26,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass StatNumericTextBlock.StatNumericTextBlock_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x95460e53);
 		return ptr;
 	}
 

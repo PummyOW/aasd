@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_NameHomeBase_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NameHomeBase.Announce_NameHomeBase_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0b09548);
 
 	AAnnounce_NameHomeBase_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_NameHomeBase_C::UserConstructionScript()
 
 void AAnnounce_NameHomeBase_C::InitAnnouncement()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NameHomeBase.Announce_NameHomeBase_C.InitAnnouncement");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9be6fd0);
 
 	AAnnounce_NameHomeBase_C_InitAnnouncement_Params params;
 
@@ -53,7 +55,8 @@ void AAnnounce_NameHomeBase_C::InitAnnouncement()
 
 void AAnnounce_NameHomeBase_C::HandleSentenceStart_UI(int* SentenceIdx)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NameHomeBase.Announce_NameHomeBase_C.HandleSentenceStart_UI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1ba76567);
 
 	AAnnounce_NameHomeBase_C_HandleSentenceStart_UI_Params params;
 	params.SentenceIdx = SentenceIdx;
@@ -73,7 +76,8 @@ void AAnnounce_NameHomeBase_C::HandleSentenceStart_UI(int* SentenceIdx)
 
 void AAnnounce_NameHomeBase_C::HandleSentenceStop_UI(int* SentenceIdx)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NameHomeBase.Announce_NameHomeBase_C.HandleSentenceStop_UI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x300d19a7);
 
 	AAnnounce_NameHomeBase_C_HandleSentenceStop_UI_Params params;
 	params.SentenceIdx = SentenceIdx;
@@ -93,7 +97,8 @@ void AAnnounce_NameHomeBase_C::HandleSentenceStop_UI(int* SentenceIdx)
 
 void AAnnounce_NameHomeBase_C::ExecuteUbergraph_Announce_NameHomeBase(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_NameHomeBase.Announce_NameHomeBase_C.ExecuteUbergraph_Announce_NameHomeBase");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ada2362);
 
 	AAnnounce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase_Params params;
 	params.EntryPoint = EntryPoint;

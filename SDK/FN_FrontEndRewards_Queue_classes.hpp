@@ -32,7 +32,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass FrontEndRewards_Queue.FrontEndRewards_Queue_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xece3c025);
 		return ptr;
 	}
 

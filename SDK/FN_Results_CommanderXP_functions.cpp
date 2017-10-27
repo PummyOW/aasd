@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_CommanderXP_C::Focus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.Focus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa06ab519);
 
 	UResults_CommanderXP_C_Focus_Params params;
 
@@ -36,7 +37,8 @@ void UResults_CommanderXP_C::Focus()
 
 void UResults_CommanderXP_C::PlayAnimationCommon(class UWidgetAnimation* Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.PlayAnimationCommon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad345fee);
 
 	UResults_CommanderXP_C_PlayAnimationCommon_Params params;
 	params.Animation = Animation;
@@ -54,7 +56,8 @@ void UResults_CommanderXP_C::PlayAnimationCommon(class UWidgetAnimation* Animati
 
 void UResults_CommanderXP_C::SetSkippingToEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.SetSkippingToEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e76510a);
 
 	UResults_CommanderXP_C_SetSkippingToEnd_Params params;
 
@@ -71,7 +74,8 @@ void UResults_CommanderXP_C::SetSkippingToEnd()
 
 void UResults_CommanderXP_C::SkipToFinalState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.SkipToFinalState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2c87daa);
 
 	UResults_CommanderXP_C_SkipToFinalState_Params params;
 
@@ -88,7 +92,8 @@ void UResults_CommanderXP_C::SkipToFinalState()
 
 void UResults_CommanderXP_C::UpdatePointsText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.UpdatePointsText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9452cf4);
 
 	UResults_CommanderXP_C_UpdatePointsText_Params params;
 
@@ -107,7 +112,8 @@ void UResults_CommanderXP_C::UpdatePointsText()
 
 void UResults_CommanderXP_C::UpdatePointsForLevel(int Level)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.UpdatePointsForLevel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4ee58c4);
 
 	UResults_CommanderXP_C_UpdatePointsForLevel_Params params;
 	params.Level = Level;
@@ -128,7 +134,8 @@ void UResults_CommanderXP_C::UpdatePointsForLevel(int Level)
 
 void UResults_CommanderXP_C::Initialize(class UFortUIScoreReport* InScoreReport, class UResults_TeamTotalScore_C* TeamTotalScore)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x753ecaa1);
 
 	UResults_CommanderXP_C_Initialize_Params params;
 	params.InScoreReport = InScoreReport;
@@ -149,7 +156,8 @@ void UResults_CommanderXP_C::Initialize(class UFortUIScoreReport* InScoreReport,
 
 void UResults_CommanderXP_C::BndEvt__Results_CommanderXPBar_K2Node_ComponentBoundEvent_1_LeveledUp__DelegateSignature(int NewLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__Results_CommanderXPBar_K2Node_ComponentBoundEvent_1_LeveledUp__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x446a11b4);
 
 	UResults_CommanderXP_C_BndEvt__Results_CommanderXPBar_K2Node_ComponentBoundEvent_1_LeveledUp__DelegateSignature_Params params;
 	params.NewLevel = NewLevel;
@@ -167,7 +175,8 @@ void UResults_CommanderXP_C::BndEvt__Results_CommanderXPBar_K2Node_ComponentBoun
 
 void UResults_CommanderXP_C::BndEvt__Anim_SkillPointIncrementIntro_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__Anim_SkillPointIncrementIntro_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf90bb57);
 
 	UResults_CommanderXP_C_BndEvt__Anim_SkillPointIncrementIntro_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -184,7 +193,8 @@ void UResults_CommanderXP_C::BndEvt__Anim_SkillPointIncrementIntro_K2Node_Compon
 
 void UResults_CommanderXP_C::Intro_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.Intro Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48d46026);
 
 	UResults_CommanderXP_C_Intro_Sequence_Params params;
 
@@ -201,7 +211,8 @@ void UResults_CommanderXP_C::Intro_Sequence()
 
 void UResults_CommanderXP_C::BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_1_IntroFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_1_IntroFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0f3cfcb);
 
 	UResults_CommanderXP_C_BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_1_IntroFinished__DelegateSignature_Params params;
 
@@ -218,7 +229,8 @@ void UResults_CommanderXP_C::BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_1_I
 
 void UResults_CommanderXP_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68c96b69);
 
 	UResults_CommanderXP_C_BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_2_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -235,7 +247,8 @@ void UResults_CommanderXP_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_2_OnW
 
 void UResults_CommanderXP_C::Count_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.Count Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae948b03);
 
 	UResults_CommanderXP_C_Count_Sequence_Params params;
 
@@ -252,7 +265,8 @@ void UResults_CommanderXP_C::Count_Sequence()
 
 void UResults_CommanderXP_C::BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_3_CountFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_3_CountFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x460ee5f8);
 
 	UResults_CommanderXP_C_BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_3_CountFinished__DelegateSignature_Params params;
 
@@ -269,7 +283,8 @@ void UResults_CommanderXP_C::BndEvt__ResultsXPBar_K2Node_ComponentBoundEvent_3_C
 
 void UResults_CommanderXP_C::BndEvt__Anim_ContinueButtonOutro_K2Node_ComponentBoundEvent_5_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__Anim_ContinueButtonOutro_K2Node_ComponentBoundEvent_5_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34efba80);
 
 	UResults_CommanderXP_C_BndEvt__Anim_ContinueButtonOutro_K2Node_ComponentBoundEvent_5_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -286,7 +301,8 @@ void UResults_CommanderXP_C::BndEvt__Anim_ContinueButtonOutro_K2Node_ComponentBo
 
 void UResults_CommanderXP_C::BndEvt__Anim_SkillPointIncrement2_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__Anim_SkillPointIncrement2_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54cc48e5);
 
 	UResults_CommanderXP_C_BndEvt__Anim_SkillPointIncrement2_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -303,7 +319,8 @@ void UResults_CommanderXP_C::BndEvt__Anim_SkillPointIncrement2_K2Node_ComponentB
 
 void UResults_CommanderXP_C::GateSkillPointAnimation1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.GateSkillPointAnimation1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37c58632);
 
 	UResults_CommanderXP_C_GateSkillPointAnimation1_Params params;
 
@@ -320,7 +337,8 @@ void UResults_CommanderXP_C::GateSkillPointAnimation1()
 
 void UResults_CommanderXP_C::GateSkillPointAnimation2()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.GateSkillPointAnimation2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11c30bc9);
 
 	UResults_CommanderXP_C_GateSkillPointAnimation2_Params params;
 
@@ -337,7 +355,8 @@ void UResults_CommanderXP_C::GateSkillPointAnimation2()
 
 void UResults_CommanderXP_C::ResetGateSkillPointAnimation2()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.ResetGateSkillPointAnimation2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e863f12);
 
 	UResults_CommanderXP_C_ResetGateSkillPointAnimation2_Params params;
 
@@ -354,7 +373,8 @@ void UResults_CommanderXP_C::ResetGateSkillPointAnimation2()
 
 void UResults_CommanderXP_C::ResetGateSkillPointAnimation1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.ResetGateSkillPointAnimation1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2883c4a9);
 
 	UResults_CommanderXP_C_ResetGateSkillPointAnimation1_Params params;
 
@@ -371,7 +391,8 @@ void UResults_CommanderXP_C::ResetGateSkillPointAnimation1()
 
 void UResults_CommanderXP_C::Skip_To_End_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.Skip To End Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa560a631);
 
 	UResults_CommanderXP_C_Skip_To_End_Sequence_Params params;
 
@@ -388,7 +409,8 @@ void UResults_CommanderXP_C::Skip_To_End_Sequence()
 
 void UResults_CommanderXP_C::Skip()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.Skip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab72e3f6);
 
 	UResults_CommanderXP_C_Skip_Params params;
 
@@ -407,7 +429,8 @@ void UResults_CommanderXP_C::Skip()
 
 void UResults_CommanderXP_C::BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x183e871c);
 
 	UResults_CommanderXP_C_BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -425,7 +448,8 @@ void UResults_CommanderXP_C::BndEvt__ButtonContinue_K2Node_ComponentBoundEvent_0
 
 void UResults_CommanderXP_C::BndEvt__Anim_ContinueButtonIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.BndEvt__Anim_ContinueButtonIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x856515b0);
 
 	UResults_CommanderXP_C_BndEvt__Anim_ContinueButtonIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -444,7 +468,8 @@ void UResults_CommanderXP_C::BndEvt__Anim_ContinueButtonIntro_K2Node_ComponentBo
 
 void UResults_CommanderXP_C::ExecuteUbergraph_Results_CommanderXP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.ExecuteUbergraph_Results_CommanderXP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20deae94);
 
 	UResults_CommanderXP_C_ExecuteUbergraph_Results_CommanderXP_Params params;
 	params.EntryPoint = EntryPoint;
@@ -462,7 +487,8 @@ void UResults_CommanderXP_C::ExecuteUbergraph_Results_CommanderXP(int EntryPoint
 
 void UResults_CommanderXP_C::Finished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXP.Results_CommanderXP_C.Finished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x197c731c);
 
 	UResults_CommanderXP_C_Finished__DelegateSignature_Params params;
 

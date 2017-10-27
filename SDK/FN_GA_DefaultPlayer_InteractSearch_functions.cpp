@@ -20,7 +20,8 @@ namespace SDK
 
 void UGA_DefaultPlayer_InteractSearch_C::Completed_B697D9B445CA2BFDB1328D93C33FBCF3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractSearch.GA_DefaultPlayer_InteractSearch_C.Completed_B697D9B445CA2BFDB1328D93C33FBCF3");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa7d3f84);
 
 	UGA_DefaultPlayer_InteractSearch_C_Completed_B697D9B445CA2BFDB1328D93C33FBCF3_Params params;
 	params.TargetData = TargetData;
@@ -42,7 +43,8 @@ void UGA_DefaultPlayer_InteractSearch_C::Completed_B697D9B445CA2BFDB1328D93C33FB
 
 void UGA_DefaultPlayer_InteractSearch_C::Cancelled_B697D9B445CA2BFDB1328D93C33FBCF3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractSearch.GA_DefaultPlayer_InteractSearch_C.Cancelled_B697D9B445CA2BFDB1328D93C33FBCF3");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf64c0162);
 
 	UGA_DefaultPlayer_InteractSearch_C_Cancelled_B697D9B445CA2BFDB1328D93C33FBCF3_Params params;
 	params.TargetData = TargetData;
@@ -64,7 +66,8 @@ void UGA_DefaultPlayer_InteractSearch_C::Cancelled_B697D9B445CA2BFDB1328D93C33FB
 
 void UGA_DefaultPlayer_InteractSearch_C::Triggered_B697D9B445CA2BFDB1328D93C33FBCF3(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractSearch.GA_DefaultPlayer_InteractSearch_C.Triggered_B697D9B445CA2BFDB1328D93C33FBCF3");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23975f4);
 
 	UGA_DefaultPlayer_InteractSearch_C_Triggered_B697D9B445CA2BFDB1328D93C33FBCF3_Params params;
 	params.TargetData = TargetData;
@@ -83,7 +86,8 @@ void UGA_DefaultPlayer_InteractSearch_C::Triggered_B697D9B445CA2BFDB1328D93C33FB
 
 void UGA_DefaultPlayer_InteractSearch_C::K2_ActivateAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractSearch.GA_DefaultPlayer_InteractSearch_C.K2_ActivateAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeba37a1a);
 
 	UGA_DefaultPlayer_InteractSearch_C_K2_ActivateAbility_Params params;
 
@@ -102,7 +106,8 @@ void UGA_DefaultPlayer_InteractSearch_C::K2_ActivateAbility()
 
 void UGA_DefaultPlayer_InteractSearch_C::ExecuteUbergraph_GA_DefaultPlayer_InteractSearch(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractSearch.GA_DefaultPlayer_InteractSearch_C.ExecuteUbergraph_GA_DefaultPlayer_InteractSearch");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c8f9bab);
 
 	UGA_DefaultPlayer_InteractSearch_C_ExecuteUbergraph_GA_DefaultPlayer_InteractSearch_Params params;
 	params.EntryPoint = EntryPoint;

@@ -36,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ObjectivesPage.ObjectivesPage_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66c0b2ff);
 		return ptr;
 	}
 

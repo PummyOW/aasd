@@ -26,7 +26,8 @@ namespace SDK
 
 class UNiagaraComponent* UNiagaraFunctionLibrary::STATIC_SpawnEffectAttached(class UNiagaraEffect* EffectTemplate, class USceneComponent* AttachToComponent, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, TEnumAsByte<EAttachLocation> LocationType, bool bAutoDestroy)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.SpawnEffectAttached");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b01b7d6);
 
 	UNiagaraFunctionLibrary_SpawnEffectAttached_Params params;
 	params.EffectTemplate = EffectTemplate;
@@ -60,7 +61,8 @@ class UNiagaraComponent* UNiagaraFunctionLibrary::STATIC_SpawnEffectAttached(cla
 
 class UNiagaraComponent* UNiagaraFunctionLibrary::STATIC_SpawnEffectAtLocation(class UObject* WorldContextObject, class UNiagaraEffect* EffectTemplate, const struct FVector& Location, const struct FRotator& Rotation, bool bAutoDestroy)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Niagara.NiagaraFunctionLibrary.SpawnEffectAtLocation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a979ce8);
 
 	UNiagaraFunctionLibrary_SpawnEffectAtLocation_Params params;
 	params.WorldContextObject = WorldContextObject;

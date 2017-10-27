@@ -17,7 +17,8 @@ namespace SDK
 
 void UEpicCMSTileBase::Launch()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileBase.Launch");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec2177e5);
 
 	UEpicCMSTileBase_Launch_Params params;
 
@@ -37,7 +38,8 @@ void UEpicCMSTileBase::Launch()
 
 void UEpicCMSTileBase::DynamicHandleIconLoadingStateChanged(bool bIsLoading)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileBase.DynamicHandleIconLoadingStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29b5fcbb);
 
 	UEpicCMSTileBase_DynamicHandleIconLoadingStateChanged_Params params;
 	params.bIsLoading = bIsLoading;
@@ -58,7 +60,8 @@ void UEpicCMSTileBase::DynamicHandleIconLoadingStateChanged(bool bIsLoading)
 
 void UEpicCMSTileCarousel::SetCurrentPageByIndex(int PageIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileCarousel.SetCurrentPageByIndex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97e072ce);
 
 	UEpicCMSTileCarousel_SetCurrentPageByIndex_Params params;
 	params.PageIndex = PageIndex;
@@ -77,7 +80,8 @@ void UEpicCMSTileCarousel::SetCurrentPageByIndex(int PageIndex)
 
 void UEpicCMSTileCarousel::PreviousPage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileCarousel.PreviousPage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea9215d5);
 
 	UEpicCMSTileCarousel_PreviousPage_Params params;
 
@@ -95,7 +99,8 @@ void UEpicCMSTileCarousel::PreviousPage()
 
 void UEpicCMSTileCarousel::NextPage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileCarousel.NextPage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb773a0d);
 
 	UEpicCMSTileCarousel_NextPage_Params params;
 
@@ -115,7 +120,8 @@ void UEpicCMSTileCarousel::NextPage()
 
 void UEpicCMSTileCarousel::NavigationVisibilityChanged(bool bShowNavigation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileCarousel.NavigationVisibilityChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e8a007b);
 
 	UEpicCMSTileCarousel_NavigationVisibilityChanged_Params params;
 	params.bShowNavigation = bShowNavigation;
@@ -135,7 +141,8 @@ void UEpicCMSTileCarousel::NavigationVisibilityChanged(bool bShowNavigation)
 
 void UEpicCMSTileCarousel::HandleTilePageAdded(class UWidget* TileWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileCarousel.HandleTilePageAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd148aabe);
 
 	UEpicCMSTileCarousel_HandleTilePageAdded_Params params;
 	params.TileWidget = TileWidget;
@@ -156,7 +163,8 @@ void UEpicCMSTileCarousel::HandleTilePageAdded(class UWidget* TileWidget)
 
 int UEpicCMSTileCarousel::GetCurrentPageIndex()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicCMSUIFramework.EpicCMSTileCarousel.GetCurrentPageIndex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5aa15c3f);
 
 	UEpicCMSTileCarousel_GetCurrentPageIndex_Params params;
 

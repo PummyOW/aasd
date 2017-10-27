@@ -355,26 +355,6 @@ struct APlayerPawn_Athena_Generic_C_OnDeathServer_Params
 	struct FGameplayEffectContextHandle*               EffectContext;                                            // (CPF_Parm)
 };
 
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetupAnimTrails
-struct APlayerPawn_Athena_Generic_C_SetupAnimTrails_Params
-{
-	class UParticleSystem*                             Particle_System_Reference;                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       First_Socket_Name;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       Second_Socket_Name;                                       // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              Width;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsCE
-struct APlayerPawn_Athena_Generic_C_AnimTrailsCE_Params
-{
-	bool                                               Active;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.DisableAnimTrails
-struct APlayerPawn_Athena_Generic_C_DisableAnimTrails_Params
-{
-};
-
 // Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Entered WaterVolume
 struct APlayerPawn_Athena_Generic_C_Entered_WaterVolume_Params
 {
@@ -393,6 +373,26 @@ struct APlayerPawn_Athena_Generic_C_BindOnDestroyed_Params
 
 // Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.FadeOutCapsuleShadow
 struct APlayerPawn_Athena_Generic_C_FadeOutCapsuleShadow_Params
+{
+};
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsNotify
+struct APlayerPawn_Athena_Generic_C_AnimTrailsNotify_Params
+{
+	bool*                                              bActive;                                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsSetup
+struct APlayerPawn_Athena_Generic_C_AnimTrailsSetup_Params
+{
+	class UParticleSystem**                            ParticleSystemReference;                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName*                                      FirstSocketName;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName*                                      SecondSocketName;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float*                                             Width;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsDisable
+struct APlayerPawn_Athena_Generic_C_AnimTrailsDisable_Params
 {
 };
 

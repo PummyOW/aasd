@@ -20,7 +20,8 @@ namespace SDK
 
 class UUserWidget* UHeroNotificationHandler_C::CreateWidget(class APlayerController** OwningPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroNotificationHandler.HeroNotificationHandler_C.CreateWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb71c801b);
 
 	UHeroNotificationHandler_C_CreateWidget_Params params;
 	params.OwningPlayer = OwningPlayer;

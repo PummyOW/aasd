@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemManagementInventoryLimitStatusIndicator_C::RefreshStorageInventoryStatus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.RefreshStorageInventoryStatus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb568f40b);
 
 	UItemManagementInventoryLimitStatusIndicator_C_RefreshStorageInventoryStatus_Params params;
 
@@ -34,7 +35,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::RefreshStorageInventoryStat
 
 void UItemManagementInventoryLimitStatusIndicator_C::TrackStorageInventory()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackStorageInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4686a125);
 
 	UItemManagementInventoryLimitStatusIndicator_C_TrackStorageInventory_Params params;
 
@@ -51,7 +53,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::TrackStorageInventory()
 
 void UItemManagementInventoryLimitStatusIndicator_C::RefreshWorldInventoryStatus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.RefreshWorldInventoryStatus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2bf5a6b2);
 
 	UItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus_Params params;
 
@@ -63,14 +66,15 @@ void UItemManagementInventoryLimitStatusIndicator_C::RefreshWorldInventoryStatus
 }
 
 
-// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackVaultInventory
+// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackAccountInventory
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
-void UItemManagementInventoryLimitStatusIndicator_C::TrackVaultInventory()
+void UItemManagementInventoryLimitStatusIndicator_C::TrackAccountInventory()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackVaultInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6bac9eaf);
 
-	UItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory_Params params;
+	UItemManagementInventoryLimitStatusIndicator_C_TrackAccountInventory_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -85,7 +89,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::TrackVaultInventory()
 
 void UItemManagementInventoryLimitStatusIndicator_C::TrackWorldInventory()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackWorldInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb2f521c);
 
 	UItemManagementInventoryLimitStatusIndicator_C_TrackWorldInventory_Params params;
 
@@ -102,7 +107,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::TrackWorldInventory()
 
 void UItemManagementInventoryLimitStatusIndicator_C::HandleVaultItemLimitStateChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleVaultItemLimitStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x111fb7ae);
 
 	UItemManagementInventoryLimitStatusIndicator_C_HandleVaultItemLimitStateChanged_Params params;
 
@@ -119,7 +125,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::HandleVaultItemLimitStateCh
 
 void UItemManagementInventoryLimitStatusIndicator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf76f29ee);
 
 	UItemManagementInventoryLimitStatusIndicator_C_Construct_Params params;
 
@@ -136,7 +143,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::Construct()
 
 void UItemManagementInventoryLimitStatusIndicator_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9603938d);
 
 	UItemManagementInventoryLimitStatusIndicator_C_Destruct_Params params;
 
@@ -156,7 +164,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::Destruct()
 
 void UItemManagementInventoryLimitStatusIndicator_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf58d6546);
 
 	UItemManagementInventoryLimitStatusIndicator_C_HandleWorldItemListChanged_Params params;
 	params.ItemsAdded = ItemsAdded;
@@ -178,11 +187,33 @@ void UItemManagementInventoryLimitStatusIndicator_C::HandleWorldItemListChanged(
 
 void UItemManagementInventoryLimitStatusIndicator_C::HandleOutpostItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleOutpostItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5710969c);
 
 	UItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged_Params params;
 	params.ItemsAdded = ItemsAdded;
 	params.ItemsRemoved = ItemsRemoved;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleDeployableBaseInventoryChanged
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class ADeployableBasePlot*     Plot                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UItemManagementInventoryLimitStatusIndicator_C::HandleDeployableBaseInventoryChanged(class ADeployableBasePlot* Plot)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c8cd3af);
+
+	UItemManagementInventoryLimitStatusIndicator_C_HandleDeployableBaseInventoryChanged_Params params;
+	params.Plot = Plot;
 
 	auto flags = fn->FunctionFlags;
 
@@ -199,7 +230,8 @@ void UItemManagementInventoryLimitStatusIndicator_C::HandleOutpostItemListChange
 
 void UItemManagementInventoryLimitStatusIndicator_C::ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc22c67);
 
 	UItemManagementInventoryLimitStatusIndicator_C_ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator_Params params;
 	params.EntryPoint = EntryPoint;

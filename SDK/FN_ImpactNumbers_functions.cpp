@@ -21,7 +21,8 @@ namespace SDK
 
 void AImpactNumbers_C::Set_Material_Pararmeters(const struct FTransform& CameraTransform, const struct FVector& NumberLocation, struct FFortDamageNumberInfo* NewDamageHitInfoStruct)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImpactNumbers.ImpactNumbers_C.Set Material Pararmeters");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x613022ee);
 
 	AImpactNumbers_C_Set_Material_Pararmeters_Params params;
 	params.CameraTransform = CameraTransform;
@@ -47,7 +48,8 @@ void AImpactNumbers_C::Set_Material_Pararmeters(const struct FTransform& CameraT
 
 void AImpactNumbers_C::init_a_new_number_set(struct FFortDamageNumberInfo* NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImpactNumbers.ImpactNumbers_C.init a new number set");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90205f4d);
 
 	AImpactNumbers_C_init_a_new_number_set_Params params;
 
@@ -71,7 +73,8 @@ void AImpactNumbers_C::init_a_new_number_set(struct FFortDamageNumberInfo* NewDa
 
 void AImpactNumbers_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImpactNumbers.ImpactNumbers_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9565e864);
 
 	AImpactNumbers_C_UserConstructionScript_Params params;
 
@@ -90,7 +93,8 @@ void AImpactNumbers_C::UserConstructionScript()
 
 void AImpactNumbers_C::OnNewDamageNumber(struct FFortDamageNumberInfo* NewDamageNumberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImpactNumbers.ImpactNumbers_C.OnNewDamageNumber");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x667ebbaa);
 
 	AImpactNumbers_C_OnNewDamageNumber_Params params;
 	params.NewDamageNumberInfo = NewDamageNumberInfo;
@@ -110,7 +114,8 @@ void AImpactNumbers_C::OnNewDamageNumber(struct FFortDamageNumberInfo* NewDamage
 
 void AImpactNumbers_C::ExecuteUbergraph_ImpactNumbers(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ImpactNumbers.ImpactNumbers_C.ExecuteUbergraph_ImpactNumbers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5722e801);
 
 	AImpactNumbers_C_ExecuteUbergraph_ImpactNumbers_Params params;
 	params.EntryPoint = EntryPoint;

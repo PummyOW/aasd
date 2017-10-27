@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemDetailsHeader_C::SetStyles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeader.ItemDetailsHeader_C.SetStyles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf93afb57);
 
 	UItemDetailsHeader_C_SetStyles_Params params;
 
@@ -34,7 +35,8 @@ void UItemDetailsHeader_C::SetStyles()
 
 void UItemDetailsHeader_C::UpdateItemsForWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeader.ItemDetailsHeader_C.UpdateItemsForWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb212e4);
 
 	UItemDetailsHeader_C_UpdateItemsForWidgets_Params params;
 
@@ -51,29 +53,10 @@ void UItemDetailsHeader_C::UpdateItemsForWidgets()
 
 void UItemDetailsHeader_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeader.ItemDetailsHeader_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3b1558e);
 
 	UItemDetailsHeader_C_Construct_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemDetailsHeader.ItemDetailsHeader_C.PreConstruct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// bool*                          IsDesignTime                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemDetailsHeader_C::PreConstruct(bool* IsDesignTime)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeader.ItemDetailsHeader_C.PreConstruct");
-
-	UItemDetailsHeader_C_PreConstruct_Params params;
-	params.IsDesignTime = IsDesignTime;
 
 	auto flags = fn->FunctionFlags;
 
@@ -88,7 +71,8 @@ void UItemDetailsHeader_C::PreConstruct(bool* IsDesignTime)
 
 void UItemDetailsHeader_C::HandleDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeader.ItemDetailsHeader_C.HandleDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x781b98df);
 
 	UItemDetailsHeader_C_HandleDifferentItemToDetailSet_Params params;
 
@@ -105,7 +89,8 @@ void UItemDetailsHeader_C::HandleDifferentItemToDetailSet()
 
 void UItemDetailsHeader_C::HandleDifferentItemToCompareSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeader.ItemDetailsHeader_C.HandleDifferentItemToCompareSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x422e4e19);
 
 	UItemDetailsHeader_C_HandleDifferentItemToCompareSet_Params params;
 
@@ -124,7 +109,8 @@ void UItemDetailsHeader_C::HandleDifferentItemToCompareSet()
 
 void UItemDetailsHeader_C::ExecuteUbergraph_ItemDetailsHeader(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeader.ItemDetailsHeader_C.ExecuteUbergraph_ItemDetailsHeader");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc69bbd3);
 
 	UItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader_Params params;
 	params.EntryPoint = EntryPoint;

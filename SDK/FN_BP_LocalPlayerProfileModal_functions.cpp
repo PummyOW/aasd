@@ -17,7 +17,8 @@ namespace SDK
 
 void UBP_LocalPlayerProfileModal_C::Handle_Leaving_Banner_Editor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.Handle Leaving Banner Editor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b8b30aa);
 
 	UBP_LocalPlayerProfileModal_C_Handle_Leaving_Banner_Editor_Params params;
 
@@ -36,7 +37,8 @@ void UBP_LocalPlayerProfileModal_C::Handle_Leaving_Banner_Editor()
 
 void UBP_LocalPlayerProfileModal_C::HandleNextAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.HandleNextAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1de2dd6e);
 
 	UBP_LocalPlayerProfileModal_C_HandleNextAction_Params params;
 
@@ -58,7 +60,8 @@ void UBP_LocalPlayerProfileModal_C::HandleNextAction(bool* PassThrough)
 
 void UBP_LocalPlayerProfileModal_C::HandlePreviousAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.HandlePreviousAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d60436e);
 
 	UBP_LocalPlayerProfileModal_C_HandlePreviousAction_Params params;
 
@@ -78,7 +81,8 @@ void UBP_LocalPlayerProfileModal_C::HandlePreviousAction(bool* PassThrough)
 
 void UBP_LocalPlayerProfileModal_C::Setup_Input_Action_Handlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.Setup Input Action Handlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x846631bd);
 
 	UBP_LocalPlayerProfileModal_C_Setup_Input_Action_Handlers_Params params;
 
@@ -97,7 +101,8 @@ void UBP_LocalPlayerProfileModal_C::Setup_Input_Action_Handlers()
 
 void UBP_LocalPlayerProfileModal_C::HandleCloseAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.HandleCloseAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7e0d6eb);
 
 	UBP_LocalPlayerProfileModal_C_HandleCloseAction_Params params;
 
@@ -119,7 +124,8 @@ void UBP_LocalPlayerProfileModal_C::HandleCloseAction(bool* PassThrough)
 
 void UBP_LocalPlayerProfileModal_C::Activate_Widget(int Selection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.Activate Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0ce60aa);
 
 	UBP_LocalPlayerProfileModal_C_Activate_Widget_Params params;
 	params.Selection = Selection;
@@ -139,7 +145,8 @@ void UBP_LocalPlayerProfileModal_C::Activate_Widget(int Selection)
 
 void UBP_LocalPlayerProfileModal_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c02986b);
 
 	UBP_LocalPlayerProfileModal_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -157,7 +164,8 @@ void UBP_LocalPlayerProfileModal_C::PreConstruct(bool* IsDesignTime)
 
 void UBP_LocalPlayerProfileModal_C::BndEvt__BP_LocalPlayerProfileManagement_K2Node_ComponentBoundEvent_11_OpenBannerEditor__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.BndEvt__BP_LocalPlayerProfileManagement_K2Node_ComponentBoundEvent_11_OpenBannerEditor__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac1b9229);
 
 	UBP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerProfileManagement_K2Node_ComponentBoundEvent_11_OpenBannerEditor__DelegateSignature_Params params;
 
@@ -177,7 +185,8 @@ void UBP_LocalPlayerProfileModal_C::BndEvt__BP_LocalPlayerProfileManagement_K2No
 
 void UBP_LocalPlayerProfileModal_C::BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_66_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int ActiveWidgetIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_66_OnActiveWidgetChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc400ead);
 
 	UBP_LocalPlayerProfileModal_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_66_OnActiveWidgetChanged__DelegateSignature_Params params;
 	params.ActiveWidget = ActiveWidget;
@@ -196,7 +205,8 @@ void UBP_LocalPlayerProfileModal_C::BndEvt__CommonWidgetSwitcher_0_K2Node_Compon
 
 void UBP_LocalPlayerProfileModal_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6ea1fbb);
 
 	UBP_LocalPlayerProfileModal_C_OnActivated_Params params;
 
@@ -213,7 +223,8 @@ void UBP_LocalPlayerProfileModal_C::OnActivated()
 
 void UBP_LocalPlayerProfileModal_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca8addcc);
 
 	UBP_LocalPlayerProfileModal_C_Construct_Params params;
 
@@ -230,7 +241,8 @@ void UBP_LocalPlayerProfileModal_C::Construct()
 
 void UBP_LocalPlayerProfileModal_C::BndEvt__BP_LocalPlayerProfileManagement_K2Node_ComponentBoundEvent_14_CloseProfileModal__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.BndEvt__BP_LocalPlayerProfileManagement_K2Node_ComponentBoundEvent_14_CloseProfileModal__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x170b393d);
 
 	UBP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerProfileManagement_K2Node_ComponentBoundEvent_14_CloseProfileModal__DelegateSignature_Params params;
 
@@ -250,7 +262,8 @@ void UBP_LocalPlayerProfileModal_C::BndEvt__BP_LocalPlayerProfileManagement_K2No
 
 void UBP_LocalPlayerProfileModal_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature(const struct FName& IconId, const struct FName& ColorId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb83aa273);
 
 	UBP_LocalPlayerProfileModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature_Params params;
 	params.IconId = IconId;
@@ -269,7 +282,8 @@ void UBP_LocalPlayerProfileModal_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_Co
 
 void UBP_LocalPlayerProfileModal_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe757fd40);
 
 	UBP_LocalPlayerProfileModal_C_OnDeactivated_Params params;
 
@@ -288,7 +302,8 @@ void UBP_LocalPlayerProfileModal_C::OnDeactivated()
 
 void UBP_LocalPlayerProfileModal_C::ExecuteUbergraph_BP_LocalPlayerProfileModal(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileModal.BP_LocalPlayerProfileModal_C.ExecuteUbergraph_BP_LocalPlayerProfileModal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x669acc8a);
 
 	UBP_LocalPlayerProfileModal_C_ExecuteUbergraph_BP_LocalPlayerProfileModal_Params params;
 	params.EntryPoint = EntryPoint;

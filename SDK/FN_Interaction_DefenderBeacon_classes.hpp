@@ -45,7 +45,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass Interaction_DefenderBeacon.Interaction_DefenderBeacon_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdebf1f2d);
 		return ptr;
 	}
 

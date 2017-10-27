@@ -27,17 +27,6 @@ struct UMissionObjectiveProgress_C_Update_Params
 	int                                                BarIndex;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function MissionObjectiveProgress.MissionObjectiveProgress_C.Construct
-struct UMissionObjectiveProgress_C_Construct_Params
-{
-};
-
-// Function MissionObjectiveProgress.MissionObjectiveProgress_C.ExecuteUbergraph_MissionObjectiveProgress
-struct UMissionObjectiveProgress_C_ExecuteUbergraph_MissionObjectiveProgress_Params
-{
-	int                                                EntryPoint;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 }
 
 #ifdef _MSC_VER

@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_DtB_LightningZap_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_LightningZap.B_DtB_LightningZap_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfced6762);
 
 	AB_DtB_LightningZap_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void AB_DtB_LightningZap_C::UserConstructionScript()
 
 void AB_DtB_LightningZap_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_LightningZap.B_DtB_LightningZap_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3bc12803);
 
 	AB_DtB_LightningZap_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -54,7 +56,8 @@ void AB_DtB_LightningZap_C::ReceiveTick(float* DeltaSeconds)
 
 void AB_DtB_LightningZap_C::FireLightning()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_LightningZap.B_DtB_LightningZap_C.FireLightning");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2517df25);
 
 	AB_DtB_LightningZap_C_FireLightning_Params params;
 
@@ -73,7 +76,8 @@ void AB_DtB_LightningZap_C::FireLightning()
 
 void AB_DtB_LightningZap_C::ExecuteUbergraph_B_DtB_LightningZap(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_LightningZap.B_DtB_LightningZap_C.ExecuteUbergraph_B_DtB_LightningZap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2e14b9e);
 
 	AB_DtB_LightningZap_C_ExecuteUbergraph_B_DtB_LightningZap_Params params;
 	params.EntryPoint = EntryPoint;

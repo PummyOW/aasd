@@ -22,7 +22,8 @@ namespace SDK
 
 bool UAthenaInventoryDropSlot_C::OnDrop(struct FGeometry* MyGeometry, struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnDrop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e8217b7);
 
 	UAthenaInventoryDropSlot_C_OnDrop_Params params;
 	params.MyGeometry = MyGeometry;
@@ -47,7 +48,8 @@ bool UAthenaInventoryDropSlot_C::OnDrop(struct FGeometry* MyGeometry, struct FPo
 
 void UAthenaInventoryDropSlot_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x249fe05c);
 
 	UAthenaInventoryDropSlot_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -68,7 +70,8 @@ void UAthenaInventoryDropSlot_C::Tick(struct FGeometry* MyGeometry, float* InDel
 
 void UAthenaInventoryDropSlot_C::ExecuteUbergraph_AthenaInventoryDropSlot(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.ExecuteUbergraph_AthenaInventoryDropSlot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8a46211);
 
 	UAthenaInventoryDropSlot_C_ExecuteUbergraph_AthenaInventoryDropSlot_Params params;
 	params.EntryPoint = EntryPoint;
@@ -88,7 +91,8 @@ void UAthenaInventoryDropSlot_C::ExecuteUbergraph_AthenaInventoryDropSlot(int En
 
 void UAthenaInventoryDropSlot_C::OnEquipRequested__DelegateSignature(int SlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDropSlot.AthenaInventoryDropSlot_C.OnEquipRequested__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a203bff);
 
 	UAthenaInventoryDropSlot_C_OnEquipRequested__DelegateSignature_Params params;
 	params.SlotIndex = SlotIndex;

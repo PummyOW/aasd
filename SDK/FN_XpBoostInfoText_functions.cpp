@@ -17,7 +17,8 @@ namespace SDK
 
 void UXpBoostInfoText_C::Update_Available_Boosts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostInfoText.XpBoostInfoText_C.Update Available Boosts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfaaa0acb);
 
 	UXpBoostInfoText_C_Update_Available_Boosts_Params params;
 
@@ -34,7 +35,8 @@ void UXpBoostInfoText_C::Update_Available_Boosts()
 
 void UXpBoostInfoText_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostInfoText.XpBoostInfoText_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba56c132);
 
 	UXpBoostInfoText_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UXpBoostInfoText_C::Construct()
 
 void UXpBoostInfoText_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostInfoText.XpBoostInfoText_C.HandleAccountUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73027ef1);
 
 	UXpBoostInfoText_C_HandleAccountUpdate_Params params;
 	params.NewInfo = NewInfo;
@@ -73,7 +76,8 @@ void UXpBoostInfoText_C::HandleAccountUpdate(const struct FFortPublicAccountInfo
 
 void UXpBoostInfoText_C::Xp_Boost_Changed(int BoostAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostInfoText.XpBoostInfoText_C.Xp Boost Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf14d348a);
 
 	UXpBoostInfoText_C_Xp_Boost_Changed_Params params;
 	params.BoostAmount = BoostAmount;
@@ -93,7 +97,8 @@ void UXpBoostInfoText_C::Xp_Boost_Changed(int BoostAmount)
 
 void UXpBoostInfoText_C::ExecuteUbergraph_XpBoostInfoText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostInfoText.XpBoostInfoText_C.ExecuteUbergraph_XpBoostInfoText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f1f00a1);
 
 	UXpBoostInfoText_C_ExecuteUbergraph_XpBoostInfoText_Params params;
 	params.EntryPoint = EntryPoint;

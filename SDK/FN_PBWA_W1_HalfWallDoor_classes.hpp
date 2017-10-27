@@ -13,14 +13,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass PBWA_W1_HalfWallDoor.PBWA_W1_HalfWallDoor_C
-// 0x0000 (0x10B0 - 0x10B0)
+// 0x0000 (0x10C0 - 0x10C0)
 class APBWA_W1_HalfWallDoor_C : public ABuildingWall
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass PBWA_W1_HalfWallDoor.PBWA_W1_HalfWallDoor_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55b6bd5f);
 		return ptr;
 	}
 

@@ -25,7 +25,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass TalkingHeadWidget.TalkingHeadWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd2cb221);
 		return ptr;
 	}
 

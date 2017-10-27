@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UMiniPartyBar_C::Get_Banners_Tooltip_Widget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyBar.MiniPartyBar_C.Get Banners Tooltip Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90121403);
 
 	UMiniPartyBar_C_Get_Banners_Tooltip_Widget_Params params;
 
@@ -41,7 +42,8 @@ class UWidget* UMiniPartyBar_C::Get_Banners_Tooltip_Widget()
 
 void UMiniPartyBar_C::HandlePartybarUIFeatureChanged(EFortUIFeature Feature, EFortUIFeatureState FeatureState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyBar.MiniPartyBar_C.HandlePartybarUIFeatureChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x529c2446);
 
 	UMiniPartyBar_C_HandlePartybarUIFeatureChanged_Params params;
 	params.Feature = Feature;
@@ -60,7 +62,8 @@ void UMiniPartyBar_C::HandlePartybarUIFeatureChanged(EFortUIFeature Feature, EFo
 
 void UMiniPartyBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyBar.MiniPartyBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c2752ea);
 
 	UMiniPartyBar_C_Construct_Params params;
 
@@ -79,7 +82,8 @@ void UMiniPartyBar_C::Construct()
 
 void UMiniPartyBar_C::BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyBar.MiniPartyBar_C.BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66a9d85c);
 
 	UMiniPartyBar_C_BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -99,7 +103,8 @@ void UMiniPartyBar_C::BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_Co
 
 void UMiniPartyBar_C::ExecuteUbergraph_MiniPartyBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyBar.MiniPartyBar_C.ExecuteUbergraph_MiniPartyBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa64b32c9);
 
 	UMiniPartyBar_C_ExecuteUbergraph_MiniPartyBar_Params params;
 	params.EntryPoint = EntryPoint;

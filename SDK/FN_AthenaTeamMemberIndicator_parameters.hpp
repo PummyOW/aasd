@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team Talking Changed
+struct UAthenaTeamMemberIndicator_C_On_Team_Talking_Changed_Params
+{
+	TArray<bool>                                       Team_Talking;                                             // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+};
+
 // Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team Reviving Changed
 struct UAthenaTeamMemberIndicator_C_On_Team_Reviving_Changed_Params
 {

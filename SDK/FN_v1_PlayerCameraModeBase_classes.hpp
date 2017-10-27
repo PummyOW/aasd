@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass v1_PlayerCameraModeBase.v1_PlayerCameraModeBase_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8761dc3d);
 		return ptr;
 	}
 

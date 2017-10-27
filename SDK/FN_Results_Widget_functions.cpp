@@ -19,7 +19,8 @@ namespace SDK
 
 void UResults_Widget_C::UseVideos(bool* bVideos)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.UseVideos");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2fe1fc2);
 
 	UResults_Widget_C_UseVideos_Params params;
 
@@ -39,7 +40,8 @@ void UResults_Widget_C::UseVideos(bool* bVideos)
 
 void UResults_Widget_C::Focus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Focus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bdb2017);
 
 	UResults_Widget_C_Focus_Params params;
 
@@ -56,7 +58,8 @@ void UResults_Widget_C::Focus()
 
 void UResults_Widget_C::InitializeInput()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.InitializeInput");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93ed8215);
 
 	UResults_Widget_C_InitializeInput_Params params;
 
@@ -75,7 +78,8 @@ void UResults_Widget_C::InitializeInput()
 
 void UResults_Widget_C::OnInputSkip(bool* bCommited)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.OnInputSkip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9257bbb3);
 
 	UResults_Widget_C_OnInputSkip_Params params;
 
@@ -98,7 +102,8 @@ void UResults_Widget_C::OnInputSkip(bool* bCommited)
 
 void UResults_Widget_C::LogAnalytics(const struct FString& ScreenName, bool bSkipped)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.LogAnalytics");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4690e46b);
 
 	UResults_Widget_C_LogAnalytics_Params params;
 	params.ScreenName = ScreenName;
@@ -117,7 +122,8 @@ void UResults_Widget_C::LogAnalytics(const struct FString& ScreenName, bool bSki
 
 void UResults_Widget_C::PlayMissionResultSound()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.PlayMissionResultSound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x893514f1);
 
 	UResults_Widget_C_PlayMissionResultSound_Params params;
 
@@ -136,7 +142,8 @@ void UResults_Widget_C::PlayMissionResultSound()
 
 void UResults_Widget_C::Toggle_Top_Level_Tab_Controls(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Toggle Top Level Tab Controls");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x382c1ceb);
 
 	UResults_Widget_C_Toggle_Top_Level_Tab_Controls_Params params;
 	params.Show = Show;
@@ -154,7 +161,8 @@ void UResults_Widget_C::Toggle_Top_Level_Tab_Controls(bool Show)
 
 void UResults_Widget_C::SpawnResultsMusic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.SpawnResultsMusic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc33f15e5);
 
 	UResults_Widget_C_SpawnResultsMusic_Params params;
 
@@ -173,7 +181,8 @@ void UResults_Widget_C::SpawnResultsMusic()
 
 void UResults_Widget_C::Toggle_Chat(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Toggle Chat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2f91ca9);
 
 	UResults_Widget_C_Toggle_Chat_Params params;
 	params.Show = Show;
@@ -191,7 +200,8 @@ void UResults_Widget_C::Toggle_Chat(bool Show)
 
 void UResults_Widget_C::Initialize_Video()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Initialize Video");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7841a96a);
 
 	UResults_Widget_C_Initialize_Video_Params params;
 
@@ -208,7 +218,8 @@ void UResults_Widget_C::Initialize_Video()
 
 void UResults_Widget_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3244a693);
 
 	UResults_Widget_C_Initialize_Params params;
 
@@ -225,7 +236,8 @@ void UResults_Widget_C::Initialize()
 
 void UResults_Widget_C::BndEvt__ResultsSummary_K2Node_ComponentBoundEvent_1_OnReturnClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__ResultsSummary_K2Node_ComponentBoundEvent_1_OnReturnClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x592fc11e);
 
 	UResults_Widget_C_BndEvt__ResultsSummary_K2Node_ComponentBoundEvent_1_OnReturnClicked__DelegateSignature_Params params;
 
@@ -242,7 +254,8 @@ void UResults_Widget_C::BndEvt__ResultsSummary_K2Node_ComponentBoundEvent_1_OnRe
 
 void UResults_Widget_C::Teleport_Scene_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Teleport Scene Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7048ee3);
 
 	UResults_Widget_C_Teleport_Scene_Sequence_Params params;
 
@@ -262,7 +275,8 @@ void UResults_Widget_C::Teleport_Scene_Sequence()
 
 void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const struct FString& TargetName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e212853);
 
 	UResults_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_OnAddFriendClicked__DelegateSignature_Params params;
 	params.TargetId = TargetId;
@@ -284,7 +298,8 @@ void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_7_
 
 void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const struct FString& TargetName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a727cd8);
 
 	UResults_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_OnUpVoteClicked__DelegateSignature_Params params;
 	params.TargetId = TargetId;
@@ -303,7 +318,8 @@ void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_8_
 
 void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_5_OnMissionStatsClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_5_OnMissionStatsClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d166bf);
 
 	UResults_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_5_OnMissionStatsClicked__DelegateSignature_Params params;
 
@@ -320,7 +336,8 @@ void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_5_
 
 void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_1_OnExitClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_1_OnExitClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9225844);
 
 	UResults_Widget_C_BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_1_OnExitClicked__DelegateSignature_Params params;
 
@@ -337,7 +354,8 @@ void UResults_Widget_C::BndEvt__ResultsTeleportPad_K2Node_ComponentBoundEvent_1_
 
 void UResults_Widget_C::Badge_Loot_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Badge Loot Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29446fcf);
 
 	UResults_Widget_C_Badge_Loot_Sequence_Params params;
 
@@ -354,7 +372,8 @@ void UResults_Widget_C::Badge_Loot_Sequence()
 
 void UResults_Widget_C::BndEvt__ResultsBadgeLoot_K2Node_ComponentBoundEvent_0_Finished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__ResultsBadgeLoot_K2Node_ComponentBoundEvent_0_Finished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x25afd9f2);
 
 	UResults_Widget_C_BndEvt__ResultsBadgeLoot_K2Node_ComponentBoundEvent_0_Finished__DelegateSignature_Params params;
 
@@ -371,7 +390,8 @@ void UResults_Widget_C::BndEvt__ResultsBadgeLoot_K2Node_ComponentBoundEvent_0_Fi
 
 void UResults_Widget_C::Commander_XP_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Commander XP Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6c46f4a);
 
 	UResults_Widget_C_Commander_XP_Sequence_Params params;
 
@@ -388,7 +408,8 @@ void UResults_Widget_C::Commander_XP_Sequence()
 
 void UResults_Widget_C::BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_Finished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_Finished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86c19083);
 
 	UResults_Widget_C_BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_Finished__DelegateSignature_Params params;
 
@@ -405,7 +426,8 @@ void UResults_Widget_C::BndEvt__ResultsCommanderXP_K2Node_ComponentBoundEvent_6_
 
 void UResults_Widget_C::BndEvt__Anim_CommanderXPIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__Anim_CommanderXPIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7334412b);
 
 	UResults_Widget_C_BndEvt__Anim_CommanderXPIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -422,7 +444,8 @@ void UResults_Widget_C::BndEvt__Anim_CommanderXPIntro_K2Node_ComponentBoundEvent
 
 void UResults_Widget_C::BndEvt__Anim_CommanderXPOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__Anim_CommanderXPOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8381e8fa);
 
 	UResults_Widget_C_BndEvt__Anim_CommanderXPOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -439,7 +462,8 @@ void UResults_Widget_C::BndEvt__Anim_CommanderXPOutro_K2Node_ComponentBoundEvent
 
 void UResults_Widget_C::BndEvt__Results_ScoreAndXP_K2Node_ComponentBoundEvent_3_Finished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__Results_ScoreAndXP_K2Node_ComponentBoundEvent_3_Finished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc78f5a6e);
 
 	UResults_Widget_C_BndEvt__Results_ScoreAndXP_K2Node_ComponentBoundEvent_3_Finished__DelegateSignature_Params params;
 
@@ -456,7 +480,8 @@ void UResults_Widget_C::BndEvt__Results_ScoreAndXP_K2Node_ComponentBoundEvent_3_
 
 void UResults_Widget_C::Team_Score_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Team Score Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea1e8833);
 
 	UResults_Widget_C_Team_Score_Sequence_Params params;
 
@@ -473,7 +498,8 @@ void UResults_Widget_C::Team_Score_Sequence()
 
 void UResults_Widget_C::BndEvt__TopPanel_K2Node_ComponentBoundEvent_1_IntroComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__TopPanel_K2Node_ComponentBoundEvent_1_IntroComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99fb2100);
 
 	UResults_Widget_C_BndEvt__TopPanel_K2Node_ComponentBoundEvent_1_IntroComplete__DelegateSignature_Params params;
 
@@ -490,7 +516,8 @@ void UResults_Widget_C::BndEvt__TopPanel_K2Node_ComponentBoundEvent_1_IntroCompl
 
 void UResults_Widget_C::PreResults_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.PreResults Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc91113d);
 
 	UResults_Widget_C_PreResults_Sequence_Params params;
 
@@ -507,7 +534,8 @@ void UResults_Widget_C::PreResults_Sequence()
 
 void UResults_Widget_C::BndEvt__Anim_ZoneCompletionIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__Anim_ZoneCompletionIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2240242d);
 
 	UResults_Widget_C_BndEvt__Anim_ZoneCompletionIntro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -524,7 +552,8 @@ void UResults_Widget_C::BndEvt__Anim_ZoneCompletionIntro_K2Node_ComponentBoundEv
 
 void UResults_Widget_C::VideoSequenceStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.VideoSequenceStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc331827);
 
 	UResults_Widget_C_VideoSequenceStart_Params params;
 
@@ -541,7 +570,8 @@ void UResults_Widget_C::VideoSequenceStart()
 
 void UResults_Widget_C::OnVideoEndReached()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.OnVideoEndReached");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2adf4d8);
 
 	UResults_Widget_C_OnVideoEndReached_Params params;
 
@@ -558,7 +588,8 @@ void UResults_Widget_C::OnVideoEndReached()
 
 void UResults_Widget_C::BndEvt__Anim_VideoOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.BndEvt__Anim_VideoOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb15aed5);
 
 	UResults_Widget_C_BndEvt__Anim_VideoOutro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -575,7 +606,8 @@ void UResults_Widget_C::BndEvt__Anim_VideoOutro_K2Node_ComponentBoundEvent_0_OnW
 
 void UResults_Widget_C::SkipVideo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.SkipVideo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf80e5f19);
 
 	UResults_Widget_C_SkipVideo_Params params;
 
@@ -592,7 +624,8 @@ void UResults_Widget_C::SkipVideo()
 
 void UResults_Widget_C::OnMediaOpened()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.OnMediaOpened");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b48ded5);
 
 	UResults_Widget_C_OnMediaOpened_Params params;
 
@@ -609,7 +642,8 @@ void UResults_Widget_C::OnMediaOpened()
 
 void UResults_Widget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2dbaae6c);
 
 	UResults_Widget_C_Construct_Params params;
 
@@ -630,7 +664,8 @@ void UResults_Widget_C::Construct()
 
 void UResults_Widget_C::HandleClientEvent_PlayerLeftEvent(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.HandleClientEvent_PlayerLeftEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x921e3f73);
 
 	UResults_Widget_C_HandleClientEvent_PlayerLeftEvent_Params params;
 	params.EventSource = EventSource;
@@ -650,7 +685,8 @@ void UResults_Widget_C::HandleClientEvent_PlayerLeftEvent(class UObject* EventSo
 
 void UResults_Widget_C::Wait_for_Replication()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Wait for Replication");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa0f9e05);
 
 	UResults_Widget_C_Wait_for_Replication_Params params;
 
@@ -667,7 +703,8 @@ void UResults_Widget_C::Wait_for_Replication()
 
 void UResults_Widget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40da1293);
 
 	UResults_Widget_C_Destruct_Params params;
 
@@ -684,7 +721,8 @@ void UResults_Widget_C::Destruct()
 
 void UResults_Widget_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6f4611b);
 
 	UResults_Widget_C_OnActivated_Params params;
 
@@ -703,7 +741,8 @@ void UResults_Widget_C::OnActivated()
 
 void UResults_Widget_C::ExecuteUbergraph_Results_Widget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Widget.Results_Widget_C.ExecuteUbergraph_Results_Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x317b2884);
 
 	UResults_Widget_C_ExecuteUbergraph_Results_Widget_Params params;
 	params.EntryPoint = EntryPoint;

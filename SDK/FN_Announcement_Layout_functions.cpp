@@ -21,7 +21,8 @@ namespace SDK
 
 void UAnnouncement_Layout_C::CreateAnnouncementWidget(class UClass* NewWidgetClass, bool ForceCreateUI, class UFortAnnouncementWidget** NewWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Layout.Announcement_Layout_C.CreateAnnouncementWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefb64c82);
 
 	UAnnouncement_Layout_C_CreateAnnouncementWidget_Params params;
 	params.NewWidgetClass = NewWidgetClass;
@@ -45,7 +46,8 @@ void UAnnouncement_Layout_C::CreateAnnouncementWidget(class UClass* NewWidgetCla
 
 void UAnnouncement_Layout_C::SwapAnnouncementUIContent(class AFortClientAnnouncement* NewAnnouncement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Layout.Announcement_Layout_C.SwapAnnouncementUIContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b0b10fc);
 
 	UAnnouncement_Layout_C_SwapAnnouncementUIContent_Params params;
 	params.NewAnnouncement = NewAnnouncement;
@@ -63,7 +65,8 @@ void UAnnouncement_Layout_C::SwapAnnouncementUIContent(class AFortClientAnnounce
 
 void UAnnouncement_Layout_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Layout.Announcement_Layout_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x333a181e);
 
 	UAnnouncement_Layout_C_Construct_Params params;
 
@@ -82,7 +85,8 @@ void UAnnouncement_Layout_C::Construct()
 
 void UAnnouncement_Layout_C::OnStartNewAnnouncement(class AFortClientAnnouncement* NewAnnouncement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Layout.Announcement_Layout_C.OnStartNewAnnouncement");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x273a61fb);
 
 	UAnnouncement_Layout_C_OnStartNewAnnouncement_Params params;
 	params.NewAnnouncement = NewAnnouncement;
@@ -102,7 +106,8 @@ void UAnnouncement_Layout_C::OnStartNewAnnouncement(class AFortClientAnnouncemen
 
 void UAnnouncement_Layout_C::ExecuteUbergraph_Announcement_Layout(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Layout.Announcement_Layout_C.ExecuteUbergraph_Announcement_Layout");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e62aa67);
 
 	UAnnouncement_Layout_C_ExecuteUbergraph_Announcement_Layout_Params params;
 	params.EntryPoint = EntryPoint;

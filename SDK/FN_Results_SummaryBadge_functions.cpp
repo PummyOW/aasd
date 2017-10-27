@@ -19,7 +19,8 @@ namespace SDK
 
 void UResults_SummaryBadge_C::Initialize(class UFortItem* BadgeItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_SummaryBadge.Results_SummaryBadge_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88d2de79);
 
 	UResults_SummaryBadge_C_Initialize_Params params;
 	params.BadgeItem = BadgeItem;
@@ -39,7 +40,8 @@ void UResults_SummaryBadge_C::Initialize(class UFortItem* BadgeItem)
 
 void UResults_SummaryBadge_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_SummaryBadge.Results_SummaryBadge_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x649bb285);
 
 	UResults_SummaryBadge_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -57,7 +59,8 @@ void UResults_SummaryBadge_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_SummaryBadge_C::Manual_Pre_Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_SummaryBadge.Results_SummaryBadge_C.Manual Pre Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17ffe8dd);
 
 	UResults_SummaryBadge_C_Manual_Pre_Construct_Params params;
 
@@ -76,7 +79,8 @@ void UResults_SummaryBadge_C::Manual_Pre_Construct()
 
 void UResults_SummaryBadge_C::ExecuteUbergraph_Results_SummaryBadge(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_SummaryBadge.Results_SummaryBadge_C.ExecuteUbergraph_Results_SummaryBadge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2168fb8b);
 
 	UResults_SummaryBadge_C_ExecuteUbergraph_Results_SummaryBadge_Params params;
 	params.EntryPoint = EntryPoint;

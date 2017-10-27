@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemInspectUpgradeConfirmation_C::RefreshLevelInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.RefreshLevelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75ac3492);
 
 	UItemInspectUpgradeConfirmation_C_RefreshLevelInfo_Params params;
 
@@ -34,7 +35,8 @@ void UItemInspectUpgradeConfirmation_C::RefreshLevelInfo()
 
 void UItemInspectUpgradeConfirmation_C::RefreshEnabledState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.RefreshEnabledState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x917bb7e6);
 
 	UItemInspectUpgradeConfirmation_C_RefreshEnabledState_Params params;
 
@@ -53,7 +55,8 @@ void UItemInspectUpgradeConfirmation_C::RefreshEnabledState()
 
 void UItemInspectUpgradeConfirmation_C::CanAffordUpgrade(bool* CanAfford)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.CanAffordUpgrade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6670b7a7);
 
 	UItemInspectUpgradeConfirmation_C_CanAffordUpgrade_Params params;
 
@@ -75,7 +78,8 @@ void UItemInspectUpgradeConfirmation_C::CanAffordUpgrade(bool* CanAfford)
 
 void UItemInspectUpgradeConfirmation_C::IsUpgradeAvailable(bool* UpgradeAvailable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.IsUpgradeAvailable");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf7c22a6);
 
 	UItemInspectUpgradeConfirmation_C_IsUpgradeAvailable_Params params;
 
@@ -95,7 +99,8 @@ void UItemInspectUpgradeConfirmation_C::IsUpgradeAvailable(bool* UpgradeAvailabl
 
 void UItemInspectUpgradeConfirmation_C::RefreshOnUpgrade()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.RefreshOnUpgrade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b8f6bb9);
 
 	UItemInspectUpgradeConfirmation_C_RefreshOnUpgrade_Params params;
 
@@ -112,7 +117,8 @@ void UItemInspectUpgradeConfirmation_C::RefreshOnUpgrade()
 
 void UItemInspectUpgradeConfirmation_C::OnShow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.OnShow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x85acb9ff);
 
 	UItemInspectUpgradeConfirmation_C_OnShow_Params params;
 
@@ -131,7 +137,8 @@ void UItemInspectUpgradeConfirmation_C::OnShow()
 
 void UItemInspectUpgradeConfirmation_C::SetItemToRepresent(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.SetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4b66c3d);
 
 	UItemInspectUpgradeConfirmation_C_SetItemToRepresent_Params params;
 	params.Item = Item;
@@ -149,7 +156,8 @@ void UItemInspectUpgradeConfirmation_C::SetItemToRepresent(class UFortItem* Item
 
 void UItemInspectUpgradeConfirmation_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1f353d0);
 
 	UItemInspectUpgradeConfirmation_C_Refresh_Params params;
 
@@ -168,7 +176,8 @@ void UItemInspectUpgradeConfirmation_C::Refresh()
 
 void UItemInspectUpgradeConfirmation_C::BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10fb78c4);
 
 	UItemInspectUpgradeConfirmation_C_BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -188,7 +197,8 @@ void UItemInspectUpgradeConfirmation_C::BndEvt__UpgradeConfirmButton_K2Node_Comp
 
 void UItemInspectUpgradeConfirmation_C::BndEvt__UpgradeCancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.BndEvt__UpgradeCancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4baf7e9);
 
 	UItemInspectUpgradeConfirmation_C_BndEvt__UpgradeCancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -208,7 +218,8 @@ void UItemInspectUpgradeConfirmation_C::BndEvt__UpgradeCancelButton_K2Node_Compo
 
 void UItemInspectUpgradeConfirmation_C::ExecuteUbergraph_ItemInspectUpgradeConfirmation(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.ExecuteUbergraph_ItemInspectUpgradeConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x264777d);
 
 	UItemInspectUpgradeConfirmation_C_ExecuteUbergraph_ItemInspectUpgradeConfirmation_Params params;
 	params.EntryPoint = EntryPoint;
@@ -226,7 +237,8 @@ void UItemInspectUpgradeConfirmation_C::ExecuteUbergraph_ItemInspectUpgradeConfi
 
 void UItemInspectUpgradeConfirmation_C::OnUpgradeCancel__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.OnUpgradeCancel__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xedf86631);
 
 	UItemInspectUpgradeConfirmation_C_OnUpgradeCancel__DelegateSignature_Params params;
 
@@ -243,7 +255,8 @@ void UItemInspectUpgradeConfirmation_C::OnUpgradeCancel__DelegateSignature()
 
 void UItemInspectUpgradeConfirmation_C::OnUpgradeConfirm__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeConfirmation.ItemInspectUpgradeConfirmation_C.OnUpgradeConfirm__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3853c1b);
 
 	UItemInspectUpgradeConfirmation_C_OnUpgradeConfirm__DelegateSignature_Params params;
 

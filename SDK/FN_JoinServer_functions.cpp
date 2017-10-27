@@ -17,7 +17,8 @@ namespace SDK
 
 void UJoinServer_C::HandleLobbyConnectingToGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleLobbyConnectingToGame");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfaf58f0a);
 
 	UJoinServer_C_HandleLobbyConnectingToGame_Params params;
 
@@ -34,7 +35,8 @@ void UJoinServer_C::HandleLobbyConnectingToGame()
 
 void UJoinServer_C::ShowAbandoningProgress()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ShowAbandoningProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa2eb77a);
 
 	UJoinServer_C_ShowAbandoningProgress_Params params;
 
@@ -54,7 +56,8 @@ void UJoinServer_C::ShowAbandoningProgress()
 
 void UJoinServer_C::ShowRetryRejoinWindow(const struct FText& Failure, bool AllowRetry)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ShowRetryRejoinWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6367f027);
 
 	UJoinServer_C_ShowRetryRejoinWindow_Params params;
 	params.Failure = Failure;
@@ -73,7 +76,8 @@ void UJoinServer_C::ShowRetryRejoinWindow(const struct FText& Failure, bool Allo
 
 void UJoinServer_C::ShowRetryRejoinSession()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ShowRetryRejoinSession");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35bac015);
 
 	UJoinServer_C_ShowRetryRejoinSession_Params params;
 
@@ -90,7 +94,8 @@ void UJoinServer_C::ShowRetryRejoinSession()
 
 void UJoinServer_C::ShowRejoiningProgress()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ShowRejoiningProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7016d47e);
 
 	UJoinServer_C_ShowRejoiningProgress_Params params;
 
@@ -109,7 +114,8 @@ void UJoinServer_C::ShowRejoiningProgress()
 
 void UJoinServer_C::HideRejoinWindow(bool AbandonSession)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HideRejoinWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea4b6092);
 
 	UJoinServer_C_HideRejoinWindow_Params params;
 	params.AbandonSession = AbandonSession;
@@ -127,7 +133,8 @@ void UJoinServer_C::HideRejoinWindow(bool AbandonSession)
 
 void UJoinServer_C::ShowRejoinWindow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ShowRejoinWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2927545);
 
 	UJoinServer_C_ShowRejoinWindow_Params params;
 
@@ -146,7 +153,8 @@ void UJoinServer_C::ShowRejoinWindow()
 
 class UWidget* UJoinServer_C::HandleGetMainMenuContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleGetMainMenuContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5dcdb38e);
 
 	UJoinServer_C_HandleGetMainMenuContent_Params params;
 
@@ -165,7 +173,8 @@ class UWidget* UJoinServer_C::HandleGetMainMenuContent()
 
 void UJoinServer_C::ShowTutorialCanceled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ShowTutorialCanceled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde3bfcad);
 
 	UJoinServer_C_ShowTutorialCanceled_Params params;
 
@@ -185,7 +194,8 @@ void UJoinServer_C::ShowTutorialCanceled()
 
 void UJoinServer_C::GetMatchmakingError(EMatchmakingCompleteResult MatchMakingError, struct FText* ErrorText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.GetMatchmakingError");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa823d6e9);
 
 	UJoinServer_C_GetMatchmakingError_Params params;
 	params.MatchMakingError = MatchMakingError;
@@ -208,7 +218,8 @@ void UJoinServer_C::GetMatchmakingError(EMatchmakingCompleteResult MatchMakingEr
 
 void UJoinServer_C::HandleLobbyTimeUpdated(int TimeRemaining)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleLobbyTimeUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfbab49b);
 
 	UJoinServer_C_HandleLobbyTimeUpdated_Params params;
 	params.TimeRemaining = TimeRemaining;
@@ -226,7 +237,8 @@ void UJoinServer_C::HandleLobbyTimeUpdated(int TimeRemaining)
 
 void UJoinServer_C::SkipTutorial()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.SkipTutorial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x893ea6d2);
 
 	UJoinServer_C_SkipTutorial_Params params;
 
@@ -243,7 +255,8 @@ void UJoinServer_C::SkipTutorial()
 
 void UJoinServer_C::StartTutorialMatchmakingFlow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.StartTutorialMatchmakingFlow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb21a7bd7);
 
 	UJoinServer_C_StartTutorialMatchmakingFlow_Params params;
 
@@ -262,7 +275,8 @@ void UJoinServer_C::StartTutorialMatchmakingFlow()
 
 void UJoinServer_C::HandleEnterState(EFortUIState PreviousState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleEnterState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36367b0e);
 
 	UJoinServer_C_HandleEnterState_Params params;
 	params.PreviousState = PreviousState;
@@ -280,7 +294,8 @@ void UJoinServer_C::HandleEnterState(EFortUIState PreviousState)
 
 void UJoinServer_C::HandleLobbyDisconnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleLobbyDisconnected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61970974);
 
 	UJoinServer_C_HandleLobbyDisconnected_Params params;
 
@@ -300,7 +315,8 @@ void UJoinServer_C::HandleLobbyDisconnected()
 
 void UJoinServer_C::HandleMatchmakingStateChange(TEnumAsByte<EMatchmakingState> OldState, TEnumAsByte<EMatchmakingState> NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleMatchmakingStateChange");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x25b6007c);
 
 	UJoinServer_C_HandleMatchmakingStateChange_Params params;
 	params.OldState = OldState;
@@ -321,7 +337,8 @@ void UJoinServer_C::HandleMatchmakingStateChange(TEnumAsByte<EMatchmakingState> 
 
 void UJoinServer_C::HandleMatchmakingComplete(EMatchmakingCompleteResult Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleMatchmakingComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59b82a30);
 
 	UJoinServer_C_HandleMatchmakingComplete_Params params;
 	params.Result = Result;
@@ -339,7 +356,8 @@ void UJoinServer_C::HandleMatchmakingComplete(EMatchmakingCompleteResult Result)
 
 void UJoinServer_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f63a787);
 
 	UJoinServer_C_Initialize_Params params;
 
@@ -359,7 +377,8 @@ void UJoinServer_C::Initialize()
 
 void UJoinServer_C::DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfeccb211);
 
 	UJoinServer_C_DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF_Params params;
 	params.Result = Result;
@@ -378,7 +397,8 @@ void UJoinServer_C::DialogResult_B65B7C6342A70AAA7E4C689EE8A624BF(EFortDialogRes
 
 void UJoinServer_C::OnFailure_B419884742513722D11D8AB4D90DE5E2()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.OnFailure_B419884742513722D11D8AB4D90DE5E2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4e23c6d);
 
 	UJoinServer_C_OnFailure_B419884742513722D11D8AB4D90DE5E2_Params params;
 
@@ -395,7 +415,8 @@ void UJoinServer_C::OnFailure_B419884742513722D11D8AB4D90DE5E2()
 
 void UJoinServer_C::OnSuccess_B419884742513722D11D8AB4D90DE5E2()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.OnSuccess_B419884742513722D11D8AB4D90DE5E2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cf83498);
 
 	UJoinServer_C_OnSuccess_B419884742513722D11D8AB4D90DE5E2_Params params;
 
@@ -412,7 +433,8 @@ void UJoinServer_C::OnSuccess_B419884742513722D11D8AB4D90DE5E2()
 
 void UJoinServer_C::OnFailure_C91A02504569664A4B1E259E5F57A79D()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.OnFailure_C91A02504569664A4B1E259E5F57A79D");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd3fc240);
 
 	UJoinServer_C_OnFailure_C91A02504569664A4B1E259E5F57A79D_Params params;
 
@@ -429,7 +451,8 @@ void UJoinServer_C::OnFailure_C91A02504569664A4B1E259E5F57A79D()
 
 void UJoinServer_C::OnSuccess_C91A02504569664A4B1E259E5F57A79D()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.OnSuccess_C91A02504569664A4B1E259E5F57A79D");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cb50689);
 
 	UJoinServer_C_OnSuccess_C91A02504569664A4B1E259E5F57A79D_Params params;
 
@@ -446,7 +469,8 @@ void UJoinServer_C::OnSuccess_C91A02504569664A4B1E259E5F57A79D()
 
 void UJoinServer_C::RequestTutorialRetry()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.RequestTutorialRetry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x649b1dc8);
 
 	UJoinServer_C_RequestTutorialRetry_Params params;
 
@@ -463,7 +487,8 @@ void UJoinServer_C::RequestTutorialRetry()
 
 void UJoinServer_C::ShowSkipTutorial()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ShowSkipTutorial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27e6c1c9);
 
 	UJoinServer_C_ShowSkipTutorial_Params params;
 
@@ -484,7 +509,8 @@ void UJoinServer_C::ShowSkipTutorial()
 
 void UJoinServer_C::HandleClientEvent_RejoinStart(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleClientEvent_RejoinStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4b6460a);
 
 	UJoinServer_C_HandleClientEvent_RejoinStart_Params params;
 	params.EventSource = EventSource;
@@ -504,7 +530,8 @@ void UJoinServer_C::HandleClientEvent_RejoinStart(class UObject* EventSource, cl
 
 void UJoinServer_C::HandleRequestRejoinRetry()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleRequestRejoinRetry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b8d5d91);
 
 	UJoinServer_C_HandleRequestRejoinRetry_Params params;
 
@@ -521,7 +548,8 @@ void UJoinServer_C::HandleRequestRejoinRetry()
 
 void UJoinServer_C::HandleRequestAbandon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleRequestAbandon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa10f0a35);
 
 	UJoinServer_C_HandleRequestAbandon_Params params;
 
@@ -542,7 +570,8 @@ void UJoinServer_C::HandleRequestAbandon()
 
 void UJoinServer_C::HandleClientEvent_OnboardingStartMatchmaking(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.HandleClientEvent_OnboardingStartMatchmaking");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x782cc8a6);
 
 	UJoinServer_C_HandleClientEvent_OnboardingStartMatchmaking_Params params;
 	params.EventSource = EventSource;
@@ -562,7 +591,8 @@ void UJoinServer_C::HandleClientEvent_OnboardingStartMatchmaking(class UObject* 
 
 void UJoinServer_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf819b480);
 
 	UJoinServer_C_Construct_Params params;
 
@@ -581,7 +611,8 @@ void UJoinServer_C::Construct()
 
 void UJoinServer_C::OnEnterState(EFortUIState* PreviousUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.OnEnterState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5135ecfb);
 
 	UJoinServer_C_OnEnterState_Params params;
 	params.PreviousUIState = PreviousUIState;
@@ -601,7 +632,8 @@ void UJoinServer_C::OnEnterState(EFortUIState* PreviousUIState)
 
 void UJoinServer_C::ExecuteUbergraph_JoinServer(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JoinServer.JoinServer_C.ExecuteUbergraph_JoinServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29fdbb58);
 
 	UJoinServer_C_ExecuteUbergraph_JoinServer_Params params;
 	params.EntryPoint = EntryPoint;

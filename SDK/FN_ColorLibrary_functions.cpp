@@ -21,7 +21,8 @@ namespace SDK
 
 void UColorLibrary_C::STATIC_Get_HarvestWeakPoint_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* StyleSheetOut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get HarvestWeakPoint Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f0331a1);
 
 	UColorLibrary_C_Get_HarvestWeakPoint_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -50,7 +51,8 @@ void UColorLibrary_C::STATIC_Get_HarvestWeakPoint_Color(const struct FColorStyle
 
 void UColorLibrary_C::STATIC_Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Base, struct FLinearColor* buff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get Base & Buff Colors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc72813b7);
 
 	UColorLibrary_C_Get_Base___Buff_Colors_Params params;
 	params.Display_Type = Display_Type;
@@ -80,7 +82,8 @@ void UColorLibrary_C::STATIC_Get_Base___Buff_Colors(EFortStatValueDisplayType Di
 
 void UColorLibrary_C::STATIC_Get_Bolt_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get Bolt Elemental Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5d28aa0);
 
 	UColorLibrary_C_Get_Bolt_Elemental_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -106,7 +109,8 @@ void UColorLibrary_C::STATIC_Get_Bolt_Elemental_Color(const struct FColorStylesh
 
 void UColorLibrary_C::STATIC_Get_Ice_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get Ice Elemental Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8537f082);
 
 	UColorLibrary_C_Get_Ice_Elemental_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -132,7 +136,8 @@ void UColorLibrary_C::STATIC_Get_Ice_Elemental_Color(const struct FColorStyleshe
 
 void UColorLibrary_C::STATIC_Get_Fire_Elemental_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get Fire Elemental Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x175ece55);
 
 	UColorLibrary_C_Get_Fire_Elemental_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -158,7 +163,8 @@ void UColorLibrary_C::STATIC_Get_Fire_Elemental_Color(const struct FColorStylesh
 
 void UColorLibrary_C::STATIC_Get_Unique_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get Unique Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44b1d717);
 
 	UColorLibrary_C_Get_Unique_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -184,7 +190,8 @@ void UColorLibrary_C::STATIC_Get_Unique_Color(const struct FColorStylesheet& Sty
 
 void UColorLibrary_C::STATIC_Get_Debuff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get Debuff Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb205d30);
 
 	UColorLibrary_C_Get_Debuff_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -210,7 +217,8 @@ void UColorLibrary_C::STATIC_Get_Debuff_Color(const struct FColorStylesheet& Sty
 
 void UColorLibrary_C::STATIC_Get_Buff_Color(const struct FColorStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ColorLibrary.ColorLibrary_C.Get Buff Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaada5769);
 
 	UColorLibrary_C_Get_Buff_Color_Params params;
 	params.Stylesheet = Stylesheet;

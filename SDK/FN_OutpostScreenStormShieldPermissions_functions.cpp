@@ -17,7 +17,8 @@ namespace SDK
 
 void UOutpostScreenStormShieldPermissions_C::CenterWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.CenterWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed3bab80);
 
 	UOutpostScreenStormShieldPermissions_C_CenterWidget_Params params;
 
@@ -36,7 +37,8 @@ void UOutpostScreenStormShieldPermissions_C::CenterWidget()
 
 void UOutpostScreenStormShieldPermissions_C::SetParent(class UOutpostScreenStormShield_C* ParentWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.SetParent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf6963e9);
 
 	UOutpostScreenStormShieldPermissions_C_SetParent_Params params;
 	params.ParentWidget = ParentWidget;
@@ -56,7 +58,8 @@ void UOutpostScreenStormShieldPermissions_C::SetParent(class UOutpostScreenStorm
 
 void UOutpostScreenStormShieldPermissions_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c45e12c);
 
 	UOutpostScreenStormShieldPermissions_C_HandleBack_Params params;
 
@@ -76,7 +79,8 @@ void UOutpostScreenStormShieldPermissions_C::HandleBack(bool* PassThrough)
 
 void UOutpostScreenStormShieldPermissions_C::AddInputHandlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.AddInputHandlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86c5c8e7);
 
 	UOutpostScreenStormShieldPermissions_C_AddInputHandlers_Params params;
 
@@ -95,7 +99,8 @@ void UOutpostScreenStormShieldPermissions_C::AddInputHandlers()
 
 bool UOutpostScreenStormShieldPermissions_C::IsOwningPlayerOutpostOwner()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.IsOwningPlayerOutpostOwner");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf56045f);
 
 	UOutpostScreenStormShieldPermissions_C_IsOwningPlayerOutpostOwner_Params params;
 
@@ -114,7 +119,8 @@ bool UOutpostScreenStormShieldPermissions_C::IsOwningPlayerOutpostOwner()
 
 void UOutpostScreenStormShieldPermissions_C::UpdatePrivilages()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.UpdatePrivilages");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82847d30);
 
 	UOutpostScreenStormShieldPermissions_C_UpdatePrivilages_Params params;
 
@@ -133,7 +139,8 @@ void UOutpostScreenStormShieldPermissions_C::UpdatePrivilages()
 
 void UOutpostScreenStormShieldPermissions_C::isPlayerAlone(bool* isAlone)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.isPlayerAlone");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x717bc0fd);
 
 	UOutpostScreenStormShieldPermissions_C_isPlayerAlone_Params params;
 
@@ -153,7 +160,8 @@ void UOutpostScreenStormShieldPermissions_C::isPlayerAlone(bool* isAlone)
 
 void UOutpostScreenStormShieldPermissions_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x597825de);
 
 	UOutpostScreenStormShieldPermissions_C_Construct_Params params;
 
@@ -172,7 +180,8 @@ void UOutpostScreenStormShieldPermissions_C::Construct()
 
 void UOutpostScreenStormShieldPermissions_C::UpdatePrivilagesEvent_1(const struct FFortTeamMemberInfo& NewTeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.UpdatePrivilagesEvent_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d99c414);
 
 	UOutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_1_Params params;
 	params.NewTeamMemberInfo = NewTeamMemberInfo;
@@ -192,7 +201,8 @@ void UOutpostScreenStormShieldPermissions_C::UpdatePrivilagesEvent_1(const struc
 
 void UOutpostScreenStormShieldPermissions_C::UpdatePrivilagesEvent_2(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.UpdatePrivilagesEvent_2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fa1334f);
 
 	UOutpostScreenStormShieldPermissions_C_UpdatePrivilagesEvent_2_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -210,7 +220,8 @@ void UOutpostScreenStormShieldPermissions_C::UpdatePrivilagesEvent_2(int PlayerI
 
 void UOutpostScreenStormShieldPermissions_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3505875);
 
 	UOutpostScreenStormShieldPermissions_C_OnActivated_Params params;
 
@@ -229,7 +240,8 @@ void UOutpostScreenStormShieldPermissions_C::OnActivated()
 
 void UOutpostScreenStormShieldPermissions_C::ExecuteUbergraph_OutpostScreenStormShieldPermissions(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.ExecuteUbergraph_OutpostScreenStormShieldPermissions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd186c68f);
 
 	UOutpostScreenStormShieldPermissions_C_ExecuteUbergraph_OutpostScreenStormShieldPermissions_Params params;
 	params.EntryPoint = EntryPoint;
@@ -247,7 +259,8 @@ void UOutpostScreenStormShieldPermissions_C::ExecuteUbergraph_OutpostScreenStorm
 
 void UOutpostScreenStormShieldPermissions_C::CloseOutpostScreen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenStormShieldPermissions.OutpostScreenStormShieldPermissions_C.CloseOutpostScreen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x605fa37c);
 
 	UOutpostScreenStormShieldPermissions_C_CloseOutpostScreen__DelegateSignature_Params params;
 

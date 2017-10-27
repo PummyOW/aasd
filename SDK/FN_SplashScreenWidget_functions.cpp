@@ -21,7 +21,8 @@ namespace SDK
 
 struct FEventReply USplashScreenWidget_C::OnFocusReceived(struct FGeometry* MyGeometry, struct FFocusEvent* InFocusEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.OnFocusReceived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5af6f1a7);
 
 	USplashScreenWidget_C_OnFocusReceived_Params params;
 	params.MyGeometry = MyGeometry;
@@ -46,7 +47,8 @@ struct FEventReply USplashScreenWidget_C::OnFocusReceived(struct FGeometry* MyGe
 
 struct FEventReply USplashScreenWidget_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.OnMouseButtonDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b2ffde7);
 
 	USplashScreenWidget_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -67,7 +69,8 @@ struct FEventReply USplashScreenWidget_C::OnMouseButtonDown(struct FGeometry* My
 
 void USplashScreenWidget_C::RelinquishInputFocus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.RelinquishInputFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f85feeb);
 
 	USplashScreenWidget_C_RelinquishInputFocus_Params params;
 
@@ -84,7 +87,8 @@ void USplashScreenWidget_C::RelinquishInputFocus()
 
 void USplashScreenWidget_C::SetInputFocus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.SetInputFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc19e8937);
 
 	USplashScreenWidget_C_SetInputFocus_Params params;
 
@@ -103,7 +107,8 @@ void USplashScreenWidget_C::SetInputFocus()
 
 void USplashScreenWidget_C::OnInputMethodChanged(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.OnInputMethodChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9bd4d6b);
 
 	USplashScreenWidget_C_OnInputMethodChanged_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -123,7 +128,8 @@ void USplashScreenWidget_C::OnInputMethodChanged(bool bUsingGamepad)
 
 void USplashScreenWidget_C::OnGameBootableInviteReceived(int* UserIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.OnGameBootableInviteReceived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d3e3462);
 
 	USplashScreenWidget_C_OnGameBootableInviteReceived_Params params;
 	params.UserIndex = UserIndex;
@@ -141,7 +147,8 @@ void USplashScreenWidget_C::OnGameBootableInviteReceived(int* UserIndex)
 
 void USplashScreenWidget_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7bd52307);
 
 	USplashScreenWidget_C_OnActivated_Params params;
 
@@ -160,7 +167,8 @@ void USplashScreenWidget_C::OnActivated()
 
 void USplashScreenWidget_C::ExecuteUbergraph_SplashScreenWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SplashScreenWidget.SplashScreenWidget_C.ExecuteUbergraph_SplashScreenWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba7edd74);
 
 	USplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget_Params params;
 	params.EntryPoint = EntryPoint;

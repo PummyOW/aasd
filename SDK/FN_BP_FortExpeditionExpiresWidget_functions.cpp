@@ -19,7 +19,8 @@ namespace SDK
 
 struct FTimespan UBP_FortExpeditionExpiresWidget_C::Get_Utc_Now_Offset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.Get Utc Now Offset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x635b23da);
 
 	UBP_FortExpeditionExpiresWidget_C_Get_Utc_Now_Offset_Params params;
 
@@ -40,7 +41,8 @@ struct FTimespan UBP_FortExpeditionExpiresWidget_C::Get_Utc_Now_Offset()
 
 void UBP_FortExpeditionExpiresWidget_C::Refresh_Expiration_Timer(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.Refresh Expiration Timer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf94d475e);
 
 	UBP_FortExpeditionExpiresWidget_C_Refresh_Expiration_Timer_Params params;
 	params.Item = Item;
@@ -60,7 +62,8 @@ void UBP_FortExpeditionExpiresWidget_C::Refresh_Expiration_Timer(class UFortExpe
 
 void UBP_FortExpeditionExpiresWidget_C::SetData(class UFortExpeditionItem** InItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc62758f7);
 
 	UBP_FortExpeditionExpiresWidget_C_SetData_Params params;
 	params.InItem = InItem;
@@ -78,7 +81,8 @@ void UBP_FortExpeditionExpiresWidget_C::SetData(class UFortExpeditionItem** InIt
 
 void UBP_FortExpeditionExpiresWidget_C::OnExpeditionExpirationUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.OnExpeditionExpirationUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66e54159);
 
 	UBP_FortExpeditionExpiresWidget_C_OnExpeditionExpirationUpdated_Params params;
 
@@ -97,7 +101,8 @@ void UBP_FortExpeditionExpiresWidget_C::OnExpeditionExpirationUpdated()
 
 void UBP_FortExpeditionExpiresWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa11ccb9f);
 
 	UBP_FortExpeditionExpiresWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -117,7 +122,8 @@ void UBP_FortExpeditionExpiresWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UBP_FortExpeditionExpiresWidget_C::ExecuteUbergraph_BP_FortExpeditionExpiresWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.ExecuteUbergraph_BP_FortExpeditionExpiresWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1d6715c);
 
 	UBP_FortExpeditionExpiresWidget_C_ExecuteUbergraph_BP_FortExpeditionExpiresWidget_Params params;
 	params.EntryPoint = EntryPoint;

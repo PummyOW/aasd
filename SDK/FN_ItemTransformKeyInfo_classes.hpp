@@ -29,7 +29,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ItemTransformKeyInfo.ItemTransformKeyInfo_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42878f8d);
 		return ptr;
 	}
 

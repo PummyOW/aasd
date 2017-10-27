@@ -17,7 +17,8 @@ namespace SDK
 
 void AVaultCharacterPlacementHelper_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84869638);
 
 	AVaultCharacterPlacementHelper_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AVaultCharacterPlacementHelper_C::UserConstructionScript()
 
 void AVaultCharacterPlacementHelper_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28f5572f);
 
 	AVaultCharacterPlacementHelper_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +55,8 @@ void AVaultCharacterPlacementHelper_C::ReceiveBeginPlay()
 
 void AVaultCharacterPlacementHelper_C::ExecuteUbergraph_VaultCharacterPlacementHelper(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.ExecuteUbergraph_VaultCharacterPlacementHelper");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d961c3);
 
 	AVaultCharacterPlacementHelper_C_ExecuteUbergraph_VaultCharacterPlacementHelper_Params params;
 	params.EntryPoint = EntryPoint;
@@ -71,7 +74,8 @@ void AVaultCharacterPlacementHelper_C::ExecuteUbergraph_VaultCharacterPlacementH
 
 void AVaultCharacterPlacementHelper_C::NewEventDispatcher_0__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.NewEventDispatcher_0__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd21db42);
 
 	AVaultCharacterPlacementHelper_C_NewEventDispatcher_0__DelegateSignature_Params params;
 

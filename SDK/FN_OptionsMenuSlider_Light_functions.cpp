@@ -17,7 +17,8 @@ namespace SDK
 
 void UOptionsMenuSlider_Light_C::Center_on_Widget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Center on Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x990f29f9);
 
 	UOptionsMenuSlider_Light_C_Center_on_Widget_Params params;
 
@@ -39,7 +40,8 @@ void UOptionsMenuSlider_Light_C::Center_on_Widget()
 
 void UOptionsMenuSlider_Light_C::Update_Slider(const struct FText& Slider_Text, float Slider_Value, const struct FText& Hover_Text, class UCommonTextBlock* Tooltip_Text_Block)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Update Slider");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xadd23397);
 
 	UOptionsMenuSlider_Light_C_Update_Slider_Params params;
 	params.Slider_Text = Slider_Text;
@@ -60,7 +62,8 @@ void UOptionsMenuSlider_Light_C::Update_Slider(const struct FText& Slider_Text, 
 
 void UOptionsMenuSlider_Light_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4a5cb52);
 
 	UOptionsMenuSlider_Light_C_Construct_Params params;
 
@@ -79,7 +82,8 @@ void UOptionsMenuSlider_Light_C::Construct()
 
 void UOptionsMenuSlider_Light_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe74f6816);
 
 	UOptionsMenuSlider_Light_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -100,7 +104,8 @@ void UOptionsMenuSlider_Light_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UOptionsMenuSlider_Light_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ca3a589);
 
 	UOptionsMenuSlider_Light_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -119,7 +124,8 @@ void UOptionsMenuSlider_Light_C::OnMouseEnter(struct FGeometry* MyGeometry, stru
 
 void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4120db0a);
 
 	UOptionsMenuSlider_Light_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature_Params params;
 
@@ -136,7 +142,8 @@ void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_8
 
 void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa179fc03);
 
 	UOptionsMenuSlider_Light_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature_Params params;
 
@@ -155,7 +162,8 @@ void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_1
 
 void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd733f56e);
 
 	UOptionsMenuSlider_Light_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature_Params params;
 	params.Value = Value;
@@ -175,7 +183,8 @@ void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_1
 
 void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a6965c);
 
 	UOptionsMenuSlider_Light_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature_Params params;
 	params.Value = Value;
@@ -195,7 +204,8 @@ void UOptionsMenuSlider_Light_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9
 
 void UOptionsMenuSlider_Light_C::ExecuteUbergraph_OptionsMenuSlider_Light(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.ExecuteUbergraph_OptionsMenuSlider_Light");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5973e4a0);
 
 	UOptionsMenuSlider_Light_C_ExecuteUbergraph_OptionsMenuSlider_Light_Params params;
 	params.EntryPoint = EntryPoint;
@@ -215,7 +225,8 @@ void UOptionsMenuSlider_Light_C::ExecuteUbergraph_OptionsMenuSlider_Light(int En
 
 void UOptionsMenuSlider_Light_C::SliderChanged__DelegateSignature(float Slider_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuSlider_Light.OptionsMenuSlider_Light_C.SliderChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2afee187);
 
 	UOptionsMenuSlider_Light_C_SliderChanged__DelegateSignature_Params params;
 	params.Slider_Value = Slider_Value;

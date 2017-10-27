@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_Outlander_HeavyStuffDamage.GCNS_Outlander_HeavyStuffDamage_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x46892189);
 		return ptr;
 	}
 

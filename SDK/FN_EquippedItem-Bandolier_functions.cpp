@@ -20,7 +20,8 @@ namespace SDK
 
 void UEquippedItem_Bandolier_C::UpdateCapacity(int Capacity, class UFortAmmoItemDefinition* AmmoData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItem-Bandolier.EquippedItem-Bandolier_C.UpdateCapacity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7e50982);
 
 	UEquippedItem_Bandolier_C_UpdateCapacity_Params params;
 	params.Capacity = Capacity;
@@ -42,7 +43,8 @@ void UEquippedItem_Bandolier_C::UpdateCapacity(int Capacity, class UFortAmmoItem
 
 void UEquippedItem_Bandolier_C::UpdateCurrent(int Current, class UFortAmmoItemDefinition* AmmoData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItem-Bandolier.EquippedItem-Bandolier_C.UpdateCurrent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa22bc21);
 
 	UEquippedItem_Bandolier_C_UpdateCurrent_Params params;
 	params.Current = Current;

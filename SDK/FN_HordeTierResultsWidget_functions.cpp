@@ -20,7 +20,8 @@ namespace SDK
 
 void UHordeTierResultsWidget_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeTierResultsWidget.HordeTierResultsWidget_C.OnHandleAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x812aed04);
 
 	UHordeTierResultsWidget_C_OnHandleAction_Params params;
 
@@ -42,7 +43,8 @@ void UHordeTierResultsWidget_C::OnHandleAction(struct FEventReply* Result, bool*
 
 void UHordeTierResultsWidget_C::OnEndOfMovieReached()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeTierResultsWidget.HordeTierResultsWidget_C.OnEndOfMovieReached");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1da8562);
 
 	UHordeTierResultsWidget_C_OnEndOfMovieReached_Params params;
 
@@ -61,7 +63,8 @@ void UHordeTierResultsWidget_C::OnEndOfMovieReached()
 
 void UHordeTierResultsWidget_C::ChooseMediaToUse(class UMediaSource** MediaToUse)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeTierResultsWidget.HordeTierResultsWidget_C.ChooseMediaToUse");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b678e94);
 
 	UHordeTierResultsWidget_C_ChooseMediaToUse_Params params;
 
@@ -83,7 +86,8 @@ void UHordeTierResultsWidget_C::ChooseMediaToUse(class UMediaSource** MediaToUse
 
 void UHordeTierResultsWidget_C::Initialize(EFortCompletionResult Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeTierResultsWidget.HordeTierResultsWidget_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd21d741);
 
 	UHordeTierResultsWidget_C_Initialize_Params params;
 	params.Result = Result;
@@ -101,7 +105,8 @@ void UHordeTierResultsWidget_C::Initialize(EFortCompletionResult Result)
 
 void UHordeTierResultsWidget_C::InitializeMovie()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeTierResultsWidget.HordeTierResultsWidget_C.InitializeMovie");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3aaa6d23);
 
 	UHordeTierResultsWidget_C_InitializeMovie_Params params;
 
@@ -118,7 +123,8 @@ void UHordeTierResultsWidget_C::InitializeMovie()
 
 void UHordeTierResultsWidget_C::OnTierResultsWidgetComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeTierResultsWidget.HordeTierResultsWidget_C.OnTierResultsWidgetComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6801dc82);
 
 	UHordeTierResultsWidget_C_OnTierResultsWidgetComplete__DelegateSignature_Params params;
 

@@ -28,7 +28,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BP_BannerEditorTile.BP_BannerEditorTile_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc666f565);
 		return ptr;
 	}
 

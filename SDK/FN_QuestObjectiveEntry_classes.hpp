@@ -28,7 +28,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass QuestObjectiveEntry.QuestObjectiveEntry_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a6f6bd1);
 		return ptr;
 	}
 

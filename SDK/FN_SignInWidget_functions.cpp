@@ -21,7 +21,8 @@ namespace SDK
 
 void USignInWidget_C::HandleTextCommited(TEnumAsByte<ETextCommit> TextCommitType, class UCommonBorder* HighlightBorder, class UCommonBorder* NormalBorder)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.HandleTextCommited");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63b623d4);
 
 	USignInWidget_C_HandleTextCommited_Params params;
 	params.TextCommitType = TextCommitType;
@@ -44,7 +45,8 @@ void USignInWidget_C::HandleTextCommited(TEnumAsByte<ETextCommit> TextCommitType
 
 void USignInWidget_C::BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnEditableTextCommittedEvent__DelegateSignature(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnEditableTextCommittedEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1eadf27);
 
 	USignInWidget_C_BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnEditableTextCommittedEvent__DelegateSignature_Params params;
 	params.Text = Text;
@@ -66,7 +68,8 @@ void USignInWidget_C::BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_86_OnE
 
 void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature(const struct FText& Text, TEnumAsByte<ETextCommit> CommitMethod)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98b7d433);
 
 	USignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEditableTextCommittedEvent__DelegateSignature_Params params;
 	params.Text = Text;
@@ -87,7 +90,8 @@ void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_1_OnEdita
 
 void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ca02f3c);
 
 	USignInWidget_C_BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature_Params params;
 	params.Text = Text;
@@ -107,7 +111,8 @@ void USignInWidget_C::BndEvt__EmailEditText_K2Node_ComponentBoundEvent_0_OnEdita
 
 void USignInWidget_C::BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEditableTextChangedEvent__DelegateSignature(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEditableTextChangedEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa13eecec);
 
 	USignInWidget_C_BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEditableTextChangedEvent__DelegateSignature_Params params;
 	params.Text = Text;
@@ -125,7 +130,8 @@ void USignInWidget_C::BndEvt__PasswordEditText_K2Node_ComponentBoundEvent_1_OnEd
 
 void USignInWidget_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3bc9cf1);
 
 	USignInWidget_C_OnActivated_Params params;
 
@@ -144,7 +150,8 @@ void USignInWidget_C::OnActivated()
 
 void USignInWidget_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9227240);
 
 	USignInWidget_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -164,7 +171,8 @@ void USignInWidget_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_45_CommonB
 
 void USignInWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ee9a29b);
 
 	USignInWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -184,7 +192,8 @@ void USignInWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_40_Commo
 
 void USignInWidget_C::ExecuteUbergraph_SignInWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SignInWidget.SignInWidget_C.ExecuteUbergraph_SignInWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2bdb6b5);
 
 	USignInWidget_C_ExecuteUbergraph_SignInWidget_Params params;
 	params.EntryPoint = EntryPoint;

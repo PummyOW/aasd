@@ -26,7 +26,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass HordeWaveModifiersTile.HordeWaveModifiersTile_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e17ab13);
 		return ptr;
 	}
 

@@ -19,7 +19,8 @@ namespace SDK
 
 void UErrorEntry_C::Center_on_Widget(bool* Did_Center)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorEntry.ErrorEntry_C.Center on Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0d269);
 
 	UErrorEntry_C_Center_on_Widget_Params params;
 
@@ -41,7 +42,8 @@ void UErrorEntry_C::Center_on_Widget(bool* Did_Center)
 
 void UErrorEntry_C::SetErrorInfo(const struct FFortErrorInfo& ErrorInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorEntry.ErrorEntry_C.SetErrorInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a1e07e1);
 
 	UErrorEntry_C_SetErrorInfo_Params params;
 	params.ErrorInfo = ErrorInfo;
@@ -61,7 +63,8 @@ void UErrorEntry_C::SetErrorInfo(const struct FFortErrorInfo& ErrorInfo)
 
 void UErrorEntry_C::GetButtonVisibility(ESlateVisibility* NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorEntry.ErrorEntry_C.GetButtonVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cc40cd5);
 
 	UErrorEntry_C_GetButtonVisibility_Params params;
 
@@ -81,7 +84,8 @@ void UErrorEntry_C::GetButtonVisibility(ESlateVisibility* NewParam)
 
 void UErrorEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorEntry.ErrorEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c90d182);
 
 	UErrorEntry_C_Construct_Params params;
 
@@ -100,7 +104,8 @@ void UErrorEntry_C::Construct()
 
 void UErrorEntry_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorEntry.ErrorEntry_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d9e8d8e);
 
 	UErrorEntry_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -120,7 +125,8 @@ void UErrorEntry_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_65_CommonB
 
 void UErrorEntry_C::ExecuteUbergraph_ErrorEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorEntry.ErrorEntry_C.ExecuteUbergraph_ErrorEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd13bf301);
 
 	UErrorEntry_C_ExecuteUbergraph_ErrorEntry_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UFeedback_C::Setup_For_Reporting_Player(const struct FText& Player_Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.Setup For Reporting Player");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac4fe4fa);
 
 	UFeedback_C_Setup_For_Reporting_Player_Params params;
 	params.Player_Name = Player_Name;
@@ -37,7 +38,8 @@ void UFeedback_C::Setup_For_Reporting_Player(const struct FText& Player_Name)
 
 void UFeedback_C::InitializeFeedback()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.InitializeFeedback");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c39bb96);
 
 	UFeedback_C_InitializeFeedback_Params params;
 
@@ -56,7 +58,8 @@ void UFeedback_C::InitializeFeedback()
 
 bool UFeedback_C::IsAllTextNotEmpty()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.IsAllTextNotEmpty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72e17fcd);
 
 	UFeedback_C_IsAllTextNotEmpty_Params params;
 
@@ -75,7 +78,8 @@ bool UFeedback_C::IsAllTextNotEmpty()
 
 void UFeedback_C::AddButtonFeedbackTypes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.AddButtonFeedbackTypes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bb8ac72);
 
 	UFeedback_C_AddButtonFeedbackTypes_Params params;
 
@@ -92,7 +96,8 @@ void UFeedback_C::AddButtonFeedbackTypes()
 
 void UFeedback_C::BindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.BindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40fa492c);
 
 	UFeedback_C_BindDelegates_Params params;
 
@@ -109,7 +114,8 @@ void UFeedback_C::BindDelegates()
 
 void UFeedback_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdbc097e8);
 
 	UFeedback_C_Construct_Params params;
 
@@ -126,7 +132,8 @@ void UFeedback_C::Construct()
 
 void UFeedback_C::OnInitiateDebugInfoForFeedbackComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.OnInitiateDebugInfoForFeedbackComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1793d41);
 
 	UFeedback_C_OnInitiateDebugInfoForFeedbackComplete_Params params;
 
@@ -143,7 +150,8 @@ void UFeedback_C::OnInitiateDebugInfoForFeedbackComplete()
 
 void UFeedback_C::OnBeginIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.OnBeginIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x288cf8c1);
 
 	UFeedback_C_OnBeginIntro_Params params;
 
@@ -162,7 +170,8 @@ void UFeedback_C::OnBeginIntro()
 
 void UFeedback_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7b21e43);
 
 	UFeedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -182,7 +191,8 @@ void UFeedback_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButton
 
 void UFeedback_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1de15194);
 
 	UFeedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -202,7 +212,8 @@ void UFeedback_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonCl
 
 void UFeedback_C::HandleTextChanged(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.HandleTextChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x897f8582);
 
 	UFeedback_C_HandleTextChanged_Params params;
 	params.Text = Text;
@@ -220,7 +231,8 @@ void UFeedback_C::HandleTextChanged(const struct FText& Text)
 
 void UFeedback_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xadb18d17);
 
 	UFeedback_C_OnActivated_Params params;
 
@@ -239,7 +251,8 @@ void UFeedback_C::OnActivated()
 
 void UFeedback_C::ExecuteUbergraph_Feedback(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Feedback.Feedback_C.ExecuteUbergraph_Feedback");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa44c6a8);
 
 	UFeedback_C_ExecuteUbergraph_Feedback_Params params;
 	params.EntryPoint = EntryPoint;

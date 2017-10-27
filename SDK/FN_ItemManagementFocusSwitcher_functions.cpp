@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemManagementFocusSwitcher_C::ExecuteFocusSwitch()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.ExecuteFocusSwitch");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf09f7b1c);
 
 	UItemManagementFocusSwitcher_C_ExecuteFocusSwitch_Params params;
 
@@ -34,7 +35,8 @@ void UItemManagementFocusSwitcher_C::ExecuteFocusSwitch()
 
 void UItemManagementFocusSwitcher_C::DeferFocusSwitch()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.DeferFocusSwitch");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d1e9b43);
 
 	UItemManagementFocusSwitcher_C_DeferFocusSwitch_Params params;
 
@@ -55,7 +57,8 @@ void UItemManagementFocusSwitcher_C::DeferFocusSwitch()
 
 struct FEventReply UItemManagementFocusSwitcher_C::OnFocusReceived(struct FGeometry* MyGeometry, struct FFocusEvent* InFocusEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementFocusSwitcher.ItemManagementFocusSwitcher_C.OnFocusReceived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33a31261);
 
 	UItemManagementFocusSwitcher_C_OnFocusReceived_Params params;
 	params.MyGeometry = MyGeometry;

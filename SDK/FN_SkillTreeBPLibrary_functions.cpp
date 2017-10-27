@@ -21,7 +21,8 @@ namespace SDK
 
 void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeIconSizeByMagnitude(EFortHomebaseNodeMagnitude Node_Magnitude, class UObject* __WorldContext, TEnumAsByte<EFortBrushSize>* Icon_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.GetSkillTreeNodeIconSizeByMagnitude");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30c712cf);
 
 	USkillTreeBPLibrary_C_GetSkillTreeNodeIconSizeByMagnitude_Params params;
 	params.Node_Magnitude = Node_Magnitude;
@@ -48,7 +49,8 @@ void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeIconSizeByMagnitude(EFortHome
 
 void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeShapeByDisplayType(EFortHomebaseNodeDisplayType Display_Type, class UObject* __WorldContext, bool* IsSquare, bool* IsExitNode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.GetSkillTreeNodeShapeByDisplayType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd39a81f6);
 
 	USkillTreeBPLibrary_C_GetSkillTreeNodeShapeByDisplayType_Params params;
 	params.Display_Type = Display_Type;
@@ -78,7 +80,8 @@ void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeShapeByDisplayType(EFortHomeb
 
 void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeSizeByMagnitude(EFortHomebaseNodeMagnitude Node_Magnitude, EFortHomebaseNodeDisplayType Display_Type, class UObject* World_Context, class UObject* __WorldContext, float* Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.GetSkillTreeNodeSizeByMagnitude");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee2ac912);
 
 	USkillTreeBPLibrary_C_GetSkillTreeNodeSizeByMagnitude_Params params;
 	params.Node_Magnitude = Node_Magnitude;
@@ -107,7 +110,8 @@ void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeSizeByMagnitude(EFortHomebase
 
 void USkillTreeBPLibrary_C::STATIC_UpdateSkillTreeNodeMaterial_DynamicData(class UObject* World_Context, class UMaterialInstanceDynamic* Material, const struct FHomebaseNodeState& NodeState, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.UpdateSkillTreeNodeMaterial_DynamicData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc8271ee);
 
 	USkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_DynamicData_Params params;
 	params.World_Context = World_Context;
@@ -132,7 +136,8 @@ void USkillTreeBPLibrary_C::STATIC_UpdateSkillTreeNodeMaterial_DynamicData(class
 
 void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeCostTint(const struct FHomebaseNode& HomebaseNode, class UObject* __WorldContext, struct FLinearColor* NodeTintColour)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.GetSkillTreeNodeCostTint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd03e6fc);
 
 	USkillTreeBPLibrary_C_GetSkillTreeNodeCostTint_Params params;
 	params.HomebaseNode = HomebaseNode;
@@ -161,7 +166,8 @@ void USkillTreeBPLibrary_C::STATIC_GetSkillTreeNodeCostTint(const struct FHomeba
 
 void USkillTreeBPLibrary_C::STATIC_UpdateSkillTreeNodeMaterial_StaticData(class UObject* World_Context, class UMaterialInstanceDynamic* Material, const struct FHomebaseNode& NodeData, const struct FFortSkillTreeNodeDisplayData& DisplayData, class UCommonButton* Button, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SkillTreeBPLibrary.SkillTreeBPLibrary_C.UpdateSkillTreeNodeMaterial_StaticData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdbd3cccd);
 
 	USkillTreeBPLibrary_C_UpdateSkillTreeNodeMaterial_StaticData_Params params;
 	params.World_Context = World_Context;

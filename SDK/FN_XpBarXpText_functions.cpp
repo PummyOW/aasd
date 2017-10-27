@@ -19,7 +19,8 @@ namespace SDK
 
 void UXpBarXpText_C::Get_Skill_Points_For_Next_Level(int* Next_Level_Skill_Points)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBarXpText.XpBarXpText_C.Get Skill Points For Next Level");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc50f6a63);
 
 	UXpBarXpText_C_Get_Skill_Points_For_Next_Level_Params params;
 
@@ -41,7 +42,8 @@ void UXpBarXpText_C::Get_Skill_Points_For_Next_Level(int* Next_Level_Skill_Point
 
 void UXpBarXpText_C::Update_Xp_Text(const struct FFortPublicAccountInfo& Account_Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBarXpText.XpBarXpText_C.Update Xp Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6eb6201);
 
 	UXpBarXpText_C_Update_Xp_Text_Params params;
 	params.Account_Info = Account_Info;
@@ -59,7 +61,8 @@ void UXpBarXpText_C::Update_Xp_Text(const struct FFortPublicAccountInfo& Account
 
 void UXpBarXpText_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBarXpText.XpBarXpText_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9542b776);
 
 	UXpBarXpText_C_Construct_Params params;
 
@@ -78,7 +81,8 @@ void UXpBarXpText_C::Construct()
 
 void UXpBarXpText_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBarXpText.XpBarXpText_C.HandleAccountUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x807d732d);
 
 	UXpBarXpText_C_HandleAccountUpdate_Params params;
 	params.NewInfo = NewInfo;
@@ -98,7 +102,8 @@ void UXpBarXpText_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& Ne
 
 void UXpBarXpText_C::ExecuteUbergraph_XpBarXpText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBarXpText.XpBarXpText_C.ExecuteUbergraph_XpBarXpText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22cf13bb);
 
 	UXpBarXpText_C_ExecuteUbergraph_XpBarXpText_Params params;
 	params.EntryPoint = EntryPoint;

@@ -34,7 +34,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass Results_BonusXpType.Results_BonusXpType_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56eadf95);
 		return ptr;
 	}
 

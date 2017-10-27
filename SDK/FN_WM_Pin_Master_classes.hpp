@@ -49,7 +49,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass WM_Pin_Master.WM_Pin_Master_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7b32be9);
 		return ptr;
 	}
 

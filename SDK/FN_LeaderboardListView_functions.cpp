@@ -17,7 +17,8 @@ namespace SDK
 
 void ULeaderboardListView_C::FocusListView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardListView.LeaderboardListView_C.FocusListView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e061bba);
 
 	ULeaderboardListView_C_FocusListView_Params params;
 

@@ -13,18 +13,19 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C
-// 0x0019 (0x29F9 - 0x29E0)
+// 0x0019 (0x28C9 - 0x28B0)
 class ABP_PlayerControllerOutpost_C : public AFortPlayerControllerOutpost
 {
 public:
-	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x29E0(0x0008) (CPF_Transient, CPF_DuplicateTransient)
-	class AOutpostStructureBase*                       NewVar_1;                                                 // 0x29E8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class AOutpostStructureBase*                       NewVar_2;                                                 // 0x29F0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               GetHelp;                                                  // 0x29F8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x28B0(0x0008) (CPF_Transient, CPF_DuplicateTransient)
+	class AOutpostStructureBase*                       NewVar_1;                                                 // 0x28B8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class AOutpostStructureBase*                       NewVar_2;                                                 // 0x28C0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	bool                                               GetHelp;                                                  // 0x28C8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42b5dca5);
 		return ptr;
 	}
 

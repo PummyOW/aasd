@@ -19,7 +19,8 @@ namespace SDK
 
 void URadialPicker_C::SetShowMouseCursor(bool InShowMouseCursor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.SetShowMouseCursor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e272dd3);
 
 	URadialPicker_C_SetShowMouseCursor_Params params;
 	params.InShowMouseCursor = InShowMouseCursor;
@@ -37,7 +38,8 @@ void URadialPicker_C::SetShowMouseCursor(bool InShowMouseCursor)
 
 void URadialPicker_C::SetPointerDirection()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.SetPointerDirection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda144079);
 
 	URadialPicker_C_SetPointerDirection_Params params;
 
@@ -56,7 +58,8 @@ void URadialPicker_C::SetPointerDirection()
 
 void URadialPicker_C::IsGamepadInPickerDeadZone(bool* bIsInDeadZone)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.IsGamepadInPickerDeadZone");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc92c2f1);
 
 	URadialPicker_C_IsGamepadInPickerDeadZone_Params params;
 
@@ -78,7 +81,8 @@ void URadialPicker_C::IsGamepadInPickerDeadZone(bool* bIsInDeadZone)
 
 void URadialPicker_C::MoveActiveOption(int MoveOptionDirection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.MoveActiveOption");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x85d4244f);
 
 	URadialPicker_C_MoveActiveOption_Params params;
 	params.MoveOptionDirection = MoveOptionDirection;
@@ -96,7 +100,8 @@ void URadialPicker_C::MoveActiveOption(int MoveOptionDirection)
 
 void URadialPicker_C::ResetInput()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.ResetInput");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9f9e582);
 
 	URadialPicker_C_ResetInput_Params params;
 
@@ -115,7 +120,8 @@ void URadialPicker_C::ResetInput()
 
 void URadialPicker_C::CanConfirm(bool* CanAccept)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.CanConfirm");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7354dfa3);
 
 	URadialPicker_C_CanConfirm_Params params;
 
@@ -135,7 +141,8 @@ void URadialPicker_C::CanConfirm(bool* CanAccept)
 
 void URadialPicker_C::SetInputMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.SetInputMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x657c1000);
 
 	URadialPicker_C_SetInputMode_Params params;
 
@@ -154,7 +161,8 @@ void URadialPicker_C::SetInputMode()
 
 void URadialPicker_C::SetActiveOption(int Option)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.SetActiveOption");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc60881a);
 
 	URadialPicker_C_SetActiveOption_Params params;
 	params.Option = Option;
@@ -172,7 +180,8 @@ void URadialPicker_C::SetActiveOption(int Option)
 
 void URadialPicker_C::ClearActiveOption()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.ClearActiveOption");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15719f69);
 
 	URadialPicker_C_ClearActiveOption_Params params;
 
@@ -192,7 +201,8 @@ void URadialPicker_C::ClearActiveOption()
 
 void URadialPicker_C::GetOptionAngle(int Option, float* Angle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.GetOptionAngle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x577cb235);
 
 	URadialPicker_C_GetOptionAngle_Params params;
 	params.Option = Option;
@@ -217,7 +227,8 @@ void URadialPicker_C::GetOptionAngle(int Option, float* Angle)
 
 void URadialPicker_C::GetAngleDifference(float AngleA, float AngleB, float* Difference)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.GetAngleDifference");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc418a3a9);
 
 	URadialPicker_C_GetAngleDifference_Params params;
 	params.AngleA = AngleA;
@@ -242,7 +253,8 @@ void URadialPicker_C::GetAngleDifference(float AngleA, float AngleB, float* Diff
 
 void URadialPicker_C::GetOptionPosition(int Option, struct FVector2D* Position)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.GetOptionPosition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14b0b9bd);
 
 	URadialPicker_C_GetOptionPosition_Params params;
 	params.Option = Option;
@@ -266,7 +278,8 @@ void URadialPicker_C::GetOptionPosition(int Option, struct FVector2D* Position)
 
 void URadialPicker_C::InitializePicker(EFortPickerMode PickerMode, int InitialOption)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.InitializePicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd24e58b1);
 
 	URadialPicker_C_InitializePicker_Params params;
 	params.PickerMode = PickerMode;
@@ -288,7 +301,8 @@ void URadialPicker_C::InitializePicker(EFortPickerMode PickerMode, int InitialOp
 
 void URadialPicker_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bcf923e);
 
 	URadialPicker_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -307,7 +321,8 @@ void URadialPicker_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void URadialPicker_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x984cbf94);
 
 	URadialPicker_C_Construct_Params params;
 
@@ -324,7 +339,8 @@ void URadialPicker_C::Construct()
 
 void URadialPicker_C::Event_AcceptOption()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.Event AcceptOption");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6aa1aa6);
 
 	URadialPicker_C_Event_AcceptOption_Params params;
 
@@ -341,7 +357,8 @@ void URadialPicker_C::Event_AcceptOption()
 
 void URadialPicker_C::Event_CancelPicker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.Event CancelPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b10e2d);
 
 	URadialPicker_C_Event_CancelPicker_Params params;
 
@@ -358,7 +375,8 @@ void URadialPicker_C::Event_CancelPicker()
 
 void URadialPicker_C::ClosePicker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.ClosePicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc042f581);
 
 	URadialPicker_C_ClosePicker_Params params;
 
@@ -377,7 +395,8 @@ void URadialPicker_C::ClosePicker()
 
 void URadialPicker_C::AcceptChosenOption(int PickerOption)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.AcceptChosenOption");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x962a3cf4);
 
 	URadialPicker_C_AcceptChosenOption_Params params;
 	params.PickerOption = PickerOption;
@@ -395,7 +414,8 @@ void URadialPicker_C::AcceptChosenOption(int PickerOption)
 
 void URadialPicker_C::OnPickerRefreshItems()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.OnPickerRefreshItems");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0d72153);
 
 	URadialPicker_C_OnPickerRefreshItems_Params params;
 
@@ -414,7 +434,8 @@ void URadialPicker_C::OnPickerRefreshItems()
 
 void URadialPicker_C::ExecuteUbergraph_RadialPicker(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPicker.RadialPicker_C.ExecuteUbergraph_RadialPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b56c272);
 
 	URadialPicker_C_ExecuteUbergraph_RadialPicker_Params params;
 	params.EntryPoint = EntryPoint;

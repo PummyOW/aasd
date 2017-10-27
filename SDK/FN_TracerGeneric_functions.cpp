@@ -19,7 +19,8 @@ namespace SDK
 
 class AFortPlayerPawn* ATracerGeneric_C::GetLocalPawnForPassBy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TracerGeneric.TracerGeneric_C.GetLocalPawnForPassBy");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc30c2e35);
 
 	ATracerGeneric_C_GetLocalPawnForPassBy_Params params;
 
@@ -38,7 +39,8 @@ class AFortPlayerPawn* ATracerGeneric_C::GetLocalPawnForPassBy()
 
 void ATracerGeneric_C::PlayPassBySound()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TracerGeneric.TracerGeneric_C.PlayPassBySound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8f5433a);
 
 	ATracerGeneric_C_PlayPassBySound_Params params;
 
@@ -58,7 +60,8 @@ void ATracerGeneric_C::PlayPassBySound()
 
 void ATracerGeneric_C::TrackPassBy(bool* Changed, float* Pass_Distance)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TracerGeneric.TracerGeneric_C.TrackPassBy");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33435c94);
 
 	ATracerGeneric_C_TrackPassBy_Params params;
 
@@ -80,7 +83,8 @@ void ATracerGeneric_C::TrackPassBy(bool* Changed, float* Pass_Distance)
 
 void ATracerGeneric_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TracerGeneric.TracerGeneric_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24239530);
 
 	ATracerGeneric_C_UserConstructionScript_Params params;
 
@@ -99,7 +103,8 @@ void ATracerGeneric_C::UserConstructionScript()
 
 void ATracerGeneric_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TracerGeneric.TracerGeneric_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12e8c17d);
 
 	ATracerGeneric_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -120,7 +125,8 @@ void ATracerGeneric_C::ReceiveTick(float* DeltaSeconds)
 
 void ATracerGeneric_C::OnInit(struct FVector* Start, struct FVector* End)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TracerGeneric.TracerGeneric_C.OnInit");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb599dd9e);
 
 	ATracerGeneric_C_OnInit_Params params;
 	params.Start = Start;
@@ -141,7 +147,8 @@ void ATracerGeneric_C::OnInit(struct FVector* Start, struct FVector* End)
 
 void ATracerGeneric_C::ExecuteUbergraph_TracerGeneric(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TracerGeneric.TracerGeneric_C.ExecuteUbergraph_TracerGeneric");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7cee283);
 
 	ATracerGeneric_C_ExecuteUbergraph_TracerGeneric_Params params;
 	params.EntryPoint = EntryPoint;

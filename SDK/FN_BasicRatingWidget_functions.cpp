@@ -19,7 +19,8 @@ namespace SDK
 
 void UBasicRatingWidget_C::Update_Power_Rating_Style(class UClass* InStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicRatingWidget.BasicRatingWidget_C.Update Power Rating Style");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7cf9ecd);
 
 	UBasicRatingWidget_C_Update_Power_Rating_Style_Params params;
 	params.InStyle = InStyle;
@@ -39,7 +40,8 @@ void UBasicRatingWidget_C::Update_Power_Rating_Style(class UClass* InStyle)
 
 void UBasicRatingWidget_C::Get_Current_Rating(float* CurrentNumericValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicRatingWidget.BasicRatingWidget_C.Get Current Rating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c0bf4d);
 
 	UBasicRatingWidget_C_Get_Current_Rating_Params params;
 
@@ -62,7 +64,8 @@ void UBasicRatingWidget_C::Get_Current_Rating(float* CurrentNumericValue)
 
 void UBasicRatingWidget_C::Update_Border_Color(const struct FLinearColor& Color1, const struct FLinearColor& Color2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicRatingWidget.BasicRatingWidget_C.Update Border Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4defb42b);
 
 	UBasicRatingWidget_C_Update_Border_Color_Params params;
 	params.Color1 = Color1;
@@ -83,7 +86,8 @@ void UBasicRatingWidget_C::Update_Border_Color(const struct FLinearColor& Color1
 
 void UBasicRatingWidget_C::Update_Power_Rating_Value(int Rating)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicRatingWidget.BasicRatingWidget_C.Update Power Rating Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3249c29);
 
 	UBasicRatingWidget_C_Update_Power_Rating_Value_Params params;
 	params.Rating = Rating;
@@ -103,7 +107,8 @@ void UBasicRatingWidget_C::Update_Power_Rating_Value(int Rating)
 
 void UBasicRatingWidget_C::GetBorderVisibility(ESlateVisibility* Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicRatingWidget.BasicRatingWidget_C.GetBorderVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4aaeccdb);
 
 	UBasicRatingWidget_C_GetBorderVisibility_Params params;
 
@@ -125,7 +130,8 @@ void UBasicRatingWidget_C::GetBorderVisibility(ESlateVisibility* Visibility)
 
 void UBasicRatingWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicRatingWidget.BasicRatingWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41ec45fd);
 
 	UBasicRatingWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -145,7 +151,8 @@ void UBasicRatingWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UBasicRatingWidget_C::ExecuteUbergraph_BasicRatingWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicRatingWidget.BasicRatingWidget_C.ExecuteUbergraph_BasicRatingWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca98a7dc);
 
 	UBasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget_Params params;
 	params.EntryPoint = EntryPoint;

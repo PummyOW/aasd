@@ -17,7 +17,8 @@ namespace SDK
 
 void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_BlendListByBool_D165706F485A4C579E56468E9B4786F9()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M_MED_BLK_Sydney_01_Skeleton_AnimBP.M_MED_BLK_Sydney_01_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_BlendListByBool_D165706F485A4C579E56468E9B4786F9");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6de9afa6);
 
 	UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_BlendListByBool_D165706F485A4C579E56468E9B4786F9_Params params;
 
@@ -34,7 +35,8 @@ void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteU
 
 void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_FA82137D403C3565CD766E8DEE9CA7BE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M_MED_BLK_Sydney_01_Skeleton_AnimBP.M_MED_BLK_Sydney_01_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_FA82137D403C3565CD766E8DEE9CA7BE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x270bde41);
 
 	UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_FA82137D403C3565CD766E8DEE9CA7BE_Params params;
 
@@ -51,7 +53,8 @@ void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteU
 
 void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::Playface()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M_MED_BLK_Sydney_01_Skeleton_AnimBP.M_MED_BLK_Sydney_01_Skeleton_AnimBP_C.Playface");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcaa0d3ca);
 
 	UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C_Playface_Params params;
 
@@ -68,7 +71,8 @@ void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::Playface()
 
 void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_205F747E477B9AB23F0ACEB95679AF9F()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M_MED_BLK_Sydney_01_Skeleton_AnimBP.M_MED_BLK_Sydney_01_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_205F747E477B9AB23F0ACEB95679AF9F");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49a5dec0);
 
 	UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_205F747E477B9AB23F0ACEB95679AF9F_Params params;
 
@@ -85,7 +89,8 @@ void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteU
 
 void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::BlueprintInitializeAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M_MED_BLK_Sydney_01_Skeleton_AnimBP.M_MED_BLK_Sydney_01_Skeleton_AnimBP_C.BlueprintInitializeAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e274980);
 
 	UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C_BlueprintInitializeAnimation_Params params;
 
@@ -104,7 +109,8 @@ void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::BlueprintInitializeAnimation()
 
 void UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C::ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function M_MED_BLK_Sydney_01_Skeleton_AnimBP.M_MED_BLK_Sydney_01_Skeleton_AnimBP_C.ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45d4dd4);
 
 	UM_MED_BLK_Sydney_01_Skeleton_AnimBP_C_ExecuteUbergraph_M_MED_BLK_Sydney_01_Skeleton_AnimBP_Params params;
 	params.EntryPoint = EntryPoint;

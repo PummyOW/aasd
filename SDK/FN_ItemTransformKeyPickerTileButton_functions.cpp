@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemTransformKeyPickerTileButton_C::Get_Fort_PC(class AFortPlayerController** FortPC)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Get Fort PC");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8003db67);
 
 	UItemTransformKeyPickerTileButton_C_Get_Fort_PC_Params params;
 
@@ -41,7 +42,8 @@ void UItemTransformKeyPickerTileButton_C::Get_Fort_PC(class AFortPlayerControlle
 
 struct FGameplayTagContainer UItemTransformKeyPickerTileButton_C::Get_Transform_Key_Catalysts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Get Transform Key Catalysts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe65042dc);
 
 	UItemTransformKeyPickerTileButton_C_Get_Transform_Key_Catalysts_Params params;
 
@@ -60,7 +62,8 @@ struct FGameplayTagContainer UItemTransformKeyPickerTileButton_C::Get_Transform_
 
 void UItemTransformKeyPickerTileButton_C::Mark_Item_as_Seen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Mark Item as Seen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x252115ac);
 
 	UItemTransformKeyPickerTileButton_C_Mark_Item_as_Seen_Params params;
 
@@ -79,7 +82,8 @@ void UItemTransformKeyPickerTileButton_C::Mark_Item_as_Seen()
 
 void UItemTransformKeyPickerTileButton_C::Is_Transform_Key_Consumable(bool* bConsumedOnConversion)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Is Transform Key Consumable");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f6145b7);
 
 	UItemTransformKeyPickerTileButton_C_Is_Transform_Key_Consumable_Params params;
 
@@ -101,7 +105,8 @@ void UItemTransformKeyPickerTileButton_C::Is_Transform_Key_Consumable(bool* bCon
 
 void UItemTransformKeyPickerTileButton_C::Get_Transform_Key(class UFortAccountItem** AsFort_Account_Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Get Transform Key");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b320c08);
 
 	UItemTransformKeyPickerTileButton_C_Get_Transform_Key_Params params;
 
@@ -121,7 +126,8 @@ void UItemTransformKeyPickerTileButton_C::Get_Transform_Key(class UFortAccountIt
 
 void UItemTransformKeyPickerTileButton_C::Update_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.Update Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5242a8d);
 
 	UItemTransformKeyPickerTileButton_C_Update_Bang_State_Params params;
 
@@ -141,7 +147,8 @@ void UItemTransformKeyPickerTileButton_C::Update_Bang_State()
 
 void UItemTransformKeyPickerTileButton_C::SetData(class UObject** InData, class UCommonListView** OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef3402f1);
 
 	UItemTransformKeyPickerTileButton_C_SetData_Params params;
 	params.InData = InData;
@@ -160,7 +167,8 @@ void UItemTransformKeyPickerTileButton_C::SetData(class UObject** InData, class 
 
 void UItemTransformKeyPickerTileButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd63347fb);
 
 	UItemTransformKeyPickerTileButton_C_OnSelected_Params params;
 
@@ -177,7 +185,8 @@ void UItemTransformKeyPickerTileButton_C::OnSelected()
 
 void UItemTransformKeyPickerTileButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24cc15e9);
 
 	UItemTransformKeyPickerTileButton_C_OnHovered_Params params;
 
@@ -196,7 +205,8 @@ void UItemTransformKeyPickerTileButton_C::OnHovered()
 
 void UItemTransformKeyPickerTileButton_C::ExecuteUbergraph_ItemTransformKeyPickerTileButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPickerTileButton.ItemTransformKeyPickerTileButton_C.ExecuteUbergraph_ItemTransformKeyPickerTileButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44124639);
 
 	UItemTransformKeyPickerTileButton_C_ExecuteUbergraph_ItemTransformKeyPickerTileButton_Params params;
 	params.EntryPoint = EntryPoint;

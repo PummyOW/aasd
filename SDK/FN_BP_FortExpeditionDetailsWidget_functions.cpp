@@ -24,7 +24,8 @@ namespace SDK
 
 void UBP_FortExpeditionDetailsWidget_C::Get_Bonus_Display_Name_and_Brush(const struct FGameplayTag& Tag, bool Condition, EFortRarity Rarity, struct FSlateBrush* OutBrush_Brush_M, struct FText* OutDisplayName, struct FLinearColor* OutRarityColor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Get Bonus Display Name and Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63c2399a);
 
 	UBP_FortExpeditionDetailsWidget_C_Get_Bonus_Display_Name_and_Brush_Params params;
 	params.Tag = Tag;
@@ -53,7 +54,8 @@ void UBP_FortExpeditionDetailsWidget_C::Get_Bonus_Display_Name_and_Brush(const s
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Bonus_Criteria(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Bonus Criteria");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x754005ad);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Bonus_Criteria_Params params;
 	params.Item = Item;
@@ -73,7 +75,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Bonus_Criteria(class UFortExpedition
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Expedition_Returns_Data(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Expedition Returns Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2349a1c3);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Expedition_Returns_Data_Params params;
 	params.Item = Item;
@@ -93,7 +96,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Expedition_Returns_Data(class UFortE
 
 void UBP_FortExpeditionDetailsWidget_C::Set_In_Progress_State(class UFortExpeditionItem* self2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set In Progress State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30ee571a);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_In_Progress_State_Params params;
 	params.self2 = self2;
@@ -113,7 +117,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_In_Progress_State(class UFortExpedit
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Remaining_Expiration_Time(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Remaining Expiration Time");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a92ec55);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Remaining_Expiration_Time_Params params;
 	params.Item = Item;
@@ -133,7 +138,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Remaining_Expiration_Time(class UFor
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Requirements(class UFortExpeditionItemDefinition* ItemDef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Requirements");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92981af9);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Requirements_Params params;
 	params.ItemDef = ItemDef;
@@ -151,7 +157,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Requirements(class UFortExpeditionIt
 
 void UBP_FortExpeditionDetailsWidget_C::Open_Build_Expedition_Squad()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Open Build Expedition Squad");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x693fb500);
 
 	UBP_FortExpeditionDetailsWidget_C_Open_Build_Expedition_Squad_Params params;
 
@@ -170,7 +177,8 @@ void UBP_FortExpeditionDetailsWidget_C::Open_Build_Expedition_Squad()
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Rating(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Rating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19174192);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Rating_Params params;
 	params.Item = Item;
@@ -190,7 +198,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Rating(class UFortExpeditionItem* It
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Rewards(class UFortExpeditionItemDefinition* Item_Def)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Rewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc07342b);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Rewards_Params params;
 	params.Item_Def = Item_Def;
@@ -210,7 +219,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Rewards(class UFortExpeditionItemDef
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Expedition_Duration(class UFortExpeditionItemDefinition* Item_Def)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Expedition Duration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac427874);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Expedition_Duration_Params params;
 	params.Item_Def = Item_Def;
@@ -231,7 +241,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Expedition_Duration(class UFortExped
 
 void UBP_FortExpeditionDetailsWidget_C::Get_Expedition_Item_Definition(class UFortItem* Item, class UFortExpeditionItemDefinition** Item_Def)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Get Expedition Item Definition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32b54260);
 
 	UBP_FortExpeditionDetailsWidget_C_Get_Expedition_Item_Definition_Params params;
 	params.Item = Item;
@@ -254,7 +265,8 @@ void UBP_FortExpeditionDetailsWidget_C::Get_Expedition_Item_Definition(class UFo
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Description(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Description");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x664d0431);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Description_Params params;
 	params.Item = Item;
@@ -274,7 +286,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Description(class UFortItem* Item)
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Rarity(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Rarity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58c2627c);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Rarity_Params params;
 	params.Item = Item;
@@ -294,7 +307,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Rarity(class UFortItem* Item)
 
 void UBP_FortExpeditionDetailsWidget_C::Set_Name(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Set Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ce1d0cc);
 
 	UBP_FortExpeditionDetailsWidget_C_Set_Name_Params params;
 	params.Item = Item;
@@ -312,7 +326,8 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Name(class UFortItem* Item)
 
 void UBP_FortExpeditionDetailsWidget_C::Refresh_Item_Data()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Refresh Item Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66b8815d);
 
 	UBP_FortExpeditionDetailsWidget_C_Refresh_Item_Data_Params params;
 
@@ -334,7 +349,8 @@ void UBP_FortExpeditionDetailsWidget_C::Refresh_Item_Data()
 
 void UBP_FortExpeditionDetailsWidget_C::DialogResult_11B7688B48FDD9A59A2D55A7B4F60124(EFortDialogResult Result, const struct FName& ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.DialogResult_11B7688B48FDD9A59A2D55A7B4F60124");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63f34968);
 
 	UBP_FortExpeditionDetailsWidget_C_DialogResult_11B7688B48FDD9A59A2D55A7B4F60124_Params params;
 	params.Result = Result;
@@ -357,7 +373,8 @@ void UBP_FortExpeditionDetailsWidget_C::DialogResult_11B7688B48FDD9A59A2D55A7B4F
 
 void UBP_FortExpeditionDetailsWidget_C::SetData(class UFortExpeditionItem** InItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3bcd827);
 
 	UBP_FortExpeditionDetailsWidget_C_SetData_Params params;
 	params.InItem = InItem;
@@ -377,7 +394,8 @@ void UBP_FortExpeditionDetailsWidget_C::SetData(class UFortExpeditionItem** InIt
 
 void UBP_FortExpeditionDetailsWidget_C::HandleOnExpeditionCompleted(class UFortExpeditionItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.HandleOnExpeditionCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa56a8cec);
 
 	UBP_FortExpeditionDetailsWidget_C_HandleOnExpeditionCompleted_Params params;
 	params.Item = Item;
@@ -397,7 +415,8 @@ void UBP_FortExpeditionDetailsWidget_C::HandleOnExpeditionCompleted(class UFortE
 
 void UBP_FortExpeditionDetailsWidget_C::BndEvt__ViewInfoButton_NoText_K2Node_ComponentBoundEvent_223_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.BndEvt__ViewInfoButton_NoText_K2Node_ComponentBoundEvent_223_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38667d16);
 
 	UBP_FortExpeditionDetailsWidget_C_BndEvt__ViewInfoButton_NoText_K2Node_ComponentBoundEvent_223_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -415,7 +434,8 @@ void UBP_FortExpeditionDetailsWidget_C::BndEvt__ViewInfoButton_NoText_K2Node_Com
 
 void UBP_FortExpeditionDetailsWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a5ff2b0);
 
 	UBP_FortExpeditionDetailsWidget_C_Construct_Params params;
 
@@ -432,7 +452,8 @@ void UBP_FortExpeditionDetailsWidget_C::Construct()
 
 void UBP_FortExpeditionDetailsWidget_C::HandleAbandonExpedition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.HandleAbandonExpedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2088863);
 
 	UBP_FortExpeditionDetailsWidget_C_HandleAbandonExpedition_Params params;
 
@@ -449,7 +470,8 @@ void UBP_FortExpeditionDetailsWidget_C::HandleAbandonExpedition()
 
 void UBP_FortExpeditionDetailsWidget_C::OnAbandonExpeditionCompleted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.OnAbandonExpeditionCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a598903);
 
 	UBP_FortExpeditionDetailsWidget_C_OnAbandonExpeditionCompleted_Params params;
 
@@ -468,7 +490,8 @@ void UBP_FortExpeditionDetailsWidget_C::OnAbandonExpeditionCompleted()
 
 void UBP_FortExpeditionDetailsWidget_C::ExecuteUbergraph_BP_FortExpeditionDetailsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.ExecuteUbergraph_BP_FortExpeditionDetailsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cd38c12);
 
 	UBP_FortExpeditionDetailsWidget_C_ExecuteUbergraph_BP_FortExpeditionDetailsWidget_Params params;
 	params.EntryPoint = EntryPoint;

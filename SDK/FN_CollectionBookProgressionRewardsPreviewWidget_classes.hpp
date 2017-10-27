@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass CollectionBookProgressionRewardsPreviewWidget.CollectionBookProgressionRewardsPreviewWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdb2f6ab5);
 		return ptr;
 	}
 

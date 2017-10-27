@@ -46,7 +46,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x657e2765);
 		return ptr;
 	}
 

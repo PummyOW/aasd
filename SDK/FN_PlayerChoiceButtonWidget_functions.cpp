@@ -21,7 +21,8 @@ namespace SDK
 
 void UPlayerChoiceButtonWidget_C::ConfigureChoice(const struct FChoiceDataEntry& Choice, int ChoiceID, class UPlayerChoiceWidget_C* Owner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceButtonWidget.PlayerChoiceButtonWidget_C.ConfigureChoice");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b078e60);
 
 	UPlayerChoiceButtonWidget_C_ConfigureChoice_Params params;
 	params.Choice = Choice;
@@ -43,7 +44,8 @@ void UPlayerChoiceButtonWidget_C::ConfigureChoice(const struct FChoiceDataEntry&
 
 void UPlayerChoiceButtonWidget_C::BndEvt__Button_K2Node_ComponentBoundEvent_98_FortBaseButtonClicked__DelegateSignature(class UFortBaseButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceButtonWidget.PlayerChoiceButtonWidget_C.BndEvt__Button_K2Node_ComponentBoundEvent_98_FortBaseButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5d82577);
 
 	UPlayerChoiceButtonWidget_C_BndEvt__Button_K2Node_ComponentBoundEvent_98_FortBaseButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -63,7 +65,8 @@ void UPlayerChoiceButtonWidget_C::BndEvt__Button_K2Node_ComponentBoundEvent_98_F
 
 void UPlayerChoiceButtonWidget_C::ExecuteUbergraph_PlayerChoiceButtonWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceButtonWidget.PlayerChoiceButtonWidget_C.ExecuteUbergraph_PlayerChoiceButtonWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb45e3511);
 
 	UPlayerChoiceButtonWidget_C_ExecuteUbergraph_PlayerChoiceButtonWidget_Params params;
 	params.EntryPoint = EntryPoint;

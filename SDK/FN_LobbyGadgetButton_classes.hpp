@@ -29,7 +29,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass LobbyGadgetButton.LobbyGadgetButton_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x767ea135);
 		return ptr;
 	}
 

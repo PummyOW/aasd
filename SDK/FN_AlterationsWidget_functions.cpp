@@ -17,7 +17,8 @@ namespace SDK
 
 void UAlterationsWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationsWidget.AlterationsWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6248896);
 
 	UAlterationsWidget_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UAlterationsWidget_C::Construct()
 
 void UAlterationsWidget_C::OnGenerateAlteration(struct FFortUIAlteration* AlterationInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationsWidget.AlterationsWidget_C.OnGenerateAlteration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef19cbca);
 
 	UAlterationsWidget_C_OnGenerateAlteration_Params params;
 	params.AlterationInfo = AlterationInfo;
@@ -54,7 +56,8 @@ void UAlterationsWidget_C::OnGenerateAlteration(struct FFortUIAlteration* Altera
 
 void UAlterationsWidget_C::OnItemChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationsWidget.AlterationsWidget_C.OnItemChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x931865d7);
 
 	UAlterationsWidget_C_OnItemChanged_Params params;
 
@@ -71,7 +74,8 @@ void UAlterationsWidget_C::OnItemChanged()
 
 void UAlterationsWidget_C::OnItemToCompareWithChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationsWidget.AlterationsWidget_C.OnItemToCompareWithChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1034e6b1);
 
 	UAlterationsWidget_C_OnItemToCompareWithChanged_Params params;
 
@@ -88,7 +92,8 @@ void UAlterationsWidget_C::OnItemToCompareWithChanged()
 
 void UAlterationsWidget_C::OnStateChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationsWidget.AlterationsWidget_C.OnStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7a35d81);
 
 	UAlterationsWidget_C_OnStateChanged_Params params;
 
@@ -107,7 +112,8 @@ void UAlterationsWidget_C::OnStateChanged()
 
 void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationsWidget.AlterationsWidget_C.ExecuteUbergraph_AlterationsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e615a53);
 
 	UAlterationsWidget_C_ExecuteUbergraph_AlterationsWidget_Params params;
 	params.EntryPoint = EntryPoint;

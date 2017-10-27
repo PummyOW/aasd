@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemStackCounter_C::Refresh_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemStackCounter.ItemStackCounter_C.Refresh Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad231e36);
 
 	UItemStackCounter_C_Refresh_Visibility_Params params;
 
@@ -36,7 +37,8 @@ void UItemStackCounter_C::Refresh_Visibility()
 
 void UItemStackCounter_C::Set_Stack_Count(int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemStackCounter.ItemStackCounter_C.Set Stack Count");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a18d50a);
 
 	UItemStackCounter_C_Set_Stack_Count_Params params;
 	params.Count = Count;
@@ -57,7 +59,8 @@ void UItemStackCounter_C::Set_Stack_Count(int Count)
 
 void UItemStackCounter_C::Update(TEnumAsByte<EFortBrushSize> Brush_Size, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemStackCounter.ItemStackCounter_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fe4d25e);
 
 	UItemStackCounter_C_Update_Params params;
 	params.Brush_Size = Brush_Size;
@@ -78,7 +81,8 @@ void UItemStackCounter_C::Update(TEnumAsByte<EFortBrushSize> Brush_Size, int Cou
 
 void UItemStackCounter_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemStackCounter.ItemStackCounter_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17bc12cb);
 
 	UItemStackCounter_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -98,7 +102,8 @@ void UItemStackCounter_C::PreConstruct(bool* IsDesignTime)
 
 void UItemStackCounter_C::ExecuteUbergraph_ItemStackCounter(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemStackCounter.ItemStackCounter_C.ExecuteUbergraph_ItemStackCounter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ebce0cc);
 
 	UItemStackCounter_C_ExecuteUbergraph_ItemStackCounter_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass CCTeamStatsGameplayEffect.CCTeamStatsGameplayEffect_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe19c74b1);
 		return ptr;
 	}
 

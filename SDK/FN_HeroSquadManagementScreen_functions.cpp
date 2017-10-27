@@ -19,7 +19,8 @@ namespace SDK
 
 void UHeroSquadManagementScreen_C::UpdateSquadSlotInfoPanel(int SquadSlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.UpdateSquadSlotInfoPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8621f268);
 
 	UHeroSquadManagementScreen_C_UpdateSquadSlotInfoPanel_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;
@@ -37,7 +38,8 @@ void UHeroSquadManagementScreen_C::UpdateSquadSlotInfoPanel(int SquadSlotIndex)
 
 void UHeroSquadManagementScreen_C::Update_Hero_Squad_Bonus_Highlight_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.Update Hero Squad Bonus Highlight State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x264f2188);
 
 	UHeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Highlight_State_Params params;
 
@@ -54,7 +56,8 @@ void UHeroSquadManagementScreen_C::Update_Hero_Squad_Bonus_Highlight_State()
 
 void UHeroSquadManagementScreen_C::Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.Update Hero Squad Bonus Tiles SubIcon Glow State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd3a2e1b);
 
 	UHeroSquadManagementScreen_C_Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_State_Params params;
 
@@ -71,7 +74,8 @@ void UHeroSquadManagementScreen_C::Update_Hero_Squad_Bonus_Tiles_SubIcon_Glow_St
 
 void UHeroSquadManagementScreen_C::HideSlotInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.HideSlotInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x708dfbcb);
 
 	UHeroSquadManagementScreen_C_HideSlotInfo_Params params;
 
@@ -91,7 +95,8 @@ void UHeroSquadManagementScreen_C::HideSlotInfo()
 
 void UHeroSquadManagementScreen_C::ShowSlotInfo(const struct FText& HeaderText, const struct FText& BodyText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.ShowSlotInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa7cfd1c);
 
 	UHeroSquadManagementScreen_C_ShowSlotInfo_Params params;
 	params.HeaderText = HeaderText;
@@ -112,7 +117,8 @@ void UHeroSquadManagementScreen_C::ShowSlotInfo(const struct FText& HeaderText, 
 
 void UHeroSquadManagementScreen_C::HandleClosePicker(bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.HandleClosePicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a1a9669);
 
 	UHeroSquadManagementScreen_C_HandleClosePicker_Params params;
 
@@ -134,7 +140,8 @@ void UHeroSquadManagementScreen_C::HandleClosePicker(bool* bPassThrough)
 
 ESlateVisibility UHeroSquadManagementScreen_C::GetInZoneVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.GetInZoneVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75684cde);
 
 	UHeroSquadManagementScreen_C_GetInZoneVisibility_Params params;
 
@@ -153,7 +160,8 @@ ESlateVisibility UHeroSquadManagementScreen_C::GetInZoneVisibility()
 
 void UHeroSquadManagementScreen_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3241aa5);
 
 	UHeroSquadManagementScreen_C_OnActivated_Params params;
 
@@ -170,7 +178,8 @@ void UHeroSquadManagementScreen_C::OnActivated()
 
 void UHeroSquadManagementScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19169ece);
 
 	UHeroSquadManagementScreen_C_Construct_Params params;
 
@@ -187,7 +196,8 @@ void UHeroSquadManagementScreen_C::Construct()
 
 void UHeroSquadManagementScreen_C::SetDefaultScroll()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.SetDefaultScroll");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe098f88f);
 
 	UHeroSquadManagementScreen_C_SetDefaultScroll_Params params;
 
@@ -204,7 +214,8 @@ void UHeroSquadManagementScreen_C::SetDefaultScroll()
 
 void UHeroSquadManagementScreen_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb46b2efa);
 
 	UHeroSquadManagementScreen_C_OnDeactivated_Params params;
 
@@ -221,7 +232,8 @@ void UHeroSquadManagementScreen_C::OnDeactivated()
 
 void UHeroSquadManagementScreen_C::HandleSquadSlotPickerShown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.HandleSquadSlotPickerShown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8b1ff46);
 
 	UHeroSquadManagementScreen_C_HandleSquadSlotPickerShown_Params params;
 
@@ -238,7 +250,8 @@ void UHeroSquadManagementScreen_C::HandleSquadSlotPickerShown()
 
 void UHeroSquadManagementScreen_C::HandleSquadSlotPickerHidden()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.HandleSquadSlotPickerHidden");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x605791ff);
 
 	UHeroSquadManagementScreen_C_HandleSquadSlotPickerHidden_Params params;
 
@@ -257,7 +270,8 @@ void UHeroSquadManagementScreen_C::HandleSquadSlotPickerHidden()
 
 void UHeroSquadManagementScreen_C::BndEvt__SquadSlotsView_K2Node_ComponentBoundEvent_2_OnDifferentSquadSlotSelected__DelegateSignature(int SquadSlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.BndEvt__SquadSlotsView_K2Node_ComponentBoundEvent_2_OnDifferentSquadSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5dce898);
 
 	UHeroSquadManagementScreen_C_BndEvt__SquadSlotsView_K2Node_ComponentBoundEvent_2_OnDifferentSquadSlotSelected__DelegateSignature_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;
@@ -277,7 +291,8 @@ void UHeroSquadManagementScreen_C::BndEvt__SquadSlotsView_K2Node_ComponentBoundE
 
 void UHeroSquadManagementScreen_C::ExecuteUbergraph_HeroSquadManagementScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadManagementScreen.HeroSquadManagementScreen_C.ExecuteUbergraph_HeroSquadManagementScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27b5329e);
 
 	UHeroSquadManagementScreen_C_ExecuteUbergraph_HeroSquadManagementScreen_Params params;
 	params.EntryPoint = EntryPoint;

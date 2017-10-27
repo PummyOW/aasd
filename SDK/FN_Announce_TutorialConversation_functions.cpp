@@ -19,7 +19,8 @@ namespace SDK
 
 void AAnnounce_TutorialConversation_C::HandleSentenceStop_UI(int SentenceIdx)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.HandleSentenceStop_UI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2474a7c7);
 
 	AAnnounce_TutorialConversation_C_HandleSentenceStop_UI_Params params;
 	params.SentenceIdx = SentenceIdx;
@@ -39,7 +40,8 @@ void AAnnounce_TutorialConversation_C::HandleSentenceStop_UI(int SentenceIdx)
 
 void AAnnounce_TutorialConversation_C::HandleSentenceStart_UI(int SentenceIdx)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.HandleSentenceStart_UI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50da3107);
 
 	AAnnounce_TutorialConversation_C_HandleSentenceStart_UI_Params params;
 	params.SentenceIdx = SentenceIdx;
@@ -57,7 +59,8 @@ void AAnnounce_TutorialConversation_C::HandleSentenceStart_UI(int SentenceIdx)
 
 void AAnnounce_TutorialConversation_C::InitAnnouncement()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.InitAnnouncement");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc21c4af0);
 
 	AAnnounce_TutorialConversation_C_InitAnnouncement_Params params;
 
@@ -74,7 +77,8 @@ void AAnnounce_TutorialConversation_C::InitAnnouncement()
 
 void AAnnounce_TutorialConversation_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x607589a8);
 
 	AAnnounce_TutorialConversation_C_UserConstructionScript_Params params;
 
@@ -91,7 +95,8 @@ void AAnnounce_TutorialConversation_C::UserConstructionScript()
 
 void AAnnounce_TutorialConversation_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb766c0);
 
 	AAnnounce_TutorialConversation_C_OnClientAnnouncementStart_Params params;
 
@@ -111,7 +116,8 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStart()
 
 void AAnnounce_TutorialConversation_C::OnSentenceStarted(struct FFortConversationSentence* Sentence, int* SentenceIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnSentenceStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x998e89c2);
 
 	AAnnounce_TutorialConversation_C_OnSentenceStarted_Params params;
 	params.Sentence = Sentence;
@@ -133,7 +139,8 @@ void AAnnounce_TutorialConversation_C::OnSentenceStarted(struct FFortConversatio
 
 void AAnnounce_TutorialConversation_C::OnConversationFinished(struct FFortConversationSentence* FinishingSentence, int* FinishingSentenceSentenceIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnConversationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf92b33);
 
 	AAnnounce_TutorialConversation_C_OnConversationFinished_Params params;
 	params.FinishingSentence = FinishingSentence;
@@ -155,7 +162,8 @@ void AAnnounce_TutorialConversation_C::OnConversationFinished(struct FFortConver
 
 void AAnnounce_TutorialConversation_C::OnSentenceFinished(struct FFortConversationSentence* Sentence, int* SentenceIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnSentenceFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97299c91);
 
 	AAnnounce_TutorialConversation_C_OnSentenceFinished_Params params;
 	params.Sentence = Sentence;
@@ -174,7 +182,8 @@ void AAnnounce_TutorialConversation_C::OnSentenceFinished(struct FFortConversati
 
 void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.OnClientAnnouncementStop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89a3974c);
 
 	AAnnounce_TutorialConversation_C_OnClientAnnouncementStop_Params params;
 
@@ -193,7 +202,8 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 
 void AAnnounce_TutorialConversation_C::ExecuteUbergraph_Announce_TutorialConversation(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_TutorialConversation.Announce_TutorialConversation_C.ExecuteUbergraph_Announce_TutorialConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74971936);
 
 	AAnnounce_TutorialConversation_C_ExecuteUbergraph_Announce_TutorialConversation_Params params;
 	params.EntryPoint = EntryPoint;

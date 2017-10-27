@@ -17,7 +17,8 @@ namespace SDK
 
 void UXpBoosts_C::Activate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Activate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x504ff6b8);
 
 	UXpBoosts_C_Activate_Params params;
 
@@ -34,7 +35,8 @@ void UXpBoosts_C::Activate()
 
 void UXpBoosts_C::Update_Total_Boosts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Update Total Boosts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x419c172);
 
 	UXpBoosts_C_Update_Total_Boosts_Params params;
 
@@ -51,7 +53,8 @@ void UXpBoosts_C::Update_Total_Boosts()
 
 void UXpBoosts_C::Unbind_Party_Delegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Unbind Party Delegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3168ac63);
 
 	UXpBoosts_C_Unbind_Party_Delegates_Params params;
 
@@ -70,7 +73,8 @@ void UXpBoosts_C::Unbind_Party_Delegates()
 
 void UXpBoosts_C::HandleOnTeamMemberStateChanged(const struct FFortTeamMemberInfo& NewMemberState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.HandleOnTeamMemberStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe21340ae);
 
 	UXpBoosts_C_HandleOnTeamMemberStateChanged_Params params;
 	params.NewMemberState = NewMemberState;
@@ -88,7 +92,8 @@ void UXpBoosts_C::HandleOnTeamMemberStateChanged(const struct FFortTeamMemberInf
 
 void UXpBoosts_C::Update_Total_Boost_Amounts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Update Total Boost Amounts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefdc9114);
 
 	UXpBoosts_C_Update_Total_Boost_Amounts_Params params;
 
@@ -107,7 +112,8 @@ void UXpBoosts_C::Update_Total_Boost_Amounts()
 
 void UXpBoosts_C::HandleRemotePlayerRemoved(int RemovedIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.HandleRemotePlayerRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x39aa9ea8);
 
 	UXpBoosts_C_HandleRemotePlayerRemoved_Params params;
 	params.RemovedIndex = RemovedIndex;
@@ -125,7 +131,8 @@ void UXpBoosts_C::HandleRemotePlayerRemoved(int RemovedIndex)
 
 void UXpBoosts_C::Bind_Party_Delegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Bind Party Delegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecaaebae);
 
 	UXpBoosts_C_Bind_Party_Delegates_Params params;
 
@@ -142,7 +149,8 @@ void UXpBoosts_C::Bind_Party_Delegates()
 
 void UXpBoosts_C::Update_Current_Boosts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Update Current Boosts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8de353bd);
 
 	UXpBoosts_C_Update_Current_Boosts_Params params;
 
@@ -159,7 +167,8 @@ void UXpBoosts_C::Update_Current_Boosts()
 
 void UXpBoosts_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf9111de);
 
 	UXpBoosts_C_Construct_Params params;
 
@@ -174,14 +183,15 @@ void UXpBoosts_C::Construct()
 // Function XpBoosts.XpBoosts_C.Give Boost Clicked
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl        Player_To_Boost                (CPF_Parm)
+// struct FUniqueNetIdRepl        Player_to_Boost                (CPF_Parm)
 
-void UXpBoosts_C::Give_Boost_Clicked(const struct FUniqueNetIdRepl& Player_To_Boost)
+void UXpBoosts_C::Give_Boost_Clicked(const struct FUniqueNetIdRepl& Player_to_Boost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Give Boost Clicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x266b1a8a);
 
 	UXpBoosts_C_Give_Boost_Clicked_Params params;
-	params.Player_To_Boost = Player_To_Boost;
+	params.Player_to_Boost = Player_to_Boost;
 
 	auto flags = fn->FunctionFlags;
 
@@ -196,7 +206,8 @@ void UXpBoosts_C::Give_Boost_Clicked(const struct FUniqueNetIdRepl& Player_To_Bo
 
 void UXpBoosts_C::On_Party_Left()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.On Party Left");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbec3eadf);
 
 	UXpBoosts_C_On_Party_Left_Params params;
 
@@ -213,7 +224,8 @@ void UXpBoosts_C::On_Party_Left()
 
 void UXpBoosts_C::On_Party_Joined()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.On Party Joined");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5eae318f);
 
 	UXpBoosts_C_On_Party_Joined_Params params;
 
@@ -232,7 +244,8 @@ void UXpBoosts_C::On_Party_Joined()
 
 void UXpBoosts_C::Xp_Boost_Changed(int BoostAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.Xp Boost Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4696e8e);
 
 	UXpBoosts_C_Xp_Boost_Changed_Params params;
 	params.BoostAmount = BoostAmount;
@@ -252,7 +265,8 @@ void UXpBoosts_C::Xp_Boost_Changed(int BoostAmount)
 
 void UXpBoosts_C::ExecuteUbergraph_XpBoosts(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoosts.XpBoosts_C.ExecuteUbergraph_XpBoosts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a454c8f);
 
 	UXpBoosts_C_ExecuteUbergraph_XpBoosts_Params params;
 	params.EntryPoint = EntryPoint;

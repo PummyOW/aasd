@@ -17,7 +17,8 @@ namespace SDK
 
 void UStoreMain_MTXOffer_C::ShowDetails()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ShowDetails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x121489e6);
 
 	UStoreMain_MTXOffer_C_ShowDetails_Params params;
 
@@ -34,7 +35,8 @@ void UStoreMain_MTXOffer_C::ShowDetails()
 
 void UStoreMain_MTXOffer_C::InitOffer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.InitOffer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14b1417d);
 
 	UStoreMain_MTXOffer_C_InitOffer_Params params;
 
@@ -51,7 +53,8 @@ void UStoreMain_MTXOffer_C::InitOffer()
 
 void UStoreMain_MTXOffer_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1ab228e);
 
 	UStoreMain_MTXOffer_C_Construct_Params params;
 
@@ -70,7 +73,8 @@ void UStoreMain_MTXOffer_C::Construct()
 
 void UStoreMain_MTXOffer_C::OnClick(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.OnClick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa589dde0);
 
 	UStoreMain_MTXOffer_C_OnClick_Params params;
 	params.Button = Button;
@@ -88,7 +92,8 @@ void UStoreMain_MTXOffer_C::OnClick(class UCommonButton* Button)
 
 void UStoreMain_MTXOffer_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed32ddc1);
 
 	UStoreMain_MTXOffer_C_OnHovered_Params params;
 
@@ -105,7 +110,8 @@ void UStoreMain_MTXOffer_C::OnHovered()
 
 void UStoreMain_MTXOffer_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc231a35e);
 
 	UStoreMain_MTXOffer_C_OnUnhovered_Params params;
 
@@ -124,7 +130,8 @@ void UStoreMain_MTXOffer_C::OnUnhovered()
 
 void UStoreMain_MTXOffer_C::ExecuteUbergraph_StoreMain_MTXOffer(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.ExecuteUbergraph_StoreMain_MTXOffer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0a333f5);
 
 	UStoreMain_MTXOffer_C_ExecuteUbergraph_StoreMain_MTXOffer_Params params;
 	params.EntryPoint = EntryPoint;
@@ -142,7 +149,8 @@ void UStoreMain_MTXOffer_C::ExecuteUbergraph_StoreMain_MTXOffer(int EntryPoint)
 
 void UStoreMain_MTXOffer_C::AboutToShowDetails__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_MTXOffer.StoreMain_MTXOffer_C.AboutToShowDetails__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8055fb4f);
 
 	UStoreMain_MTXOffer_C_AboutToShowDetails__DelegateSignature_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UMissionDetailsModifierRow_C::PlayIntroAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.PlayIntroAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf8a441);
 
 	UMissionDetailsModifierRow_C_PlayIntroAnimation_Params params;
 
@@ -41,7 +42,8 @@ void UMissionDetailsModifierRow_C::PlayIntroAnimation()
 
 void UMissionDetailsModifierRow_C::Init(const struct FText& ModifierName, const struct FText& ModifierDescription, class UTexture2D* ModifierIcon, class UClass* TextStyle, bool Show_Description, bool UseSmallIcon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bcfe9cd);
 
 	UMissionDetailsModifierRow_C_Init_Params params;
 	params.ModifierName = ModifierName;
@@ -64,7 +66,8 @@ void UMissionDetailsModifierRow_C::Init(const struct FText& ModifierName, const 
 
 void UMissionDetailsModifierRow_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7aa76dfa);
 
 	UMissionDetailsModifierRow_C_Construct_Params params;
 
@@ -83,7 +86,8 @@ void UMissionDetailsModifierRow_C::Construct()
 
 void UMissionDetailsModifierRow_C::ExecuteUbergraph_MissionDetailsModifierRow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionDetailsModifierRow.MissionDetailsModifierRow_C.ExecuteUbergraph_MissionDetailsModifierRow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe64e47fc);
 
 	UMissionDetailsModifierRow_C_ExecuteUbergraph_MissionDetailsModifierRow_Params params;
 	params.EntryPoint = EntryPoint;

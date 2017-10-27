@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Border-ItemInfo-Blank-DkBlue.Border-ItemInfo-Blank-DkBlue_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b6cffcb);
 		return ptr;
 	}
 

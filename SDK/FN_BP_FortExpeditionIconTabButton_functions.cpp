@@ -17,7 +17,8 @@ namespace SDK
 
 void UBP_FortExpeditionIconTabButton_C::Update_Air_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Update Air Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6af51f09);
 
 	UBP_FortExpeditionIconTabButton_C_Update_Air_Vehicles_Params params;
 
@@ -34,7 +35,8 @@ void UBP_FortExpeditionIconTabButton_C::Update_Air_Vehicles()
 
 void UBP_FortExpeditionIconTabButton_C::Update_Sea_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Update Sea Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4661136);
 
 	UBP_FortExpeditionIconTabButton_C_Update_Sea_Vehicles_Params params;
 
@@ -51,7 +53,8 @@ void UBP_FortExpeditionIconTabButton_C::Update_Sea_Vehicles()
 
 void UBP_FortExpeditionIconTabButton_C::Update_Land_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Update Land Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x476f6824);
 
 	UBP_FortExpeditionIconTabButton_C_Update_Land_Vehicles_Params params;
 
@@ -68,7 +71,8 @@ void UBP_FortExpeditionIconTabButton_C::Update_Land_Vehicles()
 
 void UBP_FortExpeditionIconTabButton_C::Update_All_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Update All Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe4794fe);
 
 	UBP_FortExpeditionIconTabButton_C_Update_All_Vehicles_Params params;
 
@@ -85,7 +89,8 @@ void UBP_FortExpeditionIconTabButton_C::Update_All_Vehicles()
 
 void UBP_FortExpeditionIconTabButton_C::Update_Available_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Update Available Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3fd61a56);
 
 	UBP_FortExpeditionIconTabButton_C_Update_Available_Vehicles_Params params;
 
@@ -104,7 +109,8 @@ void UBP_FortExpeditionIconTabButton_C::Update_Available_Vehicles()
 
 void UBP_FortExpeditionIconTabButton_C::Set_Tab_Id(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Set Tab Id");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5bfebe1);
 
 	UBP_FortExpeditionIconTabButton_C_Set_Tab_Id_Params params;
 	params.TabId = TabId;
@@ -122,7 +128,8 @@ void UBP_FortExpeditionIconTabButton_C::Set_Tab_Id(const struct FName& TabId)
 
 void UBP_FortExpeditionIconTabButton_C::Refresh_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Refresh Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2adce97);
 
 	UBP_FortExpeditionIconTabButton_C_Refresh_Bang_State_Params params;
 
@@ -141,7 +148,8 @@ void UBP_FortExpeditionIconTabButton_C::Refresh_Bang_State()
 
 void UBP_FortExpeditionIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc7f51fe);
 
 	UBP_FortExpeditionIconTabButton_C_Set_Icon_Params params;
 	params.IconBrush = IconBrush;
@@ -161,7 +169,8 @@ void UBP_FortExpeditionIconTabButton_C::Set_Icon(const struct FSlateBrush& IconB
 
 void UBP_FortExpeditionIconTabButton_C::Set_Text(const struct FText& ButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47d319c4);
 
 	UBP_FortExpeditionIconTabButton_C_Set_Text_Params params;
 	params.ButtonText = ButtonText;
@@ -179,7 +188,8 @@ void UBP_FortExpeditionIconTabButton_C::Set_Text(const struct FText& ButtonText)
 
 void UBP_FortExpeditionIconTabButton_C::OnCurrentTextStyleChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnCurrentTextStyleChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f783bf9);
 
 	UBP_FortExpeditionIconTabButton_C_OnCurrentTextStyleChanged_Params params;
 
@@ -198,7 +208,8 @@ void UBP_FortExpeditionIconTabButton_C::OnCurrentTextStyleChanged()
 
 void UBP_FortExpeditionIconTabButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x443486cb);
 
 	UBP_FortExpeditionIconTabButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -218,7 +229,8 @@ void UBP_FortExpeditionIconTabButton_C::PreConstruct(bool* IsDesignTime)
 
 void UBP_FortExpeditionIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.SetTabLabelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfce70f1a);
 
 	UBP_FortExpeditionIconTabButton_C_SetTabLabelInfo_Params params;
 	params.TabLabelInfo = TabLabelInfo;
@@ -236,7 +248,8 @@ void UBP_FortExpeditionIconTabButton_C::SetTabLabelInfo(const struct FFortTabBut
 
 void UBP_FortExpeditionIconTabButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12177cec);
 
 	UBP_FortExpeditionIconTabButton_C_Construct_Params params;
 
@@ -253,7 +266,8 @@ void UBP_FortExpeditionIconTabButton_C::Construct()
 
 void UBP_FortExpeditionIconTabButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e5b176d);
 
 	UBP_FortExpeditionIconTabButton_C_OnSelected_Params params;
 
@@ -270,7 +284,8 @@ void UBP_FortExpeditionIconTabButton_C::OnSelected()
 
 void UBP_FortExpeditionIconTabButton_C::OnDeselected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnDeselected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ab4328);
 
 	UBP_FortExpeditionIconTabButton_C_OnDeselected_Params params;
 
@@ -287,7 +302,8 @@ void UBP_FortExpeditionIconTabButton_C::OnDeselected()
 
 void UBP_FortExpeditionIconTabButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecdcf4b);
 
 	UBP_FortExpeditionIconTabButton_C_OnHovered_Params params;
 
@@ -304,7 +320,8 @@ void UBP_FortExpeditionIconTabButton_C::OnHovered()
 
 void UBP_FortExpeditionIconTabButton_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd457551c);
 
 	UBP_FortExpeditionIconTabButton_C_OnUnhovered_Params params;
 
@@ -323,7 +340,8 @@ void UBP_FortExpeditionIconTabButton_C::OnUnhovered()
 
 void UBP_FortExpeditionIconTabButton_C::ExecuteUbergraph_BP_FortExpeditionIconTabButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.ExecuteUbergraph_BP_FortExpeditionIconTabButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfcabfbdc);
 
 	UBP_FortExpeditionIconTabButton_C_ExecuteUbergraph_BP_FortExpeditionIconTabButton_Params params;
 	params.EntryPoint = EntryPoint;

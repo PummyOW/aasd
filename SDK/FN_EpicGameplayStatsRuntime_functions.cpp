@@ -21,7 +21,8 @@ namespace SDK
 
 bool UBlueprintGameplayStatsLibrary::STATIC_NotEqual_GameplayStatTagGameplayStatTag(const struct FGameplayStatTag& A, const struct FGameplayStatTag& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.NotEqual_GameplayStatTagGameplayStatTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf6cafd6);
 
 	UBlueprintGameplayStatsLibrary_NotEqual_GameplayStatTagGameplayStatTag_Params params;
 	params.A = A;
@@ -47,7 +48,8 @@ bool UBlueprintGameplayStatsLibrary::STATIC_NotEqual_GameplayStatTagGameplayStat
 
 bool UBlueprintGameplayStatsLibrary::STATIC_EqualEqual_GameplayStatTagGameplayStatTag(const struct FGameplayStatTag& A, const struct FGameplayStatTag& B)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EpicGameplayStatsRuntime.BlueprintGameplayStatsLibrary.EqualEqual_GameplayStatTagGameplayStatTag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7eeaae2d);
 
 	UBlueprintGameplayStatsLibrary_EqualEqual_GameplayStatTagGameplayStatTag_Params params;
 	params.A = A;

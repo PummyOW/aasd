@@ -23,7 +23,8 @@ namespace SDK
 
 struct FText USlotLibrary_C::STATIC_Get_Attribute_Modifier_Header_Text(const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Tags, const struct FText& Required_Gameplay_Tags_Description, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlotLibrary.SlotLibrary_C.Get Attribute Modifier Header Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7bf0184);
 
 	USlotLibrary_C_Get_Attribute_Modifier_Header_Text_Params params;
 	params.Attribute_Info = Attribute_Info;
@@ -54,7 +55,8 @@ struct FText USlotLibrary_C::STATIC_Get_Attribute_Modifier_Header_Text(const str
 
 void USlotLibrary_C::STATIC_Create_Attribute_Modifier_Tool_Tip(class APlayerController* Owning_Player, const struct FFortAttributeInfo& Attribute_Info, const struct FGameplayTagContainer& Required_Gameplay_Tags, const struct FText& Required_Gameplay_Tags_Description, const struct FText& Modifier_Source, class UObject* __WorldContext, class UWidget** Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlotLibrary.SlotLibrary_C.Create Attribute Modifier Tool Tip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x110b47e7);
 
 	USlotLibrary_C_Create_Attribute_Modifier_Tool_Tip_Params params;
 	params.Owning_Player = Owning_Player;
@@ -86,7 +88,8 @@ void USlotLibrary_C::STATIC_Create_Attribute_Modifier_Tool_Tip(class APlayerCont
 
 void USlotLibrary_C::STATIC_Get_Traits_Of_Workers(class UObject* __WorldContext, TArray<class UFortWorker*>* Workers, struct FGameplayTagContainer* Chief_Personality, struct FGameplayTagContainer* Crew_Personalities, struct FGameplayTagContainer* Crew_Set_Bonuses)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlotLibrary.SlotLibrary_C.Get Traits Of Workers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x285ee546);
 
 	USlotLibrary_C_Get_Traits_Of_Workers_Params params;
 	params.__WorldContext = __WorldContext;
@@ -118,7 +121,8 @@ void USlotLibrary_C::STATIC_Get_Traits_Of_Workers(class UObject* __WorldContext,
 
 void USlotLibrary_C::STATIC_Calculate_Current_Pulsing_Highlight_Color(const struct FLinearColor& Base_Color, const struct FLinearColor& Hightlight_Color, class UObject* __WorldContext, struct FLinearColor* Current_Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlotLibrary.SlotLibrary_C.Calculate Current Pulsing Highlight Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x928f6ed9);
 
 	USlotLibrary_C_Calculate_Current_Pulsing_Highlight_Color_Params params;
 	params.Base_Color = Base_Color;
@@ -145,7 +149,8 @@ void USlotLibrary_C::STATIC_Calculate_Current_Pulsing_Highlight_Color(const stru
 
 void USlotLibrary_C::STATIC_EnsureIconBrush(const struct FFortMultiSizeBrush& Multi_size_Brush, class UObject* __WorldContext, struct FSlateBrush* Brush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlotLibrary.SlotLibrary_C.EnsureIconBrush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7790d3ae);
 
 	USlotLibrary_C_EnsureIconBrush_Params params;
 	params.Multi_size_Brush = Multi_size_Brush;
@@ -171,7 +176,8 @@ void USlotLibrary_C::STATIC_EnsureIconBrush(const struct FFortMultiSizeBrush& Mu
 
 void USlotLibrary_C::STATIC_InitItemWidget(class UFortItemWidget* Widget, class UFortItem* Item, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlotLibrary.SlotLibrary_C.InitItemWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ace79a4);
 
 	USlotLibrary_C_InitItemWidget_Params params;
 	params.Widget = Widget;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UMainModeItemDetailsHostPanel_C::UpdateDescriptionVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C.UpdateDescriptionVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34891280);
 
 	UMainModeItemDetailsHostPanel_C_UpdateDescriptionVisibility_Params params;
 
@@ -34,7 +35,8 @@ void UMainModeItemDetailsHostPanel_C::UpdateDescriptionVisibility()
 
 void UMainModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C.HandleHasItemMarkedForMulchingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34f81fcc);
 
 	UMainModeItemDetailsHostPanel_C_HandleHasItemMarkedForMulchingChanged_Params params;
 
@@ -51,7 +53,8 @@ void UMainModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 
 void UMainModeItemDetailsHostPanel_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1cef0c);
 
 	UMainModeItemDetailsHostPanel_C_Construct_Params params;
 
@@ -70,7 +73,8 @@ void UMainModeItemDetailsHostPanel_C::Construct()
 
 void UMainModeItemDetailsHostPanel_C::ExecuteUbergraph_MainModeItemDetailsHostPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C.ExecuteUbergraph_MainModeItemDetailsHostPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb868304);
 
 	UMainModeItemDetailsHostPanel_C_ExecuteUbergraph_MainModeItemDetailsHostPanel_Params params;
 	params.EntryPoint = EntryPoint;

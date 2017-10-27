@@ -19,7 +19,8 @@ namespace SDK
 
 void URatingWidget_NUI_C::SetShouldShowTeamPowerRating(bool ShowTeamRating)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.SetShouldShowTeamPowerRating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1ffcb24);
 
 	URatingWidget_NUI_C_SetShouldShowTeamPowerRating_Params params;
 	params.ShowTeamRating = ShowTeamRating;
@@ -42,7 +43,8 @@ void URatingWidget_NUI_C::SetShouldShowTeamPowerRating(bool ShowTeamRating)
 
 void URatingWidget_NUI_C::Override_Default_Color_Set(bool Override, const struct FLinearColor& Light_Color, const struct FLinearColor& Medium_Color, const struct FLinearColor& Dark_Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.Override Default Color Set");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7b3dae1);
 
 	URatingWidget_NUI_C_Override_Default_Color_Set_Params params;
 	params.Override = Override;
@@ -67,7 +69,8 @@ void URatingWidget_NUI_C::Override_Default_Color_Set(bool Override, const struct
 
 void URatingWidget_NUI_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class UMaterialInstanceDynamic* Mid, const struct FName& Parameter, const struct FFortMultiSizeBrush& MBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.Set Texture2D Parameter From Multi Size Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0a25695);
 
 	URatingWidget_NUI_C_Set_Texture2D_Parameter_From_Multi_Size_Brush_Params params;
 	params.Mid = Mid;
@@ -87,7 +90,8 @@ void URatingWidget_NUI_C::Set_Texture2D_Parameter_From_Multi_Size_Brush(class UM
 
 void URatingWidget_NUI_C::Update_From_Unique_ID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.Update From Unique ID");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafa3ecac);
 
 	URatingWidget_NUI_C_Update_From_Unique_ID_Params params;
 
@@ -106,7 +110,8 @@ void URatingWidget_NUI_C::Update_From_Unique_ID()
 
 void URatingWidget_NUI_C::Set_Unique_ID(const struct FUniqueNetIdRepl& ID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.Set Unique ID");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6adee91);
 
 	URatingWidget_NUI_C_Set_Unique_ID_Params params;
 	params.ID = ID;
@@ -124,7 +129,8 @@ void URatingWidget_NUI_C::Set_Unique_ID(const struct FUniqueNetIdRepl& ID)
 
 void URatingWidget_NUI_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x388ba784);
 
 	URatingWidget_NUI_C_Update_Params params;
 
@@ -143,7 +149,8 @@ void URatingWidget_NUI_C::Update()
 
 void URatingWidget_NUI_C::Update_Rating_Value(int Rating)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.Update Rating Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3814f0f0);
 
 	URatingWidget_NUI_C_Update_Rating_Value_Params params;
 	params.Rating = Rating;
@@ -163,7 +170,8 @@ void URatingWidget_NUI_C::Update_Rating_Value(int Rating)
 
 void URatingWidget_NUI_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x172d5495);
 
 	URatingWidget_NUI_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -183,7 +191,8 @@ void URatingWidget_NUI_C::PreConstruct(bool* IsDesignTime)
 
 void URatingWidget_NUI_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& UniqueId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.PlayerInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda226810);
 
 	URatingWidget_NUI_C_PlayerInfoChanged_Params params;
 	params.UniqueId = UniqueId;
@@ -201,7 +210,8 @@ void URatingWidget_NUI_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& Uniqu
 
 void URatingWidget_NUI_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb2ca40e);
 
 	URatingWidget_NUI_C_Construct_Params params;
 
@@ -220,7 +230,8 @@ void URatingWidget_NUI_C::Construct()
 
 void URatingWidget_NUI_C::PlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.PlayerStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b0994f9);
 
 	URatingWidget_NUI_C_PlayerStateChanged_Params params;
 	params.PlayerInfo = PlayerInfo;
@@ -240,7 +251,8 @@ void URatingWidget_NUI_C::PlayerStateChanged(const struct FFortTeamMemberInfo& P
 
 void URatingWidget_NUI_C::ExecuteUbergraph_RatingWidget_NUI(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RatingWidget_NUI.RatingWidget_NUI_C.ExecuteUbergraph_RatingWidget_NUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88c783d9);
 
 	URatingWidget_NUI_C_ExecuteUbergraph_RatingWidget_NUI_Params params;
 	params.EntryPoint = EntryPoint;

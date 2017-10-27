@@ -17,7 +17,8 @@ namespace SDK
 
 void UResourceAggregationWidget_C::ForceHideWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.ForceHideWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e69f140);
 
 	UResourceAggregationWidget_C_ForceHideWidget_Params params;
 
@@ -34,7 +35,8 @@ void UResourceAggregationWidget_C::ForceHideWidget()
 
 void UResourceAggregationWidget_C::HideWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.HideWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x456428ff);
 
 	UResourceAggregationWidget_C_HideWidget_Params params;
 
@@ -51,7 +53,8 @@ void UResourceAggregationWidget_C::HideWidget()
 
 void UResourceAggregationWidget_C::TriggerAggregateAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.TriggerAggregateAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96f32c40);
 
 	UResourceAggregationWidget_C_TriggerAggregateAnimation_Params params;
 
@@ -70,7 +73,8 @@ void UResourceAggregationWidget_C::TriggerAggregateAnimation()
 
 void UResourceAggregationWidget_C::UpdateAggregateResourceCollected(class UFortItem* InPotentialResource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.UpdateAggregateResourceCollected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47017dfa);
 
 	UResourceAggregationWidget_C_UpdateAggregateResourceCollected_Params params;
 	params.InPotentialResource = InPotentialResource;
@@ -91,7 +95,8 @@ void UResourceAggregationWidget_C::UpdateAggregateResourceCollected(class UFortI
 
 void UResourceAggregationWidget_C::ResetSourceOfResource(class ABuildingSMActor* InResourceObject, class UFortItem* InPotentialResource)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.ResetSourceOfResource");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a84f04c);
 
 	UResourceAggregationWidget_C_ResetSourceOfResource_Params params;
 	params.InResourceObject = InResourceObject;
@@ -115,7 +120,8 @@ void UResourceAggregationWidget_C::ResetSourceOfResource(class ABuildingSMActor*
 
 void UResourceAggregationWidget_C::HandleDamagedResourceObject(class ABuildingSMActor* DamagedResourceObject, class UFortItem* PotentialResource, bool Destroyed, bool WeakpointDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.HandleDamagedResourceObject");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2fb958b);
 
 	UResourceAggregationWidget_C_HandleDamagedResourceObject_Params params;
 	params.DamagedResourceObject = DamagedResourceObject;
@@ -136,7 +142,8 @@ void UResourceAggregationWidget_C::HandleDamagedResourceObject(class ABuildingSM
 
 void UResourceAggregationWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x18dfc8ee);
 
 	UResourceAggregationWidget_C_Construct_Params params;
 
@@ -155,7 +162,8 @@ void UResourceAggregationWidget_C::Construct()
 
 void UResourceAggregationWidget_C::ExecuteUbergraph_ResourceAggregationWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ResourceAggregationWidget.ResourceAggregationWidget_C.ExecuteUbergraph_ResourceAggregationWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f81cb57);
 
 	UResourceAggregationWidget_C_ExecuteUbergraph_ResourceAggregationWidget_Params params;
 	params.EntryPoint = EntryPoint;

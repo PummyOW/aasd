@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemTransform_C::HandleClosePicker(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleClosePicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3289d9f1);
 
 	UItemTransform_C_HandleClosePicker_Params params;
 
@@ -39,7 +40,8 @@ void UItemTransform_C::HandleClosePicker(bool* PassThrough)
 
 void UItemTransform_C::OnItemPickerOpened()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OnItemPickerOpened");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c2bb50);
 
 	UItemTransform_C_OnItemPickerOpened_Params params;
 
@@ -56,7 +58,8 @@ void UItemTransform_C::OnItemPickerOpened()
 
 void UItemTransform_C::OnItemPickerClosed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OnItemPickerClosed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81ac354f);
 
 	UItemTransform_C_OnItemPickerClosed_Params params;
 
@@ -75,7 +78,8 @@ void UItemTransform_C::OnItemPickerClosed()
 
 void UItemTransform_C::UpdateTransformAction(bool TransformActive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.UpdateTransformAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf285d3de);
 
 	UItemTransform_C_UpdateTransformAction_Params params;
 	params.TransformActive = TransformActive;
@@ -93,7 +97,8 @@ void UItemTransform_C::UpdateTransformAction(bool TransformActive)
 
 void UItemTransform_C::Handle_Transform_Activated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.Handle Transform Activated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e38710c);
 
 	UItemTransform_C_Handle_Transform_Activated_Params params;
 
@@ -110,7 +115,8 @@ void UItemTransform_C::Handle_Transform_Activated()
 
 void UItemTransform_C::Handle_Select_Key_Activated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.Handle Select Key Activated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf964f043);
 
 	UItemTransform_C_Handle_Select_Key_Activated_Params params;
 
@@ -127,7 +133,8 @@ void UItemTransform_C::Handle_Select_Key_Activated()
 
 void UItemTransform_C::DisableTransformAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.DisableTransformAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb056100d);
 
 	UItemTransform_C_DisableTransformAction_Params params;
 
@@ -144,7 +151,8 @@ void UItemTransform_C::DisableTransformAction()
 
 void UItemTransform_C::HideTransformAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HideTransformAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69066fd3);
 
 	UItemTransform_C_HideTransformAction_Params params;
 
@@ -161,7 +169,8 @@ void UItemTransform_C::HideTransformAction()
 
 void UItemTransform_C::ShowTransformAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.ShowTransformAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29e1386);
 
 	UItemTransform_C_ShowTransformAction_Params params;
 
@@ -178,7 +187,8 @@ void UItemTransform_C::ShowTransformAction()
 
 void UItemTransform_C::UpdateSelectKeyAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.UpdateSelectKeyAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72bc71cb);
 
 	UItemTransform_C_UpdateSelectKeyAction_Params params;
 
@@ -195,7 +205,8 @@ void UItemTransform_C::UpdateSelectKeyAction()
 
 void UItemTransform_C::DisableSelectKeyAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.DisableSelectKeyAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe70b1a28);
 
 	UItemTransform_C_DisableSelectKeyAction_Params params;
 
@@ -212,7 +223,8 @@ void UItemTransform_C::DisableSelectKeyAction()
 
 void UItemTransform_C::HideSelectKeyAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HideSelectKeyAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae3687ea);
 
 	UItemTransform_C_HideSelectKeyAction_Params params;
 
@@ -229,7 +241,8 @@ void UItemTransform_C::HideSelectKeyAction()
 
 void UItemTransform_C::ShowSelectKeyAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.ShowSelectKeyAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe907d5d3);
 
 	UItemTransform_C_ShowSelectKeyAction_Params params;
 
@@ -248,7 +261,8 @@ void UItemTransform_C::ShowSelectKeyAction()
 
 void UItemTransform_C::HandleSelectKeyAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleSelectKeyAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec4b2a58);
 
 	UItemTransform_C_HandleSelectKeyAction_Params params;
 
@@ -270,7 +284,8 @@ void UItemTransform_C::HandleSelectKeyAction(bool* PassThrough)
 
 void UItemTransform_C::HandleTransformAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleTransformAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4e5d75d);
 
 	UItemTransform_C_HandleTransformAction_Params params;
 
@@ -290,7 +305,8 @@ void UItemTransform_C::HandleTransformAction(bool* PassThrough)
 
 void UItemTransform_C::ResetItemTransform()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.ResetItemTransform");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7c36cb3);
 
 	UItemTransform_C_ResetItemTransform_Params params;
 
@@ -309,7 +325,8 @@ void UItemTransform_C::ResetItemTransform()
 
 void UItemTransform_C::HandleTransformFailed(struct FText* ErrorMessage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleTransformFailed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2bce482c);
 
 	UItemTransform_C_HandleTransformFailed_Params params;
 
@@ -332,7 +349,8 @@ void UItemTransform_C::HandleTransformFailed(struct FText* ErrorMessage)
 
 void UItemTransform_C::HandleTransformSucceeded(TArray<struct FFortItemInstanceQuantityPair>* RewardedItems, TArray<struct FFortItemInstanceQuantityPair>* SacrificedItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleTransformSucceeded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98346426);
 
 	UItemTransform_C_HandleTransformSucceeded_Params params;
 
@@ -354,7 +372,8 @@ void UItemTransform_C::HandleTransformSucceeded(TArray<struct FFortItemInstanceQ
 
 void UItemTransform_C::HandleTransformContinue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleTransformContinue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x643515dc);
 
 	UItemTransform_C_HandleTransformContinue_Params params;
 
@@ -374,7 +393,8 @@ void UItemTransform_C::HandleTransformContinue()
 
 void UItemTransform_C::OpenResult(TArray<struct FFortItemInstanceQuantityPair>* RewardItems, TArray<struct FFortItemInstanceQuantityPair>* SacrificeItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OpenResult");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6767b108);
 
 	UItemTransform_C_OpenResult_Params params;
 
@@ -396,7 +416,8 @@ void UItemTransform_C::OpenResult(TArray<struct FFortItemInstanceQuantityPair>* 
 
 void UItemTransform_C::HandleTransformConfirm()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleTransformConfirm");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc7a8a6d);
 
 	UItemTransform_C_HandleTransformConfirm_Params params;
 
@@ -413,7 +434,8 @@ void UItemTransform_C::HandleTransformConfirm()
 
 void UItemTransform_C::HandleTransformCancel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleTransformCancel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc79fa551);
 
 	UItemTransform_C_HandleTransformCancel_Params params;
 
@@ -430,7 +452,8 @@ void UItemTransform_C::HandleTransformCancel()
 
 void UItemTransform_C::OpenConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OpenConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2a7fa10);
 
 	UItemTransform_C_OpenConfirmation_Params params;
 
@@ -449,7 +472,8 @@ void UItemTransform_C::OpenConfirmation()
 
 void UItemTransform_C::HandleSelect(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleSelect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ad1889);
 
 	UItemTransform_C_HandleSelect_Params params;
 
@@ -471,7 +495,8 @@ void UItemTransform_C::HandleSelect(bool* PassThrough)
 
 void UItemTransform_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4fc041a4);
 
 	UItemTransform_C_HandleBack_Params params;
 
@@ -491,7 +516,8 @@ void UItemTransform_C::HandleBack(bool* PassThrough)
 
 void UItemTransform_C::SetupActionHandlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.SetupActionHandlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71fef23b);
 
 	UItemTransform_C_SetupActionHandlers_Params params;
 
@@ -508,7 +534,8 @@ void UItemTransform_C::SetupActionHandlers()
 
 void UItemTransform_C::OpenSlotScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OpenSlotScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf3f14bb);
 
 	UItemTransform_C_OpenSlotScreen_Params params;
 
@@ -525,7 +552,8 @@ void UItemTransform_C::OpenSlotScreen()
 
 void UItemTransform_C::OpenKeyScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OpenKeyScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc16151c);
 
 	UItemTransform_C_OpenKeyScreen_Params params;
 
@@ -542,7 +570,8 @@ void UItemTransform_C::OpenKeyScreen()
 
 void UItemTransform_C::OpenItemTransform()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OpenItemTransform");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec920f2e);
 
 	UItemTransform_C_OpenItemTransform_Params params;
 
@@ -561,7 +590,8 @@ void UItemTransform_C::OpenItemTransform()
 
 void UItemTransform_C::BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature(class UFortItem* Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda15f233);
 
 	UItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelected__DelegateSignature_Params params;
 	params.Key = Key;
@@ -582,7 +612,8 @@ void UItemTransform_C::BndEvt__KeyScreen_K2Node_ComponentBoundEvent_6_OnKeySelec
 
 void UItemTransform_C::BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int ActiveWidgetIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87971b4b);
 
 	UItemTransform_C_BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEvent_213_OnActiveWidgetChanged__DelegateSignature_Params params;
 	params.ActiveWidget = ActiveWidget;
@@ -601,7 +632,8 @@ void UItemTransform_C::BndEvt__TransformScreenSwitcher_K2Node_ComponentBoundEven
 
 void UItemTransform_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x253086ad);
 
 	UItemTransform_C_OnActivated_Params params;
 
@@ -618,7 +650,8 @@ void UItemTransform_C::OnActivated()
 
 void UItemTransform_C::BndEvt__KeyScreen_K2Node_ComponentBoundEvent_513_OnKeyConfirmed__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.BndEvt__KeyScreen_K2Node_ComponentBoundEvent_513_OnKeyConfirmed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8de5ac2a);
 
 	UItemTransform_C_BndEvt__KeyScreen_K2Node_ComponentBoundEvent_513_OnKeyConfirmed__DelegateSignature_Params params;
 
@@ -637,7 +670,8 @@ void UItemTransform_C::BndEvt__KeyScreen_K2Node_ComponentBoundEvent_513_OnKeyCon
 
 void UItemTransform_C::BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature(bool TransformActive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcee2a215);
 
 	UItemTransform_C_BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTransformButtonUpdated__DelegateSignature_Params params;
 	params.TransformActive = TransformActive;
@@ -655,7 +689,8 @@ void UItemTransform_C::BndEvt__SlotScreen_K2Node_ComponentBoundEvent_598_OnTrans
 
 void UItemTransform_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d6df7a6);
 
 	UItemTransform_C_Construct_Params params;
 
@@ -674,7 +709,8 @@ void UItemTransform_C::Construct()
 
 void UItemTransform_C::ExecuteUbergraph_ItemTransform(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransform.ItemTransform_C.ExecuteUbergraph_ItemTransform");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58bcd5aa);
 
 	UItemTransform_C_ExecuteUbergraph_ItemTransform_Params params;
 	params.EntryPoint = EntryPoint;

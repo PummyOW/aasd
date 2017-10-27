@@ -19,7 +19,8 @@ namespace SDK
 
 void UMissionObjectiveProgressBarsManager_C::GetHeightEstimate(float* Height)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.GetHeightEstimate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9111f99a);
 
 	UMissionObjectiveProgressBarsManager_C_GetHeightEstimate_Params params;
 
@@ -41,7 +42,8 @@ void UMissionObjectiveProgressBarsManager_C::GetHeightEstimate(float* Height)
 
 void UMissionObjectiveProgressBarsManager_C::HandleUpdate(class AFortMissionState* Objective)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.HandleUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x166269b6);
 
 	UMissionObjectiveProgressBarsManager_C_HandleUpdate_Params params;
 	params.Objective = Objective;
@@ -62,7 +64,8 @@ void UMissionObjectiveProgressBarsManager_C::HandleUpdate(class AFortMissionStat
 
 void UMissionObjectiveProgressBarsManager_C::HandleObjectiveVisibilityChanged(class AFortObjectiveBase* Objective, bool New_Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.HandleObjectiveVisibilityChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x326c0ade);
 
 	UMissionObjectiveProgressBarsManager_C_HandleObjectiveVisibilityChanged_Params params;
 	params.Objective = Objective;
@@ -84,7 +87,8 @@ void UMissionObjectiveProgressBarsManager_C::HandleObjectiveVisibilityChanged(cl
 
 void UMissionObjectiveProgressBarsManager_C::HandleObjectiveStatusChanged(class AFortObjectiveBase* Objective, EFortObjectiveStatus New_Status)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.HandleObjectiveStatusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x600a9acc);
 
 	UMissionObjectiveProgressBarsManager_C_HandleObjectiveStatusChanged_Params params;
 	params.Objective = Objective;
@@ -105,7 +109,8 @@ void UMissionObjectiveProgressBarsManager_C::HandleObjectiveStatusChanged(class 
 
 void UMissionObjectiveProgressBarsManager_C::CreateProgressBarWidget(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.CreateProgressBarWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e0741ad);
 
 	UMissionObjectiveProgressBarsManager_C_CreateProgressBarWidget_Params params;
 	params.Index = Index;
@@ -126,7 +131,8 @@ void UMissionObjectiveProgressBarsManager_C::CreateProgressBarWidget(int Index)
 
 void UMissionObjectiveProgressBarsManager_C::Setup(class AFortObjectiveBase* TrackedObjective, bool bInConfigureAsHUD)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.Setup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56be8cc2);
 
 	UMissionObjectiveProgressBarsManager_C_Setup_Params params;
 	params.TrackedObjective = TrackedObjective;
@@ -145,7 +151,8 @@ void UMissionObjectiveProgressBarsManager_C::Setup(class AFortObjectiveBase* Tra
 
 void UMissionObjectiveProgressBarsManager_C::UpdateObjectiveProgressBars()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgressBarsManager.MissionObjectiveProgressBarsManager_C.UpdateObjectiveProgressBars");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb362a3e);
 
 	UMissionObjectiveProgressBarsManager_C_UpdateObjectiveProgressBars_Params params;
 

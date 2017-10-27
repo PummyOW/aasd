@@ -19,7 +19,8 @@ namespace SDK
 
 struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Id_Analytic_Attribute()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.Build Player Id Analytic Attribute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c0af150);
 
 	UFortTwitchLogin_C_Build_Player_Id_Analytic_Attribute_Params params;
 
@@ -40,7 +41,8 @@ struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Id_Analytic
 
 struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Twitch_Name_Analytic_Attribute()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.Build Twitch Name Analytic Attribute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9700c1c8);
 
 	UFortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute_Params params;
 
@@ -61,7 +63,8 @@ struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Twitch_Name_Analyt
 
 struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Name_Analytic_Attribute()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.Build Player Name Analytic Attribute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7a55fb6);
 
 	UFortTwitchLogin_C_Build_Player_Name_Analytic_Attribute_Params params;
 
@@ -80,7 +83,8 @@ struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Name_Analyt
 
 void UFortTwitchLogin_C::Fire_Logged_In_Analytic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.Fire Logged In Analytic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef6a1765);
 
 	UFortTwitchLogin_C_Fire_Logged_In_Analytic_Params params;
 
@@ -97,7 +101,8 @@ void UFortTwitchLogin_C::Fire_Logged_In_Analytic()
 
 void UFortTwitchLogin_C::Fire_SignIn_Analytic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.Fire SignIn Analytic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb793378);
 
 	UFortTwitchLogin_C_Fire_SignIn_Analytic_Params params;
 
@@ -114,7 +119,8 @@ void UFortTwitchLogin_C::Fire_SignIn_Analytic()
 
 void UFortTwitchLogin_C::CenterActiveAuthButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.CenterActiveAuthButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89d3e460);
 
 	UFortTwitchLogin_C_CenterActiveAuthButton_Params params;
 
@@ -131,7 +137,8 @@ void UFortTwitchLogin_C::CenterActiveAuthButton()
 
 void UFortTwitchLogin_C::CenterOnWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.CenterOnWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x720761f);
 
 	UFortTwitchLogin_C_CenterOnWidget_Params params;
 
@@ -151,7 +158,8 @@ void UFortTwitchLogin_C::CenterOnWidget()
 
 void UFortTwitchLogin_C::DialogResult_5994C6BA48DC4D282A16D7BA54384F79(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.DialogResult_5994C6BA48DC4D282A16D7BA54384F79");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52f03e5);
 
 	UFortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79_Params params;
 	params.Result = Result;
@@ -170,7 +178,8 @@ void UFortTwitchLogin_C::DialogResult_5994C6BA48DC4D282A16D7BA54384F79(EFortDial
 
 void UFortTwitchLogin_C::Initialize_Data()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.Initialize Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5783c88b);
 
 	UFortTwitchLogin_C_Initialize_Data_Params params;
 
@@ -190,7 +199,8 @@ void UFortTwitchLogin_C::Initialize_Data()
 
 void UFortTwitchLogin_C::OnLoginStatusChanged(bool* bLoggedIn, struct FString* AccountName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.OnLoginStatusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbcb923b7);
 
 	UFortTwitchLogin_C_OnLoginStatusChanged_Params params;
 	params.bLoggedIn = bLoggedIn;
@@ -211,7 +221,8 @@ void UFortTwitchLogin_C::OnLoginStatusChanged(bool* bLoggedIn, struct FString* A
 
 void UFortTwitchLogin_C::OnLoginFlowModalCreated(class UFortTwitchLoginModalWidget** Modal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.OnLoginFlowModalCreated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad6925ee);
 
 	UFortTwitchLogin_C_OnLoginFlowModalCreated_Params params;
 	params.Modal = Modal;
@@ -229,7 +240,8 @@ void UFortTwitchLogin_C::OnLoginFlowModalCreated(class UFortTwitchLoginModalWidg
 
 void UFortTwitchLogin_C::OnCancelButtonClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.OnCancelButtonClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x128816b1);
 
 	UFortTwitchLogin_C_OnCancelButtonClicked_Params params;
 
@@ -248,7 +260,8 @@ void UFortTwitchLogin_C::OnCancelButtonClicked()
 
 void UFortTwitchLogin_C::OnLoginFlowModalDismissed(class UFortTwitchLoginModalWidget** Modal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.OnLoginFlowModalDismissed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4284a9a1);
 
 	UFortTwitchLogin_C_OnLoginFlowModalDismissed_Params params;
 	params.Modal = Modal;
@@ -268,7 +281,8 @@ void UFortTwitchLogin_C::OnLoginFlowModalDismissed(class UFortTwitchLoginModalWi
 
 void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3493eec4);
 
 	UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -288,7 +302,8 @@ void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_Com
 
 void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8330e91d);
 
 	UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -308,7 +323,8 @@ void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_Co
 
 void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50851341);
 
 	UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -328,7 +344,8 @@ void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_Comm
 
 void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff0bee35);
 
 	UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -348,7 +365,8 @@ void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_Comm
 
 void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c8e8e56);
 
 	UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -368,7 +386,8 @@ void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_Co
 
 void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5fa5f01);
 
 	UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -389,7 +408,8 @@ void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_Co
 
 void UFortTwitchLogin_C::OnShowLoginError(struct FText* ErrorTitle, struct FText* ErrorMessage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.OnShowLoginError");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7db1d9b0);
 
 	UFortTwitchLogin_C_OnShowLoginError_Params params;
 	params.ErrorTitle = ErrorTitle;
@@ -410,7 +430,8 @@ void UFortTwitchLogin_C::OnShowLoginError(struct FText* ErrorTitle, struct FText
 
 void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.ExecuteUbergraph_FortTwitchLogin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2990d00);
 
 	UFortTwitchLogin_C_ExecuteUbergraph_FortTwitchLogin_Params params;
 	params.EntryPoint = EntryPoint;
@@ -430,7 +451,8 @@ void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int EntryPoint)
 
 void UFortTwitchLogin_C::OnRequestToolTipChange__DelegateSignature(const struct FText& NewTooltipText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortTwitchLogin.FortTwitchLogin_C.OnRequestToolTipChange__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f01299f);
 
 	UFortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature_Params params;
 	params.NewTooltipText = NewTooltipText;

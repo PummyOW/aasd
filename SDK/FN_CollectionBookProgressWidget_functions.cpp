@@ -19,7 +19,8 @@ namespace SDK
 
 void UCollectionBookProgressWidget_C::OnCollectionBookLevelProgressionChanged(float* NewCompletionPct)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookProgressWidget.CollectionBookProgressWidget_C.OnCollectionBookLevelProgressionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6fafa7f0);
 
 	UCollectionBookProgressWidget_C_OnCollectionBookLevelProgressionChanged_Params params;
 	params.NewCompletionPct = NewCompletionPct;
@@ -39,7 +40,8 @@ void UCollectionBookProgressWidget_C::OnCollectionBookLevelProgressionChanged(fl
 
 void UCollectionBookProgressWidget_C::OnCollectionBookPreviewXPChange(float* PreviewCompletionPct)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookProgressWidget.CollectionBookProgressWidget_C.OnCollectionBookPreviewXPChange");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7f624c5);
 
 	UCollectionBookProgressWidget_C_OnCollectionBookPreviewXPChange_Params params;
 	params.PreviewCompletionPct = PreviewCompletionPct;
@@ -59,7 +61,8 @@ void UCollectionBookProgressWidget_C::OnCollectionBookPreviewXPChange(float* Pre
 
 void UCollectionBookProgressWidget_C::ExecuteUbergraph_CollectionBookProgressWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookProgressWidget.CollectionBookProgressWidget_C.ExecuteUbergraph_CollectionBookProgressWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa14f0ddd);
 
 	UCollectionBookProgressWidget_C_ExecuteUbergraph_CollectionBookProgressWidget_Params params;
 	params.EntryPoint = EntryPoint;

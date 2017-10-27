@@ -20,7 +20,8 @@ namespace SDK
 
 void UCollectionBookSectionTileRewardWidget_C::SetSlotCompletionRatio(int NumSlotted, int NumSlots)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C.SetSlotCompletionRatio");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f5189dc);
 
 	UCollectionBookSectionTileRewardWidget_C_SetSlotCompletionRatio_Params params;
 	params.NumSlotted = NumSlotted;
@@ -41,7 +42,8 @@ void UCollectionBookSectionTileRewardWidget_C::SetSlotCompletionRatio(int NumSlo
 
 void UCollectionBookSectionTileRewardWidget_C::OnRewardStatusChanged(ECollectionBookRewardStatus* NewStatus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C.OnRewardStatusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91b64099);
 
 	UCollectionBookSectionTileRewardWidget_C_OnRewardStatusChanged_Params params;
 	params.NewStatus = NewStatus;
@@ -61,7 +63,8 @@ void UCollectionBookSectionTileRewardWidget_C::OnRewardStatusChanged(ECollection
 
 void UCollectionBookSectionTileRewardWidget_C::ExecuteUbergraph_CollectionBookSectionTileRewardWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionTileRewardWidget.CollectionBookSectionTileRewardWidget_C.ExecuteUbergraph_CollectionBookSectionTileRewardWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fb7c2c0);
 
 	UCollectionBookSectionTileRewardWidget_C_ExecuteUbergraph_CollectionBookSectionTileRewardWidget_Params params;
 	params.EntryPoint = EntryPoint;

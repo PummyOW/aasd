@@ -17,7 +17,8 @@ namespace SDK
 
 void ALoginCamera_Blueprint_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginCamera_Blueprint.LoginCamera_Blueprint_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd3ec400);
 
 	ALoginCamera_Blueprint_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void ALoginCamera_Blueprint_C::UserConstructionScript()
 
 void ALoginCamera_Blueprint_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginCamera_Blueprint.LoginCamera_Blueprint_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf26b7485);
 
 	ALoginCamera_Blueprint_C_OnActivated_Params params;
 
@@ -53,7 +55,8 @@ void ALoginCamera_Blueprint_C::OnActivated()
 
 void ALoginCamera_Blueprint_C::ExecuteUbergraph_LoginCamera_Blueprint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginCamera_Blueprint.LoginCamera_Blueprint_C.ExecuteUbergraph_LoginCamera_Blueprint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaddf0a1f);
 
 	ALoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint_Params params;
 	params.EntryPoint = EntryPoint;

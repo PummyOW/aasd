@@ -64,6 +64,11 @@ struct UAthenaPickupManager_C_Destruct_Params
 {
 };
 
+// Function AthenaPickupManager.AthenaPickupManager_C.HandleBuildingMaterialChanged
+struct UAthenaPickupManager_C_HandleBuildingMaterialChanged_Params
+{
+};
+
 // Function AthenaPickupManager.AthenaPickupManager_C.ExecuteUbergraph_AthenaPickupManager
 struct UAthenaPickupManager_C_ExecuteUbergraph_AthenaPickupManager_Params
 {

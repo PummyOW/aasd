@@ -34,7 +34,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("AnimBlueprintGeneratedClass MenuScreen_Commando.MenuScreen_Commando_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14e4d328);
 		return ptr;
 	}
 

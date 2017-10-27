@@ -57,7 +57,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass GamepadMappingInfo.GamepadMappingInfo_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fbcd0f3);
 		return ptr;
 	}
 

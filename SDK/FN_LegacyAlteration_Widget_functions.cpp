@@ -17,7 +17,8 @@ namespace SDK
 
 void ULegacyAlteration_Widget_C::InitSmallAlteration()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlteration_Widget.LegacyAlteration_Widget_C.InitSmallAlteration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1f104d);
 
 	ULegacyAlteration_Widget_C_InitSmallAlteration_Params params;
 
@@ -34,7 +35,8 @@ void ULegacyAlteration_Widget_C::InitSmallAlteration()
 
 void ULegacyAlteration_Widget_C::InitFullAlteration()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlteration_Widget.LegacyAlteration_Widget_C.InitFullAlteration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdac59cb1);
 
 	ULegacyAlteration_Widget_C_InitFullAlteration_Params params;
 
@@ -53,7 +55,8 @@ void ULegacyAlteration_Widget_C::InitFullAlteration()
 
 bool ULegacyAlteration_Widget_C::ShouldFadeAlteration()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlteration_Widget.LegacyAlteration_Widget_C.ShouldFadeAlteration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf66dc747);
 
 	ULegacyAlteration_Widget_C_ShouldFadeAlteration_Params params;
 
@@ -74,7 +77,8 @@ bool ULegacyAlteration_Widget_C::ShouldFadeAlteration()
 
 struct FLinearColor ULegacyAlteration_Widget_C::GetHighlightColor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlteration_Widget.LegacyAlteration_Widget_C.GetHighlightColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52e2275c);
 
 	ULegacyAlteration_Widget_C_GetHighlightColor_Params params;
 
@@ -93,7 +97,8 @@ struct FLinearColor ULegacyAlteration_Widget_C::GetHighlightColor()
 
 void ULegacyAlteration_Widget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlteration_Widget.LegacyAlteration_Widget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c797d12);
 
 	ULegacyAlteration_Widget_C_Construct_Params params;
 
@@ -112,7 +117,8 @@ void ULegacyAlteration_Widget_C::Construct()
 
 void ULegacyAlteration_Widget_C::ExecuteUbergraph_LegacyAlteration_Widget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlteration_Widget.LegacyAlteration_Widget_C.ExecuteUbergraph_LegacyAlteration_Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd6afb58);
 
 	ULegacyAlteration_Widget_C_ExecuteUbergraph_LegacyAlteration_Widget_Params params;
 	params.EntryPoint = EntryPoint;

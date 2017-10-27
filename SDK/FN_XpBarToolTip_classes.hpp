@@ -35,7 +35,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass XpBarToolTip.XpBarToolTip_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x15b99c55);
 		return ptr;
 	}
 

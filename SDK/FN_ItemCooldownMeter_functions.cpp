@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemCooldownMeter_C::GetCooldownMaterial(class UMaterialInstanceDynamic** CooldownMat)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCooldownMeter.ItemCooldownMeter_C.GetCooldownMaterial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdbeffe2d);
 
 	UItemCooldownMeter_C_GetCooldownMaterial_Params params;
 
@@ -43,7 +44,8 @@ void UItemCooldownMeter_C::GetCooldownMaterial(class UMaterialInstanceDynamic** 
 
 int UItemCooldownMeter_C::GetSecondsCorrectedMinutes(int Minutes, int Seconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCooldownMeter.ItemCooldownMeter_C.GetSecondsCorrectedMinutes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15fcaf40);
 
 	UItemCooldownMeter_C_GetSecondsCorrectedMinutes_Params params;
 	params.Minutes = Minutes;
@@ -66,7 +68,8 @@ int UItemCooldownMeter_C::GetSecondsCorrectedMinutes(int Minutes, int Seconds)
 
 void UItemCooldownMeter_C::Set_Cooldown(const struct FTimespan& Time_Left)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCooldownMeter.ItemCooldownMeter_C.Set Cooldown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23b6e4a4);
 
 	UItemCooldownMeter_C_Set_Cooldown_Params params;
 	params.Time_Left = Time_Left;
@@ -86,7 +89,8 @@ void UItemCooldownMeter_C::Set_Cooldown(const struct FTimespan& Time_Left)
 
 void UItemCooldownMeter_C::Update(TEnumAsByte<EFortBrushSize> Brush_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCooldownMeter.ItemCooldownMeter_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x823064f4);
 
 	UItemCooldownMeter_C_Update_Params params;
 	params.Brush_Size = Brush_Size;

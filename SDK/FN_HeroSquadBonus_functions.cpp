@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UHeroSquadBonus_C::Get_ToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.Get_ToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6104d87);
 
 	UHeroSquadBonus_C_Get_ToolTipWidget_Params params;
 
@@ -40,7 +41,8 @@ class UWidget* UHeroSquadBonus_C::Get_ToolTipWidget()
 
 void UHeroSquadBonus_C::SetBackgroundGlow(bool GlowBackground)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.SetBackgroundGlow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa637b3f8);
 
 	UHeroSquadBonus_C_SetBackgroundGlow_Params params;
 	params.GlowBackground = GlowBackground;
@@ -58,7 +60,8 @@ void UHeroSquadBonus_C::SetBackgroundGlow(bool GlowBackground)
 
 void UHeroSquadBonus_C::UpdateSquadBonusIconState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.UpdateSquadBonusIconState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9888c0bd);
 
 	UHeroSquadBonus_C_UpdateSquadBonusIconState_Params params;
 
@@ -75,7 +78,8 @@ void UHeroSquadBonus_C::UpdateSquadBonusIconState()
 
 void UHeroSquadBonus_C::UpdateBonusPerk()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.UpdateBonusPerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d6597c7);
 
 	UHeroSquadBonus_C_UpdateBonusPerk_Params params;
 
@@ -94,7 +98,8 @@ void UHeroSquadBonus_C::UpdateBonusPerk()
 
 void UHeroSquadBonus_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x118fa2b3);
 
 	UHeroSquadBonus_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -112,7 +117,8 @@ void UHeroSquadBonus_C::PreConstruct(bool* IsDesignTime)
 
 void UHeroSquadBonus_C::OnPerkUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.OnPerkUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60d6477);
 
 	UHeroSquadBonus_C_OnPerkUpdated_Params params;
 
@@ -129,7 +135,8 @@ void UHeroSquadBonus_C::OnPerkUpdated()
 
 void UHeroSquadBonus_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a757c04);
 
 	UHeroSquadBonus_C_Construct_Params params;
 
@@ -148,7 +155,8 @@ void UHeroSquadBonus_C::Construct()
 
 void UHeroSquadBonus_C::ExecuteUbergraph_HeroSquadBonus(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonus.HeroSquadBonus_C.ExecuteUbergraph_HeroSquadBonus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6b8251e);
 
 	UHeroSquadBonus_C_ExecuteUbergraph_HeroSquadBonus_Params params;
 	params.EntryPoint = EntryPoint;

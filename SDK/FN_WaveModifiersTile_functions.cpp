@@ -17,7 +17,8 @@ namespace SDK
 
 void UWaveModifiersTile_C::PlayIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersTile.WaveModifiersTile_C.PlayIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1ce3bca5);
 
 	UWaveModifiersTile_C_PlayIntro_Params params;
 
@@ -36,7 +37,8 @@ void UWaveModifiersTile_C::PlayIntro()
 
 void UWaveModifiersTile_C::SetModifierItem(class UFortItem* ModifierItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersTile.WaveModifiersTile_C.SetModifierItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x641d3a93);
 
 	UWaveModifiersTile_C_SetModifierItem_Params params;
 	params.ModifierItem = ModifierItem;
@@ -54,7 +56,8 @@ void UWaveModifiersTile_C::SetModifierItem(class UFortItem* ModifierItem)
 
 void UWaveModifiersTile_C::OnAnimReadyForNextModifier()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersTile.WaveModifiersTile_C.OnAnimReadyForNextModifier");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a4a6b55);
 
 	UWaveModifiersTile_C_OnAnimReadyForNextModifier_Params params;
 
@@ -73,7 +76,8 @@ void UWaveModifiersTile_C::OnAnimReadyForNextModifier()
 
 void UWaveModifiersTile_C::SetData(class UObject* InData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersTile.WaveModifiersTile_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8197889);
 
 	UWaveModifiersTile_C_SetData_Params params;
 	params.InData = InData;
@@ -93,7 +97,8 @@ void UWaveModifiersTile_C::SetData(class UObject* InData)
 
 void UWaveModifiersTile_C::ExecuteUbergraph_WaveModifiersTile(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersTile.WaveModifiersTile_C.ExecuteUbergraph_WaveModifiersTile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89cc8f4a);
 
 	UWaveModifiersTile_C_ExecuteUbergraph_WaveModifiersTile_Params params;
 	params.EntryPoint = EntryPoint;
@@ -111,7 +116,8 @@ void UWaveModifiersTile_C::ExecuteUbergraph_WaveModifiersTile(int EntryPoint)
 
 void UWaveModifiersTile_C::OnReadyForNextModifierPresentation__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersTile.WaveModifiersTile_C.OnReadyForNextModifierPresentation__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x164883c1);
 
 	UWaveModifiersTile_C_OnReadyForNextModifierPresentation__DelegateSignature_Params params;
 

@@ -19,7 +19,8 @@ namespace SDK
 
 void UMissionRichText_C::Update(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionRichText.MissionRichText_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x610c2de8);
 
 	UMissionRichText_C_Update_Params params;
 	params.Text = Text;
@@ -37,7 +38,8 @@ void UMissionRichText_C::Update(const struct FText& Text)
 
 void UMissionRichText_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionRichText.MissionRichText_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9224bf2);
 
 	UMissionRichText_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UMissionRichText_C::Construct()
 
 void UMissionRichText_C::ExecuteUbergraph_MissionRichText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionRichText.MissionRichText_C.ExecuteUbergraph_MissionRichText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4251ceb8);
 
 	UMissionRichText_C_ExecuteUbergraph_MissionRichText_Params params;
 	params.EntryPoint = EntryPoint;

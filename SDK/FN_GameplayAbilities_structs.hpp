@@ -709,8 +709,8 @@ struct FActiveGameplayCue : public FFastArraySerializerItem
 struct FActiveGameplayCueContainer : public FFastArraySerializer
 {
 	TArray<struct FActiveGameplayCue>                  GameplayCues;                                             // 0x00B0(0x0010) (CPF_ZeroConstructor)
-	class UAbilitySystemComponent*                     Owner;                                                    // 0x00C0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x00C8(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x00C0(0x0008) MISSED OFFSET
+	class UAbilitySystemComponent*                     Owner;                                                    // 0x00C8(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 };
 
 // ScriptStruct GameplayAbilities.MinimalReplicationTagCountMap

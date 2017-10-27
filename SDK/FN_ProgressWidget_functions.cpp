@@ -19,7 +19,8 @@ namespace SDK
 
 void UProgressWidget_C::SetIcon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressWidget.ProgressWidget_C.SetIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24b1f24);
 
 	UProgressWidget_C_SetIcon_Params params;
 	params.IconBrush = IconBrush;
@@ -39,7 +40,8 @@ void UProgressWidget_C::SetIcon(const struct FSlateBrush& IconBrush)
 
 void UProgressWidget_C::SetDescription(const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressWidget.ProgressWidget_C.SetDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda31977f);
 
 	UProgressWidget_C_SetDescription_Params params;
 	params.Description = Description;
@@ -59,7 +61,8 @@ void UProgressWidget_C::SetDescription(const struct FText& Description)
 
 void UProgressWidget_C::SetTitle(const struct FText& Title)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProgressWidget.ProgressWidget_C.SetTitle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4369937);
 
 	UProgressWidget_C_SetTitle_Params params;
 	params.Title = Title;

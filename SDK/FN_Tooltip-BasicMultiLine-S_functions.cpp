@@ -19,7 +19,8 @@ namespace SDK
 
 struct FSlateBrush UTooltip_BasicMultiLine_S_C::Get_Icon_Brush()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Icon Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d3678fa);
 
 	UTooltip_BasicMultiLine_S_C_Get_Icon_Brush_Params params;
 
@@ -40,7 +41,8 @@ struct FSlateBrush UTooltip_BasicMultiLine_S_C::Get_Icon_Brush()
 
 struct FText UTooltip_BasicMultiLine_S_C::Get_Header_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Header Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc1cdb17);
 
 	UTooltip_BasicMultiLine_S_C_Get_Header_Text_Params params;
 
@@ -59,7 +61,8 @@ struct FText UTooltip_BasicMultiLine_S_C::Get_Header_Text()
 
 void UTooltip_BasicMultiLine_S_C::Get_Body_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Get Body Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc85e10e);
 
 	UTooltip_BasicMultiLine_S_C_Get_Body_Text_Params params;
 
@@ -76,7 +79,8 @@ void UTooltip_BasicMultiLine_S_C::Get_Body_Text()
 
 void UTooltip_BasicMultiLine_S_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c6c89c8);
 
 	UTooltip_BasicMultiLine_S_C_Construct_Params params;
 
@@ -95,7 +99,8 @@ void UTooltip_BasicMultiLine_S_C::Construct()
 
 void UTooltip_BasicMultiLine_S_C::ExecuteUbergraph_Tooltip_BasicMultiLine_S(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-BasicMultiLine-S.Tooltip-BasicMultiLine-S_C.ExecuteUbergraph_Tooltip-BasicMultiLine-S");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x711be974);
 
 	UTooltip_BasicMultiLine_S_C_ExecuteUbergraph_Tooltip_BasicMultiLine_S_Params params;
 	params.EntryPoint = EntryPoint;

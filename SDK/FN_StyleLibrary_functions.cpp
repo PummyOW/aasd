@@ -22,7 +22,8 @@ namespace SDK
 
 void UStyleLibrary_C::STATIC_Get_Conning_Color_For_Specific_Difficulty(int Difficulty_Value, class UObject* __WorldContext, struct FLinearColor* Difficulty_Linear_Color, bool* Invalid)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Conning Color For Specific Difficulty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4860d074);
 
 	UStyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty_Params params;
 	params.Difficulty_Value = Difficulty_Value;
@@ -56,7 +57,8 @@ void UStyleLibrary_C::STATIC_Get_Conning_Color_For_Specific_Difficulty(int Diffi
 
 void UStyleLibrary_C::STATIC_Get_Conning_Color_From_Difficulty_Value(int Player_Skill_Level, float Content_Difficulty_Level, const struct FGameDifficultyInfo& Game_Difficulty_Info, int Content_Skill_Points, class UObject* __WorldContext, struct FLinearColor* Difficulty_Linear_Color, bool* Success, struct FText* ToolTipText, int* DifficultyValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Conning Color From Difficulty Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e60ac4a);
 
 	UStyleLibrary_C_Get_Conning_Color_From_Difficulty_Value_Params params;
 	params.Player_Skill_Level = Player_Skill_Level;
@@ -91,7 +93,8 @@ void UStyleLibrary_C::STATIC_Get_Conning_Color_From_Difficulty_Value(int Player_
 
 void UStyleLibrary_C::STATIC_Get_HarvestWeakPoint_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* StyleSheetOut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get HarvestWeakPoint Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x698d921);
 
 	UStyleLibrary_C_Get_HarvestWeakPoint_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -118,7 +121,8 @@ void UStyleLibrary_C::STATIC_Get_HarvestWeakPoint_Color(const struct FFortUIStyl
 
 void UStyleLibrary_C::STATIC_ResizeBrush(TEnumAsByte<EFortBrushSize> BrushSize, const struct FSlateBrush& BaseBrush, class UObject* __WorldContext, struct FSlateBrush* NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.ResizeBrush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0849a45);
 
 	UStyleLibrary_C_ResizeBrush_Params params;
 	params.BrushSize = BrushSize;
@@ -148,7 +152,8 @@ void UStyleLibrary_C::STATIC_ResizeBrush(TEnumAsByte<EFortBrushSize> BrushSize, 
 
 void UStyleLibrary_C::STATIC_Get_Base___Buff_Colors(EFortStatValueDisplayType Display_Type, EFortBuffState Buff_State, const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Base, struct FLinearColor* buff)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Base & Buff Colors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbeea4337);
 
 	UStyleLibrary_C_Get_Base___Buff_Colors_Params params;
 	params.Display_Type = Display_Type;
@@ -178,7 +183,8 @@ void UStyleLibrary_C::STATIC_Get_Base___Buff_Colors(EFortStatValueDisplayType Di
 
 void UStyleLibrary_C::STATIC_Get_Bolt_Elemental_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Bolt Elemental Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e1b0620);
 
 	UStyleLibrary_C_Get_Bolt_Elemental_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -204,7 +210,8 @@ void UStyleLibrary_C::STATIC_Get_Bolt_Elemental_Color(const struct FFortUIStyles
 
 void UStyleLibrary_C::STATIC_Get_Ice_Elemental_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Ice Elemental Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe8b702);
 
 	UStyleLibrary_C_Get_Ice_Elemental_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -230,7 +237,8 @@ void UStyleLibrary_C::STATIC_Get_Ice_Elemental_Color(const struct FFortUIStylesh
 
 void UStyleLibrary_C::STATIC_Get_Fire_Elemental_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Fire Elemental Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fa749d5);
 
 	UStyleLibrary_C_Get_Fire_Elemental_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -256,7 +264,8 @@ void UStyleLibrary_C::STATIC_Get_Fire_Elemental_Color(const struct FFortUIStyles
 
 void UStyleLibrary_C::STATIC_Get_Unique_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Unique Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99646297);
 
 	UStyleLibrary_C_Get_Unique_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -283,7 +292,8 @@ void UStyleLibrary_C::STATIC_Get_Unique_Color(const struct FFortUIStylesheet& St
 
 void UStyleLibrary_C::STATIC_Get_Item_Size(const struct FFortUIStylesheet& Stylesheet, TEnumAsByte<EFortBrushSize> Brush_Size, class UObject* __WorldContext, struct FVector2D* Item_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Item Size");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1adc6d19);
 
 	UStyleLibrary_C_Get_Item_Size_Params params;
 	params.Stylesheet = Stylesheet;
@@ -310,7 +320,8 @@ void UStyleLibrary_C::STATIC_Get_Item_Size(const struct FFortUIStylesheet& Style
 
 void UStyleLibrary_C::STATIC_Get_Debuff_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Debuff Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd2e8b0);
 
 	UStyleLibrary_C_Get_Debuff_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -336,7 +347,8 @@ void UStyleLibrary_C::STATIC_Get_Debuff_Color(const struct FFortUIStylesheet& St
 
 void UStyleLibrary_C::STATIC_Get_Buff_Color(const struct FFortUIStylesheet& Stylesheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Buff Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x85d416e9);
 
 	UStyleLibrary_C_Get_Buff_Color_Params params;
 	params.Stylesheet = Stylesheet;
@@ -363,7 +375,8 @@ void UStyleLibrary_C::STATIC_Get_Buff_Color(const struct FFortUIStylesheet& Styl
 
 void UStyleLibrary_C::STATIC_Get_Item_Icon_Size(const struct FFortUIStylesheet& Stylesheet, TEnumAsByte<EFortBrushSize> Brush_Size, class UObject* __WorldContext, struct FVector2D* Icon_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Item Icon Size");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xddb23d64);
 
 	UStyleLibrary_C_Get_Item_Icon_Size_Params params;
 	params.Stylesheet = Stylesheet;
@@ -391,7 +404,8 @@ void UStyleLibrary_C::STATIC_Get_Item_Icon_Size(const struct FFortUIStylesheet& 
 
 void UStyleLibrary_C::STATIC_Get_Standard_Icon_Size(const struct FFortUIStylesheet& Stylesheet, TEnumAsByte<EFortBrushSize> Brush_Size, class UObject* __WorldContext, struct FVector2D* Icon_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Standard Icon Size");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x863a9a46);
 
 	UStyleLibrary_C_Get_Standard_Icon_Size_Params params;
 	params.Stylesheet = Stylesheet;
@@ -419,7 +433,8 @@ void UStyleLibrary_C::STATIC_Get_Standard_Icon_Size(const struct FFortUIStyleshe
 
 void UStyleLibrary_C::STATIC_Get_Theme(const struct FFortUIStylesheet& Stylesheet, TEnumAsByte<EFortUITheme> Theme_Type, class UObject* __WorldContext, struct FFortUITheme* Theme)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Theme");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee610ace);
 
 	UStyleLibrary_C_Get_Theme_Params params;
 	params.Stylesheet = Stylesheet;
@@ -448,7 +463,8 @@ void UStyleLibrary_C::STATIC_Get_Theme(const struct FFortUIStylesheet& Styleshee
 
 void UStyleLibrary_C::STATIC_Get_Theme_Color(const struct FFortUIStylesheet& Stylesheet, TEnumAsByte<EFortUITheme> Theme_Type, TEnumAsByte<EFortUIThemeColor> Color_Type, class UObject* __WorldContext, struct FLinearColor* Theme_Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StyleLibrary.StyleLibrary_C.Get Theme Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x240d3a3);
 
 	UStyleLibrary_C_Get_Theme_Color_Params params;
 	params.Stylesheet = Stylesheet;

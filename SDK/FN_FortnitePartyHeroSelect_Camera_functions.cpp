@@ -17,7 +17,8 @@ namespace SDK
 
 void AFortnitePartyHeroSelect_Camera_C::HandleMousePress()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.HandleMousePress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x405e2585);
 
 	AFortnitePartyHeroSelect_Camera_C_HandleMousePress_Params params;
 
@@ -34,7 +35,8 @@ void AFortnitePartyHeroSelect_Camera_C::HandleMousePress()
 
 void AFortnitePartyHeroSelect_Camera_C::HandleMouseRelease()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.HandleMouseRelease");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaeff1857);
 
 	AFortnitePartyHeroSelect_Camera_C_HandleMouseRelease_Params params;
 
@@ -51,7 +53,8 @@ void AFortnitePartyHeroSelect_Camera_C::HandleMouseRelease()
 
 void AFortnitePartyHeroSelect_Camera_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe45acae2);
 
 	AFortnitePartyHeroSelect_Camera_C_UserConstructionScript_Params params;
 
@@ -70,7 +73,8 @@ void AFortnitePartyHeroSelect_Camera_C::UserConstructionScript()
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_8(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_8");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1130ae41);
 
 	AFortnitePartyHeroSelect_Camera_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_8_Params params;
 	params.Key = Key;
@@ -90,7 +94,8 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKe
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f293f06);
 
 	AFortnitePartyHeroSelect_Camera_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7_Params params;
 	params.Key = Key;
@@ -110,7 +115,8 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKe
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9341c6);
 
 	AFortnitePartyHeroSelect_Camera_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6_Params params;
 	params.Key = Key;
@@ -130,7 +136,8 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputK
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe990c75d);
 
 	AFortnitePartyHeroSelect_Camera_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5_Params params;
 	params.Key = Key;
@@ -148,7 +155,8 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputK
 
 void AFortnitePartyHeroSelect_Camera_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32432e64);
 
 	AFortnitePartyHeroSelect_Camera_C_OnDeactivated_Params params;
 
@@ -167,7 +175,8 @@ void AFortnitePartyHeroSelect_Camera_C::OnDeactivated()
 
 void AFortnitePartyHeroSelect_Camera_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x602cd283);
 
 	AFortnitePartyHeroSelect_Camera_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -185,7 +194,8 @@ void AFortnitePartyHeroSelect_Camera_C::ReceiveTick(float* DeltaSeconds)
 
 void AFortnitePartyHeroSelect_Camera_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2d48b6f);
 
 	AFortnitePartyHeroSelect_Camera_C_OnActivated_Params params;
 
@@ -204,7 +214,8 @@ void AFortnitePartyHeroSelect_Camera_C::OnActivated()
 
 void AFortnitePartyHeroSelect_Camera_C::ExecuteUbergraph_FortnitePartyHeroSelect_Camera(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.ExecuteUbergraph_FortnitePartyHeroSelect_Camera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b7f7de);
 
 	AFortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera_Params params;
 	params.EntryPoint = EntryPoint;

@@ -30,7 +30,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass PotentialResourceWidget.PotentialResourceWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x941b82bd);
 		return ptr;
 	}
 

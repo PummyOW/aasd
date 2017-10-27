@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<struct FFortItemQuantityPair>* ReturnIngredients)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.GetIngredients");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27dc8b9f);
 
 	UItemCraftingIngredientList_C_GetIngredients_Params params;
 	params.Item = Item;
@@ -43,7 +44,8 @@ void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<s
 
 void UItemCraftingIngredientList_C::SetItemToCompare(class UFortItem* ItemToCompare)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.SetItemToCompare");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5c90510);
 
 	UItemCraftingIngredientList_C_SetItemToCompare_Params params;
 	params.ItemToCompare = ItemToCompare;
@@ -64,7 +66,8 @@ void UItemCraftingIngredientList_C::SetItemToCompare(class UFortItem* ItemToComp
 
 void UItemCraftingIngredientList_C::ItemNeedsInventoryTracking(class UFortItem* Item, bool* NeedsTracking)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.ItemNeedsInventoryTracking");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfb0b910c);
 
 	UItemCraftingIngredientList_C_ItemNeedsInventoryTracking_Params params;
 	params.Item = Item;
@@ -89,7 +92,8 @@ void UItemCraftingIngredientList_C::ItemNeedsInventoryTracking(class UFortItem* 
 
 void UItemCraftingIngredientList_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.HandleItemChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x732ea82c);
 
 	UItemCraftingIngredientList_C_HandleItemChanged_Params params;
 	params.ItemChanged = ItemChanged;
@@ -109,7 +113,8 @@ void UItemCraftingIngredientList_C::HandleItemChanged(bool ItemChanged, bool Amm
 
 void UItemCraftingIngredientList_C::RefreshInventoryTracking()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.RefreshInventoryTracking");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3581438f);
 
 	UItemCraftingIngredientList_C_RefreshInventoryTracking_Params params;
 
@@ -126,7 +131,8 @@ void UItemCraftingIngredientList_C::RefreshInventoryTracking()
 
 void UItemCraftingIngredientList_C::HandleWorldItemsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.HandleWorldItemsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8830ee7);
 
 	UItemCraftingIngredientList_C_HandleWorldItemsChanged_Params params;
 
@@ -146,7 +152,8 @@ void UItemCraftingIngredientList_C::HandleWorldItemsChanged()
 
 void UItemCraftingIngredientList_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*>* ItemsAdded, TArray<class UFortWorldItem*>* ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.HandleWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5448cdb2);
 
 	UItemCraftingIngredientList_C_HandleWorldItemListChanged_Params params;
 
@@ -168,7 +175,8 @@ void UItemCraftingIngredientList_C::HandleWorldItemListChanged(TArray<class UFor
 
 void UItemCraftingIngredientList_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0105bd8);
 
 	UItemCraftingIngredientList_C_Refresh_Params params;
 
@@ -187,7 +195,8 @@ void UItemCraftingIngredientList_C::Refresh()
 
 void UItemCraftingIngredientList_C::SetItemToRepresent(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.SetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9149d685);
 
 	UItemCraftingIngredientList_C_SetItemToRepresent_Params params;
 	params.Item = Item;
@@ -205,7 +214,8 @@ void UItemCraftingIngredientList_C::SetItemToRepresent(class UFortItem* Item)
 
 void UItemCraftingIngredientList_C::DoDesignTimeRandomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.DoDesignTimeRandomization");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x883089a0);
 
 	UItemCraftingIngredientList_C_DoDesignTimeRandomization_Params params;
 
@@ -224,7 +234,8 @@ void UItemCraftingIngredientList_C::DoDesignTimeRandomization()
 
 void UItemCraftingIngredientList_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f3e4f9);
 
 	UItemCraftingIngredientList_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -244,7 +255,8 @@ void UItemCraftingIngredientList_C::PreConstruct(bool* IsDesignTime)
 
 void UItemCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntryBase** ListEntry)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.AddListEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1a1fbe4);
 
 	UItemCraftingIngredientList_C_AddListEntry_Params params;
 	params.ListEntry = ListEntry;
@@ -264,7 +276,8 @@ void UItemCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 
 void UItemCraftingIngredientList_C::ExecuteUbergraph_ItemCraftingIngredientList(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.ExecuteUbergraph_ItemCraftingIngredientList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae773e61);
 
 	UItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList_Params params;
 	params.EntryPoint = EntryPoint;

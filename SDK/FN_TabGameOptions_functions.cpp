@@ -17,7 +17,8 @@ namespace SDK
 
 void UTabGameOptions_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGameOptions.TabGameOptions_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb19e7e3c);
 
 	UTabGameOptions_C_Construct_Params params;
 
@@ -34,7 +35,8 @@ void UTabGameOptions_C::Construct()
 
 void UTabGameOptions_C::UpdateOptionsTab()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGameOptions.TabGameOptions_C.UpdateOptionsTab");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff1d2519);
 
 	UTabGameOptions_C_UpdateOptionsTab_Params params;
 
@@ -51,7 +53,8 @@ void UTabGameOptions_C::UpdateOptionsTab()
 
 void UTabGameOptions_C::CenterOnTab()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGameOptions.TabGameOptions_C.CenterOnTab");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3c5ff8a);
 
 	UTabGameOptions_C_CenterOnTab_Params params;
 
@@ -68,7 +71,8 @@ void UTabGameOptions_C::CenterOnTab()
 
 void UTabGameOptions_C::Tab_Settings_Changed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGameOptions.TabGameOptions_C.Tab Settings Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x613c9f75);
 
 	UTabGameOptions_C_Tab_Settings_Changed_Params params;
 
@@ -88,7 +92,8 @@ void UTabGameOptions_C::Tab_Settings_Changed()
 
 void UTabGameOptions_C::BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int ActiveWidgetIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGameOptions.TabGameOptions_C.BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x250ba138);
 
 	UTabGameOptions_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_1004_OnActiveWidgetChanged__DelegateSignature_Params params;
 	params.ActiveWidget = ActiveWidget;
@@ -110,7 +115,8 @@ void UTabGameOptions_C::BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEven
 
 void UTabGameOptions_C::BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGameOptions.TabGameOptions_C.BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef1f8324);
 
 	UTabGameOptions_C_BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -131,7 +137,8 @@ void UTabGameOptions_C::BndEvt__GameTabs_K2Node_ComponentBoundEvent_21_OnTabButt
 
 void UTabGameOptions_C::ExecuteUbergraph_TabGameOptions(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGameOptions.TabGameOptions_C.ExecuteUbergraph_TabGameOptions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45b6d0e6);
 
 	UTabGameOptions_C_ExecuteUbergraph_TabGameOptions_Params params;
 	params.EntryPoint = EntryPoint;

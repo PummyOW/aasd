@@ -17,7 +17,8 @@ namespace SDK
 
 void UGA_TrapBuildGeneric_C::K2_ActivateAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_TrapBuildGeneric.GA_TrapBuildGeneric_C.K2_ActivateAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95f5602);
 
 	UGA_TrapBuildGeneric_C_K2_ActivateAbility_Params params;
 
@@ -36,7 +37,8 @@ void UGA_TrapBuildGeneric_C::K2_ActivateAbility()
 
 void UGA_TrapBuildGeneric_C::ExecuteUbergraph_GA_TrapBuildGeneric(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_TrapBuildGeneric.GA_TrapBuildGeneric_C.ExecuteUbergraph_GA_TrapBuildGeneric");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa11377cc);
 
 	UGA_TrapBuildGeneric_C_ExecuteUbergraph_GA_TrapBuildGeneric_Params params;
 	params.EntryPoint = EntryPoint;

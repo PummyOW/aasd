@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass FortNavArea_JumpDownSmashable3.FortNavArea_JumpDownSmashable3_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc485ff7);
 		return ptr;
 	}
 

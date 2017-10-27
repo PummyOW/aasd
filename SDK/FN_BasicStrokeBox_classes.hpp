@@ -26,7 +26,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BasicStrokeBox.BasicStrokeBox_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8cf33c9b);
 		return ptr;
 	}
 

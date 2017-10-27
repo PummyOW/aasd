@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass AnimNotifyState_DisablePawnRotation.AnimNotifyState_DisablePawnRotation_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xea702fc5);
 		return ptr;
 	}
 

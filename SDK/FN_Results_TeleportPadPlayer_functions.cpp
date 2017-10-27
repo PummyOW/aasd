@@ -19,7 +19,8 @@ namespace SDK
 
 void UResults_TeleportPadPlayer_C::IsLocalPlayersPad(bool* bIsLocalPlayersPad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.IsLocalPlayersPad");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x878df0ad);
 
 	UResults_TeleportPadPlayer_C_IsLocalPlayersPad_Params params;
 
@@ -39,7 +40,8 @@ void UResults_TeleportPadPlayer_C::IsLocalPlayersPad(bool* bIsLocalPlayersPad)
 
 void UResults_TeleportPadPlayer_C::Focus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Focus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf40739d);
 
 	UResults_TeleportPadPlayer_C_Focus_Params params;
 
@@ -58,7 +60,8 @@ void UResults_TeleportPadPlayer_C::Focus()
 
 void UResults_TeleportPadPlayer_C::CanFriend(bool* bCanFriendPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.CanFriend");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87dbf5cb);
 
 	UResults_TeleportPadPlayer_C_CanFriend_Params params;
 
@@ -80,7 +83,8 @@ void UResults_TeleportPadPlayer_C::CanFriend(bool* bCanFriendPlayer)
 
 void UResults_TeleportPadPlayer_C::CanInviteParty(bool* bCanInvitePlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.CanInviteParty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc44bb50);
 
 	UResults_TeleportPadPlayer_C_CanInviteParty_Params params;
 
@@ -100,7 +104,8 @@ void UResults_TeleportPadPlayer_C::CanInviteParty(bool* bCanInvitePlayer)
 
 void UResults_TeleportPadPlayer_C::InvitePlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.InvitePlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0ce1123);
 
 	UResults_TeleportPadPlayer_C_InvitePlayer_Params params;
 
@@ -117,7 +122,8 @@ void UResults_TeleportPadPlayer_C::InvitePlayer()
 
 void UResults_TeleportPadPlayer_C::ThumbsUpPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.ThumbsUpPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d9fe22c);
 
 	UResults_TeleportPadPlayer_C_ThumbsUpPlayer_Params params;
 
@@ -136,7 +142,8 @@ void UResults_TeleportPadPlayer_C::ThumbsUpPlayer()
 
 void UResults_TeleportPadPlayer_C::IsValidPad(bool* bIsValid)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.IsValidPad");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84d0e06);
 
 	UResults_TeleportPadPlayer_C_IsValidPad_Params params;
 
@@ -156,7 +163,8 @@ void UResults_TeleportPadPlayer_C::IsValidPad(bool* bIsValid)
 
 void UResults_TeleportPadPlayer_C::SetIsValidPad()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.SetIsValidPad");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c45ec68);
 
 	UResults_TeleportPadPlayer_C_SetIsValidPad_Params params;
 
@@ -177,7 +185,8 @@ void UResults_TeleportPadPlayer_C::SetIsValidPad()
 
 void UResults_TeleportPadPlayer_C::Initialize(const struct FUniqueNetIdRepl& InConsoleUniqueId, struct FUniqueNetIdRepl* InUniqueId, class UFortUIScoreReport** InScoreReport)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x962b135);
 
 	UResults_TeleportPadPlayer_C_Initialize_Params params;
 	params.InConsoleUniqueId = InConsoleUniqueId;
@@ -200,7 +209,8 @@ void UResults_TeleportPadPlayer_C::Initialize(const struct FUniqueNetIdRepl& InC
 
 void UResults_TeleportPadPlayer_C::Team_Score_Screen_Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Team Score Screen Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6eca5668);
 
 	UResults_TeleportPadPlayer_C_Team_Score_Screen_Intro_Params params;
 
@@ -217,7 +227,8 @@ void UResults_TeleportPadPlayer_C::Team_Score_Screen_Intro()
 
 void UResults_TeleportPadPlayer_C::Team_Score_Screen_Outro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Team Score Screen Outro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef4d96f7);
 
 	UResults_TeleportPadPlayer_C_Team_Score_Screen_Outro_Params params;
 
@@ -234,7 +245,8 @@ void UResults_TeleportPadPlayer_C::Team_Score_Screen_Outro()
 
 void UResults_TeleportPadPlayer_C::Teleport_Pad_Screen_Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Teleport Pad Screen Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b5236c5);
 
 	UResults_TeleportPadPlayer_C_Teleport_Pad_Screen_Intro_Params params;
 
@@ -251,7 +263,8 @@ void UResults_TeleportPadPlayer_C::Teleport_Pad_Screen_Intro()
 
 void UResults_TeleportPadPlayer_C::Outro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.Outro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3bce1db4);
 
 	UResults_TeleportPadPlayer_C_Outro_Params params;
 
@@ -270,7 +283,8 @@ void UResults_TeleportPadPlayer_C::Outro()
 
 void UResults_TeleportPadPlayer_C::BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcffaa8d);
 
 	UResults_TeleportPadPlayer_C_BndEvt__ButtonStats_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -290,7 +304,8 @@ void UResults_TeleportPadPlayer_C::BndEvt__ButtonStats_K2Node_ComponentBoundEven
 
 void UResults_TeleportPadPlayer_C::BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6731aaee);
 
 	UResults_TeleportPadPlayer_C_BndEvt__ButtonInvite_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -308,7 +323,8 @@ void UResults_TeleportPadPlayer_C::BndEvt__ButtonInvite_K2Node_ComponentBoundEve
 
 void UResults_TeleportPadPlayer_C::BndEvt__Anim_TeleportPadScreenIntro_K2Node_ComponentBoundEvent_3_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.BndEvt__Anim_TeleportPadScreenIntro_K2Node_ComponentBoundEvent_3_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e532164);
 
 	UResults_TeleportPadPlayer_C_BndEvt__Anim_TeleportPadScreenIntro_K2Node_ComponentBoundEvent_3_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -327,7 +343,8 @@ void UResults_TeleportPadPlayer_C::BndEvt__Anim_TeleportPadScreenIntro_K2Node_Co
 
 void UResults_TeleportPadPlayer_C::BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40a8ae1e);
 
 	UResults_TeleportPadPlayer_C_BndEvt__ButtonThumbs_K2Node_ComponentBoundEvent_24_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -347,7 +364,8 @@ void UResults_TeleportPadPlayer_C::BndEvt__ButtonThumbs_K2Node_ComponentBoundEve
 
 void UResults_TeleportPadPlayer_C::ExecuteUbergraph_Results_TeleportPadPlayer(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.ExecuteUbergraph_Results_TeleportPadPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b13ae29);
 
 	UResults_TeleportPadPlayer_C_ExecuteUbergraph_Results_TeleportPadPlayer_Params params;
 	params.EntryPoint = EntryPoint;
@@ -367,7 +385,8 @@ void UResults_TeleportPadPlayer_C::ExecuteUbergraph_Results_TeleportPadPlayer(in
 
 void UResults_TeleportPadPlayer_C::OnTeleportPadIntroFinished__DelegateSignature(class UResults_TeleportPadPlayer_C* TeleportPadPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.OnTeleportPadIntroFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38b00247);
 
 	UResults_TeleportPadPlayer_C_OnTeleportPadIntroFinished__DelegateSignature_Params params;
 	params.TeleportPadPlayer = TeleportPadPlayer;
@@ -388,7 +407,8 @@ void UResults_TeleportPadPlayer_C::OnTeleportPadIntroFinished__DelegateSignature
 
 void UResults_TeleportPadPlayer_C::OnUpVoteClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const struct FString& TargetName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.OnUpVoteClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6bbf3d1);
 
 	UResults_TeleportPadPlayer_C_OnUpVoteClicked__DelegateSignature_Params params;
 	params.TargetId = TargetId;
@@ -410,7 +430,8 @@ void UResults_TeleportPadPlayer_C::OnUpVoteClicked__DelegateSignature(const stru
 
 void UResults_TeleportPadPlayer_C::OnAddFriendClicked__DelegateSignature(const struct FUniqueNetIdRepl& TargetId, const struct FString& TargetName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.OnAddFriendClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecd35cf);
 
 	UResults_TeleportPadPlayer_C_OnAddFriendClicked__DelegateSignature_Params params;
 	params.TargetId = TargetId;
@@ -429,7 +450,8 @@ void UResults_TeleportPadPlayer_C::OnAddFriendClicked__DelegateSignature(const s
 
 void UResults_TeleportPadPlayer_C::OnMissionStatsClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayer.Results_TeleportPadPlayer_C.OnMissionStatsClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77fdd8e9);
 
 	UResults_TeleportPadPlayer_C_OnMissionStatsClicked__DelegateSignature_Params params;
 

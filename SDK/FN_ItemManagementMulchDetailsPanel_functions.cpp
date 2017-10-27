@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemManagementMulchDetailsPanel_C::UpdateDoneButtonText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.UpdateDoneButtonText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb81794d);
 
 	UItemManagementMulchDetailsPanel_C_UpdateDoneButtonText_Params params;
 
@@ -38,7 +39,8 @@ void UItemManagementMulchDetailsPanel_C::UpdateDoneButtonText()
 
 void UItemManagementMulchDetailsPanel_C::GetWarningText(bool HasAnimateItems, TArray<EItemRecyclingWarning>* Warnings, struct FText* WarningText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.GetWarningText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6054a9e);
 
 	UItemManagementMulchDetailsPanel_C_GetWarningText_Params params;
 	params.HasAnimateItems = HasAnimateItems;
@@ -64,7 +66,8 @@ void UItemManagementMulchDetailsPanel_C::GetWarningText(bool HasAnimateItems, TA
 
 void UItemManagementMulchDetailsPanel_C::DialogResult_58BF1F8B4DC97D1C2902828F65095294(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.DialogResult_58BF1F8B4DC97D1C2902828F65095294");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x416ebda7);
 
 	UItemManagementMulchDetailsPanel_C_DialogResult_58BF1F8B4DC97D1C2902828F65095294_Params params;
 	params.Result = Result;
@@ -83,7 +86,8 @@ void UItemManagementMulchDetailsPanel_C::DialogResult_58BF1F8B4DC97D1C2902828F65
 
 void UItemManagementMulchDetailsPanel_C::HandleSetOfItemsToMulchChangedBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.HandleSetOfItemsToMulchChangedBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3427618);
 
 	UItemManagementMulchDetailsPanel_C_HandleSetOfItemsToMulchChangedBP_Params params;
 
@@ -102,7 +106,8 @@ void UItemManagementMulchDetailsPanel_C::HandleSetOfItemsToMulchChangedBP()
 
 void UItemManagementMulchDetailsPanel_C::BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce2ef6e1);
 
 	UItemManagementMulchDetailsPanel_C_BndEvt__DoneButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -122,7 +127,8 @@ void UItemManagementMulchDetailsPanel_C::BndEvt__DoneButton_K2Node_ComponentBoun
 
 void UItemManagementMulchDetailsPanel_C::ExecuteUbergraph_ItemManagementMulchDetailsPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.ExecuteUbergraph_ItemManagementMulchDetailsPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5896702);
 
 	UItemManagementMulchDetailsPanel_C_ExecuteUbergraph_ItemManagementMulchDetailsPanel_Params params;
 	params.EntryPoint = EntryPoint;
@@ -140,7 +146,8 @@ void UItemManagementMulchDetailsPanel_C::ExecuteUbergraph_ItemManagementMulchDet
 
 void UItemManagementMulchDetailsPanel_C::MulchListChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchDetailsPanel.ItemManagementMulchDetailsPanel_C.MulchListChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28272231);
 
 	UItemManagementMulchDetailsPanel_C_MulchListChanged__DelegateSignature_Params params;
 

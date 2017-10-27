@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UMissionModifierItem_C::GetToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionModifierItem.MissionModifierItem_C.GetToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0d3b252);
 
 	UMissionModifierItem_C_GetToolTipWidget_Params params;
 
@@ -38,7 +39,8 @@ class UWidget* UMissionModifierItem_C::GetToolTipWidget()
 
 void UMissionModifierItem_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionModifierItem.MissionModifierItem_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8a6c138);
 
 	UMissionModifierItem_C_Update_Params params;
 
@@ -55,7 +57,8 @@ void UMissionModifierItem_C::Update()
 
 void UMissionModifierItem_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionModifierItem.MissionModifierItem_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb0d5022);
 
 	UMissionModifierItem_C_Construct_Params params;
 
@@ -74,7 +77,8 @@ void UMissionModifierItem_C::Construct()
 
 void UMissionModifierItem_C::ExecuteUbergraph_MissionModifierItem(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionModifierItem.MissionModifierItem_C.ExecuteUbergraph_MissionModifierItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91e410a5);
 
 	UMissionModifierItem_C_ExecuteUbergraph_MissionModifierItem_Params params;
 	params.EntryPoint = EntryPoint;

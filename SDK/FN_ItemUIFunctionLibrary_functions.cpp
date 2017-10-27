@@ -23,7 +23,8 @@ namespace SDK
 
 void UItemUIFunctionLibrary_C::STATIC_Truncate_Integer_Value(int Value, int Min_Fractional_Digits, int Max_Fractional_Digits, class UObject* __WorldContext, struct FText* Formatted_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Truncate Integer Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac510994);
 
 	UItemUIFunctionLibrary_C_Truncate_Integer_Value_Params params;
 	params.Value = Value;
@@ -51,7 +52,8 @@ void UItemUIFunctionLibrary_C::STATIC_Truncate_Integer_Value(int Value, int Min_
 
 void UItemUIFunctionLibrary_C::STATIC_Convert_Tier_To_Integer(TEnumAsByte<EFortItemTier> Tier, class UObject* __WorldContext, int* Numeric_Tier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Convert Tier To Integer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc8d669d);
 
 	UItemUIFunctionLibrary_C_Convert_Tier_To_Integer_Params params;
 	params.Tier = Tier;
@@ -77,7 +79,8 @@ void UItemUIFunctionLibrary_C::STATIC_Convert_Tier_To_Integer(TEnumAsByte<EFortI
 
 void UItemUIFunctionLibrary_C::STATIC_ParseLevelRequiredFromString(const struct FString& inString, class UObject* __WorldContext, int* outInt)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.ParseLevelRequiredFromString");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8bfefee);
 
 	UItemUIFunctionLibrary_C_ParseLevelRequiredFromString_Params params;
 	params.inString = inString;
@@ -105,7 +108,8 @@ void UItemUIFunctionLibrary_C::STATIC_ParseLevelRequiredFromString(const struct 
 
 void UItemUIFunctionLibrary_C::STATIC_Add_Alteration_Widgets(class UVerticalBox* Host_Widget, class UFortItem* Item, int PreviewLevel, bool ShowInVaultDetails, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.Add Alteration Widgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x126e4d38);
 
 	UItemUIFunctionLibrary_C_Add_Alteration_Widgets_Params params;
 	params.Host_Widget = Host_Widget;

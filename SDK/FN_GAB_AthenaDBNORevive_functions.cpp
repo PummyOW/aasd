@@ -20,7 +20,8 @@ namespace SDK
 
 void UGAB_AthenaDBNORevive_C::Cancelled_779E7BAA49FEAD286C5164B83CDFD609(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.Cancelled_779E7BAA49FEAD286C5164B83CDFD609");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x599d9c11);
 
 	UGAB_AthenaDBNORevive_C_Cancelled_779E7BAA49FEAD286C5164B83CDFD609_Params params;
 	params.TargetData = TargetData;
@@ -42,7 +43,8 @@ void UGAB_AthenaDBNORevive_C::Cancelled_779E7BAA49FEAD286C5164B83CDFD609(const s
 
 void UGAB_AthenaDBNORevive_C::Targeted_779E7BAA49FEAD286C5164B83CDFD609(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.Targeted_779E7BAA49FEAD286C5164B83CDFD609");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c2b8758);
 
 	UGAB_AthenaDBNORevive_C_Targeted_779E7BAA49FEAD286C5164B83CDFD609_Params params;
 	params.TargetData = TargetData;
@@ -64,7 +66,8 @@ void UGAB_AthenaDBNORevive_C::Targeted_779E7BAA49FEAD286C5164B83CDFD609(const st
 
 void UGAB_AthenaDBNORevive_C::Completed_23712DBC45E68EA0C91A4895CBD8B3A6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.Completed_23712DBC45E68EA0C91A4895CBD8B3A6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6706099a);
 
 	UGAB_AthenaDBNORevive_C_Completed_23712DBC45E68EA0C91A4895CBD8B3A6_Params params;
 	params.TargetData = TargetData;
@@ -86,7 +89,8 @@ void UGAB_AthenaDBNORevive_C::Completed_23712DBC45E68EA0C91A4895CBD8B3A6(const s
 
 void UGAB_AthenaDBNORevive_C::Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e3910f4);
 
 	UGAB_AthenaDBNORevive_C_Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6_Params params;
 	params.TargetData = TargetData;
@@ -108,7 +112,8 @@ void UGAB_AthenaDBNORevive_C::Cancelled_23712DBC45E68EA0C91A4895CBD8B3A6(const s
 
 void UGAB_AthenaDBNORevive_C::Triggered_23712DBC45E68EA0C91A4895CBD8B3A6(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.Triggered_23712DBC45E68EA0C91A4895CBD8B3A6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7d8bd8a);
 
 	UGAB_AthenaDBNORevive_C_Triggered_23712DBC45E68EA0C91A4895CBD8B3A6_Params params;
 	params.TargetData = TargetData;
@@ -127,7 +132,8 @@ void UGAB_AthenaDBNORevive_C::Triggered_23712DBC45E68EA0C91A4895CBD8B3A6(const s
 
 void UGAB_AthenaDBNORevive_C::K2_OnEndAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.K2_OnEndAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86363fbb);
 
 	UGAB_AthenaDBNORevive_C_K2_OnEndAbility_Params params;
 
@@ -146,7 +152,8 @@ void UGAB_AthenaDBNORevive_C::K2_OnEndAbility()
 
 void UGAB_AthenaDBNORevive_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70037022);
 
 	UGAB_AthenaDBNORevive_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -166,7 +173,8 @@ void UGAB_AthenaDBNORevive_C::K2_ActivateAbilityFromEvent(struct FGameplayEventD
 
 void UGAB_AthenaDBNORevive_C::ExecuteUbergraph_GAB_AthenaDBNORevive(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_AthenaDBNORevive.GAB_AthenaDBNORevive_C.ExecuteUbergraph_GAB_AthenaDBNORevive");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd75c861b);
 
 	UGAB_AthenaDBNORevive_C_ExecuteUbergraph_GAB_AthenaDBNORevive_Params params;
 	params.EntryPoint = EntryPoint;

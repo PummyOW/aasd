@@ -21,7 +21,8 @@ namespace SDK
 
 void UCollectionBookPageDetailsWidget_C::OnPageProgressionUpdated(int* TotalFilledSlots, int* TotalSlots, EFortCollectionBookState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageDetailsWidget.CollectionBookPageDetailsWidget_C.OnPageProgressionUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31987c8b);
 
 	UCollectionBookPageDetailsWidget_C_OnPageProgressionUpdated_Params params;
 	params.TotalFilledSlots = TotalFilledSlots;
@@ -43,7 +44,8 @@ void UCollectionBookPageDetailsWidget_C::OnPageProgressionUpdated(int* TotalFill
 
 void UCollectionBookPageDetailsWidget_C::ExecuteUbergraph_CollectionBookPageDetailsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageDetailsWidget.CollectionBookPageDetailsWidget_C.ExecuteUbergraph_CollectionBookPageDetailsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88aae019);
 
 	UCollectionBookPageDetailsWidget_C_ExecuteUbergraph_CollectionBookPageDetailsWidget_Params params;
 	params.EntryPoint = EntryPoint;

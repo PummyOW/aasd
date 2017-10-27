@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_BuildingDamaged_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_BuildingDamaged.Announce_BuildingDamaged_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb6405ce);
 
 	AAnnounce_BuildingDamaged_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_BuildingDamaged_C::UserConstructionScript()
 
 void AAnnounce_BuildingDamaged_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_BuildingDamaged.Announce_BuildingDamaged_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x193427d6);
 
 	AAnnounce_BuildingDamaged_C_OnClientAnnouncementStart_Params params;
 
@@ -53,7 +55,8 @@ void AAnnounce_BuildingDamaged_C::OnClientAnnouncementStart()
 
 void AAnnounce_BuildingDamaged_C::ExecuteUbergraph_Announce_BuildingDamaged(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_BuildingDamaged.Announce_BuildingDamaged_C.ExecuteUbergraph_Announce_BuildingDamaged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36493cf4);
 
 	AAnnounce_BuildingDamaged_C_ExecuteUbergraph_Announce_BuildingDamaged_Params params;
 	params.EntryPoint = EntryPoint;

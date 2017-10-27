@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UItemCraftingIngredientListEntryHaveNeed_C::GetToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.GetToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e283466);
 
 	UItemCraftingIngredientListEntryHaveNeed_C_GetToolTipWidget_Params params;
 
@@ -38,7 +39,8 @@ class UWidget* UItemCraftingIngredientListEntryHaveNeed_C::GetToolTipWidget()
 
 void UItemCraftingIngredientListEntryHaveNeed_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b6f08a4);
 
 	UItemCraftingIngredientListEntryHaveNeed_C_Refresh_Params params;
 
@@ -55,7 +57,8 @@ void UItemCraftingIngredientListEntryHaveNeed_C::Refresh()
 
 void UItemCraftingIngredientListEntryHaveNeed_C::DoDesignTimeRandomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.DoDesignTimeRandomization");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x184393e4);
 
 	UItemCraftingIngredientListEntryHaveNeed_C_DoDesignTimeRandomization_Params params;
 
@@ -74,7 +77,8 @@ void UItemCraftingIngredientListEntryHaveNeed_C::DoDesignTimeRandomization()
 
 void UItemCraftingIngredientListEntryHaveNeed_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7bbb4935);
 
 	UItemCraftingIngredientListEntryHaveNeed_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -94,7 +98,8 @@ void UItemCraftingIngredientListEntryHaveNeed_C::PreConstruct(bool* IsDesignTime
 
 void UItemCraftingIngredientListEntryHaveNeed_C::HandleDifferentItemOrQuantitySetBP(bool* IsBeingReset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.HandleDifferentItemOrQuantitySetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x786d8869);
 
 	UItemCraftingIngredientListEntryHaveNeed_C_HandleDifferentItemOrQuantitySetBP_Params params;
 	params.IsBeingReset = IsBeingReset;
@@ -114,7 +119,8 @@ void UItemCraftingIngredientListEntryHaveNeed_C::HandleDifferentItemOrQuantitySe
 
 void UItemCraftingIngredientListEntryHaveNeed_C::ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeed.ItemCraftingIngredientListEntryHaveNeed_C.ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11c9c569);
 
 	UItemCraftingIngredientListEntryHaveNeed_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeed_Params params;
 	params.EntryPoint = EntryPoint;

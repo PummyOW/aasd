@@ -31,7 +31,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Account.OnlineAccountCommon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a4506d7);
 		return ptr;
 	}
 

@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.IsInInvalidSlot
+struct UFortHeroSupportPerkWidget_C_IsInInvalidSlot_Params
+{
+	bool                                               InInvalidSlot;                                            // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateComparisonVisibility
 struct UFortHeroSupportPerkWidget_C_UpdateComparisonVisibility_Params
 {

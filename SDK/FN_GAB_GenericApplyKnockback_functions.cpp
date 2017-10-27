@@ -17,7 +17,8 @@ namespace SDK
 
 void UGAB_GenericApplyKnockback_C::OnCancelled_07DF210D46EDFA929CDBFFB162E8E4CF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCancelled_07DF210D46EDFA929CDBFFB162E8E4CF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46527243);
 
 	UGAB_GenericApplyKnockback_C_OnCancelled_07DF210D46EDFA929CDBFFB162E8E4CF_Params params;
 
@@ -34,7 +35,8 @@ void UGAB_GenericApplyKnockback_C::OnCancelled_07DF210D46EDFA929CDBFFB162E8E4CF(
 
 void UGAB_GenericApplyKnockback_C::OnInterrupted_07DF210D46EDFA929CDBFFB162E8E4CF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnInterrupted_07DF210D46EDFA929CDBFFB162E8E4CF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f2789ca);
 
 	UGAB_GenericApplyKnockback_C_OnInterrupted_07DF210D46EDFA929CDBFFB162E8E4CF_Params params;
 
@@ -51,7 +53,8 @@ void UGAB_GenericApplyKnockback_C::OnInterrupted_07DF210D46EDFA929CDBFFB162E8E4C
 
 void UGAB_GenericApplyKnockback_C::OnBlendOut_07DF210D46EDFA929CDBFFB162E8E4CF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnBlendOut_07DF210D46EDFA929CDBFFB162E8E4CF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x548beb95);
 
 	UGAB_GenericApplyKnockback_C_OnBlendOut_07DF210D46EDFA929CDBFFB162E8E4CF_Params params;
 
@@ -68,7 +71,8 @@ void UGAB_GenericApplyKnockback_C::OnBlendOut_07DF210D46EDFA929CDBFFB162E8E4CF()
 
 void UGAB_GenericApplyKnockback_C::OnCompleted_07DF210D46EDFA929CDBFFB162E8E4CF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCompleted_07DF210D46EDFA929CDBFFB162E8E4CF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28e36931);
 
 	UGAB_GenericApplyKnockback_C_OnCompleted_07DF210D46EDFA929CDBFFB162E8E4CF_Params params;
 
@@ -85,7 +89,8 @@ void UGAB_GenericApplyKnockback_C::OnCompleted_07DF210D46EDFA929CDBFFB162E8E4CF(
 
 void UGAB_GenericApplyKnockback_C::OnCancelled_D744890E4C485F1C80B3E7864AE506FF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCancelled_D744890E4C485F1C80B3E7864AE506FF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x398d6deb);
 
 	UGAB_GenericApplyKnockback_C_OnCancelled_D744890E4C485F1C80B3E7864AE506FF_Params params;
 
@@ -102,7 +107,8 @@ void UGAB_GenericApplyKnockback_C::OnCancelled_D744890E4C485F1C80B3E7864AE506FF(
 
 void UGAB_GenericApplyKnockback_C::OnInterrupted_D744890E4C485F1C80B3E7864AE506FF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnInterrupted_D744890E4C485F1C80B3E7864AE506FF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80304cc2);
 
 	UGAB_GenericApplyKnockback_C_OnInterrupted_D744890E4C485F1C80B3E7864AE506FF_Params params;
 
@@ -119,7 +125,8 @@ void UGAB_GenericApplyKnockback_C::OnInterrupted_D744890E4C485F1C80B3E7864AE506F
 
 void UGAB_GenericApplyKnockback_C::OnBlendOut_D744890E4C485F1C80B3E7864AE506FF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnBlendOut_D744890E4C485F1C80B3E7864AE506FF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38947105);
 
 	UGAB_GenericApplyKnockback_C_OnBlendOut_D744890E4C485F1C80B3E7864AE506FF_Params params;
 
@@ -136,7 +143,8 @@ void UGAB_GenericApplyKnockback_C::OnBlendOut_D744890E4C485F1C80B3E7864AE506FF()
 
 void UGAB_GenericApplyKnockback_C::OnCompleted_D744890E4C485F1C80B3E7864AE506FF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCompleted_D744890E4C485F1C80B3E7864AE506FF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7e37c09);
 
 	UGAB_GenericApplyKnockback_C_OnCompleted_D744890E4C485F1C80B3E7864AE506FF_Params params;
 
@@ -153,7 +161,8 @@ void UGAB_GenericApplyKnockback_C::OnCompleted_D744890E4C485F1C80B3E7864AE506FF(
 
 void UGAB_GenericApplyKnockback_C::OnCancelled_1F181048470CEB2EB6CC648039C5913C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCancelled_1F181048470CEB2EB6CC648039C5913C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7dafd5b);
 
 	UGAB_GenericApplyKnockback_C_OnCancelled_1F181048470CEB2EB6CC648039C5913C_Params params;
 
@@ -170,7 +179,8 @@ void UGAB_GenericApplyKnockback_C::OnCancelled_1F181048470CEB2EB6CC648039C5913C(
 
 void UGAB_GenericApplyKnockback_C::OnInterrupted_1F181048470CEB2EB6CC648039C5913C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnInterrupted_1F181048470CEB2EB6CC648039C5913C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa7dae62);
 
 	UGAB_GenericApplyKnockback_C_OnInterrupted_1F181048470CEB2EB6CC648039C5913C_Params params;
 
@@ -187,7 +197,8 @@ void UGAB_GenericApplyKnockback_C::OnInterrupted_1F181048470CEB2EB6CC648039C5913
 
 void UGAB_GenericApplyKnockback_C::OnBlendOut_1F181048470CEB2EB6CC648039C5913C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnBlendOut_1F181048470CEB2EB6CC648039C5913C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8a4fcc1);
 
 	UGAB_GenericApplyKnockback_C_OnBlendOut_1F181048470CEB2EB6CC648039C5913C_Params params;
 
@@ -204,7 +215,8 @@ void UGAB_GenericApplyKnockback_C::OnBlendOut_1F181048470CEB2EB6CC648039C5913C()
 
 void UGAB_GenericApplyKnockback_C::OnCompleted_1F181048470CEB2EB6CC648039C5913C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCompleted_1F181048470CEB2EB6CC648039C5913C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5196ef55);
 
 	UGAB_GenericApplyKnockback_C_OnCompleted_1F181048470CEB2EB6CC648039C5913C_Params params;
 
@@ -221,7 +233,8 @@ void UGAB_GenericApplyKnockback_C::OnCompleted_1F181048470CEB2EB6CC648039C5913C(
 
 void UGAB_GenericApplyKnockback_C::OnCancelled_BA9188C34C234A4C47306FA73AAF0583()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCancelled_BA9188C34C234A4C47306FA73AAF0583");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x425f84be);
 
 	UGAB_GenericApplyKnockback_C_OnCancelled_BA9188C34C234A4C47306FA73AAF0583_Params params;
 
@@ -238,7 +251,8 @@ void UGAB_GenericApplyKnockback_C::OnCancelled_BA9188C34C234A4C47306FA73AAF0583(
 
 void UGAB_GenericApplyKnockback_C::OnInterrupted_BA9188C34C234A4C47306FA73AAF0583()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnInterrupted_BA9188C34C234A4C47306FA73AAF0583");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ed96447);
 
 	UGAB_GenericApplyKnockback_C_OnInterrupted_BA9188C34C234A4C47306FA73AAF0583_Params params;
 
@@ -255,7 +269,8 @@ void UGAB_GenericApplyKnockback_C::OnInterrupted_BA9188C34C234A4C47306FA73AAF058
 
 void UGAB_GenericApplyKnockback_C::OnBlendOut_BA9188C34C234A4C47306FA73AAF0583()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnBlendOut_BA9188C34C234A4C47306FA73AAF0583");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36763508);
 
 	UGAB_GenericApplyKnockback_C_OnBlendOut_BA9188C34C234A4C47306FA73AAF0583_Params params;
 
@@ -272,7 +287,8 @@ void UGAB_GenericApplyKnockback_C::OnBlendOut_BA9188C34C234A4C47306FA73AAF0583()
 
 void UGAB_GenericApplyKnockback_C::OnCompleted_BA9188C34C234A4C47306FA73AAF0583()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCompleted_BA9188C34C234A4C47306FA73AAF0583");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36e3644c);
 
 	UGAB_GenericApplyKnockback_C_OnCompleted_BA9188C34C234A4C47306FA73AAF0583_Params params;
 
@@ -289,7 +305,8 @@ void UGAB_GenericApplyKnockback_C::OnCompleted_BA9188C34C234A4C47306FA73AAF0583(
 
 void UGAB_GenericApplyKnockback_C::OnCancelled_8FC7071F40FA26EA05D9688FB3E623A0()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCancelled_8FC7071F40FA26EA05D9688FB3E623A0");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f055731);
 
 	UGAB_GenericApplyKnockback_C_OnCancelled_8FC7071F40FA26EA05D9688FB3E623A0_Params params;
 
@@ -306,7 +323,8 @@ void UGAB_GenericApplyKnockback_C::OnCancelled_8FC7071F40FA26EA05D9688FB3E623A0(
 
 void UGAB_GenericApplyKnockback_C::OnInterrupted_8FC7071F40FA26EA05D9688FB3E623A0()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnInterrupted_8FC7071F40FA26EA05D9688FB3E623A0");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8618dc04);
 
 	UGAB_GenericApplyKnockback_C_OnInterrupted_8FC7071F40FA26EA05D9688FB3E623A0_Params params;
 
@@ -323,7 +341,8 @@ void UGAB_GenericApplyKnockback_C::OnInterrupted_8FC7071F40FA26EA05D9688FB3E623A
 
 void UGAB_GenericApplyKnockback_C::OnBlendOut_8FC7071F40FA26EA05D9688FB3E623A0()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnBlendOut_8FC7071F40FA26EA05D9688FB3E623A0");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x25a144fb);
 
 	UGAB_GenericApplyKnockback_C_OnBlendOut_8FC7071F40FA26EA05D9688FB3E623A0_Params params;
 
@@ -340,7 +359,8 @@ void UGAB_GenericApplyKnockback_C::OnBlendOut_8FC7071F40FA26EA05D9688FB3E623A0()
 
 void UGAB_GenericApplyKnockback_C::OnCompleted_8FC7071F40FA26EA05D9688FB3E623A0()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnCompleted_8FC7071F40FA26EA05D9688FB3E623A0");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd33486ff);
 
 	UGAB_GenericApplyKnockback_C_OnCompleted_8FC7071F40FA26EA05D9688FB3E623A0_Params params;
 
@@ -357,7 +377,8 @@ void UGAB_GenericApplyKnockback_C::OnCompleted_8FC7071F40FA26EA05D9688FB3E623A0(
 
 void UGAB_GenericApplyKnockback_C::K2_OnEndAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.K2_OnEndAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1b88713);
 
 	UGAB_GenericApplyKnockback_C_K2_OnEndAbility_Params params;
 
@@ -374,7 +395,8 @@ void UGAB_GenericApplyKnockback_C::K2_OnEndAbility()
 
 void UGAB_GenericApplyKnockback_C::OnReachedJumpApex()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnReachedJumpApex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83cc6a02);
 
 	UGAB_GenericApplyKnockback_C_OnReachedJumpApex_Params params;
 
@@ -391,7 +413,8 @@ void UGAB_GenericApplyKnockback_C::OnReachedJumpApex()
 
 void UGAB_GenericApplyKnockback_C::SetupMontageSectionsAndOrientDirection()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.SetupMontageSectionsAndOrientDirection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3fc01a);
 
 	UGAB_GenericApplyKnockback_C_SetupMontageSectionsAndOrientDirection_Params params;
 
@@ -410,7 +433,8 @@ void UGAB_GenericApplyKnockback_C::SetupMontageSectionsAndOrientDirection()
 
 void UGAB_GenericApplyKnockback_C::OnPawnLanded(const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnPawnLanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cf92fe2);
 
 	UGAB_GenericApplyKnockback_C_OnPawnLanded_Params params;
 	params.Hit = Hit;
@@ -433,7 +457,8 @@ void UGAB_GenericApplyKnockback_C::OnPawnLanded(const struct FHitResult& Hit)
 
 void UGAB_GenericApplyKnockback_C::OnHitPawn(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.OnHitPawn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45fa9fe1);
 
 	UGAB_GenericApplyKnockback_C_OnHitPawn_Params params;
 	params.SelfActor = SelfActor;
@@ -454,7 +479,8 @@ void UGAB_GenericApplyKnockback_C::OnHitPawn(class AActor* SelfActor, class AAct
 
 void UGAB_GenericApplyKnockback_C::DebugLine()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.DebugLine");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56e24b36);
 
 	UGAB_GenericApplyKnockback_C_DebugLine_Params params;
 
@@ -473,7 +499,8 @@ void UGAB_GenericApplyKnockback_C::DebugLine()
 
 void UGAB_GenericApplyKnockback_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97c370ea);
 
 	UGAB_GenericApplyKnockback_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -493,7 +520,8 @@ void UGAB_GenericApplyKnockback_C::K2_ActivateAbilityFromEvent(struct FGameplayE
 
 void UGAB_GenericApplyKnockback_C::ExecuteUbergraph_GAB_GenericApplyKnockback(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericApplyKnockback.GAB_GenericApplyKnockback_C.ExecuteUbergraph_GAB_GenericApplyKnockback");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf0e0524);
 
 	UGAB_GenericApplyKnockback_C_ExecuteUbergraph_GAB_GenericApplyKnockback_Params params;
 	params.EntryPoint = EntryPoint;

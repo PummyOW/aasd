@@ -45,12 +45,6 @@ struct UBP_FortExpeditionReturnsWidget_C_Refresh_In_Progress_Widgets_Params
 	class UFortExpeditionItem*                         Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.SetData
-struct UBP_FortExpeditionReturnsWidget_C_SetData_Params
-{
-	class UFortExpeditionItem**                        InItem;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.OnExpeditionInProgressUpdated
 struct UBP_FortExpeditionReturnsWidget_C_OnExpeditionInProgressUpdated_Params
 {
@@ -59,6 +53,12 @@ struct UBP_FortExpeditionReturnsWidget_C_OnExpeditionInProgressUpdated_Params
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.Construct
 struct UBP_FortExpeditionReturnsWidget_C_Construct_Params
 {
+};
+
+// Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.SetData
+struct UBP_FortExpeditionReturnsWidget_C_SetData_Params
+{
+	class UFortExpeditionItem**                        InItem;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.PreConstruct

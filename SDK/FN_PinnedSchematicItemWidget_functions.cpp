@@ -21,7 +21,8 @@ namespace SDK
 
 void UPinnedSchematicItemWidget_C::HandleCursorModeChanged(bool CursorModeEnabled, const struct FName& ActionName, class UUserWidget* CursorModeContentWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.HandleCursorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fb0b782);
 
 	UPinnedSchematicItemWidget_C_HandleCursorModeChanged_Params params;
 	params.CursorModeEnabled = CursorModeEnabled;
@@ -41,7 +42,8 @@ void UPinnedSchematicItemWidget_C::HandleCursorModeChanged(bool CursorModeEnable
 
 void UPinnedSchematicItemWidget_C::UnbindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.UnbindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x719a6fd9);
 
 	UPinnedSchematicItemWidget_C_UnbindDelegates_Params params;
 
@@ -58,7 +60,8 @@ void UPinnedSchematicItemWidget_C::UnbindDelegates()
 
 void UPinnedSchematicItemWidget_C::ClearPinnedSchematic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.ClearPinnedSchematic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d7814df);
 
 	UPinnedSchematicItemWidget_C_ClearPinnedSchematic_Params params;
 
@@ -79,7 +82,8 @@ void UPinnedSchematicItemWidget_C::ClearPinnedSchematic()
 
 void UPinnedSchematicItemWidget_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.HandleItemChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe89b3d1c);
 
 	UPinnedSchematicItemWidget_C_HandleItemChanged_Params params;
 	params.ItemChanged = ItemChanged;
@@ -99,7 +103,8 @@ void UPinnedSchematicItemWidget_C::HandleItemChanged(bool ItemChanged, bool Ammo
 
 void UPinnedSchematicItemWidget_C::SetupIngredients()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.SetupIngredients");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c1f68e2);
 
 	UPinnedSchematicItemWidget_C_SetupIngredients_Params params;
 
@@ -119,7 +124,8 @@ void UPinnedSchematicItemWidget_C::SetupIngredients()
 
 void UPinnedSchematicItemWidget_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*>* ItemsAdded, TArray<class UFortWorldItem*>* ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.HandleWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48245242);
 
 	UPinnedSchematicItemWidget_C_HandleWorldItemListChanged_Params params;
 
@@ -143,7 +149,8 @@ void UPinnedSchematicItemWidget_C::HandleWorldItemListChanged(TArray<class UFort
 
 void UPinnedSchematicItemWidget_C::HandleOnSchematicUnlocked(class UFortSchematicItem* Schematic)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.HandleOnSchematicUnlocked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c6a4e52);
 
 	UPinnedSchematicItemWidget_C_HandleOnSchematicUnlocked_Params params;
 	params.Schematic = Schematic;
@@ -161,7 +168,8 @@ void UPinnedSchematicItemWidget_C::HandleOnSchematicUnlocked(class UFortSchemati
 
 void UPinnedSchematicItemWidget_C::BindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.BindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xddf42eb6);
 
 	UPinnedSchematicItemWidget_C_BindDelegates_Params params;
 
@@ -180,7 +188,8 @@ void UPinnedSchematicItemWidget_C::BindDelegates()
 
 void UPinnedSchematicItemWidget_C::SetPinnedSchematic(class UFortSchematicItem* NewPinnedSchematic)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.SetPinnedSchematic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x446db7ba);
 
 	UPinnedSchematicItemWidget_C_SetPinnedSchematic_Params params;
 	params.NewPinnedSchematic = NewPinnedSchematic;
@@ -198,7 +207,8 @@ void UPinnedSchematicItemWidget_C::SetPinnedSchematic(class UFortSchematicItem* 
 
 void UPinnedSchematicItemWidget_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaaec1fc8);
 
 	UPinnedSchematicItemWidget_C_Refresh_Params params;
 
@@ -217,7 +227,8 @@ void UPinnedSchematicItemWidget_C::Refresh()
 
 void UPinnedSchematicItemWidget_C::PinButton_Clicked(class UFortBaseButton* NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.PinButton_Clicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf22023e6);
 
 	UPinnedSchematicItemWidget_C_PinButton_Clicked_Params params;
 	params.NewParam = NewParam;
@@ -237,7 +248,8 @@ void UPinnedSchematicItemWidget_C::PinButton_Clicked(class UFortBaseButton* NewP
 
 void UPinnedSchematicItemWidget_C::ExecuteUbergraph_PinnedSchematicItemWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemWidget.PinnedSchematicItemWidget_C.ExecuteUbergraph_PinnedSchematicItemWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x405adb6d);
 
 	UPinnedSchematicItemWidget_C_ExecuteUbergraph_PinnedSchematicItemWidget_Params params;
 	params.EntryPoint = EntryPoint;

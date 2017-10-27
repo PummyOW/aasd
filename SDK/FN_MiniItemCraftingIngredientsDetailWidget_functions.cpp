@@ -20,7 +20,8 @@ namespace SDK
 
 void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(class UFortItem* Item, TArray<struct FFortItemQuantityPair>* Pairs)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.GetRecipeItemQuantityPairs");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b175b54);
 
 	UMiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs_Params params;
 	params.Item = Item;
@@ -41,7 +42,8 @@ void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(clas
 
 void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xacdea541);
 
 	UMiniItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -58,7 +60,8 @@ void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetail
 
 void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.HandlePostDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd9634e3);
 
 	UMiniItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params params;
 
@@ -77,7 +80,8 @@ void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompar
 
 void UMiniItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x677960fc);
 
 	UMiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

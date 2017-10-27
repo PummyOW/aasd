@@ -17,7 +17,8 @@ namespace SDK
 
 void UDefaultSkillNode_C::SetBackgroundColor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.SetBackgroundColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe86b2e92);
 
 	UDefaultSkillNode_C_SetBackgroundColor_Params params;
 
@@ -34,7 +35,8 @@ void UDefaultSkillNode_C::SetBackgroundColor()
 
 void UDefaultSkillNode_C::UpdateFromButtonState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.UpdateFromButtonState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x630a389f);
 
 	UDefaultSkillNode_C_UpdateFromButtonState_Params params;
 
@@ -51,7 +53,8 @@ void UDefaultSkillNode_C::UpdateFromButtonState()
 
 void UDefaultSkillNode_C::UpdateSelectionGlow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.UpdateSelectionGlow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce34fd4d);
 
 	UDefaultSkillNode_C_UpdateSelectionGlow_Params params;
 
@@ -68,7 +71,8 @@ void UDefaultSkillNode_C::UpdateSelectionGlow()
 
 void UDefaultSkillNode_C::UpdateHoverGlow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.UpdateHoverGlow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24a56251);
 
 	UDefaultSkillNode_C_UpdateHoverGlow_Params params;
 
@@ -85,7 +89,8 @@ void UDefaultSkillNode_C::UpdateHoverGlow()
 
 void UDefaultSkillNode_C::StepSelectionGlowInterpolation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.StepSelectionGlowInterpolation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81f0bbcc);
 
 	UDefaultSkillNode_C_StepSelectionGlowInterpolation_Params params;
 
@@ -102,7 +107,8 @@ void UDefaultSkillNode_C::StepSelectionGlowInterpolation()
 
 void UDefaultSkillNode_C::StepHoverGlowInterpolation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.StepHoverGlowInterpolation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1ae5b330);
 
 	UDefaultSkillNode_C_StepHoverGlowInterpolation_Params params;
 
@@ -119,7 +125,8 @@ void UDefaultSkillNode_C::StepHoverGlowInterpolation()
 
 void UDefaultSkillNode_C::UpdateFromNodeData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.UpdateFromNodeData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x102fe9e8);
 
 	UDefaultSkillNode_C_UpdateFromNodeData_Params params;
 
@@ -136,7 +143,8 @@ void UDefaultSkillNode_C::UpdateFromNodeData()
 
 void UDefaultSkillNode_C::UpdateFromNodeState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.UpdateFromNodeState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f5977ff);
 
 	UDefaultSkillNode_C_UpdateFromNodeState_Params params;
 
@@ -153,7 +161,8 @@ void UDefaultSkillNode_C::UpdateFromNodeState()
 
 void UDefaultSkillNode_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa98e42e);
 
 	UDefaultSkillNode_C_Construct_Params params;
 
@@ -170,7 +179,8 @@ void UDefaultSkillNode_C::Construct()
 
 void UDefaultSkillNode_C::HandleSkillTreeNodeStateChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.HandleSkillTreeNodeStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe98bf33d);
 
 	UDefaultSkillNode_C_HandleSkillTreeNodeStateChanged_Params params;
 
@@ -189,7 +199,8 @@ void UDefaultSkillNode_C::HandleSkillTreeNodeStateChanged()
 
 void UDefaultSkillNode_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd34cd75);
 
 	UDefaultSkillNode_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -207,7 +218,8 @@ void UDefaultSkillNode_C::PreConstruct(bool* IsDesignTime)
 
 void UDefaultSkillNode_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6c640be);
 
 	UDefaultSkillNode_C_OnUnhovered_Params params;
 
@@ -224,7 +236,8 @@ void UDefaultSkillNode_C::OnUnhovered()
 
 void UDefaultSkillNode_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80318921);
 
 	UDefaultSkillNode_C_OnHovered_Params params;
 
@@ -241,7 +254,8 @@ void UDefaultSkillNode_C::OnHovered()
 
 void UDefaultSkillNode_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ed9eb3);
 
 	UDefaultSkillNode_C_OnSelected_Params params;
 
@@ -258,7 +272,8 @@ void UDefaultSkillNode_C::OnSelected()
 
 void UDefaultSkillNode_C::OnDeselected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.OnDeselected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x388cbaa6);
 
 	UDefaultSkillNode_C_OnDeselected_Params params;
 
@@ -277,7 +292,8 @@ void UDefaultSkillNode_C::OnDeselected()
 
 void UDefaultSkillNode_C::ExecuteUbergraph_DefaultSkillNode(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultSkillNode.DefaultSkillNode_C.ExecuteUbergraph_DefaultSkillNode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5328e93d);
 
 	UDefaultSkillNode_C_ExecuteUbergraph_DefaultSkillNode_Params params;
 	params.EntryPoint = EntryPoint;

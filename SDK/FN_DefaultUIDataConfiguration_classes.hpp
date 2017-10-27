@@ -13,14 +13,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass DefaultUIDataConfiguration.DefaultUIDataConfiguration_C
-// 0x0000 (0x2548 - 0x2548)
+// 0x0000 (0x2AE8 - 0x2AE8)
 class UDefaultUIDataConfiguration_C : public UFortUIDataConfiguration
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass DefaultUIDataConfiguration.DefaultUIDataConfiguration_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a324fe7);
 		return ptr;
 	}
 

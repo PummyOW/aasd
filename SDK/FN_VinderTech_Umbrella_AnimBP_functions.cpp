@@ -17,7 +17,8 @@ namespace SDK
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe65416e6);
 
 	UVinderTech_Umbrella_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_3753F99B490EFDA0C68FF0B8819E664F_Params params;
 
@@ -34,7 +35,8 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51b307c6);
 
 	UVinderTech_Umbrella_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_F81EA3C344FA6DFC7A5EA1B792B511A5_Params params;
 
@@ -51,7 +53,8 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x371aee6b);
 
 	UVinderTech_Umbrella_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_1A7F7CBD4C68973F2BBDFCBF93433107_Params params;
 
@@ -68,7 +71,8 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_9592CEBA49F2B067A15FFFBB6AB5105E()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_9592CEBA49F2B067A15FFFBB6AB5105E");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x905032a3);
 
 	UVinderTech_Umbrella_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_AnimGraphNode_TransitionResult_9592CEBA49F2B067A15FFFBB6AB5105E_Params params;
 
@@ -87,7 +91,8 @@ void UVinderTech_Umbrella_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_
 
 void UVinderTech_Umbrella_AnimBP_C::BlueprintUpdateAnimation(float* DeltaTimeX)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.BlueprintUpdateAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefc6a0bd);
 
 	UVinderTech_Umbrella_AnimBP_C_BlueprintUpdateAnimation_Params params;
 	params.DeltaTimeX = DeltaTimeX;
@@ -107,7 +112,8 @@ void UVinderTech_Umbrella_AnimBP_C::BlueprintUpdateAnimation(float* DeltaTimeX)
 
 void UVinderTech_Umbrella_AnimBP_C::ExecuteUbergraph_VinderTech_Umbrella_AnimBP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_Umbrella_AnimBP.VinderTech_Umbrella_AnimBP_C.ExecuteUbergraph_VinderTech_Umbrella_AnimBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74af6cf6);
 
 	UVinderTech_Umbrella_AnimBP_C_ExecuteUbergraph_VinderTech_Umbrella_AnimBP_Params params;
 	params.EntryPoint = EntryPoint;

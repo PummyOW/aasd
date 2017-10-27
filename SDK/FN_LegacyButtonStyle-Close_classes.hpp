@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass LegacyButtonStyle-Close.LegacyButtonStyle-Close_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd5dd2c1);
 		return ptr;
 	}
 

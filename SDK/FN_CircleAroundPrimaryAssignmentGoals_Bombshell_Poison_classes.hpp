@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass CircleAroundPrimaryAssignmentGoals_Bombshell_Poison.CircleAroundPrimaryAssignmentGoals_Bombshell_Poison_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x134bd415);
 		return ptr;
 	}
 

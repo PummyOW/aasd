@@ -28,7 +28,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ItemTransformRequiredItems.ItemTransformRequiredItems_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfd65c245);
 		return ptr;
 	}
 

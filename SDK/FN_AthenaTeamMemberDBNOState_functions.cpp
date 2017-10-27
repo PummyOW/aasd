@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaTeamMemberDBNOState_C::Set_Reviving(bool Is_Reviving)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.Set Reviving");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeae0a56d);
 
 	UAthenaTeamMemberDBNOState_C_Set_Reviving_Params params;
 	params.Is_Reviving = Is_Reviving;
@@ -39,7 +40,8 @@ void UAthenaTeamMemberDBNOState_C::Set_Reviving(bool Is_Reviving)
 
 void UAthenaTeamMemberDBNOState_C::Set_DBNO(bool Is_DBNO)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.Set DBNO");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b3fe904);
 
 	UAthenaTeamMemberDBNOState_C_Set_DBNO_Params params;
 	params.Is_DBNO = Is_DBNO;
@@ -59,7 +61,8 @@ void UAthenaTeamMemberDBNOState_C::Set_DBNO(bool Is_DBNO)
 
 void UAthenaTeamMemberDBNOState_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x472fa9a5);
 
 	UAthenaTeamMemberDBNOState_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -79,7 +82,8 @@ void UAthenaTeamMemberDBNOState_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaTeamMemberDBNOState_C::ExecuteUbergraph_AthenaTeamMemberDBNOState(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberDBNOState.AthenaTeamMemberDBNOState_C.ExecuteUbergraph_AthenaTeamMemberDBNOState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdab309d7);
 
 	UAthenaTeamMemberDBNOState_C_ExecuteUbergraph_AthenaTeamMemberDBNOState_Params params;
 	params.EntryPoint = EntryPoint;

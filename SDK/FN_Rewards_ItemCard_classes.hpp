@@ -64,7 +64,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass Rewards_ItemCard.Rewards_ItemCard_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x46f23b3d);
 		return ptr;
 	}
 

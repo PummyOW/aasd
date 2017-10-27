@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_Summary_C::Focus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.Focus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x124b3b79);
 
 	UResults_Summary_C_Focus_Params params;
 
@@ -37,7 +38,8 @@ void UResults_Summary_C::Focus()
 
 void UResults_Summary_C::InitializeRewards(int InTotalMissionPoints, TArray<class UFortItem*>* Items)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.InitializeRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56eaab57);
 
 	UResults_Summary_C_InitializeRewards_Params params;
 	params.InTotalMissionPoints = InTotalMissionPoints;
@@ -58,7 +60,8 @@ void UResults_Summary_C::InitializeRewards(int InTotalMissionPoints, TArray<clas
 
 void UResults_Summary_C::DoDesignTimeRandomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.DoDesignTimeRandomization");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a4071cc);
 
 	UResults_Summary_C_DoDesignTimeRandomization_Params params;
 
@@ -79,7 +82,8 @@ void UResults_Summary_C::DoDesignTimeRandomization()
 
 void UResults_Summary_C::Initialize(class UFortUIScoreReport* InScoreReport, int InTotalMissionPoints, TArray<class UFortItem*>* InRewardItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65258981);
 
 	UResults_Summary_C_Initialize_Params params;
 	params.InScoreReport = InScoreReport;
@@ -103,7 +107,8 @@ void UResults_Summary_C::Initialize(class UFortUIScoreReport* InScoreReport, int
 
 void UResults_Summary_C::InitializeLootChest(int Level)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.InitializeLootChest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3ccaba2);
 
 	UResults_Summary_C_InitializeLootChest_Params params;
 	params.Level = Level;
@@ -123,7 +128,8 @@ void UResults_Summary_C::InitializeLootChest(int Level)
 
 void UResults_Summary_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68bb269d);
 
 	UResults_Summary_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -143,7 +149,8 @@ void UResults_Summary_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_Summary_C::BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ad4136c);
 
 	UResults_Summary_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -163,7 +170,8 @@ void UResults_Summary_C::BndEvt__ButtonClose_K2Node_ComponentBoundEvent_65_Commo
 
 void UResults_Summary_C::ExecuteUbergraph_Results_Summary(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.ExecuteUbergraph_Results_Summary");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd372a89e);
 
 	UResults_Summary_C_ExecuteUbergraph_Results_Summary_Params params;
 	params.EntryPoint = EntryPoint;
@@ -181,7 +189,8 @@ void UResults_Summary_C::ExecuteUbergraph_Results_Summary(int EntryPoint)
 
 void UResults_Summary_C::OnReturnClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_Summary.Results_Summary_C.OnReturnClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52548120);
 
 	UResults_Summary_C_OnReturnClicked__DelegateSignature_Params params;
 

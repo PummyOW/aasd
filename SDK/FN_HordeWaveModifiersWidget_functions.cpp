@@ -17,7 +17,8 @@ namespace SDK
 
 void UHordeWaveModifiersWidget_C::PresentNextModifier()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveModifiersWidget.HordeWaveModifiersWidget_C.PresentNextModifier");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e7d3c02);
 
 	UHordeWaveModifiersWidget_C_PresentNextModifier_Params params;
 
@@ -37,7 +38,8 @@ void UHordeWaveModifiersWidget_C::PresentNextModifier()
 
 void UHordeWaveModifiersWidget_C::OnModifiersAdded(bool StartPresentationImmediately, TArray<class UFortGameplayModifierItemDefinition*>* Modifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveModifiersWidget.HordeWaveModifiersWidget_C.OnModifiersAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3aac5a6);
 
 	UHordeWaveModifiersWidget_C_OnModifiersAdded_Params params;
 	params.StartPresentationImmediately = StartPresentationImmediately;
@@ -58,7 +60,8 @@ void UHordeWaveModifiersWidget_C::OnModifiersAdded(bool StartPresentationImmedia
 
 void UHordeWaveModifiersWidget_C::OnAllModifiersPresented__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveModifiersWidget.HordeWaveModifiersWidget_C.OnAllModifiersPresented__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f2685a6);
 
 	UHordeWaveModifiersWidget_C_OnAllModifiersPresented__DelegateSignature_Params params;
 

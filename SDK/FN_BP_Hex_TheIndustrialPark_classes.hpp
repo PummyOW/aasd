@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_Hex_TheIndustrialPark.BP_Hex_TheIndustrialPark_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb0a1aaf);
 		return ptr;
 	}
 

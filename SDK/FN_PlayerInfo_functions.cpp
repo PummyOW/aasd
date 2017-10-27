@@ -19,7 +19,8 @@ namespace SDK
 
 void UPlayerInfo_C::UpdateLocalPlayerInfo(struct FFortTeamMemberInfo* Player_Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerInfo.PlayerInfo_C.UpdateLocalPlayerInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45be0834);
 
 	UPlayerInfo_C_UpdateLocalPlayerInfo_Params params;
 
@@ -39,7 +40,8 @@ void UPlayerInfo_C::UpdateLocalPlayerInfo(struct FFortTeamMemberInfo* Player_Inf
 
 void UPlayerInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerInfo.PlayerInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe428dd98);
 
 	UPlayerInfo_C_Construct_Params params;
 
@@ -58,7 +60,8 @@ void UPlayerInfo_C::Construct()
 
 void UPlayerInfo_C::HandlePlayerStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerInfo.PlayerInfo_C.HandlePlayerStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e0da1bd);
 
 	UPlayerInfo_C_HandlePlayerStateChanged_Params params;
 	params.PlayerInfo = PlayerInfo;
@@ -76,7 +79,8 @@ void UPlayerInfo_C::HandlePlayerStateChanged(const struct FFortTeamMemberInfo& P
 
 void UPlayerInfo_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerInfo.PlayerInfo_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6eaee17);
 
 	UPlayerInfo_C_Destruct_Params params;
 
@@ -95,7 +99,8 @@ void UPlayerInfo_C::Destruct()
 
 void UPlayerInfo_C::ExecuteUbergraph_PlayerInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerInfo.PlayerInfo_C.ExecuteUbergraph_PlayerInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e9bfb9e);
 
 	UPlayerInfo_C_ExecuteUbergraph_PlayerInfo_Params params;
 	params.EntryPoint = EntryPoint;

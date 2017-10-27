@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaInventoryLimitStatusIndicator_C::RefreshWorldInventoryStatus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.RefreshWorldInventoryStatus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2330bfba);
 
 	UAthenaInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatus_Params params;
 
@@ -34,7 +35,8 @@ void UAthenaInventoryLimitStatusIndicator_C::RefreshWorldInventoryStatus()
 
 void UAthenaInventoryLimitStatusIndicator_C::TrackWorldInventory()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.TrackWorldInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb615bf44);
 
 	UAthenaInventoryLimitStatusIndicator_C_TrackWorldInventory_Params params;
 
@@ -51,7 +53,8 @@ void UAthenaInventoryLimitStatusIndicator_C::TrackWorldInventory()
 
 void UAthenaInventoryLimitStatusIndicator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x341d0876);
 
 	UAthenaInventoryLimitStatusIndicator_C_Construct_Params params;
 
@@ -68,7 +71,8 @@ void UAthenaInventoryLimitStatusIndicator_C::Construct()
 
 void UAthenaInventoryLimitStatusIndicator_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb31b0a5);
 
 	UAthenaInventoryLimitStatusIndicator_C_Destruct_Params params;
 
@@ -88,7 +92,8 @@ void UAthenaInventoryLimitStatusIndicator_C::Destruct()
 
 void UAthenaInventoryLimitStatusIndicator_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.HandleWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6577b8e);
 
 	UAthenaInventoryLimitStatusIndicator_C_HandleWorldItemListChanged_Params params;
 	params.ItemsAdded = ItemsAdded;
@@ -109,7 +114,8 @@ void UAthenaInventoryLimitStatusIndicator_C::HandleWorldItemListChanged(TArray<c
 
 void UAthenaInventoryLimitStatusIndicator_C::ExecuteUbergraph_AthenaInventoryLimitStatusIndicator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryLimitStatusIndicator.AthenaInventoryLimitStatusIndicator_C.ExecuteUbergraph_AthenaInventoryLimitStatusIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5e3ed38);
 
 	UAthenaInventoryLimitStatusIndicator_C_ExecuteUbergraph_AthenaInventoryLimitStatusIndicator_Params params;
 	params.EntryPoint = EntryPoint;

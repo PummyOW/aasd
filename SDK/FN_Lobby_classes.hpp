@@ -24,7 +24,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Lobby.LobbyBeaconClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad2911e);
 		return ptr;
 	}
 
@@ -56,7 +57,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Lobby.LobbyBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa31de461);
 		return ptr;
 	}
 
@@ -78,7 +80,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Lobby.LobbyBeaconPlayerState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf7247a3);
 		return ptr;
 	}
 
@@ -105,7 +108,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Lobby.LobbyBeaconState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc91a64f6);
 		return ptr;
 	}
 

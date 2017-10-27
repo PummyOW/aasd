@@ -17,7 +17,8 @@ namespace SDK
 
 void UHeroSquadBonusesDetailWidget_C::UpdatePerkWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonusesDetailWidget.HeroSquadBonusesDetailWidget_C.UpdatePerkWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc65d606f);
 
 	UHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets_Params params;
 
@@ -34,7 +35,8 @@ void UHeroSquadBonusesDetailWidget_C::UpdatePerkWidgets()
 
 void UHeroSquadBonusesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonusesDetailWidget.HeroSquadBonusesDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa015df45);
 
 	UHeroSquadBonusesDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -53,7 +55,8 @@ void UHeroSquadBonusesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UHeroSquadBonusesDetailWidget_C::ExecuteUbergraph_HeroSquadBonusesDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonusesDetailWidget.HeroSquadBonusesDetailWidget_C.ExecuteUbergraph_HeroSquadBonusesDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0755eab);
 
 	UHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_HeroSquadBonusesDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

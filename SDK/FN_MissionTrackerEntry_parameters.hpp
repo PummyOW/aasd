@@ -19,11 +19,6 @@ struct UMissionTrackerEntry_C_Construct_Params
 {
 };
 
-// Function MissionTrackerEntry.MissionTrackerEntry_C.OnMissionSet
-struct UMissionTrackerEntry_C_OnMissionSet_Params
-{
-};
-
 // Function MissionTrackerEntry.MissionTrackerEntry_C.ExecuteUbergraph_MissionTrackerEntry
 struct UMissionTrackerEntry_C_ExecuteUbergraph_MissionTrackerEntry_Params
 {

@@ -17,7 +17,8 @@ namespace SDK
 
 void UMonolithicItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MonolithicItemDetailsHostPanel.MonolithicItemDetailsHostPanel_C.HandleHasItemMarkedForMulchingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21460010);
 
 	UMonolithicItemDetailsHostPanel_C_HandleHasItemMarkedForMulchingChanged_Params params;
 
@@ -36,7 +37,8 @@ void UMonolithicItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 
 void UMonolithicItemDetailsHostPanel_C::ExecuteUbergraph_MonolithicItemDetailsHostPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MonolithicItemDetailsHostPanel.MonolithicItemDetailsHostPanel_C.ExecuteUbergraph_MonolithicItemDetailsHostPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x620a427e);
 
 	UMonolithicItemDetailsHostPanel_C_ExecuteUbergraph_MonolithicItemDetailsHostPanel_Params params;
 	params.EntryPoint = EntryPoint;

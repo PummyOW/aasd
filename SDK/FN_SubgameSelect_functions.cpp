@@ -20,7 +20,8 @@ namespace SDK
 
 void USubgameSelect_C::UpdateHeaderAndFooter(bool HideHeader, bool HideFooter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubgameSelect.SubgameSelect_C.UpdateHeaderAndFooter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b37f733);
 
 	USubgameSelect_C_UpdateHeaderAndFooter_Params params;
 	params.HideHeader = HideHeader;
@@ -42,7 +43,8 @@ void USubgameSelect_C::UpdateHeaderAndFooter(bool HideHeader, bool HideFooter)
 
 class UWidget* USubgameSelect_C::PopContentWidgetInternal(struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubgameSelect.SubgameSelect_C.PopContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90499a4c);
 
 	USubgameSelect_C_PopContentWidgetInternal_Params params;
 	params.State = State;
@@ -62,7 +64,8 @@ class UWidget* USubgameSelect_C::PopContentWidgetInternal(struct FContentPushSta
 
 void USubgameSelect_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubgameSelect.SubgameSelect_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d0d5705);
 
 	USubgameSelect_C_Initialize_Params params;
 
@@ -79,7 +82,8 @@ void USubgameSelect_C::Initialize()
 
 void USubgameSelect_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubgameSelect.SubgameSelect_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e25ca7a);
 
 	USubgameSelect_C_Construct_Params params;
 
@@ -98,7 +102,8 @@ void USubgameSelect_C::Construct()
 
 void USubgameSelect_C::OnEnterState(EFortUIState* PreviousUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubgameSelect.SubgameSelect_C.OnEnterState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94f274ed);
 
 	USubgameSelect_C_OnEnterState_Params params;
 	params.PreviousUIState = PreviousUIState;
@@ -119,7 +124,8 @@ void USubgameSelect_C::OnEnterState(EFortUIState* PreviousUIState)
 
 void USubgameSelect_C::PushContentWidgetInternal(class UWidget** Widget, struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubgameSelect.SubgameSelect_C.PushContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a3ae1f5);
 
 	USubgameSelect_C_PushContentWidgetInternal_Params params;
 	params.Widget = Widget;
@@ -140,7 +146,8 @@ void USubgameSelect_C::PushContentWidgetInternal(class UWidget** Widget, struct 
 
 void USubgameSelect_C::ExecuteUbergraph_SubgameSelect(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SubgameSelect.SubgameSelect_C.ExecuteUbergraph_SubgameSelect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34d94161);
 
 	USubgameSelect_C_ExecuteUbergraph_SubgameSelect_Params params;
 	params.EntryPoint = EntryPoint;

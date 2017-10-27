@@ -17,7 +17,8 @@ namespace SDK
 
 void UBuildingInfoIndicator_C::RefreshBuildingInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.RefreshBuildingInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8fbd314);
 
 	UBuildingInfoIndicator_C_RefreshBuildingInfo_Params params;
 
@@ -37,7 +38,8 @@ void UBuildingInfoIndicator_C::RefreshBuildingInfo()
 
 void UBuildingInfoIndicator_C::HandleQuickbarFocusChanged(EFortQuickBars QuickBar, int QuickBarSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleQuickbarFocusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66efe1b9);
 
 	UBuildingInfoIndicator_C_HandleQuickbarFocusChanged_Params params;
 	params.QuickBar = QuickBar;
@@ -58,7 +60,8 @@ void UBuildingInfoIndicator_C::HandleQuickbarFocusChanged(EFortQuickBars QuickBa
 
 void UBuildingInfoIndicator_C::HandleAttachedTrapChanged(class ABuildingTrap* BuildingTrap)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleAttachedTrapChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6129e370);
 
 	UBuildingInfoIndicator_C_HandleAttachedTrapChanged_Params params;
 	params.BuildingTrap = BuildingTrap;
@@ -85,7 +88,8 @@ void UBuildingInfoIndicator_C::HandleAttachedTrapChanged(class ABuildingTrap* Bu
 
 void UBuildingInfoIndicator_C::UpdateBuildingInfo_InteractionWidgets(bool Interactable, bool CanBePlayerEdited, bool IsAnyTrapAttached, bool IsTrapAttachedFacingPlayer, bool IsPreviewTrapAttached, EFortBuildingInteraction InteractionType, int InteractionCost, TEnumAsByte<EFortResourceType> BuildingMaterial)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingInfo_InteractionWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e52bf4c);
 
 	UBuildingInfoIndicator_C_UpdateBuildingInfo_InteractionWidgets_Params params;
 	params.Interactable = Interactable;
@@ -112,7 +116,8 @@ void UBuildingInfoIndicator_C::UpdateBuildingInfo_InteractionWidgets(bool Intera
 
 bool UBuildingInfoIndicator_C::IsCurrentBuildingBeingRepaired()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.IsCurrentBuildingBeingRepaired");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde2ee433);
 
 	UBuildingInfoIndicator_C_IsCurrentBuildingBeingRepaired_Params params;
 
@@ -133,7 +138,8 @@ bool UBuildingInfoIndicator_C::IsCurrentBuildingBeingRepaired()
 
 void UBuildingInfoIndicator_C::UpdateBuildingRepairCost(int NewInteractionCost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingRepairCost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb938408);
 
 	UBuildingInfoIndicator_C_UpdateBuildingRepairCost_Params params;
 	params.NewInteractionCost = NewInteractionCost;
@@ -153,7 +159,8 @@ void UBuildingInfoIndicator_C::UpdateBuildingRepairCost(int NewInteractionCost)
 
 void UBuildingInfoIndicator_C::HandlePlayerTargetingChanged(bool bIsTargeting)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandlePlayerTargetingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3e07ccd);
 
 	UBuildingInfoIndicator_C_HandlePlayerTargetingChanged_Params params;
 	params.bIsTargeting = bIsTargeting;
@@ -171,7 +178,8 @@ void UBuildingInfoIndicator_C::HandlePlayerTargetingChanged(bool bIsTargeting)
 
 void UBuildingInfoIndicator_C::HideHealth()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.HideHealth");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55237029);
 
 	UBuildingInfoIndicator_C_HideHealth_Params params;
 
@@ -188,7 +196,8 @@ void UBuildingInfoIndicator_C::HideHealth()
 
 void UBuildingInfoIndicator_C::Update_Keybinds()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.Update Keybinds");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2664896b);
 
 	UBuildingInfoIndicator_C_Update_Keybinds_Params params;
 
@@ -208,7 +217,8 @@ void UBuildingInfoIndicator_C::Update_Keybinds()
 
 void UBuildingInfoIndicator_C::HandleTrapDurabilityChanged(float CurrentDurability, float MaxDurability)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleTrapDurabilityChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef8a425f);
 
 	UBuildingInfoIndicator_C_HandleTrapDurabilityChanged_Params params;
 	params.CurrentDurability = CurrentDurability;
@@ -229,7 +239,8 @@ void UBuildingInfoIndicator_C::HandleTrapDurabilityChanged(float CurrentDurabili
 
 void UBuildingInfoIndicator_C::HandleBuildingHealthChanged(float Health)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleBuildingHealthChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf192f461);
 
 	UBuildingInfoIndicator_C_HandleBuildingHealthChanged_Params params;
 	params.Health = Health;
@@ -249,7 +260,8 @@ void UBuildingInfoIndicator_C::HandleBuildingHealthChanged(float Health)
 
 void UBuildingInfoIndicator_C::HandleBuildingFocused(class ABuildingActor* FocusedBuilding)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.HandleBuildingFocused");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54ea5fb4);
 
 	UBuildingInfoIndicator_C_HandleBuildingFocused_Params params;
 	params.FocusedBuilding = FocusedBuilding;
@@ -269,7 +281,8 @@ void UBuildingInfoIndicator_C::HandleBuildingFocused(class ABuildingActor* Focus
 
 void UBuildingInfoIndicator_C::UpdateBuildingInfo(struct FFortFocusedBuildingInfo* NewBuildingInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.UpdateBuildingInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75832064);
 
 	UBuildingInfoIndicator_C_UpdateBuildingInfo_Params params;
 
@@ -289,7 +302,8 @@ void UBuildingInfoIndicator_C::UpdateBuildingInfo(struct FFortFocusedBuildingInf
 
 void UBuildingInfoIndicator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f13d102);
 
 	UBuildingInfoIndicator_C_Construct_Params params;
 
@@ -308,7 +322,8 @@ void UBuildingInfoIndicator_C::Construct()
 
 void UBuildingInfoIndicator_C::ExecuteUbergraph_BuildingInfoIndicator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingInfoIndicator.BuildingInfoIndicator_C.ExecuteUbergraph_BuildingInfoIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c158d0e);
 
 	UBuildingInfoIndicator_C_ExecuteUbergraph_BuildingInfoIndicator_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCN_Outlander_BearFragmentDebuff.GCN_Outlander_BearFragmentDebuff_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x483b916d);
 		return ptr;
 	}
 

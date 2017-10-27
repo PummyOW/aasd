@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemTransformItemPicker_C::Return_Item_to_Detail(class UFortItem* InItem, class UFortItem** OutItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.Return Item to Detail");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e6ec48);
 
 	UItemTransformItemPicker_C_Return_Item_to_Detail_Params params;
 	params.InItem = InItem;
@@ -43,7 +44,8 @@ void UItemTransformItemPicker_C::Return_Item_to_Detail(class UFortItem* InItem, 
 
 void UItemTransformItemPicker_C::OpenInspectionScreen(bool* PassThru)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.OpenInspectionScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94140b75);
 
 	UItemTransformItemPicker_C_OpenInspectionScreen_Params params;
 
@@ -65,7 +67,8 @@ void UItemTransformItemPicker_C::OpenInspectionScreen(bool* PassThru)
 
 void UItemTransformItemPicker_C::CommitSelectedItem(bool* PassThru)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.CommitSelectedItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a7ca5ae);
 
 	UItemTransformItemPicker_C_CommitSelectedItem_Params params;
 
@@ -88,7 +91,8 @@ void UItemTransformItemPicker_C::CommitSelectedItem(bool* PassThru)
 
 void UItemTransformItemPicker_C::OpenPicker(int SelectedSlot, TArray<class UFortItem*>* SacrificeItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.OpenPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8845835);
 
 	UItemTransformItemPicker_C_OpenPicker_Params params;
 	params.SelectedSlot = SelectedSlot;
@@ -111,7 +115,8 @@ void UItemTransformItemPicker_C::OpenPicker(int SelectedSlot, TArray<class UFort
 
 void UItemTransformItemPicker_C::SetFilter(const struct FName& FilterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.SetFilter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34dfe913);
 
 	UItemTransformItemPicker_C_SetFilter_Params params;
 	params.FilterName = FilterName;
@@ -129,7 +134,8 @@ void UItemTransformItemPicker_C::SetFilter(const struct FName& FilterName)
 
 void UItemTransformItemPicker_C::SetupFilterTabList()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.SetupFilterTabList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa3d1ae9);
 
 	UItemTransformItemPicker_C_SetupFilterTabList_Params params;
 
@@ -148,7 +154,8 @@ void UItemTransformItemPicker_C::SetupFilterTabList()
 
 void UItemTransformItemPicker_C::HandleItemCommitted(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.HandleItemCommitted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65c7a026);
 
 	UItemTransformItemPicker_C_HandleItemCommitted_Params params;
 	params.Item = Item;
@@ -170,7 +177,8 @@ void UItemTransformItemPicker_C::HandleItemCommitted(class UFortItem* Item)
 
 void UItemTransformItemPicker_C::RemoveInvalidItems(TArray<class UFortAccountItem*>* UnrefinedItems, TArray<class UFortItem*>* CurrentSacrificeItems, TArray<class UFortAccountItem*>* RefinedItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.RemoveInvalidItems");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc03fff8);
 
 	UItemTransformItemPicker_C_RemoveInvalidItems_Params params;
 
@@ -196,7 +204,8 @@ void UItemTransformItemPicker_C::RemoveInvalidItems(TArray<class UFortAccountIte
 
 void UItemTransformItemPicker_C::HandleItemSelected(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.HandleItemSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x718d7673);
 
 	UItemTransformItemPicker_C_HandleItemSelected_Params params;
 	params.Item = Item;
@@ -214,7 +223,8 @@ void UItemTransformItemPicker_C::HandleItemSelected(class UFortItem* Item)
 
 void UItemTransformItemPicker_C::SetupItemPicker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.SetupItemPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2b9e941);
 
 	UItemTransformItemPicker_C_SetupItemPicker_Params params;
 
@@ -231,7 +241,8 @@ void UItemTransformItemPicker_C::SetupItemPicker()
 
 void UItemTransformItemPicker_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a89ddfa);
 
 	UItemTransformItemPicker_C_Construct_Params params;
 
@@ -250,7 +261,8 @@ void UItemTransformItemPicker_C::Construct()
 
 void UItemTransformItemPicker_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c850151);
 
 	UItemTransformItemPicker_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -270,7 +282,8 @@ void UItemTransformItemPicker_C::PreConstruct(bool* IsDesignTime)
 
 void UItemTransformItemPicker_C::BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2346c33);
 
 	UItemTransformItemPicker_C_BndEvt__FilterTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -290,7 +303,8 @@ void UItemTransformItemPicker_C::BndEvt__FilterTabList_K2Node_ComponentBoundEven
 
 void UItemTransformItemPicker_C::ExecuteUbergraph_ItemTransformItemPicker(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.ExecuteUbergraph_ItemTransformItemPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27c3ad81);
 
 	UItemTransformItemPicker_C_ExecuteUbergraph_ItemTransformItemPicker_Params params;
 	params.EntryPoint = EntryPoint;
@@ -310,7 +324,8 @@ void UItemTransformItemPicker_C::ExecuteUbergraph_ItemTransformItemPicker(int En
 
 void UItemTransformItemPicker_C::OnItemSelected__DelegateSignature(class UFortItem* SelectedItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformItemPicker.ItemTransformItemPicker_C.OnItemSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa100ae79);
 
 	UItemTransformItemPicker_C_OnItemSelected__DelegateSignature_Params params;
 	params.SelectedItem = SelectedItem;

@@ -17,7 +17,8 @@ namespace SDK
 
 void AUIMapManager_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIMapManager.UIMapManager_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2dcb4ee);
 
 	AUIMapManager_C_UserConstructionScript_Params params;
 

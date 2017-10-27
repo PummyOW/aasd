@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool* HaveNeed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.ShowHaveNeed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0d380b6);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ShowHaveNeed_Params params;
 
@@ -39,7 +40,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool*
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshPreviewData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.RefreshPreviewData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73dc1778);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_RefreshPreviewData_Params params;
 
@@ -56,7 +58,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshPreviewData
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.RefreshVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf42a1e68);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_RefreshVisibility_Params params;
 
@@ -73,7 +76,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshVisibility(
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9452b8c);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_Refresh_Params params;
 
@@ -90,7 +94,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::Refresh()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::DoDesignTimeRandomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.DoDesignTimeRandomization");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd30840c);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_DoDesignTimeRandomization_Params params;
 
@@ -109,7 +114,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::DoDesignTimeRandom
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb00e17dd);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -129,7 +135,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreConstruct(bool*
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::HandleDifferentItemOrQuantitySetBP(bool* IsBeingReset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.HandleDifferentItemOrQuantitySetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7524461);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_HandleDifferentItemOrQuantitySetBP_Params params;
 	params.IsBeingReset = IsBeingReset;
@@ -147,7 +154,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::HandleDifferentIte
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.PreviewStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7419727c);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreviewStarted_Params params;
 
@@ -164,7 +172,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewStarted()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.PreviewEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88e9babf);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreviewEnded_Params params;
 
@@ -183,7 +192,8 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewEnded()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15fbc975);
 
 	UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UCollectionBookRewardCardWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookRewardCardWidget.CollectionBookRewardCardWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x349c0a8d);
 
 	UCollectionBookRewardCardWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -39,7 +40,8 @@ void UCollectionBookRewardCardWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UCollectionBookRewardCardWidget_C::ExecuteUbergraph_CollectionBookRewardCardWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookRewardCardWidget.CollectionBookRewardCardWidget_C.ExecuteUbergraph_CollectionBookRewardCardWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ce819ff);
 
 	UCollectionBookRewardCardWidget_C_ExecuteUbergraph_CollectionBookRewardCardWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemManagementMulchModeBox_C::HandleLeaveInventory(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleLeaveInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5a05000);
 
 	UItemManagementMulchModeBox_C_HandleLeaveInventory_Params params;
 
@@ -41,7 +42,8 @@ void UItemManagementMulchModeBox_C::HandleLeaveInventory(bool* PassThrough)
 
 void UItemManagementMulchModeBox_C::HandleCursorModeChanging(bool IsEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleCursorModeChanging");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0f17a15);
 
 	UItemManagementMulchModeBox_C_HandleCursorModeChanging_Params params;
 	params.IsEnabled = IsEnabled;
@@ -59,7 +61,8 @@ void UItemManagementMulchModeBox_C::HandleCursorModeChanging(bool IsEnabled)
 
 void UItemManagementMulchModeBox_C::HandleMulchListChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleMulchListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf12ad62);
 
 	UItemManagementMulchModeBox_C_HandleMulchListChanged_Params params;
 
@@ -78,7 +81,8 @@ void UItemManagementMulchModeBox_C::HandleMulchListChanged()
 
 void UItemManagementMulchModeBox_C::HandleInfo(bool* Pass_Through)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ee0aadb);
 
 	UItemManagementMulchModeBox_C_HandleInfo_Params params;
 
@@ -100,7 +104,8 @@ void UItemManagementMulchModeBox_C::HandleInfo(bool* Pass_Through)
 
 void UItemManagementMulchModeBox_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa262e78a);
 
 	UItemManagementMulchModeBox_C_HandleBack_Params params;
 
@@ -120,7 +125,8 @@ void UItemManagementMulchModeBox_C::HandleBack(bool* PassThrough)
 
 void UItemManagementMulchModeBox_C::HandleDifferentItemToDetailSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.HandleDifferentItemToDetailSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ceb6f3);
 
 	UItemManagementMulchModeBox_C_HandleDifferentItemToDetailSetBP_Params params;
 
@@ -137,7 +143,8 @@ void UItemManagementMulchModeBox_C::HandleDifferentItemToDetailSetBP()
 
 void UItemManagementMulchModeBox_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f6d5658);
 
 	UItemManagementMulchModeBox_C_Construct_Params params;
 
@@ -154,7 +161,8 @@ void UItemManagementMulchModeBox_C::Construct()
 
 void UItemManagementMulchModeBox_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0868507);
 
 	UItemManagementMulchModeBox_C_OnActivated_Params params;
 
@@ -171,7 +179,8 @@ void UItemManagementMulchModeBox_C::OnActivated()
 
 void UItemManagementMulchModeBox_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc55ba0d7);
 
 	UItemManagementMulchModeBox_C_Destruct_Params params;
 
@@ -190,7 +199,8 @@ void UItemManagementMulchModeBox_C::Destruct()
 
 void UItemManagementMulchModeBox_C::ExecuteUbergraph_ItemManagementMulchModeBox(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchModeBox.ItemManagementMulchModeBox_C.ExecuteUbergraph_ItemManagementMulchModeBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd99cab38);
 
 	UItemManagementMulchModeBox_C_ExecuteUbergraph_ItemManagementMulchModeBox_Params params;
 	params.EntryPoint = EntryPoint;

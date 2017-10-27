@@ -20,7 +20,8 @@ namespace SDK
 
 void UXpBoostRow_C::HasBoost(class UFortAccountItemDefinition* AccountItemDef, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.HasBoost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb4ee4e8);
 
 	UXpBoostRow_C_HasBoost_Params params;
 	params.AccountItemDef = AccountItemDef;
@@ -41,7 +42,8 @@ void UXpBoostRow_C::HasBoost(class UFortAccountItemDefinition* AccountItemDef, b
 
 void UXpBoostRow_C::Update_Boost_Material()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.Update Boost Material");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf805f5ea);
 
 	UXpBoostRow_C_Update_Boost_Material_Params params;
 
@@ -58,7 +60,8 @@ void UXpBoostRow_C::Update_Boost_Material()
 
 void UXpBoostRow_C::Center_On_Row()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.Center On Row");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee6abc95);
 
 	UXpBoostRow_C_Center_On_Row_Params params;
 
@@ -78,7 +81,8 @@ void UXpBoostRow_C::Center_On_Row()
 
 void UXpBoostRow_C::Update_Party_Member(bool Row_Has_Party_Member, const struct FFortTeamMemberInfo& Party_Members_Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.Update Party Member");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f512ca8);
 
 	UXpBoostRow_C_Update_Party_Member_Params params;
 	params.Row_Has_Party_Member = Row_Has_Party_Member;
@@ -97,7 +101,8 @@ void UXpBoostRow_C::Update_Party_Member(bool Row_Has_Party_Member, const struct 
 
 void UXpBoostRow_C::OnMCPRequestComplete_13866D8D449A2AA167E306B6A172BD62()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.OnMCPRequestComplete_13866D8D449A2AA167E306B6A172BD62");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd47d203c);
 
 	UXpBoostRow_C_OnMCPRequestComplete_13866D8D449A2AA167E306B6A172BD62_Params params;
 
@@ -117,7 +122,8 @@ void UXpBoostRow_C::OnMCPRequestComplete_13866D8D449A2AA167E306B6A172BD62()
 
 void UXpBoostRow_C::DialogResult_9BF60C804C82DAA0C1A2839132130883(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.DialogResult_9BF60C804C82DAA0C1A2839132130883");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8af64734);
 
 	UXpBoostRow_C_DialogResult_9BF60C804C82DAA0C1A2839132130883_Params params;
 	params.Result = Result;
@@ -139,7 +145,8 @@ void UXpBoostRow_C::DialogResult_9BF60C804C82DAA0C1A2839132130883(EFortDialogRes
 
 void UXpBoostRow_C::DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e1e45ee);
 
 	UXpBoostRow_C_DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0_Params params;
 	params.Result = Result;
@@ -158,7 +165,8 @@ void UXpBoostRow_C::DialogResult_8D859C4A4CE7EC02F6B02CA6729E58B0(EFortDialogRes
 
 void UXpBoostRow_C::OnMCPRequestComplete_59B43F5044B96A114CC64595A3818F3C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.OnMCPRequestComplete_59B43F5044B96A114CC64595A3818F3C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54e6485f);
 
 	UXpBoostRow_C_OnMCPRequestComplete_59B43F5044B96A114CC64595A3818F3C_Params params;
 
@@ -177,7 +185,8 @@ void UXpBoostRow_C::OnMCPRequestComplete_59B43F5044B96A114CC64595A3818F3C()
 
 void UXpBoostRow_C::BndEvt__GiveXPButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.BndEvt__GiveXPButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x980051cd);
 
 	UXpBoostRow_C_BndEvt__GiveXPButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -197,7 +206,8 @@ void UXpBoostRow_C::BndEvt__GiveXPButton_K2Node_ComponentBoundEvent_1_CommonButt
 
 void UXpBoostRow_C::ExecuteUbergraph_XpBoostRow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.ExecuteUbergraph_XpBoostRow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fc1546a);
 
 	UXpBoostRow_C_ExecuteUbergraph_XpBoostRow_Params params;
 	params.EntryPoint = EntryPoint;
@@ -213,14 +223,15 @@ void UXpBoostRow_C::ExecuteUbergraph_XpBoostRow(int EntryPoint)
 // Function XpBoostRow.XpBoostRow_C.Give Boost Clicked__DelegateSignature
 // (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl        Player_To_Boost                (CPF_Parm)
+// struct FUniqueNetIdRepl        Player_to_Boost                (CPF_Parm)
 
-void UXpBoostRow_C::Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_To_Boost)
+void UXpBoostRow_C::Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_to_Boost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostRow.XpBoostRow_C.Give Boost Clicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1620e53);
 
 	UXpBoostRow_C_Give_Boost_Clicked__DelegateSignature_Params params;
-	params.Player_To_Boost = Player_To_Boost;
+	params.Player_to_Boost = Player_to_Boost;
 
 	auto flags = fn->FunctionFlags;
 

@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Qos.QosBeaconClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb61f574e);
 		return ptr;
 	}
 
@@ -40,7 +41,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Qos.QosBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6f62471);
 		return ptr;
 	}
 
@@ -71,7 +73,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Qos.QosRegionManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x88882f44);
 		return ptr;
 	}
 
@@ -94,7 +97,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Qos.QosEvaluator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2e516a6);
 		return ptr;
 	}
 

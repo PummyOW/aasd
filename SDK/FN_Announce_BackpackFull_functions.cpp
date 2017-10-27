@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_BackpackFull_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_BackpackFull.Announce_BackpackFull_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x483faa0);
 
 	AAnnounce_BackpackFull_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_BackpackFull_C::UserConstructionScript()
 
 void AAnnounce_BackpackFull_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_BackpackFull.Announce_BackpackFull_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd20f7178);
 
 	AAnnounce_BackpackFull_C_OnClientAnnouncementStart_Params params;
 
@@ -53,7 +55,8 @@ void AAnnounce_BackpackFull_C::OnClientAnnouncementStart()
 
 void AAnnounce_BackpackFull_C::ExecuteUbergraph_Announce_BackpackFull(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_BackpackFull.Announce_BackpackFull_C.ExecuteUbergraph_Announce_BackpackFull");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x767e83d8);
 
 	AAnnounce_BackpackFull_C_ExecuteUbergraph_Announce_BackpackFull_Params params;
 	params.EntryPoint = EntryPoint;

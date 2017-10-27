@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemAttributesDetailWidget_C::UpdateItemsForWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.UpdateItemsForWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8f8d342);
 
 	UItemAttributesDetailWidget_C_UpdateItemsForWidgets_Params params;
 
@@ -34,7 +35,8 @@ void UItemAttributesDetailWidget_C::UpdateItemsForWidgets()
 
 void UItemAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbec2f507);
 
 	UItemAttributesDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -51,7 +53,8 @@ void UItemAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemAttributesDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandlePostDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26aa37a5);
 
 	UItemAttributesDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params params;
 
@@ -68,7 +71,8 @@ void UItemAttributesDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 
 void UItemAttributesDetailWidget_C::HandleShouldPreviewUpgradingItemChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandleShouldPreviewUpgradingItemChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80b0e876);
 
 	UItemAttributesDetailWidget_C_HandleShouldPreviewUpgradingItemChanged_Params params;
 
@@ -85,7 +89,8 @@ void UItemAttributesDetailWidget_C::HandleShouldPreviewUpgradingItemChanged()
 
 void UItemAttributesDetailWidget_C::HandlePreDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandlePreDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4752420);
 
 	UItemAttributesDetailWidget_C_HandlePreDifferentItemToDetailSet_Params params;
 
@@ -102,7 +107,8 @@ void UItemAttributesDetailWidget_C::HandlePreDifferentItemToDetailSet()
 
 void UItemAttributesDetailWidget_C::HandlePreDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandlePreDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd117298);
 
 	UItemAttributesDetailWidget_C_HandlePreDifferentItemToCompareWithSet_Params params;
 
@@ -123,7 +129,8 @@ void UItemAttributesDetailWidget_C::HandlePreDifferentItemToCompareWithSet()
 
 void UItemAttributesDetailWidget_C::HandleItemToDetailChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandleItemToDetailChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3e37bee);
 
 	UItemAttributesDetailWidget_C_HandleItemToDetailChanged_Params params;
 	params.bItemChanged = bItemChanged;
@@ -147,7 +154,8 @@ void UItemAttributesDetailWidget_C::HandleItemToDetailChanged(bool bItemChanged,
 
 void UItemAttributesDetailWidget_C::HandleItemToCompareWithChanged(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.HandleItemToCompareWithChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21c1df4a);
 
 	UItemAttributesDetailWidget_C_HandleItemToCompareWithChanged_Params params;
 	params.bItemChanged = bItemChanged;
@@ -169,7 +177,8 @@ void UItemAttributesDetailWidget_C::HandleItemToCompareWithChanged(bool bItemCha
 
 void UItemAttributesDetailWidget_C::ExecuteUbergraph_ItemAttributesDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.ExecuteUbergraph_ItemAttributesDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x312b1dd8);
 
 	UItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

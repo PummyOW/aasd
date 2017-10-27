@@ -17,7 +17,8 @@ namespace SDK
 
 void UStatsModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsModeItemDetailsHostPanel.StatsModeItemDetailsHostPanel_C.HandleHasItemMarkedForMulchingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23869f66);
 
 	UStatsModeItemDetailsHostPanel_C_HandleHasItemMarkedForMulchingChanged_Params params;
 
@@ -36,7 +37,8 @@ void UStatsModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 
 void UStatsModeItemDetailsHostPanel_C::ExecuteUbergraph_StatsModeItemDetailsHostPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsModeItemDetailsHostPanel.StatsModeItemDetailsHostPanel_C.ExecuteUbergraph_StatsModeItemDetailsHostPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3ae42be);
 
 	UStatsModeItemDetailsHostPanel_C_ExecuteUbergraph_StatsModeItemDetailsHostPanel_Params params;
 	params.EntryPoint = EntryPoint;

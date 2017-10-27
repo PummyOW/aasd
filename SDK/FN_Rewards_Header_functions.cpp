@@ -17,7 +17,8 @@ namespace SDK
 
 void URewards_Header_C::SkipFadeInSubHeaderAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.SkipFadeInSubHeaderAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcfd71cf4);
 
 	URewards_Header_C_SkipFadeInSubHeaderAnimation_Params params;
 
@@ -34,7 +35,8 @@ void URewards_Header_C::SkipFadeInSubHeaderAnimation()
 
 void URewards_Header_C::SetQuestNameText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.SetQuestNameText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x992081c5);
 
 	URewards_Header_C_SetQuestNameText_Params params;
 
@@ -55,7 +57,8 @@ void URewards_Header_C::SetQuestNameText()
 
 void URewards_Header_C::PopulateFromRewardType(EFrontEndRewardType Selection, ECollectionBookRewardType CollectionBookRewardType, const struct FText& RewardDetailText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.PopulateFromRewardType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55c68288);
 
 	URewards_Header_C_PopulateFromRewardType_Params params;
 	params.Selection = Selection;
@@ -75,7 +78,8 @@ void URewards_Header_C::PopulateFromRewardType(EFrontEndRewardType Selection, EC
 
 void URewards_Header_C::ResetSubHeader()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.ResetSubHeader");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0101f09);
 
 	URewards_Header_C_ResetSubHeader_Params params;
 
@@ -92,7 +96,8 @@ void URewards_Header_C::ResetSubHeader()
 
 void URewards_Header_C::FadeInSubHeader()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.FadeInSubHeader");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60289b79);
 
 	URewards_Header_C_FadeInSubHeader_Params params;
 
@@ -109,7 +114,8 @@ void URewards_Header_C::FadeInSubHeader()
 
 void URewards_Header_C::SetMissionLootLevelText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.SetMissionLootLevelText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf8321e2);
 
 	URewards_Header_C_SetMissionLootLevelText_Params params;
 
@@ -128,7 +134,8 @@ void URewards_Header_C::SetMissionLootLevelText()
 
 void URewards_Header_C::PopulateFromReward(class UFortRewardNotificationData* InReward)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.PopulateFromReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73b37d50);
 
 	URewards_Header_C_PopulateFromReward_Params params;
 	params.InReward = InReward;
@@ -148,7 +155,8 @@ void URewards_Header_C::PopulateFromReward(class UFortRewardNotificationData* In
 
 void URewards_Header_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17248dc5);
 
 	URewards_Header_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -168,7 +176,8 @@ void URewards_Header_C::PreConstruct(bool* IsDesignTime)
 
 void URewards_Header_C::ExecuteUbergraph_Rewards_Header(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_Header.Rewards_Header_C.ExecuteUbergraph_Rewards_Header");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9537583);
 
 	URewards_Header_C_ExecuteUbergraph_Rewards_Header_Params params;
 	params.EntryPoint = EntryPoint;

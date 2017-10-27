@@ -19,7 +19,8 @@ namespace SDK
 
 void ULeaveButton_C::IsInNeighborhood(bool* bIsInNeighborhood)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.IsInNeighborhood");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4f637fe);
 
 	ULeaveButton_C_IsInNeighborhood_Params params;
 
@@ -39,7 +40,8 @@ void ULeaveButton_C::IsInNeighborhood(bool* bIsInNeighborhood)
 
 void ULeaveButton_C::Update_Style_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.Update Style State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1332b7fc);
 
 	ULeaveButton_C_Update_Style_State_Params params;
 
@@ -58,7 +60,8 @@ void ULeaveButton_C::Update_Style_State()
 
 void ULeaveButton_C::SetText(const struct FText& TextOverride)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.SetText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba5a662c);
 
 	ULeaveButton_C_SetText_Params params;
 	params.TextOverride = TextOverride;
@@ -78,7 +81,8 @@ void ULeaveButton_C::SetText(const struct FText& TextOverride)
 
 void ULeaveButton_C::GetButton(class UIconTextButton_C** Leave)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.GetButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba0ecb45);
 
 	ULeaveButton_C_GetButton_Params params;
 
@@ -100,7 +104,8 @@ void ULeaveButton_C::GetButton(class UIconTextButton_C** Leave)
 
 void ULeaveButton_C::HasUnsavedQuestProgress(bool* HasUnsavedQuestProgress)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.HasUnsavedQuestProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x899ab160);
 
 	ULeaveButton_C_HasUnsavedQuestProgress_Params params;
 
@@ -120,7 +125,8 @@ void ULeaveButton_C::HasUnsavedQuestProgress(bool* HasUnsavedQuestProgress)
 
 void ULeaveButton_C::LeaveParty()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.LeaveParty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a3373cc);
 
 	ULeaveButton_C_LeaveParty_Params params;
 
@@ -137,7 +143,8 @@ void ULeaveButton_C::LeaveParty()
 
 void ULeaveButton_C::UpdateState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.UpdateState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f1cb9eb);
 
 	ULeaveButton_C_UpdateState_Params params;
 
@@ -156,7 +163,8 @@ void ULeaveButton_C::UpdateState()
 
 void ULeaveButton_C::IsConsideredInGame(bool* InGame)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.IsConsideredInGame");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37c17202);
 
 	ULeaveButton_C_IsConsideredInGame_Params params;
 
@@ -178,7 +186,8 @@ void ULeaveButton_C::IsConsideredInGame(bool* InGame)
 
 void ULeaveButton_C::GetLeaveActionText(struct FText* Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.GetLeaveActionText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fee85e5);
 
 	ULeaveButton_C_GetLeaveActionText_Params params;
 
@@ -201,7 +210,8 @@ void ULeaveButton_C::GetLeaveActionText(struct FText* Text)
 
 void ULeaveButton_C::DialogResult_1E39F47546648367BB2F218F69311220(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.DialogResult_1E39F47546648367BB2F218F69311220");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6244cbe0);
 
 	ULeaveButton_C_DialogResult_1E39F47546648367BB2F218F69311220_Params params;
 	params.Result = Result;
@@ -223,7 +233,8 @@ void ULeaveButton_C::DialogResult_1E39F47546648367BB2F218F69311220(EFortDialogRe
 
 void ULeaveButton_C::DialogResult_F5AF58094777CFEEC0BF28BEA620800C(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.DialogResult_F5AF58094777CFEEC0BF28BEA620800C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d7af977);
 
 	ULeaveButton_C_DialogResult_F5AF58094777CFEEC0BF28BEA620800C_Params params;
 	params.Result = Result;
@@ -245,7 +256,8 @@ void ULeaveButton_C::DialogResult_F5AF58094777CFEEC0BF28BEA620800C(EFortDialogRe
 
 void ULeaveButton_C::DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee721a04);
 
 	ULeaveButton_C_DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B_Params params;
 	params.Result = Result;
@@ -267,7 +279,8 @@ void ULeaveButton_C::DialogResult_574CB01D47DE8AEDA0EB2F9CFB146A3B(EFortDialogRe
 
 void ULeaveButton_C::DialogResult_A0D25F7F4E82D325BF226E811F1D79AF(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.DialogResult_A0D25F7F4E82D325BF226E811F1D79AF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa832bb6a);
 
 	ULeaveButton_C_DialogResult_A0D25F7F4E82D325BF226E811F1D79AF_Params params;
 	params.Result = Result;
@@ -288,7 +301,8 @@ void ULeaveButton_C::DialogResult_A0D25F7F4E82D325BF226E811F1D79AF(EFortDialogRe
 
 void ULeaveButton_C::HandleTeamMemberRemoved(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.HandleTeamMemberRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cfa2a80);
 
 	ULeaveButton_C_HandleTeamMemberRemoved_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -308,7 +322,8 @@ void ULeaveButton_C::HandleTeamMemberRemoved(int PlayerIndex)
 
 void ULeaveButton_C::HandleTeamMemberAdded(const struct FFortTeamMemberInfo& NewTeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.HandleTeamMemberAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d1580a);
 
 	ULeaveButton_C_HandleTeamMemberAdded_Params params;
 	params.NewTeamMemberInfo = NewTeamMemberInfo;
@@ -326,7 +341,8 @@ void ULeaveButton_C::HandleTeamMemberAdded(const struct FFortTeamMemberInfo& New
 
 void ULeaveButton_C::HandleLobbyEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.HandleLobbyEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc2b1a50);
 
 	ULeaveButton_C_HandleLobbyEvents_Params params;
 
@@ -343,7 +359,8 @@ void ULeaveButton_C::HandleLobbyEvents()
 
 void ULeaveButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8919f3d6);
 
 	ULeaveButton_C_Construct_Params params;
 
@@ -362,7 +379,8 @@ void ULeaveButton_C::Construct()
 
 void ULeaveButton_C::BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3be0e273);
 
 	ULeaveButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -380,7 +398,8 @@ void ULeaveButton_C::BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonCli
 
 void ULeaveButton_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x787c4e85);
 
 	ULeaveButton_C_Destruct_Params params;
 
@@ -399,7 +418,8 @@ void ULeaveButton_C::Destruct()
 
 void ULeaveButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10c5492d);
 
 	ULeaveButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -419,7 +439,8 @@ void ULeaveButton_C::PreConstruct(bool* IsDesignTime)
 
 void ULeaveButton_C::ExecuteUbergraph_LeaveButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.ExecuteUbergraph_LeaveButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c7c219c);
 
 	ULeaveButton_C_ExecuteUbergraph_LeaveButton_Params params;
 	params.EntryPoint = EntryPoint;
@@ -439,7 +460,8 @@ void ULeaveButton_C::ExecuteUbergraph_LeaveButton(int EntryPoint)
 
 void ULeaveButton_C::Update_Visibility__DelegateSignature(bool Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.Update Visibility__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f4c46bb);
 
 	ULeaveButton_C_Update_Visibility__DelegateSignature_Params params;
 	params.Visibility = Visibility;
@@ -457,7 +479,8 @@ void ULeaveButton_C::Update_Visibility__DelegateSignature(bool Visibility)
 
 void ULeaveButton_C::OnClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaveButton.LeaveButton_C.OnClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x571e080e);
 
 	ULeaveButton_C_OnClicked__DelegateSignature_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemRatingIndicator_C::HandleViewModelChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemRatingIndicator.ItemRatingIndicator_C.HandleViewModelChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffcee67b);
 
 	UItemRatingIndicator_C_HandleViewModelChanged_Params params;
 
@@ -36,7 +37,8 @@ void UItemRatingIndicator_C::HandleViewModelChanged()
 
 void UItemRatingIndicator_C::ExecuteUbergraph_ItemRatingIndicator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemRatingIndicator.ItemRatingIndicator_C.ExecuteUbergraph_ItemRatingIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb68c823c);
 
 	UItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator_Params params;
 	params.EntryPoint = EntryPoint;

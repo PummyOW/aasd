@@ -25,7 +25,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.ProceduralFoliageComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b0299d9);
 		return ptr;
 	}
 
@@ -43,7 +44,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.FoliageInstancedStaticMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb057c160);
 		return ptr;
 	}
 
@@ -58,7 +60,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.FoliageStatistics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c9a4e);
 		return ptr;
 	}
 
@@ -164,7 +167,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.FoliageType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61fe5667);
 		return ptr;
 	}
 
@@ -182,7 +186,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.FoliageType_InstancedStaticMesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27dd4984);
 		return ptr;
 	}
 
@@ -198,7 +203,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.InstancedFoliageActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x19f5);
 		return ptr;
 	}
 
@@ -228,7 +234,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.InteractiveFoliageActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7593ce4e);
 		return ptr;
 	}
 
@@ -246,7 +253,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.InteractiveFoliageComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb1808720);
 		return ptr;
 	}
 
@@ -262,7 +270,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.ProceduralFoliageBlockingVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30eb4227);
 		return ptr;
 	}
 
@@ -285,7 +294,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.ProceduralFoliageSpawner");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x24ec0be8);
 		return ptr;
 	}
 
@@ -306,7 +316,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.ProceduralFoliageTile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb94ae6d0);
 		return ptr;
 	}
 
@@ -322,7 +333,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Foliage.ProceduralFoliageVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x545c6762);
 		return ptr;
 	}
 

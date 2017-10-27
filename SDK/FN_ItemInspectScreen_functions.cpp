@@ -12,6 +12,27 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function ItemInspectScreen.ItemInspectScreen_C.SetInspectModeForChildPanels
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// EFortItemInspectionMode        NewInspectMode                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UItemInspectScreen_C::SetInspectModeForChildPanels(EFortItemInspectionMode NewInspectMode)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x820ab55e);
+
+	UItemInspectScreen_C_SetInspectModeForChildPanels_Params params;
+	params.NewInspectMode = NewInspectMode;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function ItemInspectScreen.ItemInspectScreen_C.SetTabButtonStyle
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -19,7 +40,8 @@ namespace SDK
 
 void UItemInspectScreen_C::SetTabButtonStyle(class UObject* Object)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.SetTabButtonStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2361a7a9);
 
 	UItemInspectScreen_C_SetTabButtonStyle_Params params;
 	params.Object = Object;
@@ -39,7 +61,8 @@ void UItemInspectScreen_C::SetTabButtonStyle(class UObject* Object)
 
 void UItemInspectScreen_C::ShowPreviewHeader(bool ShowPreviewLabel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.ShowPreviewHeader");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4213e8b);
 
 	UItemInspectScreen_C_ShowPreviewHeader_Params params;
 	params.ShowPreviewLabel = ShowPreviewLabel;
@@ -52,34 +75,13 @@ void UItemInspectScreen_C::ShowPreviewHeader(bool ShowPreviewLabel)
 }
 
 
-// Function ItemInspectScreen.ItemInspectScreen_C.Handle3DView
-// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// bool                           PassThrough                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemInspectScreen_C::Handle3DView(bool* PassThrough)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.Handle3DView");
-
-	UItemInspectScreen_C_Handle3DView_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (PassThrough != nullptr)
-		*PassThrough = params.PassThrough;
-}
-
-
 // Function ItemInspectScreen.ItemInspectScreen_C.RefreshCallout
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
 void UItemInspectScreen_C::RefreshCallout()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.RefreshCallout");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe27d58ec);
 
 	UItemInspectScreen_C_RefreshCallout_Params params;
 
@@ -96,7 +98,8 @@ void UItemInspectScreen_C::RefreshCallout()
 
 void UItemInspectScreen_C::RefreshActionHandlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.RefreshActionHandlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee85bd79);
 
 	UItemInspectScreen_C_RefreshActionHandlers_Params params;
 
@@ -115,7 +118,8 @@ void UItemInspectScreen_C::RefreshActionHandlers()
 
 void UItemInspectScreen_C::HandleEvolutionComplete(TArray<struct FFortItemInstanceQuantityPair>* ResultingItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d224671);
 
 	UItemInspectScreen_C_HandleEvolutionComplete_Params params;
 
@@ -135,7 +139,8 @@ void UItemInspectScreen_C::HandleEvolutionComplete(TArray<struct FFortItemInstan
 
 void UItemInspectScreen_C::RefreshOnUpgrade()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.RefreshOnUpgrade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4fc954c9);
 
 	UItemInspectScreen_C_RefreshOnUpgrade_Params params;
 
@@ -154,7 +159,8 @@ void UItemInspectScreen_C::RefreshOnUpgrade()
 
 void UItemInspectScreen_C::HandleCursorModeChanging(bool IsEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleCursorModeChanging");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x39843b4b);
 
 	UItemInspectScreen_C_HandleCursorModeChanging_Params params;
 	params.IsEnabled = IsEnabled;
@@ -179,7 +185,8 @@ void UItemInspectScreen_C::HandleCursorModeChanging(bool IsEnabled)
 
 void UItemInspectScreen_C::OpenItemInspect__Function_(class UFortItem* ItemToInspect, EFortItemInspectionMode Mode, bool ShouldAllowUpgrading, bool ShouldAllowEvolution, bool ShouldAllowFavoriting, bool ShouldShowPreviewDisplay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.OpenItemInspect (Function)");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47a1810f);
 
 	UItemInspectScreen_C_OpenItemInspect__Function__Params params;
 	params.ItemToInspect = ItemToInspect;
@@ -202,7 +209,8 @@ void UItemInspectScreen_C::OpenItemInspect__Function_(class UFortItem* ItemToIns
 
 void UItemInspectScreen_C::ResetDetailsPanel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.ResetDetailsPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xacd9e898);
 
 	UItemInspectScreen_C_ResetDetailsPanel_Params params;
 
@@ -219,7 +227,8 @@ void UItemInspectScreen_C::ResetDetailsPanel()
 
 void UItemInspectScreen_C::SetupActionHandlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.SetupActionHandlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c9e1757);
 
 	UItemInspectScreen_C_SetupActionHandlers_Params params;
 
@@ -238,7 +247,8 @@ void UItemInspectScreen_C::SetupActionHandlers()
 
 void UItemInspectScreen_C::GetFirstEvolutionOption(class UFortItem** EvolutionItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.GetFirstEvolutionOption");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe36b179f);
 
 	UItemInspectScreen_C_GetFirstEvolutionOption_Params params;
 
@@ -261,7 +271,8 @@ void UItemInspectScreen_C::GetFirstEvolutionOption(class UFortItem** EvolutionIt
 
 void UItemInspectScreen_C::HandleEvolutionChoiceSelected(class UFortItem* Item, int RecipeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionChoiceSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1460e1a);
 
 	UItemInspectScreen_C_HandleEvolutionChoiceSelected_Params params;
 	params.Item = Item;
@@ -282,7 +293,8 @@ void UItemInspectScreen_C::HandleEvolutionChoiceSelected(class UFortItem* Item, 
 
 void UItemInspectScreen_C::HandleEvolutionChoiceUnhovered(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionChoiceUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1e4799);
 
 	UItemInspectScreen_C_HandleEvolutionChoiceUnhovered_Params params;
 	params.Item = Item;
@@ -302,7 +314,8 @@ void UItemInspectScreen_C::HandleEvolutionChoiceUnhovered(class UFortItem* Item)
 
 void UItemInspectScreen_C::HandleEvolutionChoiceHovered(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolutionChoiceHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71d51fca);
 
 	UItemInspectScreen_C_HandleEvolutionChoiceHovered_Params params;
 	params.Item = Item;
@@ -322,7 +335,8 @@ void UItemInspectScreen_C::HandleEvolutionChoiceHovered(class UFortItem* Item)
 
 void UItemInspectScreen_C::SetInspectMode(EFortItemInspectionMode NewInspectMode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.SetInspectMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58b4d13a);
 
 	UItemInspectScreen_C_SetInspectMode_Params params;
 	params.NewInspectMode = NewInspectMode;
@@ -342,7 +356,8 @@ void UItemInspectScreen_C::SetInspectMode(EFortItemInspectionMode NewInspectMode
 
 void UItemInspectScreen_C::HandleUpgrade(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleUpgrade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34f2d457);
 
 	UItemInspectScreen_C_HandleUpgrade_Params params;
 
@@ -364,7 +379,8 @@ void UItemInspectScreen_C::HandleUpgrade(bool* PassThrough)
 
 void UItemInspectScreen_C::HandleEvolution(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleEvolution");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59ff37ac);
 
 	UItemInspectScreen_C_HandleEvolution_Params params;
 
@@ -386,7 +402,8 @@ void UItemInspectScreen_C::HandleEvolution(bool* PassThrough)
 
 void UItemInspectScreen_C::HandleView(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52cbc8de);
 
 	UItemInspectScreen_C_HandleView_Params params;
 
@@ -408,7 +425,8 @@ void UItemInspectScreen_C::HandleView(bool* PassThrough)
 
 void UItemInspectScreen_C::HandleFavorite(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleFavorite");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd11b48d);
 
 	UItemInspectScreen_C_HandleFavorite_Params params;
 
@@ -430,7 +448,8 @@ void UItemInspectScreen_C::HandleFavorite(bool* PassThrough)
 
 void UItemInspectScreen_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44795e88);
 
 	UItemInspectScreen_C_HandleBack_Params params;
 
@@ -452,7 +471,8 @@ void UItemInspectScreen_C::HandleBack(bool* PassThrough)
 
 void UItemInspectScreen_C::SetItemToRepresent(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.SetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa02c016d);
 
 	UItemInspectScreen_C_SetItemToRepresent_Params params;
 	params.Item = Item;
@@ -470,7 +490,8 @@ void UItemInspectScreen_C::SetItemToRepresent(class UFortItem* Item)
 
 void UItemInspectScreen_C::OnMCPRequestComplete_5E880EAB4E8645A0B59BA29917400203()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.OnMCPRequestComplete_5E880EAB4E8645A0B59BA29917400203");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc55cf37e);
 
 	UItemInspectScreen_C_OnMCPRequestComplete_5E880EAB4E8645A0B59BA29917400203_Params params;
 
@@ -487,7 +508,8 @@ void UItemInspectScreen_C::OnMCPRequestComplete_5E880EAB4E8645A0B59BA29917400203
 
 void UItemInspectScreen_C::BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_4_OnEvolutionConfirm__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_4_OnEvolutionConfirm__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55a354ec);
 
 	UItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_4_OnEvolutionConfirm__DelegateSignature_Params params;
 
@@ -504,26 +526,10 @@ void UItemInspectScreen_C::BndEvt__ItemInspectEvolutionConfirmation_K2Node_Compo
 
 void UItemInspectScreen_C::BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_1_OnUpgradeCancel__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_1_OnUpgradeCancel__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9863481);
 
 	UItemInspectScreen_C_BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_1_OnUpgradeCancel__DelegateSignature_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature
-// (FUNC_BlueprintEvent)
-
-void UItemInspectScreen_C::BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature");
-
-	UItemInspectScreen_C_BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -542,7 +548,8 @@ void UItemInspectScreen_C::BndEvt__ItemInspectUpgradeConfirmation_K2Node_Compone
 
 void UItemInspectScreen_C::BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature(bool bItemChanged, bool bAmmoChanged, bool bIngredientsChanged)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba985b46);
 
 	UItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature_Params params;
 	params.bItemChanged = bItemChanged;
@@ -557,12 +564,31 @@ void UItemInspectScreen_C::BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_Fo
 }
 
 
+// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature
+// (FUNC_BlueprintEvent)
+
+void UItemInspectScreen_C::BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4021e162);
+
+	UItemInspectScreen_C_BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__InspectedItem_K2Node_ComponentBoundEvent_10_FortOnItemDestroyedDelegate__DelegateSignature
 // (FUNC_BlueprintEvent)
 
 void UItemInspectScreen_C::BndEvt__InspectedItem_K2Node_ComponentBoundEvent_10_FortOnItemDestroyedDelegate__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__InspectedItem_K2Node_ComponentBoundEvent_10_FortOnItemDestroyedDelegate__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa833339);
 
 	UItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_10_FortOnItemDestroyedDelegate__DelegateSignature_Params params;
 
@@ -579,49 +605,10 @@ void UItemInspectScreen_C::BndEvt__InspectedItem_K2Node_ComponentBoundEvent_10_F
 
 void UItemInspectScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1acc8a);
 
 	UItemInspectScreen_C_Construct_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature
-// (FUNC_BlueprintEvent)
-// Parameters:
-// class UFortItem*               Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemInspectScreen_C::BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature(class UFortItem* Item)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature");
-
-	UItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature_Params params;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature
-// (FUNC_BlueprintEvent)
-// Parameters:
-// class UFortItem*               Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemInspectScreen_C::BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature(class UFortItem* Item)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature");
-
-	UItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature_Params params;
-	params.Item = Item;
 
 	auto flags = fn->FunctionFlags;
 
@@ -639,7 +626,8 @@ void UItemInspectScreen_C::BndEvt__ItemInspectEvolutionConfirmation_K2Node_Compo
 
 void UItemInspectScreen_C::BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature(class UFortItem* Item, int RecipeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f9ab4f4);
 
 	UItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature_Params params;
 	params.Item = Item;
@@ -658,7 +646,8 @@ void UItemInspectScreen_C::BndEvt__ItemInspectEvolutionConfirmation_K2Node_Compo
 
 void UItemInspectScreen_C::BndEvt__ItemInspectUpgradeCallout_K2Node_ComponentBoundEvent_444_OnRequestUpgrade__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectUpgradeCallout_K2Node_ComponentBoundEvent_444_OnRequestUpgrade__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31a3c7c2);
 
 	UItemInspectScreen_C_BndEvt__ItemInspectUpgradeCallout_K2Node_ComponentBoundEvent_444_OnRequestUpgrade__DelegateSignature_Params params;
 
@@ -675,7 +664,8 @@ void UItemInspectScreen_C::BndEvt__ItemInspectUpgradeCallout_K2Node_ComponentBou
 
 void UItemInspectScreen_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49fd4101);
 
 	UItemInspectScreen_C_OnActivated_Params params;
 
@@ -699,7 +689,8 @@ void UItemInspectScreen_C::OnActivated()
 
 void UItemInspectScreen_C::OpenItemInspect(class UFortItem** ItemToInspect, EFortItemInspectionMode* Mode, bool* ShouldAllowUpgrading, bool* ShouldAllowEvolution, bool* ShouldAllowFavorite, bool* IsTemporaryItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.OpenItemInspect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc1412c6);
 
 	UItemInspectScreen_C_OpenItemInspect_Params params;
 	params.ItemToInspect = ItemToInspect;
@@ -722,7 +713,8 @@ void UItemInspectScreen_C::OpenItemInspect(class UFortItem** ItemToInspect, EFor
 
 void UItemInspectScreen_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe38b3551);
 
 	UItemInspectScreen_C_Destruct_Params params;
 
@@ -739,7 +731,8 @@ void UItemInspectScreen_C::Destruct()
 
 void UItemInspectScreen_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e7a8656);
 
 	UItemInspectScreen_C_OnDeactivated_Params params;
 
@@ -759,7 +752,8 @@ void UItemInspectScreen_C::OnDeactivated()
 
 void UItemInspectScreen_C::BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__DetailPanelTabList-PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x884ea98d);
 
 	UItemInspectScreen_C_BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEvent_385_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -780,7 +774,8 @@ void UItemInspectScreen_C::BndEvt__DetailPanelTabList_PC_K2Node_ComponentBoundEv
 
 void UItemInspectScreen_C::ExecuteUbergraph_ItemInspectScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectScreen.ItemInspectScreen_C.ExecuteUbergraph_ItemInspectScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa970b5d6);
 
 	UItemInspectScreen_C_ExecuteUbergraph_ItemInspectScreen_Params params;
 	params.EntryPoint = EntryPoint;

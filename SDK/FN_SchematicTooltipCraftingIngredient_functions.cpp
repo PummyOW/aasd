@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* USchematicTooltipCraftingIngredient_C::Get_Tooltip()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.Get Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ea417c6);
 
 	USchematicTooltipCraftingIngredient_C_Get_Tooltip_Params params;
 
@@ -38,7 +39,8 @@ class UWidget* USchematicTooltipCraftingIngredient_C::Get_Tooltip()
 
 void USchematicTooltipCraftingIngredient_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4307776e);
 
 	USchematicTooltipCraftingIngredient_C_Refresh_Params params;
 
@@ -55,7 +57,8 @@ void USchematicTooltipCraftingIngredient_C::Refresh()
 
 void USchematicTooltipCraftingIngredient_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5ab0380);
 
 	USchematicTooltipCraftingIngredient_C_Construct_Params params;
 
@@ -74,7 +77,8 @@ void USchematicTooltipCraftingIngredient_C::Construct()
 
 void USchematicTooltipCraftingIngredient_C::ExecuteUbergraph_SchematicTooltipCraftingIngredient(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SchematicTooltipCraftingIngredient.SchematicTooltipCraftingIngredient_C.ExecuteUbergraph_SchematicTooltipCraftingIngredient");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1bd6a0e);
 
 	USchematicTooltipCraftingIngredient_C_ExecuteUbergraph_SchematicTooltipCraftingIngredient_Params params;
 	params.EntryPoint = EntryPoint;

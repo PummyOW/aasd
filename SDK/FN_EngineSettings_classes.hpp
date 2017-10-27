@@ -33,7 +33,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EngineSettings.ConsoleSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe44e239c);
 		return ptr;
 	}
 
@@ -63,7 +64,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EngineSettings.GameMapsSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4dfa2900);
 		return ptr;
 	}
 
@@ -91,7 +93,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EngineSettings.GameNetworkManagerSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b3fb406);
 		return ptr;
 	}
 
@@ -110,7 +113,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EngineSettings.GameSessionSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5115eeb9);
 		return ptr;
 	}
 
@@ -125,7 +129,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EngineSettings.GeneralEngineSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30902dad);
 		return ptr;
 	}
 
@@ -161,7 +166,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EngineSettings.GeneralProjectSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37647a10);
 		return ptr;
 	}
 
@@ -179,7 +185,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EngineSettings.HudSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9f579c4c);
 		return ptr;
 	}
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void AThreat_RainAttachedToPlayer_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Threat_RainAttachedToPlayer.Threat_RainAttachedToPlayer_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x530ba18c);
 
 	AThreat_RainAttachedToPlayer_C_UserConstructionScript_Params params;
 

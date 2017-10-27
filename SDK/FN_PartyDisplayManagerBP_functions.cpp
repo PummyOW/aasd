@@ -12,6 +12,29 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetMeshForCurrentDisplayedItem
+// (FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UMeshComponent*          OutDisplayedMesh               (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APartyDisplayManagerBP_C::GetMeshForCurrentDisplayedItem(class UMeshComponent** OutDisplayedMesh)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9503b876);
+
+	APartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (OutDisplayedMesh != nullptr)
+		*OutDisplayedMesh = params.OutDisplayedMesh;
+}
+
+
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemDefinitionToShow
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
 // Parameters:
@@ -19,7 +42,8 @@ namespace SDK
 
 void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition** ItemDefinition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemDefinitionToShow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x672f81af);
 
 	APartyDisplayManagerBP_C_GetItemDefinitionToShow_Params params;
 
@@ -43,7 +67,8 @@ void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition
 
 void APartyDisplayManagerBP_C::SetUIOverrideVisuals(class UTexture2D* Large_Texture, class UFortItemDefinition* Item, EFortRarity Rarity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetUIOverrideVisuals");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefc1886a);
 
 	APartyDisplayManagerBP_C_SetUIOverrideVisuals_Params params;
 	params.Large_Texture = Large_Texture;
@@ -65,7 +90,8 @@ void APartyDisplayManagerBP_C::SetUIOverrideVisuals(class UTexture2D* Large_Text
 
 struct FTransform APartyDisplayManagerBP_C::GetWeaponPlacementTransform()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetWeaponPlacementTransform");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb4cfa06);
 
 	APartyDisplayManagerBP_C_GetWeaponPlacementTransform_Params params;
 
@@ -84,7 +110,8 @@ struct FTransform APartyDisplayManagerBP_C::GetWeaponPlacementTransform()
 
 void APartyDisplayManagerBP_C::UpdatePreviewMeshTransforms()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.UpdatePreviewMeshTransforms");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51990dec);
 
 	APartyDisplayManagerBP_C_UpdatePreviewMeshTransforms_Params params;
 
@@ -104,7 +131,8 @@ void APartyDisplayManagerBP_C::UpdatePreviewMeshTransforms()
 
 struct FTransform APartyDisplayManagerBP_C::GetItemPreviewOffset(class UFortItemDefinition* ItemDefinition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetItemPreviewOffset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7fa9e119);
 
 	APartyDisplayManagerBP_C_GetItemPreviewOffset_Params params;
 	params.ItemDefinition = ItemDefinition;
@@ -126,7 +154,8 @@ struct FTransform APartyDisplayManagerBP_C::GetItemPreviewOffset(class UFortItem
 
 struct FTransform APartyDisplayManagerBP_C::GetPreviewMeshWorldTransform()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.GetPreviewMeshWorldTransform");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x228791cc);
 
 	APartyDisplayManagerBP_C_GetPreviewMeshWorldTransform_Params params;
 
@@ -147,7 +176,8 @@ struct FTransform APartyDisplayManagerBP_C::GetPreviewMeshWorldTransform()
 
 void APartyDisplayManagerBP_C::SetupStaticMeshVisuals(class UStaticMesh* NewMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetupStaticMeshVisuals");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9fdd1ea);
 
 	APartyDisplayManagerBP_C_SetupStaticMeshVisuals_Params params;
 	params.NewMesh = NewMesh;
@@ -167,7 +197,8 @@ void APartyDisplayManagerBP_C::SetupStaticMeshVisuals(class UStaticMesh* NewMesh
 
 void APartyDisplayManagerBP_C::SetupSkeletalMeshVisuals(class USkeletalMesh* NewMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.SetupSkeletalMeshVisuals");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a5953b);
 
 	APartyDisplayManagerBP_C_SetupSkeletalMeshVisuals_Params params;
 	params.NewMesh = NewMesh;
@@ -185,7 +216,8 @@ void APartyDisplayManagerBP_C::SetupSkeletalMeshVisuals(class USkeletalMesh* New
 
 void APartyDisplayManagerBP_C::ResetVisuals()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResetVisuals");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28fc2feb);
 
 	APartyDisplayManagerBP_C_ResetVisuals_Params params;
 
@@ -202,7 +234,8 @@ void APartyDisplayManagerBP_C::ResetVisuals()
 
 void APartyDisplayManagerBP_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x109bf9ec);
 
 	APartyDisplayManagerBP_C_UserConstructionScript_Params params;
 
@@ -219,7 +252,8 @@ void APartyDisplayManagerBP_C::UserConstructionScript()
 
 void APartyDisplayManagerBP_C::ScaleAnimLevel__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimLevel__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66906994);
 
 	APartyDisplayManagerBP_C_ScaleAnimLevel__FinishedFunc_Params params;
 
@@ -236,7 +270,8 @@ void APartyDisplayManagerBP_C::ScaleAnimLevel__FinishedFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimLevel__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimLevel__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x172c129d);
 
 	APartyDisplayManagerBP_C_ScaleAnimLevel__UpdateFunc_Params params;
 
@@ -253,7 +288,8 @@ void APartyDisplayManagerBP_C::ScaleAnimLevel__UpdateFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimEvolve__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimEvolve__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83a05a2d);
 
 	APartyDisplayManagerBP_C_ScaleAnimEvolve__FinishedFunc_Params params;
 
@@ -270,7 +306,8 @@ void APartyDisplayManagerBP_C::ScaleAnimEvolve__FinishedFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimEvolve__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ScaleAnimEvolve__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4791efbc);
 
 	APartyDisplayManagerBP_C_ScaleAnimEvolve__UpdateFunc_Params params;
 
@@ -287,7 +324,8 @@ void APartyDisplayManagerBP_C::ScaleAnimEvolve__UpdateFunc()
 
 void APartyDisplayManagerBP_C::ShowLoading()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ShowLoading");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e8ef0ac);
 
 	APartyDisplayManagerBP_C_ShowLoading_Params params;
 
@@ -304,7 +342,8 @@ void APartyDisplayManagerBP_C::ShowLoading()
 
 void APartyDisplayManagerBP_C::HideLoading()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.HideLoading");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa037421);
 
 	APartyDisplayManagerBP_C_HideLoading_Params params;
 
@@ -323,7 +362,8 @@ void APartyDisplayManagerBP_C::HideLoading()
 
 void APartyDisplayManagerBP_C::ShowItem(class UFortItem** ItemToView)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ShowItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x687f7885);
 
 	APartyDisplayManagerBP_C_ShowItem_Params params;
 	params.ItemToView = ItemToView;
@@ -341,7 +381,8 @@ void APartyDisplayManagerBP_C::ShowItem(class UFortItem** ItemToView)
 
 void APartyDisplayManagerBP_C::PlayLevelUpEffect()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.PlayLevelUpEffect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59974a3d);
 
 	APartyDisplayManagerBP_C_PlayLevelUpEffect_Params params;
 
@@ -358,7 +399,8 @@ void APartyDisplayManagerBP_C::PlayLevelUpEffect()
 
 void APartyDisplayManagerBP_C::PlayEvolutionEffect()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.PlayEvolutionEffect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c1206cf);
 
 	APartyDisplayManagerBP_C_PlayEvolutionEffect_Params params;
 
@@ -375,7 +417,8 @@ void APartyDisplayManagerBP_C::PlayEvolutionEffect()
 
 void APartyDisplayManagerBP_C::CelebrateWithFX()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.CelebrateWithFX");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2542f8c4);
 
 	APartyDisplayManagerBP_C_CelebrateWithFX_Params params;
 
@@ -392,7 +435,8 @@ void APartyDisplayManagerBP_C::CelebrateWithFX()
 
 void APartyDisplayManagerBP_C::PerformScaleMeshFX()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.PerformScaleMeshFX");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30a08ebd);
 
 	APartyDisplayManagerBP_C_PerformScaleMeshFX_Params params;
 
@@ -412,7 +456,8 @@ void APartyDisplayManagerBP_C::PerformScaleMeshFX()
 
 void APartyDisplayManagerBP_C::HandleLoadingAssetsForItemCompleted(class UFortItemDefinition** ItemWhoseAssetsWereLoaded, TArray<class UObject*>* LoadedAssets)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.HandleLoadingAssetsForItemCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5d34daf);
 
 	APartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted_Params params;
 	params.ItemWhoseAssetsWereLoaded = ItemWhoseAssetsWereLoaded;
@@ -433,7 +478,8 @@ void APartyDisplayManagerBP_C::HandleLoadingAssetsForItemCompleted(class UFortIt
 
 void APartyDisplayManagerBP_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6da91419);
 
 	APartyDisplayManagerBP_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -453,7 +499,8 @@ void APartyDisplayManagerBP_C::ReceiveTick(float* DeltaSeconds)
 
 void APartyDisplayManagerBP_C::ExecuteUbergraph_PartyDisplayManagerBP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ExecuteUbergraph_PartyDisplayManagerBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab8b9520);
 
 	APartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP_Params params;
 	params.EntryPoint = EntryPoint;

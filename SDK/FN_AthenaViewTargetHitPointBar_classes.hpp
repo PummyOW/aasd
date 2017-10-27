@@ -49,7 +49,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe69c4c09);
 		return ptr;
 	}
 

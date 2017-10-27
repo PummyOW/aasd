@@ -19,13 +19,13 @@ struct AFortnitePartyBackdrop_Camera_C_UserConstructionScript_Params
 {
 };
 
-// Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnDeactivated
-struct AFortnitePartyBackdrop_Camera_C_OnDeactivated_Params
+// Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnActivated
+struct AFortnitePartyBackdrop_Camera_C_OnActivated_Params
 {
 };
 
-// Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnActivated
-struct AFortnitePartyBackdrop_Camera_C_OnActivated_Params
+// Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnDeactivated
+struct AFortnitePartyBackdrop_Camera_C_OnDeactivated_Params
 {
 };
 

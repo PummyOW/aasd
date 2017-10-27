@@ -17,7 +17,8 @@ namespace SDK
 
 void UStoreMain_OfferDetailsAttribute_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetailsAttribute.StoreMain_OfferDetailsAttribute_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75424e92);
 
 	UStoreMain_OfferDetailsAttribute_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UStoreMain_OfferDetailsAttribute_C::Construct()
 
 void UStoreMain_OfferDetailsAttribute_C::ExecuteUbergraph_StoreMain_OfferDetailsAttribute(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetailsAttribute.StoreMain_OfferDetailsAttribute_C.ExecuteUbergraph_StoreMain_OfferDetailsAttribute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66665838);
 
 	UStoreMain_OfferDetailsAttribute_C_ExecuteUbergraph_StoreMain_OfferDetailsAttribute_Params params;
 	params.EntryPoint = EntryPoint;

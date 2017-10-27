@@ -21,7 +21,8 @@ namespace SDK
 
 void UCollectionBookSectionTileWidget_C::OnSectionSlotUpdate(int* NumFilledSlots, int* NumSlots, EFortCollectionBookState* SectionState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionTileWidget.CollectionBookSectionTileWidget_C.OnSectionSlotUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6532bf2);
 
 	UCollectionBookSectionTileWidget_C_OnSectionSlotUpdate_Params params;
 	params.NumFilledSlots = NumFilledSlots;
@@ -43,7 +44,8 @@ void UCollectionBookSectionTileWidget_C::OnSectionSlotUpdate(int* NumFilledSlots
 
 void UCollectionBookSectionTileWidget_C::ExecuteUbergraph_CollectionBookSectionTileWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionTileWidget.CollectionBookSectionTileWidget_C.ExecuteUbergraph_CollectionBookSectionTileWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64d31991);
 
 	UCollectionBookSectionTileWidget_C_ExecuteUbergraph_CollectionBookSectionTileWidget_Params params;
 	params.EntryPoint = EntryPoint;

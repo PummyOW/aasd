@@ -17,7 +17,8 @@ namespace SDK
 
 void ULegacyAlterationGroup_Widget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlterationGroup_Widget.LegacyAlterationGroup_Widget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d8f686);
 
 	ULegacyAlterationGroup_Widget_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void ULegacyAlterationGroup_Widget_C::Construct()
 
 void ULegacyAlterationGroup_Widget_C::OnGenerateAlteration(struct FFortUIAlteration* AlterationInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlterationGroup_Widget.LegacyAlterationGroup_Widget_C.OnGenerateAlteration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb77aae1a);
 
 	ULegacyAlterationGroup_Widget_C_OnGenerateAlteration_Params params;
 	params.AlterationInfo = AlterationInfo;
@@ -56,7 +58,8 @@ void ULegacyAlterationGroup_Widget_C::OnGenerateAlteration(struct FFortUIAlterat
 
 void ULegacyAlterationGroup_Widget_C::ExecuteUbergraph_LegacyAlterationGroup_Widget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyAlterationGroup_Widget.LegacyAlterationGroup_Widget_C.ExecuteUbergraph_LegacyAlterationGroup_Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f775a69);
 
 	ULegacyAlterationGroup_Widget_C_ExecuteUbergraph_LegacyAlterationGroup_Widget_Params params;
 	params.EntryPoint = EntryPoint;

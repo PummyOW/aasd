@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ItemCardPowerRatingTextStyle_XL.ItemCardPowerRatingTextStyle_XL_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70bb88a5);
 		return ptr;
 	}
 

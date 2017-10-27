@@ -37,7 +37,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AIHotSpotSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf21c70d);
 		return ptr;
 	}
 
@@ -91,7 +92,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AIHotSpot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71505fa9);
 		return ptr;
 	}
 
@@ -150,7 +152,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AIHotSpotManagerProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda2b7f7a);
 		return ptr;
 	}
 
@@ -165,7 +168,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInventorySortFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x397bd03c);
 		return ptr;
 	}
 
@@ -182,7 +186,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBrushSizeFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa01db7fd);
 		return ptr;
 	}
 
@@ -201,7 +206,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMultiSizeBrushAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x12feebab);
 		return ptr;
 	}
 
@@ -221,7 +227,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingActorHotSpotConfig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd52a6b90);
 		return ptr;
 	}
 
@@ -240,7 +247,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpotManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe373c0dd);
 		return ptr;
 	}
 
@@ -256,7 +264,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1075b050);
 		return ptr;
 	}
 
@@ -271,7 +280,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionConfigData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8caa97f);
 		return ptr;
 	}
 
@@ -286,7 +296,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionEventParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x78872229);
 		return ptr;
 	}
 
@@ -301,7 +312,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortStartMissionParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb6dc735);
 		return ptr;
 	}
 
@@ -320,7 +332,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemCollectedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xab542fbb);
 		return ptr;
 	}
 
@@ -342,7 +355,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemDroppedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xecf77014);
 		return ptr;
 	}
 
@@ -365,7 +379,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemCraftedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcdf2263b);
 		return ptr;
 	}
 
@@ -385,7 +400,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortEnemyKilledParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa893c4e2);
 		return ptr;
 	}
 
@@ -407,7 +423,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortEnemyDamagedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79246f0e);
 		return ptr;
 	}
 
@@ -426,7 +443,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNewPlayerParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x78dfe3d4);
 		return ptr;
 	}
 
@@ -445,7 +463,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerAbandonParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa45c7eb7);
 		return ptr;
 	}
 
@@ -461,7 +480,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerExitParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfe61151c);
 		return ptr;
 	}
 
@@ -480,7 +500,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerSpawnedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1fb7faee);
 		return ptr;
 	}
 
@@ -500,7 +521,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerDiedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20957006);
 		return ptr;
 	}
 
@@ -520,7 +542,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerDBNOEnterParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x72b54d17);
 		return ptr;
 	}
 
@@ -540,7 +563,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerDBNORevivedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd1a392d0);
 		return ptr;
 	}
 
@@ -561,7 +585,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDayPhaseChangeParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xacf4cd58);
 		return ptr;
 	}
 
@@ -583,7 +608,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerBuiltParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x732c3f5c);
 		return ptr;
 	}
 
@@ -605,7 +631,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBuildingDestroyedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9f427c8);
 		return ptr;
 	}
 
@@ -628,7 +655,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBuildingEditedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a480fc);
 		return ptr;
 	}
 
@@ -651,7 +679,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBuildingDamagedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6455b30);
 		return ptr;
 	}
 
@@ -670,7 +699,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionSucceededParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1122fdc6);
 		return ptr;
 	}
 
@@ -689,7 +719,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionFailedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80b1fb90);
 		return ptr;
 	}
 
@@ -709,7 +740,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionForceSuccessParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7b49b99);
 		return ptr;
 	}
 
@@ -728,7 +760,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionNeutralCompleteParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a73631);
 		return ptr;
 	}
 
@@ -747,7 +780,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortObjectiveSucceededParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc07c4427);
 		return ptr;
 	}
 
@@ -766,7 +800,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortObjectiveFailedParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3df61d5b);
 		return ptr;
 	}
 
@@ -785,7 +820,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortObjectiveNeutralCompleteParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51791f98);
 		return ptr;
 	}
 
@@ -806,7 +842,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortToggledCursorModeParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4ae7bc72);
 		return ptr;
 	}
 
@@ -827,7 +864,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortToggledOptionsMenuParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2606c370);
 		return ptr;
 	}
 
@@ -849,7 +887,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortToggledEditModeParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb8f6354);
 		return ptr;
 	}
 
@@ -867,7 +906,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortShutdownParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x459155a1);
 		return ptr;
 	}
 
@@ -884,7 +924,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPVictoryParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3cb64557);
 		return ptr;
 	}
 
@@ -900,7 +941,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortStartLeavingZoneParams");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0e2627d);
 		return ptr;
 	}
 
@@ -917,7 +959,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInteractInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf58b83c8);
 		return ptr;
 	}
 
@@ -934,7 +977,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAttributeSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca361a71);
 		return ptr;
 	}
 
@@ -949,7 +993,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDamageableActorInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xec0502ae);
 		return ptr;
 	}
 
@@ -964,7 +1009,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTeamActorInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc4b88eba);
 		return ptr;
 	}
 
@@ -981,7 +1027,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInitializationInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d2294fe);
 		return ptr;
 	}
 
@@ -1000,7 +1047,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSpawnableByPlacementSystemInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f9d9a8a);
 		return ptr;
 	}
 
@@ -1018,7 +1066,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b52f4db);
 		return ptr;
 	}
 
@@ -1156,7 +1205,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d308e45);
 		return ptr;
 	}
 
@@ -1223,6 +1273,7 @@ public:
 	unsigned char                                      UnknownData01[0x3];                                       // 0x03A9(0x0003) MISSED OFFSET
 	TWeakObjectPtr<class ABuildingSMActor>             ParentBuilding;                                           // 0x03AC(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	unsigned char                                      bHit : 1;                                                 // 0x03B4(0x0001) (CPF_Net)
+	unsigned char                                      bFadeOut : 1;                                             // 0x03B4(0x0001) (CPF_Net)
 	unsigned char                                      UnknownData02[0x3];                                       // 0x03B5(0x0003) MISSED OFFSET
 	int                                                CrackHitCount;                                            // 0x03B8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                CrackLevel;                                               // 0x03BC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -1238,7 +1289,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCrackEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ec78656);
 		return ptr;
 	}
 
@@ -1249,8 +1301,6 @@ public:
 	void OnHitCrack();
 	void OnFadeOut();
 	void OnBounceAnimationUpdate(const struct FFortBounceData& BounceData);
-	void NetOnHitCrack();
-	void NetFadeOut();
 	bool HasStartingPosition();
 };
 
@@ -1263,7 +1313,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAttachToActorInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfe981975);
 		return ptr;
 	}
 
@@ -1424,7 +1475,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingSMActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc91aaab5);
 		return ptr;
 	}
 
@@ -1433,6 +1485,7 @@ public:
 	void UpdateRepairMaterialAnim(float CurveValue);
 	void UpdateLODOverrideEffect(float CurveValue);
 	void UpdateDynamicShrinkAndDestroyEffect(float CurveValue);
+	void SetMirrored(bool bIsMirrored);
 	void RepairBuilding(class AFortPlayerController* RepairingController, int ResourcesSpent);
 	void OnRepairStarted();
 	void OnRep_WeakSpotPositions();
@@ -1513,7 +1566,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeSupport");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b6f9b34);
 		return ptr;
 	}
 
@@ -1536,7 +1590,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingStructuralSupportSystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9509e7db);
 		return ptr;
 	}
 
@@ -1557,7 +1612,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpot_Building");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xebe425f7);
 		return ptr;
 	}
 
@@ -1572,7 +1628,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpot_FakeBuilding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x17afac74);
 		return ptr;
 	}
 
@@ -1587,7 +1644,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpot_Shooting");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda576f60);
 		return ptr;
 	}
 
@@ -1606,7 +1664,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AIHotSpotConfig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd6087e3);
 		return ptr;
 	}
 
@@ -1621,7 +1680,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AIHotSpotRenderingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x211c7294);
 		return ptr;
 	}
 
@@ -1644,7 +1704,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpotSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50bea4d4);
 		return ptr;
 	}
 
@@ -1659,7 +1720,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AIHotSpotSlotGenerator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ae03e24);
 		return ptr;
 	}
 
@@ -1688,7 +1750,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AIHotSpotSlotGenerator_OnBoundingBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5e9ce37);
 		return ptr;
 	}
 
@@ -1705,7 +1768,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpotSlotGenerator_OnBoundingBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x601cdc88);
 		return ptr;
 	}
 
@@ -1725,7 +1789,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpotSlotGenerator_FromConfig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x688d6128);
 		return ptr;
 	}
 
@@ -1741,7 +1806,29 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIHotSpotSlotGenerator_RampTrace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2da5f81);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaGameData
+// 0x0048 (0x0070 - 0x0028)
+class UAthenaGameData : public UPrimaryDataAsset
+{
+public:
+	class UFortPersistentResourceItemDefinition*       SoftCurrencyDefinition;                                   // 0x0028(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortPersistentResourceItemDefinition*       SeasonXPDefinition;                                       // 0x0030(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UDataTable*                                  SeasonXpLevelsTable;                                      // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	TAssetPtr<class UAthenaDanceItemDefinition>        FallbackDance;                                            // 0x0040(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TArray<class UAthenaCharacterItemDefinition*>      RandomCharacters;                                         // 0x0060(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x74832299);
 		return ptr;
 	}
 
@@ -1763,7 +1850,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.AutomationPerfMonitorManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x86a9c265);
 		return ptr;
 	}
 
@@ -1787,7 +1875,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65b3ebcb);
 		return ptr;
 	}
 
@@ -1802,7 +1891,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDamageSourceInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb9f4ff5e);
 		return ptr;
 	}
 
@@ -1817,7 +1907,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTargetSelectionInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6752d95d);
 		return ptr;
 	}
 
@@ -1851,7 +1942,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingGameplayActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdc77b685);
 		return ptr;
 	}
 
@@ -1910,7 +2002,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingCapturePointActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x34bb5519);
 		return ptr;
 	}
 
@@ -1937,7 +2030,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCarriedObjectHolderInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x58c73b8f);
 		return ptr;
 	}
 
@@ -1968,7 +2062,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFlagSpawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcdbbcfed);
 		return ptr;
 	}
 
@@ -1988,7 +2083,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemTypeFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57756b1);
 		return ptr;
 	}
 
@@ -2006,7 +2102,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGenericRecord");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x781212b7);
 		return ptr;
 	}
 
@@ -2021,7 +2118,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltipInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7f59107);
 		return ptr;
 	}
 
@@ -2045,7 +2143,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltipContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x547825f3);
 		return ptr;
 	}
 
@@ -2066,7 +2165,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltipMap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a598a50);
 		return ptr;
 	}
 
@@ -2083,7 +2183,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltipManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3f4c234f);
 		return ptr;
 	}
 
@@ -2100,7 +2201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc28b5c62);
 		return ptr;
 	}
 
@@ -2128,7 +2230,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltipDisplayStatsList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcef91b55);
 		return ptr;
 	}
 
@@ -2145,7 +2248,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltipDisplayStatsLookupTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57a0fbe9);
 		return ptr;
 	}
 
@@ -2153,7 +2257,7 @@ public:
 
 
 // Class FortniteGame.FortItemDefinition
-// 0x01F8 (0x0220 - 0x0028)
+// 0x0218 (0x0240 - 0x0028)
 class UFortItemDefinition : public UMcpItemDefinitionBase
 {
 public:
@@ -2197,10 +2301,12 @@ public:
 	unsigned char                                      UnknownData07[0xF];                                       // 0x01C1(0x000F) MISSED OFFSET
 	struct FTransform                                  FrontendPreviewMeshOffset;                                // 0x01D0(0x0030) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 	TAssetPtr<class UStaticMesh>                       FrontendPreviewMeshOverride;                              // 0x0200(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class USkeletalMesh>                     FrontendPreviewSkeletalMeshOverride;                      // 0x0220(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbeb0c253);
 		return ptr;
 	}
 
@@ -2211,14 +2317,17 @@ public:
 	TAssetPtr<class UTexture2D> GetSmallPreviewImage();
 	struct FText GetSingleLineDescription();
 	struct FText GetShortDescription();
+	EFortRarity GetRarity();
 	bool GetPreviewStaticMeshAsset(TAssetPtr<class UStaticMesh>* Asset);
 	bool GetPreviewSkeletalMeshAsset(TAssetPtr<class USkeletalMesh>* Asset);
 	struct FTransform GetPreviewMeshOffset();
+	void GetPreviewAssets(TArray<TAssetPtr<class UObject>>* Assets);
 	struct FString GetPersistentName();
 	TAssetPtr<class UTexture2D> GetLargePreviewImage();
 	class UFortTooltipDisplayStatsList* GetDisplayStats();
 	struct FText GetDisplayName(bool bBaseName);
 	TArray<struct FText> GetDescription();
+	void CustomizePreviewMesh(class UMeshComponent* Mesh);
 	class UFortItem* CreateTemporaryItemInstanceBP(int Count, int Level);
 	class UFortItem* CreateTemporaryInstanceFromExistingItemBP(class UFortItem* ExistingItem, int Count, int Level);
 };
@@ -2234,7 +2343,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemIconDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7df754c);
 		return ptr;
 	}
 
@@ -2257,7 +2367,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2752900);
 		return ptr;
 	}
 
@@ -2266,6 +2377,7 @@ public:
 	void SetOwningControllerForTemporaryItem(class AFortPlayerController* InController);
 	bool IsTemporaryItem();
 	bool IsSlotted();
+	bool IsSchematicOrCraftedWeapon();
 	bool IsSchematic();
 	bool IsInventoryOverflowItem();
 	bool IsInStorageVault();
@@ -2285,6 +2397,7 @@ public:
 	bool GetSecondaryCategory(TEnumAsByte<EFortBrushSize> BrushSize, struct FText* ItemCategoryText, struct FSlateBrush* ItemCategoryBrush);
 	struct FText GetSearchTags();
 	EFortItemType GetSchematicResultType();
+	class UFortWeaponItemDefinition* GetSchematicCraftingResultOrCraftedWeaponBP();
 	class UFortItemDefinition* GetSchematicCraftingResultBP();
 	int GetRemainingAmmo();
 	int GetRecycleValue();
@@ -2337,7 +2450,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPickupEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7032856);
 		return ptr;
 	}
 
@@ -2350,53 +2464,54 @@ public:
 
 
 // Class FortniteGame.FortWorldItemDefinition
-// 0x0200 (0x0420 - 0x0220)
+// 0x0200 (0x0440 - 0x0240)
 class UFortWorldItemDefinition : public UFortItemDefinition
 {
 public:
-	struct FGameplayTagContainer                       RequiredEquipTags;                                        // 0x0220(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FGameplayTagContainer                       OverrideAutoEquipTags;                                    // 0x0240(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	bool                                               bCanAutoEquipByClass;                                     // 0x0260(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0261(0x0003) MISSED OFFSET
-	unsigned char                                      bSupportsQuickbarFocus : 1;                               // 0x0264(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bShouldShowItemToast : 1;                                 // 0x0264(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bShowDirectionalArrowWhenFarOff : 1;                      // 0x0264(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bCanBeDropped : 1;                                        // 0x0264(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bItemCanBeStolen : 1;                                     // 0x0264(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bCanBeDepositedInStorageVault : 1;                        // 0x0264(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bItemHasDurability : 1;                                   // 0x0264(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0265(0x0003) MISSED OFFSET
-	int                                                DropCount;                                                // 0x0268(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<EFortReplicatedStat>                   AccumulatingStatType;                                     // 0x026C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x026D(0x0003) MISSED OFFSET
-	struct FSlateBrush                                 MiniMapIconBrush;                                         // 0x0270(0x0090) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	float                                              MiniMapViewableDistance;                                  // 0x0300(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x0304(0x0004) MISSED OFFSET
-	struct FText                                       OwnerPickupText;                                          // 0x0308(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FDataTableCategoryHandle                    LootLevelData;                                            // 0x0320(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData04[0x8];                                       // 0x0338(0x0008) MISSED OFFSET
-	struct FTransform                                  PickupMeshTransform;                                      // 0x0340(0x0030) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
-	unsigned char                                      bOverridePickupMeshTransform : 1;                         // 0x0370(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bDropOnDeath : 1;                                         // 0x0370(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bDropOnLogout : 1;                                        // 0x0370(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData05[0x7];                                       // 0x0371(0x0007) MISSED OFFSET
-	TAssetPtr<class UStaticMesh>                       PickupStaticMesh;                                         // 0x0378(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	TAssetPtr<class USkeletalMesh>                     PickupSkeletalMesh;                                       // 0x0398(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	TAssetPtr<class USoundBase>                        PickupSound;                                              // 0x03B8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	TAssetPtr<class USoundBase>                        DropSound;                                                // 0x03D8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	struct FDataTableRowHandle                         DisassembleRecipe;                                        // 0x03F8(0x0010) (CPF_Edit)
-	float                                              DisassembleDurabilityDegradeMinLootPercent;               // 0x0408(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DisassembleDurabilityDegradeMaxLootPercent;               // 0x040C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bHasDisintegrationValue;                                  // 0x0410(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bUsesCraftingRecipeToGetDisintegrationValue;              // 0x0411(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x2];                                       // 0x0412(0x0002) MISSED OFFSET
-	int                                                FabricationValueOverride;                                 // 0x0414(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                PreferredQuickbarSlot;                                    // 0x0418(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x4];                                       // 0x041C(0x0004) MISSED OFFSET
+	struct FGameplayTagContainer                       RequiredEquipTags;                                        // 0x0240(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FGameplayTagContainer                       OverrideAutoEquipTags;                                    // 0x0260(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	bool                                               bCanAutoEquipByClass;                                     // 0x0280(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0281(0x0003) MISSED OFFSET
+	unsigned char                                      bSupportsQuickbarFocus : 1;                               // 0x0284(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bShouldShowItemToast : 1;                                 // 0x0284(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bShowDirectionalArrowWhenFarOff : 1;                      // 0x0284(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bCanBeDropped : 1;                                        // 0x0284(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bItemCanBeStolen : 1;                                     // 0x0284(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bCanBeDepositedInStorageVault : 1;                        // 0x0284(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bItemHasDurability : 1;                                   // 0x0284(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0285(0x0003) MISSED OFFSET
+	int                                                DropCount;                                                // 0x0288(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<EFortReplicatedStat>                   AccumulatingStatType;                                     // 0x028C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x028D(0x0003) MISSED OFFSET
+	struct FSlateBrush                                 MiniMapIconBrush;                                         // 0x0290(0x0090) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	float                                              MiniMapViewableDistance;                                  // 0x0320(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0324(0x0004) MISSED OFFSET
+	struct FText                                       OwnerPickupText;                                          // 0x0328(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FDataTableCategoryHandle                    LootLevelData;                                            // 0x0340(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData04[0x8];                                       // 0x0358(0x0008) MISSED OFFSET
+	struct FTransform                                  PickupMeshTransform;                                      // 0x0360(0x0030) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
+	unsigned char                                      bOverridePickupMeshTransform : 1;                         // 0x0390(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bDropOnDeath : 1;                                         // 0x0390(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bDropOnLogout : 1;                                        // 0x0390(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData05[0x7];                                       // 0x0391(0x0007) MISSED OFFSET
+	TAssetPtr<class UStaticMesh>                       PickupStaticMesh;                                         // 0x0398(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TAssetPtr<class USkeletalMesh>                     PickupSkeletalMesh;                                       // 0x03B8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TAssetPtr<class USoundBase>                        PickupSound;                                              // 0x03D8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TAssetPtr<class USoundBase>                        DropSound;                                                // 0x03F8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FDataTableRowHandle                         DisassembleRecipe;                                        // 0x0418(0x0010) (CPF_Edit)
+	float                                              DisassembleDurabilityDegradeMinLootPercent;               // 0x0428(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DisassembleDurabilityDegradeMaxLootPercent;               // 0x042C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bHasDisintegrationValue;                                  // 0x0430(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bUsesCraftingRecipeToGetDisintegrationValue;              // 0x0431(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x2];                                       // 0x0432(0x0002) MISSED OFFSET
+	int                                                FabricationValueOverride;                                 // 0x0434(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                PreferredQuickbarSlot;                                    // 0x0438(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x4];                                       // 0x043C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorldItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x520c409d);
 		return ptr;
 	}
 
@@ -2424,7 +2539,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuickBars");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d656c8);
 		return ptr;
 	}
 
@@ -2443,14 +2559,15 @@ public:
 
 
 // Class FortniteGame.FortMetadataItemDefinition
-// 0x0000 (0x0220 - 0x0220)
+// 0x0000 (0x0240 - 0x0240)
 class UFortMetadataItemDefinition : public UFortItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMetadataItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x59e3225c);
 		return ptr;
 	}
 
@@ -2458,16 +2575,17 @@ public:
 
 
 // Class FortniteGame.FortCloudSaveItemDefinition
-// 0x0010 (0x0230 - 0x0220)
+// 0x0010 (0x0250 - 0x0240)
 class UFortCloudSaveItemDefinition : public UFortMetadataItemDefinition
 {
 public:
-	int                                                ContentVersion;                                           // 0x0220(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xC];                                       // 0x0224(0x000C) MISSED OFFSET
+	int                                                ContentVersion;                                           // 0x0240(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xC];                                       // 0x0244(0x000C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCloudSaveItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5036dc61);
 		return ptr;
 	}
 
@@ -2488,7 +2606,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorldRecord");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50fc5974);
 		return ptr;
 	}
 
@@ -2514,7 +2633,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortZoneRecord");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e582324);
 		return ptr;
 	}
 
@@ -2537,7 +2657,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBuildingInstructions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd83c42ba);
 		return ptr;
 	}
 
@@ -2552,7 +2673,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFOBCoreSpawnPad");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96c67c16);
 		return ptr;
 	}
 
@@ -2598,7 +2720,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFOBConfigActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30af213c);
 		return ptr;
 	}
 
@@ -2656,7 +2779,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFOBCoreActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5260f885);
 		return ptr;
 	}
 
@@ -2695,7 +2819,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingItemCollectorActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb726e63);
 		return ptr;
 	}
 
@@ -2725,7 +2850,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.DecoyActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1995e5f9);
 		return ptr;
 	}
 
@@ -2745,7 +2871,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.DeployableBaseCore");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x635a839);
 		return ptr;
 	}
 
@@ -2762,7 +2889,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInventoryOwnerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3541f9b9);
 		return ptr;
 	}
 
@@ -2777,7 +2905,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInventoryInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5268abac);
 		return ptr;
 	}
 
@@ -2807,7 +2936,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInventory");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc055e5cb);
 		return ptr;
 	}
 
@@ -2864,7 +2994,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.DeployableBasePlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xadf118b1);
 		return ptr;
 	}
 
@@ -2894,7 +3025,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAthenaSupplyDrop");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xab8c9f3a);
 		return ptr;
 	}
 
@@ -2913,7 +3045,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.SBAGrantedBuildingGameplayActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x25bb4006);
 		return ptr;
 	}
 
@@ -2933,7 +3066,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13268e0c);
 		return ptr;
 	}
 
@@ -2953,7 +3087,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMiniMapIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd71ed7f1);
 		return ptr;
 	}
 
@@ -3032,7 +3167,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb37cb6b5);
 		return ptr;
 	}
 
@@ -3106,7 +3242,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.StrategicBuildingActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x624fc5b);
 		return ptr;
 	}
 
@@ -3143,7 +3280,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPBaseCornerstone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1a317bc);
 		return ptr;
 	}
 
@@ -3176,7 +3314,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingRift");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9bcf38cf);
 		return ptr;
 	}
 
@@ -3204,7 +3343,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTakerRift");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7e9a3ab);
 		return ptr;
 	}
 
@@ -3221,7 +3361,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingAutoNav");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0d3fc72);
 		return ptr;
 	}
 
@@ -3278,7 +3419,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingContainer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f212bf7);
 		return ptr;
 	}
 
@@ -3320,7 +3462,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.KeepItemContainer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3deb235d);
 		return ptr;
 	}
 
@@ -3343,7 +3486,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.KeepItemCoreContainer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3db0ee46);
 		return ptr;
 	}
 
@@ -3360,7 +3504,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingCorner");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9ebce8a5);
 		return ptr;
 	}
 
@@ -3375,7 +3520,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingPropCorner");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40c355d2);
 		return ptr;
 	}
 
@@ -3390,7 +3536,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingDeco");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20d7fac1);
 		return ptr;
 	}
 
@@ -3405,7 +3552,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingPillar");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9f7867ca);
 		return ptr;
 	}
 
@@ -3420,7 +3568,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5025a1bd);
 		return ptr;
 	}
 
@@ -3440,7 +3589,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingPropAtlas");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x94b7d7da);
 		return ptr;
 	}
 
@@ -3466,11 +3616,15 @@ public:
 class ABuildingPropWall : public ABuildingProp
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0FD0(0x0010) MISSED OFFSET
+	float                                              AreaWidthOverride;                                        // 0x0FD0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0FD4(0x0004) MISSED OFFSET
+	unsigned char                                      bOverrideAreaWidth : 1;                                   // 0x0FD8(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0FD9(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingPropWall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe066be91);
 		return ptr;
 	}
 
@@ -3478,19 +3632,21 @@ public:
 
 
 // Class FortniteGame.FortAccountItemDefinition
-// 0x0050 (0x0270 - 0x0220)
+// 0x0060 (0x02A0 - 0x0240)
 class UFortAccountItemDefinition : public UFortItemDefinition
 {
 public:
-	struct FCurveTableRowHandle                        LevelToXpHandle;                                          // 0x0220(0x0010) (CPF_Edit)
-	struct FCurveTableRowHandle                        LevelToSacrificeXpHandle;                                 // 0x0230(0x0010) (CPF_Edit)
-	struct FDataTableRowHandle                         SacrificeRecipe;                                          // 0x0240(0x0010) (CPF_Edit)
-	struct FDataTableRowHandle                         TransmogSacrificeRow;                                     // 0x0250(0x0010) (CPF_Edit)
-	TArray<struct FDataTableRowHandle>                 ConversionRecipes;                                        // 0x0260(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FCurveTableRowHandle                        LevelToXpHandle;                                          // 0x0240(0x0010) (CPF_Edit)
+	struct FCurveTableRowHandle                        LevelToSacrificeXpHandle;                                 // 0x0250(0x0010) (CPF_Edit)
+	struct FDataTableRowHandle                         SacrificeRecipe;                                          // 0x0260(0x0010) (CPF_Edit)
+	struct FDataTableRowHandle                         TransmogSacrificeRow;                                     // 0x0270(0x0010) (CPF_Edit)
+	TArray<struct FDataTableRowHandle>                 ConversionRecipes;                                        // 0x0280(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FString                                     GrantToProfileType;                                       // 0x0290(0x0010) (CPF_ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x440a4654);
 		return ptr;
 	}
 
@@ -3500,20 +3656,21 @@ public:
 
 
 // Class FortniteGame.FortAlterationItemDefinition
-// 0x0940 (0x0BB0 - 0x0270)
+// 0x0940 (0x0BE0 - 0x02A0)
 class UFortAlterationItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	TEnumAsByte<EFortAlteration>                       AlterationType;                                           // 0x0270(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0271(0x0007) MISSED OFFSET
-	struct FFortCosmeticModification                   DefaultCosmetic;                                          // 0x0278(0x08F8) (CPF_Edit)
-	TArray<struct FFortConditionalCosmeticModification> ConditionalCosmetics;                                     // 0x0B70(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FFortConditionalIncludeTags>         AdditionalGameplayTags;                                   // 0x0B80(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TAssetPtr<class UFortAbilitySet>                   AlterationAbilitySet;                                     // 0x0B90(0x0020) (CPF_Edit)
+	TEnumAsByte<EFortAlteration>                       AlterationType;                                           // 0x02A0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x02A1(0x0007) MISSED OFFSET
+	struct FFortCosmeticModification                   DefaultCosmetic;                                          // 0x02A8(0x08F8) (CPF_Edit)
+	TArray<struct FFortConditionalCosmeticModification> ConditionalCosmetics;                                     // 0x0BA0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TArray<struct FFortConditionalIncludeTags>         AdditionalGameplayTags;                                   // 0x0BB0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TAssetPtr<class UFortAbilitySet>                   AlterationAbilitySet;                                     // 0x0BC0(0x0020) (CPF_Edit)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAlterationItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e81d4e0);
 		return ptr;
 	}
 
@@ -3528,7 +3685,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAlterationFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x78f1bcc7);
 		return ptr;
 	}
 
@@ -3538,43 +3696,44 @@ public:
 
 
 // Class FortniteGame.FortWeaponItemDefinition
-// 0x0210 (0x0630 - 0x0420)
+// 0x0210 (0x0650 - 0x0440)
 class UFortWeaponItemDefinition : public UFortWorldItemDefinition
 {
 public:
-	TAssetPtr<class UClass>                            WeaponActorClass;                                         // 0x0420(0x0020) (CPF_Edit)
-	TAssetPtr<class USkeletalMesh>                     WeaponMeshOverride;                                       // 0x0440(0x0020) (CPF_Edit)
-	struct FDataTableRowHandle                         WeaponStatHandle;                                         // 0x0460(0x0010) (CPF_Edit)
-	TAssetPtr<class UFortAlterationItemDefinition>     BaseAlteration;                                           // 0x0470(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortAlterationItemDefinition>     BaseCosmeticAlteration;                                   // 0x0490(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            PrimaryFireAbility;                                       // 0x04B0(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            SecondaryFireAbility;                                     // 0x04D0(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            ReloadAbility;                                            // 0x04F0(0x0020) (CPF_Edit)
-	TArray<TAssetPtr<class UClass>>                    EquippedAbilities;                                        // 0x0510(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TAssetPtr<class UFortWorldItemDefinition>          AmmoData;                                                 // 0x0520(0x0020) (CPF_Edit)
-	float                                              LowAmmoPercentage;                                        // 0x0540(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DegradedPercentage;                                       // 0x0544(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<EFortWeaponTriggerType>                TriggerType;                                              // 0x0548(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bAllowTargetingDuringReload;                              // 0x0549(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x6];                                       // 0x054A(0x0006) MISSED OFFSET
-	TAssetPtr<class UTexture2D>                        ReticleImage;                                             // 0x0550(0x0020) (CPF_Edit)
-	TArray<float>                                      ReticleCornerAngles;                                      // 0x0570(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TAssetPtr<class UTexture2D>                        HitNotifyImage;                                           // 0x0580(0x0020) (CPF_Edit)
-	TAssetPtr<class UTexture2D>                        MuzzleBlockedImage;                                       // 0x05A0(0x0020) (CPF_Edit)
-	TArray<float>                                      HitNotifyCornerAngles;                                    // 0x05C0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TAssetPtr<class UTexture2D>                        ReticleCenterImage;                                       // 0x05D0(0x0020) (CPF_Edit)
-	struct FVector2D                                   ReticleCenterImageOffset;                                 // 0x05F0(0x0008) (CPF_Edit, CPF_IsPlainOldData)
-	bool                                               bReticleCornerOutsideSpreadRadius;                        // 0x05F8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x05F9(0x0003) MISSED OFFSET
-	float                                              HitNotifyDuration;                                        // 0x05FC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TAssetPtr<class UCurveFloat>                       HitNotifyOpacityCurve;                                    // 0x0600(0x0020) (CPF_Edit)
-	bool                                               bValidForLastEquipped;                                    // 0x0620(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EFortDisplayTier                                   DisplayTier;                                              // 0x0621(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0xE];                                       // 0x0622(0x000E) MISSED OFFSET
+	TAssetPtr<class UClass>                            WeaponActorClass;                                         // 0x0440(0x0020) (CPF_Edit)
+	TAssetPtr<class USkeletalMesh>                     WeaponMeshOverride;                                       // 0x0460(0x0020) (CPF_Edit)
+	struct FDataTableRowHandle                         WeaponStatHandle;                                         // 0x0480(0x0010) (CPF_Edit)
+	TAssetPtr<class UFortAlterationItemDefinition>     BaseAlteration;                                           // 0x0490(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortAlterationItemDefinition>     BaseCosmeticAlteration;                                   // 0x04B0(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            PrimaryFireAbility;                                       // 0x04D0(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            SecondaryFireAbility;                                     // 0x04F0(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            ReloadAbility;                                            // 0x0510(0x0020) (CPF_Edit)
+	TArray<TAssetPtr<class UClass>>                    EquippedAbilities;                                        // 0x0530(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TAssetPtr<class UFortWorldItemDefinition>          AmmoData;                                                 // 0x0540(0x0020) (CPF_Edit)
+	float                                              LowAmmoPercentage;                                        // 0x0560(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DegradedPercentage;                                       // 0x0564(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<EFortWeaponTriggerType>                TriggerType;                                              // 0x0568(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bAllowTargetingDuringReload;                              // 0x0569(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x6];                                       // 0x056A(0x0006) MISSED OFFSET
+	TAssetPtr<class UTexture2D>                        ReticleImage;                                             // 0x0570(0x0020) (CPF_Edit)
+	TArray<float>                                      ReticleCornerAngles;                                      // 0x0590(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TAssetPtr<class UTexture2D>                        HitNotifyImage;                                           // 0x05A0(0x0020) (CPF_Edit)
+	TAssetPtr<class UTexture2D>                        MuzzleBlockedImage;                                       // 0x05C0(0x0020) (CPF_Edit)
+	TArray<float>                                      HitNotifyCornerAngles;                                    // 0x05E0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TAssetPtr<class UTexture2D>                        ReticleCenterImage;                                       // 0x05F0(0x0020) (CPF_Edit)
+	struct FVector2D                                   ReticleCenterImageOffset;                                 // 0x0610(0x0008) (CPF_Edit, CPF_IsPlainOldData)
+	bool                                               bReticleCornerOutsideSpreadRadius;                        // 0x0618(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0619(0x0003) MISSED OFFSET
+	float                                              HitNotifyDuration;                                        // 0x061C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TAssetPtr<class UCurveFloat>                       HitNotifyOpacityCurve;                                    // 0x0620(0x0020) (CPF_Edit)
+	bool                                               bValidForLastEquipped;                                    // 0x0640(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EFortDisplayTier                                   DisplayTier;                                              // 0x0641(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0xE];                                       // 0x0642(0x000E) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xafa5ca53);
 		return ptr;
 	}
 
@@ -3625,7 +3784,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConstructorBASE");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd36d77c0);
 		return ptr;
 	}
 
@@ -3651,7 +3811,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOutpostBuilding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x251e31d);
 		return ptr;
 	}
 
@@ -3689,7 +3850,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa620ea22);
 		return ptr;
 	}
 
@@ -3717,7 +3879,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.OutpostStructureBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb96ee788);
 		return ptr;
 	}
 
@@ -3732,7 +3895,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingOutpostCraftingTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82635062);
 		return ptr;
 	}
 
@@ -3747,7 +3911,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingOutpostFabricator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x72a9017f);
 		return ptr;
 	}
 
@@ -3762,7 +3927,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingOutpostStorageVault");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x48d94a25);
 		return ptr;
 	}
 
@@ -3777,7 +3943,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingOutpostStormshieldUpgrade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68ec48c);
 		return ptr;
 	}
 
@@ -3792,7 +3959,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingOutpostStormshieldCore");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcad49905);
 		return ptr;
 	}
 
@@ -3804,11 +3972,13 @@ public:
 class ABuildingFloor : public ABuildingSMActor
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0FC0(0x0010) MISSED OFFSET
+	unsigned char                                      bShouldIgnoreForHorizontalHotspotSearch : 1;              // 0x0FC0(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData00[0xF];                                       // 0x0FC1(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFloor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x69baef90);
 		return ptr;
 	}
 
@@ -3825,7 +3995,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingStairs");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x622088e0);
 		return ptr;
 	}
 
@@ -3833,7 +4004,7 @@ public:
 
 
 // Class FortniteGame.FortGlobals
-// 0x0208 (0x0230 - 0x0028)
+// 0x0228 (0x0250 - 0x0028)
 class UFortGlobals : public UObject
 {
 public:
@@ -3898,13 +4069,15 @@ public:
 	TArray<class UObject*>                             AthenaReferencedObjects;                                  // 0x0110(0x0010) (CPF_ZeroConstructor, CPF_Transient)
 	int                                                NumOutstandingAthenaAsyncRequests;                        // 0x0120(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	int                                                TotalAthenaAsyncRequests;                                 // 0x0124(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x78];                                      // 0x0128(0x0078) MISSED OFFSET
-	TArray<struct FSubGameAccess>                      SubGameAccess;                                            // 0x01A0(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	unsigned char                                      UnknownData09[0x80];                                      // 0x01B0(0x0080) MISSED OFFSET
+	TAssetPtr<class UClass>                            AthenaAlwaysLoadedContentHack;                            // 0x0128(0x0020) (CPF_Transient)
+	unsigned char                                      UnknownData08[0x78];                                      // 0x0148(0x0078) MISSED OFFSET
+	TArray<struct FSubGameAccess>                      SubGameAccess;                                            // 0x01C0(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	unsigned char                                      UnknownData09[0x80];                                      // 0x01D0(0x0080) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGlobals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf9bd8c7);
 		return ptr;
 	}
 
@@ -3954,7 +4127,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.ThreatCloud");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70caea11);
 		return ptr;
 	}
 
@@ -4006,7 +4180,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortThreatVisualsManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x977d6a65);
 		return ptr;
 	}
 
@@ -4106,13 +4281,15 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTimeOfDayManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4053ee76);
 		return ptr;
 	}
 
 
 	void ToggleSkipNight();
 	void ToggleDebugForceStormEffects();
+	void SetUseSpecificTimeOfDayEditing(bool bShouldUseSpecificTimeOfDay);
 	void SetTimeOfDaySpeedFloat(float InTimeOfDaySpeed);
 	void SetTimeOfDaySpeed(float TimeOfDaySpeedFactor);
 	void SetTimeOfDayManagerVisibility(bool bVisible);
@@ -4121,6 +4298,7 @@ public:
 	void SetTimeOfDayAbsoluteSpeed(float NewTimeOfDaySpeed);
 	void SetTimeOfDay(const struct FString& NewTimeOfDay);
 	void SetStormStrength(float NewStormStrength);
+	void SetSpecificTimeOfDayInEditor(float NewTimeOfDayInEditor);
 	void SetLightningColorAlpha(float NewLightningColorAlpha);
 	void SetFogDirectionalInscatteringMultiplier(float NewFogDirectionalInscatteringMultiplier);
 	void SetDirectionalLightColorMultiplier(float NewDirectionalLightColorMultiplier);
@@ -4142,8 +4320,35 @@ public:
 };
 
 
+// Class FortniteGame.FortMusicManager
+// 0x0048 (0x03D0 - 0x0388)
+class AFortMusicManager : public AActor
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0388(0x0008) MISSED OFFSET
+	class AFortPlayerController*                       ControllerOwner;                                          // 0x0390(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UAudioComponent*                             MusicChannels[0x3];                                       // 0x0398(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
+	unsigned char                                      bWorldReadyCalled : 1;                                    // 0x03B0(0x0001) (CPF_Transient)
+	unsigned char                                      UnknownData01[0x1F];                                      // 0x03B1(0x001F) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5bf83173);
+		return ptr;
+	}
+
+
+	void OnThresholdChange(TEnumAsByte<EFortCombatThresholds> OldThreshold, TEnumAsByte<EFortCombatThresholds> NewThreshold);
+	void OnDayPhaseChanged(TEnumAsByte<EFortDayPhase> CurrentDayPhase, TEnumAsByte<EFortDayPhase> PreviousDayPhase, bool bAtCreation);
+	float GetEventHeatPercentTotal(TEnumAsByte<EFortCombatEvents> CombatEvent);
+	float GetEventHeatPercent(TEnumAsByte<EFortCombatEvents> CombatEvent);
+	void ChangeMusic(class USoundBase* NewMusic, TEnumAsByte<EMusicFadeStyles> FadeStyle, float FadeTime, class USoundBase* Stinger);
+};
+
+
 // Class FortniteGame.FortWorldSettings
-// 0x0208 (0x0738 - 0x0530)
+// 0x0248 (0x0778 - 0x0530)
 class AFortWorldSettings : public AWorldSettings
 {
 public:
@@ -4180,14 +4385,17 @@ public:
 	unsigned char                                      bShowTimeOfDayManager : 1;                                // 0x06A8(0x0001) (CPF_Edit, CPF_Transient)
 	unsigned char                                      UnknownData05[0x7];                                       // 0x06A9(0x0007) MISSED OFFSET
 	TAssetPtr<class UClass>                            WorldTimeOfDayManager;                                    // 0x06B0(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            DefaultWorldTimeOfDayManager;                             // 0x06D0(0x0020) (CPF_Config)
-	TAssetPtr<class UClass>                            ZoneThemeTimeOfDayManager;                                // 0x06F0(0x0020)
-	TAssetPtr<class UClass>                            MissionTimeOfDayManager;                                  // 0x0710(0x0020)
-	class AFortTimeOfDayManager*                       TimeOfDayManager;                                         // 0x0730(0x0008) (CPF_Edit, CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_DuplicateTransient, CPF_IsPlainOldData)
+	TAssetPtr<class UClass>                            WorldMusicManager;                                        // 0x06D0(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            DefaultWorldTimeOfDayManager;                             // 0x06F0(0x0020) (CPF_Config)
+	TAssetPtr<class UClass>                            ZoneThemeTimeOfDayManager;                                // 0x0710(0x0020)
+	TAssetPtr<class UClass>                            MissionTimeOfDayManager;                                  // 0x0730(0x0020)
+	TAssetPtr<class UClass>                            ZoneThemeMusicManager;                                    // 0x0750(0x0020)
+	class AFortTimeOfDayManager*                       TimeOfDayManager;                                         // 0x0770(0x0008) (CPF_Edit, CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_DuplicateTransient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorldSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6699ece8);
 		return ptr;
 	}
 
@@ -4221,7 +4429,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFoundation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x224323b1);
 		return ptr;
 	}
 
@@ -4238,7 +4447,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFoundation3x3");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe3ebd05b);
 		return ptr;
 	}
 
@@ -4253,7 +4463,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFoundation5x10");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5991cc4d);
 		return ptr;
 	}
 
@@ -4268,7 +4479,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingFoundation5x5");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfd6d888b);
 		return ptr;
 	}
 
@@ -4284,7 +4496,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WorldTileFoundation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7244226d);
 		return ptr;
 	}
 
@@ -4299,7 +4512,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingPlayerPrimitivePreview");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2da27a78);
 		return ptr;
 	}
 
@@ -4327,7 +4541,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingLayoutRequirement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55828f79);
 		return ptr;
 	}
 
@@ -4349,7 +4564,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingRoof");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2d90c1c);
 		return ptr;
 	}
 
@@ -4386,7 +4602,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTrap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f155047);
 		return ptr;
 	}
 
@@ -4433,7 +4650,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTrapCeiling");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x847ca38);
 		return ptr;
 	}
 
@@ -4445,14 +4663,17 @@ public:
 class ABuildingTrapCeiling_Falling : public ABuildingTrapCeiling
 {
 public:
-	TArray<struct FVector>                             SpawnPoints;                                              // 0x10E0(0x0010) (CPF_BlueprintVisible, CPF_ZeroConstructor)
+	TArray<struct FTransform>                          SpawnPoints;                                              // 0x10E0(0x0010) (CPF_BlueprintVisible, CPF_ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTrapCeiling_Falling");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9c1ff28);
 		return ptr;
 	}
 
+
+	void TrapActivated(float CooldownDuration);
 };
 
 
@@ -4464,7 +4685,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTrapFloor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0d98cef);
 		return ptr;
 	}
 
@@ -4485,19 +4707,38 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTrapDefender");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55453806);
 		return ptr;
 	}
 
 
+	class UFortWorldItem* TakeWeaponAwayFromDefender(class UFortWorldItem* WeaponToTakeAway);
+	void SupplyDefender(class UFortWorldItem* WeaponToGive, int AmmoQuantity);
 	class AFortAIPawn* SpawnDefenderfromItem(class UFortAccountItem* DefenderItem, const struct FName& DefenderSquadId, const struct FTransform& SpawnTransform, class AActor* InOwner);
 	void RemoveCurrentDefender(class AFortPlayerStateZone* RequestingPlayer, bool bRemovalCausedByPlayerJoin);
 	void OnRep_DefenderPawn();
 	void OnRep_DefenderItemDefinition();
 	struct FText GetLastInteractErrorText();
 	struct FTransform GetDefenderSpawnTransform();
-	void DeployDefender(class AFortPlayerController* ItemSelectorPC, class UFortDefenderItem* InDefenderItem, const struct FName& InDefenderSquadId);
+	void DeployDefender(class AFortPlayerController* ItemSelectorPC, class UFortDefenderItem* InDefenderItem, const struct FName& InDefenderSquadId, class UFortWorldItem* WeaponToGive, int AmmoQuantity);
 	void ClearCurrentDefender(bool bForceKillDefender);
+};
+
+
+// Class FortniteGame.FortLauncherAthena
+// 0x0000 (0x10E0 - 0x10E0)
+class AFortLauncherAthena : public ABuildingTrapFloor
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf71f8524);
+		return ptr;
+	}
+
 };
 
 
@@ -4509,7 +4750,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTrapWall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x939f6f97);
 		return ptr;
 	}
 
@@ -4517,7 +4759,7 @@ public:
 
 
 // Class FortniteGame.BuildingWall
-// 0x00F0 (0x10B0 - 0x0FC0)
+// 0x0100 (0x10C0 - 0x0FC0)
 class ABuildingWall : public ABuildingSMActor
 {
 public:
@@ -4542,13 +4784,16 @@ public:
 	struct FRotator                                    DoorDesiredRotation;                                      // 0x1074(0x000C) (CPF_Net, CPF_Transient, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData04[0x24];                                      // 0x1080(0x0024) MISSED OFFSET
 	struct FBuildingActorNavArea                       AreaPatternOverride;                                      // 0x10A4(0x0004) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x4];                                       // 0x10A8(0x0004) MISSED OFFSET
-	unsigned char                                      bCreateClimbLink : 1;                                     // 0x10AC(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData06[0x3];                                       // 0x10AD(0x0003) MISSED OFFSET
+	float                                              AreaWidthOverride;                                        // 0x10A8(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x4];                                       // 0x10AC(0x0004) MISSED OFFSET
+	unsigned char                                      bOverrideAreaWidth : 1;                                   // 0x10B0(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bCreateClimbLink : 1;                                     // 0x10B0(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData06[0xF];                                       // 0x10B1(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingWall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb66f880a);
 		return ptr;
 	}
 
@@ -4568,7 +4813,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerSpawnPad");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x593f87fe);
 		return ptr;
 	}
 
@@ -4593,7 +4839,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.KeepHeartBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x326cd2d8);
 		return ptr;
 	}
 
@@ -4622,7 +4869,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.KeepHeart");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7bd03b6f);
 		return ptr;
 	}
 
@@ -4664,7 +4912,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.ManorHeart");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55f29e0b);
 		return ptr;
 	}
 
@@ -4698,7 +4947,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDynamicBuilder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x497bf121);
 		return ptr;
 	}
 
@@ -4713,7 +4963,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientDynamicBuilder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc05cef4);
 		return ptr;
 	}
 
@@ -4728,7 +4979,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortEnemySpawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7a79508);
 		return ptr;
 	}
 
@@ -4743,7 +4995,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayTagVolumeInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40fda66);
 		return ptr;
 	}
 
@@ -4768,7 +5021,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayTagBuildingActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9076d3da);
 		return ptr;
 	}
 
@@ -4783,7 +5037,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlacementActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57d27ecd);
 		return ptr;
 	}
 
@@ -4800,7 +5055,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingActorEditorComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa641419b);
 		return ptr;
 	}
 
@@ -4815,7 +5071,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingActorHotSpotRenderingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x274e06cf);
 		return ptr;
 	}
 
@@ -4852,7 +5109,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingConnectivityComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80a48268);
 		return ptr;
 	}
 
@@ -4882,7 +5140,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingConnectivityEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd08a1e4);
 		return ptr;
 	}
 
@@ -4901,7 +5160,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingConnectivityManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1c04dc);
 		return ptr;
 	}
 
@@ -4924,7 +5184,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadata");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6611464);
 		return ptr;
 	}
 
@@ -4940,7 +5201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadata_BinaryToggle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf4d82ddc);
 		return ptr;
 	}
 
@@ -4955,7 +5217,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadata_Floor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf874ec3b);
 		return ptr;
 	}
 
@@ -4971,7 +5234,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadata_Roof");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe7f2a181);
 		return ptr;
 	}
 
@@ -4986,7 +5250,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadata_Wall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd466893);
 		return ptr;
 	}
 
@@ -5001,7 +5266,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadata_Pillar");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb21d12f);
 		return ptr;
 	}
 
@@ -5017,7 +5283,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadata_Stair");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf16a737e);
 		return ptr;
 	}
 
@@ -5033,7 +5300,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeMetadataContainer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8295b019);
 		return ptr;
 	}
 
@@ -5053,7 +5321,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeSupport_BinaryToggle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb55d08c);
 		return ptr;
 	}
 
@@ -5068,7 +5337,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeSupport_Floor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x511673cb);
 		return ptr;
 	}
 
@@ -5085,7 +5355,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeSupport_Roof");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa459db1);
 		return ptr;
 	}
 
@@ -5100,7 +5371,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeSupport_Wall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9207a83);
 		return ptr;
 	}
 
@@ -5124,7 +5396,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingEditModeSupport_Stair");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ee5844e);
 		return ptr;
 	}
 
@@ -5145,7 +5418,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingGroup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x304fe863);
 		return ptr;
 	}
 
@@ -5169,7 +5443,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTextureData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc634eb03);
 		return ptr;
 	}
 
@@ -5194,7 +5469,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTurretComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d0603c5);
 		return ptr;
 	}
 
@@ -5221,7 +5497,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.BuildingTurretComponent_MOBA");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7c9d68f);
 		return ptr;
 	}
 
@@ -5238,7 +5515,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterPartData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x696665b3);
 		return ptr;
 	}
 
@@ -5256,7 +5534,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomColorSwatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc6b0c68);
 		return ptr;
 	}
 
@@ -5272,7 +5551,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomDynamicColorSwatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5088f593);
 		return ptr;
 	}
 
@@ -5288,7 +5568,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomAccessoryColorSwatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf2316dc);
 		return ptr;
 	}
 
@@ -5310,7 +5591,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterAccessoryData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2161581a);
 		return ptr;
 	}
 
@@ -5326,7 +5608,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterBackpackData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8789f3de);
 		return ptr;
 	}
 
@@ -5343,7 +5626,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterCharmData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ab8500d);
 		return ptr;
 	}
 
@@ -5360,7 +5644,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterFaceData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed70c21f);
 		return ptr;
 	}
 
@@ -5377,7 +5662,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterHatData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x897f16a3);
 		return ptr;
 	}
 
@@ -5396,7 +5682,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterBodyPartData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e7964bf);
 		return ptr;
 	}
 
@@ -5417,7 +5704,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterHeadData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd6ff0b12);
 		return ptr;
 	}
 
@@ -5438,7 +5726,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterPartModifier");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f3a127c);
 		return ptr;
 	}
 
@@ -5458,12 +5747,14 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterPartOwnerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b45d751);
 		return ptr;
 	}
 
 
 	void PlayAnimationsMatchingQuery(const struct FGameplayTagQuery& TagQueryToMatch);
+	class USkeletalMeshComponent* GetCustomizationRootSkeletalMeshComponent();
 };
 
 
@@ -5476,7 +5767,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomColorComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb76196f9);
 		return ptr;
 	}
 
@@ -5492,7 +5784,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomClothingColorSwatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa06aafd8);
 		return ptr;
 	}
 
@@ -5507,7 +5800,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomHairColorSwatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e32ec04);
 		return ptr;
 	}
 
@@ -5522,7 +5816,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomSkinColorSwatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b6a1671);
 		return ptr;
 	}
 
@@ -5538,7 +5833,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomPlayerComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd1c074f1);
 		return ptr;
 	}
 
@@ -5565,7 +5861,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityKit");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a059967);
 		return ptr;
 	}
 
@@ -5583,7 +5880,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemComponentAbilityGivenListenerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6722d863);
 		return ptr;
 	}
 
@@ -5601,7 +5899,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8dd69813);
 		return ptr;
 	}
 
@@ -5623,7 +5922,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemComponentAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbeaa19de);
 		return ptr;
 	}
 
@@ -5638,7 +5938,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemGlobals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x25a25ade);
 		return ptr;
 	}
 
@@ -5655,7 +5956,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAttributeLookupTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x85761eff);
 		return ptr;
 	}
 
@@ -5671,7 +5973,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd3aa481c);
 		return ptr;
 	}
 
@@ -5697,7 +6000,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_CommitAccountCosts");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x89e15187);
 		return ptr;
 	}
 
@@ -5727,7 +6031,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_DirectedMovement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfbb5d4ba);
 		return ptr;
 	}
 
@@ -5754,7 +6059,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_WaitTargetSelection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf96d1159);
 		return ptr;
 	}
 
@@ -5778,7 +6084,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_PlayMontageWaitTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x62fc9592);
 		return ptr;
 	}
 
@@ -5803,7 +6110,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_SetNextMontageSectionAndWait");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbfe46b58);
 		return ptr;
 	}
 
@@ -5821,7 +6129,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSpawnContextObjectInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e6ef6db);
 		return ptr;
 	}
 
@@ -5852,7 +6161,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayEffectDeliveryActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ae2fae5);
 		return ptr;
 	}
 
@@ -5901,7 +6211,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortProjectileBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b87450b);
 		return ptr;
 	}
 
@@ -5945,7 +6256,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_SpawnProjectileAndWait");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2aa0daed);
 		return ptr;
 	}
 
@@ -5966,7 +6278,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_Sprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d72a19);
 		return ptr;
 	}
 
@@ -5982,7 +6295,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTestObserver");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x22b4ff3);
 		return ptr;
 	}
 
@@ -6004,7 +6318,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountStatProxyInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8253709);
 		return ptr;
 	}
 
@@ -6019,7 +6334,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortActorIndicatorInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe1fe8d98);
 		return ptr;
 	}
 
@@ -6034,7 +6350,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIEncounterInfoOwnerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef96382c);
 		return ptr;
 	}
 
@@ -6055,7 +6372,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIGoalProvider");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x450092d5);
 		return ptr;
 	}
 
@@ -6080,7 +6398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIAssignment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9693adc4);
 		return ptr;
 	}
 
@@ -6103,7 +6422,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIAssignmentSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdc7fce83);
 		return ptr;
 	}
 
@@ -6123,7 +6443,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPathFollowingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc2fc03ea);
 		return ptr;
 	}
 
@@ -6152,7 +6473,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4c00e09b);
 		return ptr;
 	}
 
@@ -6176,7 +6498,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFeedbackManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x64d58959);
 		return ptr;
 	}
 
@@ -6195,7 +6518,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSpottableActorInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfd3112cf);
 		return ptr;
 	}
 
@@ -6226,7 +6550,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHealthSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd26048d5);
 		return ptr;
 	}
 
@@ -6246,7 +6571,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHealthRegenInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65c0668f);
 		return ptr;
 	}
 
@@ -6275,7 +6601,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortRegenHealthSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd47a2dee);
 		return ptr;
 	}
 
@@ -6291,7 +6618,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConversation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa4ad3e18);
 		return ptr;
 	}
 
@@ -6310,7 +6638,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSpline");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7cbb77a2);
 		return ptr;
 	}
 
@@ -6346,7 +6675,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSimpleMiniMapIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb1e0d4ff);
 		return ptr;
 	}
 
@@ -6385,12 +6715,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPickup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef0c4e95);
 		return ptr;
 	}
 
 
-	void TossPickup(const struct FVector& FinalLocation, class AFortPawn* ItemOwner, int OverrideMaxStackCount);
+	void TossPickup(const struct FVector& FinalLocation, class AFortPawn* ItemOwner, int OverrideMaxStackCount, bool bToss);
 	bool PickedUp();
 	void OnRep_TossedFromContainer();
 	void OnRep_PrimaryPickupItemEntry();
@@ -6535,7 +6866,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7dad60d7);
 		return ptr;
 	}
 
@@ -6656,7 +6988,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHUDTargetUnderReticleInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8a09a4d2);
 		return ptr;
 	}
 
@@ -6841,7 +7174,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc3991db5);
 		return ptr;
 	}
 
@@ -6884,6 +7218,7 @@ public:
 	void OnEncounterSpawnEnableRangedAttacking();
 	void OnEncounterSpawnEnableMeleeAttacking();
 	void OnDefenderTrapSet(class ABuildingTrapDefender* OldDefenderTrap);
+	void OnCheatUpdateSpecialEventGE(bool bShouldUseSpecialEventGE);
 	void OnBeginSleepEffects();
 	void OnAppearanceOverridden();
 	class UFortItem* K2_GetDefenderItem();
@@ -6902,6 +7237,7 @@ public:
 	class USoundBase* GetImpactPhysicalSurfaceSound(const struct FHitResult& Impact);
 	float STATIC_GetGroundSpeedForUrgency(class AFortAIPawn* FortAIPawn, TEnumAsByte<EFortMovementUrgency> Urgency);
 	float GetDifficultyLevel();
+	struct FString GetDefenderItemInstanceId();
 	class AActor* GetCurrentAimTarget();
 	TEnumAsByte<EFortCustomGender> GetCharacterGender();
 	void ForceKillNoDBNO();
@@ -6935,7 +7271,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe400eb9f);
 		return ptr;
 	}
 
@@ -6973,7 +7310,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBotController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d963974);
 		return ptr;
 	}
 
@@ -6992,7 +7330,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDataProvider_Ability");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa3ee92a3);
 		return ptr;
 	}
 
@@ -7007,7 +7346,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDataProvider_GoalProviderAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f3a745d);
 		return ptr;
 	}
 
@@ -7024,7 +7364,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDataProvider_AIDirector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1783d391);
 		return ptr;
 	}
 
@@ -7049,7 +7390,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDataProvider_Pawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x84a577b1);
 		return ptr;
 	}
 
@@ -7064,7 +7406,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionPowerPointsInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x34be6ee2);
 		return ptr;
 	}
 
@@ -7086,7 +7429,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOption");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x98bfe611);
 		return ptr;
 	}
 
@@ -7102,7 +7446,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1faa0c30);
 		return ptr;
 	}
 
@@ -7119,7 +7464,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_UtilitiesFree");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcdfbd127);
 		return ptr;
 	}
 
@@ -7134,7 +7480,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPatrolWardInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7e2e1fe);
 		return ptr;
 	}
 
@@ -7145,7 +7492,7 @@ public:
 
 
 // Class FortniteGame.FortAIDirector
-// 0x08B8 (0x0C40 - 0x0388)
+// 0x08C8 (0x0C50 - 0x0388)
 class AFortAIDirector : public AActor
 {
 public:
@@ -7205,31 +7552,33 @@ public:
 	struct FGameplayTagContainer                       AmbientThreatPreferredPlacementActorTags;                 // 0x0B10(0x0020) (CPF_Edit, CPF_BlueprintVisible)
 	struct FGameplayTagContainer                       AmbientThreatRequiredPlacementActorTags;                  // 0x0B30(0x0020) (CPF_Edit, CPF_BlueprintVisible)
 	TArray<class UFortAIEncounterInfo*>                ActiveEncounters;                                         // 0x0B50(0x0010) (CPF_ZeroConstructor)
-	class UFortAIEncounterInfo*                        ActiveDefaultEncounter;                                   // 0x0B60(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortAIEncounterInfo*                        ActiveDummyDebugEncounter;                                // 0x0B68(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<class UFortAIEncounterSequence*>            EncounterSequences;                                       // 0x0B70(0x0010) (CPF_ZeroConstructor)
-	class UEQSRenderingComponent*                      EQSRenderingComp;                                         // 0x0B80(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	int                                                DebugGraphUpdateFrequency;                                // 0x0B88(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              MaxNormalLODDistanceToPlayer;                             // 0x0B8C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              AIRelevantDistanceToPlayer;                               // 0x0B90(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              EncounterRelevantDistanceToPlayer;                        // 0x0B94(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              EncounterRelevantDistanceToDefender;                      // 0x0B98(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x54];                                      // 0x0B9C(0x0054) MISSED OFFSET
-	TArray<TScriptInterface<class UFortPatrolWardInterface>> PatrolWards;                                              // 0x0BF0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData10[0x4];                                       // 0x0C00(0x0004) MISSED OFFSET
-	int                                                MaxTotalActiveAliveAI;                                    // 0x0C04(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                MaxEncounterActiveAliveAI;                                // 0x0C08(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                MaxSPUsed;                                                // 0x0C0C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData11[0x8];                                       // 0x0C10(0x0008) MISSED OFFSET
-	TArray<struct FUtilityTypeFloatPair>               DebugEncounterTopUtilityPercentages;                      // 0x0C18(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TArray<class UCurveFloat*>                         DebugEncounterSpawnPointsCurves;                          // 0x0C28(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	unsigned char                                      bDebugAllowEncounterModifierTags : 1;                     // 0x0C38(0x0001)
-	unsigned char                                      UnknownData12[0x3];                                       // 0x0C39(0x0003) MISSED OFFSET
-	int                                                SimulatedNumberOfPlayersForAIEncounters;                  // 0x0C3C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TArray<struct FFortPendingStoppedEncounterData>    PendingStoppedEncounters;                                 // 0x0B60(0x0010) (CPF_ZeroConstructor)
+	class UFortAIEncounterInfo*                        ActiveDefaultEncounter;                                   // 0x0B70(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortAIEncounterInfo*                        ActiveDummyDebugEncounter;                                // 0x0B78(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<class UFortAIEncounterSequence*>            EncounterSequences;                                       // 0x0B80(0x0010) (CPF_ZeroConstructor)
+	class UEQSRenderingComponent*                      EQSRenderingComp;                                         // 0x0B90(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	int                                                DebugGraphUpdateFrequency;                                // 0x0B98(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              MaxNormalLODDistanceToPlayer;                             // 0x0B9C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              AIRelevantDistanceToPlayer;                               // 0x0BA0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              EncounterRelevantDistanceToPlayer;                        // 0x0BA4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              EncounterRelevantDistanceToDefender;                      // 0x0BA8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData09[0x54];                                      // 0x0BAC(0x0054) MISSED OFFSET
+	TArray<TScriptInterface<class UFortPatrolWardInterface>> PatrolWards;                                              // 0x0C00(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData10[0x4];                                       // 0x0C10(0x0004) MISSED OFFSET
+	int                                                MaxTotalActiveAliveAI;                                    // 0x0C14(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                MaxEncounterActiveAliveAI;                                // 0x0C18(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                MaxSPUsed;                                                // 0x0C1C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData11[0x8];                                       // 0x0C20(0x0008) MISSED OFFSET
+	TArray<struct FUtilityTypeFloatPair>               DebugEncounterTopUtilityPercentages;                      // 0x0C28(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TArray<class UCurveFloat*>                         DebugEncounterSpawnPointsCurves;                          // 0x0C38(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	unsigned char                                      bDebugAllowEncounterModifierTags : 1;                     // 0x0C48(0x0001)
+	unsigned char                                      UnknownData12[0x3];                                       // 0x0C49(0x0003) MISSED OFFSET
+	int                                                SimulatedNumberOfPlayersForAIEncounters;                  // 0x0C4C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDirector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7947177);
 		return ptr;
 	}
 
@@ -7279,7 +7628,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDirectorDataManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe13ee58c);
 		return ptr;
 	}
 
@@ -7299,7 +7649,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDirectorDataTrackingSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x317062fb);
 		return ptr;
 	}
 
@@ -7315,7 +7666,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIDirectorEventManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x983186a);
 		return ptr;
 	}
 
@@ -7331,7 +7683,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIEncounterGoalSelectionTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20f8f041);
 		return ptr;
 	}
 
@@ -7349,7 +7702,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortIntensityCurveSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0d4ae2);
 		return ptr;
 	}
 
@@ -7364,7 +7718,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.GameplayMutatorObserverInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac5e7253);
 		return ptr;
 	}
 
@@ -7372,7 +7727,7 @@ public:
 
 
 // Class FortniteGame.FortAIEncounterInfo
-// 0x0BD8 (0x0C00 - 0x0028)
+// 0x0BF8 (0x0C20 - 0x0028)
 class UFortAIEncounterInfo : public UObject
 {
 public:
@@ -7533,11 +7888,13 @@ public:
 	bool                                               bTrackCombatParticipation;                                // 0x0BD1(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData28[0x6];                                       // 0x0BD2(0x0006) MISSED OFFSET
 	struct FGameplayTagContainer                       ModifierTags;                                             // 0x0BD8(0x0020) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Transient)
-	class AFortGameplayMutator_AILevelVariance*        AILevelMutator;                                           // 0x0BF8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FGameplayTagContainer                       GameContextTags;                                          // 0x0BF8(0x0020) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Transient)
+	class AFortGameplayMutator_AILevelVariance*        AILevelMutator;                                           // 0x0C18(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIEncounterInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbc3b122);
 		return ptr;
 	}
 
@@ -7583,7 +7940,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIPawnVariant");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29825b08);
 		return ptr;
 	}
 
@@ -7591,7 +7949,7 @@ public:
 
 
 // Class FortniteGame.FortAISpawnGroup
-// 0x0098 (0x00C0 - 0x0028)
+// 0x00E0 (0x0108 - 0x0028)
 class UFortAISpawnGroup : public UPrimaryDataAsset
 {
 public:
@@ -7605,10 +7963,12 @@ public:
 	struct FCurveTableRowHandle                        MaxGroupCategoryPopulationDensityCurve;                   // 0x0080(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
 	TArray<struct FFortSpawnGroupEncounterTypeData>    EncounterTypeData;                                        // 0x0090(0x0010) (CPF_Edit, CPF_ZeroConstructor)
 	struct FGameplayTagContainer                       SpawnGroupGameplayTags;                                   // 0x00A0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FGameplayTagQuery                           RequiredTagQuery;                                         // 0x00C0(0x0048) (CPF_Edit, CPF_DisableEditOnInstance)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAISpawnGroup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd8a4b9bd);
 		return ptr;
 	}
 
@@ -7648,7 +8008,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIEncounterRiftManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd9ce7ec);
 		return ptr;
 	}
 
@@ -7671,7 +8032,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIEncounterSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb3fd77a5);
 		return ptr;
 	}
 
@@ -7697,7 +8059,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIEncounterTargetInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x43273332);
 		return ptr;
 	}
 
@@ -7715,7 +8078,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x235b6ed0);
 		return ptr;
 	}
 
@@ -7744,7 +8108,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIGoalManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1cddbf93);
 		return ptr;
 	}
 
@@ -7775,7 +8140,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIRootAssignmentProviderInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56fafd04);
 		return ptr;
 	}
 
@@ -7799,7 +8165,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIGoalProvider_EnvQuery");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa3228e77);
 		return ptr;
 	}
 
@@ -7814,7 +8181,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIObjectiveInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x593a1765);
 		return ptr;
 	}
 
@@ -7831,7 +8199,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIPerceptionComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2db33fc7);
 		return ptr;
 	}
 
@@ -7846,7 +8215,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIPerceptionSystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x399efcfd);
 		return ptr;
 	}
 
@@ -7869,7 +8239,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIProxyActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x584f294c);
 		return ptr;
 	}
 
@@ -7884,7 +8255,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAISpawnerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8881389e);
 		return ptr;
 	}
 
@@ -7903,7 +8275,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAISpawnGroupProgressionInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef2d3432);
 		return ptr;
 	}
 
@@ -7923,7 +8296,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBotMissionManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff80923);
 		return ptr;
 	}
 
@@ -7944,7 +8318,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAISystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ebf17a0);
 		return ptr;
 	}
 
@@ -7964,7 +8339,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITask_AdjustToSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x447f3785);
 		return ptr;
 	}
 
@@ -7980,7 +8356,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITask_ExecuteAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f103762);
 		return ptr;
 	}
 
@@ -7996,7 +8373,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITask_FuzzyQueue");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x92bf4b36);
 		return ptr;
 	}
 
@@ -8013,7 +8391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITask_Move");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1561d184);
 		return ptr;
 	}
 
@@ -8032,7 +8411,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityTask_MoveAI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9f3ccc8c);
 		return ptr;
 	}
 
@@ -8052,7 +8432,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITask_StepAside");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7d32533);
 		return ptr;
 	}
 
@@ -8068,7 +8449,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITask_NavmeshWait");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf966133e);
 		return ptr;
 	}
 
@@ -8086,7 +8468,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITask_RotateToFace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c183c9a);
 		return ptr;
 	}
 
@@ -8101,7 +8484,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAITetheringBoxBoundsInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5d77c498);
 		return ptr;
 	}
 
@@ -8158,7 +8542,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xafc9cd6b);
 		return ptr;
 	}
 
@@ -8178,7 +8563,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayMontageForGameplayTagQueryInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d33e76c);
 		return ptr;
 	}
 
@@ -8202,7 +8588,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterPartAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0545695);
 		return ptr;
 	}
 
@@ -8251,7 +8638,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa877bf25);
 		return ptr;
 	}
 
@@ -8274,7 +8662,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDefenderAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f3cd3c6);
 		return ptr;
 	}
 
@@ -8320,7 +8709,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHuskAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff9c732c);
 		return ptr;
 	}
 
@@ -8368,7 +8758,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a003d14);
 		return ptr;
 	}
 
@@ -8381,14 +8772,15 @@ public:
 
 
 // Class FortniteGame.FortCharacterType
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x02A0 - 0x02A0)
 class UFortCharacterType : public UFortAccountItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCharacterType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc142e7aa);
 		return ptr;
 	}
 
@@ -8396,25 +8788,26 @@ public:
 
 
 // Class FortniteGame.FortWorkerType
-// 0x00A0 (0x0310 - 0x0270)
+// 0x00A0 (0x0340 - 0x02A0)
 class UFortWorkerType : public UFortCharacterType
 {
 public:
-	TEnumAsByte<EFortCustomGender>                     Gender;                                                   // 0x0270(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0271(0x0007) MISSED OFFSET
-	TAssetPtr<class UFortItemIconDefinition>           FixedPortrait;                                            // 0x0278(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	bool                                               bIsManager;                                               // 0x0298(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0299(0x0007) MISSED OFFSET
-	struct FGameplayTagContainer                       ManagerSynergyTag;                                        // 0x02A0(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FGameplayTagContainer                       FixedPersonalityTag;                                      // 0x02C0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FGameplayTagContainer                       FixedSetBonusTag;                                         // 0x02E0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	int                                                MatchingPersonalityBonus;                                 // 0x0300(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                MismatchingPersonalityPenalty;                            // 0x0304(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x8];                                       // 0x0308(0x0008) MISSED OFFSET
+	TEnumAsByte<EFortCustomGender>                     Gender;                                                   // 0x02A0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x02A1(0x0007) MISSED OFFSET
+	TAssetPtr<class UFortItemIconDefinition>           FixedPortrait;                                            // 0x02A8(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	bool                                               bIsManager;                                               // 0x02C8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x02C9(0x0007) MISSED OFFSET
+	struct FGameplayTagContainer                       ManagerSynergyTag;                                        // 0x02D0(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FGameplayTagContainer                       FixedPersonalityTag;                                      // 0x02F0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FGameplayTagContainer                       FixedSetBonusTag;                                         // 0x0310(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	int                                                MatchingPersonalityBonus;                                 // 0x0330(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                MismatchingPersonalityPenalty;                            // 0x0334(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x0338(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorkerType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfde49157);
 		return ptr;
 	}
 
@@ -8443,7 +8836,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FrontendAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6eaa26e8);
 		return ptr;
 	}
 
@@ -8473,7 +8867,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHeroSpecialization");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb501a46);
 		return ptr;
 	}
 
@@ -8481,28 +8876,29 @@ public:
 
 
 // Class FortniteGame.FortHeroType
-// 0x0140 (0x0450 - 0x0310)
+// 0x0140 (0x0480 - 0x0340)
 class UFortHeroType : public UFortWorkerType
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x0310(0x0020) MISSED OFFSET
-	TArray<TAssetPtr<class UFortHeroSpecialization>>   Specializations;                                          // 0x0330(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FHeroAbilityKit>                     AbilityKits;                                              // 0x0340(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FGameplayEffectApplicationInfo>      CombinedStatGEs;                                          // 0x0350(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FHeroItem>                           HeroItems;                                                // 0x0360(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	struct FGameplayTagContainer                       RequiredGPTags;                                           // 0x0370(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortFeedbackBank>                 MaleOverrideFeedback;                                     // 0x0390(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortFeedbackBank>                 FemaleOverrideFeedback;                                   // 0x03B0(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            OverridePawnClass;                                        // 0x03D0(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            FrontEndAnimClass;                                        // 0x03F0(0x0020) (CPF_Edit)
-	struct FText                                       SubType;                                                  // 0x0410(0x0018) (CPF_Edit)
-	struct FFortAttributeInitializationKey             AttributeInitKey;                                         // 0x0428(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FDataTableRowHandle                         LegacyStatHandle;                                         // 0x0438(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0448(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0340(0x0020) MISSED OFFSET
+	TArray<TAssetPtr<class UFortHeroSpecialization>>   Specializations;                                          // 0x0360(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FHeroAbilityKit>                     AbilityKits;                                              // 0x0370(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FGameplayEffectApplicationInfo>      CombinedStatGEs;                                          // 0x0380(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FHeroItem>                           HeroItems;                                                // 0x0390(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	struct FGameplayTagContainer                       RequiredGPTags;                                           // 0x03A0(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortFeedbackBank>                 MaleOverrideFeedback;                                     // 0x03C0(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortFeedbackBank>                 FemaleOverrideFeedback;                                   // 0x03E0(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            OverridePawnClass;                                        // 0x0400(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            FrontEndAnimClass;                                        // 0x0420(0x0020) (CPF_Edit)
+	struct FText                                       SubType;                                                  // 0x0440(0x0018) (CPF_Edit)
+	struct FFortAttributeInitializationKey             AttributeInitKey;                                         // 0x0458(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FDataTableRowHandle                         LegacyStatHandle;                                         // 0x0468(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0478(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHeroType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83d95611);
 		return ptr;
 	}
 
@@ -8525,7 +8921,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCharacter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd918012a);
 		return ptr;
 	}
 
@@ -8551,7 +8948,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb61cbdf);
 		return ptr;
 	}
 
@@ -8578,7 +8976,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHero");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e11c4a9);
 		return ptr;
 	}
 
@@ -8625,7 +9024,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameDeathPenalty");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe3d7432);
 		return ptr;
 	}
 
@@ -8633,7 +9033,7 @@ public:
 
 
 // Class FortniteGame.FortPlayerPawn
-// 0x07A0 (0x1680 - 0x0EE0)
+// 0x07B0 (0x1690 - 0x0EE0)
 class AFortPlayerPawn : public AFortPawn
 {
 public:
@@ -8661,63 +9061,66 @@ public:
 	bool                                               bIsTargeting;                                             // 0x104B(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData04[0x84];                                      // 0x104C(0x0084) MISSED OFFSET
 	struct FGuid                                       LastEquippedWeaponGUID;                                   // 0x10D0(0x0010) (CPF_Net, CPF_IsPlainOldData)
-	class UAnimMontage*                                BluePrintPlaceAnimation;                                  // 0x10E0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UAnimMontage*                                BluePrintEditAnimation;                                   // 0x10E8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FScriptMulticastDelegate                    OnPartChanged;                                            // 0x10F0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	class UMaterialInstanceDynamic*                    BlueprintPaperMID;                                        // 0x1100(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x8];                                       // 0x1108(0x0008) MISSED OFFSET
-	struct FTimeline                                   BlueprintPaperPulseTimeline;                              // 0x1110(0x00E0) (CPF_Transient)
-	class UCustomColorComponent*                       AccessoryColorSwatchHandler[0x6];                         // 0x11F0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	TWeakObjectPtr<class UFortHero>                    Hero;                                                     // 0x1220(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UCustomPlayerComponent*                      HACK_CustomPRIComponent;                                  // 0x1228(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
-	TEnumAsByte<EFortCustomGender>                     CharacterGender;                                          // 0x1230(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TEnumAsByte<EFortCustomBodyType>                   CharacterBodyType;                                        // 0x1231(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x6];                                       // 0x1232(0x0006) MISSED OFFSET
-	class UCustomCharacterPart*                        CharacterParts[0x6];                                      // 0x1238(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UCustomColorSwatch*                          CharacterColorSwatches[0x2];                              // 0x1268(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UCustomColorSwatch*                          CharacterPartColorSwatches[0x6];                          // 0x1278(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bCharacterPartsCastIndirectShadows;                       // 0x12A8(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x7];                                       // 0x12A9(0x0007) MISSED OFFSET
-	class USkeletalMeshComponent*                      CharacterPartSkeletalMeshComponents[0x6];                 // 0x12B0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UCustomCharacterPart*                        PreviousCharacterParts[0x6];                              // 0x12E0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class ACustomCharacterPartModifier*                CharacterPartModifiers[0x6];                              // 0x1310(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FFortCharacterPartsRepMontageInfo           RepCharPartAnimMontageInfo;                               // 0x1340(0x0020) (CPF_Net, CPF_Transient)
-	unsigned char                                      UnknownData08[0x8];                                       // 0x1360(0x0008) MISSED OFFSET
-	struct FName                                       CarriedObjectAttachmentSocket;                            // 0x1368(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FSlateBrush                                 MiniMapIconBrush;                                         // 0x1370(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FSlateBrush                                 AboveBelowMiniMapIconBrush;                               // 0x1400(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FSlateBrush                                 FarOffMiniMapIconBrush;                                   // 0x1490(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FSlateBrush                                 DBNOMiniMapIconBrush;                                     // 0x1520(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FLinearColor                                MinimapIconColorSelf;                                     // 0x15B0(0x0010) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FLinearColor                                MinimapIconColorTeammate;                                 // 0x15C0(0x0010) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FLinearColor                                MinimapIconColorEnemy;                                    // 0x15D0(0x0010) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              MaxIndicatorVisibilityDistForEnemies;                     // 0x15E0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              MaxIndicatorVisibilityDistForAllies;                      // 0x15E4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UParticleSystem*                             SpawnParticles;                                           // 0x15E8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class USoundBase*                                  SpawnSound;                                               // 0x15F0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              NumSecondsOnGroundBeforeStoppingRagdoll;                  // 0x15F8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x4];                                       // 0x15FC(0x0004) MISSED OFFSET
-	unsigned char                                      UnknownData10 : 1;                                        // 0x1600(0x0001)
-	unsigned char                                      bIsLocalPlayer : 1;                                       // 0x1600(0x0001) (CPF_Transient)
-	unsigned char                                      bDamagedEnemy : 1;                                        // 0x1600(0x0001) (CPF_Transient)
-	unsigned char                                      UnknownData11[0x17];                                      // 0x1601(0x0017) MISSED OFFSET
-	uint32_t                                           PlayerStatus;                                             // 0x1618(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	uint16_t                                           AccelerationPack;                                         // 0x161C(0x0002) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData12[0x2];                                       // 0x161E(0x0002) MISSED OFFSET
-	TArray<class UFortAnimNotifyState_RootMotionInterrupt*> RootMotionInterruptNotifyStack;                           // 0x1620(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TArray<class UAnimMontage*>                        RootMotionInterruptMontageStack;                          // 0x1630(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData13[0x28];                                      // 0x1640(0x0028) MISSED OFFSET
-	class UFortVisibilityComponent*                    VisibilityComponent;                                      // 0x1668(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UPostProcessComponent*                       BlendablesPostProcessComp;                                // 0x1670(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData14[0x8];                                       // 0x1678(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData05[0x10];                                      // 0x10E0(0x0010) MISSED OFFSET
+	class UAnimMontage*                                BluePrintPlaceAnimation;                                  // 0x10F0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UAnimMontage*                                BluePrintEditAnimation;                                   // 0x10F8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnPartChanged;                                            // 0x1100(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class UMaterialInstanceDynamic*                    BlueprintPaperMID;                                        // 0x1110(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x8];                                       // 0x1118(0x0008) MISSED OFFSET
+	struct FTimeline                                   BlueprintPaperPulseTimeline;                              // 0x1120(0x00E0) (CPF_Transient)
+	class UCustomColorComponent*                       AccessoryColorSwatchHandler[0x6];                         // 0x1200(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	TWeakObjectPtr<class UFortHero>                    Hero;                                                     // 0x1230(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UCustomPlayerComponent*                      HACK_CustomPRIComponent;                                  // 0x1238(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
+	TEnumAsByte<EFortCustomGender>                     CharacterGender;                                          // 0x1240(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TEnumAsByte<EFortCustomBodyType>                   CharacterBodyType;                                        // 0x1241(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x6];                                       // 0x1242(0x0006) MISSED OFFSET
+	class UCustomCharacterPart*                        CharacterParts[0x6];                                      // 0x1248(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UCustomColorSwatch*                          CharacterColorSwatches[0x2];                              // 0x1278(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UCustomColorSwatch*                          CharacterPartColorSwatches[0x6];                          // 0x1288(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bCharacterPartsCastIndirectShadows;                       // 0x12B8(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x7];                                       // 0x12B9(0x0007) MISSED OFFSET
+	class USkeletalMeshComponent*                      CharacterPartSkeletalMeshComponents[0x6];                 // 0x12C0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UCustomCharacterPart*                        PreviousCharacterParts[0x6];                              // 0x12F0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class ACustomCharacterPartModifier*                CharacterPartModifiers[0x6];                              // 0x1320(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FFortCharacterPartsRepMontageInfo           RepCharPartAnimMontageInfo;                               // 0x1350(0x0020) (CPF_Net, CPF_Transient)
+	unsigned char                                      UnknownData09[0x8];                                       // 0x1370(0x0008) MISSED OFFSET
+	struct FName                                       CarriedObjectAttachmentSocket;                            // 0x1378(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FSlateBrush                                 MiniMapIconBrush;                                         // 0x1380(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FSlateBrush                                 AboveBelowMiniMapIconBrush;                               // 0x1410(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FSlateBrush                                 FarOffMiniMapIconBrush;                                   // 0x14A0(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FSlateBrush                                 DBNOMiniMapIconBrush;                                     // 0x1530(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FLinearColor                                MinimapIconColorSelf;                                     // 0x15C0(0x0010) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FLinearColor                                MinimapIconColorTeammate;                                 // 0x15D0(0x0010) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FLinearColor                                MinimapIconColorEnemy;                                    // 0x15E0(0x0010) (CPF_Edit, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              MaxIndicatorVisibilityDistForEnemies;                     // 0x15F0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              MaxIndicatorVisibilityDistForAllies;                      // 0x15F4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UParticleSystem*                             SpawnParticles;                                           // 0x15F8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USoundBase*                                  SpawnSound;                                               // 0x1600(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              NumSecondsOnGroundBeforeStoppingRagdoll;                  // 0x1608(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData10[0x4];                                       // 0x160C(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData11 : 1;                                        // 0x1610(0x0001)
+	unsigned char                                      bIsLocalPlayer : 1;                                       // 0x1610(0x0001) (CPF_Transient)
+	unsigned char                                      bDamagedEnemy : 1;                                        // 0x1610(0x0001) (CPF_Transient)
+	unsigned char                                      UnknownData12[0x17];                                      // 0x1611(0x0017) MISSED OFFSET
+	uint32_t                                           PlayerStatus;                                             // 0x1628(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	uint16_t                                           AccelerationPack;                                         // 0x162C(0x0002) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData13[0x2];                                       // 0x162E(0x0002) MISSED OFFSET
+	TArray<class UFortAnimNotifyState_RootMotionInterrupt*> RootMotionInterruptNotifyStack;                           // 0x1630(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TArray<class UAnimMontage*>                        RootMotionInterruptMontageStack;                          // 0x1640(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData14[0x28];                                      // 0x1650(0x0028) MISSED OFFSET
+	class UFortVisibilityComponent*                    VisibilityComponent;                                      // 0x1678(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UPostProcessComponent*                       BlendablesPostProcessComp;                                // 0x1680(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData15[0x8];                                       // 0x1688(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb40d8c4);
 		return ptr;
 	}
 
 
+	void UpdateAimbotDetectionStatus();
 	void ToggleGender();
 	void ToggleBodyType();
 	float TimeFromJumpApex();
@@ -8728,6 +9131,8 @@ public:
 	void SetFirstPersonCamera(bool bNewUseFirstPersonCamera);
 	void ServerToggleGender();
 	void ServerToggleBodyType();
+	void ServerSetAimbotDetection(bool bEnableDetection);
+	void ServerSendAimbotDetectionStatus(TArray<unsigned char> Payload);
 	void ServerRootMotionInterruptNotifyStopMontage(class UAnimMontage* MontageToStop);
 	void ServerReviveFromDBNO(class AController* EventInstigator);
 	void ServerRespawnFromDBNO();
@@ -8760,524 +9165,26 @@ public:
 	TEnumAsByte<EFortCustomBodyType> GetCharacterBodyType();
 	void ClientNotifyAbilityFailed(class UGameplayAbility* FailedAbility, const struct FGameplayTagContainer& FailedReason);
 	bool CanPredictJumpApex();
+	void AnimTrailsSetup(class UParticleSystem* ParticleSystemReference, const struct FName& FirstSocketName, const struct FName& SecondSocketName, float Width);
+	void AnimTrailsNotify(bool bActive);
+	void AnimTrailsDisable();
 };
 
 
-// Class FortniteGame.FortPlayerPawnAthena
-// 0x0410 (0x1A90 - 0x1680)
-class AFortPlayerPawnAthena : public AFortPlayerPawn
+// Class FortniteGame.FortMcpProfile
+// 0x0030 (0x02E0 - 0x02B0)
+class UFortMcpProfile : public UMcpProfile
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x1680(0x0008) MISSED OFFSET
-	EFortGliderType                                    GliderType;                                               // 0x1688(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x1689(0x0007) MISSED OFFSET
-	class AFortAthenaSimpleCar*                        Vehicle;                                                  // 0x1690(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class USoundBase*                                  OnParachuteOpen;                                          // 0x1698(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class USoundBase*                                  OnParachuteClose;                                         // 0x16A0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class USoundBase*                                  OnUmbrellaOpen;                                           // 0x16A8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class USoundBase*                                  OnUmbrellaClose;                                          // 0x16B0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class USoundBase*                                  OnSkydivingLoop;                                          // 0x16B8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class USoundBase*                                  OnParachutingLoop;                                        // 0x16C0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class USoundBase*                                  OnReviveSound;                                            // 0x16C8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              CrouchMeshOffset;                                         // 0x16D0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              ReviveFromDBNOTime;                                       // 0x16D4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              DBNOStartTime;                                            // 0x16D8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DBNOInvulnerableTime;                                     // 0x16DC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      DBNORevivalStacking;                                      // 0x16E0(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x16E1(0x0007) MISSED OFFSET
-	class UCurveFloat*                                 DirectionalSpeedMultiplierCurve;                          // 0x16E8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UCurveFloat*                                 ParachuteDirectionalSpeedMultiplierCurve;                 // 0x16F0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UCurveFloat*                                 SkydivingDirectionalSpeedMultiplierCurve;                 // 0x16F8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x1700(0x0008) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnUIGameplayCue;                                          // 0x1708(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnDBNOStateChanged;                                       // 0x1718(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	class UAnimBlueprint*                              DrivingAnimBP;                                            // 0x1728(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UClass*                                      PreDrivingAnimBP;                                         // 0x1730(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FGameplayAbilityRepAnimMontage              RepAnimMontageInfo;                                       // 0x1738(0x0030) (CPF_Net)
-	struct FReplicatedMontagePair                      LandingMontagePair;                                       // 0x1768(0x0028) (CPF_Net)
-	unsigned char                                      UnknownData04[0x1];                                       // 0x1790(0x0001) MISSED OFFSET
-	bool                                               WeaponActivated;                                          // 0x1791(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x2];                                       // 0x1792(0x0002) MISSED OFFSET
-	float                                              PickupSpeedMultiplier;                                    // 0x1794(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class USoundBase*                                  DefaultCrouchedFootstepSound;                             // 0x1798(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class USoundBase*                                  DefaultCrouchSprintFootstepSound;                         // 0x17A0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsOutsideSafeZone;                                       // 0x17A8(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x7];                                       // 0x17A9(0x0007) MISSED OFFSET
-	class APawn*                                       KillerForSpectatorRotation;                               // 0x17B0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsPlayerPawnReady;                                       // 0x17B8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsSkydiving;                                             // 0x17B9(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsParachuteOpen;                                         // 0x17BA(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsParachuteForcedOpen;                                   // 0x17BB(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsBelowAutoDeployTestHeight;                             // 0x17BC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x43];                                      // 0x17BD(0x0043) MISSED OFFSET
-	class USkeletalMeshComponent*                      MeshParachuteOpen;                                        // 0x1800(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class USkeletalMesh*                               MeshUmbrella;                                             // 0x1808(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UMaterialInstance*                           FounderUmbrellaMaterial;                                  // 0x1810(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UMaterialInstance*                           FounderGliderMaterial;                                    // 0x1818(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      UmbrellaAnimClass;                                        // 0x1820(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       ParachuteAttachSocket;                                    // 0x1828(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FScalableFloat                              ParachuteDeployTraceForGroundDistance;                    // 0x1830(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	struct FScalableFloat                              ParachuteDeployVelocityBlend;                             // 0x1858(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	float                                              ParachuteCooldownToOpen;                                  // 0x1880(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              ParachuteCooldownToClose;                                 // 0x1884(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bParachuteDeployFixedVerticalDistance;                    // 0x1888(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x3];                                       // 0x1889(0x0003) MISSED OFFSET
-	float                                              OutsideSafeZoneBlendSpeed;                                // 0x188C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              CurrentOutsideSafeZonePPVBlend;                           // 0x1890(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              TargetOutsideSafeZonePPVBlend;                            // 0x1894(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UPostProcessComponent*                       OutsideSafeZonePPComponent;                               // 0x1898(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UClass*                                      SafeZoneAppliedGE;                                        // 0x18A0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UAudioComponent*                             ParachuteAudioLoop;                                       // 0x18A8(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UAudioComponent*                             SkydiveAudioLoop;                                         // 0x18B0(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UAudioComponent*                             ConsumableUseAudio;                                       // 0x18B8(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	struct FAthenaBatchedDamageGameplayCues            AccumulatedBatchData;                                     // 0x18C0(0x0058)
-	struct FGameplayCueParameters                      BatchedGameplayCueParameters;                             // 0x1918(0x00B8)
-	unsigned char                                      UnknownData09[0x70];                                      // 0x19D0(0x0070) MISSED OFFSET
-	float                                              LastHealthPostProcessWeight;                              // 0x1A40(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              HealthPostProcessStartTime;                               // 0x1A44(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              HealthPostProcessMuteTime;                                // 0x1A48(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData10[0x4];                                       // 0x1A4C(0x0004) MISSED OFFSET
-	class USkeletalMeshComponent*                      MeshParachuteClosed;                                      // 0x1A50(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_Deprecated, CPF_IsPlainOldData)
-	class UStaticMeshComponent*                        ParachuteMeshClosed;                                      // 0x1A58(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_Deprecated, CPF_IsPlainOldData)
-	class UStaticMeshComponent*                        ParachuteMeshOpen;                                        // 0x1A60(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_Deprecated, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData11[0x28];                                      // 0x1A68(0x0028) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x30];                                      // 0x02B0(0x0030) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerPawnAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b21f27a);
 		return ptr;
 	}
 
-
-	void StopConsumableUseAudio();
-	void StartConsumableUseAudio(class USoundBase* Sound);
-	void SafeZoneStatusChanged();
-	void OnRep_WeaponActivated();
-	void OnRep_ReplicatedAnimMontage();
-	void OnRep_IsSkydiving(bool bPreviousState);
-	void OnRep_IsParachuteOpen(bool bPreviousState);
-	void OnRep_IsOutsideSafeZone();
-	void OnRep_GliderType();
-	void OnRep_DrivingCar();
-	void OnCapsuleBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void NetMulticast_InvokeGameplayCuesExecuted_WithParams(const struct FGameplayTagContainer& GameplayCueTags, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
-	void NetMulticast_InvokeGameplayCuesExecuted(const struct FGameplayTagContainer& GameplayCueTags, const struct FPredictionKey& PredictionKey, const struct FGameplayEffectContextHandle& EffectContext);
-	void NetMulticast_InvokeGameplayCuesAddedAndWhileActive_WithParams(const struct FGameplayTagContainer& GameplayCueTags, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
-	void NetMulticast_InvokeGameplayCueExecuted_WithParams(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
-	void NetMulticast_InvokeGameplayCueExecuted_FromSpec(const struct FGameplayEffectSpecForRPC& Spec, const struct FPredictionKey& PredictionKey);
-	void NetMulticast_InvokeGameplayCueExecuted(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayEffectContextHandle& EffectContext);
-	void NetMulticast_InvokeGameplayCueAddedAndWhileActive_WithParams(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
-	void NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec(const struct FGameplayEffectSpecForRPC& Spec, const struct FPredictionKey& PredictionKey);
-	void NetMulticast_InvokeGameplayCueAdded_WithParams(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& Parameters);
-	void NetMulticast_InvokeGameplayCueAdded(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayEffectContextHandle& EffectContext);
-	void NetMulticast_Athena_BatchedDamageCues(const struct FAthenaBatchedDamageGameplayCues& BatchData);
-	void MarkSafe(class UClass* GEtoApply);
-	bool IsUsingUmbrella();
-	bool IsSkydiving();
-	bool IsPassivelySkydiving();
-	bool IsParachuteOpen();
-	bool IsParachuteForcedOpen();
-	bool IsDrivingCar();
-	bool IsActivelyStrafingInAir();
-	bool IsActivelySkydiving();
-};
-
-
-// Class FortniteGame.FortAnimNotify_PlayConsumeSound
-// 0x0000 (0x0058 - 0x0058)
-class UFortAnimNotify_PlayConsumeSound : public UAnimNotify_PlaySound
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotify_PlayConsumeSound");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAnimNotify_PlayEmoteMusic
-// 0x0000 (0x0058 - 0x0058)
-class UFortAnimNotify_PlayEmoteMusic : public UAnimNotify_PlaySound
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotify_PlayEmoteMusic");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAnimNotify_PlaySoundLocalOnly
-// 0x0000 (0x0058 - 0x0058)
-class UFortAnimNotify_PlaySoundLocalOnly : public UAnimNotify_PlaySound
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotify_PlaySoundLocalOnly");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAnimNotify_PlayWindParticleEffect
-// 0x0000 (0x0080 - 0x0080)
-class UFortAnimNotify_PlayWindParticleEffect : public UAnimNotify_PlayParticleEffect
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotify_PlayWindParticleEffect");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAnimNotify_TriggerGameplayAbility
-// 0x0018 (0x0050 - 0x0038)
-class UFortAnimNotify_TriggerGameplayAbility : public UAnimNotify
-{
-public:
-	struct FGameplayTag                                ApplicationTag;                                           // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly)
-	struct FName                                       MontageSectionIfBlocked;                                  // 0x0040(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bSetNextSectionIfBlocked;                                 // 0x0048(0x0001) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0049(0x0007) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotify_TriggerGameplayAbility");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAnimNotifyState_AbilityDecisionWindow
-// 0x0048 (0x0078 - 0x0030)
-class UFortAnimNotifyState_AbilityDecisionWindow : public UAnimNotifyState
-{
-public:
-	struct FFortMontageInputAction                     PrimaryInput;                                             // 0x0030(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	struct FFortMontageInputAction                     SecondaryInput;                                           // 0x0048(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	struct FName                                       DefaultNextSection;                                       // 0x0060(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PrimaryInputStrikeAngle;                                  // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              SecondaryInputStrikeAngle;                                // 0x006C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ComboCounter;                                             // 0x0070(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0074(0x0004) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotifyState_AbilityDecisionWindow");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAnimNotifyState_AllowBlockedActions
-// 0x0000 (0x0030 - 0x0030)
-class UFortAnimNotifyState_AllowBlockedActions : public UAnimNotifyState
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotifyState_AllowBlockedActions");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAnimNotifyState_RootMotionInterrupt
-// 0x0008 (0x0038 - 0x0030)
-class UFortAnimNotifyState_RootMotionInterrupt : public UAnimNotifyState
-{
-public:
-	TEnumAsByte<EMontageInterrupt>                     MontageInterrupt;                                         // 0x0030(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0031(0x0003) MISSED OFFSET
-	unsigned char                                      bAllowMoveInput : 1;                                      // 0x0034(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0035(0x0003) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAnimNotifyState_RootMotionInterrupt");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAssetManager
-// 0x01C0 (0x0570 - 0x03B0)
-class UFortAssetManager : public UAssetManager
-{
-public:
-	TMap<class UObject*, struct FName>                 GCPreventionPool;                                         // 0x03B0(0x0050) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0400(0x0010) MISSED OFFSET
-	TArray<struct FName>                               DefaultBundleState;                                       // 0x0410(0x0010) (CPF_ZeroConstructor)
-	TArray<struct FName>                               PlatformBundleState;                                      // 0x0420(0x0010) (CPF_ZeroConstructor)
-	class UFortGameData*                               GameData;                                                 // 0x0430(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FString                                     GameDataName;                                             // 0x0438(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	struct FString                                     FastCookTheaterPath;                                      // 0x0448(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	struct FString                                     ActiveTheaterListPath;                                    // 0x0458(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	struct FString                                     TestTheaterListPath;                                      // 0x0468(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	bool                                               bForceLoadConstructorReferencesAtStartup;                 // 0x0478(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0xF7];                                      // 0x0479(0x00F7) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAssetManager");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAsyncAction_AbandonSession
-// 0x0030 (0x0058 - 0x0028)
-class UFortAsyncAction_AbandonSession : public UBlueprintAsyncActionBase
-{
-public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	class AFortPlayerController*                       PlayerController;                                         // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0050(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_AbandonSession");
-		return ptr;
-	}
-
-
-	class UFortAsyncAction_AbandonSession* STATIC_AbandonSession(class AFortPlayerController* PlayerController);
-};
-
-
-// Class FortniteGame.FortUpdateManager
-// 0x0000 (0x0270 - 0x0270)
-class UFortUpdateManager : public UUpdateManager
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUpdateManager");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortAsyncAction_CheckForUpdate
-// 0x0038 (0x0060 - 0x0028)
-class UFortAsyncAction_CheckForUpdate : public UBlueprintAsyncActionBase
-{
-public:
-	struct FScriptMulticastDelegate                    OnUpToDate;                                               // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnUpdateRequired;                                         // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	class UObject*                                     WorldContextObject;                                       // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bShowDialogOnFailure;                                     // 0x0050(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xF];                                       // 0x0051(0x000F) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_CheckForUpdate");
-		return ptr;
-	}
-
-
-	class UFortAsyncAction_CheckForUpdate* STATIC_CheckForUpdate(class UObject* InWorldContextObject, bool InShowDialogOnFailure);
-};
-
-
-// Class FortniteGame.FortAsyncAction_EnsureClientQuestLogin
-// 0x0028 (0x0050 - 0x0028)
-class UFortAsyncAction_EnsureClientQuestLogin : public UBlueprintAsyncActionBase
-{
-public:
-	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	class UFortQuestManager*                           QuestManager;                                             // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_EnsureClientQuestLogin");
-		return ptr;
-	}
-
-
-	class UFortAsyncAction_EnsureClientQuestLogin* STATIC_SendEnsureClientQuestLogin(class UFortQuestManager* QuestManager);
-};
-
-
-// Class FortniteGame.FortHomebaseBannerIconItemDefinition
-// 0x0000 (0x0270 - 0x0270)
-class UFortHomebaseBannerIconItemDefinition : public UFortAccountItemDefinition
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseBannerIconItemDefinition");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortHomebaseBannerColorMap
-// 0x0050 (0x0078 - 0x0028)
-class UFortHomebaseBannerColorMap : public UDataAsset
-{
-public:
-	TMap<struct FName, struct FHomebaseBannerColor>    ColorMap;                                                 // 0x0028(0x0050) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseBannerColorMap");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortHomebaseManager
-// 0x0278 (0x02A0 - 0x0028)
-class UFortHomebaseManager : public UDataAsset
-{
-public:
-	struct FName                                       EarlyGameStartingNodePageId;                              // 0x0028(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       EarlyGameStartingNodeId;                                  // 0x0030(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                RequiredNumberOfNodesToLeaveEarlyGame;                    // 0x0038(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
-	struct FName                                       StartingNodePageId;                                       // 0x0040(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       StartingNodeId;                                           // 0x0048(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UDataTable*                                  HomebaseNodePageDataTable;                                // 0x0050(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UDataTable*                                  HomebaseNodeDataTable;                                    // 0x0058(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UFortHomebaseNodeGameplayEffectDataTable*    HomebaseNodeGameplayEffectDataTable;                      // 0x0060(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FSlateColor                                 QuestNodeTintColour;                                      // 0x0068(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	class UDataTable*                                  HomebaseSquadDataTable;                                   // 0x0090(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UDataTable*                                  ExpeditionSlotsDataTable;                                 // 0x0098(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UCurveTable*                                 ManagerSquadSynergyBonusTable;                            // 0x00A0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UClass*                                      SquadGE;                                                  // 0x00A8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<struct FWorkerPersonalityData>              WorkerPersonalities;                                      // 0x00B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	TArray<struct FWorkerSetBonusData>                 WorkerSetBonuses;                                         // 0x00C0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	TArray<struct FManagerSynergyData>                 ManagerSynergies;                                         // 0x00D0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	unsigned char                                      UnknownData01[0x100];                                     // 0x00E0(0x0100) MISSED OFFSET
-	TAssetPtr<class UDataTable>                        HomebaseBannerIconData;                                   // 0x01E0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	TAssetPtr<class UDataTable>                        HomebaseBannerIconCategoryData;                           // 0x0200(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	TAssetPtr<class UDataTable>                        HomebaseBannerColorData;                                  // 0x0220(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	TAssetPtr<class UDataTable>                        HomebaseBannerColorCategoryData;                          // 0x0240(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	TAssetPtr<class UFortHomebaseBannerColorMap>       HomebaseBannerColorMap;                                   // 0x0260(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	TAssetPtr<class UFortHomebaseBannerIconItemDefinition> DefaultHomebaseBannerIconItemDefinition;                  // 0x0280(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseManager");
-		return ptr;
-	}
-
-
-	bool IsSquadSlotUnlocked(const struct FName& SquadId, int SlotIdx, class UFortMcpProfileAccount* McpProfile);
-	bool IsNodeOwned(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
-	class UFortWorker* GetWorkerInSquadSlot(const struct FName& SquadId, int SlotIdx, class UFortMcpProfileAccount* McpProfile);
-	void GetSquadPopulation(const struct FName& SquadId, class UFortMcpProfileAccount* McpProfile, TArray<class UFortWorker*>* OutSquadMembers);
-	bool GetSquadCopyById(const struct FName& SquadId, struct FHomebaseSquad* OutSquad);
-	struct FText GetPrereqNodeTypeName(EPrereqNodeType NodeType);
-	TArray<struct FName> GetOwnedNodes(class UFortMcpProfileAccount* McpProfile);
-	int GetNumWorldInventoryBonusTokens(class UFortMcpProfileAccount* McpProfile);
-	int GetNumOwnedNodesInPage(const struct FName& NodePageId, class UFortMcpProfileAccount* McpProfile, EPrereqNodeType NodeType);
-	int GetNumAccountLimitedItems(class UFortMcpProfileAccount* McpProfile);
-	int GetNumAccountInventoryBonusTokens(class UFortMcpProfileAccount* McpProfile);
-	struct FString GetNodeInstanceIdByNodeId(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
-	struct FString STATIC_GetHomebaseName(class UFortMcpProfileAccount* McpProfile);
-	bool AreNodeQuestReqsMet(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
-	bool AreNodePrereqsMet(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
-	bool AreNodeCostsMet(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
-};
-
-
-// Class FortniteGame.FortAsyncAction_HomebaseContextPurchaseNode
-// 0x0030 (0x0058 - 0x0028)
-class UFortAsyncAction_HomebaseContextPurchaseNode : public UBlueprintAsyncActionBase
-{
-public:
-	struct FScriptMulticastDelegate                    OnMCPPurchaseSucceeded;                                   // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnMCPPurchaseFailed;                                      // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	TWeakObjectPtr<class UHomeBaseContext>             HomeBaseContext;                                          // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       IdOfNodeToPurchase;                                       // 0x0050(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_HomebaseContextPurchaseNode");
-		return ptr;
-	}
-
-
-	class UFortAsyncAction_HomebaseContextPurchaseNode* STATIC_PurchaseNode(class UHomeBaseContext* HomeBaseContext, const struct FName& IdOfNodeToPurchase);
-	void OnMCPRequestComplete__DelegateSignature();
-};
-
-
-// Class FortniteGame.HomeBaseContext
-// 0x00B8 (0x00E0 - 0x0028)
-class UHomeBaseContext : public UBlueprintContextBase
-{
-public:
-	struct FScriptMulticastDelegate                    OnWorkerPreviewStateChanged;                              // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnHomebaseInventoryUpdated;                               // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnMaximumItemLevelChanged;                                // 0x0048(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnItemUpgradePointsChanged;                               // 0x0058(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    SquadSlotMarkedAsSeen;                                    // 0x0068(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x28];                                      // 0x0078(0x0028) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnPlayerInfoChangedDelegate;                              // 0x00A0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x00B0(0x0010) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnItemSlottingPreviewInfoChangedEvent;                    // 0x00C0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData02[0x10];                                      // 0x00D0(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.HomeBaseContext");
-		return ptr;
-	}
-
-
-	bool TryGetHomebaseSquadData(const struct FName& SquadId, struct FHomebaseSquad* OutHomebaseSquad);
-	bool TryGetHomebaseNodePageData(const struct FName& NodePageId, struct FHomebaseNodePage* OutHomebaseNodePage);
-	bool TryGetHomebaseNodeData(const struct FName& NodeID, struct FHomebaseNode* OutHomebaseNode);
-	bool IsPreviewingWorkerSlotting();
-	void GetWorkerPreviewStatus(bool* OutIsPreviewing, class UFortWorker** OutWorker, bool* OutMatchesPersonality, bool* OutMatchesSquadType, struct FWorkerSetBonusState* OutSetBonusState);
-	struct FName GetUnlockingHomebaseNodeIdForSquadSlot(const struct FName& SquadId, int SquadSlotIndex);
-	int GetTotalSkillPointsEarned();
-	bool GetTotalHomebaseRating(const struct FUniqueNetIdRepl& UniqueId, int* Rating, float* ProgressFraction);
-	bool GetTeamHomebaseRating(const struct FUniqueNetIdRepl& PlayerID, int* Rating, float* ProgressFraction);
-	void STATIC_GetStaticSetBonusData(const struct FGameplayTag& InSetBonusTag, struct FWorkerSetBonusData* OutSetBonusData, struct FFortMultiSizeBrush* OutBrush);
-	void GetSquadSlotOfItem(class UFortItem* Item, struct FName* OutSquadId, int* OutSquadSlotIndex);
-	void GetResourceCollectorRewardsEstimates(TArray<class UFortCollectedResourceItem*> CollectorTypes, TArray<struct FFortItemQuantityPair>* OutEstimates);
-	void GetResourceCollectorRewardsEstimate(class UFortCollectedResourceItem* CollectorType, struct FFortItemQuantityPair* OutEstimate);
-	void GetResourceCollectorRateInfo(class UFortCollectedResourceItem* CollectorType, float* RatePerSecond, int* MaxCapacity);
-	int GetNumAccountLimitedItems();
-	struct FName GetNodePageIdForHomebaseNode(const struct FName& NodeID);
-	bool GetLocalTeamHomebaseRating(int* Rating, float* ProgressFraction);
-	bool GetLocalPlayerHomebaseRating(int* Rating, float* ProgressFraction);
-	TArray<class UFortItem*> GetItemsInSquad(const struct FName& SquadId, bool UsePreviewState, bool bRemoveEmptySquadSlots, class UClass* OfClassType);
-	void GetAllResourceCollectorRewardEstimates(TArray<struct FFortItemQuantityPair>* OutEstimates);
-	struct FName GetActiveDefenderSquadId();
-	struct FName GetActiveCombatSquadId();
-	void ClearFrontEndOnlyExpeditionSquad(const struct FName& SquadId);
-	void BroadcastSquadSlotMarkedAsSeen();
 };
 
 
@@ -9289,7 +9196,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientEventInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7db0b929);
 		return ptr;
 	}
 
@@ -9324,7 +9232,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x62a47d0d);
 		return ptr;
 	}
 
@@ -9346,7 +9255,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_Basic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57e7aa2);
 		return ptr;
 	}
 
@@ -9375,7 +9285,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectionBookData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x561d4766);
 		return ptr;
 	}
 
@@ -9385,34 +9296,35 @@ public:
 
 
 // Class FortniteGame.CustomCharacterPart
-// 0x0110 (0x0530 - 0x0420)
+// 0x0110 (0x0550 - 0x0440)
 class UCustomCharacterPart : public UFortWorldItemDefinition
 {
 public:
-	TEnumAsByte<EFortCustomGender>                     GenderPermitted;                                          // 0x0420(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<EFortCustomBodyType>                   BodyTypesPermitted;                                       // 0x0421(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<EFortCustomPartType>                   CharacterPartType;                                        // 0x0422(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x5];                                       // 0x0423(0x0005) MISSED OFFSET
-	struct FGameplayTagContainer                       PartTypeTags;                                             // 0x0428(0x0020) (CPF_Edit)
-	struct FGameplayTagContainer                       AttachLocationTags;                                       // 0x0448(0x0020) (CPF_Edit)
-	struct FGameplayTagContainer                       CauseMorphOnLocationsTags;                                // 0x0468(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            PartModifierBlueprint;                                    // 0x0488(0x0020) (CPF_Edit)
-	class UCustomCharacterPartData*                    AdditionalData;                                           // 0x04A8(0x0008) (CPF_Edit, CPF_ExportObject, CPF_ZeroConstructor, CPF_EditConst, CPF_InstancedReference, CPF_IsPlainOldData)
-	TAssetPtr<class USkeletalMesh>                     SkeletalMesh;                                             // 0x04B0(0x0020) (CPF_Edit)
-	TArray<TAssetPtr<class USkeletalMesh>>             MasterSkeletalMeshes;                                     // 0x04D0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	bool                                               bSinglePieceMesh;                                         // 0x04E0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bSupportsColorSwatches;                                   // 0x04E1(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x6];                                       // 0x04E2(0x0006) MISSED OFFSET
-	TArray<struct FCustomPartMaterialOverrideData>     MaterialOverrides;                                        // 0x04E8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FCustomPartTextureParameter>         TextureParameters;                                        // 0x04F8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FCustomPartScalarParameter>          ScalarParameters;                                         // 0x0508(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FCustomPartVectorParameter>          VectorParameters;                                         // 0x0518(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	int                                                MaterialOverrideFlags;                                    // 0x0528(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x052C(0x0004) MISSED OFFSET
+	TEnumAsByte<EFortCustomGender>                     GenderPermitted;                                          // 0x0440(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<EFortCustomBodyType>                   BodyTypesPermitted;                                       // 0x0441(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<EFortCustomPartType>                   CharacterPartType;                                        // 0x0442(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x5];                                       // 0x0443(0x0005) MISSED OFFSET
+	struct FGameplayTagContainer                       PartTypeTags;                                             // 0x0448(0x0020) (CPF_Edit)
+	struct FGameplayTagContainer                       AttachLocationTags;                                       // 0x0468(0x0020) (CPF_Edit)
+	struct FGameplayTagContainer                       CauseMorphOnLocationsTags;                                // 0x0488(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            PartModifierBlueprint;                                    // 0x04A8(0x0020) (CPF_Edit)
+	class UCustomCharacterPartData*                    AdditionalData;                                           // 0x04C8(0x0008) (CPF_Edit, CPF_ExportObject, CPF_ZeroConstructor, CPF_EditConst, CPF_InstancedReference, CPF_IsPlainOldData)
+	TAssetPtr<class USkeletalMesh>                     SkeletalMesh;                                             // 0x04D0(0x0020) (CPF_Edit)
+	TArray<TAssetPtr<class USkeletalMesh>>             MasterSkeletalMeshes;                                     // 0x04F0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	bool                                               bSinglePieceMesh;                                         // 0x0500(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bSupportsColorSwatches;                                   // 0x0501(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x0502(0x0006) MISSED OFFSET
+	TArray<struct FCustomPartMaterialOverrideData>     MaterialOverrides;                                        // 0x0508(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TArray<struct FCustomPartTextureParameter>         TextureParameters;                                        // 0x0518(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TArray<struct FCustomPartScalarParameter>          ScalarParameters;                                         // 0x0528(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TArray<struct FCustomPartVectorParameter>          VectorParameters;                                         // 0x0538(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	int                                                MaterialOverrideFlags;                                    // 0x0548(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x054C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.CustomCharacterPart");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa1d6e63);
 		return ptr;
 	}
 
@@ -9433,7 +9345,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.Stat");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef89ecd0);
 		return ptr;
 	}
 
@@ -9455,7 +9368,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortStatEventManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8bab3d3a);
 		return ptr;
 	}
 
@@ -9463,17 +9377,18 @@ public:
 
 
 // Class FortniteGame.FortTokenType
-// 0x0050 (0x02C0 - 0x0270)
+// 0x0050 (0x02F0 - 0x02A0)
 class UFortTokenType : public UFortAccountItemDefinition
 {
 public:
-	TAssetPtr<class UClass>                            ScriptedAction;                                           // 0x0270(0x0020) (CPF_Edit)
-	struct FSlateColor                                 NodeTintColour;                                           // 0x0290(0x0028) (CPF_Edit, CPF_BlueprintVisible)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x02B8(0x0008) MISSED OFFSET
+	TAssetPtr<class UClass>                            ScriptedAction;                                           // 0x02A0(0x0020) (CPF_Edit)
+	struct FSlateColor                                 NodeTintColour;                                           // 0x02C0(0x0028) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x02E8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTokenType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c2db9fc);
 		return ptr;
 	}
 
@@ -9481,14 +9396,15 @@ public:
 
 
 // Class FortniteGame.FortDailyRewardScheduleTokenDefinition
-// 0x0000 (0x02C0 - 0x02C0)
+// 0x0000 (0x02F0 - 0x02F0)
 class UFortDailyRewardScheduleTokenDefinition : public UFortTokenType
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDailyRewardScheduleTokenDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5a236ce);
 		return ptr;
 	}
 
@@ -9504,7 +9420,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDailyRewardScheduleDefinitions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe23d80f0);
 		return ptr;
 	}
 
@@ -9555,7 +9472,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGamepadSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca177585);
 		return ptr;
 	}
 
@@ -9563,16 +9481,17 @@ public:
 
 
 // Class FortniteGame.FortOutpostItemDefinition
-// 0x0020 (0x0250 - 0x0230)
+// 0x0020 (0x0270 - 0x0250)
 class UFortOutpostItemDefinition : public UFortCloudSaveItemDefinition
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0230(0x0008) MISSED OFFSET
-	struct FText                                       LongDescription;                                          // 0x0238(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0250(0x0008) MISSED OFFSET
+	struct FText                                       LongDescription;                                          // 0x0258(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOutpostItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7dc4317f);
 		return ptr;
 	}
 
@@ -9597,7 +9516,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.OutpostPOSTRequirementData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8034b77);
 		return ptr;
 	}
 
@@ -9620,10 +9540,101 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOutpostData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7cbbbf9);
 		return ptr;
 	}
 
+};
+
+
+// Class FortniteGame.FortHomebaseBannerIconItemDefinition
+// 0x0000 (0x02A0 - 0x02A0)
+class UFortHomebaseBannerIconItemDefinition : public UFortAccountItemDefinition
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d3e254c);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortHomebaseBannerColorMap
+// 0x0050 (0x0078 - 0x0028)
+class UFortHomebaseBannerColorMap : public UDataAsset
+{
+public:
+	TMap<struct FName, struct FHomebaseBannerColor>    ColorMap;                                                 // 0x0028(0x0050) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2798858c);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortHomebaseManager
+// 0x02B8 (0x02E0 - 0x0028)
+class UFortHomebaseManager : public UDataAsset
+{
+public:
+	struct FName                                       EarlyGameStartingNodePageId;                              // 0x0028(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       EarlyGameStartingNodeId;                                  // 0x0030(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                RequiredNumberOfNodesToLeaveEarlyGame;                    // 0x0038(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x003C(0x0004) MISSED OFFSET
+	struct FName                                       StartingNodePageId;                                       // 0x0040(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       StartingNodeId;                                           // 0x0048(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UDataTable*                                  HomebaseNodePageDataTable;                                // 0x0050(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UDataTable*                                  HomebaseNodeDataTable;                                    // 0x0058(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UFortHomebaseNodeGameplayEffectDataTable*    HomebaseNodeGameplayEffectDataTable;                      // 0x0060(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FSlateColor                                 QuestNodeTintColour;                                      // 0x0068(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	class UDataTable*                                  HomebaseSquadDataTable;                                   // 0x0090(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UDataTable*                                  ExpeditionSlotsDataTable;                                 // 0x0098(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UCurveTable*                                 ManagerSquadSynergyBonusTable;                            // 0x00A0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UClass*                                      SquadGE;                                                  // 0x00A8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FWorkerPersonalityData>              WorkerPersonalities;                                      // 0x00B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	TArray<struct FWorkerSetBonusData>                 WorkerSetBonuses;                                         // 0x00C0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	TArray<struct FManagerSynergyData>                 ManagerSynergies;                                         // 0x00D0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	unsigned char                                      UnknownData01[0x140];                                     // 0x00E0(0x0140) MISSED OFFSET
+	TAssetPtr<class UDataTable>                        HomebaseBannerIconData;                                   // 0x0220(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class UDataTable>                        HomebaseBannerIconCategoryData;                           // 0x0240(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class UDataTable>                        HomebaseBannerColorData;                                  // 0x0260(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class UDataTable>                        HomebaseBannerColorCategoryData;                          // 0x0280(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class UFortHomebaseBannerColorMap>       HomebaseBannerColorMap;                                   // 0x02A0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class UFortHomebaseBannerIconItemDefinition> DefaultHomebaseBannerIconItemDefinition;                  // 0x02C0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41b8b8c8);
+		return ptr;
+	}
+
+
+	bool IsSquadSlotUnlocked(const struct FName& SquadId, int SlotIdx, class UFortMcpProfileAccount* McpProfile);
+	bool IsNodeOwned(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
+	class UFortWorker* GetWorkerInSquadSlot(const struct FName& SquadId, int SlotIdx, class UFortMcpProfileAccount* McpProfile);
+	void GetSquadPopulation(const struct FName& SquadId, class UFortMcpProfileAccount* McpProfile, TArray<class UFortWorker*>* OutSquadMembers);
+	bool GetSquadCopyById(const struct FName& SquadId, struct FHomebaseSquad* OutSquad);
+	struct FText GetPrereqNodeTypeName(EPrereqNodeType NodeType);
+	TArray<struct FName> GetOwnedNodes(class UFortMcpProfileAccount* McpProfile);
+	int GetNumWorldInventoryBonusTokens(class UFortMcpProfileAccount* McpProfile);
+	int GetNumOwnedNodesInPage(const struct FName& NodePageId, class UFortMcpProfileAccount* McpProfile, EPrereqNodeType NodeType);
+	int GetNumAccountLimitedItems(class UFortMcpProfileAccount* McpProfile);
+	int GetNumAccountInventoryBonusTokens(class UFortMcpProfileAccount* McpProfile);
+	struct FString GetNodeInstanceIdByNodeId(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
+	struct FString STATIC_GetHomebaseName(class UFortMcpProfileAccount* McpProfile);
+	bool AreNodeQuestReqsMet(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
+	bool AreNodePrereqsMet(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
+	bool AreNodeCostsMet(const struct FName& NodeID, class UFortMcpProfileAccount* McpProfile);
 };
 
 
@@ -9636,7 +9647,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAttributeCategory");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8e57400b);
 		return ptr;
 	}
 
@@ -9644,14 +9656,15 @@ public:
 
 
 // Class FortniteGame.FortEditToolItemDefinition
-// 0x0000 (0x0630 - 0x0630)
+// 0x0000 (0x0650 - 0x0650)
 class UFortEditToolItemDefinition : public UFortWeaponItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortEditToolItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c2d040d);
 		return ptr;
 	}
 
@@ -9668,7 +9681,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTagUIDataLookupTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x264b80fd);
 		return ptr;
 	}
 
@@ -9701,7 +9715,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionGenerationData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc4e92d37);
 		return ptr;
 	}
 
@@ -9717,7 +9732,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_SpawnGroupProgression");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x73e6552e);
 		return ptr;
 	}
 
@@ -9733,7 +9749,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_SpawnPointsMultiplier");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x88581f3c);
 		return ptr;
 	}
 
@@ -9750,7 +9767,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_UtilitiesAdjustment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x11047dac);
 		return ptr;
 	}
 
@@ -9766,7 +9784,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_UtilitiesLocked");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5292f1bb);
 		return ptr;
 	}
 
@@ -9783,7 +9802,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_Distance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xabef5fee);
 		return ptr;
 	}
 
@@ -9800,7 +9820,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_DirectionNumber");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x857e93ad);
 		return ptr;
 	}
 
@@ -9816,7 +9837,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_ModifierTags");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29d7343);
 		return ptr;
 	}
 
@@ -9841,7 +9863,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.MyTownData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f377898);
 		return ptr;
 	}
 
@@ -9859,7 +9882,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIFeedbackBank");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5674f7f4);
 		return ptr;
 	}
 
@@ -9879,7 +9903,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSurvivorData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27b3d6eb);
 		return ptr;
 	}
 
@@ -9897,7 +9922,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNotificationHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2f5525c);
 		return ptr;
 	}
 
@@ -9919,7 +9945,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_MCPContextUpgradeItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7090216);
 		return ptr;
 	}
 
@@ -9940,7 +9967,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_MCPContextRecycleItems");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfede4a10);
 		return ptr;
 	}
 
@@ -9962,7 +9990,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_MCPContextConsumeItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac38287c);
 		return ptr;
 	}
 
@@ -9973,7 +10002,7 @@ public:
 
 
 // Class FortniteGame.FortMcpContext
-// 0x03F8 (0x0420 - 0x0028)
+// 0x0418 (0x0440 - 0x0028)
 class UFortMcpContext : public UBlueprintContextBase
 {
 public:
@@ -9994,22 +10023,24 @@ public:
 	struct FScriptMulticastDelegate                    OnLiveStreamingQuestWindowStarts;                         // 0x0100(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnLiveStreamingQuestWindowEnds;                           // 0x0110(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
 	struct FScriptMulticastDelegate                    OnLiveStreamingQuestWindowSelectedViewers;                // 0x0120(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnRealMoneyPurchaseComplete;                              // 0x0130(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData01[0x1C0];                                     // 0x0140(0x01C0) MISSED OFFSET
-	TArray<struct FFriendCode>                         CachedFriendCodes;                                        // 0x0300(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config)
-	struct FText                                       FriendCodeMessageTitle;                                   // 0x0310(0x0018) (CPF_Edit, CPF_Config)
-	TArray<struct FFriendCodeLocString>                FriendCodeMessageTitleLocTexts;                           // 0x0328(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config)
-	struct FText                                       FriendCodeMessageBody;                                    // 0x0338(0x0018) (CPF_Edit, CPF_Config)
-	struct FText                                       FriendCodeMessageDetails;                                 // 0x0350(0x0018) (CPF_Edit, CPF_Config)
-	TArray<struct FFriendCodeLocString>                FriendCodeMessageDetailsLocTexts;                         // 0x0368(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config)
-	unsigned char                                      UnknownData02[0x80];                                      // 0x0378(0x0080) MISSED OFFSET
-	struct FScriptDelegate                             DisplayPurchaseWidget;                                    // 0x03F8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference)
-	struct FScriptDelegate                             DismissPurchaseWidget;                                    // 0x0408(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x0418(0x0008) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnOfferPurchaseComplete;                                  // 0x0130(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnRealMoneyPurchaseComplete;                              // 0x0140(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData01[0x1C0];                                     // 0x0150(0x01C0) MISSED OFFSET
+	TArray<struct FFriendCode>                         CachedFriendCodes;                                        // 0x0310(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config)
+	struct FText                                       FriendCodeMessageTitle;                                   // 0x0320(0x0018) (CPF_Edit, CPF_Config)
+	TArray<struct FFriendCodeLocString>                FriendCodeMessageTitleLocTexts;                           // 0x0338(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config)
+	struct FText                                       FriendCodeMessageBody;                                    // 0x0348(0x0018) (CPF_Edit, CPF_Config)
+	struct FText                                       FriendCodeMessageDetails;                                 // 0x0360(0x0018) (CPF_Edit, CPF_Config)
+	TArray<struct FFriendCodeLocString>                FriendCodeMessageDetailsLocTexts;                         // 0x0378(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config)
+	unsigned char                                      UnknownData02[0x90];                                      // 0x0388(0x0090) MISSED OFFSET
+	struct FScriptDelegate                             DisplayPurchaseWidget;                                    // 0x0418(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference)
+	struct FScriptDelegate                             DismissPurchaseWidget;                                    // 0x0428(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference)
+	unsigned char                                      UnknownData03[0x8];                                       // 0x0438(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa1bfd9e4);
 		return ptr;
 	}
 
@@ -10023,13 +10054,15 @@ public:
 	void RecycleItem(class UFortItem* ItemToRecycle);
 	void QueryUnredeemedFriendCodes(const struct FScriptDelegate& OnCompleteDelegate);
 	void PurchaseRealMoneyCatalogEntry(const struct FString& OfferId, const struct FScriptDelegate& Callback);
+	EOfferPurchaseError PurchaseOffer(const struct FString& OfferId, int PriceIndex, const struct FScriptDelegate& Callback, int Quantity);
 	void OpenMissionRewards();
 	void OnSendFriendCodePlatformMessageComplete__DelegateSignature(bool bMessageSent);
 	void OnQueryUnredeemedFriendCodesComplete__DelegateSignature(bool bSuccess, TArray<struct FFriendCode> FriendCodes);
 	void OnIssueFriendCodeComplete__DelegateSignature(bool bSuccess, const struct FFriendCode& FriendCode);
 	void MarkItemSeen(class UFortAccountItem* ItemToMarkSeen);
-	void ListMtxPackages(const struct FScriptDelegate& Callback, bool bIncludeCurrency);
+	void ListMtxPackages(const struct FScriptDelegate& Callback, TArray<struct FString> StorefrontNames);
 	void IssueFriendCode(const struct FScriptDelegate& OnCompleteDelegate);
+	bool IsOwned(const struct FString& OfferId);
 	bool IsLocalPlayersUniqueID(const struct FUniqueNetIdRepl& PlayerID);
 	bool IsDailyRewardAvailable(int* OutMinutesUntilNextReward);
 	bool IsAllowedConversionIndex(class UFortItem* ItemToConvert, int RecipeIndex);
@@ -10047,6 +10080,7 @@ public:
 	class UFortMcpProfileAccount* GetMcpProfile();
 	struct FText GetLoginStatusText();
 	void GetLocalAccountInfo(struct FFortPrivateAccountInfo* Result);
+	struct FFortAthenaLoadout GetLoadoutForPlayer(const struct FUniqueNetIdRepl& MemberUniqueId);
 	void GetHomeBaseInfoForPlayer(const struct FUniqueNetIdRepl& MemberUniqueId, struct FFortHomeBaseInfo* Result);
 	void GetHomeBaseInfo(struct FFortHomeBaseInfo* Result);
 	int GetHeroXpBalance();
@@ -10056,6 +10090,7 @@ public:
 	struct FText GetEULAText();
 	class UFortHero* GetDefaultHero();
 	void GetCurrentlyViewedAccountInfo(struct FFortPublicAccountInfo* Result);
+	class UFortMcpProfileAthena* GetAthenaProfile();
 	void GetAllResourceCollectors(TArray<class UFortCollectedResourceItem*>* ResourceCollectorsOwned);
 	void GetAllHeroes(TArray<class UFortHero*>* Result);
 	void GetAllAlterations(TEnumAsByte<EFortAlteration> InAlterationType, TArray<class UFortAlterationItem*>* OutAlterations);
@@ -10065,6 +10100,7 @@ public:
 	void CollectExpedition(class UFortExpeditionItem* Expedition);
 	void ClaimResourceCollectors(TArray<class UFortCollectedResourceItem*> CollectorTypes);
 	void ClaimAllResourceCollectors();
+	EOfferPurchaseError CanPurchaseOffer(const struct FString& OfferId, int PriceIndex);
 	void CancelEpicPurchasingDisplay();
 	bool AreMissionRewardsAvailable();
 	void ApplyAlteration(class UFortAlterableItem* Item, class UFortAlterationItem* AlterationToApply);
@@ -10095,7 +10131,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUITeamInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68135a48);
 		return ptr;
 	}
 
@@ -10106,6 +10143,7 @@ public:
 	void OnTeamMemberFinishedSynchronizingDelegate__DelegateSignature(const struct FUniqueNetIdRepl& NewTeamMemberId);
 	void OnTeamMemberAddedDelegate__DelegateSignature(const struct FFortTeamMemberInfo& NewTeamMemberInfo);
 	void OnTeamHitPointFractionsChanged__DelegateSignature(TArray<float> HealthFractions, TArray<float> ShieldFractions);
+	bool IsTeamMemberSynchronizing(const struct FUniqueNetIdRepl& PlayerID);
 	void GetTeamMembers(TArray<struct FFortTeamMemberInfo>* TeamMembers);
 	void GetTeamMemberIDs(TArray<struct FUniqueNetIdRepl>* TeamMemberIDs);
 	void GetTeamHitPointFractions(TArray<float>* HealthFractions, TArray<float>* ShieldFractions);
@@ -10128,7 +10166,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUINotification");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1398731a);
 		return ptr;
 	}
 
@@ -10156,7 +10195,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortRegionInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6153241);
 		return ptr;
 	}
 
@@ -10173,7 +10213,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WorldMapPin");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36321cbd);
 		return ptr;
 	}
 
@@ -10214,7 +10255,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTheaterInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9cb986b0);
 		return ptr;
 	}
 
@@ -10230,7 +10272,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTimeOfDayCollection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcfe66e1);
 		return ptr;
 	}
 
@@ -10269,7 +10312,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWindManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5a059be0);
 		return ptr;
 	}
 
@@ -10310,7 +10354,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionSetMission");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e11a737);
 		return ptr;
 	}
 
@@ -10372,7 +10417,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x84fb2b19);
 		return ptr;
 	}
 
@@ -10407,7 +10453,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionGenerator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeab1d1cc);
 		return ptr;
 	}
 
@@ -10415,7 +10462,7 @@ public:
 
 
 // Class FortniteGame.FortTheaterMapViewer
-// 0x0288 (0x0610 - 0x0388)
+// 0x0308 (0x0690 - 0x0388)
 class AFortTheaterMapViewer : public AActor
 {
 public:
@@ -10431,13 +10478,15 @@ public:
 	struct FString                                     CurrentTheaterId;                                         // 0x03F0(0x0010) (CPF_ZeroConstructor)
 	TArray<bool>                                       LeaderTileAccessStates;                                   // 0x0400(0x0010) (CPF_ZeroConstructor, CPF_Transient)
 	class AFortTheaterMapTile*                         CurrentSelectedTile;                                      // 0x0410(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TArray<struct FFortTheaterMapData>                 TheaterList;                                              // 0x0418(0x0010) (CPF_ZeroConstructor)
-	int                                                NumValidHexMapTiles;                                      // 0x0428(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x1E4];                                     // 0x042C(0x01E4) MISSED OFFSET
+	class AFortTheaterMapTile*                         CurrentFocusedTile;                                       // 0x0418(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TArray<struct FFortTheaterMapData>                 TheaterList;                                              // 0x0420(0x0010) (CPF_ZeroConstructor)
+	int                                                NumValidHexMapTiles;                                      // 0x0430(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x25C];                                     // 0x0434(0x025C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTheaterMapViewer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcce88bc8);
 		return ptr;
 	}
 
@@ -10457,7 +10506,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_ZoneModifiers");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x755178b8);
 		return ptr;
 	}
 
@@ -10474,7 +10524,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlacementActorTagTest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6012396f);
 		return ptr;
 	}
 
@@ -10485,7 +10536,7 @@ public:
 
 
 // Class FortniteGame.FortGameData
-// 0x23A8 (0x23D0 - 0x0028)
+// 0x23B8 (0x23E0 - 0x0028)
 class UFortGameData : public UPrimaryDataAsset
 {
 public:
@@ -10670,70 +10721,817 @@ public:
 	class UGameplayTagTableManager*                    TagTableManager;                                          // 0x1608(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	TAssetPtr<class UClass>                            StatEventManagerClass;                                    // 0x1610(0x0020) (CPF_Edit)
 	TAssetPtr<class UFortHeroType>                     DefaultHero;                                              // 0x1630(0x0020) (CPF_Edit)
-	TArray<TAssetPtr<class UFortHeroType>>             DefaultAthenaHeroes;                                      // 0x1650(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FItemDefinitionAndCount>             DefaultInventoryList;                                     // 0x1660(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FItemDefinitionAndCount>             FastLoadDefaultInventoryList;                             // 0x1670(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TAssetPtr<class UClass>                            ThreatVisualsManager;                                     // 0x1680(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            WindManager;                                              // 0x16A0(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortEditToolItemDefinition>       EditToolItem;                                             // 0x16C0(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortAbilitySet>                   GenericPlayerAbilitySet;                                  // 0x16E0(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortAbilitySet>                   GenericTrapAbilitySet;                                    // 0x1700(0x0020) (CPF_Edit)
-	TArray<struct FFortAbilityTagRelationship>         AbilityTagRelationships;                                  // 0x1720(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TAssetPtr<class UClass>                            EnvironmentDamageTemplateGE;                              // 0x1730(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            FallingDamageTemplateGE;                                  // 0x1750(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            HealingTemplateGE;                                        // 0x1770(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            FatalDamageTemplateGE;                                    // 0x1790(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            SquadMemberStatBonusGE;                                   // 0x17B0(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            TeamTrapBonusGE;                                          // 0x17D0(0x0020) (CPF_Edit)
-	float                                              SquadMemberStatBonusMultiplier;                           // 0x17F0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x4];                                       // 0x17F4(0x0004) MISSED OFFSET
-	TAssetPtr<class UClass>                            BASEClass;                                                // 0x17F8(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            HeroManagementWidgetClass;                                // 0x1818(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            PlayerChoiceWidgetClass;                                  // 0x1838(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            RewardChoiceWidgetClass;                                  // 0x1858(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            HeroNotifcationHandlerClass;                              // 0x1878(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            QuestNotificationHandlerClass;                            // 0x1898(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            BasicNotificationClass;                                   // 0x18B8(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            FriendNotificationClass;                                  // 0x18D8(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            TwitchNotificationClass;                                  // 0x18F8(0x0020) (CPF_Edit)
-	struct FUISoundFeedback                            FriendFeedbackSounds[0x3];                                // 0x1918(0x0008) (CPF_Edit)
-	TAssetPtr<class UMaterialInterface>                HealthScreenDamagePostProcessMat;                         // 0x1930(0x0020) (CPF_Edit)
-	TAssetPtr<class UClass>                            ZoneModifiersAnnouncementClass;                           // 0x1950(0x0020) (CPF_Edit)
-	TAssetPtr<class UCurveTable>                       SessionXPCurveTable;                                      // 0x1970(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	TAssetPtr<class UCurveTable>                       TieredWavesDefenseReqTable;                               // 0x1990(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	TAssetPtr<class UParticleSystem>                   FallbackDeathParticles;                                   // 0x19B0(0x0020) (CPF_Transient)
-	TAssetPtr<class UParticleSystem>                   WallFallbackDeathParticles;                               // 0x19D0(0x0020) (CPF_Transient)
-	TAssetPtr<class UParticleSystem>                   FallbackConstructedEffect;                                // 0x19F0(0x0020) (CPF_Transient)
-	TAssetPtr<class UParticleSystem>                   RepairEffect;                                             // 0x1A10(0x0020) (CPF_Transient)
-	TAssetPtr<class USoundBase>                        ConstructionCompleteSound;                                // 0x1A30(0x0020) (CPF_Transient)
-	TAssetPtr<class UMaterialInterface>                DamageMaterial;                                           // 0x1A50(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       BounceCurve;                                              // 0x1A70(0x0020) (CPF_Transient)
-	TAssetPtr<class UMaterialInterface>                BlueprintParentMaterial;                                  // 0x1A90(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       EditCurve;                                                // 0x1AB0(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveVector>                      BlueprintDamageCurve;                                     // 0x1AD0(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       FullHealthAnimCurve;                                      // 0x1AF0(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       RepairAnimCurve;                                          // 0x1B10(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       DynamicLODEffectCurve;                                    // 0x1B30(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       InteractFullBounceCurve;                                  // 0x1B50(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       InteractFullBounceNormalCurve;                            // 0x1B70(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       InteractEmptyBounceCurve;                                 // 0x1B90(0x0020) (CPF_Transient)
-	TAssetPtr<class UCurveFloat>                       InteractEmptyBounceNormalCurve;                           // 0x1BB0(0x0020) (CPF_Transient)
-	struct FGameplayTag                                ExpeditionUnlockedTag;                                    // 0x1BD0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_EditConst)
-	struct FGameplayTagContainer                       ExpeditionVehicleTags;                                    // 0x1BD8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_EditConst)
-	TAssetPtr<class UClass>                            ExpeditionMasterWidgetClass;                              // 0x1BF8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	int                                                DailyMissionAlertQuota;                                   // 0x1C18(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x4];                                       // 0x1C1C(0x0004) MISSED OFFSET
-	struct FOnlineAccountTexts                         OnlineAccountTexts;                                       // 0x1C20(0x07B0) (CPF_Edit)
+	TArray<struct FItemDefinitionAndCount>             DefaultInventoryList;                                     // 0x1650(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TArray<struct FItemDefinitionAndCount>             FastLoadDefaultInventoryList;                             // 0x1660(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TAssetPtr<class UClass>                            ThreatVisualsManager;                                     // 0x1670(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            WindManager;                                              // 0x1690(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortEditToolItemDefinition>       EditToolItem;                                             // 0x16B0(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortAbilitySet>                   GenericPlayerAbilitySet;                                  // 0x16D0(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortAbilitySet>                   GenericTrapAbilitySet;                                    // 0x16F0(0x0020) (CPF_Edit)
+	TArray<struct FFortAbilityTagRelationship>         AbilityTagRelationships;                                  // 0x1710(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TAssetPtr<class UClass>                            EnvironmentDamageTemplateGE;                              // 0x1720(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            FallingDamageTemplateGE;                                  // 0x1740(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            HealingTemplateGE;                                        // 0x1760(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            FatalDamageTemplateGE;                                    // 0x1780(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            SquadMemberStatBonusGE;                                   // 0x17A0(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            TeamTrapBonusGE;                                          // 0x17C0(0x0020) (CPF_Edit)
+	float                                              SquadMemberStatBonusMultiplier;                           // 0x17E0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x4];                                       // 0x17E4(0x0004) MISSED OFFSET
+	TAssetPtr<class UClass>                            BASEClass;                                                // 0x17E8(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            EmoteGameplayAbility;                                     // 0x1808(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TAssetPtr<class UClass>                            HeroManagementWidgetClass;                                // 0x1828(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            PlayerChoiceWidgetClass;                                  // 0x1848(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            RewardChoiceWidgetClass;                                  // 0x1868(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            HeroNotifcationHandlerClass;                              // 0x1888(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            QuestNotificationHandlerClass;                            // 0x18A8(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            BasicNotificationClass;                                   // 0x18C8(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            FriendNotificationClass;                                  // 0x18E8(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            TwitchNotificationClass;                                  // 0x1908(0x0020) (CPF_Edit)
+	struct FUISoundFeedback                            FriendFeedbackSounds[0x3];                                // 0x1928(0x0008) (CPF_Edit)
+	TAssetPtr<class UMaterialInterface>                HealthScreenDamagePostProcessMat;                         // 0x1940(0x0020) (CPF_Edit)
+	TAssetPtr<class UClass>                            ZoneModifiersAnnouncementClass;                           // 0x1960(0x0020) (CPF_Edit)
+	TAssetPtr<class UCurveTable>                       SessionXPCurveTable;                                      // 0x1980(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class UCurveTable>                       TieredWavesDefenseReqTable;                               // 0x19A0(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TAssetPtr<class UParticleSystem>                   FallbackDeathParticles;                                   // 0x19C0(0x0020) (CPF_Transient)
+	TAssetPtr<class UParticleSystem>                   WallFallbackDeathParticles;                               // 0x19E0(0x0020) (CPF_Transient)
+	TAssetPtr<class UParticleSystem>                   FallbackConstructedEffect;                                // 0x1A00(0x0020) (CPF_Transient)
+	TAssetPtr<class UParticleSystem>                   RepairEffect;                                             // 0x1A20(0x0020) (CPF_Transient)
+	TAssetPtr<class USoundBase>                        ConstructionCompleteSound;                                // 0x1A40(0x0020) (CPF_Transient)
+	TAssetPtr<class UMaterialInterface>                DamageMaterial;                                           // 0x1A60(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       BounceCurve;                                              // 0x1A80(0x0020) (CPF_Transient)
+	TAssetPtr<class UMaterialInterface>                BlueprintParentMaterial;                                  // 0x1AA0(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       EditCurve;                                                // 0x1AC0(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveVector>                      BlueprintDamageCurve;                                     // 0x1AE0(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       FullHealthAnimCurve;                                      // 0x1B00(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       RepairAnimCurve;                                          // 0x1B20(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       DynamicLODEffectCurve;                                    // 0x1B40(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       InteractFullBounceCurve;                                  // 0x1B60(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       InteractFullBounceNormalCurve;                            // 0x1B80(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       InteractEmptyBounceCurve;                                 // 0x1BA0(0x0020) (CPF_Transient)
+	TAssetPtr<class UCurveFloat>                       InteractEmptyBounceNormalCurve;                           // 0x1BC0(0x0020) (CPF_Transient)
+	struct FGameplayTag                                ExpeditionUnlockedTag;                                    // 0x1BE0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_EditConst)
+	struct FGameplayTagContainer                       ExpeditionVehicleTags;                                    // 0x1BE8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_EditConst)
+	TAssetPtr<class UClass>                            ExpeditionMasterWidgetClass;                              // 0x1C08(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	int                                                DailyMissionAlertQuota;                                   // 0x1C28(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x4];                                       // 0x1C2C(0x0004) MISSED OFFSET
+	struct FOnlineAccountTexts                         OnlineAccountTexts;                                       // 0x1C30(0x07B0) (CPF_Edit)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe401e0b7);
 		return ptr;
 	}
 
 
 	float STATIC_GetTeamXpBoost();
 	float STATIC_GetPersonalXpBoost();
+};
+
+
+// Class FortniteGame.FortGameMode
+// 0x0320 (0x0790 - 0x0470)
+class AFortGameMode : public AGameMode
+{
+public:
+	unsigned char                                      bDisableCloudStorage : 1;                                 // 0x0470(0x0001) (CPF_Transient)
+	unsigned char                                      bTravelInitiated : 1;                                     // 0x0470(0x0001) (CPF_Transient)
+	unsigned char                                      bTeamGame : 1;                                            // 0x0470(0x0001)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0471(0x0007) MISSED OFFSET
+	struct FString                                     CurrentWUID;                                              // 0x0478(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	int                                                CurrentPlaylistId;                                        // 0x0488(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x048C(0x0004) MISSED OFFSET
+	struct FString                                     MatchmakingRegionId;                                      // 0x0490(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	struct FString                                     MatchmakingGroupId;                                       // 0x04A0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	struct FString                                     CurrentZoneInstanceId;                                    // 0x04B0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x04C0(0x0004) MISSED OFFSET
+	int                                                ZoneIndex;                                                // 0x04C4(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      bPlayersInvincible : 1;                                   // 0x04C8(0x0001) (CPF_Transient)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x04C9(0x0003) MISSED OFFSET
+	bool                                               bKickIdlers;                                              // 0x04CC(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x04CD(0x0003) MISSED OFFSET
+	float                                              MaxIdleTime;                                              // 0x04D0(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	float                                              NoScoreKickTime;                                          // 0x04D4(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	bool                                               bEnableNotifications;                                     // 0x04D8(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x7];                                       // 0x04D9(0x0007) MISSED OFFSET
+	TAssetPtr<class UFortGameDeathPenalty>             DeathPenaltyData;                                         // 0x04E0(0x0020) (CPF_Edit, CPF_Transient)
+	unsigned char                                      UnknownData06[0x8];                                       // 0x0500(0x0008) MISSED OFFSET
+	class AFortGameSession*                            FortGameSession;                                          // 0x0508(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FString                                     GameModeSessionString;                                    // 0x0510(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      bIsAutomatedTest : 1;                                     // 0x0520(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData07[0x7];                                       // 0x0521(0x0007) MISSED OFFSET
+	TAssetPtr<class UClass>                            DefaultPawnClassStringRef;                                // 0x0528(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	class UClass*                                      MissionManagerClass;                                      // 0x0548(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	bool                                               bSpawnExplorationActorsAtWorldInitialization;             // 0x0550(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x17];                                      // 0x0551(0x0017) MISSED OFFSET
+	bool                                               bOverrideRotationOnRestartPlayer;                         // 0x0568(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<EFortGameplayState>                    PendingTimerState;                                        // 0x0569(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData09[0x6];                                       // 0x056A(0x0006) MISSED OFFSET
+	unsigned char                                      bWorldIsReady : 1;                                        // 0x0570(0x0001) (CPF_Transient)
+	unsigned char                                      bTheaterDataIsReady : 1;                                  // 0x0570(0x0001) (CPF_Transient)
+	unsigned char                                      UnknownData10[0x3];                                       // 0x0571(0x0003) MISSED OFFSET
+	int                                                TheaterSlot;                                              // 0x0574(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              GameplayServerHitchThreshold;                             // 0x0578(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	float                                              MovementTimeDiscrepancyHitchCooldown;                     // 0x057C(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	float                                              AbilityRefireHitchCooldown;                               // 0x0580(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData11[0x4];                                       // 0x0584(0x0004) MISSED OFFSET
+	class UMatchHeartbeatManager*                      MatchHeartbeatManager;                                    // 0x0588(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData12[0x10];                                      // 0x0590(0x0010) MISSED OFFSET
+	struct FGameplayTagContainer                       GameContextTags;                                          // 0x05A0(0x0020) (CPF_Transient)
+	class UFortSharedMissionLists*                     SharedMissionLists;                                       // 0x05C0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData13[0x10];                                      // 0x05C8(0x0010) MISSED OFFSET
+	class UClass*                                      TeamInfoClass;                                            // 0x05D8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData14[0x90];                                      // 0x05E0(0x0090) MISSED OFFSET
+	class AFortMissionGenerationManager*               MissionGenerationManager;                                 // 0x0670(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData15[0xE8];                                      // 0x0678(0x00E8) MISSED OFFSET
+	bool                                               bOverrideQuickBars;                                       // 0x0760(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData16[0x7];                                       // 0x0761(0x0007) MISSED OFFSET
+	struct FQuickBarData                               QuickBarDefinitions[0x2];                                 // 0x0768(0x0010) (CPF_Edit)
+	unsigned char                                      UnknownData17[0x8];                                       // 0x0788(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbda92e6e);
+		return ptr;
+	}
+
+
+	void OnEndOfDay();
+	void DumpReservations();
+};
+
+
+// Class FortniteGame.FortClientOnlyActor
+// 0x0008 (0x0390 - 0x0388)
+class AFortClientOnlyActor : public AActor
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0388(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc229fdb1);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortTheaterMapTile
+// 0x0270 (0x0600 - 0x0390)
+class AFortTheaterMapTile : public AFortClientOnlyActor
+{
+public:
+	bool                                               bFocused;                                                 // 0x0390(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bHostSelected;                                            // 0x0391(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bGoToPromptEnabled;                                       // 0x0392(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x1];                                       // 0x0393(0x0001) MISSED OFFSET
+	struct FFortHexMapCoord                            MapCoord;                                                 // 0x0394(0x000C)
+	bool                                               bHasFinishedLoading;                                      // 0x03A0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EFortTheaterMapTileType                            TileType;                                                 // 0x03A1(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x03A2(0x0006) MISSED OFFSET
+	class UClass*                                      ZoneThemeClass;                                           // 0x03A8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                TileIndex;                                                // 0x03B0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                RegionIndex;                                              // 0x03B4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FVector                                     SelectionOffset;                                          // 0x03B8(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FVector                                     FocusOffset;                                              // 0x03C4(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              SelectionInterpSpeed;                                     // 0x03D0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              NormalBrightness;                                         // 0x03D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              LockedBrightness;                                         // 0x03D8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              FocusedBrightness;                                        // 0x03DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              SelectedBrightnessRange;                                  // 0x03E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              SelectedPulseSpeed;                                       // 0x03E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	bool                                               bEnableBrightnessCode;                                    // 0x03E8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x03E9(0x0003) MISSED OFFSET
+	float                                              StaticMeshMaterialID;                                     // 0x03EC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FVector                                     InitialLocation;                                          // 0x03F0(0x000C) (CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x03FC(0x0004) MISSED OFFSET
+	struct FFortAvailableMissionData                   MissionData;                                              // 0x0400(0x00A0)
+	struct FFortAvailableMissionData                   LastValidMissionData;                                     // 0x04A0(0x00A0)
+	struct FDataTableRowHandle                         ZoneDifficultyInfo;                                       // 0x0540(0x0010)
+	struct FFortAvailableMissionAlertData              MissionAlertData;                                         // 0x0550(0x0098)
+	class UStaticMeshComponent*                        StaticMeshComponent;                                      // 0x05E8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_EditConst, CPF_InstancedReference, CPF_IsPlainOldData)
+	TArray<class UMaterialInstanceDynamic*>            AdjacencyMIDs;                                            // 0x05F0(0x0010) (CPF_BlueprintVisible, CPF_ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc17a29a2);
+		return ptr;
+	}
+
+
+	void OnTileClicked(class AActor* ClickedActor, const struct FKey& ButtonReleased);
+	void OnSelectWrapper(bool bIsGameSessionOwner);
+	void OnMouseOverEnd(class AActor* MousedOverActor);
+	void OnMouseOverBegin(class AActor* MousedOverActor);
+	void OnMissionDataUpdated();
+	void OnMarkedQuestChanged();
+	void OnInitializeTile();
+	void OnHostSelect();
+	void OnHostDeselect();
+	void OnFocus();
+	void OnEnableGoToPrompt();
+	void OnDisableGoToPrompt();
+	void OnDeselectWrapper(bool bIsGameSessionOwner);
+	void OnDefocus();
+	void OnClientSelect();
+	void OnClientDeselect();
+	bool IsTileValidForMarkedQuest(class UFortQuestItem** OutMarkedQuest);
+	bool IsTileSelectable();
+	bool IsTileQuestRecommended();
+	bool IsTilePlayable();
+	bool IsTileLocked();
+	bool IsTileHidden();
+	bool IsMissionAlertTile();
+	bool HasValidMissionData();
+	struct FGameDifficultyInfo GetZoneDifficulty();
+	EFortMissionAlertCategory GetMissionAlertCategory();
+	bool DoesTileAllowQuickplay();
+};
+
+
+// Class FortniteGame.FortDeployableBaseCloudSaveItemDefinition
+// 0x0010 (0x0260 - 0x0250)
+class UFortDeployableBaseCloudSaveItemDefinition : public UFortCloudSaveItemDefinition
+{
+public:
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0250(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x84b3247b);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortDeployableBaseSkillTreeUnlocks
+// 0x0040 (0x0068 - 0x0028)
+class UFortDeployableBaseSkillTreeUnlocks : public UDataAsset
+{
+public:
+	TArray<struct FFortTaggedDeployableBasePlotExpansionUnlock> PlotSizeUnlocks;                                          // 0x0028(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FFortTaggedDeployableBaseLootUnlock> NeighborhoodLootGrantUnlocks;                             // 0x0038(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FFortTaggedDeployableBaseLootUnlock> CombatZoneStartLootGrantUnlocks;                          // 0x0048(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FFortTaggedDeployableBaseLootUnlock> CombatZoneWaveCompleteLootGrantUnlocks;                   // 0x0058(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d34f349);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortZoneTheme
+// 0x0268 (0x0290 - 0x0028)
+class UFortZoneTheme : public UPrimaryDataAsset
+{
+public:
+	TAssetPtr<class UClass>                            TheaterMapTileClass;                                      // 0x0028(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	TAssetPtr<class UWorld>                            ZoneToUse;                                                // 0x0048(0x0020) (CPF_Edit)
+	struct FText                                       ZoneName;                                                 // 0x0068(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FText                                       ZoneDescription;                                          // 0x0080(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FText                                       AbundantResources;                                        // 0x0098(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	EFortZoneType                                      ZoneType;                                                 // 0x00B0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x00B1(0x0007) MISSED OFFSET
+	TAssetPtr<class UClass>                            ZoneGameMode;                                             // 0x00B8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FGameplayTagContainer                       ZoneTags;                                                 // 0x00D8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	TAssetPtr<class UClass>                            LobbyBeaconHostClass;                                     // 0x00F8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	TAssetPtr<class UFortCloudSaveItemDefinition>      CloudSaveItemDefinition;                                  // 0x0118(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	int                                                ZoneIndex;                                                // 0x0138(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                PlaylistId;                                               // 0x013C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                TeamSize;                                                 // 0x0140(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                TeamCount;                                                // 0x0144(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                MaxPartySize;                                             // 0x0148(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                MaxPlayers;                                               // 0x014C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              CriticalMissionEligibilityLength;                         // 0x0150(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              CriticalMissionEligibilityGracePeriodLength;              // 0x0154(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FDeployableBaseSupportSettings              DeployableBaseSettings;                                   // 0x0158(0x0080) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	unsigned char                                      IgnoreGeneratedRewards : 1;                               // 0x01D8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x01D9(0x0007) MISSED OFFSET
+	TAssetPtr<class UClass>                            PlayerSpawnPadClass;                                      // 0x01E0(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FGameplayTagContainer                       InitialPlayerSpawnTags;                                   // 0x0200(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FGameplayTagContainer                       BackupPlayerSpawnTags;                                    // 0x0220(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	bool                                               bOverrideConningText;                                     // 0x0240(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0241(0x0007) MISSED OFFSET
+	struct FText                                       ConningOverrideText;                                      // 0x0248(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	TAssetPtr<class UClass>                            MusicManagerClass;                                        // 0x0260(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	TArray<struct FZoneThemeDifficultyProperties>      DifficultyProperties;                                     // 0x0280(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5254ff6);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortMcpProfileQuest
+// 0x0080 (0x0360 - 0x02E0)
+class UFortMcpProfileQuest : public UFortMcpProfile
+{
+public:
+	struct FFortQuestClientSettings                    CachedClientSettings;                                     // 0x02E0(0x0010)
+	unsigned char                                      UnknownData00[0x70];                                      // 0x02F0(0x0070) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcba58dc8);
+		return ptr;
+	}
+
+
+	void UpdateQuests(TArray<struct FFortQuestObjectiveCompletion> Advance, struct FDedicatedServerUrlContext* Context);
+	void UpdateQuestClientObjectives(TArray<struct FFortQuestObjectiveCompletion> Advance, struct FClientUrlContext* Context);
+	void SetPinnedQuests(TArray<struct FString> PinnedQuestIds, struct FClientUrlContext* Context);
+	void ServerQuestLogin(const struct FString& MatchmakingSessionId, struct FDedicatedServerUrlContext* Context);
+	void RequestEventFlags(struct FClientUrlContext* Context);
+	void MarkNewQuestNotificationSent(TArray<struct FString> ItemIds, struct FClientUrlContext* Context);
+	void MarkItemSeen(TArray<struct FString> ItemIds, struct FClientUrlContext* Context);
+	void FortRerollDailyQuest(const struct FString& QuestId, struct FClientUrlContext* Context);
+	void ClientQuestLogin(struct FClientUrlContext* Context);
+	void ClaimQuestReward(const struct FString& QuestId, int SelectedRewardIndex, struct FClientUrlContext* Context);
+};
+
+
+// Class FortniteGame.FortMcpProfileAthena
+// 0x0100 (0x0460 - 0x0360)
+class UFortMcpProfileAthena : public UFortMcpProfileQuest
+{
+public:
+	unsigned char                                      UnknownData00[0x100];                                     // 0x0360(0x0100) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18cfd737);
+		return ptr;
+	}
+
+
+	void SetBattleRoyaleBanner(const struct FString& HomebaseBannerIconId, const struct FString& HomebaseBannerColorId, struct FClientUrlContext* Context);
+	void ReportConsumableUsed(int UsedQuantity, const struct FString& ItemType, struct FDedicatedServerUrlContext* Context);
+	void EquipBattleRoyaleCustomization(EAthenaCustomizationCategory SlotName, const struct FString& ItemToSlot, struct FClientUrlContext* Context);
+	void EndBattleRoyaleGame(TArray<struct FFortQuestObjectiveCompletion> Advance, EFortAthenaPlaylist MatchType, int MinutesAlive, int PersonalKills, int TeamKills, int Placement, TArray<struct FString> Medals, struct FDedicatedServerUrlContext* Context);
+};
+
+
+// Class FortniteGame.FortPlayerPawnAthena
+// 0x0560 (0x1BF0 - 0x1690)
+class AFortPlayerPawnAthena : public AFortPlayerPawn
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x1690(0x0008) MISSED OFFSET
+	struct FFortAthenaLoadout                          CustomizationLoadout;                                     // 0x1698(0x0068) (CPF_Net)
+	class AFortAthenaSimpleCar*                        Vehicle;                                                  // 0x1700(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USoundBase*                                  OnSkydivingLoop;                                          // 0x1708(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class USoundBase*                                  OnReviveSound;                                            // 0x1710(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              CrouchMeshOffset;                                         // 0x1718(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              ReviveFromDBNOTime;                                       // 0x171C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              DBNOStartTime;                                            // 0x1720(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DBNOInvulnerableTime;                                     // 0x1724(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      DBNORevivalStacking;                                      // 0x1728(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bPendingSkydiveLaunch;                                    // 0x1729(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x172A(0x0006) MISSED OFFSET
+	class UCurveFloat*                                 DirectionalSpeedMultiplierCurve;                          // 0x1730(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UCurveFloat*                                 ParachuteDirectionalSpeedMultiplierCurve;                 // 0x1738(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UCurveFloat*                                 SkydivingDirectionalSpeedMultiplierCurve;                 // 0x1740(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x1748(0x0008) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnUIGameplayCue;                                          // 0x1750(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnDBNOStateChanged;                                       // 0x1760(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class UAnimBlueprint*                              DrivingAnimBP;                                            // 0x1770(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UClass*                                      PreDrivingAnimBP;                                         // 0x1778(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FGameplayAbilityRepAnimMontage              RepAnimMontageInfo;                                       // 0x1780(0x0030) (CPF_Net)
+	struct FActiveGameplayCueContainer                 MinimalReplicationGameplayCues;                           // 0x17B0(0x00D0) (CPF_Net)
+	struct FReplicatedMontagePair                      LandingMontagePair;                                       // 0x1880(0x0028) (CPF_Net)
+	unsigned char                                      UnknownData03[0x1];                                       // 0x18A8(0x0001) MISSED OFFSET
+	bool                                               WeaponActivated;                                          // 0x18A9(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x2];                                       // 0x18AA(0x0002) MISSED OFFSET
+	float                                              PickupSpeedMultiplier;                                    // 0x18AC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USoundBase*                                  DefaultCrouchedFootstepSound;                             // 0x18B0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USoundBase*                                  DefaultCrouchSprintFootstepSound;                         // 0x18B8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              MinimumTimeBetweenSteps;                                  // 0x18C0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              LastStepTime;                                             // 0x18C4(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnFootstepEvent;                                          // 0x18C8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	bool                                               bIsOutsideSafeZone;                                       // 0x18D8(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x7];                                       // 0x18D9(0x0007) MISSED OFFSET
+	class APawn*                                       KillerForSpectatorRotation;                               // 0x18E0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsPlayerPawnReady;                                       // 0x18E8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsSkydiving;                                             // 0x18E9(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsParachuteOpen;                                         // 0x18EA(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsParachuteForcedOpen;                                   // 0x18EB(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsBelowAutoDeployTestHeight;                             // 0x18EC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x43];                                      // 0x18ED(0x0043) MISSED OFFSET
+	class USkeletalMeshComponent*                      MeshParachuteOpen;                                        // 0x1930(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	struct FName                                       ParachuteAttachSocket;                                    // 0x1938(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FScalableFloat                              ParachuteDeployTraceForGroundDistance;                    // 0x1940(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FScalableFloat                              LaunchPadParachuteDeployTraceForGroundDistance;           // 0x1968(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FScalableFloat                              LaunchPadParachuteDeployTraceForDownwardSpeed;            // 0x1990(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FScalableFloat                              ParachuteDeployVelocityBlend;                             // 0x19B8(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	float                                              ParachuteCooldownToOpen;                                  // 0x19E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              ParachuteCooldownToClose;                                 // 0x19E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bParachuteDeployFixedVerticalDistance;                    // 0x19E8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x3];                                       // 0x19E9(0x0003) MISSED OFFSET
+	float                                              OutsideSafeZoneBlendSpeed;                                // 0x19EC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              CurrentOutsideSafeZonePPVBlend;                           // 0x19F0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              TargetOutsideSafeZonePPVBlend;                            // 0x19F4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UPostProcessComponent*                       OutsideSafeZonePPComponent;                               // 0x19F8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UClass*                                      SafeZoneAppliedGE;                                        // 0x1A00(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UAudioComponent*                             ParachuteAudioLoop;                                       // 0x1A08(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UAudioComponent*                             SkydiveAudioLoop;                                         // 0x1A10(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UAudioComponent*                             ConsumableUseAudio;                                       // 0x1A18(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	struct FAthenaBatchedDamageGameplayCues            AccumulatedBatchData;                                     // 0x1A20(0x0058)
+	struct FGameplayCueParameters                      BatchedGameplayCueParameters;                             // 0x1A78(0x00B8)
+	unsigned char                                      UnknownData08[0x70];                                      // 0x1B30(0x0070) MISSED OFFSET
+	float                                              LastHealthPostProcessWeight;                              // 0x1BA0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              HealthPostProcessStartTime;                               // 0x1BA4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              HealthPostProcessMuteTime;                                // 0x1BA8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData09[0x4];                                       // 0x1BAC(0x0004) MISSED OFFSET
+	class USkeletalMeshComponent*                      MeshParachuteClosed;                                      // 0x1BB0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_Deprecated, CPF_IsPlainOldData)
+	class UStaticMeshComponent*                        ParachuteMeshClosed;                                      // 0x1BB8(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_Deprecated, CPF_IsPlainOldData)
+	class UStaticMeshComponent*                        ParachuteMeshOpen;                                        // 0x1BC0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_Deprecated, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData10[0x28];                                      // 0x1BC8(0x0028) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x72f42cbd);
+		return ptr;
+	}
+
+
+	void StopConsumableUseAudio();
+	void StartConsumableUseAudio(class USoundBase* Sound);
+	void SafeZoneStatusChanged();
+	void OnRep_WeaponActivated();
+	void OnRep_ReplicatedAnimMontage();
+	void OnRep_IsSkydiving(bool bPreviousState);
+	void OnRep_IsParachuteOpen(bool bPreviousState);
+	void OnRep_IsOutsideSafeZone();
+	void OnRep_DrivingCar();
+	void OnRep_CustomizationLoadout();
+	void OnCapsuleBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void NetMulticast_InvokeGameplayCuesExecuted_WithParams(const struct FGameplayTagContainer& GameplayCueTags, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
+	void NetMulticast_InvokeGameplayCuesExecuted(const struct FGameplayTagContainer& GameplayCueTags, const struct FPredictionKey& PredictionKey, const struct FGameplayEffectContextHandle& EffectContext);
+	void NetMulticast_InvokeGameplayCuesAddedAndWhileActive_WithParams(const struct FGameplayTagContainer& GameplayCueTags, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
+	void NetMulticast_InvokeGameplayCueExecuted_WithParams(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
+	void NetMulticast_InvokeGameplayCueExecuted_FromSpec(const struct FGameplayEffectSpecForRPC& Spec, const struct FPredictionKey& PredictionKey);
+	void NetMulticast_InvokeGameplayCueExecuted(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayEffectContextHandle& EffectContext);
+	void NetMulticast_InvokeGameplayCueAddedAndWhileActive_WithParams(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& GameplayCueParameters);
+	void NetMulticast_InvokeGameplayCueAddedAndWhileActive_FromSpec(const struct FGameplayEffectSpecForRPC& Spec, const struct FPredictionKey& PredictionKey);
+	void NetMulticast_InvokeGameplayCueAdded_WithParams(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayCueParameters& Parameters);
+	void NetMulticast_InvokeGameplayCueAdded(const struct FGameplayTag& GameplayCueTag, const struct FPredictionKey& PredictionKey, const struct FGameplayEffectContextHandle& EffectContext);
+	void NetMulticast_Athena_BatchedDamageCues(const struct FAthenaBatchedDamageGameplayCues& BatchData);
+	void MarkSafe(class UClass* GEtoApply);
+	bool IsUsingUmbrella();
+	bool IsSkydivingFromLaunchPad();
+	bool IsSkydiving();
+	bool IsPassivelySkydiving();
+	bool IsParachuteOpen();
+	bool IsParachuteForcedOpen();
+	bool IsDrivingCar();
+	bool IsActivelyStrafingInAir();
+	bool IsActivelySkydiving();
+};
+
+
+// Class FortniteGame.FortAnimNotify_PlayConsumeSound
+// 0x0000 (0x0058 - 0x0058)
+class UFortAnimNotify_PlayConsumeSound : public UAnimNotify_PlaySound
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2950876d);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAnimNotify_PlayEmoteMusic
+// 0x0000 (0x0058 - 0x0058)
+class UFortAnimNotify_PlayEmoteMusic : public UAnimNotify_PlaySound
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29b33e47);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAnimNotify_PlaySoundLocalOnly
+// 0x0000 (0x0058 - 0x0058)
+class UFortAnimNotify_PlaySoundLocalOnly : public UAnimNotify_PlaySound
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf4d7d1be);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAnimNotify_PlayWindParticleEffect
+// 0x0000 (0x0080 - 0x0080)
+class UFortAnimNotify_PlayWindParticleEffect : public UAnimNotify_PlayParticleEffect
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36c1e059);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAnimNotify_TriggerGameplayAbility
+// 0x0018 (0x0050 - 0x0038)
+class UFortAnimNotify_TriggerGameplayAbility : public UAnimNotify
+{
+public:
+	struct FGameplayTag                                ApplicationTag;                                           // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly)
+	struct FName                                       MontageSectionIfBlocked;                                  // 0x0040(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bSetNextSectionIfBlocked;                                 // 0x0048(0x0001) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0049(0x0007) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xebd9e68e);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAnimNotifyState_AbilityDecisionWindow
+// 0x0048 (0x0078 - 0x0030)
+class UFortAnimNotifyState_AbilityDecisionWindow : public UAnimNotifyState
+{
+public:
+	struct FFortMontageInputAction                     PrimaryInput;                                             // 0x0030(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FFortMontageInputAction                     SecondaryInput;                                           // 0x0048(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FName                                       DefaultNextSection;                                       // 0x0060(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PrimaryInputStrikeAngle;                                  // 0x0068(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              SecondaryInputStrikeAngle;                                // 0x006C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ComboCounter;                                             // 0x0070(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0074(0x0004) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b0d0cf9);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAnimNotifyState_AllowBlockedActions
+// 0x0000 (0x0030 - 0x0030)
+class UFortAnimNotifyState_AllowBlockedActions : public UAnimNotifyState
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ad68ef3);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAnimNotifyState_RootMotionInterrupt
+// 0x0008 (0x0038 - 0x0030)
+class UFortAnimNotifyState_RootMotionInterrupt : public UAnimNotifyState
+{
+public:
+	TEnumAsByte<EMontageInterrupt>                     MontageInterrupt;                                         // 0x0030(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0031(0x0003) MISSED OFFSET
+	unsigned char                                      bAllowMoveInput : 1;                                      // 0x0034(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0035(0x0003) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc87b7222);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAssetManager
+// 0x01E0 (0x0590 - 0x03B0)
+class UFortAssetManager : public UAssetManager
+{
+public:
+	TMap<class UObject*, struct FName>                 GCPreventionPool;                                         // 0x03B0(0x0050) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0400(0x0010) MISSED OFFSET
+	TArray<struct FName>                               DefaultBundleState;                                       // 0x0410(0x0010) (CPF_ZeroConstructor)
+	TArray<struct FName>                               PlatformBundleState;                                      // 0x0420(0x0010) (CPF_ZeroConstructor)
+	class UFortGameData*                               GameData;                                                 // 0x0430(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FString                                     GameDataName;                                             // 0x0438(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	class UAthenaGameData*                             AthenaGameData;                                           // 0x0448(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FString                                     AthenaGameDataName;                                       // 0x0450(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     FastCookTheaterPath;                                      // 0x0460(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     ActiveTheaterListPath;                                    // 0x0470(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     TestTheaterListPath;                                      // 0x0480(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	TArray<struct FString>                             MobileTexturePathWhitelist;                               // 0x0490(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	bool                                               bForceLoadConstructorReferencesAtStartup;                 // 0x04A0(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0xEF];                                      // 0x04A1(0x00EF) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e2c1ec0);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAsyncAction_AbandonSession
+// 0x0030 (0x0058 - 0x0028)
+class UFortAsyncAction_AbandonSession : public UBlueprintAsyncActionBase
+{
+public:
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class AFortPlayerController*                       PlayerController;                                         // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0050(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8d59789);
+		return ptr;
+	}
+
+
+	class UFortAsyncAction_AbandonSession* STATIC_AbandonSession(class AFortPlayerController* PlayerController);
+};
+
+
+// Class FortniteGame.FortUpdateManager
+// 0x0000 (0x0270 - 0x0270)
+class UFortUpdateManager : public UUpdateManager
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xea067b6f);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortAsyncAction_CheckForUpdate
+// 0x0038 (0x0060 - 0x0028)
+class UFortAsyncAction_CheckForUpdate : public UBlueprintAsyncActionBase
+{
+public:
+	struct FScriptMulticastDelegate                    OnUpToDate;                                               // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnUpdateRequired;                                         // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class UObject*                                     WorldContextObject;                                       // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bShowDialogOnFailure;                                     // 0x0050(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xF];                                       // 0x0051(0x000F) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3361521e);
+		return ptr;
+	}
+
+
+	class UFortAsyncAction_CheckForUpdate* STATIC_CheckForUpdate(class UObject* InWorldContextObject, bool InShowDialogOnFailure);
+};
+
+
+// Class FortniteGame.FortAsyncAction_EnsureClientQuestLogin
+// 0x0028 (0x0050 - 0x0028)
+class UFortAsyncAction_EnsureClientQuestLogin : public UBlueprintAsyncActionBase
+{
+public:
+	struct FScriptMulticastDelegate                    OnSuccess;                                                // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnFailure;                                                // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class UFortQuestManager*                           QuestManager;                                             // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe22344ba);
+		return ptr;
+	}
+
+
+	class UFortAsyncAction_EnsureClientQuestLogin* STATIC_SendEnsureClientQuestLogin(class UFortQuestManager* QuestManager);
+};
+
+
+// Class FortniteGame.FortAsyncAction_HomebaseContextPurchaseNode
+// 0x0030 (0x0058 - 0x0028)
+class UFortAsyncAction_HomebaseContextPurchaseNode : public UBlueprintAsyncActionBase
+{
+public:
+	struct FScriptMulticastDelegate                    OnMCPPurchaseSucceeded;                                   // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnMCPPurchaseFailed;                                      // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	TWeakObjectPtr<class UHomeBaseContext>             HomeBaseContext;                                          // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       IdOfNodeToPurchase;                                       // 0x0050(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4cbfd72e);
+		return ptr;
+	}
+
+
+	class UFortAsyncAction_HomebaseContextPurchaseNode* STATIC_PurchaseNode(class UHomeBaseContext* HomeBaseContext, const struct FName& IdOfNodeToPurchase);
+	void OnMCPRequestComplete__DelegateSignature();
+};
+
+
+// Class FortniteGame.HomeBaseContext
+// 0x00B8 (0x00E0 - 0x0028)
+class UHomeBaseContext : public UBlueprintContextBase
+{
+public:
+	struct FScriptMulticastDelegate                    OnWorkerPreviewStateChanged;                              // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnHomebaseInventoryUpdated;                               // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnMaximumItemLevelChanged;                                // 0x0048(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnItemUpgradePointsChanged;                               // 0x0058(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    SquadSlotMarkedAsSeen;                                    // 0x0068(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x28];                                      // 0x0078(0x0028) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnPlayerInfoChangedDelegate;                              // 0x00A0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x00B0(0x0010) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnItemSlottingPreviewInfoChangedEvent;                    // 0x00C0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData02[0x10];                                      // 0x00D0(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9bc45151);
+		return ptr;
+	}
+
+
+	bool TryGetHomebaseSquadData(const struct FName& SquadId, struct FHomebaseSquad* OutHomebaseSquad);
+	bool TryGetHomebaseNodePageData(const struct FName& NodePageId, struct FHomebaseNodePage* OutHomebaseNodePage);
+	bool TryGetHomebaseNodeData(const struct FName& NodeID, struct FHomebaseNode* OutHomebaseNode);
+	bool IsPreviewingWorkerSlotting();
+	void GetWorkerPreviewStatus(bool* OutIsPreviewing, class UFortWorker** OutWorker, bool* OutMatchesPersonality, bool* OutMatchesSquadType, struct FWorkerSetBonusState* OutSetBonusState);
+	struct FName GetUnlockingHomebaseNodeIdForSquadSlot(const struct FName& SquadId, int SquadSlotIndex);
+	int GetTotalSkillPointsEarned();
+	bool GetTotalHomebaseRating(const struct FUniqueNetIdRepl& UniqueId, int* Rating, float* ProgressFraction);
+	bool GetTeamHomebaseRating(const struct FUniqueNetIdRepl& PlayerID, int* Rating, float* ProgressFraction);
+	void STATIC_GetStaticSetBonusData(const struct FGameplayTag& InSetBonusTag, struct FWorkerSetBonusData* OutSetBonusData, struct FFortMultiSizeBrush* OutBrush);
+	void GetSquadSlotOfItem(class UFortItem* Item, struct FName* OutSquadId, int* OutSquadSlotIndex);
+	void GetResourceCollectorRewardsEstimates(TArray<class UFortCollectedResourceItem*> CollectorTypes, TArray<struct FFortItemQuantityPair>* OutEstimates);
+	void GetResourceCollectorRewardsEstimate(class UFortCollectedResourceItem* CollectorType, struct FFortItemQuantityPair* OutEstimate);
+	void GetResourceCollectorRateInfo(class UFortCollectedResourceItem* CollectorType, float* RatePerSecond, int* MaxCapacity);
+	int GetNumAccountLimitedItems();
+	struct FName GetNodePageIdForHomebaseNode(const struct FName& NodeID);
+	bool GetLocalTeamHomebaseRating(int* Rating, float* ProgressFraction);
+	bool GetLocalPlayerHomebaseRating(int* Rating, float* ProgressFraction);
+	TArray<class UFortItem*> GetItemsInSquad(const struct FName& SquadId, bool UsePreviewState, bool bRemoveEmptySquadSlots, class UClass* OfClassType);
+	void GetAllResourceCollectorRewardEstimates(TArray<struct FFortItemQuantityPair>* OutEstimates);
+	struct FName GetActiveDefenderSquadId();
+	struct FName GetActiveCombatSquadId();
+	void ClearFrontEndOnlyExpeditionSquad(const struct FName& SquadId);
+	void BroadcastSquadSlotMarkedAsSeen();
 };
 
 
@@ -10749,7 +11547,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_MakeTieredWaveEncounterSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x78c53f7a);
 		return ptr;
 	}
 
@@ -10771,7 +11570,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_OpenChoiceUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7f0a547);
 		return ptr;
 	}
 
@@ -10794,7 +11594,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_PlayConversation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb557b17);
 		return ptr;
 	}
 
@@ -10815,7 +11616,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_RejoinSession");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x43bc62c9);
 		return ptr;
 	}
 
@@ -10842,7 +11644,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_SendQuestStatEvent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xddd1d26e);
 		return ptr;
 	}
 
@@ -10866,7 +11669,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_TriggerNotification");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9a07b0d);
 		return ptr;
 	}
 
@@ -10887,7 +11691,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAsyncAction_WaitForClientAnnouncement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa17d490c);
 		return ptr;
 	}
 
@@ -10910,7 +11715,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCameraMode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x88aee761);
 		return ptr;
 	}
 
@@ -10951,7 +11757,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.Fort3PCameraMode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5171b84);
 		return ptr;
 	}
 
@@ -10975,16 +11782,17 @@ public:
 	struct FVector                                     ViewTargetSpaceViewOffseInterpSpeed;                      // 0x0098(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x00A4(0x0004) MISSED OFFSET
 	struct FInterpOffset                               CameraSpaceViewOffset;                                    // 0x00A8(0x0010) (CPF_Edit, CPF_BlueprintVisible)
-	struct FVector                                     LastCameraOrigin;                                         // 0x00B8(0x000C) (CPF_Transient, CPF_IsPlainOldData)
-	struct FVector                                     CameraOriginLocalOffset;                                  // 0x00C4(0x000C) (CPF_Transient, CPF_IsPlainOldData)
-	float                                              PenetrationBlendInTime;                                   // 0x00D0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PenetrationBlendOutTime;                                  // 0x00D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bPreventPenetration;                                      // 0x00D8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bDoPredictiveAvoidance;                                   // 0x00D9(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x2];                                       // 0x00DA(0x0002) MISSED OFFSET
-	float                                              CollisionPushOutDistance;                                 // 0x00DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              HidePawnPenetrationPercent;                               // 0x00E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x4];                                       // 0x00E4(0x0004) MISSED OFFSET
+	bool                                               bSupportsShoulderSwap;                                    // 0x00B8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x3];                                       // 0x00B9(0x0003) MISSED OFFSET
+	struct FVector                                     LastCameraOrigin;                                         // 0x00BC(0x000C) (CPF_Transient, CPF_IsPlainOldData)
+	struct FVector                                     CameraOriginLocalOffset;                                  // 0x00C8(0x000C) (CPF_Transient, CPF_IsPlainOldData)
+	float                                              PenetrationBlendInTime;                                   // 0x00D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PenetrationBlendOutTime;                                  // 0x00D8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bPreventPenetration;                                      // 0x00DC(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bDoPredictiveAvoidance;                                   // 0x00DD(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x2];                                       // 0x00DE(0x0002) MISSED OFFSET
+	float                                              CollisionPushOutDistance;                                 // 0x00E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              HidePawnPenetrationPercent;                               // 0x00E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	TArray<struct FPenetrationAvoidanceFeeler>         PenetrationAvoidanceFeelers;                              // 0x00E8(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
 	float                                              SafeLocToAimLineBlockedPct;                               // 0x00F8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	float                                              AimLineToDesiredPosBlockedPct;                            // 0x00FC(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
@@ -10993,7 +11801,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCameraMode_ThirdPerson");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6584d358);
 		return ptr;
 	}
 
@@ -11001,14 +11810,17 @@ public:
 
 
 // Class FortniteGame.FortCameraMode_AthenaAircraft
-// 0x0000 (0x0110 - 0x0110)
+// 0x0010 (0x0120 - 0x0110)
 class UFortCameraMode_AthenaAircraft : public UFortCameraMode_ThirdPerson
 {
 public:
+	struct FVector                                     CameraOriginInterpSpeedToPawn;                            // 0x0110(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x011C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCameraMode_AthenaAircraft");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30b4dd6f);
 		return ptr;
 	}
 
@@ -11016,7 +11828,7 @@ public:
 
 
 // Class FortniteGame.FortAthenaAircraft
-// 0x0128 (0x04B0 - 0x0388)
+// 0x0138 (0x04C0 - 0x0388)
 class AFortAthenaAircraft : public AActor
 {
 public:
@@ -11036,10 +11848,13 @@ public:
 	unsigned char                                      UnknownData02[0x10];                                      // 0x040C(0x0010) MISSED OFFSET
 	float                                              MiniMapIconScale;                                         // 0x041C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FSlateBrush                                 MiniMapIconBrush;                                         // 0x0420(0x0090) (CPF_Edit, CPF_DisableEditOnInstance)
+	class UAthenaBattleBusItemDefinition*              DefaultBusSkin;                                           // 0x04B0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class AActor*                                      SpawnedCosmeticActor;                                     // 0x04B8(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAthenaAircraft");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c19bcf6);
 		return ptr;
 	}
 
@@ -11062,7 +11877,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAthenaHoverCarMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaefc0b68);
 		return ptr;
 	}
 
@@ -11079,7 +11895,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAthenaSimpleCarMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc49bd1f8);
 		return ptr;
 	}
 
@@ -11106,7 +11923,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortVisibilityComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65289a5a);
 		return ptr;
 	}
 
@@ -11125,7 +11943,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMiniMapComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c07a467);
 		return ptr;
 	}
 
@@ -11168,7 +11987,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSafeZoneIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x308cff9f);
 		return ptr;
 	}
 
@@ -11179,7 +11999,7 @@ public:
 
 
 // Class FortniteGame.FortAthenaMapInfo
-// 0x02C8 (0x0650 - 0x0388)
+// 0x02D0 (0x0658 - 0x0388)
 class AFortAthenaMapInfo : public AActor
 {
 public:
@@ -11205,14 +12025,15 @@ public:
 	struct FScalableFloat                              AircraftSpeed;                                            // 0x05B8(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
 	struct FScalableFloat                              SafeZoneStartDelay;                                       // 0x05E0(0x0028) (CPF_Edit)
 	struct FScalableFloat                              SafeZoneStartingRadius;                                   // 0x0608(0x0028) (CPF_Edit)
-	class AVolume*                                     SafeZoneVolume;                                           // 0x0630(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<struct FFortSafeZoneDefinition>             SafeZoneDefinitions;                                      // 0x0638(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	float                                              ParachuteForceDeployWorldZ;                               // 0x0648(0x0004) (CPF_ZeroConstructor, CPF_Deprecated, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x064C(0x0004) MISSED OFFSET
+	TArray<struct FFortSafeZoneVolumeDefinition>       SafeZoneVolumeDefinitions;                                // 0x0630(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	TArray<struct FFortSafeZoneDefinition>             SafeZoneDefinitions;                                      // 0x0640(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	float                                              ParachuteForceDeployWorldZ;                               // 0x0650(0x0004) (CPF_ZeroConstructor, CPF_Deprecated, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0654(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAthenaMapInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c9ab696);
 		return ptr;
 	}
 
@@ -11229,7 +12050,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCameraMode_AthenaVehicle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x856f144f);
 		return ptr;
 	}
 
@@ -11249,7 +12071,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAthenaSimpleCar");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x26c0be48);
 		return ptr;
 	}
 
@@ -11269,7 +12092,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCharacterAttrSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc4b02c1);
 		return ptr;
 	}
 
@@ -11290,7 +12114,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAIAttributesSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2441b48);
 		return ptr;
 	}
 
@@ -11318,7 +12143,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConstructionSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0ac80ca);
 		return ptr;
 	}
 
@@ -11359,7 +12185,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortControlResistanceSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1be944c1);
 		return ptr;
 	}
 
@@ -11393,7 +12220,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDamageSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb9eb45a);
 		return ptr;
 	}
 
@@ -11426,7 +12254,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBuildingActorSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5a58e0d8);
 		return ptr;
 	}
 
@@ -11450,7 +12279,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBuildingTrapSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdabd27e4);
 		return ptr;
 	}
 
@@ -11499,7 +12329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf55581d);
 		return ptr;
 	}
 
@@ -11547,7 +12378,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMovementSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b49f752);
 		return ptr;
 	}
 
@@ -11591,7 +12423,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerAttrSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x25ced59);
 		return ptr;
 	}
 
@@ -11638,7 +12471,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponAttrSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf3a4e390);
 		return ptr;
 	}
 
@@ -11662,7 +12496,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBannerUtilities");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8bb2dc9);
 		return ptr;
 	}
 
@@ -11701,7 +12536,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBehaviorTreeComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16e4e72c);
 		return ptr;
 	}
 
@@ -11731,7 +12567,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTieredCollectionLayout");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e26e648);
 		return ptr;
 	}
 
@@ -11743,23 +12580,24 @@ public:
 
 
 // Class FortniteGame.FortExpeditionItemDefinition
-// 0x0040 (0x02B0 - 0x0270)
+// 0x0040 (0x02E0 - 0x02A0)
 class UFortExpeditionItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	struct FString                                     CriteriaRequirementsLootTier;                             // 0x0270(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	float                                              ExpeditionDuration_Minutes;                               // 0x0280(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              ExpeditionExpirationDuration_Minutes;                     // 0x0284(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                BaseTargetPowerRating;                                    // 0x0288(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                TierFactor;                                               // 0x028C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MaxTargetPowerClamp;                                      // 0x0290(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x0294(0x0004) MISSED OFFSET
-	struct FDataTableRowHandle                         ExpeditionRules;                                          // 0x0298(0x0010) (CPF_Edit)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x02A8(0x0008) MISSED OFFSET
+	struct FString                                     CriteriaRequirementsLootTier;                             // 0x02A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	float                                              ExpeditionDuration_Minutes;                               // 0x02B0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              ExpeditionExpirationDuration_Minutes;                     // 0x02B4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                BaseTargetPowerRating;                                    // 0x02B8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                TierFactor;                                               // 0x02BC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxTargetPowerClamp;                                      // 0x02C0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x02C4(0x0004) MISSED OFFSET
+	struct FDataTableRowHandle                         ExpeditionRules;                                          // 0x02C8(0x0010) (CPF_Edit)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x02D8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortExpeditionItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1deac8ca);
 		return ptr;
 	}
 
@@ -11787,7 +12625,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortExpeditionItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x26f24809);
 		return ptr;
 	}
 
@@ -11814,7 +12653,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBlueprintAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfccc3ede);
 		return ptr;
 	}
 
@@ -11842,7 +12682,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOnboardingAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaf14e9e2);
 		return ptr;
 	}
 
@@ -11864,7 +12705,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOutpostAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe6a26a2b);
 		return ptr;
 	}
 
@@ -11889,7 +12731,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBaseAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f3f1725);
 		return ptr;
 	}
 
@@ -11912,7 +12755,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortExpeditionAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe46110c);
 		return ptr;
 	}
 
@@ -11927,7 +12771,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectionBookAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc363efae);
 		return ptr;
 	}
 
@@ -11942,7 +12787,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSurvivorAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb56e25d);
 		return ptr;
 	}
 
@@ -11957,7 +12803,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTwitchAnalytics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83a3133c);
 		return ptr;
 	}
 
@@ -11975,7 +12822,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBluGloManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4302b9d);
 		return ptr;
 	}
 
@@ -11996,7 +12844,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBotStructureBuilder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb226b33c);
 		return ptr;
 	}
 
@@ -12021,7 +12870,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBotMissionLogic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x148c028);
 		return ptr;
 	}
 
@@ -12060,7 +12910,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_DistanceBetween");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd6bf7c38);
 		return ptr;
 	}
 
@@ -12076,7 +12927,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_HasGameplayAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x89937ff6);
 		return ptr;
 	}
 
@@ -12091,7 +12943,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_IsGoalPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0cae906);
 		return ptr;
 	}
 
@@ -12106,7 +12959,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_IsTakerAirborne");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60d6a05c);
 		return ptr;
 	}
 
@@ -12126,7 +12980,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_QueryGameplayAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd5cc02e3);
 		return ptr;
 	}
 
@@ -12141,7 +12996,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_CanActivate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1fd70df9);
 		return ptr;
 	}
 
@@ -12158,7 +13014,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_CanHitTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc2be14b2);
 		return ptr;
 	}
 
@@ -12174,7 +13031,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_CompareDistance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5294d8);
 		return ptr;
 	}
 
@@ -12189,7 +13047,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_DoesTargetHaveProhibitedTags");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa4b7d17f);
 		return ptr;
 	}
 
@@ -12204,7 +13063,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_IsOnCooldown");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd3646d14);
 		return ptr;
 	}
 
@@ -12219,7 +13079,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_IsRotatedToAttackTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6118cc97);
 		return ptr;
 	}
 
@@ -12234,7 +13095,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_GameplayAbility_IsWithinMaxTargetSelectionRange");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb090033);
 		return ptr;
 	}
 
@@ -12263,7 +13125,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTDecorator_WeaponStatus");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x569e8c1b);
 		return ptr;
 	}
 
@@ -12278,7 +13141,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTService_ContextOverride");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xccd21604);
 		return ptr;
 	}
 
@@ -12295,7 +13159,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTContext_MoveUrgency");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c8ec225);
 		return ptr;
 	}
 
@@ -12310,7 +13175,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTContext_SkipNotPerceivedGoals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc6737b8);
 		return ptr;
 	}
 
@@ -12327,7 +13193,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTContext_SuppressGoalUpdate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed1c9d58);
 		return ptr;
 	}
 
@@ -12344,7 +13211,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTService_UpdateBotMissionBuilding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8c69ebf);
 		return ptr;
 	}
 
@@ -12364,7 +13232,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTService_UpdateBotMissionGoal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e254cf2);
 		return ptr;
 	}
 
@@ -12379,7 +13248,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_BotMissionBuild");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x336fd1f8);
 		return ptr;
 	}
 
@@ -12394,7 +13264,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_BotMissionInteract");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28b9577a);
 		return ptr;
 	}
 
@@ -12410,7 +13281,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_ExecuteGameplayAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f9a906e);
 		return ptr;
 	}
 
@@ -12433,7 +13305,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_GameMoveTo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb3fd4f11);
 		return ptr;
 	}
 
@@ -12448,7 +13321,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_GameMoveDirectlyToward");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x577c055);
 		return ptr;
 	}
 
@@ -12463,7 +13337,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_RequestUndermining");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe7a80388);
 		return ptr;
 	}
 
@@ -12480,7 +13355,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_SetFrustrationDiscouragement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fbd7752);
 		return ptr;
 	}
 
@@ -12495,7 +13371,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_Sleep");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x396e7770);
 		return ptr;
 	}
 
@@ -12510,7 +13387,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_TakerMoveToNavmesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x97a80d94);
 		return ptr;
 	}
 
@@ -12530,7 +13408,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBTTask_TriggerVOEvent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdfcb47c0);
 		return ptr;
 	}
 
@@ -12555,7 +13434,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCameraBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e901517);
 		return ptr;
 	}
 
@@ -12576,7 +13456,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTheaterCamera");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x180e0a01);
 		return ptr;
 	}
 
@@ -12594,7 +13475,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.Fort3PCam_Default");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x681ad23b);
 		return ptr;
 	}
 
@@ -12609,7 +13491,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.Fort3PCam_Targeting");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b04a249);
 		return ptr;
 	}
 
@@ -12624,7 +13507,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCinematicCamera");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x926a3825);
 		return ptr;
 	}
 
@@ -12643,7 +13527,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeathCameraMode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51f83b8d);
 		return ptr;
 	}
 
@@ -12658,7 +13543,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCarriedObjectInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e487a39);
 		return ptr;
 	}
 
@@ -12689,7 +13575,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCarriedObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f6f81e0);
 		return ptr;
 	}
 
@@ -12710,7 +13597,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFlag");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30da767b);
 		return ptr;
 	}
 
@@ -12726,7 +13614,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeatherAugment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc95a7ac4);
 		return ptr;
 	}
 
@@ -12743,7 +13632,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortChat");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe825fbb);
 		return ptr;
 	}
 
@@ -12751,192 +13641,197 @@ public:
 
 
 // Class FortniteGame.FortPlayerController
-// 0x1D78 (0x2440 - 0x06C8)
+// 0x1C38 (0x2300 - 0x06C8)
 class AFortPlayerController : public APlayerController
 {
 public:
 	unsigned char                                      UnknownData00[0x10];                                      // 0x06C8(0x0010) MISSED OFFSET
-	unsigned char                                      bFailedToRespawn : 1;                                     // 0x06D8(0x0001) (CPF_Net)
-	unsigned char                                      bIsDisconnecting : 1;                                     // 0x06D8(0x0001)
-	unsigned char                                      bIsBeingKicked : 1;                                       // 0x06D8(0x0001)
-	unsigned char                                      bIsLateJoining : 1;                                       // 0x06D8(0x0001)
-	unsigned char                                      bHasInitiallySpawned : 1;                                 // 0x06D8(0x0001) (CPF_Net)
-	unsigned char                                      bAssignedStartSpawn : 1;                                  // 0x06D8(0x0001)
-	unsigned char                                      bReadyToStartMatch : 1;                                   // 0x06D8(0x0001)
-	unsigned char                                      bClientPawnIsLoaded : 1;                                  // 0x06D8(0x0001)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x06D9(0x0003) MISSED OFFSET
-	struct FVector                                     SpawnLoc;                                                 // 0x06DC(0x000C) (CPF_Transient, CPF_IsPlainOldData)
-	int                                                NumPreviousSpawns;                                        // 0x06E8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x06EC(0x0004) MISSED OFFSET
+	float                                              TotallyNotAntiCheatKeepScrolling;                         // 0x06D8(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      bFailedToRespawn : 1;                                     // 0x06DC(0x0001) (CPF_Net)
+	unsigned char                                      bIsDisconnecting : 1;                                     // 0x06DC(0x0001)
+	unsigned char                                      bIsBeingKicked : 1;                                       // 0x06DC(0x0001)
+	unsigned char                                      bIsLateJoining : 1;                                       // 0x06DC(0x0001)
+	unsigned char                                      bHasInitiallySpawned : 1;                                 // 0x06DC(0x0001) (CPF_Net)
+	unsigned char                                      bAssignedStartSpawn : 1;                                  // 0x06DC(0x0001)
+	unsigned char                                      bReadyToStartMatch : 1;                                   // 0x06DC(0x0001)
+	unsigned char                                      bClientPawnIsLoaded : 1;                                  // 0x06DC(0x0001)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x06DD(0x0003) MISSED OFFSET
+	struct FVector                                     SpawnLoc;                                                 // 0x06E0(0x000C) (CPF_Transient, CPF_IsPlainOldData)
+	int                                                NumPreviousSpawns;                                        // 0x06EC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FScriptMulticastDelegate                    OnBlueprintReadyCheckCompleted;                           // 0x06F0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData03[0x60];                                      // 0x0700(0x0060) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x60];                                      // 0x0700(0x0060) MISSED OFFSET
 	TArray<class AFortAIPawn*>                         ManagedAIs;                                               // 0x0760(0x0010) (CPF_ZeroConstructor, CPF_Transient)
 	class AFortPlayerPawn*                             MyFortPawn;                                               // 0x0770(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	bool                                               bHasClientFinishedLoading;                                // 0x0778(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bHasServerFinishedLoading;                                // 0x0779(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x2];                                       // 0x077A(0x0002) MISSED OFFSET
+	unsigned char                                      UnknownData03[0x2];                                       // 0x077A(0x0002) MISSED OFFSET
 	float                                              TimeStartedWaiting;                                       // 0x077C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	float                                              TimeFinishedNavigationBuild;                              // 0x0780(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	struct FVector                                     PendingSpectatorLocation;                                 // 0x0784(0x000C) (CPF_IsPlainOldData)
 	TWeakObjectPtr<class AActor>                       ActorUnderReticle;                                        // 0x0790(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	TWeakObjectPtr<class AFortCrackEffect>             WeakspotUnderReticle;                                     // 0x0798(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	float                                              LastActiveTime;                                           // 0x07A0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x8FC];                                     // 0x07A4(0x08FC) MISSED OFFSET
-	class UAudioComponent*                             LongInteractAudioComponent;                               // 0x10A0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
-	float                                              InteractDistance;                                         // 0x10A8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              InteractHighlightDistance;                                // 0x10AC(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              InteractTraceExtent;                                      // 0x10B0(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              LastInteractTraceTime;                                    // 0x10B4(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              InteractMultiplierForActiveInteraction;                   // 0x10B8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              InteractMultiplierGamepad;                                // 0x10BC(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UFortInteractContextInfo*                    PossibleInteractContextInfo;                              // 0x10C0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortInteractContextInfo*                    InteractResponse;                                         // 0x10C8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x5];                                       // 0x10D0(0x0005) MISSED OFFSET
-	bool                                               bWantsToSprint;                                           // 0x10D5(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bHoldingSprint;                                           // 0x10D6(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bSprintToggleable;                                        // 0x10D7(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bSprintCancelsReload;                                     // 0x10D8(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bTapInteractEnabled;                                      // 0x10D9(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bMovementDisabledDueToCancellableAction;                  // 0x10DA(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bIsPlayerActivelyMoving;                                  // 0x10DB(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                InMovementCancellableAction;                              // 0x10DC(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bHoldingUse;                                              // 0x10E0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bIsClientTimingOut;                                       // 0x10E1(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x2];                                       // 0x10E2(0x0002) MISSED OFFSET
-	float                                              ClientTimeoutBlockInputTime;                              // 0x10E4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              LastMoveForwardTime;                                      // 0x10E8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x1];                                       // 0x10EC(0x0001) MISSED OFFSET
-	bool                                               bAtNameBaseScreen;                                        // 0x10ED(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bInventoryToggledByAlt;                                   // 0x10EE(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x1];                                       // 0x10EF(0x0001) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnSetFirstPersonCamera;                                   // 0x10F0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData10[0x8];                                       // 0x1100(0x0008) MISSED OFFSET
-	class UClass*                                      CinematicCameraClassOverride;                             // 0x1108(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData11[0x90];                                      // 0x1110(0x0090) MISSED OFFSET
-	class UFortIndicatorManager*                       IndicatorManager;                                         // 0x11A0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FScriptMulticastDelegate                    OnUiChoiceCompleted;                                      // 0x11A8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnRegainedFocus;                                          // 0x11B8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData12[0x358];                                     // 0x11C8(0x0358) MISSED OFFSET
-	bool                                               bIsInQuickToggleCursorMode;                               // 0x1520(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bGamepadAbilityPending;                                   // 0x1521(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bForceAllowCursorMode;                                    // 0x1522(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bDragDropPending;                                         // 0x1523(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bSuppressEventNotifications;                              // 0x1524(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData13[0x57];                                      // 0x1525(0x0057) MISSED OFFSET
-	float                                              LastSpotTime;                                             // 0x157C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TArray<TWeakObjectPtr<class AFortMarkActor>>       CurrentMarks;                                             // 0x1580(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData14[0x50];                                      // 0x1590(0x0050) MISSED OFFSET
-	class UFortGameplayAbility*                        PreviewAbility;                                           // 0x15E0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FAIDirectorDebugInfo                        IntensityGraphInfo;                                       // 0x15E8(0x0028) (CPF_Net)
-	struct FAIDirectorDebugInfo                        PIDValuesGraphInfo;                                       // 0x1610(0x0028) (CPF_Net)
-	struct FAIDirectorDebugInfo                        PIDContributionsGraphInfo;                                // 0x1638(0x0028) (CPF_Net)
-	class AFortCombatManager*                          CombatManager;                                            // 0x1660(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortAIDirectorDataManager*                  AIDirectorDataManager;                                    // 0x1668(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortMusicManager*                           MusicManager;                                             // 0x1670(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData15[0x2C8];                                     // 0x1678(0x02C8) MISSED OFFSET
-	class UInputComponent*                             BuildPreviewModeInputComponent;                           // 0x1940(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class ABuildingPlayerPrimitivePreview*             BuildPreviewMarker;                                       // 0x1948(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData16[0x100];                                     // 0x1950(0x0100) MISSED OFFSET
-	class ABuildingActor*                              TargetedBuilding;                                         // 0x1A50(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UClass*                                      ContextualConversionClass;                                // 0x1A58(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TAssetPtr<class USoundBase>                        StartRepairSound;                                         // 0x1A60(0x0020) (CPF_Transient)
-	TAssetPtr<class USoundBase>                        StartUpgradeSound;                                        // 0x1A80(0x0020) (CPF_Transient)
-	TArray<class ABuildingActor*>                      HighlightedPrimaryBuildings;                              // 0x1AA0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TArray<class ABuildingActor*>                      HighlightedInteractionBuildings;                          // 0x1AB0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TWeakObjectPtr<class ABuildingActor>               HighlightedPrimaryBuilding;                               // 0x1AC0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TAssetPtr<class UMaterialInterface>                BuildPreviewMarkerParentMaterial;                         // 0x1AC8(0x0020) (CPF_Transient)
-	class UMaterialInstanceDynamic*                    BuildPreviewMarkerMID;                                    // 0x1AE8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      BuildPreviewRotationIterations;                           // 0x1AF0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData17[0x3];                                       // 0x1AF1(0x0003) MISSED OFFSET
-	unsigned char                                      bBuildPreviewMirrored : 1;                                // 0x1AF4(0x0001) (CPF_Transient)
-	unsigned char                                      bBuildFree : 1;                                           // 0x1AF4(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      bCraftFree : 1;                                           // 0x1AF4(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      UnknownData18[0x3];                                       // 0x1AF5(0x0003) MISSED OFFSET
-	TEnumAsByte<EFortCostInfoTypes>                    CurrentCostInfoType;                                      // 0x1AF8(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData19[0x7];                                       // 0x1AF9(0x0007) MISSED OFFSET
-	class UClass*                                      CurrentBuildableClass;                                    // 0x1B00(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UClass*                                      PreviousBuildableClass;                                   // 0x1B08(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TEnumAsByte<EFortResourceLevel>                    CurrentResourceLevel;                                     // 0x1B10(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TEnumAsByte<EFortResourceType>                     CurrentResourceType;                                      // 0x1B11(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData20[0x6];                                       // 0x1B12(0x0006) MISSED OFFSET
-	struct FLastBuildableState                         LastBuildableStateData[0xC];                              // 0x1B18(0x0010) (CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData21[0x10];                                      // 0x1BD8(0x0010) MISSED OFFSET
-	TArray<struct FFortDamageNumberInfo>               QueuedDamageNumbers;                                      // 0x1BE8(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	class AFortDamageNumbersActor*                     DamageNumbersActor;                                       // 0x1BF8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UInputComponent*                             EditModeInputComponent;                                   // 0x1C00(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class ABuildingSMActor*                            EditBuildingActor;                                        // 0x1C08(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              EditModeDistance;                                         // 0x1C10(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FVector                                     LastBuildPreviewGridSnapLoc;                              // 0x1C14(0x000C) (CPF_Transient, CPF_IsPlainOldData)
-	struct FRotator                                    LastBuildPreviewGridSnapRot;                              // 0x1C20(0x000C) (CPF_Transient, CPF_IsPlainOldData)
-	struct FVector                                     LastBuildPreviewGridSnapCentroid;                         // 0x1C2C(0x000C) (CPF_Transient, CPF_IsPlainOldData)
-	class UInputComponent*                             PickerInputComponent;                                     // 0x1C38(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class AFortDecoHelper*                             TrapPickerDecoHelper;                                     // 0x1C40(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class AFortQuickBars*                              QuickBars;                                                // 0x1C48(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData22[0xE0];                                      // 0x1C50(0x00E0) MISSED OFFSET
-	TArray<struct FString>                             PinnedSchematics;                                         // 0x1D30(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	unsigned char                                      UnknownData23[0x130];                                     // 0x1D40(0x0130) MISSED OFFSET
-	unsigned char                                      bAutoEquipBetterItems : 1;                                // 0x1E70(0x0001) (CPF_Net)
-	unsigned char                                      UnknownData24[0x7];                                       // 0x1E71(0x0007) MISSED OFFSET
-	class AFortInventory*                              WorldInventory;                                           // 0x1E78(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortInventory*                              OutpostInventory;                                         // 0x1E80(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData25[0x15C];                                     // 0x1E88(0x015C) MISSED OFFSET
-	bool                                               bHasInitializedWorldInventory;                            // 0x1FE4(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bHasInitializedHeroInventory;                             // 0x1FE5(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bAccountInventoryWasUpdated;                              // 0x1FE6(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsSavingGadgetLoadout;                                   // 0x1FE7(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData26[0x118];                                     // 0x1FE8(0x0118) MISSED OFFSET
-	class UFortClientBotManager*                       BotManager;                                               // 0x2100(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData27[0x8];                                       // 0x2108(0x0008) MISSED OFFSET
-	class UClass*                                      ClientBotManagerClass;                                    // 0x2110(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData28[0x78];                                      // 0x2118(0x0078) MISSED OFFSET
-	bool                                               bDropWeaponsDuringAllMissionStates;                       // 0x2190(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData29[0x7F];                                      // 0x2191(0x007F) MISSED OFFSET
-	struct FFortRewardReport                           LatestRewardReport;                                       // 0x2210(0x0068) (CPF_Net)
-	class UFortRegisteredPlayerInfo*                   MyPlayerInfo;                                             // 0x2278(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<struct FFortUpdatedObjectiveStat>           UpdatedObjectiveStats;                                    // 0x2280(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	bool                                               bHasUnsavedPrimaryMissionProgress;                        // 0x2290(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData30[0x27];                                      // 0x2291(0x0027) MISSED OFFSET
-	class UStatManager*                                StatManager;                                              // 0x22B8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UHeartbeatManager*                           HeartbeatManager;                                         // 0x22C0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortStatEventManager*                       StatEventManager;                                         // 0x22C8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FFortPersistentGameplayStatContainer        CachedPersistentGameplayStats;                            // 0x22D0(0x0010)
-	unsigned char                                      UnknownData31[0x10];                                      // 0x22E0(0x0010) MISSED OFFSET
-	class UMcpProfileGroup*                            McpProfileGroup;                                          // 0x22F0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UFortMcpProfileAccount*                      MainMcpProfile;                                           // 0x22F8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UFortMcpProfileMetadata*                     MetadataProfile;                                          // 0x2300(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      bTutorialCompleted : 1;                                   // 0x2308(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      UnknownData32[0x3];                                       // 0x2309(0x0003) MISSED OFFSET
-	bool                                               bShouldReceiveCriticalMatchBonus;                         // 0x230C(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData33[0x3];                                       // 0x230D(0x0003) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnServerPlayerChangedBuildMode;                           // 0x2310(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData34[0x4];                                       // 0x2320(0x0004) MISSED OFFSET
-	struct FVector                                     LocationUnderReticle;                                     // 0x2324(0x000C) (CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      bInfiniteAmmo : 1;                                        // 0x2330(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      bNoCoolDown : 1;                                          // 0x2330(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      bInfiniteDurability : 1;                                  // 0x2330(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      bUsePickers : 1;                                          // 0x2330(0x0001) (CPF_Transient)
-	unsigned char                                      bPickerOpen : 1;                                          // 0x2330(0x0001) (CPF_Transient)
-	unsigned char                                      bCheatGhost : 1;                                          // 0x2330(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      bCheatFly : 1;                                            // 0x2330(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      UnknownData35 : 1;                                        // 0x2330(0x0001)
-	unsigned char                                      bEnableShotLogging : 1;                                   // 0x2331(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      bIsNearActiveEncounters : 1;                              // 0x2331(0x0001) (CPF_Net, CPF_Transient)
-	unsigned char                                      UnknownData36[0x2];                                       // 0x2332(0x0002) MISSED OFFSET
-	int                                                OverriddenBackpackSize;                                   // 0x2334(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	uint32_t                                           AimHelpMode;                                              // 0x2338(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TEnumAsByte<EFortJumpStaminaCost>                  JumpStaminaCost;                                          // 0x233C(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData37[0x3];                                       // 0x233D(0x0003) MISSED OFFSET
-	struct FName                                       CameraPrototypeName;                                      // 0x2340(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData38[0x10];                                      // 0x2348(0x0010) MISSED OFFSET
-	class UFortHero*                                   AthenaMenuHeroDef;                                        // 0x2358(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bShowDamageNumbersOnFatalHit;                             // 0x2360(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData39[0xCF];                                      // 0x2361(0x00CF) MISSED OFFSET
-	class ABuildingSMActor*                            PendingEnterModeActor;                                    // 0x2430(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData40[0x8];                                       // 0x2438(0x0008) MISSED OFFSET
+	unsigned char                                      UnknownData04[0x73C];                                     // 0x07A4(0x073C) MISSED OFFSET
+	class UAudioComponent*                             LongInteractAudioComponent;                               // 0x0EE0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
+	float                                              InteractDistance;                                         // 0x0EE8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              InteractHighlightDistance;                                // 0x0EEC(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              InteractTraceExtent;                                      // 0x0EF0(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              LastInteractTraceTime;                                    // 0x0EF4(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              InteractMultiplierForActiveInteraction;                   // 0x0EF8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              InteractMultiplierGamepad;                                // 0x0EFC(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UFortInteractContextInfo*                    PossibleInteractContextInfo;                              // 0x0F00(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortInteractContextInfo*                    InteractResponse;                                         // 0x0F08(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x5];                                       // 0x0F10(0x0005) MISSED OFFSET
+	bool                                               bWantsToSprint;                                           // 0x0F15(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bHoldingSprint;                                           // 0x0F16(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bSprintToggleable;                                        // 0x0F17(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bSprintCancelsReload;                                     // 0x0F18(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bTapInteractEnabled;                                      // 0x0F19(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bTargetingToggleable;                                     // 0x0F1A(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bMovementDisabledDueToCancellableAction;                  // 0x0F1B(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bIsPlayerActivelyMoving;                                  // 0x0F1C(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x3];                                       // 0x0F1D(0x0003) MISSED OFFSET
+	int                                                InMovementCancellableAction;                              // 0x0F20(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bHoldingUse;                                              // 0x0F24(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bIsClientTimingOut;                                       // 0x0F25(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x2];                                       // 0x0F26(0x0002) MISSED OFFSET
+	float                                              ClientTimeoutBlockInputTime;                              // 0x0F28(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              LastMoveForwardTime;                                      // 0x0F2C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bAtNameBaseScreen;                                        // 0x0F30(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bInventoryToggledByAlt;                                   // 0x0F31(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x6];                                       // 0x0F32(0x0006) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnSetFirstPersonCamera;                                   // 0x0F38(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData09[0x8];                                       // 0x0F48(0x0008) MISSED OFFSET
+	class UClass*                                      CinematicCameraClassOverride;                             // 0x0F50(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData10[0x88];                                      // 0x0F58(0x0088) MISSED OFFSET
+	class UFortIndicatorManager*                       IndicatorManager;                                         // 0x0FE0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnUiChoiceCompleted;                                      // 0x0FE8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnRegainedFocus;                                          // 0x0FF8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData11[0x358];                                     // 0x1008(0x0358) MISSED OFFSET
+	bool                                               bIsInQuickToggleCursorMode;                               // 0x1360(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bGamepadAbilityPending;                                   // 0x1361(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bForceAllowCursorMode;                                    // 0x1362(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bDragDropPending;                                         // 0x1363(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bSuppressEventNotifications;                              // 0x1364(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData12[0x57];                                      // 0x1365(0x0057) MISSED OFFSET
+	float                                              LastSpotTime;                                             // 0x13BC(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TArray<TWeakObjectPtr<class AFortMarkActor>>       CurrentMarks;                                             // 0x13C0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData13[0x50];                                      // 0x13D0(0x0050) MISSED OFFSET
+	class UFortGameplayAbility*                        PreviewAbility;                                           // 0x1420(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FAIDirectorDebugInfo                        IntensityGraphInfo;                                       // 0x1428(0x0028) (CPF_Net)
+	struct FAIDirectorDebugInfo                        PIDValuesGraphInfo;                                       // 0x1450(0x0028) (CPF_Net)
+	struct FAIDirectorDebugInfo                        PIDContributionsGraphInfo;                                // 0x1478(0x0028) (CPF_Net)
+	class AFortCombatManager*                          CombatManager;                                            // 0x14A0(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortAIDirectorDataManager*                  AIDirectorDataManager;                                    // 0x14A8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortMusicManager*                           MusicManager;                                             // 0x14B0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData14[0x2C8];                                     // 0x14B8(0x02C8) MISSED OFFSET
+	class UInputComponent*                             BuildPreviewModeInputComponent;                           // 0x1780(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class ABuildingPlayerPrimitivePreview*             BuildPreviewMarker;                                       // 0x1788(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData15[0x100];                                     // 0x1790(0x0100) MISSED OFFSET
+	class ABuildingActor*                              TargetedBuilding;                                         // 0x1890(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UClass*                                      ContextualConversionClass;                                // 0x1898(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TAssetPtr<class USoundBase>                        StartRepairSound;                                         // 0x18A0(0x0020) (CPF_Transient)
+	TAssetPtr<class USoundBase>                        StartUpgradeSound;                                        // 0x18C0(0x0020) (CPF_Transient)
+	TArray<class ABuildingActor*>                      HighlightedPrimaryBuildings;                              // 0x18E0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TArray<class ABuildingActor*>                      HighlightedInteractionBuildings;                          // 0x18F0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TWeakObjectPtr<class ABuildingActor>               HighlightedPrimaryBuilding;                               // 0x1900(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TAssetPtr<class UMaterialInterface>                BuildPreviewMarkerParentMaterial;                         // 0x1908(0x0020) (CPF_Transient)
+	class UMaterialInstanceDynamic*                    BuildPreviewMarkerMID;                                    // 0x1928(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      BuildPreviewRotationIterations;                           // 0x1930(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData16[0x3];                                       // 0x1931(0x0003) MISSED OFFSET
+	unsigned char                                      bBuildPreviewMirrored : 1;                                // 0x1934(0x0001) (CPF_Transient)
+	unsigned char                                      bBuildFree : 1;                                           // 0x1934(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      bCraftFree : 1;                                           // 0x1934(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      UnknownData17[0x3];                                       // 0x1935(0x0003) MISSED OFFSET
+	TEnumAsByte<EFortCostInfoTypes>                    CurrentCostInfoType;                                      // 0x1938(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData18[0x7];                                       // 0x1939(0x0007) MISSED OFFSET
+	class UClass*                                      CurrentBuildableClass;                                    // 0x1940(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UClass*                                      PreviousBuildableClass;                                   // 0x1948(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TEnumAsByte<EFortResourceLevel>                    CurrentResourceLevel;                                     // 0x1950(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TEnumAsByte<EFortResourceType>                     CurrentResourceType;                                      // 0x1951(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData19[0x6];                                       // 0x1952(0x0006) MISSED OFFSET
+	struct FLastBuildableState                         LastBuildableStateData[0xC];                              // 0x1958(0x0010) (CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData20[0x10];                                      // 0x1A18(0x0010) MISSED OFFSET
+	TArray<struct FFortDamageNumberInfo>               QueuedDamageNumbers;                                      // 0x1A28(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	class AFortDamageNumbersActor*                     DamageNumbersActor;                                       // 0x1A38(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UInputComponent*                             EditModeInputComponent;                                   // 0x1A40(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class ABuildingSMActor*                            EditBuildingActor;                                        // 0x1A48(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              EditModeDistance;                                         // 0x1A50(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FVector                                     LastBuildPreviewGridSnapLoc;                              // 0x1A54(0x000C) (CPF_Transient, CPF_IsPlainOldData)
+	struct FRotator                                    LastBuildPreviewGridSnapRot;                              // 0x1A60(0x000C) (CPF_Transient, CPF_IsPlainOldData)
+	struct FVector                                     LastBuildPreviewGridSnapCentroid;                         // 0x1A6C(0x000C) (CPF_Transient, CPF_IsPlainOldData)
+	class UInputComponent*                             PickerInputComponent;                                     // 0x1A78(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class AFortDecoHelper*                             TrapPickerDecoHelper;                                     // 0x1A80(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class AFortQuickBars*                              QuickBars;                                                // 0x1A88(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData21[0xE0];                                      // 0x1A90(0x00E0) MISSED OFFSET
+	TArray<struct FString>                             PinnedSchematics;                                         // 0x1B70(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	unsigned char                                      UnknownData22[0x1A0];                                     // 0x1B80(0x01A0) MISSED OFFSET
+	unsigned char                                      bAutoEquipBetterItems : 1;                                // 0x1D20(0x0001) (CPF_Net)
+	unsigned char                                      UnknownData23[0x7];                                       // 0x1D21(0x0007) MISSED OFFSET
+	class AFortInventory*                              WorldInventory;                                           // 0x1D28(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortInventory*                              OutpostInventory;                                         // 0x1D30(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData24[0x15C];                                     // 0x1D38(0x015C) MISSED OFFSET
+	bool                                               bHasInitializedWorldInventory;                            // 0x1E94(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bHasInitializedHeroInventory;                             // 0x1E95(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bAccountInventoryWasUpdated;                              // 0x1E96(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsSavingGadgetLoadout;                                   // 0x1E97(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData25[0x118];                                     // 0x1E98(0x0118) MISSED OFFSET
+	class UFortClientBotManager*                       BotManager;                                               // 0x1FB0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData26[0x8];                                       // 0x1FB8(0x0008) MISSED OFFSET
+	class UClass*                                      ClientBotManagerClass;                                    // 0x1FC0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData27[0x78];                                      // 0x1FC8(0x0078) MISSED OFFSET
+	bool                                               bDropWeaponsDuringAllMissionStates;                       // 0x2040(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData28[0x7F];                                      // 0x2041(0x007F) MISSED OFFSET
+	struct FFortRewardReport                           LatestRewardReport;                                       // 0x20C0(0x0068) (CPF_Net)
+	class UFortRegisteredPlayerInfo*                   MyPlayerInfo;                                             // 0x2128(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FFortUpdatedObjectiveStat>           UpdatedObjectiveStats;                                    // 0x2130(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	bool                                               bHasUnsavedPrimaryMissionProgress;                        // 0x2140(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData29[0x27];                                      // 0x2141(0x0027) MISSED OFFSET
+	class UStatManager*                                StatManager;                                              // 0x2168(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UHeartbeatManager*                           HeartbeatManager;                                         // 0x2170(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortStatEventManager*                       StatEventManager;                                         // 0x2178(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FFortPersistentGameplayStatContainer        CachedPersistentGameplayStats;                            // 0x2180(0x0010)
+	unsigned char                                      UnknownData30[0x10];                                      // 0x2190(0x0010) MISSED OFFSET
+	class UMcpProfileGroup*                            McpProfileGroup;                                          // 0x21A0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UFortMcpProfileAccount*                      MainMcpProfile;                                           // 0x21A8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UFortMcpProfileAthena*                       AthenaProfile;                                            // 0x21B0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UFortMcpProfileMetadata*                     MetadataProfile;                                          // 0x21B8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      bTutorialCompleted : 1;                                   // 0x21C0(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      UnknownData31[0x3];                                       // 0x21C1(0x0003) MISSED OFFSET
+	bool                                               bShouldReceiveCriticalMatchBonus;                         // 0x21C4(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData32[0x3];                                       // 0x21C5(0x0003) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnServerPlayerChangedBuildMode;                           // 0x21C8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData33[0x4];                                       // 0x21D8(0x0004) MISSED OFFSET
+	struct FVector                                     LocationUnderReticle;                                     // 0x21DC(0x000C) (CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      bInfiniteAmmo : 1;                                        // 0x21E8(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      bNoCoolDown : 1;                                          // 0x21E8(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      bInfiniteDurability : 1;                                  // 0x21E8(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      bUsePickers : 1;                                          // 0x21E8(0x0001) (CPF_Transient)
+	unsigned char                                      bPickerOpen : 1;                                          // 0x21E8(0x0001) (CPF_Transient)
+	unsigned char                                      bCheatGhost : 1;                                          // 0x21E8(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      bCheatFly : 1;                                            // 0x21E8(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      UnknownData34 : 1;                                        // 0x21E8(0x0001)
+	unsigned char                                      bEnableShotLogging : 1;                                   // 0x21E9(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      bIsNearActiveEncounters : 1;                              // 0x21E9(0x0001) (CPF_Net, CPF_Transient)
+	unsigned char                                      UnknownData35[0x2];                                       // 0x21EA(0x0002) MISSED OFFSET
+	int                                                OverriddenBackpackSize;                                   // 0x21EC(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	uint32_t                                           AimHelpMode;                                              // 0x21F0(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TEnumAsByte<EFortJumpStaminaCost>                  JumpStaminaCost;                                          // 0x21F4(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData36[0x3];                                       // 0x21F5(0x0003) MISSED OFFSET
+	struct FName                                       CameraPrototypeName;                                      // 0x21F8(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData37[0x10];                                      // 0x2200(0x0010) MISSED OFFSET
+	class UFortHero*                                   AthenaMenuHeroDef;                                        // 0x2210(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bShowDamageNumbersOnFatalHit;                             // 0x2218(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bHideHudEnglishText;                                      // 0x2219(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData38[0xCE];                                      // 0x221A(0x00CE) MISSED OFFSET
+	class ABuildingSMActor*                            PendingEnterModeActor;                                    // 0x22E8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                RandomCharacterIndex;                                     // 0x22F0(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData39[0xC];                                       // 0x22F4(0x000C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x829a8a2);
 		return ptr;
 	}
 
@@ -12992,6 +13887,7 @@ public:
 	void ServerRemoveDefender(class ABuildingTrapDefender* DefenderTrap);
 	void ServerReleaseInventoryItemKey(EFortQuickBars InQuickBar, int Slot);
 	void ServerReadyToStartMatch();
+	void ServerPlayEmoteItem(class UFortMontageItemDefinitionBase* EmoteAsset);
 	void ServerPingMinimap(const struct FVector& WorldLocation, const struct FLinearColor& PingColor, TEnumAsByte<EFortTeam> RequiredTeam);
 	void ServerModifyStat(const struct FName& StatName, int Amount, TEnumAsByte<EStatMod> ModType, bool bForceStatSave);
 	void ServerModDurability(const struct FGuid& ItemGuid, float DurabilityMod, bool bForceSet);
@@ -13011,7 +13907,7 @@ public:
 	void ServerEditBuildingActor(class ABuildingSMActor* BuildingActorToEdit, class UClass* NewBuildingClass, int RotationIterations, bool bMirrored);
 	void ServerDropCarriedObject();
 	void ServerDisassembleInventoryItem(const struct FGuid& ItemGuid);
-	void ServerDeployDefender(class ABuildingTrapDefender* DefenderTrap, const struct FString& SelectedItemInstanceId, const struct FName& DefenderSquadId);
+	void ServerDeployDefender(class ABuildingTrapDefender* DefenderTrap, const struct FString& SelectedItemInstanceId, const struct FName& DefenderSquadId, const struct FGuid& WeaponToGiveGuid, int AmmoQuantity);
 	void ServerCreateCombatManager();
 	void ServerCreateBuildingActor(const struct FBuildingClassData& BuildingClassData, const struct FVector_NetQuantize10& BuildLoc, const struct FRotator& BuildRot, bool bMirrored);
 	void ServerCreateAIDirectorDataManager();
@@ -13034,6 +13930,7 @@ public:
 	void PostHeroStatMissionCompleted(int DifficultyRating);
 	void PostHeroStatCollectionBookProgressMade(int LevelReached);
 	void PlaySpatialSound(class USoundBase* Sound, const struct FVector& Location);
+	void PlayEmoteItem(class UFortMontageItemDefinitionBase* EmoteAsset);
 	void OpenChoiceUI(const struct FChoiceData& ChoiceData);
 	void OnRep_UpdatedUnsavedPrimaryMissionProgress();
 	void OnRep_UpdatedObjectiveStats();
@@ -13065,7 +13962,7 @@ public:
 	void GivePlayerAmmo(int AmmoCount);
 	bool GetRotatePawnToCamera();
 	class UFortRegisteredPlayerInfo* GetRegisteredPlayerInfo();
-	class UFortQuestManager* GetQuestManager();
+	class UFortQuestManager* GetQuestManager(ESubGame SubGame);
 	class AFortPlayerPawn* GetPlayerPawn();
 	struct FUniqueNetIdRepl GetGameAccountId();
 	class UFortCollectionBookManager* GetCollectionBookManager();
@@ -13074,13 +13971,14 @@ public:
 	class AActor* GetActorUnderReticle();
 	float GetAccountLevelProgression();
 	int GetAccountLevel();
+	class UFortAccountItem* GetAccountItem(const struct FString& ID);
 	void FortClientPlaySoundAtLocation(class USoundBase* Sound, const struct FVector& Location, float VolumeMultiplier, float PitchMultiplier);
 	void FortClientPlaySound(class USoundBase* Sound, float VolumeMultiplier, float PitchMultiplier);
 	void ForceUpdateQuickbar(EFortQuickBars QuickbarToRefresh);
 	void FixupInteractionWidgetsOnUnzoom();
 	void Emote(const struct FName& AssetName);
 	void DumpHomebaseRatingInfo();
-	void DeployDefender(class ABuildingTrapDefender* DefenderTrap, class UFortDefenderItem* DefenderItem, const struct FName& DefenderSquadId);
+	void DeployDefender(class ABuildingTrapDefender* DefenderTrap, class UFortDefenderItem* DefenderItem, const struct FName& DefenderSquadId, class UFortItem* WeaponItem, int AmmoQuantity);
 	void ClientUpdateRichPresence(ERichPresenceStateChange RichPresenceChange, bool bImportant);
 	void ClientTriggerUIFeedbackEvent(const struct FName& EventName);
 	void ClientStopUIFeedbackEvent(const struct FName& EventName);
@@ -13117,7 +14015,7 @@ public:
 
 
 // Class FortniteGame.FortCheatManager
-// 0x00D8 (0x0150 - 0x0078)
+// 0x0068 (0x00E0 - 0x0078)
 class UFortCheatManager : public UCheatManager
 {
 public:
@@ -13137,23 +14035,22 @@ public:
 	unsigned char                                      bShowSpawnPointsHUD : 1;                                  // 0x0099(0x0001) (CPF_Transient)
 	unsigned char                                      bShowMaxAIHUD : 1;                                        // 0x0099(0x0001) (CPF_Transient)
 	unsigned char                                      bShowItemIDsOnCards : 1;                                  // 0x0099(0x0001) (CPF_Transient)
-	unsigned char                                      bUseNewItemCards : 1;                                     // 0x0099(0x0001) (CPF_Transient)
-	unsigned char                                      UnknownData01[0x76];                                      // 0x009A(0x0076) MISSED OFFSET
-	unsigned char                                      bUnlimitedHealth : 1;                                     // 0x0110(0x0001) (CPF_Transient)
-	unsigned char                                      bUnlimitedAIHealth : 1;                                   // 0x0110(0x0001) (CPF_Transient)
-	unsigned char                                      bPickersUseLeftThumbstick : 1;                            // 0x0110(0x0001) (CPF_Transient)
-	unsigned char                                      bFreezeAILOD : 1;                                         // 0x0110(0x0001) (CPF_Transient)
-	unsigned char                                      bForceAILOD : 1;                                          // 0x0110(0x0001) (CPF_Transient)
-	unsigned char                                      bUnlockAllDefenders : 1;                                  // 0x0110(0x0001) (CPF_Transient)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x0111(0x0003) MISSED OFFSET
-	EFortAILODLevel                                    ForcedAILODValue;                                         // 0x0114(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x0115(0x0003) MISSED OFFSET
-	TAssetPtr<class UBuildingTextureData>              TransparentTextureData;                                   // 0x0118(0x0020) (CPF_Transient)
-	unsigned char                                      UnknownData04[0x18];                                      // 0x0138(0x0018) MISSED OFFSET
+	unsigned char                                      bUnlimitedHealth : 1;                                     // 0x0099(0x0001) (CPF_Transient)
+	unsigned char                                      bUnlimitedAIHealth : 1;                                   // 0x0099(0x0001) (CPF_Transient)
+	unsigned char                                      bPickersUseLeftThumbstick : 1;                            // 0x009A(0x0001) (CPF_Transient)
+	unsigned char                                      bFreezeAILOD : 1;                                         // 0x009A(0x0001) (CPF_Transient)
+	unsigned char                                      bForceAILOD : 1;                                          // 0x009A(0x0001) (CPF_Transient)
+	unsigned char                                      bUnlockAllDefenders : 1;                                  // 0x009A(0x0001) (CPF_Transient)
+	unsigned char                                      UnknownData01[0x1];                                       // 0x009B(0x0001) MISSED OFFSET
+	EFortAILODLevel                                    ForcedAILODValue;                                         // 0x009C(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x3];                                       // 0x009D(0x0003) MISSED OFFSET
+	TAssetPtr<class UBuildingTextureData>              TransparentTextureData;                                   // 0x00A0(0x0020) (CPF_Transient)
+	unsigned char                                      UnknownData03[0x20];                                      // 0x00C0(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCheatManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdc7d40d7);
 		return ptr;
 	}
 
@@ -13205,6 +14102,7 @@ public:
 	void ToggleInfiniteAmmo();
 	void ToggleIndestructibleKeep();
 	void ToggleHeroVisibility();
+	void ToggleHeroAbilities();
 	void ToggleGameDifficultyHUD();
 	void ToggleFreezeAILOD();
 	void ToggleForceUsingGamepad();
@@ -13234,6 +14132,7 @@ public:
 	void TestStun(float StunStime);
 	void TestSetOutpostDefenseActive(bool bActive);
 	void TestSafeZoneLocations(int NumPasses, int PhaseToDraw);
+	void TestRemotePickup();
 	void TestOutpostUI();
 	void TestLeaveGame();
 	void TestKnockback(float KnockbackMagnitude, float KnockbackZAngle);
@@ -13252,6 +14151,7 @@ public:
 	void TeleportToActor(const struct FString& ClassOrInstanceName);
 	void SwitchTeam();
 	void SwapPickerThumbstick();
+	void StopHighlights();
 	void StopDummyDebugEncounter();
 	void StartLiveStreamingWindow(float Seconds);
 	class AFortPawn* SpawnPawn(const struct FString& PawnType);
@@ -13260,10 +14160,10 @@ public:
 	void SimulateLootDrops();
 	void SimulateLoot(const struct FName& TierGroup, int LootTier, int LootLevel);
 	void ShowHUDElement(const struct FGameplayTag& HUDElementTag);
+	void ShowHighlightSummary();
 	void ShowGameplayCaptureUI();
 	void ShowAllMinimapIcons();
 	void ShowActiveGameplayModifiers();
-	bool ShouldUseNewItemCards();
 	void SetWorldLevel(float Level);
 	void SetWorldDaysElapsed(float days);
 	void SetWindPixelDebugExtent(float ExtentInUnrealUnits);
@@ -13313,7 +14213,7 @@ public:
 	void ResetMaxAITracking();
 	void ResetEncounterWave();
 	void ReRandomizeTiles();
-	void ReplayLastPerfTest(const struct FString& Full);
+	void ReplayLastPerfTest(const struct FString& Params);
 	void RemoveGameplayModifier(const struct FString& ModifierName);
 	void RemoveDebugSpawnAIGroupTag(const struct FName& Tag);
 	void ReloadUMG();
@@ -13322,13 +14222,13 @@ public:
 	void RegenerateZoneMissionsWithDifficultyLevel(float DifficultyLevelOverride);
 	void RegenerateZoneMissions();
 	void RefreshTheaters();
+	void RedoHuskSpecialEventModifiers(float TargetRate);
 	void PrintTileWorld();
 	void PrintShotReport();
 	void PrintScriptedActionManagerState();
 	void PerfMemStatMonitor(const struct FString& ToggleState);
 	void Pain(float Amount);
 	void OpenClassSelectScreen();
-	void NoUmbrella();
 	void ModItemDurability(float InValue);
 	void MissionForceSuccess(const struct FString& MissionName, float FractionCompleted);
 	void MissionForcePrimarySuccess(float FractionCompleted);
@@ -13396,7 +14296,6 @@ public:
 	void GiveWeapons(const struct FName& Tag);
 	void GiveWeapon(const struct FString& WeaponName, int RequestedLevel, int Count);
 	void GiveUsefulThings(int NumOfUsefulThings);
-	void GiveUmbrella();
 	void GiveTrap(const struct FString& TrapName, int RequestedLevel, int NumTrapsToGive);
 	void GiveStone(int Amount);
 	void GiveSpecificItem(const struct FString& ItemPath, int ItemAmount, int ItemLevel);
@@ -13407,8 +14306,6 @@ public:
 	void GiveGoodWeapons();
 	void GiveGadgets(const struct FString& GadgetName, int Quantity, int ItemLevel);
 	void GiveGadget(const struct FString& GadgetName, int ItemLevel);
-	void GiveFounderUmbrella();
-	void GiveFounderGlider();
 	void GiveDeployablePlotAllIngredients(int NumIngredients);
 	void GiveCheatInventory();
 	void GiveBluGlo(int Amount);
@@ -13441,6 +14338,7 @@ public:
 	void ForceSaveMissionStateAndWorld(const struct FString& SaveFilename);
 	void ForceHeroType(const struct FString& HeroPersistentName);
 	void ForceAILODs(EFortAILODLevel inForcedAILODValue);
+	void FakeKillHighlight();
 	void ExecuteNewMissionGeneration(float DifficultyLevel, const struct FString& GeneratorName);
 	void EvolveHero();
 	void EndLiveStreamingWindow();
@@ -13520,7 +14418,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_Cinematic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe1af2e9f);
 		return ptr;
 	}
 
@@ -13537,7 +14436,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_ConversationInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76ed6942);
 		return ptr;
 	}
 
@@ -13558,7 +14458,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_ConversationCodeInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe76ad4f7);
 		return ptr;
 	}
 
@@ -13589,7 +14490,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_Conversation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7d4c5);
 		return ptr;
 	}
 
@@ -13606,7 +14508,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_TutorialInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9233216b);
 		return ptr;
 	}
 
@@ -13638,7 +14541,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_Tutorial");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d16e396);
 		return ptr;
 	}
 
@@ -13659,7 +14563,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncement_TutorialConversation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc50f4833);
 		return ptr;
 	}
 
@@ -13682,7 +14587,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientAnnouncementManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf12e83c2);
 		return ptr;
 	}
 
@@ -13692,87 +14598,17 @@ public:
 };
 
 
-// Class FortniteGame.FortGameMode
-// 0x0310 (0x0780 - 0x0470)
-class AFortGameMode : public AGameMode
-{
-public:
-	unsigned char                                      bDisableCloudStorage : 1;                                 // 0x0470(0x0001) (CPF_Transient)
-	unsigned char                                      bTravelInitiated : 1;                                     // 0x0470(0x0001) (CPF_Transient)
-	unsigned char                                      bTeamGame : 1;                                            // 0x0470(0x0001)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0471(0x0007) MISSED OFFSET
-	struct FString                                     CurrentWUID;                                              // 0x0478(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	int                                                CurrentPlaylistId;                                        // 0x0488(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x048C(0x0004) MISSED OFFSET
-	struct FString                                     MatchmakingRegionId;                                      // 0x0490(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	struct FString                                     MatchmakingGroupId;                                       // 0x04A0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	struct FString                                     CurrentZoneInstanceId;                                    // 0x04B0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x04C0(0x0004) MISSED OFFSET
-	int                                                ZoneIndex;                                                // 0x04C4(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      bPlayersInvincible : 1;                                   // 0x04C8(0x0001) (CPF_Transient)
-	unsigned char                                      UnknownData03[0x3];                                       // 0x04C9(0x0003) MISSED OFFSET
-	bool                                               bKickIdlers;                                              // 0x04CC(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x04CD(0x0003) MISSED OFFSET
-	float                                              MaxIdleTime;                                              // 0x04D0(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bEnableNotifications;                                     // 0x04D4(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x3];                                       // 0x04D5(0x0003) MISSED OFFSET
-	TAssetPtr<class UFortGameDeathPenalty>             DeathPenaltyData;                                         // 0x04D8(0x0020) (CPF_Edit, CPF_Transient)
-	unsigned char                                      UnknownData06[0x8];                                       // 0x04F8(0x0008) MISSED OFFSET
-	class AFortGameSession*                            FortGameSession;                                          // 0x0500(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FString                                     GameModeSessionString;                                    // 0x0508(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      bIsAutomatedTest : 1;                                     // 0x0518(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData07[0x7];                                       // 0x0519(0x0007) MISSED OFFSET
-	TAssetPtr<class UClass>                            DefaultPawnClassStringRef;                                // 0x0520(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	class UClass*                                      MissionManagerClass;                                      // 0x0540(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               bSpawnExplorationActorsAtWorldInitialization;             // 0x0548(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x17];                                      // 0x0549(0x0017) MISSED OFFSET
-	bool                                               bOverrideRotationOnRestartPlayer;                         // 0x0560(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<EFortGameplayState>                    PendingTimerState;                                        // 0x0561(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x6];                                       // 0x0562(0x0006) MISSED OFFSET
-	unsigned char                                      bWorldIsReady : 1;                                        // 0x0568(0x0001) (CPF_Transient)
-	unsigned char                                      bTheaterDataIsReady : 1;                                  // 0x0568(0x0001) (CPF_Transient)
-	unsigned char                                      UnknownData10[0x3];                                       // 0x0569(0x0003) MISSED OFFSET
-	int                                                TheaterSlot;                                              // 0x056C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              GameplayServerHitchThreshold;                             // 0x0570(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	float                                              MovementTimeDiscrepancyHitchCooldown;                     // 0x0574(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	float                                              AbilityRefireHitchCooldown;                               // 0x0578(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData11[0x4];                                       // 0x057C(0x0004) MISSED OFFSET
-	class UMatchHeartbeatManager*                      MatchHeartbeatManager;                                    // 0x0580(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData12[0x10];                                      // 0x0588(0x0010) MISSED OFFSET
-	struct FGameplayTagContainer                       GameContextTags;                                          // 0x0598(0x0020) (CPF_Transient)
-	class UFortSharedMissionLists*                     SharedMissionLists;                                       // 0x05B8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData13[0x10];                                      // 0x05C0(0x0010) MISSED OFFSET
-	class UClass*                                      TeamInfoClass;                                            // 0x05D0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData14[0x88];                                      // 0x05D8(0x0088) MISSED OFFSET
-	class AFortMissionGenerationManager*               MissionGenerationManager;                                 // 0x0660(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData15[0xE8];                                      // 0x0668(0x00E8) MISSED OFFSET
-	bool                                               bOverrideQuickBars;                                       // 0x0750(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData16[0x7];                                       // 0x0751(0x0007) MISSED OFFSET
-	struct FQuickBarData                               QuickBarDefinitions[0x2];                                 // 0x0758(0x0010) (CPF_Edit)
-	unsigned char                                      UnknownData17[0x8];                                       // 0x0778(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameMode");
-		return ptr;
-	}
-
-
-	void OnEndOfDay();
-	void DumpReservations();
-};
-
-
 // Class FortniteGame.FortGameModeFrontEnd
-// 0x0010 (0x0790 - 0x0780)
+// 0x0010 (0x07A0 - 0x0790)
 class AFortGameModeFrontEnd : public AFortGameMode
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0780(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0790(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeFrontEnd");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc462f276);
 		return ptr;
 	}
 
@@ -13790,7 +14626,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortRejoinCheck");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb81e756e);
 		return ptr;
 	}
 
@@ -13820,7 +14657,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOnlineAccount");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83e9e0dd);
 		return ptr;
 	}
 
@@ -13828,7 +14666,7 @@ public:
 
 
 // Class FortniteGame.FortClientBotManager
-// 0x0228 (0x0250 - 0x0028)
+// 0x0250 (0x0278 - 0x0028)
 class UFortClientBotManager : public UObject
 {
 public:
@@ -13839,52 +14677,58 @@ public:
 	bool                                               bIsMatchmaking;                                           // 0x008F(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bShouldPickRandomMap;                                     // 0x0090(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bShouldRecordFPSCharts;                                   // 0x0091(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bFPSRecordingStarted;                                     // 0x0092(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bWatchingForCallStack;                                    // 0x0093(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                iSelectedTheater;                                         // 0x0094(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                iSelectedTile;                                            // 0x0098(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              RandomZoneDifficultyMinimum;                              // 0x009C(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              RandomZoneDifficultyMaximum;                              // 0x00A0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                NumSkillPurchasesAttempted;                               // 0x00A4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MaxSkillPurchaseAttempts;                                 // 0x00A8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                NumWorkerSlotsAttempted;                                  // 0x00AC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MaxWorkerSlotAttempts;                                    // 0x00B0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LobbyActionTimer;                                         // 0x00B4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              TimeBetweenLobbyActions;                                  // 0x00B8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bWaitingForSkillTreePurchase;                             // 0x00BC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bWaitingForWorkerSlot;                                    // 0x00BD(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2];                                       // 0x00BE(0x0002) MISSED OFFSET
-	int                                                LoopsSpentWaitingForFrontend;                             // 0x00C0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              TimeBetweenStartButtonClicks;                             // 0x00C4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x00C8(0x0004) MISSED OFFSET
-	float                                              TimeSinceFriendInvitesSent;                               // 0x00CC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastMatchmakeTime;                                        // 0x00D0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              MatchmakingStartTime;                                     // 0x00D4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastChangedStateTime;                                     // 0x00D8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastRandomTurnTime;                                       // 0x00DC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastPickLootTime;                                         // 0x00E0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastPickEnemyTime;                                        // 0x00E4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastEnemyKilledTime;                                      // 0x00E8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastBuildingKilledTime;                                   // 0x00EC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastGoodInteraction;                                      // 0x00F0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastCheckGoodTarget;                                      // 0x00F4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x48];                                      // 0x00F8(0x0048) MISSED OFFSET
-	class AFortPawn*                                   EnemyTarget;                                              // 0x0140(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortPickup*                                 PickupTarget;                                             // 0x0148(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class ABuildingActor*                              BuildingTarget;                                           // 0x0150(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class ABuildingActor*                              MissionTarget;                                            // 0x0158(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class ABuildingActor*                              PrimaryMissionTarget;                                     // 0x0160(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<class ABuildingActor*>                      AllMissionTargets;                                        // 0x0168(0x0010) (CPF_ZeroConstructor)
-	TArray<class ABuildingActor*>                      ActiveMissionTargets;                                     // 0x0178(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData05[0xA0];                                      // 0x0188(0x00A0) MISSED OFFSET
-	struct FVector                                     ViewLocation;                                             // 0x0228(0x000C) (CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x4];                                       // 0x0234(0x0004) MISSED OFFSET
-	class AFortPlayerPawn*                             MyPawn;                                                   // 0x0238(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<class UFortWorldItem*>                      ItemsToCheckForMaxStackSize;                              // 0x0240(0x0010) (CPF_ZeroConstructor)
+	bool                                               bShouldRecordMemoryReports;                               // 0x0092(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x1];                                       // 0x0093(0x0001) MISSED OFFSET
+	bool                                               bFPSRecordingStarted;                                     // 0x0094(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bWatchingForCallStack;                                    // 0x0095(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x2];                                       // 0x0096(0x0002) MISSED OFFSET
+	int                                                iSelectedTheater;                                         // 0x0098(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                iSelectedTile;                                            // 0x009C(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<int>                                        SelectedTileList;                                         // 0x00A0(0x0010) (CPF_ZeroConstructor)
+	float                                              RandomZoneDifficultyMinimum;                              // 0x00B0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              RandomZoneDifficultyMaximum;                              // 0x00B4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                NumSkillPurchasesAttempted;                               // 0x00B8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxSkillPurchaseAttempts;                                 // 0x00BC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                NumWorkerSlotsAttempted;                                  // 0x00C0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxWorkerSlotAttempts;                                    // 0x00C4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LobbyActionTimer;                                         // 0x00C8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              TimeBetweenLobbyActions;                                  // 0x00CC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bWaitingForSkillTreePurchase;                             // 0x00D0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bWaitingForWorkerSlot;                                    // 0x00D1(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x2];                                       // 0x00D2(0x0002) MISSED OFFSET
+	int                                                LoopsSpentWaitingForFrontend;                             // 0x00D4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              TimeBetweenStartButtonClicks;                             // 0x00D8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x4];                                       // 0x00DC(0x0004) MISSED OFFSET
+	float                                              TimeSinceFriendInvitesSent;                               // 0x00E0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastMatchmakeTime;                                        // 0x00E4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              MatchmakingStartTime;                                     // 0x00E8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastChangedStateTime;                                     // 0x00EC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastRandomTurnTime;                                       // 0x00F0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastPickLootTime;                                         // 0x00F4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastPickEnemyTime;                                        // 0x00F8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastEnemyKilledTime;                                      // 0x00FC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastBuildingKilledTime;                                   // 0x0100(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastGoodInteraction;                                      // 0x0104(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastCheckGoodTarget;                                      // 0x0108(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x4C];                                      // 0x010C(0x004C) MISSED OFFSET
+	class AFortPawn*                                   EnemyTarget;                                              // 0x0158(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortPickup*                                 PickupTarget;                                             // 0x0160(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class ABuildingActor*                              BuildingTarget;                                           // 0x0168(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class ABuildingActor*                              MissionTarget;                                            // 0x0170(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class ABuildingActor*                              PrimaryMissionTarget;                                     // 0x0178(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<class ABuildingActor*>                      AllMissionTargets;                                        // 0x0180(0x0010) (CPF_ZeroConstructor)
+	TArray<class ABuildingActor*>                      ActiveMissionTargets;                                     // 0x0190(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData07[0xA0];                                      // 0x01A0(0x00A0) MISSED OFFSET
+	struct FVector                                     ViewLocation;                                             // 0x0240(0x000C) (CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x4];                                       // 0x024C(0x0004) MISSED OFFSET
+	class AFortPlayerPawn*                             MyPawn;                                                   // 0x0250(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<class UFortWorldItem*>                      ItemsToCheckForMaxStackSize;                              // 0x0258(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData09[0x10];                                      // 0x0268(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientBotManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xffa4b074);
 		return ptr;
 	}
 
@@ -13931,7 +14775,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPartyContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37db91c0);
 		return ptr;
 	}
 
@@ -14036,7 +14881,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSocialItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70afaa4d);
 		return ptr;
 	}
 
@@ -14055,20 +14901,21 @@ class UFortMcpUtils : public UObject
 {
 public:
 	unsigned char                                      UnknownData00[0x20];                                      // 0x0028(0x0020) MISSED OFFSET
-	struct FString                                     CreateXboxDedicatedServerSessionUrl;                      // 0x0048(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     UnredeemedCodesUrl;                                       // 0x0058(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     QueryUserXuidUrl;                                         // 0x0068(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     RecordUserStatsUrl;                                       // 0x0078(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     QueryUserStatsUrl;                                        // 0x0088(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     QueryLeaderboardUrl;                                      // 0x0098(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     QueryCohortUrl;                                           // 0x00A8(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     CreateXboxDedicatedServerSessionUrl;                      // 0x0048(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     UnredeemedCodesUrl;                                       // 0x0058(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     QueryUserXuidUrl;                                         // 0x0068(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     RecordUserStatsUrl;                                       // 0x0078(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     QueryUserStatsUrl;                                        // 0x0088(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     QueryLeaderboardUrl;                                      // 0x0098(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     QueryCohortUrl;                                           // 0x00A8(0x0010) (CPF_ZeroConstructor, CPF_Config)
 	unsigned char                                      UnknownData01[0x50];                                      // 0x00B8(0x0050) MISSED OFFSET
 	int                                                DefaultLogTailLengthKb;                                   // 0x0108(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData02[0x4];                                       // 0x010C(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpUtils");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7491cc3a);
 		return ptr;
 	}
 
@@ -14076,15 +14923,16 @@ public:
 
 
 // Class FortniteGame.FortClientBotManagerAthena
-// 0x0078 (0x02C8 - 0x0250)
+// 0x0078 (0x02F0 - 0x0278)
 class UFortClientBotManagerAthena : public UFortClientBotManager
 {
 public:
-	unsigned char                                      UnknownData00[0x78];                                      // 0x0250(0x0078) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x78];                                      // 0x0278(0x0078) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientBotManagerAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf4dddb4d);
 		return ptr;
 	}
 
@@ -14100,23 +14948,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientEventData");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortClientOnlyActor
-// 0x0008 (0x0390 - 0x0388)
-class AFortClientOnlyActor : public AActor
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0388(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientOnlyActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba0d45c8);
 		return ptr;
 	}
 
@@ -14167,7 +15000,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDamageNumbersActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x86e1d403);
 		return ptr;
 	}
 
@@ -14191,7 +15025,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFXManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcfe76560);
 		return ptr;
 	}
 
@@ -14228,7 +15063,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLightningActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5caadd68);
 		return ptr;
 	}
 
@@ -14238,79 +15074,6 @@ public:
 	void InitializeLightning(class AActor* InActorToNotify);
 	void GenerateBoltLocations(const struct FVector& StartLocation, const struct FVector& EndLocation, float MinLength, float MaxLength, float RandomVectorContribution, float MinSizeDecayRate, float MaxSizeDecayRate, float FalloffMultiplier);
 	void CleanupLightning();
-};
-
-
-// Class FortniteGame.FortTheaterMapTile
-// 0x0270 (0x0600 - 0x0390)
-class AFortTheaterMapTile : public AFortClientOnlyActor
-{
-public:
-	bool                                               bFocused;                                                 // 0x0390(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bHostSelected;                                            // 0x0391(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bGoToPromptEnabled;                                       // 0x0392(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1];                                       // 0x0393(0x0001) MISSED OFFSET
-	struct FFortHexMapCoord                            MapCoord;                                                 // 0x0394(0x000C)
-	bool                                               bHasFinishedLoading;                                      // 0x03A0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EFortTheaterMapTileType                            TileType;                                                 // 0x03A1(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x6];                                       // 0x03A2(0x0006) MISSED OFFSET
-	class UClass*                                      ZoneThemeClass;                                           // 0x03A8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                TileIndex;                                                // 0x03B0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                RegionIndex;                                              // 0x03B4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FVector                                     SelectionOffset;                                          // 0x03B8(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FVector                                     FocusOffset;                                              // 0x03C4(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              SelectionInterpSpeed;                                     // 0x03D0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              NormalBrightness;                                         // 0x03D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              LockedBrightness;                                         // 0x03D8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              FocusedBrightness;                                        // 0x03DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              SelectedBrightnessRange;                                  // 0x03E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              SelectedPulseSpeed;                                       // 0x03E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               bEnableBrightnessCode;                                    // 0x03E8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x3];                                       // 0x03E9(0x0003) MISSED OFFSET
-	float                                              StaticMeshMaterialID;                                     // 0x03EC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FVector                                     InitialLocation;                                          // 0x03F0(0x000C) (CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x03FC(0x0004) MISSED OFFSET
-	struct FFortAvailableMissionData                   MissionData;                                              // 0x0400(0x00A0)
-	struct FFortAvailableMissionData                   LastValidMissionData;                                     // 0x04A0(0x00A0)
-	struct FDataTableRowHandle                         ZoneDifficultyInfo;                                       // 0x0540(0x0010)
-	struct FFortAvailableMissionAlertData              MissionAlertData;                                         // 0x0550(0x0098)
-	class UStaticMeshComponent*                        StaticMeshComponent;                                      // 0x05E8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_EditConst, CPF_InstancedReference, CPF_IsPlainOldData)
-	TArray<class UMaterialInstanceDynamic*>            AdjacencyMIDs;                                            // 0x05F0(0x0010) (CPF_BlueprintVisible, CPF_ZeroConstructor)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTheaterMapTile");
-		return ptr;
-	}
-
-
-	void OnTileClicked(class AActor* ClickedActor, const struct FKey& ButtonReleased);
-	void OnSelectWrapper(bool bIsGameSessionOwner);
-	void OnMouseOverEnd(class AActor* MousedOverActor);
-	void OnMouseOverBegin(class AActor* MousedOverActor);
-	void OnMissionDataUpdated();
-	void OnMarkedQuestChanged();
-	void OnInitializeTile();
-	void OnHostSelect();
-	void OnHostDeselect();
-	void OnFocus();
-	void OnEnableGoToPrompt();
-	void OnDisableGoToPrompt();
-	void OnDeselectWrapper(bool bIsGameSessionOwner);
-	void OnDefocus();
-	void OnClientSelect();
-	void OnClientDeselect();
-	bool IsTileValidForMarkedQuest(class UFortQuestItem** OutMarkedQuest);
-	bool IsTileSelectable();
-	bool IsTileQuestRecommended();
-	bool IsTilePlayable();
-	bool IsTileLocked();
-	bool IsTileHidden();
-	bool IsMissionAlertTile();
-	bool HasValidMissionData();
-	struct FGameDifficultyInfo GetZoneDifficulty();
-	EFortMissionAlertCategory GetMissionAlertCategory();
-	bool DoesTileAllowQuickplay();
 };
 
 
@@ -14339,7 +15102,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTracerBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4c9de7bd);
 		return ptr;
 	}
 
@@ -14361,7 +15125,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectionBookCategory");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c4f469e);
 		return ptr;
 	}
 
@@ -14386,7 +15151,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectionBookManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa63c9cb);
 		return ptr;
 	}
 
@@ -14418,7 +15184,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectionBookPage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7df27b);
 		return ptr;
 	}
 
@@ -14438,7 +15205,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectionBookSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x11248497);
 		return ptr;
 	}
 
@@ -14465,7 +15233,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCombatManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1da9c2d2);
 		return ptr;
 	}
 
@@ -14485,7 +15254,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConsole");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd39e3b74);
 		return ptr;
 	}
 
@@ -14501,7 +15271,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCrowdManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfa78f401);
 		return ptr;
 	}
 
@@ -14516,7 +15287,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDateTimeLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x84091087);
 		return ptr;
 	}
 
@@ -14561,7 +15333,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoHelper");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x597df13e);
 		return ptr;
 	}
 
@@ -14598,7 +15371,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoPreview");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x311529a6);
 		return ptr;
 	}
 
@@ -14622,7 +15396,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoPreview_ComponentHarvester");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe6365ec8);
 		return ptr;
 	}
 
@@ -14637,7 +15412,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoPreview_MeshHarvester");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d28c4b0);
 		return ptr;
 	}
 
@@ -14654,7 +15430,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoPreview_GenericBuildingSMActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x552c903f);
 		return ptr;
 	}
 
@@ -14669,7 +15446,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoPreview_GenericTrap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f7eb611);
 		return ptr;
 	}
 
@@ -14689,7 +15467,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTrackPreview");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b0ba13e);
 		return ptr;
 	}
 
@@ -14706,7 +15485,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBaseLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x44aee884);
 		return ptr;
 	}
 
@@ -14800,7 +15580,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorldManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x785f6b34);
 		return ptr;
 	}
 
@@ -14819,7 +15600,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUserCloudHelperComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeeb519e0);
 		return ptr;
 	}
 
@@ -14852,20 +15634,21 @@ public:
 	class AFortTimeOfDayManager*                       FortTimeOfDayManager;                                     // 0x0550(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	TEnumAsByte<EFortGameplayState>                    GameplayState;                                            // 0x0558(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData03[0x7];                                       // 0x0559(0x0007) MISSED OFFSET
-	struct FString                                     GameSessionID;                                            // 0x0560(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	TArray<class UFortMovementComp_Character*>         ManagedCharMovementComponents;                            // 0x0570(0x0010) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient)
-	TArray<class AFortAIPawn*>                         ManagedAnimPawns;                                         // 0x0580(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TArray<class UFortMovementComp_Character*>         ManagedCharMovementComponentsCopy;                        // 0x0590(0x0010) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient)
-	TArray<struct FOnTimeHitInfo>                      TimeOfDayCallbacks;                                       // 0x05A0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	class AFortVisibilityManager*                      VisibilityManager;                                        // 0x05B0(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortFXManager*                              FXManager;                                                // 0x05B8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class AFortWindManager*                            WindManager;                                              // 0x05C0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TArray<class AFortTeamInfo*>                       Teams;                                                    // 0x05C8(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	bool                                               bSkipTeamReplication;                                     // 0x05D8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x7];                                       // 0x05D9(0x0007) MISSED OFFSET
-	TArray<struct FTeamChangeRequest>                  PendingTeamChangeRequests;                                // 0x05E0(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	bool                                               bAllowPendingTeamChangeRequests;                          // 0x05F0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x15F];                                     // 0x05F1(0x015F) MISSED OFFSET
+	class UClass*                                      MusicManagerSubclass;                                     // 0x0560(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FString                                     GameSessionID;                                            // 0x0568(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	TArray<class UFortMovementComp_Character*>         ManagedCharMovementComponents;                            // 0x0578(0x0010) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient)
+	TArray<class AFortAIPawn*>                         ManagedAnimPawns;                                         // 0x0588(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TArray<class UFortMovementComp_Character*>         ManagedCharMovementComponentsCopy;                        // 0x0598(0x0010) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient)
+	TArray<struct FOnTimeHitInfo>                      TimeOfDayCallbacks;                                       // 0x05A8(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	class AFortVisibilityManager*                      VisibilityManager;                                        // 0x05B8(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortFXManager*                              FXManager;                                                // 0x05C0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class AFortWindManager*                            WindManager;                                              // 0x05C8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TArray<class AFortTeamInfo*>                       Teams;                                                    // 0x05D0(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	bool                                               bSkipTeamReplication;                                     // 0x05E0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x7];                                       // 0x05E1(0x0007) MISSED OFFSET
+	TArray<struct FTeamChangeRequest>                  PendingTeamChangeRequests;                                // 0x05E8(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	bool                                               bAllowPendingTeamChangeRequests;                          // 0x05F8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x157];                                     // 0x05F9(0x0157) MISSED OFFSET
 	class AFortGlobalAbilityTargetingActor*            GlobalAbilityTargetingActor;                              // 0x0750(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData06[0x50];                                      // 0x0758(0x0050) MISSED OFFSET
 	TArray<struct FAppliedHomebaseData>                AppliedHomebaseDataArray;                                 // 0x07A8(0x0010) (CPF_ZeroConstructor, CPF_Transient)
@@ -14873,7 +15656,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e7026ca);
 		return ptr;
 	}
 
@@ -14882,6 +15666,7 @@ public:
 	void OnRep_WorldDaysElapsed();
 	void OnRep_TimeOfDayManager();
 	void OnRep_Teams();
+	void OnRep_MusicManagerSubclass();
 	void OnRep_MissionManager();
 	void OnRep_GameSessionID();
 	void OnRep_GameplayState();
@@ -14905,7 +15690,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionWeightedRewards");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9006e8e);
 		return ptr;
 	}
 
@@ -14920,7 +15706,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlacementActorDataProviderInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe30c1387);
 		return ptr;
 	}
 
@@ -14942,7 +15729,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc10ce718);
 		return ptr;
 	}
 
@@ -14965,7 +15753,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionTimerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe0b1c9bd);
 		return ptr;
 	}
 
@@ -15001,7 +15790,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortObjectiveBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18b068cd);
 		return ptr;
 	}
 
@@ -15093,7 +15883,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMission");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf3d11e5);
 		return ptr;
 	}
 
@@ -15177,86 +15968,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WorldTileManager");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortDeployableBaseCloudSaveItemDefinition
-// 0x0010 (0x0240 - 0x0230)
-class UFortDeployableBaseCloudSaveItemDefinition : public UFortCloudSaveItemDefinition
-{
-public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0230(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBaseCloudSaveItemDefinition");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortDeployableBaseSkillTreeUnlocks
-// 0x0040 (0x0068 - 0x0028)
-class UFortDeployableBaseSkillTreeUnlocks : public UDataAsset
-{
-public:
-	TArray<struct FFortTaggedDeployableBasePlotExpansionUnlock> PlotSizeUnlocks;                                          // 0x0028(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FFortTaggedDeployableBaseLootUnlock> NeighborhoodLootGrantUnlocks;                             // 0x0038(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FFortTaggedDeployableBaseLootUnlock> CombatZoneStartLootGrantUnlocks;                          // 0x0048(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FFortTaggedDeployableBaseLootUnlock> CombatZoneWaveCompleteLootGrantUnlocks;                   // 0x0058(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBaseSkillTreeUnlocks");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortZoneTheme
-// 0x0248 (0x0270 - 0x0028)
-class UFortZoneTheme : public UPrimaryDataAsset
-{
-public:
-	TAssetPtr<class UClass>                            TheaterMapTileClass;                                      // 0x0028(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	TAssetPtr<class UWorld>                            ZoneToUse;                                                // 0x0048(0x0020) (CPF_Edit)
-	struct FText                                       ZoneName;                                                 // 0x0068(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FText                                       ZoneDescription;                                          // 0x0080(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FText                                       AbundantResources;                                        // 0x0098(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	EFortZoneType                                      ZoneType;                                                 // 0x00B0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x00B1(0x0007) MISSED OFFSET
-	TAssetPtr<class UClass>                            ZoneGameMode;                                             // 0x00B8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FGameplayTagContainer                       ZoneTags;                                                 // 0x00D8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	TAssetPtr<class UClass>                            LobbyBeaconHostClass;                                     // 0x00F8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	TAssetPtr<class UFortCloudSaveItemDefinition>      CloudSaveItemDefinition;                                  // 0x0118(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	int                                                ZoneIndex;                                                // 0x0138(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                PlaylistId;                                               // 0x013C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                TeamSize;                                                 // 0x0140(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                TeamCount;                                                // 0x0144(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                MaxPartySize;                                             // 0x0148(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                MaxPlayers;                                               // 0x014C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              CriticalMissionEligibilityLength;                         // 0x0150(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              CriticalMissionEligibilityGracePeriodLength;              // 0x0154(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FDeployableBaseSupportSettings              DeployableBaseSettings;                                   // 0x0158(0x0080) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	unsigned char                                      IgnoreGeneratedRewards : 1;                               // 0x01D8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x01D9(0x0007) MISSED OFFSET
-	TAssetPtr<class UClass>                            PlayerSpawnPadClass;                                      // 0x01E0(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FGameplayTagContainer                       InitialPlayerSpawnTags;                                   // 0x0200(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FGameplayTagContainer                       BackupPlayerSpawnTags;                                    // 0x0220(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	bool                                               bOverrideConningText;                                     // 0x0240(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x0241(0x0007) MISSED OFFSET
-	struct FText                                       ConningOverrideText;                                      // 0x0248(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	TArray<struct FZoneThemeDifficultyProperties>      DifficultyProperties;                                     // 0x0260(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortZoneTheme");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18ec621b);
 		return ptr;
 	}
 
@@ -15300,7 +16013,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBaseManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xce91cf0);
 		return ptr;
 	}
 
@@ -15326,7 +16040,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeveloperSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe09eff6e);
 		return ptr;
 	}
 
@@ -15346,7 +16061,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_Breathers");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28372aaf);
 		return ptr;
 	}
 
@@ -15363,7 +16079,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_DirectionChange");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14365cd2);
 		return ptr;
 	}
 
@@ -15379,7 +16096,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_IntensityCurveSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x74752418);
 		return ptr;
 	}
 
@@ -15395,7 +16113,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_PawnNumberCap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4c8c206);
 		return ptr;
 	}
 
@@ -15412,7 +16131,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_SpawnLimitPawns");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5668119a);
 		return ptr;
 	}
 
@@ -15429,7 +16149,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_SpawnLimitPoints");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x12dffd68);
 		return ptr;
 	}
 
@@ -15446,7 +16167,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_SpawnPointsBurst");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeed7c211);
 		return ptr;
 	}
 
@@ -15462,7 +16184,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_SpawnPointsCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4dfd80fa);
 		return ptr;
 	}
 
@@ -15479,7 +16202,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_SpawnTiming");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa43d26ee);
 		return ptr;
 	}
 
@@ -15496,7 +16220,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionEncounter_Time");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf2d23d4);
 		return ptr;
 	}
 
@@ -15511,7 +16236,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionMission");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd09dec21);
 		return ptr;
 	}
 
@@ -15530,7 +16256,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategory");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c8895bd);
 		return ptr;
 	}
 
@@ -15545,7 +16272,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb70c07bc);
 		return ptr;
 	}
 
@@ -15561,7 +16289,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_Breathers");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf16be00b);
 		return ptr;
 	}
 
@@ -15577,7 +16306,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_DirectionChange");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb3a47f6);
 		return ptr;
 	}
 
@@ -15593,7 +16323,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_DirectionNumber");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50beae89);
 		return ptr;
 	}
 
@@ -15609,7 +16340,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_Distance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30f3b94a);
 		return ptr;
 	}
 
@@ -15625,7 +16357,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_IntensityCurveSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x38fad0ac);
 		return ptr;
 	}
 
@@ -15641,7 +16374,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_ModifierTags");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57c761c7);
 		return ptr;
 	}
 
@@ -15657,7 +16391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_PawnNumberCap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe71a2f1a);
 		return ptr;
 	}
 
@@ -15673,7 +16408,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_SpawnGroupProgression");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x294431d2);
 		return ptr;
 	}
 
@@ -15689,7 +16425,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_SpawnLimitPawns");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x59e351e6);
 		return ptr;
 	}
 
@@ -15705,7 +16442,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_SpawnLimitPoints");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x394ccf14);
 		return ptr;
 	}
 
@@ -15721,7 +16459,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_SpawnPointsBurst");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1992025);
 		return ptr;
 	}
 
@@ -15737,7 +16476,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_SpawnPointsCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71b41f96);
 		return ptr;
 	}
 
@@ -15753,7 +16493,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_SpawnPointsMultiplier");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbd554a8);
 		return ptr;
 	}
 
@@ -15769,7 +16510,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_SpawnTiming");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9eeaed2);
 		return ptr;
 	}
 
@@ -15785,7 +16527,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_Time");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d2d2a98);
 		return ptr;
 	}
 
@@ -15801,7 +16544,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_UtilitiesAdjustment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79268390);
 		return ptr;
 	}
 
@@ -15817,7 +16561,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_UtilitiesFree");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd452736b);
 		return ptr;
 	}
 
@@ -15833,7 +16578,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryEncounter_UtilitiesLocked");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x999e36c7);
 		return ptr;
 	}
 
@@ -15848,7 +16594,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionCategoryMission");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaf03309d);
 		return ptr;
 	}
 
@@ -15889,7 +16636,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDifficultyOptionSetEncounter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe89d225a);
 		return ptr;
 	}
 
@@ -15904,10 +16652,38 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDoorLinkComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x404e9b2a);
 		return ptr;
 	}
 
+};
+
+
+// Class FortniteGame.FortDownloadingScreen
+// 0x0030 (0x0260 - 0x0230)
+class UFortDownloadingScreen : public UUserWidget
+{
+public:
+	struct FScriptMulticastDelegate                    OnDownloadCompleteDelegate;                               // 0x0230(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class UTextBlock*                                  DownloadText;                                             // 0x0240(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UProgressBar*                                DownloadProgressBar;                                      // 0x0248(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UProgressBar*                                ChunkDownloadProgressBar;                                 // 0x0250(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UImage*                                      BackgroundImage;                                          // 0x0258(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x386c15e3);
+		return ptr;
+	}
+
+
+	void UpdateApplication();
+	void ProgressUpdate(float Ratio, const struct FText& ProgressText);
+	void OnUpdateRequired();
+	void OnCompleted(bool bSuccessful, const struct FText& ErrorText);
+	void ChunkProgressUpdate(float Ratio, const struct FText& ProgressText);
 };
 
 
@@ -15929,7 +16705,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDynamicBuildingDeconstructor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4eaa9eb7);
 		return ptr;
 	}
 
@@ -15950,7 +16727,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortEmitterCameraLensEffectDirectional");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb88547cd);
 		return ptr;
 	}
 
@@ -15965,7 +16743,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortEngine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5d1aa11b);
 		return ptr;
 	}
 
@@ -15984,7 +16763,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortExhibitActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x915eba2b);
 		return ptr;
 	}
 
@@ -16001,7 +16781,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHeroExhibitActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7d7f745f);
 		return ptr;
 	}
 
@@ -16018,7 +16799,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemExhibitActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7602dc6e);
 		return ptr;
 	}
 
@@ -16034,7 +16816,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortExpeditionManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xceb08c19);
 		return ptr;
 	}
 
@@ -16048,19 +16831,19 @@ class UFortFastLoadConfig : public UObject
 public:
 	unsigned char                                      bDisableStreamInBuildings : 1;                            // 0x0028(0x0001) (CPF_Config)
 	unsigned char                                      bDisableStartupAIDirector : 1;                            // 0x0028(0x0001) (CPF_Config)
-	unsigned char                                      bDisableNonDefaultFakeHeroesAtStartup : 1;                // 0x0028(0x0001) (CPF_Config)
 	unsigned char                                      bDisableUpgradePlayerBuildingClasses : 1;                 // 0x0028(0x0001) (CPF_Config)
 	unsigned char                                      bUseMinimalPlayerBuildingClasses : 1;                     // 0x0028(0x0001) (CPF_Config)
 	unsigned char                                      bDisableStartingMissions : 1;                             // 0x0028(0x0001) (CPF_Config)
 	unsigned char                                      bUseFastLoadDefaultInventory : 1;                         // 0x0028(0x0001) (CPF_Config)
 	unsigned char                                      bDisableNavAgentCostData : 1;                             // 0x0028(0x0001) (CPF_Config)
-	unsigned char                                      bDisableThreatVisualsManager : 1;                         // 0x0029(0x0001) (CPF_Config)
+	unsigned char                                      bDisableThreatVisualsManager : 1;                         // 0x0028(0x0001) (CPF_Config)
 	unsigned char                                      bDisablePreLoadAssets : 1;                                // 0x0029(0x0001) (CPF_Config)
 	unsigned char                                      UnknownData00[0x6];                                       // 0x002A(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFastLoadConfig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd72bc92d);
 		return ptr;
 	}
 
@@ -16078,7 +16861,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFeedbackBank");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbae7b986);
 		return ptr;
 	}
 
@@ -16094,7 +16878,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFoliageSpawnerSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0543566);
 		return ptr;
 	}
 
@@ -16111,7 +16896,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortForcedLODZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70c13ed1);
 		return ptr;
 	}
 
@@ -16133,7 +16919,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.PartyDisplayManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x149313f1);
 		return ptr;
 	}
 
@@ -16147,6 +16934,8 @@ public:
 	void OnPawnBeginCursorOver(class AActor* TouchedActor);
 	void HideLoading();
 	void HandleLoadingAssetsForItemCompleted(class UFortItemDefinition* ItemWhoseAssetsWereLoaded, TArray<class UObject*> LoadedAssets);
+	void GetMeshForCurrentDisplayedItem(class UMeshComponent** OutDisplayedMesh);
+	class AFortPlayerPawn* GetHeroPlayerPawnForCurrentDisplayedItem();
 	void BeginLoadingAssetsForItem(class UFortItemDefinition* ItemToView, TArray<TAssetPtr<class UObject>> AssetsToLoad);
 };
 
@@ -16185,7 +16974,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa555809e);
 		return ptr;
 	}
 
@@ -16193,14 +16983,15 @@ public:
 
 
 // Class FortniteGame.FortGameModeEmptyDedicated
-// 0x0000 (0x0780 - 0x0780)
+// 0x0000 (0x0790 - 0x0790)
 class AFortGameModeEmptyDedicated : public AFortGameMode
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeEmptyDedicated");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf10030d4);
 		return ptr;
 	}
 
@@ -16218,7 +17009,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortVisibilityManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6b7ad0f6);
 		return ptr;
 	}
 
@@ -16226,43 +17018,34 @@ public:
 
 
 // Class FortniteGame.FortGameModeZone
-// 0x00B0 (0x0830 - 0x0780)
+// 0x00A0 (0x0830 - 0x0790)
 class AFortGameModeZone : public AFortGameMode
 {
 public:
-	class ABuildingSMActor*                            ActiveSpawnPad;                                           // 0x0780(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortAIDirector*                             AIDirector;                                               // 0x0788(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortAIGoalManager*                          AIGoalManager;                                            // 0x0790(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                EndOfZoneRemainTime;                                      // 0x0798(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x079C(0x0004) MISSED OFFSET
-	class UFortTaggedActorsManager*                    TaggedActorsManager;                                      // 0x07A0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class ABuildingConnectivityManager*                ConnectivityManager;                                      // 0x07A8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bUseAllSocketsInSpawnPad;                                 // 0x07B0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x07B1(0x0007) MISSED OFFSET
-	class UClass*                                      VisibilityManagerClass;                                   // 0x07B8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bCriticalMissionEligible;                                 // 0x07C0(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x17];                                      // 0x07C1(0x0017) MISSED OFFSET
-	TArray<struct FItemAndCount>                       StartingItems;                                            // 0x07D8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	struct FScriptMulticastDelegate                    OnHandleZonePeriodicReport;                               // 0x07E8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnHandleMatchHasStarted;                                  // 0x07F8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	bool                                               bTrustXboxPlatformId;                                     // 0x0808(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	ESubGame                                           AssociatedSubGame;                                        // 0x0809(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x1];                                       // 0x080A(0x0001) MISSED OFFSET
-	bool                                               bShouldCheckHwHandle;                                     // 0x080B(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bShouldCheckIp;                                           // 0x080C(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bShouldCheckSIP;                                          // 0x080D(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bShouldCheckNetQOS;                                       // 0x080E(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bShouldCheckBehavior;                                     // 0x080F(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bShouldCheckAbility;                                      // 0x0810(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bShouldCheckMT;                                           // 0x0811(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x2];                                       // 0x0812(0x0002) MISSED OFFSET
-	float                                              InGameConnectionTimeOutPVP;                               // 0x0814(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	TArray<struct FBCActionInfo>                       MapBCAction;                                              // 0x0818(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	unsigned char                                      UnknownData05[0x8];                                       // 0x0828(0x0008) MISSED OFFSET
+	class ABuildingSMActor*                            ActiveSpawnPad;                                           // 0x0790(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortAIDirector*                             AIDirector;                                               // 0x0798(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortAIGoalManager*                          AIGoalManager;                                            // 0x07A0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                EndOfZoneRemainTime;                                      // 0x07A8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x07AC(0x0004) MISSED OFFSET
+	class UFortTaggedActorsManager*                    TaggedActorsManager;                                      // 0x07B0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class ABuildingConnectivityManager*                ConnectivityManager;                                      // 0x07B8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bUseAllSocketsInSpawnPad;                                 // 0x07C0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x07C1(0x0007) MISSED OFFSET
+	class UClass*                                      VisibilityManagerClass;                                   // 0x07C8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bCriticalMissionEligible;                                 // 0x07D0(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x17];                                      // 0x07D1(0x0017) MISSED OFFSET
+	TArray<struct FItemAndCount>                       StartingItems;                                            // 0x07E8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FScriptMulticastDelegate                    OnHandleZonePeriodicReport;                               // 0x07F8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnHandleMatchHasStarted;                                  // 0x0808(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	bool                                               bTrustXboxPlatformId;                                     // 0x0818(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	ESubGame                                           AssociatedSubGame;                                        // 0x0819(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x6];                                       // 0x081A(0x0006) MISSED OFFSET
+	TArray<struct FBCActionInfo>                       MapBCAction;                                              // 0x0820(0x0010) (CPF_ZeroConstructor, CPF_Config)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe508e8ec);
 		return ptr;
 	}
 
@@ -16282,7 +17065,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeDeployableBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef6db1bc);
 		return ptr;
 	}
 
@@ -16290,15 +17074,18 @@ public:
 
 
 // Class FortniteGame.FortGameModeFOB
-// 0x0010 (0x0840 - 0x0830)
+// 0x0020 (0x0850 - 0x0830)
 class AFortGameModeFOB : public AFortGameModeZone
 {
 public:
-	struct FScriptMulticastDelegate                    OnPlayerLoginToFOB;                                       // 0x0830(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class ABuildingFOBConfigActor*                     ConfigurationActor;                                       // 0x0830(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnPlayerLoginToFOB;                                       // 0x0838(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0848(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeFOB");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad8969fb);
 		return ptr;
 	}
 
@@ -16306,16 +17093,18 @@ public:
 
 
 // Class FortniteGame.FortGameModeKeep
-// 0x0020 (0x0850 - 0x0830)
+// 0x0030 (0x0860 - 0x0830)
 class AFortGameModeKeep : public AFortGameModeZone
 {
 public:
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0830(0x0018) MISSED OFFSET
-	class UFortKeepItemManager*                        KeepItemManager;                                          // 0x0848(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0830(0x0020) MISSED OFFSET
+	class UFortKeepItemManager*                        KeepItemManager;                                          // 0x0850(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0858(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeKeep");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x752bbead);
 		return ptr;
 	}
 
@@ -16331,7 +17120,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeManor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde490a71);
 		return ptr;
 	}
 
@@ -16343,13 +17133,13 @@ public:
 class AFortGameModeOutpost : public AFortGameModeZone
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0830(0x0008) MISSED OFFSET
-	struct FFortOutpostCoreInfo                        CurrentCoreInfo;                                          // 0x0838(0x0020)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0858(0x0008) MISSED OFFSET
+	TArray<struct FFortItemEntry>                      OwnerItemRefundCache;                                     // 0x0830(0x0010) (CPF_ZeroConstructor)
+	struct FFortOutpostCoreInfo                        CurrentCoreInfo;                                          // 0x0840(0x0020)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeOutpost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x73219020);
 		return ptr;
 	}
 
@@ -16364,7 +17154,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeSurvival");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7387658);
 		return ptr;
 	}
 
@@ -16375,45 +17166,128 @@ public:
 
 
 // Class FortniteGame.FortGamePvPBase
-// 0x0060 (0x0890 - 0x0830)
+// 0x0070 (0x08A0 - 0x0830)
 class AFortGamePvPBase : public AFortGameModeZone
 {
 public:
-	int                                                RoundTimeRemainingCriticalThreshold;                      // 0x0830(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                StalemateTimeLimit;                                       // 0x0834(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                RestartTimeLimit;                                         // 0x0838(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                FOBFinalizationLimit;                                     // 0x083C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      bUsingFOBs : 1;                                           // 0x0840(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bFOBInitRequested : 1;                                    // 0x0840(0x0001) (CPF_Transient)
-	unsigned char                                      bAllFOBConfigActorsInitialized : 1;                       // 0x0840(0x0001) (CPF_Transient)
-	unsigned char                                      bFinishedSpawningFOBConfigActors : 1;                     // 0x0840(0x0001) (CPF_Transient)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0841(0x0003) MISSED OFFSET
-	int                                                NumFOBConfigActorsPerTeam;                                // 0x0844(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TArray<struct FTeamFOBRequiredTags>                FOBRequiredTags;                                          // 0x0848(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	class UClass*                                      FOBConfigActorClass;                                      // 0x0858(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	TArray<struct FCachedPlayerFOBInformation>         CachedFOBInfo;                                            // 0x0860(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TArray<class ABuildingFOBConfigActor*>             SpawnedFOBConfigActors;                                   // 0x0870(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TArray<class ABuildingFOBConfigActor*>             SpawnedFOBConfigActorsToFinalize;                         // 0x0880(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      NumTeams;                                                 // 0x0830(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0831(0x0003) MISSED OFFSET
+	int                                                RoundTimeLimit;                                           // 0x0834(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                RoundTimeRemainingCriticalThreshold;                      // 0x0838(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                StalemateTimeLimit;                                       // 0x083C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                RestartTimeLimit;                                         // 0x0840(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                FOBFinalizationLimit;                                     // 0x0844(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      bUsingFOBs : 1;                                           // 0x0848(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bFOBInitRequested : 1;                                    // 0x0848(0x0001) (CPF_Transient)
+	unsigned char                                      bAllFOBConfigActorsInitialized : 1;                       // 0x0848(0x0001) (CPF_Transient)
+	unsigned char                                      bFinishedSpawningFOBConfigActors : 1;                     // 0x0848(0x0001) (CPF_Transient)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0849(0x0003) MISSED OFFSET
+	int                                                NumFOBConfigActorsPerTeam;                                // 0x084C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TArray<struct FTeamFOBRequiredTags>                FOBRequiredTags;                                          // 0x0850(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	class UClass*                                      FOBConfigActorClass;                                      // 0x0860(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	TArray<struct FCachedPlayerFOBInformation>         CachedFOBInfo;                                            // 0x0868(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TArray<class ABuildingFOBConfigActor*>             SpawnedFOBConfigActors;                                   // 0x0878(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TArray<class ABuildingFOBConfigActor*>             SpawnedFOBConfigActorsToFinalize;                         // 0x0888(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x0898(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGamePvPBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf53f623c);
 		return ptr;
 	}
 
 };
 
 
-// Class FortniteGame.FortMcpProfile
-// 0x0030 (0x02E0 - 0x02B0)
-class UFortMcpProfile : public UMcpProfile
+// Class FortniteGame.FortPlayerInput
+// 0x0158 (0x04F0 - 0x0398)
+class UFortPlayerInput : public UPlayerInput
 {
 public:
-	unsigned char                                      UnknownData00[0x30];                                      // 0x02B0(0x0030) MISSED OFFSET
+	struct FString                                     DefaultPresetName;                                        // 0x0398(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	struct FString                                     DefaultPresetNameAthena;                                  // 0x03A8(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	TArray<struct FString>                             FortPlayerInputSettingsNames;                             // 0x03B8(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_Config)
+	bool                                               bApplyGamepadDownsightsLookScale;                         // 0x03C8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xDF];                                      // 0x03C9(0x00DF) MISSED OFFSET
+	TArray<class UFortPlayerInputSettings*>            AllPlayerInputSettings;                                   // 0x04A8(0x0010) (CPF_ZeroConstructor)
+	class UFortPlayerInputSettings*                    DesiredPlayerInputSettings;                               // 0x04B8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x04C0(0x0010) MISSED OFFSET
+	TArray<struct FText>                               InputActionTypeFriendlyNames;                             // 0x04D0(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	TArray<struct FFortInputActionGroupContext>        InputActionGroupContexts;                                 // 0x04E0(0x0010) (CPF_ZeroConstructor, CPF_Config)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpProfile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe838616e);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortClientSettingsRecord
+// 0x0210 (0x02E0 - 0x00D0)
+class UFortClientSettingsRecord : public UFortGenericRecord
+{
+public:
+	unsigned char                                      UnknownData00[0x4];                                       // 0x00D0(0x0004) MISSED OFFSET
+	struct FVector2D                                   GamepadLookSensitivity;                                   // 0x00D4(0x0008) (CPF_IsPlainOldData)
+	float                                              TargetingSlow;                                            // 0x00DC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              ScopedSlow;                                               // 0x00E0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              GamepadTargetingSlow;                                     // 0x00E4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              GamepadScopedSlow;                                        // 0x00E8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x00EC(0x0004) MISSED OFFSET
+	struct FString                                     ControllerPlatform;                                       // 0x00F0(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     InputPresetNameForCampaign;                               // 0x0100(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     InputPresetNameForAthena;                                 // 0x0110(0x0010) (CPF_ZeroConstructor)
+	float                                              XboxSafeZone;                                             // 0x0120(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x0124(0x0004) MISSED OFFSET
+	struct FString                                     PendingCulture;                                           // 0x0128(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TArray<struct FFortActionKeyMapping>               UserActionBindings;                                       // 0x0138(0x0010) (CPF_ZeroConstructor)
+	TArray<struct FFortActionKeyMapping>               DisabledActionBindings;                                   // 0x0148(0x0010) (CPF_ZeroConstructor)
+	bool                                               bInvertedLook;                                            // 0x0158(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bToggleSprint;                                            // 0x0159(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bSprintCancelsReload;                                     // 0x015A(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bTapInteractEnabled;                                      // 0x015B(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bTargetingToggleable;                                     // 0x015C(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bAutoEquipBetterItems;                                    // 0x015D(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bForceFeedbackEnabled;                                    // 0x015E(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bUseFirstPersonCamera;                                    // 0x015F(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bUseGamepadAimAssist;                                     // 0x0160(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bUseGamepadEditModeAimAssist;                             // 0x0161(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bFocusOnFirstBuildingPieceWhenQuickbarSwapped;            // 0x0162(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bNewFocusOnFirstBuildingPieceWhenQuickbarSwapped;         // 0x0163(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0164(0x0004) MISSED OFFSET
+	TMap<struct FGameplayTag, bool>                    UserHUDVisibiltyMappings;                                 // 0x0168(0x0050) (CPF_ZeroConstructor)
+	EPartyType                                         LastPartyType;                                            // 0x01B8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bLastLeaderInvitesOnly;                                   // 0x01B9(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bLastLeaderFriendsOnly;                                   // 0x01BA(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x1];                                       // 0x01BB(0x0001) MISSED OFFSET
+	float                                              MusicVolume;                                              // 0x01BC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              SoundFXVolume;                                            // 0x01C0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              DialogVolume;                                             // 0x01C4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              ChatVolume;                                               // 0x01C8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bEnableSubtitles;                                         // 0x01CC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bEnableVoiceChat;                                         // 0x01CD(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bEnableVoiceChatPTT;                                      // 0x01CE(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShowHeroHeadAccessories;                                 // 0x01CF(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShowHeroBackpack;                                        // 0x01D0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x3];                                       // 0x01D1(0x0003) MISSED OFFSET
+	float                                              InitialGammaValue;                                        // 0x01D4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FString                                     LastNewsVersionViewed;                                    // 0x01D8(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     SelectedRegionId;                                         // 0x01E8(0x0010) (CPF_ZeroConstructor)
+	bool                                               bRegionDirty;                                             // 0x01F8(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x7];                                       // 0x01F9(0x0007) MISSED OFFSET
+	struct FString                                     LastKnownBestRegionId;                                    // 0x0200(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      bSaveToCloud : 1;                                         // 0x0210(0x0001) (CPF_Transient)
+	unsigned char                                      bCloudIsBusy : 1;                                         // 0x0210(0x0001) (CPF_Transient)
+	unsigned char                                      UnknownData07[0xCF];                                      // 0x0211(0x00CF) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2f85f14);
 		return ptr;
 	}
 
@@ -16421,25 +17295,22 @@ public:
 
 
 // Class FortniteGame.FortMcpProfileAccount
-// 0x0110 (0x03F0 - 0x02E0)
-class UFortMcpProfileAccount : public UFortMcpProfile
+// 0x00B0 (0x0410 - 0x0360)
+class UFortMcpProfileAccount : public UFortMcpProfileQuest
 {
 public:
-	struct FString                                     ListCatalogEntriesUrl;                                    // 0x02E0(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	unsigned char                                      UnknownData00[0x60];                                      // 0x02F0(0x0060) MISSED OFFSET
-	struct FFortAccountClientSettings                  CachedClientSettings;                                     // 0x0350(0x0010)
-	unsigned char                                      UnknownData01[0x90];                                      // 0x0360(0x0090) MISSED OFFSET
+	struct FString                                     ListCatalogEntriesUrl;                                    // 0x0360(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	unsigned char                                      UnknownData00[0xA0];                                      // 0x0370(0x00A0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpProfileAccount");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8c5c0573);
 		return ptr;
 	}
 
 
 	void UpgradeItem(const struct FString& TargetItemId, struct FClientUrlContext* Context);
-	void UpdateQuests(TArray<struct FFortQuestObjectiveCompletion> Advance, struct FDedicatedServerUrlContext* Context);
-	void UpdateQuestClientObjectives(TArray<struct FFortQuestObjectiveCompletion> Advance, struct FClientUrlContext* Context);
 	void UpdateBuildingLevelAndRating(const struct FString& BuildingId, int LastBuildingLevel, int LastBuildingRating, struct FClientUrlContext* Context);
 	void UnslotAllWorkers(TArray<struct FString> BuildingIds, struct FClientUrlContext* Context);
 	void UnloadWarehouse(TArray<struct FString> ResourceTypes, struct FClientUrlContext* Context);
@@ -16450,7 +17321,6 @@ public:
 	void StartExpedition(const struct FString& ExpeditionId, const struct FString& SquadId, TArray<struct FString> ItemIds, TArray<int> SlotIndices, struct FClientUrlContext* Context);
 	void SlotItemInCollectionBook(const struct FString& ItemId, struct FClientUrlContext* Context);
 	void SkipTutorial(struct FClientUrlContext* Context);
-	void SetPinnedQuests(TArray<struct FString> PinnedQuestIds, struct FClientUrlContext* Context);
 	void SetMtxPlatform(EFortMtxPlatform NewPlatform, struct FClientUrlContext* Context);
 	void SetModeLoadout(const struct FFortSavedModeLoadout& ModeLoadout, const struct FString& HeroId, const struct FFortSavedModeLoadout& HeroModeLoadout, struct FClientUrlContext* Context);
 	void SetItemFavoriteStatus(const struct FString& TargetItemId, bool bFavorite, struct FClientUrlContext* Context);
@@ -16460,8 +17330,6 @@ public:
 	void SetHeroModeLoadout(const struct FString& HeroId, const struct FFortSavedModeLoadout& ModeLoadout, struct FClientUrlContext* Context);
 	void SetGameplayStats(TArray<struct FFortPersistentGameplayStatValue> GameplayStats, struct FClientUrlContext* Context);
 	void SetDefaultHeroSquad(const struct FString& DefaultHeroSquadId, struct FClientUrlContext* Context);
-	void ServerQuestLogin(const struct FString& MatchmakingSessionId, struct FDedicatedServerUrlContext* Context);
-	void RequestEventFlags(struct FClientUrlContext* Context);
 	void RefreshExpeditions(struct FClientUrlContext* Context);
 	void RecycleItemBatch(TArray<struct FString> TargetItemIds, struct FClientUrlContext* Context);
 	void RecycleItem(const struct FString& TargetItemId, struct FClientUrlContext* Context);
@@ -16469,20 +17337,15 @@ public:
 	void OpenCardPackBatch(TArray<struct FString> CardPackItemIds, struct FClientUrlContext* Context);
 	void OpenCardPack(const struct FString& CardPackItemId, int SelectionIdx, struct FClientUrlContext* Context);
 	void ModifyMission(const struct FString& MatchmakingSessionId, const struct FString& Difficulty, struct FDedicatedServerUrlContext* Context);
-	void MarkNewQuestNotificationSent(TArray<struct FString> ItemIds, struct FClientUrlContext* Context);
-	void MarkItemSeen(TArray<struct FString> ItemIds, struct FClientUrlContext* Context);
 	void IssueFriendCode(const struct FString& CodeTokenType, struct FClientUrlContext* Context);
 	void IncrementNamedCounterStat(const struct FString& CounterName, struct FClientUrlContext* Context);
 	void GetMcpTimeForLogin(struct FClientUrlContext* Context);
-	void FortRerollDailyQuest(const struct FString& QuestId, struct FClientUrlContext* Context);
 	void EquipCharCosmetic(const struct FString& CharacterId, const struct FString& CosmeticId, int TypeId, struct FClientUrlContext* Context);
 	void EndPrimaryMission(TArray<struct FFortQuestObjectiveCompletion> Advance, const struct FString& MatchmakingSessionId, const struct FString& MissionName, const struct FString& MissionStatus, TArray<struct FFortQuestEarnedBadgeData> EarnedBadgeData, int NumMissionPoints, bool bCriticalMatchBonus, struct FDedicatedServerUrlContext* Context);
 	void EarnScore(TArray<struct FAccountIdAndScore> PlayersAndScores, const struct FString& MatchmakingSessionId, struct FDedicatedServerUrlContext* Context);
 	void ConvertItem(const struct FString& TargetItemId, int ConversionIndex, struct FClientUrlContext* Context);
 	void ConsumeItems(TArray<struct FString> ItemsToConsumeIds, TArray<int> ItemCountsToConsume, const struct FString& ConsumeReason, struct FDedicatedServerUrlContext* Context);
 	void CollectExpedition(const struct FString& ExpeditionTemplate, const struct FString& ExpeditionId, struct FClientUrlContext* Context);
-	void ClientQuestLogin(struct FClientUrlContext* Context);
-	void ClaimQuestReward(const struct FString& QuestId, int SelectedRewardIndex, struct FClientUrlContext* Context);
 	void ClaimMissionAlertRewards(struct FClientUrlContext* Context);
 	void ClaimLoginReward(struct FClientUrlContext* Context);
 	void ClaimCollectionBookRewards(int RequiredXp, int SelectedRewardIndex, struct FClientUrlContext* Context);
@@ -16503,7 +17366,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpProfileMetadata");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd613c831);
 		return ptr;
 	}
 
@@ -16515,100 +17379,17 @@ public:
 };
 
 
-// Class FortniteGame.FortPlayerInput
-// 0x0148 (0x04E0 - 0x0398)
-class UFortPlayerInput : public UPlayerInput
-{
-public:
-	struct FString                                     DefaultPresetName;                                        // 0x0398(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	TArray<struct FString>                             FortPlayerInputSettingsNames;                             // 0x03A8(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_Config)
-	unsigned char                                      UnknownData00[0xE0];                                      // 0x03B8(0x00E0) MISSED OFFSET
-	TArray<class UFortPlayerInputSettings*>            AllPlayerInputSettings;                                   // 0x0498(0x0010) (CPF_ZeroConstructor)
-	class UFortPlayerInputSettings*                    DesiredPlayerInputSettings;                               // 0x04A8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x04B0(0x0010) MISSED OFFSET
-	TArray<struct FText>                               InputActionTypeFriendlyNames;                             // 0x04C0(0x0010) (CPF_ZeroConstructor, CPF_Config)
-	TArray<struct FFortInputActionGroupContext>        InputActionGroupContexts;                                 // 0x04D0(0x0010) (CPF_ZeroConstructor, CPF_Config)
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerInput");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortClientSettingsRecord
-// 0x01F0 (0x02C0 - 0x00D0)
-class UFortClientSettingsRecord : public UFortGenericRecord
-{
-public:
-	unsigned char                                      UnknownData00[0x4];                                       // 0x00D0(0x0004) MISSED OFFSET
-	struct FVector2D                                   GamepadLookSensitivity;                                   // 0x00D4(0x0008) (CPF_IsPlainOldData)
-	float                                              TargetingMultiplier;                                      // 0x00DC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              ScopedMultiplier;                                         // 0x00E0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x00E4(0x0004) MISSED OFFSET
-	struct FString                                     ControllerPlatform;                                       // 0x00E8(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     InputPresetNameForCampaign;                               // 0x00F8(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     InputPresetNameForAthena;                                 // 0x0108(0x0010) (CPF_ZeroConstructor)
-	float                                              XboxSafeZone;                                             // 0x0118(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x4];                                       // 0x011C(0x0004) MISSED OFFSET
-	struct FString                                     PendingCulture;                                           // 0x0120(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	TArray<struct FFortActionKeyMapping>               UserActionBindings;                                       // 0x0130(0x0010) (CPF_ZeroConstructor)
-	TArray<struct FFortActionKeyMapping>               DisabledActionBindings;                                   // 0x0140(0x0010) (CPF_ZeroConstructor)
-	bool                                               bInvertedLook;                                            // 0x0150(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bToggleSprint;                                            // 0x0151(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bSprintCancelsReload;                                     // 0x0152(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bTapInteractEnabled;                                      // 0x0153(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bAutoEquipBetterItems;                                    // 0x0154(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bForceFeedbackEnabled;                                    // 0x0155(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bUseFirstPersonCamera;                                    // 0x0156(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bUseGamepadAimAssist;                                     // 0x0157(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bUseGamepadEditModeAimAssist;                             // 0x0158(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bFocusOnFirstBuildingPieceWhenQuickbarSwapped;            // 0x0159(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bNewFocusOnFirstBuildingPieceWhenQuickbarSwapped;         // 0x015A(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x5];                                       // 0x015B(0x0005) MISSED OFFSET
-	TMap<struct FGameplayTag, bool>                    UserHUDVisibiltyMappings;                                 // 0x0160(0x0050) (CPF_ZeroConstructor)
-	EPartyType                                         LastPartyType;                                            // 0x01B0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bLastLeaderInvitesOnly;                                   // 0x01B1(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bLastLeaderFriendsOnly;                                   // 0x01B2(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x1];                                       // 0x01B3(0x0001) MISSED OFFSET
-	float                                              MusicVolume;                                              // 0x01B4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              SoundFXVolume;                                            // 0x01B8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              DialogVolume;                                             // 0x01BC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              ChatVolume;                                               // 0x01C0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bEnableSubtitles;                                         // 0x01C4(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bEnableVoiceChat;                                         // 0x01C5(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bEnableVoiceChatPTT;                                      // 0x01C6(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bShowHeroHeadAccessories;                                 // 0x01C7(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bShowHeroBackpack;                                        // 0x01C8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x3];                                       // 0x01C9(0x0003) MISSED OFFSET
-	float                                              InitialGammaValue;                                        // 0x01CC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FString                                     SelectedRegionId;                                         // 0x01D0(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     LastKnownBestRegionId;                                    // 0x01E0(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      bSaveToCloud : 1;                                         // 0x01F0(0x0001) (CPF_Transient)
-	unsigned char                                      bCloudIsBusy : 1;                                         // 0x01F0(0x0001) (CPF_Transient)
-	unsigned char                                      UnknownData06[0xCF];                                      // 0x01F1(0x00CF) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortClientSettingsRecord");
-		return ptr;
-	}
-
-};
-
-
 // Class FortniteGame.FortPlayerControllerGameplay
-// 0x0090 (0x24D0 - 0x2440)
+// 0x0090 (0x2390 - 0x2300)
 class AFortPlayerControllerGameplay : public AFortPlayerController
 {
 public:
-	unsigned char                                      UnknownData00[0x90];                                      // 0x2440(0x0090) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x90];                                      // 0x2300(0x0090) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerGameplay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaccab612);
 		return ptr;
 	}
 
@@ -16621,23 +17402,26 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerZone
-// 0x0490 (0x2960 - 0x24D0)
+// 0x04A0 (0x2830 - 0x2390)
 class AFortPlayerControllerZone : public AFortPlayerControllerGameplay
 {
 public:
-	bool                                               bDontChangeReticleColorForEnemy;                          // 0x24D0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x24D1(0x0007) MISSED OFFSET
-	class UInputComponent*                             DeathInputComponent;                                      // 0x24D8(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	struct FFortPlayerDeathReport                      PlayerDeathReport;                                        // 0x24E0(0x0050) (CPF_Transient)
-	bool                                               bEnterCameraModeOnDeath;                                  // 0x2530(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x38F];                                     // 0x2531(0x038F) MISSED OFFSET
-	TScriptInterface<class UFortHUDTargetUnderReticleInterface> HUDTargetUnderReticle;                                    // 0x28C0(0x0010) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TArray<struct FUniqueNetIdRepl>                    RejoinablePartyMembers;                                   // 0x28D0(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData02[0x80];                                      // 0x28E0(0x0080) MISSED OFFSET
+	bool                                               bDontChangeReticleColorForEnemy;                          // 0x2390(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x2391(0x0007) MISSED OFFSET
+	class UInputComponent*                             DeathInputComponent;                                      // 0x2398(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	struct FFortPlayerDeathReport                      PlayerDeathReport;                                        // 0x23A0(0x0050) (CPF_Transient)
+	bool                                               bEnterCameraModeOnDeath;                                  // 0x23F0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x38F];                                     // 0x23F1(0x038F) MISSED OFFSET
+	TScriptInterface<class UFortHUDTargetUnderReticleInterface> HUDTargetUnderReticle;                                    // 0x2780(0x0010) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TArray<struct FUniqueNetIdRepl>                    RejoinablePartyMembers;                                   // 0x2790(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData02[0x10];                                      // 0x27A0(0x0010) MISSED OFFSET
+	float                                              LastScoreEarnedTime;                                      // 0x27B0(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x7C];                                      // 0x27B4(0x007C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d498e48);
 		return ptr;
 	}
 
@@ -16658,14 +17442,15 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerPvP
-// 0x0000 (0x2960 - 0x2960)
+// 0x0000 (0x2830 - 0x2830)
 class AFortPlayerControllerPvP : public AFortPlayerControllerZone
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerPvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x97f45cbc);
 		return ptr;
 	}
 
@@ -16676,58 +17461,230 @@ public:
 };
 
 
-// Class FortniteGame.FortPlayerControllerAthena
-// 0x0930 (0x3290 - 0x2960)
-class AFortPlayerControllerAthena : public AFortPlayerControllerPvP
+// Class FortniteGame.FortQuestItemDefinition
+// 0x01A0 (0x0440 - 0x02A0)
+class UFortQuestItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	TArray<class UFortHeroType*>                       DefaultHeroes;                                            // 0x2960(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	struct FScriptMulticastDelegate                    OnAircraftStateChange;                                    // 0x2970(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FString                                     VoiceChatPlayerName;                                      // 0x2980(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	struct FString                                     VoiceChatChannel;                                         // 0x2990(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	int                                                VoiceChatJoinFailCount;                                   // 0x29A0(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x14];                                      // 0x29A4(0x0014) MISSED OFFSET
-	int                                                VoiceChatReconnectCount;                                  // 0x29B8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x29BC(0x0004) MISSED OFFSET
-	class USoundMix*                                   AthenaSoundMix;                                           // 0x29C0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class USoundBase*                                  AudioOnExitAircraft;                                      // 0x29C8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              EmoteCooldown;                                            // 0x29D0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LastEmoteTime;                                            // 0x29D4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EFortGliderType                                    GliderType;                                               // 0x29D8(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bMarkedAlive;                                             // 0x29D9(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x16];                                      // 0x29DA(0x0016) MISSED OFFSET
-	TArray<struct FSettingsHUDVisibilityAndText>       HUDVisibilityGameplayTags;                                // 0x29F0(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData03[0x150];                                     // 0x2A00(0x0150) MISSED OFFSET
-	TAssetPtr<class UFortGamepadSettings>              GamepadSettingsAssetPtr;                                  // 0x2B50(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FVector                                     MapCursor;                                                // 0x2B70(0x000C) (CPF_IsPlainOldData)
-	float                                              MapCursorSpeed;                                           // 0x2B7C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              MapCursorSpeedGamepad;                                    // 0x2B80(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3FC];                                     // 0x2B84(0x03FC) MISSED OFFSET
-	TArray<class AFortPlayerStateAthena*>              TeamMembers;                                              // 0x2F80(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	struct FLinearColor                                TeamMemberIndicatorColor;                                 // 0x2F90(0x0010) (CPF_BlueprintVisible, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x70];                                      // 0x2FA0(0x0070) MISSED OFFSET
-	bool                                               bRevertPlayerListenerChange;                              // 0x3010(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x3F];                                      // 0x3011(0x003F) MISSED OFFSET
-	class UFortHero*                                   StrongMyHero;                                             // 0x3050(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              VoiceChatUpdateLimiter;                                   // 0x3058(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x4];                                       // 0x305C(0x0004) MISSED OFFSET
-	class AFortPlayerStartWarmup*                      WarmupPlayerStart;                                        // 0x3060(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UInputComponent*                             AircraftInputComponent;                                   // 0x3068(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UInputComponent*                             FullScreenMapInputComponent;                              // 0x3070(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x1F0];                                     // 0x3078(0x01F0) MISSED OFFSET
-	class APawn*                                       PlayerToSpectateOnDeath;                                  // 0x3268(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x8];                                       // 0x3270(0x0008) MISSED OFFSET
-	unsigned char                                      ViewTargetHealth;                                         // 0x3278(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      ViewTargetShield;                                         // 0x3279(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               ViewTargetDBNO;                                           // 0x327A(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData10[0x1];                                       // 0x327B(0x0001) MISSED OFFSET
-	float                                              MovementCancellableActionLeashLength;                     // 0x327C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FVector                                     MovementCancellableActionLeashLocation;                   // 0x3280(0x000C) (CPF_IsPlainOldData)
-	unsigned char                                      UnknownData11[0x4];                                       // 0x328C(0x0004) MISSED OFFSET
+	EFortQuestType                                     QuestType;                                                // 0x02A0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x02A1(0x0003) MISSED OFFSET
+	int                                                ExpirationDuration;                                       // 0x02A4(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	TArray<struct FFortItemQuantityPair>               Rewards;                                                  // 0x02A8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TArray<struct FFortHiddenRewardQuantityPair>       HiddenRewards;                                            // 0x02B8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	TArray<struct FFortMcpQuestRewardInfo>             SelectableRewards;                                        // 0x02C8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	EFortQuestRewardType                               RewardType;                                               // 0x02D8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x02D9(0x0007) MISSED OFFSET
+	TArray<struct FFortMcpQuestObjectiveInfo>          Objectives;                                               // 0x02E0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FGameplayTagContainer                       Prerequisites;                                            // 0x02F0(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortQuestItemDefinition>          PrerequisiteQuest;                                        // 0x0310(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FDataTableRowHandle                         PrerequisiteObjective;                                    // 0x0330(0x0010) (CPF_Edit)
+	float                                              Weight;                                                   // 0x0340(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	uint16_t                                           GranterWindowPeriodMinutes;                               // 0x0344(0x0002) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	uint16_t                                           GranterCooldownPeriodSeconds;                             // 0x0346(0x0002) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               IsStreamingRequired;                                      // 0x0348(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0349(0x0007) MISSED OFFSET
+	struct FDataTableRowHandle                         Category;                                                 // 0x0350(0x0010) (CPF_Edit)
+	TAssetPtr<class UFortConversation>                 IntroConversation;                                        // 0x0360(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortConversation>                 SelectRewardsConversation;                                // 0x0380(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortConversation>                 ClaimConversation;                                        // 0x03A0(0x0020) (CPF_Edit)
+	struct FText                                       RewardHeaderText;                                         // 0x03C0(0x0018) (CPF_Edit)
+	struct FText                                       RewardDescription;                                        // 0x03D8(0x0018) (CPF_Edit)
+	struct FText                                       CompletionText;                                           // 0x03F0(0x0018) (CPF_Edit)
+	bool                                               bExpandsStormShield;                                      // 0x0408(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bHidden;                                                  // 0x0409(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bAutoLaunch;                                              // 0x040A(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bDeprecated;                                              // 0x040B(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x040C(0x0004) MISSED OFFSET
+	TArray<struct FFortQuestMissionCreationContext>    MissionCreationContexts;                                  // 0x0410(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FFortMissionConfigDataParams                MissionConfigMetadata;                                    // 0x0420(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
+	bool                                               bDisableBackendConditionEvaluation;                       // 0x0430(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x3];                                       // 0x0431(0x0003) MISSED OFFSET
+	uint32_t                                           ClaimPriority;                                            // 0x0434(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	bool                                               bAllowTileMatching;                                       // 0x0438(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	bool                                               bAllowMissionAlertMatchesBypassingTileRequirements;       // 0x0439(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x6];                                       // 0x043A(0x0006) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbae707a3);
+		return ptr;
+	}
+
+
+	bool ShouldAutoLaunch();
+	bool IsHidden();
+	bool IsDeprecated();
+	float GetWeight();
+	class UFortConversation* GetSelectRewardsConversation();
+	TArray<struct FFortMcpQuestRewardInfo> GetSelectableRewards_BP();
+	EFortQuestRewardType GetRewardType();
+	TArray<struct FFortItemQuantityPair> GetRewards_BP();
+	struct FFortRewardInfo GetRewardInfo_BP();
+	struct FText GetRewardHeaderText();
+	struct FText GetRewardDescription();
+	EFortQuestType GetQuestType();
+	class UFortQuestItemDefinition* GetPrerequisiteQuest();
+	struct FDataTableRowHandle GetPrerequisiteObjective();
+	TArray<struct FFortMcpQuestObjectiveInfo> GetObjectives_BP();
+	class UFortConversation* GetIntroConversation();
+	TArray<struct FFortHiddenRewardQuantityPair> GetHiddenRewards_BP();
+	struct FText GetCompletionText();
+	class UFortConversation* GetClaimConversation();
+	struct FDataTableRowHandle GetCategory();
+	bool ExpandsStormShield();
+	bool AllowsTileMatching();
+};
+
+
+// Class FortniteGame.FortQuestCategory
+// 0x0060 (0x0088 - 0x0028)
+class UFortQuestCategory : public UObject
+{
+public:
+	struct FText                                       Name;                                                     // 0x0028(0x0018) (CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TArray<class UFortQuestItem*>                      CurrentQuests;                                            // 0x0040(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	bool                                               bExpanded;                                                // 0x0050(0x0001) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
+	struct FFortCategoryTableRow                       CategoryInfo;                                             // 0x0058(0x0028)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0080(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3879eb91);
+		return ptr;
+	}
+
+
+	bool HasUnseenQuests();
+};
+
+
+// Class FortniteGame.FortQuestManager
+// 0x0298 (0x02C0 - 0x0028)
+class UFortQuestManager : public UObject
+{
+public:
+	struct FScriptMulticastDelegate                    OnQuestsUpdated;                                          // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnQuestsCompleted;                                        // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnQuestsGranted;                                          // 0x0048(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnQuestRewardClaimed;                                     // 0x0058(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnQuestSeen;                                              // 0x0068(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnNoQuestRewardsToClaim;                                  // 0x0078(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnPinnedQuestsChanged;                                    // 0x0088(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnDailyQuestRerolled;                                     // 0x0098(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnDisplayDynamicQuestUpdate;                              // 0x00A8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnActiveEventFlagsChanged;                                // 0x00B8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	TArray<class UFortQuestItem*>                      CurrentQuests;                                            // 0x00C8(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	TMap<struct FName, class UFortQuestCategory*>      CurrentCategorizedQuestsMap;                              // 0x00D8(0x0050) (CPF_ZeroConstructor)
+	TArray<struct FFortQuestObjectiveCompletion>       PendingChanges;                                           // 0x0128(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData00[0x88];                                      // 0x0138(0x0088) MISSED OFFSET
+	TArray<struct FString>                             ActiveEventFlags;                                         // 0x01C0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	TWeakObjectPtr<class UFortMcpProfileQuest>         BoundProfile;                                             // 0x01D0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0xE8];                                      // 0x01D8(0x00E8) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13f9afba);
+		return ptr;
+	}
+
+
+	bool SetQuestPinned(class UFortQuestItem* Quest, bool bEnabled);
+	void SendCustomStatEvent(const struct FDataTableRowHandle& ObjectiveStat, int Count, bool bForceFlush);
+	void RerollDailyQuest(class UFortQuestItem* QuestToDiscard);
+	void MarkQuestsSeen(bool bOnlyMarkPendingSeenQuests);
+	void MarkQuestSeen(class UFortQuestItem* Quest);
+	bool IsQuestInProgress(class UFortQuestItemDefinition* Definition);
+	bool IsObjectiveWithNameInProgress(class UFortQuestItemDefinition* Definition, const struct FName& BackendName);
+	bool IsObjectiveInProgress(class UFortQuestItemDefinition* Definition, const struct FDataTableRowHandle& ObjectiveStatHandle);
+	bool IsMainQuest(class UFortQuestItem* Quest);
+	bool IsEventFlagActive(const struct FString& QueriedEventFlagName);
+	bool HasUnseenQuests();
+	bool HasUnsavedPrimaryMissionProgress();
+	bool HasQuestBeenSeenLocally(class UFortQuestItem* Quest);
+	bool HasCompletedQuest(class UFortQuestItemDefinition* Definition);
+	bool HasCompletedObjectiveWithName(class UFortQuestItemDefinition* Definition, const struct FName& BackendName);
+	bool HasCompletedObjective(class UFortQuestItemDefinition* Definition, const struct FDataTableRowHandle& ObjectiveStatHandle);
+	void GrantFirstDailyQuest();
+	void GetSourceAndContextTags(struct FGameplayTagContainer* OutSourceTags, struct FGameplayTagContainer* OutContextTags);
+	int GetRemainingDailyQuestRerolls();
+	class UFortQuestItem* GetQuestWithDefinition(class UFortQuestItemDefinition* Definition);
+	class UFortQuestCategory* GetQuestCategory(class UFortQuestItem* QuestItem);
+	void GetPinnedQuests(TArray<class UFortQuestItem*>* OutPinnedQuestItems);
+	class UFortQuestItem* GetNextUnseenQuest(EFortQuestType QuestType);
+	class UFortQuestItem* GetMainQuest();
+	void GetCurrentQuestsCategories(TArray<class UFortQuestCategory*>* Categories);
+	void GetCurrentQuests(TArray<class UFortQuestItem*>* OutCurrentQuests);
+	void GetCompletedQuests(TArray<class UFortQuestItem*>* OutCompletedQuests);
+	class UFortQuestItem* GetBroadcasterQuestWithOpenWindow();
+	void ForceTriggerQuestsUpdated();
+	void ClaimSelectedQuestReward(class UFortQuestItem* Quest, int RewardIndex);
+	void ClaimQuestReward(class UFortQuestItem* Quest);
+	void ClaimNextCompletedQuestReward(EFortQuestType QuestType);
+};
+
+
+// Class FortniteGame.FortPlayerControllerAthena
+// 0x09C0 (0x31F0 - 0x2830)
+class AFortPlayerControllerAthena : public AFortPlayerControllerPvP
+{
+public:
+	TArray<class UFortHeroType*>                       DefaultHeroes;                                            // 0x2830(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FScriptMulticastDelegate                    OnAircraftStateChange;                                    // 0x2840(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FString                                     VoiceChatPlayerName;                                      // 0x2850(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	struct FString                                     VoiceChatChannel;                                         // 0x2860(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	int                                                VoiceChatJoinFailCount;                                   // 0x2870(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x14];                                      // 0x2874(0x0014) MISSED OFFSET
+	int                                                VoiceChatReconnectCount;                                  // 0x2888(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x288C(0x0004) MISSED OFFSET
+	struct FString                                     HighlightGroupId;                                         // 0x2890(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	float                                              HighlightLastKillTime;                                    // 0x28A0(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              HighlightKillMultiple;                                    // 0x28A4(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              HighlightKillCooldown;                                    // 0x28A8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x14];                                      // 0x28AC(0x0014) MISSED OFFSET
+	class USoundMix*                                   AthenaSoundMix;                                           // 0x28C0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USoundBase*                                  AudioOnExitAircraft;                                      // 0x28C8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              EmoteCooldown;                                            // 0x28D0(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              LastEmoteTime;                                            // 0x28D4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FFortAthenaLoadout                          CustomizationLoadout;                                     // 0x28D8(0x0068) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	bool                                               bMarkedAlive;                                             // 0x2940(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0xF];                                       // 0x2941(0x000F) MISSED OFFSET
+	TArray<struct FSettingsHUDVisibilityAndText>       HUDVisibilityGameplayTags;                                // 0x2950(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData04[0x150];                                     // 0x2960(0x0150) MISSED OFFSET
+	TAssetPtr<class UFortGamepadSettings>              GamepadSettingsAssetPtr;                                  // 0x2AB0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FVector                                     MapCursor;                                                // 0x2AD0(0x000C) (CPF_IsPlainOldData)
+	float                                              MapCursorSpeed;                                           // 0x2ADC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              MapCursorSpeedGamepad;                                    // 0x2AE0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x3FC];                                     // 0x2AE4(0x03FC) MISSED OFFSET
+	TArray<class AFortPlayerStateAthena*>              TeamMembers;                                              // 0x2EE0(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	struct FLinearColor                                TeamMemberIndicatorColor;                                 // 0x2EF0(0x0010) (CPF_BlueprintVisible, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x70];                                      // 0x2F00(0x0070) MISSED OFFSET
+	bool                                               bRevertPlayerListenerChange;                              // 0x2F70(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x3F];                                      // 0x2F71(0x003F) MISSED OFFSET
+	class UFortHero*                                   StrongMyHero;                                             // 0x2FB0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              VoiceChatUpdateLimiter;                                   // 0x2FB8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x4];                                       // 0x2FBC(0x0004) MISSED OFFSET
+	class AFortPlayerStartWarmup*                      WarmupPlayerStart;                                        // 0x2FC0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UInputComponent*                             AircraftInputComponent;                                   // 0x2FC8(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UInputComponent*                             FullScreenMapInputComponent;                              // 0x2FD0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData09[0x1F0];                                     // 0x2FD8(0x01F0) MISSED OFFSET
+	class APawn*                                       PlayerToSpectateOnDeath;                                  // 0x31C8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData10[0x8];                                       // 0x31D0(0x0008) MISSED OFFSET
+	unsigned char                                      ViewTargetHealth;                                         // 0x31D8(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      ViewTargetShield;                                         // 0x31D9(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ViewTargetDBNO;                                           // 0x31DA(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData11[0x1];                                       // 0x31DB(0x0001) MISSED OFFSET
+	float                                              MovementCancellableActionLeashLength;                     // 0x31DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FVector                                     MovementCancellableActionLeashLocation;                   // 0x31E0(0x000C) (CPF_IsPlainOldData)
+	unsigned char                                      UnknownData12[0x4];                                       // 0x31EC(0x0004) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbf0c17f);
 		return ptr;
 	}
 
@@ -16735,8 +17692,10 @@ public:
 	void VoiceChatReconnected();
 	void VoiceChatChannelJoinFailed();
 	void UpdateRichPresenceTimer();
+	void StopRecordingHighlights();
 	void SpectateOnDeath();
 	void SpawnCar(const struct FString& Command);
+	void ShowHighlightSummary();
 	void ServerVoiceChatRejoinChannel();
 	void ServerVoiceChatReconnected();
 	void ServerRemoveMapCursor();
@@ -16751,6 +17710,7 @@ public:
 	void OnRep_ViewTargetHealth();
 	void OnRep_ViewTargetDBNO();
 	bool IsInAircraft();
+	void HighlightNumberReturned(int NumHighlights);
 	void GetTeamTalking(TArray<bool>* TalkingStates);
 	void GetTeamReviving(TArray<bool>* RevivingStates);
 	void GetTeamMuted(TArray<bool>* MutedStates);
@@ -16767,12 +17727,11 @@ public:
 	void FullscreenMapCursorHorizontal(float Value);
 	void FollowNextTeammate();
 	void DumpTeamMemberState();
-	void CycleHeroForward();
-	void CycleHeroBackward();
 	void ClientVoiceChatLogin(const struct FString& InVoiceChatPlayerName, const struct FString& LoginToken);
 	void ClientVoiceChatChannelJoin(const struct FString& InVoiceChatPlayerName, const struct FString& InVoiceChatChannel, const struct FString& JoinToken);
 	void ClientUnreliableSendMessage(const struct FText& MESSAGE);
 	void ClientStreamOutBuildingFoundation(class ABuildingFoundation* FoundationActor);
+	void ClientSendEndBattleRoyaleMatchForPlayer(bool bSuccess, const struct FAthenaRewardResult& Result);
 	void ClientNotifyWon();
 	void ClientNotifyTeamWon();
 	void ClientBotStopDogpile();
@@ -16781,51 +17740,50 @@ public:
 
 
 // Class FortniteGame.FortGameModeAthena
-// 0x02E0 (0x0B70 - 0x0890)
+// 0x0290 (0x0B30 - 0x08A0)
 class AFortGameModeAthena : public AFortGamePvPBase
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0890(0x0008) MISSED OFFSET
-	bool                                               bAlwaysDBNO;                                              // 0x0898(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bDisableVoiceChat;                                        // 0x0899(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bSquadPlay;                                               // 0x089A(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x1];                                       // 0x089B(0x0001) MISSED OFFSET
-	float                                              OverloadedInitialConnectTimeout;                          // 0x089C(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	float                                              FailedMatchAssignmentTimeout;                             // 0x08A0(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2C];                                      // 0x08A4(0x002C) MISSED OFFSET
-	struct FTimerHandle                                SupplyDropTimerHandle;                                    // 0x08D0(0x0008)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x08D8(0x0008) MISSED OFFSET
-	int                                                MaxPlayerCount;                                           // 0x08E0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x4];                                       // 0x08E4(0x0004) MISSED OFFSET
-	TArray<class AFortPlayerControllerAthena*>         AlivePlayers;                                             // 0x08E8(0x0010) (CPF_ZeroConstructor)
-	int                                                TeamAlivePlayers[0x64];                                   // 0x08F8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x4];                                       // 0x0A88(0x0004) MISSED OFFSET
-	int                                                WarmupRequiredPlayerCount;                                // 0x0A8C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              WarmupCountdownDuration;                                  // 0x0A90(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_Config, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x4];                                       // 0x0A94(0x0004) MISSED OFFSET
-	float                                              WarmupEarlyCountdownDuration;                             // 0x0A98(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_Config, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               bSafeZoneActive;                                          // 0x0A9C(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bSafeZonePaused;                                          // 0x0A9D(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x2];                                       // 0x0A9E(0x0002) MISSED OFFSET
-	class UClass*                                      GE_OutsideSafeZone;                                       // 0x0AA0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class UClass*                                      SafeZoneIndicatorClass;                                   // 0x0AA8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                SafeZonePhase;                                            // 0x0AB0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData08[0x4];                                       // 0x0AB4(0x0004) MISSED OFFSET
-	class AFortSafeZoneIndicator*                      SafeZoneIndicator;                                        // 0x0AB8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<struct FVector>                             SafeZoneLocations;                                        // 0x0AC0(0x0010) (CPF_ZeroConstructor)
-	class UFortServerBehaviorTrackerAthena*            BehaviorTracker;                                          // 0x0AD0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              EndGameKickPlayersDelay;                                  // 0x0AD8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x4];                                       // 0x0ADC(0x0004) MISSED OFFSET
-	struct FString                                     VoiceChatChannelPositional;                               // 0x0AE0(0x0010) (CPF_ZeroConstructor)
-	struct FString                                     VoiceChatChannelPrefix;                                   // 0x0AF0(0x0010) (CPF_ZeroConstructor)
-	TMap<struct FUniqueNetIdRepl, struct FString>      WinningPlayersMap;                                        // 0x0B00(0x0050) (CPF_ZeroConstructor)
-	bool                                               bAllowSpectateAfterDeath;                                 // 0x0B50(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	bool                                               bUseRandomTimeOfDay;                                      // 0x0B51(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData10[0x1E];                                      // 0x0B52(0x001E) MISSED OFFSET
+	bool                                               bAlwaysDBNO;                                              // 0x08A0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bDisableVoiceChat;                                        // 0x08A1(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	bool                                               bSquadPlay;                                               // 0x08A2(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bDisableGCOnServerDuringMatch;                            // 0x08A3(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	float                                              OverloadedInitialConnectTimeout;                          // 0x08A4(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	float                                              FailedMatchAssignmentTimeout;                             // 0x08A8(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2C];                                      // 0x08AC(0x002C) MISSED OFFSET
+	struct FTimerHandle                                SupplyDropTimerHandle;                                    // 0x08D8(0x0008)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x08E0(0x0008) MISSED OFFSET
+	int                                                MaxPlayerCount;                                           // 0x08E8(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x08EC(0x0004) MISSED OFFSET
+	TArray<class AFortPlayerControllerAthena*>         AlivePlayers;                                             // 0x08F0(0x0010) (CPF_ZeroConstructor)
+	int                                                TeamAlivePlayers[0x64];                                   // 0x0900(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x0A90(0x0004) MISSED OFFSET
+	int                                                WarmupRequiredPlayerCount;                                // 0x0A94(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              WarmupCountdownDuration;                                  // 0x0A98(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_Config, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x4];                                       // 0x0A9C(0x0004) MISSED OFFSET
+	float                                              WarmupEarlyCountdownDuration;                             // 0x0AA0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_Config, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	bool                                               bSafeZoneActive;                                          // 0x0AA4(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bSafeZonePaused;                                          // 0x0AA5(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData05[0x2];                                       // 0x0AA6(0x0002) MISSED OFFSET
+	class UClass*                                      GE_OutsideSafeZone;                                       // 0x0AA8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UClass*                                      SafeZoneIndicatorClass;                                   // 0x0AB0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                SafeZonePhase;                                            // 0x0AB8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x4];                                       // 0x0ABC(0x0004) MISSED OFFSET
+	class AFortSafeZoneIndicator*                      SafeZoneIndicator;                                        // 0x0AC0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FVector>                             SafeZoneLocations;                                        // 0x0AC8(0x0010) (CPF_ZeroConstructor)
+	class UFortServerBehaviorTrackerAthena*            BehaviorTracker;                                          // 0x0AD8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              EndGameKickPlayersDelay;                                  // 0x0AE0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x4];                                       // 0x0AE4(0x0004) MISSED OFFSET
+	struct FString                                     VoiceChatChannelPositional;                               // 0x0AE8(0x0010) (CPF_ZeroConstructor)
+	struct FString                                     VoiceChatChannelPrefix;                                   // 0x0AF8(0x0010) (CPF_ZeroConstructor)
+	bool                                               bAllowSpectateAfterDeath;                                 // 0x0B08(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	bool                                               bUseRandomTimeOfDay;                                      // 0x0B09(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x26];                                      // 0x0B0A(0x0026) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameModeAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5c71efa3);
 		return ptr;
 	}
 
@@ -16840,17 +17798,44 @@ public:
 
 
 // Class FortniteGame.FortGamePvPBaseDestruction
-// 0x0000 (0x0890 - 0x0890)
+// 0x0000 (0x08A0 - 0x08A0)
 class AFortGamePvPBaseDestruction : public AFortGamePvPBase
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGamePvPBaseDestruction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8aed0270);
 		return ptr;
 	}
 
+};
+
+
+// Class FortniteGame.FortLoadingMode
+// 0x00B0 (0x0840 - 0x0790)
+class AFortLoadingMode : public AFortGameMode
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0790(0x0008) MISSED OFFSET
+	TArray<int>                                        RequiredChunkIds;                                         // 0x0798(0x0010) (CPF_ZeroConstructor, CPF_Config)
+	bool                                               bAssumeAllDataPresent;                                    // 0x07A8(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x07A9(0x0003) MISSED OFFSET
+	float                                              DownloadTimeoutSeconds;                                   // 0x07AC(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	class UFortDownloadingScreen*                      DownloadScreen;                                           // 0x07B0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x88];                                      // 0x07B8(0x0088) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa2f706e2);
+		return ptr;
+	}
+
+
+	void SetDownloadScreen(class UFortDownloadingScreen* InScreen);
+	void DownloadMainContent();
 };
 
 
@@ -16864,7 +17849,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_Action");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x299eccc6);
 		return ptr;
 	}
 
@@ -16883,7 +17869,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_AIPortal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3fa4524c);
 		return ptr;
 	}
 
@@ -16904,7 +17891,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_Crouch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5633e96a);
 		return ptr;
 	}
 
@@ -16919,7 +17907,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_Jump");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b6ca24c);
 		return ptr;
 	}
 
@@ -16934,7 +17923,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_Sprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb696a4f4);
 		return ptr;
 	}
 
@@ -16956,7 +17946,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_AITurnTransition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x716bd4be);
 		return ptr;
 	}
 
@@ -16966,19 +17957,22 @@ public:
 
 
 // Class FortniteGame.FortGameplayAbility_CeilingFallingTrap
-// 0x0030 (0x0A70 - 0x0A40)
+// 0x0050 (0x0A90 - 0x0A40)
 class UFortGameplayAbility_CeilingFallingTrap : public UFortGameplayAbility
 {
 public:
 	class UClass*                                      TrapProjectileClass;                                      // 0x0A40(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      TargetGameplayEffectTemplate;                             // 0x0A48(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      TrapCostClass;                                            // 0x0A48(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FGameplayTag                                ActivateTrapTag;                                          // 0x0A50(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
 	struct FGameplayTag                                DelayBeginTag;                                            // 0x0A58(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0A60(0x0010) MISSED OFFSET
+	struct FGameplayTag                                ReloadBeginTag;                                           // 0x0A60(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	float                                              ProjectileSpawnDelay;                                     // 0x0A68(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x24];                                      // 0x0A6C(0x0024) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_CeilingFallingTrap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x788947d3);
 		return ptr;
 	}
 
@@ -16993,7 +17987,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_Land");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x761830a7);
 		return ptr;
 	}
 
@@ -17010,7 +18005,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_PlayConversation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2cf217b);
 		return ptr;
 	}
 
@@ -17030,7 +18026,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_RangedWeapon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c5fa1a1);
 		return ptr;
 	}
 
@@ -17047,7 +18044,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbility_Reload");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6d30827);
 		return ptr;
 	}
 
@@ -17062,7 +18060,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayCueManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdafb278f);
 		return ptr;
 	}
 
@@ -17092,7 +18091,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayCueNotify_Looping");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3af3fe82);
 		return ptr;
 	}
 
@@ -17121,7 +18121,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayCueNotify_Simple");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f0b9562);
 		return ptr;
 	}
 
@@ -17138,7 +18139,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAreaOfEffectCloud");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb66d0871);
 		return ptr;
 	}
 
@@ -17154,7 +18156,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortProjectile_MOBATurret");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfe5a555e);
 		return ptr;
 	}
 
@@ -17174,13 +18177,30 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortProjectileAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9cc11ded);
 		return ptr;
 	}
 
 
 	void ServerNotifyPawnHit(const struct FHitResult& Hit);
 	void OnRep_FireStart();
+};
+
+
+// Class FortniteGame.FortProjectileFallingTrap
+// 0x0000 (0x0800 - 0x0800)
+class AFortProjectileFallingTrap : public AFortProjectileBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xedbe3f3c);
+		return ptr;
+	}
+
 };
 
 
@@ -17192,7 +18212,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayEffectExecutionCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9471fff);
 		return ptr;
 	}
 
@@ -17207,7 +18228,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortActiveDurationExecutionCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f97732e);
 		return ptr;
 	}
 
@@ -17223,7 +18245,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDamageFormulaExecutionCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc54e16d9);
 		return ptr;
 	}
 
@@ -17238,7 +18261,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHealing");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x937213e1);
 		return ptr;
 	}
 
@@ -17256,7 +18280,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayEffectUIData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc66ba600);
 		return ptr;
 	}
 
@@ -17271,7 +18296,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x495adb86);
 		return ptr;
 	}
 
@@ -17287,7 +18313,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromFortitudeModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20504127);
 		return ptr;
 	}
 
@@ -17303,7 +18330,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromOffenseModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc253f65);
 		return ptr;
 	}
 
@@ -17319,7 +18347,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromResistanceModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9bb1f69a);
 		return ptr;
 	}
 
@@ -17335,7 +18364,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromTeamFortitudeModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7cb164e0);
 		return ptr;
 	}
 
@@ -17351,7 +18381,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromTeamOffenseModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18847756);
 		return ptr;
 	}
 
@@ -17367,7 +18398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromTeamResistanceModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x54acb28f);
 		return ptr;
 	}
 
@@ -17383,7 +18415,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromTeamTechModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x450e0df2);
 		return ptr;
 	}
 
@@ -17399,7 +18432,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FromTechModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x90d51a63);
 		return ptr;
 	}
 
@@ -17417,7 +18451,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.PlayerTrapBonusModMagnitudeCalculation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d5c7726);
 		return ptr;
 	}
 
@@ -17434,7 +18469,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayMutator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18db0f11);
 		return ptr;
 	}
 
@@ -17453,7 +18489,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayMutator_AILevelVariance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5913a811);
 		return ptr;
 	}
 
@@ -17470,7 +18507,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayTagVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5505fb29);
 		return ptr;
 	}
 
@@ -17496,7 +18534,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameSession");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7678762d);
 		return ptr;
 	}
 
@@ -17527,10 +18566,29 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameSessionDedicated");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd5dccd84);
 		return ptr;
 	}
 
+};
+
+
+// Class FortniteGame.FortGameStateChunkDownloader
+// 0x0000 (0x0840 - 0x0840)
+class AFortGameStateChunkDownloader : public AFortGameState
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x53c069ac);
+		return ptr;
+	}
+
+
+	void OnRep_TimeOfDayManager();
 };
 
 
@@ -17542,7 +18600,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateFrontEnd");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1027f9a);
 		return ptr;
 	}
 
@@ -17550,7 +18609,7 @@ public:
 
 
 // Class FortniteGame.FortGameStateZone
-// 0x09D0 (0x1210 - 0x0840)
+// 0x09E0 (0x1220 - 0x0840)
 class AFortGameStateZone : public AFortGameState
 {
 public:
@@ -17566,71 +18625,74 @@ public:
 	TArray<class UObject*>                             GameplayMutatorObservers;                                 // 0x0870(0x0010) (CPF_ZeroConstructor, CPF_Transient)
 	unsigned char                                      UnknownData00[0x180];                                     // 0x0880(0x0180) MISSED OFFSET
 	struct FGameplayTagContainer                       ExplicitGloballyBlockedAbilityTags;                       // 0x0A00(0x0020) (CPF_Net, CPF_Transient)
-	unsigned char                                      UnknownData01[0x264];                                     // 0x0A20(0x0264) MISSED OFFSET
-	int                                                TotalPlayerStructures;                                    // 0x0C84(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MaxPlayerStructures;                                      // 0x0C88(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x74];                                      // 0x0C8C(0x0074) MISSED OFFSET
-	class AFortGlobalEnvironmentAbilityActor*          GlobalEnvironmentAbilityActor;                            // 0x0D00(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TArray<class UFortAbilitySystemComponent*>         GlobalGameplayEventListeners;                             // 0x0D08(0x0010) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient)
-	struct FActiveGameplayModifierArray                ActiveGameplayModifiers;                                  // 0x0D18(0x00C8) (CPF_Net, CPF_Transient)
-	bool                                               bSupportRuntimeShutdownOfGameplayModifiers;               // 0x0DE0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x0DE1(0x0007) MISSED OFFSET
-	class UBuildingStructuralSupportSystem*            StructuralSupportSystem;                                  // 0x0DE8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FDataTableRowHandle                         ZoneDifficultyInfoRow;                                    // 0x0DF0(0x0010) (CPF_Net, CPF_Transient)
-	class UFortZoneTheme*                              ZoneTheme;                                                // 0x0E00(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	TAssetPtr<class UClass>                            MissionGeneratorClass;                                    // 0x0E08(0x0020) (CPF_Net, CPF_Transient)
-	TArray<struct FFortItemQuantityPair>               MissionRewards;                                           // 0x0E28(0x0010) (CPF_Net, CPF_ZeroConstructor, CPF_Transient)
-	TArray<struct FFortItemQuantityPair>               MissionAlertRewards;                                      // 0x0E38(0x0010) (CPF_Net, CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData04[0x158];                                     // 0x0E48(0x0158) MISSED OFFSET
-	class AFortThreatVisualsManager*                   ThreatVisualsManager;                                     // 0x0FA0(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class AFortThreatParticleActor*                    ThreatParticleActor;                                      // 0x0FA8(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bDrawRunVariationDebug;                                   // 0x0FB0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x7];                                       // 0x0FB1(0x0007) MISSED OFFSET
-	TArray<class AFortAIPawn*>                         PawnVariationList;                                        // 0x0FB8(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	int                                                VariationIndex;                                           // 0x0FC8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	float                                              GameDifficulty;                                           // 0x0FCC(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData06[0x4];                                       // 0x0FD0(0x0004) MISSED OFFSET
-	bool                                               bIsGroupContent;                                          // 0x0FD4(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData07[0x3];                                       // 0x0FD5(0x0003) MISSED OFFSET
-	unsigned char                                      bAllowedToUpdateBackendDifficulty : 1;                    // 0x0FD8(0x0001)
-	unsigned char                                      UnknownData08[0x17];                                      // 0x0FD9(0x0017) MISSED OFFSET
-	struct FPlayerBuildableClassContainer              PlayerBuildableClasses[0x4];                              // 0x0FF0(0x0010) (CPF_Transient)
-	class AFortInGameMapManager*                       UIMapManager;                                             // 0x1030(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FScriptMulticastDelegate                    OnScoreTotalsChanged;                                     // 0x1038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FName                                       ScoringTableRowName;                                      // 0x1048(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                TotalCombatScore;                                         // 0x1050(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                TotalBuildingScore;                                       // 0x1054(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                TotalUtilityScore;                                        // 0x1058(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData09[0x4];                                       // 0x105C(0x0004) MISSED OFFSET
-	struct FString                                     TheaterUniqueId;                                          // 0x1060(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	struct FString                                     MissionLogDebugString;                                    // 0x1070(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	unsigned char                                      UnknownData10[0x70];                                      // 0x1080(0x0070) MISSED OFFSET
-	unsigned char                                      bAllowBuildingCostMods : 1;                               // 0x10F0(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bFreeBuildingRepairs : 1;                                 // 0x10F0(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData11[0x3];                                       // 0x10F1(0x0003) MISSED OFFSET
-	bool                                               bAllowBuildingAtLayoutRequirements;                       // 0x10F4(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bAllowBuildingWithoutLayoutRequirements;                  // 0x10F5(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData12[0x2];                                       // 0x10F6(0x0002) MISSED OFFSET
-	TArray<class AFortAIPawn*>                         DeployedDefenders;                                        // 0x10F8(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	unsigned char                                      UnknownData13[0x50];                                      // 0x1108(0x0050) MISSED OFFSET
-	int                                                NumSurvivorsSpawned;                                      // 0x1158(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                NumSurvivorsDead;                                         // 0x115C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                NumSurvivorsRescued;                                      // 0x1160(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData14[0x4];                                       // 0x1164(0x0004) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnNumSurvivorsRescuedChangedDelegate;                     // 0x1168(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData15[0x18];                                      // 0x1178(0x0018) MISSED OFFSET
-	float                                              UnplayableHitchThresholdInMs;                             // 0x1190(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	int                                                MaxUnplayableHitchesToTolerate;                           // 0x1194(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData16[0x28];                                      // 0x1198(0x0028) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnGameplayVotes;                                          // 0x11C0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnGameplayVoteBeginning;                                  // 0x11D0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnGameplayVoteEnded;                                      // 0x11E0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	TArray<struct FVoter>                              GameplayVotes;                                            // 0x11F0(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	unsigned char                                      UnknownData17[0x10];                                      // 0x1200(0x0010) MISSED OFFSET
+	unsigned char                                      UnknownData01[0xA0];                                      // 0x0A20(0x00A0) MISSED OFFSET
+	bool                                               bInvitesRestricted;                                       // 0x0AC0(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x1D3];                                     // 0x0AC1(0x01D3) MISSED OFFSET
+	int                                                TotalPlayerStructures;                                    // 0x0C94(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxPlayerStructures;                                      // 0x0C98(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x74];                                      // 0x0C9C(0x0074) MISSED OFFSET
+	class AFortGlobalEnvironmentAbilityActor*          GlobalEnvironmentAbilityActor;                            // 0x0D10(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TArray<class UFortAbilitySystemComponent*>         GlobalGameplayEventListeners;                             // 0x0D18(0x0010) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient)
+	struct FActiveGameplayModifierArray                ActiveGameplayModifiers;                                  // 0x0D28(0x00C8) (CPF_Net, CPF_Transient)
+	bool                                               bSupportRuntimeShutdownOfGameplayModifiers;               // 0x0DF0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x7];                                       // 0x0DF1(0x0007) MISSED OFFSET
+	class UBuildingStructuralSupportSystem*            StructuralSupportSystem;                                  // 0x0DF8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FDataTableRowHandle                         ZoneDifficultyInfoRow;                                    // 0x0E00(0x0010) (CPF_Net, CPF_Transient)
+	class UFortZoneTheme*                              ZoneTheme;                                                // 0x0E10(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	TAssetPtr<class UClass>                            MissionGeneratorClass;                                    // 0x0E18(0x0020) (CPF_Net, CPF_Transient)
+	TArray<struct FFortItemQuantityPair>               MissionRewards;                                           // 0x0E38(0x0010) (CPF_Net, CPF_ZeroConstructor, CPF_Transient)
+	TArray<struct FFortItemQuantityPair>               MissionAlertRewards;                                      // 0x0E48(0x0010) (CPF_Net, CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData05[0x158];                                     // 0x0E58(0x0158) MISSED OFFSET
+	class AFortThreatVisualsManager*                   ThreatVisualsManager;                                     // 0x0FB0(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class AFortThreatParticleActor*                    ThreatParticleActor;                                      // 0x0FB8(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bDrawRunVariationDebug;                                   // 0x0FC0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData06[0x7];                                       // 0x0FC1(0x0007) MISSED OFFSET
+	TArray<class AFortAIPawn*>                         PawnVariationList;                                        // 0x0FC8(0x0010) (CPF_ZeroConstructor, CPF_Transient)
+	int                                                VariationIndex;                                           // 0x0FD8(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	float                                              GameDifficulty;                                           // 0x0FDC(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData07[0x4];                                       // 0x0FE0(0x0004) MISSED OFFSET
+	bool                                               bIsGroupContent;                                          // 0x0FE4(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData08[0x3];                                       // 0x0FE5(0x0003) MISSED OFFSET
+	unsigned char                                      bAllowedToUpdateBackendDifficulty : 1;                    // 0x0FE8(0x0001)
+	unsigned char                                      UnknownData09[0x17];                                      // 0x0FE9(0x0017) MISSED OFFSET
+	struct FPlayerBuildableClassContainer              PlayerBuildableClasses[0x4];                              // 0x1000(0x0010) (CPF_Transient)
+	class AFortInGameMapManager*                       UIMapManager;                                             // 0x1040(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnScoreTotalsChanged;                                     // 0x1048(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FName                                       ScoringTableRowName;                                      // 0x1058(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                TotalCombatScore;                                         // 0x1060(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                TotalBuildingScore;                                       // 0x1064(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                TotalUtilityScore;                                        // 0x1068(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData10[0x4];                                       // 0x106C(0x0004) MISSED OFFSET
+	struct FString                                     TheaterUniqueId;                                          // 0x1070(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	struct FString                                     MissionLogDebugString;                                    // 0x1080(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	unsigned char                                      UnknownData11[0x70];                                      // 0x1090(0x0070) MISSED OFFSET
+	unsigned char                                      bAllowBuildingCostMods : 1;                               // 0x1100(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bFreeBuildingRepairs : 1;                                 // 0x1100(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData12[0x3];                                       // 0x1101(0x0003) MISSED OFFSET
+	bool                                               bAllowBuildingAtLayoutRequirements;                       // 0x1104(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bAllowBuildingWithoutLayoutRequirements;                  // 0x1105(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData13[0x2];                                       // 0x1106(0x0002) MISSED OFFSET
+	TArray<class AFortAIPawn*>                         DeployedDefenders;                                        // 0x1108(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	unsigned char                                      UnknownData14[0x50];                                      // 0x1118(0x0050) MISSED OFFSET
+	int                                                NumSurvivorsSpawned;                                      // 0x1168(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                NumSurvivorsDead;                                         // 0x116C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                NumSurvivorsRescued;                                      // 0x1170(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData15[0x4];                                       // 0x1174(0x0004) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnNumSurvivorsRescuedChangedDelegate;                     // 0x1178(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData16[0x18];                                      // 0x1188(0x0018) MISSED OFFSET
+	float                                              UnplayableHitchThresholdInMs;                             // 0x11A0(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	int                                                MaxUnplayableHitchesToTolerate;                           // 0x11A4(0x0004) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData17[0x28];                                      // 0x11A8(0x0028) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnGameplayVotes;                                          // 0x11D0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnGameplayVoteBeginning;                                  // 0x11E0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnGameplayVoteEnded;                                      // 0x11F0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	TArray<struct FVoter>                              GameplayVotes;                                            // 0x1200(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	unsigned char                                      UnknownData18[0x10];                                      // 0x1210(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x143b09e0);
 		return ptr;
 	}
 
@@ -17688,21 +18750,21 @@ public:
 
 
 // Class FortniteGame.FortGameStateDeployableBase
-// 0x0040 (0x1250 - 0x1210)
+// 0x0040 (0x1260 - 0x1220)
 class AFortGameStateDeployableBase : public AFortGameStateZone
 {
 public:
-	class AFortDeployableBaseManager*                  DeployableBaseManager;                                    // 0x1210(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FScriptMulticastDelegate                    OnDeployableBaseManagerCreated;                           // 0x1218(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	bool                                               bFireEndOfDayDelegate;                                    // 0x1228(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               bInvitesRestricted;                                       // 0x1229(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x6];                                       // 0x122A(0x0006) MISSED OFFSET
-	TArray<struct FHordeDifficultyTierInfo>            TierDifficultyConfig;                                     // 0x1230(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FHordeDifficultyTierInfo>            PrestigeTierDifficultyConfig;                             // 0x1240(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	class AFortDeployableBaseManager*                  DeployableBaseManager;                                    // 0x1220(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FScriptMulticastDelegate                    OnDeployableBaseManagerCreated;                           // 0x1228(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	bool                                               bFireEndOfDayDelegate;                                    // 0x1238(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x1239(0x0007) MISSED OFFSET
+	TArray<struct FHordeDifficultyTierInfo>            TierDifficultyConfig;                                     // 0x1240(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FHordeDifficultyTierInfo>            PrestigeTierDifficultyConfig;                             // 0x1250(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateDeployableBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66f3f110);
 		return ptr;
 	}
 
@@ -17715,16 +18777,17 @@ public:
 
 
 // Class FortniteGame.FortGameStateFOB
-// 0x0020 (0x1230 - 0x1210)
+// 0x0020 (0x1240 - 0x1220)
 class AFortGameStateFOB : public AFortGameStateZone
 {
 public:
-	struct FScriptMulticastDelegate                    OnBuildingDestroyedDel;                                   // 0x1210(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x1220(0x0010) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnBuildingDestroyedDel;                                   // 0x1220(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x1230(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateFOB");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd589d68f);
 		return ptr;
 	}
 
@@ -17735,16 +18798,17 @@ public:
 
 
 // Class FortniteGame.FortGameStateKeep
-// 0x0050 (0x1260 - 0x1210)
+// 0x0050 (0x1270 - 0x1220)
 class AFortGameStateKeep : public AFortGameStateZone
 {
 public:
-	struct FPermaniteBoundariesInfo                    PermaniteBoundariesData;                                  // 0x1210(0x0014) (CPF_Net, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3C];                                      // 0x1224(0x003C) MISSED OFFSET
+	struct FPermaniteBoundariesInfo                    PermaniteBoundariesData;                                  // 0x1220(0x0014) (CPF_Net, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3C];                                      // 0x1234(0x003C) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateKeep");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x943ad8a9);
 		return ptr;
 	}
 
@@ -17754,15 +18818,16 @@ public:
 
 
 // Class FortniteGame.FortGameStateManor
-// 0x0060 (0x1270 - 0x1210)
+// 0x0060 (0x1280 - 0x1220)
 class AFortGameStateManor : public AFortGameStateZone
 {
 public:
-	unsigned char                                      UnknownData00[0x60];                                      // 0x1210(0x0060) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x60];                                      // 0x1220(0x0060) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateManor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe38719bd);
 		return ptr;
 	}
 
@@ -17770,16 +18835,17 @@ public:
 
 
 // Class FortniteGame.FortGameStateOutpost
-// 0x0010 (0x1220 - 0x1210)
+// 0x0010 (0x1230 - 0x1220)
 class AFortGameStateOutpost : public AFortGameStateZone
 {
 public:
-	bool                                               bOutpostDefenseActive;                                    // 0x1210(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xF];                                       // 0x1211(0x000F) MISSED OFFSET
+	bool                                               bOutpostDefenseActive;                                    // 0x1220(0x0001) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xF];                                       // 0x1221(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateOutpost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b52cdfc);
 		return ptr;
 	}
 
@@ -17789,40 +18855,41 @@ public:
 
 
 // Class FortniteGame.FortGameStatePvP
-// 0x0140 (0x1350 - 0x1210)
+// 0x0140 (0x1360 - 0x1220)
 class AFortGameStatePvP : public AFortGameStateZone
 {
 public:
-	int                                                RoundTimeLimit;                                           // 0x1210(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                RoundTimeAccumulated;                                     // 0x1214(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x1218(0x0004) MISSED OFFSET
-	int                                                RoundTimeCriticalThreshold;                               // 0x121C(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                RoundTimeRemaining;                                       // 0x1220(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                StalemateTimeLimit;                                       // 0x1224(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                StalemateTimeRemaining;                                   // 0x1228(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                RestartTimeRemaining;                                     // 0x122C(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                FOBFinalizationTimeRemaining;                             // 0x1230(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x1234(0x0004) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnFinalizationFOBTimerExpired;                            // 0x1238(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	TAssetPtr<class USoundBase>                        RoundTimeExpiringSound;                                   // 0x1248(0x0020)
-	TAssetPtr<class USoundBase>                        StalemateTimeExpiringSound;                               // 0x1268(0x0020)
-	TArray<class ABuildingCapturePointActor*>          CapturePoints;                                            // 0x1288(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	class ABuildingItemCollectorActor*                 ItemCollector;                                            // 0x1298(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                StartMatchDelayTimer;                                     // 0x12A0(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      bGateCraftingOnTeamLevel : 1;                             // 0x12A4(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData02[0x7B];                                      // 0x12A5(0x007B) MISSED OFFSET
-	class UCurveFloat*                                 MatchLevelCurve;                                          // 0x1320(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                MatchLevel;                                               // 0x1328(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_EditConst, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x132C(0x0004) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnHandleMatchLevelChanged;                                // 0x1330(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	int                                                TotalHomebaseRating;                                      // 0x1340(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_EditConst, CPF_IsPlainOldData)
-	int                                                AverageHomebaseRating;                                    // 0x1344(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_EditConst, CPF_IsPlainOldData)
-	bool                                               bUseExperimentalCraftingFeature;                          // 0x1348(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x7];                                       // 0x1349(0x0007) MISSED OFFSET
+	int                                                RoundTimeLimit;                                           // 0x1220(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                RoundTimeAccumulated;                                     // 0x1224(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x1228(0x0004) MISSED OFFSET
+	int                                                RoundTimeCriticalThreshold;                               // 0x122C(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                RoundTimeRemaining;                                       // 0x1230(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                StalemateTimeLimit;                                       // 0x1234(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                StalemateTimeRemaining;                                   // 0x1238(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                RestartTimeRemaining;                                     // 0x123C(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                FOBFinalizationTimeRemaining;                             // 0x1240(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x1244(0x0004) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnFinalizationFOBTimerExpired;                            // 0x1248(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	TAssetPtr<class USoundBase>                        RoundTimeExpiringSound;                                   // 0x1258(0x0020)
+	TAssetPtr<class USoundBase>                        StalemateTimeExpiringSound;                               // 0x1278(0x0020)
+	TArray<class ABuildingCapturePointActor*>          CapturePoints;                                            // 0x1298(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	class ABuildingItemCollectorActor*                 ItemCollector;                                            // 0x12A8(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                StartMatchDelayTimer;                                     // 0x12B0(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      bGateCraftingOnTeamLevel : 1;                             // 0x12B4(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData02[0x7B];                                      // 0x12B5(0x007B) MISSED OFFSET
+	class UCurveFloat*                                 MatchLevelCurve;                                          // 0x1330(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                MatchLevel;                                               // 0x1338(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_EditConst, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x133C(0x0004) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnHandleMatchLevelChanged;                                // 0x1340(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	int                                                TotalHomebaseRating;                                      // 0x1350(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_EditConst, CPF_IsPlainOldData)
+	int                                                AverageHomebaseRating;                                    // 0x1354(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_EditConst, CPF_IsPlainOldData)
+	bool                                               bUseExperimentalCraftingFeature;                          // 0x1358(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x7];                                       // 0x1359(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStatePvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc029a414);
 		return ptr;
 	}
 
@@ -17845,49 +18912,50 @@ public:
 
 
 // Class FortniteGame.FortGameStateAthena
-// 0x0190 (0x14E0 - 0x1350)
+// 0x0190 (0x14F0 - 0x1360)
 class AFortGameStateAthena : public AFortGameStatePvP
 {
 public:
-	TArray<class UClass*>                              BuildingActorClasses;                                     // 0x1350(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	struct FScriptMulticastDelegate                    WinnerAnnounced;                                          // 0x1360(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    WinningTeamAnnounced;                                     // 0x1370(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    GamePhaseChanged;                                         // 0x1380(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    GamePhaseStepChanged;                                     // 0x1390(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	float                                              WarmupCountdownStartTime;                                 // 0x13A0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              WarmupCountdownEndTime;                                   // 0x13A4(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              AircraftStartTime;                                        // 0x13A8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              SafeZonesStartTime;                                       // 0x13AC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              EndGameStartTime;                                         // 0x13B0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              EndGameKickPlayerTime;                                    // 0x13B4(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                PlayersLeft;                                              // 0x13B8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                TeamsLeft;                                                // 0x13BC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                CurrentPlaylistId;                                        // 0x13C0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x13C4(0x0004) MISSED OFFSET
-	struct FString                                     WinningPlayerName;                                        // 0x13C8(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor)
-	int                                                WinningTeam;                                              // 0x13D8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x13DC(0x0004) MISSED OFFSET
-	TArray<struct FText>                               KillFeedEntry;                                            // 0x13E0(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	unsigned char                                      UnknownData02[0x10];                                      // 0x13F0(0x0010) MISSED OFFSET
-	struct FScriptMulticastDelegate                    KillFeedUpdated;                                          // 0x1400(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	class AFortSafeZoneIndicator*                      SafeZoneIndicator;                                        // 0x1410(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FSlateBrush                                 MinimapBackgroundBrush;                                   // 0x1418(0x0090) (CPF_Transient)
-	class UTexture2D*                                  MinimapBackgroundImage;                                   // 0x14A8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UMaterialInstanceDynamic*                    MinimapBackgroundMID;                                     // 0x14B0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class UMaterialInterface*                          MiniMapBackgroundDrawingMaterial;                         // 0x14B8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	class AFortAthenaMapInfo*                          MapInfo;                                                  // 0x14C0(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EAthenaGamePhase                                   GamePhase;                                                // 0x14C8(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      SafeZonePhase;                                            // 0x14C9(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	EAthenaGamePhaseStep                               GamePhaseStep;                                            // 0x14CA(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x1];                                       // 0x14CB(0x0001) MISSED OFFSET
-	float                                              GamePhaseStepTimeRemaining;                               // 0x14CC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AFortAthenaAircraft*                         Aircraft;                                                 // 0x14D0(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      bAircraftIsLocked : 1;                                    // 0x14D8(0x0001) (CPF_Net)
-	unsigned char                                      UnknownData04[0x7];                                       // 0x14D9(0x0007) MISSED OFFSET
+	TArray<class UClass*>                              BuildingActorClasses;                                     // 0x1360(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	struct FScriptMulticastDelegate                    WinnerAnnounced;                                          // 0x1370(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    WinningTeamAnnounced;                                     // 0x1380(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    GamePhaseChanged;                                         // 0x1390(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    GamePhaseStepChanged;                                     // 0x13A0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	float                                              WarmupCountdownStartTime;                                 // 0x13B0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              WarmupCountdownEndTime;                                   // 0x13B4(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              AircraftStartTime;                                        // 0x13B8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              SafeZonesStartTime;                                       // 0x13BC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              EndGameStartTime;                                         // 0x13C0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              EndGameKickPlayerTime;                                    // 0x13C4(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                PlayersLeft;                                              // 0x13C8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                TeamsLeft;                                                // 0x13CC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                CurrentPlaylistId;                                        // 0x13D0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x13D4(0x0004) MISSED OFFSET
+	struct FString                                     WinningPlayerName;                                        // 0x13D8(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x13E8(0x0004) MISSED OFFSET
+	int                                                WinningTeam;                                              // 0x13EC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FText>                               KillFeedEntry;                                            // 0x13F0(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	unsigned char                                      UnknownData02[0x10];                                      // 0x1400(0x0010) MISSED OFFSET
+	struct FScriptMulticastDelegate                    KillFeedUpdated;                                          // 0x1410(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class AFortSafeZoneIndicator*                      SafeZoneIndicator;                                        // 0x1420(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FSlateBrush                                 MinimapBackgroundBrush;                                   // 0x1428(0x0090) (CPF_Transient)
+	class UTexture2D*                                  MinimapBackgroundImage;                                   // 0x14B8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UMaterialInstanceDynamic*                    MinimapBackgroundMID;                                     // 0x14C0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UMaterialInterface*                          MiniMapBackgroundDrawingMaterial;                         // 0x14C8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class AFortAthenaMapInfo*                          MapInfo;                                                  // 0x14D0(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EAthenaGamePhase                                   GamePhase;                                                // 0x14D8(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      SafeZonePhase;                                            // 0x14D9(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EAthenaGamePhaseStep                               GamePhaseStep;                                            // 0x14DA(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x1];                                       // 0x14DB(0x0001) MISSED OFFSET
+	float                                              GamePhaseStepTimeRemaining;                               // 0x14DC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortAthenaAircraft*                         Aircraft;                                                 // 0x14E0(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      bAircraftIsLocked : 1;                                    // 0x14E8(0x0001) (CPF_Net)
+	unsigned char                                      UnknownData04[0x7];                                       // 0x14E9(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5a1ee67);
 		return ptr;
 	}
 
@@ -17903,19 +18971,20 @@ public:
 
 
 // Class FortniteGame.FortGameStatePvPBaseDestruction
-// 0x00F0 (0x1440 - 0x1350)
+// 0x00F0 (0x1450 - 0x1360)
 class AFortGameStatePvPBaseDestruction : public AFortGameStatePvP
 {
 public:
-	struct FName                                       SessionXPRowName;                                         // 0x1350(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FRichCurve                                  TeamLevelToSessionXPCurve;                                // 0x1358(0x0070) (CPF_Transient)
-	struct FRichCurve                                  SessionXPToTeamLevelCurve;                                // 0x13C8(0x0070) (CPF_Transient)
-	int                                                MaxTeamLevel;                                             // 0x1438(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                MaxTeamExperience;                                        // 0x143C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FName                                       SessionXPRowName;                                         // 0x1360(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FRichCurve                                  TeamLevelToSessionXPCurve;                                // 0x1368(0x0070) (CPF_Transient)
+	struct FRichCurve                                  SessionXPToTeamLevelCurve;                                // 0x13D8(0x0070) (CPF_Transient)
+	int                                                MaxTeamLevel;                                             // 0x1448(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                MaxTeamExperience;                                        // 0x144C(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStatePvPBaseDestruction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2aff2a75);
 		return ptr;
 	}
 
@@ -17928,14 +18997,15 @@ public:
 
 
 // Class FortniteGame.FortGameStateSurvival
-// 0x0000 (0x1210 - 0x1210)
+// 0x0000 (0x1220 - 0x1220)
 class AFortGameStateSurvival : public AFortGameStateZone
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameStateSurvival");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb3e20ef4);
 		return ptr;
 	}
 
@@ -17969,7 +19039,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameUserSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc6ff2c6d);
 		return ptr;
 	}
 
@@ -17986,7 +19057,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameViewportClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd25dd4a4);
 		return ptr;
 	}
 
@@ -18004,7 +19076,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBaseRecord");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7a99b860);
 		return ptr;
 	}
 
@@ -18019,7 +19092,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGlobalAbilityTargetingActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd400ac6);
 		return ptr;
 	}
 
@@ -18037,7 +19111,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGlobalEnvironmentAbilityActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8b7792);
 		return ptr;
 	}
 
@@ -18060,7 +19135,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHealthBarComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a34dbf7);
 		return ptr;
 	}
 
@@ -18085,7 +19161,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHexMapMarkerBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8b9babb);
 		return ptr;
 	}
 
@@ -18101,7 +19178,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseNodeGameplayEffectDataTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x34eb2f8c);
 		return ptr;
 	}
 
@@ -18116,7 +19194,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomeTeleporterInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3a30684d);
 		return ptr;
 	}
 
@@ -18136,7 +19215,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHotfixManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x574ec4b8);
 		return ptr;
 	}
 
@@ -18152,7 +19232,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMiniMapPingIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x19916909);
 		return ptr;
 	}
 
@@ -18167,7 +19248,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDamageMiniMapIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ce19d52);
 		return ptr;
 	}
 
@@ -18183,7 +19265,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortVolumeMiniMapIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ebf1993);
 		return ptr;
 	}
 
@@ -18202,7 +19285,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSlateHUDIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x656d177e);
 		return ptr;
 	}
 
@@ -18218,7 +19302,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHealthBarIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2dde9b41);
 		return ptr;
 	}
 
@@ -18234,7 +19319,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionInfoIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ed4f208);
 		return ptr;
 	}
 
@@ -18250,7 +19336,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSpottedActorIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8794073e);
 		return ptr;
 	}
 
@@ -18267,7 +19354,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortIndicatorManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9d592d01);
 		return ptr;
 	}
 
@@ -18283,7 +19371,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavigationGraph");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9567a781);
 		return ptr;
 	}
 
@@ -18320,7 +19409,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavSystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37cd17fb);
 		return ptr;
 	}
 
@@ -18340,7 +19430,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInescapableZoneTracker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe28fbda);
 		return ptr;
 	}
 
@@ -18358,7 +19449,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInfluenceMap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc6cefd90);
 		return ptr;
 	}
 
@@ -18406,7 +19498,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInGameMapManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x675edf0d);
 		return ptr;
 	}
 
@@ -18427,7 +19520,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInGameMapManagerAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x330f9214);
 		return ptr;
 	}
 
@@ -18442,7 +19536,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInitializeFromObjectInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb129a2b);
 		return ptr;
 	}
 
@@ -18460,7 +19555,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortIntensityCurveSequenceProgression");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb473d75b);
 		return ptr;
 	}
 
@@ -18484,7 +19580,24 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortInteractContextInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x689d2cd8);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaGliderItem
+// 0x0000 (0x0140 - 0x0140)
+class UAthenaGliderItem : public UFortAccountItem
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x162f5c9);
 		return ptr;
 	}
 
@@ -18499,7 +19612,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountBuffCreditItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ed0463f);
 		return ptr;
 	}
 
@@ -18514,7 +19628,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountBuffItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6095a110);
 		return ptr;
 	}
 
@@ -18524,15 +19639,16 @@ public:
 
 
 // Class FortniteGame.FortAlterableItemDefinition
-// 0x0010 (0x0280 - 0x0270)
+// 0x0010 (0x02B0 - 0x02A0)
 class UFortAlterableItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	TArray<struct FFortAlterationSlots>                DefaultAlterationSlots;                                   // 0x0270(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	TArray<struct FFortAlterationSlots>                DefaultAlterationSlots;                                   // 0x02A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAlterableItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x663f7215);
 		return ptr;
 	}
 
@@ -18551,7 +19667,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAlterableItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0526da);
 		return ptr;
 	}
 
@@ -18562,27 +19679,28 @@ public:
 
 
 // Class FortniteGame.FortSchematicItemDefinition
-// 0x00A0 (0x0320 - 0x0280)
+// 0x00A0 (0x0350 - 0x02B0)
 class UFortSchematicItemDefinition : public UFortAlterableItemDefinition
 {
 public:
-	struct FDataTableRowHandle                         CraftingRecipe;                                           // 0x0280(0x0010) (CPF_Edit)
-	struct FDataTableRowHandle                         CraftingRequirements;                                     // 0x0290(0x0010) (CPF_Edit)
-	TAssetPtr<class USoundBase>                        CraftingSuccessSound;                                     // 0x02A0(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortWorldItemDefinition>          Result;                                                   // 0x02C0(0x0020) (CPF_Edit)
-	int                                                QuantityProduced;                                         // 0x02E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bConsumeOnUse;                                            // 0x02E4(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x02E5(0x0003) MISSED OFFSET
-	int                                                CraftingPoints;                                           // 0x02E8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x02EC(0x0004) MISSED OFFSET
-	struct FDataTableCategoryHandle                    LootLevelData;                                            // 0x02F0(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	struct FName                                       CraftingTimeRowName;                                      // 0x0308(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bUseSchematicDisplayName;                                 // 0x0310(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0xF];                                       // 0x0311(0x000F) MISSED OFFSET
+	struct FDataTableRowHandle                         CraftingRecipe;                                           // 0x02B0(0x0010) (CPF_Edit)
+	struct FDataTableRowHandle                         CraftingRequirements;                                     // 0x02C0(0x0010) (CPF_Edit)
+	TAssetPtr<class USoundBase>                        CraftingSuccessSound;                                     // 0x02D0(0x0020) (CPF_Edit)
+	TAssetPtr<class UFortWorldItemDefinition>          Result;                                                   // 0x02F0(0x0020) (CPF_Edit)
+	int                                                QuantityProduced;                                         // 0x0310(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bConsumeOnUse;                                            // 0x0314(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0315(0x0003) MISSED OFFSET
+	int                                                CraftingPoints;                                           // 0x0318(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x031C(0x0004) MISSED OFFSET
+	struct FDataTableCategoryHandle                    LootLevelData;                                            // 0x0320(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FName                                       CraftingTimeRowName;                                      // 0x0338(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bUseSchematicDisplayName;                                 // 0x0340(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0xF];                                       // 0x0341(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSchematicItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7bbc0da);
 		return ptr;
 	}
 
@@ -18604,7 +19722,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSchematicItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6cd47f39);
 		return ptr;
 	}
 
@@ -18623,7 +19742,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAlterationItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xec572c7f);
 		return ptr;
 	}
 
@@ -18633,28 +19753,33 @@ public:
 
 
 // Class FortniteGame.FortCardPackItemDefinition
-// 0x0070 (0x02E0 - 0x0270)
+// 0x0080 (0x0320 - 0x02A0)
 class UFortCardPackItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	struct FString                                     LootTierGroup;                                            // 0x0270(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	int                                                LootTier;                                                 // 0x0280(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsChoicePack;                                            // 0x0284(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bAutoOpenAsReward;                                        // 0x0285(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x0286(0x0002) MISSED OFFSET
-	int                                                DisplayRarityLevel;                                       // 0x0288(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x028C(0x0004) MISSED OFFSET
-	TAssetPtr<class UTexture>                          PackImage;                                                // 0x0290(0x0020) (CPF_Edit)
-	struct FLinearColor                                PackColor;                                                // 0x02B0(0x0010) (CPF_Edit, CPF_IsPlainOldData)
-	TAssetPtr<class UFortPackPersonality>              PackPersonality;                                          // 0x02C0(0x0020) (CPF_Edit)
+	bool                                               bIsLlama;                                                 // 0x02A0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x02A1(0x0007) MISSED OFFSET
+	struct FString                                     LootTierGroup;                                            // 0x02A8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	int                                                LootTier;                                                 // 0x02B8(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsChoicePack;                                            // 0x02BC(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bAutoOpenAsReward;                                        // 0x02BD(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x2];                                       // 0x02BE(0x0002) MISSED OFFSET
+	int                                                DisplayRarityLevel;                                       // 0x02C0(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x4];                                       // 0x02C4(0x0004) MISSED OFFSET
+	TAssetPtr<class UTexture>                          PackImage;                                                // 0x02C8(0x0020) (CPF_Edit)
+	struct FLinearColor                                PackColor;                                                // 0x02E8(0x0010) (CPF_Edit, CPF_IsPlainOldData)
+	TAssetPtr<class UFortPackPersonality>              PackPersonality;                                          // 0x02F8(0x0020) (CPF_Edit)
+	unsigned char                                      UnknownData03[0x8];                                       // 0x0318(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCardPackItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ce26a2a);
 		return ptr;
 	}
 
 
+	bool IsLlama();
 	bool IsChoicePack();
 	class UFortPackPersonality* GetPackPersonality();
 	class UTexture* GetPackImage();
@@ -18673,7 +19798,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCardPackItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd60567a9);
 		return ptr;
 	}
 
@@ -18685,20 +19811,21 @@ public:
 
 
 // Class FortniteGame.FortDefenderItemDefinition
-// 0x0060 (0x02D0 - 0x0270)
+// 0x0060 (0x0300 - 0x02A0)
 class UFortDefenderItemDefinition : public UFortCharacterType
 {
 public:
-	TArray<struct FGameplayEffectApplicationInfo>      CombinedStatGEs;                                          // 0x0270(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FFortAlterationSlots>                DefenderAlterationSlots;                                  // 0x0280(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	struct FName                                       AppearanceOverrideName;                                   // 0x0290(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FFortAttributeInitializationKey             AttributeInitKey;                                         // 0x0298(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	TAssetPtr<class UClass>                            PawnClass;                                                // 0x02A8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x02C8(0x0008) MISSED OFFSET
+	TArray<struct FGameplayEffectApplicationInfo>      CombinedStatGEs;                                          // 0x02A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FFortAlterationSlots>                DefenderAlterationSlots;                                  // 0x02B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	struct FName                                       AppearanceOverrideName;                                   // 0x02C0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FFortAttributeInitializationKey             AttributeInitKey;                                         // 0x02C8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	TAssetPtr<class UClass>                            PawnClass;                                                // 0x02D8(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x02F8(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDefenderItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc2953f56);
 		return ptr;
 	}
 
@@ -18717,7 +19844,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDefenderItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfed1ba8d);
 		return ptr;
 	}
 
@@ -18725,20 +19853,21 @@ public:
 
 
 // Class FortniteGame.FortCharacterCosmeticItemDefinition
-// 0x0040 (0x02B0 - 0x0270)
+// 0x0040 (0x02E0 - 0x02A0)
 class UFortCharacterCosmeticItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	TEnumAsByte<EFortCharacterCosmetic>                Cosmetic_Type;                                            // 0x0270(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0271(0x0007) MISSED OFFSET
-	TArray<TAssetPtr<class UFortHeroType>>             Hero_Types_Allowed;                                       // 0x0278(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	bool                                               bModifyColor;                                             // 0x0288(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0289(0x0007) MISSED OFFSET
-	TAssetPtr<class UCustomColorSwatch>                ColorAlteration;                                          // 0x0290(0x0020) (CPF_Edit)
+	TEnumAsByte<EFortCharacterCosmetic>                Cosmetic_Type;                                            // 0x02A0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x02A1(0x0007) MISSED OFFSET
+	TArray<TAssetPtr<class UFortHeroType>>             Hero_Types_Allowed;                                       // 0x02A8(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	bool                                               bModifyColor;                                             // 0x02B8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x02B9(0x0007) MISSED OFFSET
+	TAssetPtr<class UCustomColorSwatch>                ColorAlteration;                                          // 0x02C0(0x0020) (CPF_Edit)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCharacterCosmeticItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8a27868d);
 		return ptr;
 	}
 
@@ -18754,7 +19883,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCharacterCosmeticItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb22fe6d2);
 		return ptr;
 	}
 
@@ -18762,17 +19892,18 @@ public:
 
 
 // Class FortniteGame.FortCodeTokenItemDefinition
-// 0x0030 (0x02A0 - 0x0270)
+// 0x0030 (0x02D0 - 0x02A0)
 class UFortCodeTokenItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	struct FString                                     RedemptionCodeRule;                                       // 0x0270(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	struct FString                                     RedemptionCodeGroup;                                      // 0x0280(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	TArray<ECodeTokenPlatform>                         AllowedPlatforms;                                         // 0x0290(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	struct FString                                     RedemptionCodeRule;                                       // 0x02A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	struct FString                                     RedemptionCodeGroup;                                      // 0x02B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	TArray<ECodeTokenPlatform>                         AllowedPlatforms;                                         // 0x02C0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCodeTokenItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb86b0d87);
 		return ptr;
 	}
 
@@ -18787,7 +19918,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCodeTokenItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc4ee5fc);
 		return ptr;
 	}
 
@@ -18805,10 +19937,51 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectedResourceItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b4a2fa3);
 		return ptr;
 	}
 
+};
+
+
+// Class FortniteGame.FortCompendiumBundle
+// 0x0000 (0x0140 - 0x0140)
+class UFortCompendiumBundle : public UFortAccountItem
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x58ce5542);
+		return ptr;
+	}
+
+
+	float GetPercentageComplete();
+	class UFortCompendiumBundleDefinition* GetCompendiumBundleDefinitionBP();
+	void GetAchievedCount(int* OutTotalAchievedCount, int* OutTotalRequiredCount);
+};
+
+
+// Class FortniteGame.FortCompendiumItem
+// 0x0000 (0x0140 - 0x0140)
+class UFortCompendiumItem : public UFortAccountItem
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29a238f);
+		return ptr;
+	}
+
+
+	float GetPercentageComplete();
+	class UFortCompendiumItemDefinition* GetCompendiumDefinitionBP();
+	void GetAchievedCount(int* OutTotalAchievedCount, int* OutTotalRequiredCount);
 };
 
 
@@ -18820,7 +19993,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConsumableAccountItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed491af8);
 		return ptr;
 	}
 
@@ -18838,7 +20012,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCurrencyItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd80dd29);
 		return ptr;
 	}
 
@@ -18853,7 +20028,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseBannerColorItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2321d0e3);
 		return ptr;
 	}
 
@@ -18868,7 +20044,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseBannerIconItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae0f1633);
 		return ptr;
 	}
 
@@ -18885,7 +20062,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseNodeItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5473a46e);
 		return ptr;
 	}
 
@@ -18914,7 +20092,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuestItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x401b97f0);
 		return ptr;
 	}
 
@@ -18947,18 +20126,19 @@ public:
 
 
 // Class FortniteGame.FortQuotaItemDefinition
-// 0x0010 (0x0280 - 0x0270)
+// 0x0010 (0x02B0 - 0x02A0)
 class UFortQuotaItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	float                                              StartingValue;                                            // 0x0270(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                MaximumValue;                                             // 0x0274(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              UnitsPerMinuteRechargeRate;                               // 0x0278(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	int                                                RechargeDelayMinutes;                                     // 0x027C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              StartingValue;                                            // 0x02A0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                MaximumValue;                                             // 0x02A4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              UnitsPerMinuteRechargeRate;                               // 0x02A8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	int                                                RechargeDelayMinutes;                                     // 0x02AC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuotaItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd189a9b5);
 		return ptr;
 	}
 
@@ -18978,7 +20158,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuotaItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3eb248ba);
 		return ptr;
 	}
 
@@ -19003,7 +20184,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMetadataItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x75cbaaa3);
 		return ptr;
 	}
 
@@ -19019,7 +20201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCloudSaveItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8a1dd29e);
 		return ptr;
 	}
 
@@ -19035,7 +20218,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBaseCloudSaveItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe1c8d5c8);
 		return ptr;
 	}
 
@@ -19051,7 +20235,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOutpostItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x685497f4);
 		return ptr;
 	}
 
@@ -19074,7 +20259,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorldItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfce68d82);
 		return ptr;
 	}
 
@@ -19096,7 +20282,184 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemCategory");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd768d0e8);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaCosmeticItemDefinition
+// 0x0010 (0x02B0 - 0x02A0)
+class UAthenaCosmeticItemDefinition : public UFortAccountItemDefinition
+{
+public:
+	TArray<struct FAthenaCosmeticMaterialOverride>     MaterialOverrides;                                        // 0x02A0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe037ef14);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaBackpackItemDefinition
+// 0x0000 (0x02B0 - 0x02B0)
+class UAthenaBackpackItemDefinition : public UAthenaCosmeticItemDefinition
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae3ebf13);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaBattleBusItemDefinition
+// 0x0020 (0x02D0 - 0x02B0)
+class UAthenaBattleBusItemDefinition : public UAthenaCosmeticItemDefinition
+{
+public:
+	TAssetPtr<class UClass>                            BusPrefabClass;                                           // 0x02B0(0x0020) (CPF_Edit)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96c35bc7);
+		return ptr;
+	}
+
+
+	class UClass* GetBusPrefabClass();
+};
+
+
+// Class FortniteGame.AthenaCharacterItemDefinition
+// 0x0010 (0x02C0 - 0x02B0)
+class UAthenaCharacterItemDefinition : public UAthenaCosmeticItemDefinition
+{
+public:
+	class UFortHeroType*                               HeroDefinition;                                           // 0x02B0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x02B8(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x19adb282);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaGliderItemDefinition
+// 0x0090 (0x0340 - 0x02B0)
+class UAthenaGliderItemDefinition : public UAthenaCosmeticItemDefinition
+{
+public:
+	EFortGliderType                                    GliderType;                                               // 0x02B0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x02B1(0x0007) MISSED OFFSET
+	TAssetPtr<class USkeletalMesh>                     SkeletalMesh;                                             // 0x02B8(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	class UClass*                                      AnimClass;                                                // 0x02D8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	TAssetPtr<class USoundBase>                        OpenSound;                                                // 0x02E0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class USoundBase>                        OpenSoundLoop;                                            // 0x0300(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class USoundBase>                        CloseSound;                                               // 0x0320(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc7815d8a);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaHatItemDefinition
+// 0x0000 (0x02B0 - 0x02B0)
+class UAthenaHatItemDefinition : public UAthenaCosmeticItemDefinition
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6b2654b8);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaLoadingScreenItemDefinition
+// 0x0020 (0x02D0 - 0x02B0)
+class UAthenaLoadingScreenItemDefinition : public UAthenaCosmeticItemDefinition
+{
+public:
+	TAssetPtr<class UTexture2D>                        BackgroundImage;                                          // 0x02B0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9bf4738b);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortWeaponMeleeItemDefinition
+// 0x0000 (0x0650 - 0x0650)
+class UFortWeaponMeleeItemDefinition : public UFortWeaponItemDefinition
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdbcf6c09);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaPickaxeItemDefinition
+// 0x0010 (0x02C0 - 0x02B0)
+class UAthenaPickaxeItemDefinition : public UAthenaCosmeticItemDefinition
+{
+public:
+	class UFortWeaponMeleeItemDefinition*              WeaponDefinition;                                         // 0x02B0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x02B8(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd05524f6);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaMedalItemDefinition
+// 0x0000 (0x02A0 - 0x02A0)
+class UAthenaMedalItemDefinition : public UFortAccountItemDefinition
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe84a6c6);
 		return ptr;
 	}
 
@@ -19104,15 +20467,16 @@ public:
 
 
 // Class FortniteGame.FortAccountBuffItemDefinition
-// 0x0010 (0x0280 - 0x0270)
+// 0x0010 (0x02B0 - 0x02A0)
 class UFortAccountBuffItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	TArray<TAssetPtr<class UClass>>                    BuffEffects;                                              // 0x0270(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	TArray<TAssetPtr<class UClass>>                    BuffEffects;                                              // 0x02A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountBuffItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1fe0c503);
 		return ptr;
 	}
 
@@ -19120,33 +20484,72 @@ public:
 
 
 // Class FortniteGame.FortCollectedResourceItemDefinition
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x02A0 - 0x02A0)
 class UFortCollectedResourceItemDefinition : public UFortAccountItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCollectedResourceItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x344e4f5c);
 		return ptr;
 	}
 
 };
 
 
-// Class FortniteGame.FortConsumableAccountItemDefinition
-// 0x0010 (0x0280 - 0x0270)
-class UFortConsumableAccountItemDefinition : public UFortAccountItemDefinition
+// Class FortniteGame.FortCompendiumItemDefinition
+// 0x0010 (0x02B0 - 0x02A0)
+class UFortCompendiumItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	bool                                               bCanActivateOnSelf;                                       // 0x0270(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bCanActivateOnOthers;                                     // 0x0271(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsAutomaticallyConsumed;                                 // 0x0272(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xD];                                       // 0x0273(0x000D) MISSED OFFSET
+	TArray<struct FFortCompendiumQuestInfo>            QuestInfos;                                               // 0x02A0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConsumableAccountItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd3ec6750);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortCompendiumBundleDefinition
+// 0x0020 (0x02C0 - 0x02A0)
+class UFortCompendiumBundleDefinition : public UFortAccountItemDefinition
+{
+public:
+	TArray<struct FFortCompendiumItemInfo>             CompendiumItems;                                          // 0x02A0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
+	struct FString                                     EventName;                                                // 0x02B0(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8863655d);
+		return ptr;
+	}
+
+
+	bool DoesCompendiumBundleExpire();
+};
+
+
+// Class FortniteGame.FortConsumableAccountItemDefinition
+// 0x0010 (0x02B0 - 0x02A0)
+class UFortConsumableAccountItemDefinition : public UFortAccountItemDefinition
+{
+public:
+	bool                                               bCanActivateOnSelf;                                       // 0x02A0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bCanActivateOnOthers;                                     // 0x02A1(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsAutomaticallyConsumed;                                 // 0x02A2(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xD];                                       // 0x02A3(0x000D) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc21714b);
 		return ptr;
 	}
 
@@ -19154,17 +20557,18 @@ public:
 
 
 // Class FortniteGame.FortAccountBuffCreditItemDefinition
-// 0x0020 (0x02A0 - 0x0280)
+// 0x0020 (0x02D0 - 0x02B0)
 class UFortAccountBuffCreditItemDefinition : public UFortConsumableAccountItemDefinition
 {
 public:
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0280(0x0018) MISSED OFFSET
-	int                                                MinutesOfBuffTimeToGrant;                                 // 0x0298(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x029C(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x18];                                      // 0x02B0(0x0018) MISSED OFFSET
+	int                                                MinutesOfBuffTimeToGrant;                                 // 0x02C8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x02CC(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountBuffCreditItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x218473a0);
 		return ptr;
 	}
 
@@ -19172,19 +20576,20 @@ public:
 
 
 // Class FortniteGame.FortConversionControlItemDefinition
-// 0x0040 (0x02B0 - 0x0270)
+// 0x0040 (0x02E0 - 0x02A0)
 class UFortConversionControlItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	struct FString                                     LootTierGroup;                                            // 0x0270(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	struct FDataTableRowHandle                         ConversionPointsToTierCosts;                              // 0x0280(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	bool                                               bConsumedOnConversion;                                    // 0x0290(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0291(0x0007) MISSED OFFSET
-	struct FText                                       RewardName;                                               // 0x0298(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FString                                     LootTierGroup;                                            // 0x02A0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	struct FDataTableRowHandle                         ConversionPointsToTierCosts;                              // 0x02B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	bool                                               bConsumedOnConversion;                                    // 0x02C0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x02C1(0x0007) MISSED OFFSET
+	struct FText                                       RewardName;                                               // 0x02C8(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConversionControlItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5cc9e5de);
 		return ptr;
 	}
 
@@ -19201,14 +20606,15 @@ public:
 
 
 // Class FortniteGame.FortCurrencyItemDefinition
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x02A0 - 0x02A0)
 class UFortCurrencyItemDefinition : public UFortAccountItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCurrencyItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x95a94baa);
 		return ptr;
 	}
 
@@ -19216,17 +20622,18 @@ public:
 
 
 // Class FortniteGame.FortGameplayModifierItemDefinition
-// 0x0030 (0x02A0 - 0x0270)
+// 0x0030 (0x02D0 - 0x02A0)
 class UFortGameplayModifierItemDefinition : public UFortAccountItemDefinition
 {
 public:
-	TArray<struct FFortGameplayEffectDeliveryInfo>     PersistentGameplayEffects;                                // 0x0270(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<struct FFortAbilitySetDeliveryInfo>         PersistentAbilitySets;                                    // 0x0280(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TArray<TAssetPtr<class UClass>>                    Mutators;                                                 // 0x0290(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FFortGameplayEffectDeliveryInfo>     PersistentGameplayEffects;                                // 0x02A0(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<struct FFortAbilitySetDeliveryInfo>         PersistentAbilitySets;                                    // 0x02B0(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TArray<TAssetPtr<class UClass>>                    Mutators;                                                 // 0x02C0(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayModifierItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x72e454cc);
 		return ptr;
 	}
 
@@ -19234,14 +20641,15 @@ public:
 
 
 // Class FortniteGame.FortHomebaseBannerColorItemDefinition
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x02A0 - 0x02A0)
 class UFortHomebaseBannerColorItemDefinition : public UFortAccountItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseBannerColorItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba790a9c);
 		return ptr;
 	}
 
@@ -19249,31 +20657,118 @@ public:
 
 
 // Class FortniteGame.FortHomebaseNodeItemDefinition
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x02A0 - 0x02A0)
 class UFortHomebaseNodeItemDefinition : public UFortAccountItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseNodeItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc65f7191);
 		return ptr;
 	}
 
 };
 
 
-// Class FortniteGame.FortPersistentResourceItemDefinition
-// 0x0010 (0x0280 - 0x0270)
-class UFortPersistentResourceItemDefinition : public UFortAccountItemDefinition
+// Class FortniteGame.FortMontageItemDefinitionBase
+// 0x0020 (0x02C0 - 0x02A0)
+class UFortMontageItemDefinitionBase : public UFortAccountItemDefinition
 {
 public:
-	bool                                               bIsEventItem;                                             // 0x0270(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xF];                                       // 0x0271(0x000F) MISSED OFFSET
+	TAssetPtr<class UAnimMontage>                      Animation;                                                // 0x02A0(0x0020) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPersistentResourceItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe83a5765);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaConsumableEmoteItemDefinition
+// 0x0000 (0x02C0 - 0x02C0)
+class UAthenaConsumableEmoteItemDefinition : public UFortMontageItemDefinitionBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2f422f8);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaDanceItemDefinition
+// 0x0000 (0x02C0 - 0x02C0)
+class UAthenaDanceItemDefinition : public UFortMontageItemDefinitionBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c66a47e);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.AthenaVictoryPoseItemDefinition
+// 0x0000 (0x02C0 - 0x02C0)
+class UAthenaVictoryPoseItemDefinition : public UFortMontageItemDefinitionBase
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa096be16);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortEmoteItemDefinition
+// 0x0020 (0x02E0 - 0x02C0)
+class UFortEmoteItemDefinition : public UFortMontageItemDefinitionBase
+{
+public:
+	struct FText                                       CommandName;                                              // 0x02C0(0x0018) (CPF_Edit)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x02D8(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x44207fb5);
+		return ptr;
+	}
+
+
+	struct FText GetCommandName();
+};
+
+
+// Class FortniteGame.FortPersistentResourceItemDefinition
+// 0x0010 (0x02B0 - 0x02A0)
+class UFortPersistentResourceItemDefinition : public UFortAccountItemDefinition
+{
+public:
+	bool                                               bIsEventItem;                                             // 0x02A0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xF];                                       // 0x02A1(0x000F) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a645864);
 		return ptr;
 	}
 
@@ -19282,96 +20777,22 @@ public:
 };
 
 
-// Class FortniteGame.FortQuestItemDefinition
-// 0x01A0 (0x0410 - 0x0270)
-class UFortQuestItemDefinition : public UFortAccountItemDefinition
-{
-public:
-	EFortQuestType                                     QuestType;                                                // 0x0270(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0271(0x0003) MISSED OFFSET
-	int                                                ExpirationDuration;                                       // 0x0274(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	TArray<struct FFortItemQuantityPair>               Rewards;                                                  // 0x0278(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FFortHiddenRewardQuantityPair>       HiddenRewards;                                            // 0x0288(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	TArray<struct FFortMcpQuestRewardInfo>             SelectableRewards;                                        // 0x0298(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	EFortQuestRewardType                               RewardType;                                               // 0x02A8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x02A9(0x0007) MISSED OFFSET
-	TArray<struct FFortMcpQuestObjectiveInfo>          Objectives;                                               // 0x02B0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	struct FGameplayTagContainer                       Prerequisites;                                            // 0x02C0(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortQuestItemDefinition>          PrerequisiteQuest;                                        // 0x02E0(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FDataTableRowHandle                         PrerequisiteObjective;                                    // 0x0300(0x0010) (CPF_Edit)
-	float                                              Weight;                                                   // 0x0310(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	uint16_t                                           GranterWindowPeriodMinutes;                               // 0x0314(0x0002) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	uint16_t                                           GranterCooldownPeriodSeconds;                             // 0x0316(0x0002) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               IsStreamingRequired;                                      // 0x0318(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x0319(0x0007) MISSED OFFSET
-	struct FDataTableRowHandle                         Category;                                                 // 0x0320(0x0010) (CPF_Edit)
-	TAssetPtr<class UFortConversation>                 IntroConversation;                                        // 0x0330(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortConversation>                 SelectRewardsConversation;                                // 0x0350(0x0020) (CPF_Edit)
-	TAssetPtr<class UFortConversation>                 ClaimConversation;                                        // 0x0370(0x0020) (CPF_Edit)
-	struct FText                                       RewardHeaderText;                                         // 0x0390(0x0018) (CPF_Edit)
-	struct FText                                       RewardDescription;                                        // 0x03A8(0x0018) (CPF_Edit)
-	struct FText                                       CompletionText;                                           // 0x03C0(0x0018) (CPF_Edit)
-	bool                                               bExpandsStormShield;                                      // 0x03D8(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bHidden;                                                  // 0x03D9(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bAutoLaunch;                                              // 0x03DA(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bDeprecated;                                              // 0x03DB(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x03DC(0x0004) MISSED OFFSET
-	TArray<struct FFortQuestMissionCreationContext>    MissionCreationContexts;                                  // 0x03E0(0x0010) (CPF_Edit, CPF_ZeroConstructor)
-	struct FFortMissionConfigDataParams                MissionConfigMetadata;                                    // 0x03F0(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
-	bool                                               bDisableBackendConditionEvaluation;                       // 0x0400(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x3];                                       // 0x0401(0x0003) MISSED OFFSET
-	uint32_t                                           ClaimPriority;                                            // 0x0404(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               bAllowTileMatching;                                       // 0x0408(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               bAllowMissionAlertMatchesBypassingTileRequirements;       // 0x0409(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData05[0x6];                                       // 0x040A(0x0006) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuestItemDefinition");
-		return ptr;
-	}
-
-
-	bool ShouldAutoLaunch();
-	bool IsHidden();
-	bool IsDeprecated();
-	float GetWeight();
-	class UFortConversation* GetSelectRewardsConversation();
-	TArray<struct FFortMcpQuestRewardInfo> GetSelectableRewards_BP();
-	EFortQuestRewardType GetRewardType();
-	TArray<struct FFortItemQuantityPair> GetRewards_BP();
-	struct FFortRewardInfo GetRewardInfo_BP();
-	struct FText GetRewardHeaderText();
-	struct FText GetRewardDescription();
-	EFortQuestType GetQuestType();
-	class UFortQuestItemDefinition* GetPrerequisiteQuest();
-	struct FDataTableRowHandle GetPrerequisiteObjective();
-	TArray<struct FFortMcpQuestObjectiveInfo> GetObjectives_BP();
-	class UFortConversation* GetIntroConversation();
-	TArray<struct FFortHiddenRewardQuantityPair> GetHiddenRewards_BP();
-	struct FText GetCompletionText();
-	class UFortConversation* GetClaimConversation();
-	struct FDataTableRowHandle GetCategory();
-	bool ExpandsStormShield();
-	bool AllowsTileMatching();
-};
-
-
 // Class FortniteGame.FortAmmoItemDefinition
-// 0x0400 (0x0820 - 0x0420)
+// 0x0400 (0x0840 - 0x0440)
 class UFortAmmoItemDefinition : public UFortWorldItemDefinition
 {
 public:
-	struct FSlateBrush                                 ClipIconBrush;                                            // 0x0420(0x0090) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	bool                                               bIsConsumed;                                              // 0x04B0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x04B1(0x0003) MISSED OFFSET
-	float                                              RegenCooldown;                                            // 0x04B4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FFortMultiSizeBrush                         AmmoIconBrush;                                            // 0x04B8(0x0360) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0818(0x0008) MISSED OFFSET
+	struct FSlateBrush                                 ClipIconBrush;                                            // 0x0440(0x0090) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	bool                                               bIsConsumed;                                              // 0x04D0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x04D1(0x0003) MISSED OFFSET
+	float                                              RegenCooldown;                                            // 0x04D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FFortMultiSizeBrush                         AmmoIconBrush;                                            // 0x04D8(0x0360) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData01[0x8];                                       // 0x0838(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAmmoItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbc15335);
 		return ptr;
 	}
 
@@ -19379,14 +20800,15 @@ public:
 
 
 // Class FortniteGame.FortBackpackItemDefinition
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x0440 - 0x0440)
 class UFortBackpackItemDefinition : public UFortWorldItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBackpackItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc3dd2b1);
 		return ptr;
 	}
 
@@ -19394,20 +20816,21 @@ public:
 
 
 // Class FortniteGame.FortBadgeItemDefinition
-// 0x0080 (0x04A0 - 0x0420)
+// 0x0080 (0x04C0 - 0x0440)
 class UFortBadgeItemDefinition : public UFortWorldItemDefinition
 {
 public:
-	struct FText                                       DisplayText;                                              // 0x0420(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FText                                       FailedDisplayText;                                        // 0x0438(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FLinearColor                                BadgeColor;                                               // 0x0450(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	struct FDataTableRowHandle                         BadgeScoringValuesHandle;                                 // 0x0460(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
-	TAssetPtr<class UFortCardPackItemDefinition>       BadgeCardPackReward;                                      // 0x0470(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	TArray<struct FFortItemQuantityPair>               ItemRewards;                                              // 0x0490(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	struct FText                                       DisplayText;                                              // 0x0440(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FText                                       FailedDisplayText;                                        // 0x0458(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FLinearColor                                BadgeColor;                                               // 0x0470(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	struct FDataTableRowHandle                         BadgeScoringValuesHandle;                                 // 0x0480(0x0010) (CPF_Edit, CPF_DisableEditOnInstance)
+	TAssetPtr<class UFortCardPackItemDefinition>       BadgeCardPackReward;                                      // 0x0490(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	TArray<struct FFortItemQuantityPair>               ItemRewards;                                              // 0x04B0(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBadgeItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe8aa9140);
 		return ptr;
 	}
 
@@ -19420,19 +20843,20 @@ public:
 
 
 // Class FortniteGame.FortConsumableItemDefinition
-// 0x0040 (0x0460 - 0x0420)
+// 0x0040 (0x0480 - 0x0440)
 class UFortConsumableItemDefinition : public UFortWorldItemDefinition
 {
 public:
-	TArray<struct FConsumeEffectData>                  ConsumeEffects;                                           // 0x0420(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	TAssetPtr<class UAnimMontage>                      UseAnimation;                                             // 0x0430(0x0020) (CPF_Edit)
-	float                                              UseTime;                                                  // 0x0450(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bRequiresMissingHealth;                                   // 0x0454(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xB];                                       // 0x0455(0x000B) MISSED OFFSET
+	TArray<struct FConsumeEffectData>                  ConsumeEffects;                                           // 0x0440(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	TAssetPtr<class UAnimMontage>                      UseAnimation;                                             // 0x0450(0x0020) (CPF_Edit)
+	float                                              UseTime;                                                  // 0x0470(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bRequiresMissingHealth;                                   // 0x0474(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xB];                                       // 0x0475(0x000B) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConsumableItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5fac0476);
 		return ptr;
 	}
 
@@ -19444,45 +20868,25 @@ public:
 };
 
 
-// Class FortniteGame.FortEmoteItemDefinition
-// 0x0040 (0x0460 - 0x0420)
-class UFortEmoteItemDefinition : public UFortWorldItemDefinition
-{
-public:
-	struct FText                                       CommandName;                                              // 0x0420(0x0018) (CPF_Edit)
-	TAssetPtr<class UClass>                            GameplayAbility;                                          // 0x0438(0x0020) (CPF_Edit)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0458(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortEmoteItemDefinition");
-		return ptr;
-	}
-
-
-	class UClass* GetGameplayAbility();
-	struct FText GetCommandName();
-};
-
-
 // Class FortniteGame.FortGadgetItemDefinition
-// 0x0090 (0x04B0 - 0x0420)
+// 0x0090 (0x04D0 - 0x0440)
 class UFortGadgetItemDefinition : public UFortWorldItemDefinition
 {
 public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0420(0x0008) MISSED OFFSET
-	TAssetPtr<class UClass>                            GameplayAbility;                                          // 0x0428(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	bool                                               bHasChargeUp;                                             // 0x0448(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0449(0x0007) MISSED OFFSET
-	TAssetPtr<class UFortDecoItemDefinition>           DecoItemDefinition;                                       // 0x0450(0x0020) (CPF_Edit)
-	struct FGameplayAttribute                          LevelAttribute;                                           // 0x0470(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	struct FDataTableRowHandle                         DamageStatHandle;                                         // 0x0490(0x0010) (CPF_Edit)
-	bool                                               bCanChangePreviewImageDuringGame;                         // 0x04A0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0xF];                                       // 0x04A1(0x000F) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0440(0x0008) MISSED OFFSET
+	TAssetPtr<class UClass>                            GameplayAbility;                                          // 0x0448(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	bool                                               bHasChargeUp;                                             // 0x0468(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0469(0x0007) MISSED OFFSET
+	TAssetPtr<class UFortDecoItemDefinition>           DecoItemDefinition;                                       // 0x0470(0x0020) (CPF_Edit)
+	struct FGameplayAttribute                          LevelAttribute;                                           // 0x0490(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	struct FDataTableRowHandle                         DamageStatHandle;                                         // 0x04B0(0x0010) (CPF_Edit)
+	bool                                               bCanChangePreviewImageDuringGame;                         // 0x04C0(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0xF];                                       // 0x04C1(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGadgetItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ffd4193);
 		return ptr;
 	}
 
@@ -19495,14 +20899,15 @@ public:
 
 
 // Class FortniteGame.FortIngredientItemDefinition
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x0440 - 0x0440)
 class UFortIngredientItemDefinition : public UFortWorldItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortIngredientItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7493ace);
 		return ptr;
 	}
 
@@ -19510,14 +20915,15 @@ public:
 
 
 // Class FortniteGame.FortMissionItemDefinition
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x0440 - 0x0440)
 class UFortMissionItemDefinition : public UFortWorldItemDefinition
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66b7df33);
 		return ptr;
 	}
 
@@ -19525,16 +20931,17 @@ public:
 
 
 // Class FortniteGame.FortNeverPersistItemDefinition
-// 0x0010 (0x0430 - 0x0420)
+// 0x0010 (0x0450 - 0x0440)
 class UFortNeverPersistItemDefinition : public UFortWorldItemDefinition
 {
 public:
-	unsigned char                                      bAccumulateOnPlayerState : 1;                             // 0x0420(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData00[0xF];                                       // 0x0421(0x000F) MISSED OFFSET
+	unsigned char                                      bAccumulateOnPlayerState : 1;                             // 0x0440(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData00[0xF];                                       // 0x0441(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNeverPersistItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7265ff9);
 		return ptr;
 	}
 
@@ -19542,16 +20949,17 @@ public:
 
 
 // Class FortniteGame.FortResourceItemDefinition
-// 0x0010 (0x0430 - 0x0420)
+// 0x0010 (0x0450 - 0x0440)
 class UFortResourceItemDefinition : public UFortWorldItemDefinition
 {
 public:
-	TEnumAsByte<EFortResourceType>                     ResourceType;                                             // 0x0420(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0xF];                                       // 0x0421(0x000F) MISSED OFFSET
+	TEnumAsByte<EFortResourceType>                     ResourceType;                                             // 0x0440(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0xF];                                       // 0x0441(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortResourceItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7e1ef47);
 		return ptr;
 	}
 
@@ -19559,15 +20967,16 @@ public:
 
 
 // Class FortniteGame.FortBuildingItemDefinition
-// 0x0020 (0x0650 - 0x0630)
+// 0x0020 (0x0670 - 0x0650)
 class UFortBuildingItemDefinition : public UFortWeaponItemDefinition
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x0630(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0650(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBuildingItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe783c6a7);
 		return ptr;
 	}
 
@@ -19575,42 +20984,43 @@ public:
 
 
 // Class FortniteGame.FortDecoItemDefinition
-// 0x0060 (0x0690 - 0x0630)
+// 0x0060 (0x06B0 - 0x0650)
 class UFortDecoItemDefinition : public UFortWeaponItemDefinition
 {
 public:
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0630(0x0018) MISSED OFFSET
-	TAssetPtr<class UClass>                            PlacementPreviewClass;                                    // 0x0648(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	float                                              GridSnapSizeOverride;                                     // 0x0668(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	float                                              RotationAngleIncrement;                                   // 0x066C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	TEnumAsByte<EPlacementType>                        PlacementTypeOverride;                                    // 0x0670(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x0671(0x0003) MISSED OFFSET
-	unsigned char                                      bForceIgnoreOverlapTest : 1;                              // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bForceIgnoreBuildingOverlaps : 1;                         // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bDisableLocationLerpWhilePlacing : 1;                     // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bDisableRotationLerpWhilePlacing : 1;                     // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bDisableScaleLerpWhilePlacing : 1;                        // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bAttachWhenPlacing : 1;                                   // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bAllowPlacementOnWorldGeometry : 1;                       // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bAllowPlacementOnBuildings : 1;                           // 0x0674(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bDestroySmallObjectsWhenPlaced : 1;                       // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bConsumeWhenPlaced : 1;                                   // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bCancelToolWhenPlaced : 1;                                // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bCancelAbilityOnUnequip : 1;                              // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bRequiresPlayerPlaceableAttachmentActors : 1;             // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bUseRelativeCameraRotation : 1;                           // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bAllowStairsWhenAttachingToFloors : 1;                    // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bSnapYawToHorizontalAxes : 1;                             // 0x0675(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bAllowAnyFloorPlacement : 1;                              // 0x0676(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      bRequiresPermissionToEditWorld : 1;                       // 0x0676(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
-	unsigned char                                      UnknownData02[0x1];                                       // 0x0677(0x0001) MISSED OFFSET
-	TArray<TAssetPtr<class UBuildingEditModeMetadata>> AllowedShapes;                                            // 0x0678(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
-	int                                                MaxPlacementDistance;                                     // 0x0688(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x4];                                       // 0x068C(0x0004) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0650(0x0018) MISSED OFFSET
+	TAssetPtr<class UClass>                            PlacementPreviewClass;                                    // 0x0668(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	float                                              GridSnapSizeOverride;                                     // 0x0688(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	float                                              RotationAngleIncrement;                                   // 0x068C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	TEnumAsByte<EPlacementType>                        PlacementTypeOverride;                                    // 0x0690(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0691(0x0003) MISSED OFFSET
+	unsigned char                                      bForceIgnoreOverlapTest : 1;                              // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bForceIgnoreBuildingOverlaps : 1;                         // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bDisableLocationLerpWhilePlacing : 1;                     // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bDisableRotationLerpWhilePlacing : 1;                     // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bDisableScaleLerpWhilePlacing : 1;                        // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bAttachWhenPlacing : 1;                                   // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bAllowPlacementOnWorldGeometry : 1;                       // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bAllowPlacementOnBuildings : 1;                           // 0x0694(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bDestroySmallObjectsWhenPlaced : 1;                       // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bConsumeWhenPlaced : 1;                                   // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bCancelToolWhenPlaced : 1;                                // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bCancelAbilityOnUnequip : 1;                              // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bRequiresPlayerPlaceableAttachmentActors : 1;             // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bUseRelativeCameraRotation : 1;                           // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bAllowStairsWhenAttachingToFloors : 1;                    // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bSnapYawToHorizontalAxes : 1;                             // 0x0695(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bAllowAnyFloorPlacement : 1;                              // 0x0696(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      bRequiresPermissionToEditWorld : 1;                       // 0x0696(0x0001) (CPF_Edit, CPF_DisableEditOnInstance)
+	unsigned char                                      UnknownData02[0x1];                                       // 0x0697(0x0001) MISSED OFFSET
+	TArray<TAssetPtr<class UBuildingEditModeMetadata>> AllowedShapes;                                            // 0x0698(0x0010) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
+	int                                                MaxPlacementDistance;                                     // 0x06A8(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x4];                                       // 0x06AC(0x0004) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb51dd78);
 		return ptr;
 	}
 
@@ -19643,17 +21053,18 @@ public:
 
 
 // Class FortniteGame.FortFOBCoreDecoItemDefinition
-// 0x0040 (0x06D0 - 0x0690)
+// 0x0040 (0x06F0 - 0x06B0)
 class UFortFOBCoreDecoItemDefinition : public UFortDecoItemDefinition
 {
 public:
-	struct FText                                       ExtendedDescription;                                      // 0x0690(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FText                                       FlavorText;                                               // 0x06A8(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
-	struct FGuid                                       SaveFilenameGUID;                                         // 0x06C0(0x0010) (CPF_Edit, CPF_EditConst, CPF_DuplicateTransient, CPF_IsPlainOldData)
+	struct FText                                       ExtendedDescription;                                      // 0x06B0(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FText                                       FlavorText;                                               // 0x06C8(0x0018) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnInstance)
+	struct FGuid                                       SaveFilenameGUID;                                         // 0x06E0(0x0010) (CPF_Edit, CPF_EditConst, CPF_DuplicateTransient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFOBCoreDecoItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7d139e2);
 		return ptr;
 	}
 
@@ -19663,32 +21074,18 @@ public:
 
 
 // Class FortniteGame.FortTrapItemDefinition
-// 0x0010 (0x06A0 - 0x0690)
+// 0x0010 (0x06C0 - 0x06B0)
 class UFortTrapItemDefinition : public UFortDecoItemDefinition
 {
 public:
-	struct FRotator                                    KnockbackDirOverride;                                     // 0x0690(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
-	bool                                               bKnockBackUsingPawnDir;                                   // 0x069C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x069D(0x0003) MISSED OFFSET
+	struct FRotator                                    KnockbackDirOverride;                                     // 0x06B0(0x000C) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
+	bool                                               bKnockBackUsingPawnDir;                                   // 0x06BC(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x06BD(0x0003) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTrapItemDefinition");
-		return ptr;
-	}
-
-};
-
-
-// Class FortniteGame.FortWeaponMeleeItemDefinition
-// 0x0000 (0x0630 - 0x0630)
-class UFortWeaponMeleeItemDefinition : public UFortWeaponItemDefinition
-{
-public:
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponMeleeItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbcbc44d6);
 		return ptr;
 	}
 
@@ -19696,22 +21093,23 @@ public:
 
 
 // Class FortniteGame.FortWeaponRangedItemDefinition
-// 0x0050 (0x0680 - 0x0630)
+// 0x0050 (0x06A0 - 0x0650)
 class UFortWeaponRangedItemDefinition : public UFortWeaponItemDefinition
 {
 public:
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0630(0x0018) MISSED OFFSET
-	bool                                               bUseNativeWeaponTrace;                                    // 0x0648(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bTraceThroughPawns;                                       // 0x0649(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x6];                                       // 0x064A(0x0006) MISSED OFFSET
-	TAssetPtr<class UParticleSystem>                   BulletShellFXTemplate;                                    // 0x0650(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
-	bool                                               bShouldSpawnBulletShellFX;                                // 0x0670(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	bool                                               bShouldUsePerfectAimWhenTargetingMinSpread;               // 0x0671(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0xE];                                       // 0x0672(0x000E) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0650(0x0018) MISSED OFFSET
+	bool                                               bUseNativeWeaponTrace;                                    // 0x0668(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bTraceThroughPawns;                                       // 0x0669(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x6];                                       // 0x066A(0x0006) MISSED OFFSET
+	TAssetPtr<class UParticleSystem>                   BulletShellFXTemplate;                                    // 0x0670(0x0020) (CPF_Edit, CPF_DisableEditOnInstance)
+	bool                                               bShouldSpawnBulletShellFX;                                // 0x0690(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	bool                                               bShouldUsePerfectAimWhenTargetingMinSpread;               // 0x0691(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0xE];                                       // 0x0692(0x000E) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponRangedItemDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e4720be);
 		return ptr;
 	}
 
@@ -19733,7 +21131,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortJumpDownLink");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x708cfd79);
 		return ptr;
 	}
 
@@ -19750,7 +21149,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortKeepEventInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x285aed2e);
 		return ptr;
 	}
 
@@ -19769,7 +21169,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortKeepEventList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad196b7a);
 		return ptr;
 	}
 
@@ -19800,7 +21201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortKeepDefenseManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x63d8373b);
 		return ptr;
 	}
 
@@ -19825,7 +21227,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortKeepItemManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf181db4);
 		return ptr;
 	}
 
@@ -19840,7 +21243,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortKismetLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfac263df);
 		return ptr;
 	}
 
@@ -19879,7 +21283,7 @@ public:
 	TEnumAsByte<EFortDayPhase> STATIC_MakeDayNightPhase(TEnumAsByte<EFortDayPhase> Value);
 	TEnumAsByte<EFortBuildingState> STATIC_MakeBuildingState(TEnumAsByte<EFortBuildingState> Value);
 	void STATIC_MakeAllPlayersTalkToSelf(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, class USoundBase* Audio, float Delay, bool bInterruptCurrentLine, bool bCanBeInterrupted, bool bCanCue, TEnumAsByte<EFortFeedbackBroadcastFilter> BroadcastFilter, bool bLatent);
-	class AFortPickup* STATIC_K2_SpawnPickupInWorld(class UObject* WorldContextObject, class UFortWorldItemDefinition* ItemDefinition, int NumberToSpawn, const struct FVector& Position, const struct FVector& Direction, int OverrideMaxStackCount);
+	class AFortPickup* STATIC_K2_SpawnPickupInWorld(class UObject* WorldContextObject, class UFortWorldItemDefinition* ItemDefinition, int NumberToSpawn, const struct FVector& Position, const struct FVector& Direction, int OverrideMaxStackCount, bool bToss);
 	int STATIC_K2_RemoveItemFromPlayer(class AFortPlayerController* PlayerController, class UFortWorldItemDefinition* ItemDefinition, int AmountToRemove);
 	void STATIC_K2_RemoveItemFromAllPlayers(class UObject* WorldContextObject, class UFortWorldItemDefinition* ItemDefinition, int AmountToRemove);
 	void STATIC_K2_GiveItemToPlayer(class AFortPlayerController* PlayerController, class UFortWorldItemDefinition* ItemDefinition, int NumberToGive, bool bNotifyPlayer);
@@ -19932,6 +21336,7 @@ public:
 	class UFortRegisteredPlayerInfo* STATIC_GetPlayerInfoFromUniqueID(class UObject* WorldContextObject, const struct FUniqueNetIdRepl& UniqueId);
 	bool STATIC_GetPawnStatsRow(const struct FDataTableRowHandle& DataTableRowHandle, struct FFortPawnStats* OutRow);
 	bool STATIC_GetNumericCVar(const struct FString& CVar, float* OutValue);
+	class AFortMusicManager* STATIC_GetMusicManager(class UObject* WorldContextObject);
 	class UMaterialInstanceDynamic* STATIC_GetMIDForSkeletalMeshComponent(class USkeletalMeshComponent* SkeletalMeshComponent, int ElementIndex);
 	bool STATIC_GetMeleeWeaponStatsRow(const struct FDataTableRowHandle& DataTableRowHandle, struct FFortMeleeWeaponStats* OutRow);
 	void STATIC_GetMatchmakingDifficultyRangeFromDifficultyInfo(const struct FGameDifficultyInfo& DifficultyInfo, float* OutMinDifficulty, float* OutMaxDifficulty);
@@ -20008,7 +21413,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLeaderboardRowProxyInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf92def5f);
 		return ptr;
 	}
 
@@ -20026,7 +21432,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLevelScriptActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x77da36f3);
 		return ptr;
 	}
 
@@ -20045,7 +21452,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLinkedAccount");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7987c4af);
 		return ptr;
 	}
 
@@ -20062,7 +21470,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLinkedAccountManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe4b91294);
 		return ptr;
 	}
 
@@ -20078,7 +21487,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpResource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1875bf1f);
 		return ptr;
 	}
 
@@ -20093,7 +21503,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpTwitch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde63ef4e);
 		return ptr;
 	}
 
@@ -20109,7 +21520,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTwitchAccount");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad778bd9);
 		return ptr;
 	}
 
@@ -20126,7 +21538,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66913556);
 		return ptr;
 	}
 
@@ -20153,7 +21566,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconClientPvE");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7990587d);
 		return ptr;
 	}
 
@@ -20169,7 +21583,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconClientPvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b5c4de0);
 		return ptr;
 	}
 
@@ -20189,7 +21604,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconClientRM");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e9bb0d5);
 		return ptr;
 	}
 
@@ -20216,7 +21632,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x896aa7e9);
 		return ptr;
 	}
 
@@ -20231,7 +21648,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconHostPvE");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde54e898);
 		return ptr;
 	}
 
@@ -20246,7 +21664,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconHostOutpost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x26101885);
 		return ptr;
 	}
 
@@ -20261,7 +21680,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconHostPvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c39a615);
 		return ptr;
 	}
 
@@ -20276,7 +21696,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconHostRM");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8586c84e);
 		return ptr;
 	}
 
@@ -20308,7 +21729,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconPlayerState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7a828db);
 		return ptr;
 	}
 
@@ -20334,7 +21756,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconPlayerStatePvE");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x122a81b2);
 		return ptr;
 	}
 
@@ -20351,7 +21774,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconPlayerStatePvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x305e8c4f);
 		return ptr;
 	}
 
@@ -20369,7 +21793,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconPlayerStateRM");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x26f0013c);
 		return ptr;
 	}
 
@@ -20389,7 +21814,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x53648dae);
 		return ptr;
 	}
 
@@ -20407,7 +21833,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconStatePvE");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0774165);
 		return ptr;
 	}
 
@@ -20422,7 +21849,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconStateOutpost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8b5c560);
 		return ptr;
 	}
 
@@ -20440,7 +21868,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconStatePvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb24336c8);
 		return ptr;
 	}
 
@@ -20460,7 +21889,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLobbyBeaconStateRM");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7d0c55d);
 		return ptr;
 	}
 
@@ -20489,7 +21919,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLocalPlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5158e51d);
 		return ptr;
 	}
 
@@ -20516,7 +21947,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortLOSComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e360212);
 		return ptr;
 	}
 
@@ -20540,7 +21972,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMarkActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3812e4f9);
 		return ptr;
 	}
 
@@ -20565,7 +21998,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingPolicy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf9b2c85);
 		return ptr;
 	}
 
@@ -20594,7 +22028,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmaking");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61184117);
 		return ptr;
 	}
 
@@ -20635,7 +22070,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5071e58c);
 		return ptr;
 	}
 
@@ -20646,7 +22082,7 @@ public:
 	void StartCriticalMission(float MinMissionDifficulty, float MaxMissionDifficulty);
 	void ReadyUp();
 	bool NeedToCheckRejoinStatus();
-	void JoinFromLobby();
+	bool JoinFromLobby();
 	bool IsWorldRecordLoaded();
 	bool IsOutpostPermitted();
 	bool IsMatchmakingLocal();
@@ -20672,7 +22108,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingCommon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3fc3524);
 		return ptr;
 	}
 
@@ -20687,7 +22124,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingPvE");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68eb6596);
 		return ptr;
 	}
 
@@ -20703,7 +22141,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingGather");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1830b826);
 		return ptr;
 	}
 
@@ -20719,7 +22158,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingMissionCommon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x48bcd688);
 		return ptr;
 	}
 
@@ -20734,7 +22174,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingCriticalMission");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d42a6a);
 		return ptr;
 	}
 
@@ -20749,7 +22190,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingQuickPlay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2c0485a);
 		return ptr;
 	}
 
@@ -20767,7 +22209,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPartyBeaconState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ca57522);
 		return ptr;
 	}
 
@@ -20790,7 +22233,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSessionHelper");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae100f73);
 		return ptr;
 	}
 
@@ -20808,7 +22252,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingSingleSession");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa45255d9);
 		return ptr;
 	}
 
@@ -20827,7 +22272,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMatchmakingV2");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0f3f20b);
 		return ptr;
 	}
 
@@ -20842,7 +22288,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpProfileCollectionBook");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x90f0dea1);
 		return ptr;
 	}
 
@@ -20867,7 +22314,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpProfileWorld");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0b6e556);
 		return ptr;
 	}
 
@@ -20899,7 +22347,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMcpWorlds");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb6de9030);
 		return ptr;
 	}
 
@@ -20915,7 +22364,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMetaNavArea");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac5c013a);
 		return ptr;
 	}
 
@@ -20930,7 +22380,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMetaNavArea_Wall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x19fc5d55);
 		return ptr;
 	}
 
@@ -20947,7 +22398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMetaNavArea_Obstacles");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde2eb6b9);
 		return ptr;
 	}
 
@@ -20963,7 +22415,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionOutpostConfigData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x363aaa9b);
 		return ptr;
 	}
 
@@ -20979,7 +22432,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionOutpostQuestConfigData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80ce9a6b);
 		return ptr;
 	}
 
@@ -20996,7 +22450,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionGenerationManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82cfbacc);
 		return ptr;
 	}
 
@@ -21011,7 +22466,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16027022);
 		return ptr;
 	}
 
@@ -21026,7 +22482,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4070703e);
 		return ptr;
 	}
 
@@ -21108,7 +22565,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3305024a);
 		return ptr;
 	}
 
@@ -21131,7 +22589,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPMissionManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc42debae);
 		return ptr;
 	}
 
@@ -21148,7 +22607,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPMission");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e3041a1);
 		return ptr;
 	}
 
@@ -21167,7 +22627,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPMission_3PtDomination");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd956d423);
 		return ptr;
 	}
 
@@ -21187,7 +22648,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPMission_CTF");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ccf4455);
 		return ptr;
 	}
 
@@ -21202,7 +22664,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPMission_EnemyBaseDestruction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed984579);
 		return ptr;
 	}
 
@@ -21221,7 +22684,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPObjective");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x33e8d512);
 		return ptr;
 	}
 
@@ -21236,7 +22700,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPObjective_3PtDomination");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc68849c);
 		return ptr;
 	}
 
@@ -21251,7 +22716,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPObjective_CTF");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x10d69e02);
 		return ptr;
 	}
 
@@ -21266,7 +22732,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPObjective_EnemyBaseDestruction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed99c998);
 		return ptr;
 	}
 
@@ -21288,7 +22755,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMissionTimerComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x90385c51);
 		return ptr;
 	}
 
@@ -21329,7 +22797,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMovementComp_Character");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2078cc53);
 		return ptr;
 	}
 
@@ -21357,7 +22826,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMovementComp_CharacterAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x300d241e);
 		return ptr;
 	}
 
@@ -21365,30 +22835,6 @@ public:
 	bool IsPassivelySkydiving();
 	bool IsActivelyStrafingInAir();
 	bool IsActivelySkydiving();
-};
-
-
-// Class FortniteGame.FortMusicManager
-// 0x0040 (0x03C8 - 0x0388)
-class AFortMusicManager : public AActor
-{
-public:
-	class AFortPlayerController*                       ControllerOwner;                                          // 0x0388(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UAudioComponent*                             MusicChannels[0x3];                                       // 0x0390(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x20];                                      // 0x03A8(0x0020) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortMusicManager");
-		return ptr;
-	}
-
-
-	void OnThresholdChange(TEnumAsByte<EFortCombatThresholds> OldThreshold, TEnumAsByte<EFortCombatThresholds> NewThreshold);
-	void OnDayPhaseChanged(TEnumAsByte<EFortDayPhase> CurrentDayPhase, TEnumAsByte<EFortDayPhase> PreviousDayPhase, bool bAtCreation);
-	float GetEventHeatPercentTotal(TEnumAsByte<EFortCombatEvents> CombatEvent);
-	float GetEventHeatPercent(TEnumAsByte<EFortCombatEvents> CombatEvent);
-	void ChangeMusic(class USoundBase* NewMusic, TEnumAsByte<EMusicFadeStyles> FadeStyle, float FadeTime, class USoundBase* Stinger);
 };
 
 
@@ -21403,7 +22849,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6723d3c3);
 		return ptr;
 	}
 
@@ -21418,7 +22865,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_StoneWall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xce3c5da9);
 		return ptr;
 	}
 
@@ -21435,7 +22883,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavAgentCostData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6da07f0c);
 		return ptr;
 	}
 
@@ -21450,7 +22899,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_CheapObstacle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb97d764);
 		return ptr;
 	}
 
@@ -21465,7 +22915,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_ClosedDoors");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8bed0e1);
 		return ptr;
 	}
 
@@ -21480,7 +22931,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_DefaultSmashable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5982bfdf);
 		return ptr;
 	}
 
@@ -21495,7 +22947,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_LowSmashable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9a5b66c);
 		return ptr;
 	}
 
@@ -21510,7 +22963,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_TraceSmashable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x948da41f);
 		return ptr;
 	}
 
@@ -21525,7 +22979,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_DefenderNull");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x821e1fe0);
 		return ptr;
 	}
 
@@ -21540,7 +22995,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_HuskNull");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b4ab676);
 		return ptr;
 	}
 
@@ -21555,7 +23011,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_LowJump");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x370a9bb4);
 		return ptr;
 	}
 
@@ -21570,7 +23027,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_Obstacle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9869d51);
 		return ptr;
 	}
 
@@ -21585,7 +23043,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_PortalOrSmash");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1be7176d);
 		return ptr;
 	}
 
@@ -21602,7 +23061,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_SmashableJump");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x84e825a);
 		return ptr;
 	}
 
@@ -21617,7 +23077,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_TakerOnly");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe8130ed9);
 		return ptr;
 	}
 
@@ -21632,7 +23093,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_Unwalkable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x536b4d4);
 		return ptr;
 	}
 
@@ -21647,7 +23109,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_WalkOverWall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9991abb);
 		return ptr;
 	}
 
@@ -21662,7 +23125,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_WallCorner");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef23b119);
 		return ptr;
 	}
 
@@ -21677,7 +23141,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavArea_WoodenWall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe0a0b340);
 		return ptr;
 	}
 
@@ -21695,7 +23160,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavAreaAutomatic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71dd340);
 		return ptr;
 	}
 
@@ -21713,7 +23179,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavGraphGoal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8457c25);
 		return ptr;
 	}
 
@@ -21728,7 +23195,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavigationFilter_IgnoreSmashingCost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x814ce511);
 		return ptr;
 	}
 
@@ -21743,7 +23211,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavigationFilter_NoSmashing");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4026a1d5);
 		return ptr;
 	}
 
@@ -21758,7 +23227,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavigationFilter_NoSmashingIncludeLow");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef279d13);
 		return ptr;
 	}
 
@@ -21773,7 +23243,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavigationFilter_TetherZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fa2b502);
 		return ptr;
 	}
 
@@ -21788,7 +23259,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavigationMetaFilter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x915e1ea2);
 		return ptr;
 	}
 
@@ -21803,7 +23275,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavigationFilter_Hunting");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcdace29d);
 		return ptr;
 	}
 
@@ -21818,7 +23291,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavLinkBlockerComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30261f43);
 		return ptr;
 	}
 
@@ -21833,7 +23307,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavLinkContainer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55421f6d);
 		return ptr;
 	}
 
@@ -21854,7 +23329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavLinkDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9398b2b);
 		return ptr;
 	}
 
@@ -21869,7 +23345,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavMesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0f88857);
 		return ptr;
 	}
 
@@ -21885,7 +23362,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNavObstacleComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc729782c);
 		return ptr;
 	}
 
@@ -21904,7 +23382,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDialogNotificationHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f483b00);
 		return ptr;
 	}
 
@@ -21925,7 +23404,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNotificationMessage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8045227d);
 		return ptr;
 	}
 
@@ -21942,7 +23422,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortNotificationQueue");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc203a875);
 		return ptr;
 	}
 
@@ -21957,7 +23438,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOnlineAccountMobile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9358253);
 		return ptr;
 	}
 
@@ -21972,7 +23454,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOnlineBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdea35dda);
 		return ptr;
 	}
 
@@ -21988,7 +23471,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOnlineSessionClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfe3c9961);
 		return ptr;
 	}
 
@@ -22007,7 +23491,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOutpostContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2248626);
 		return ptr;
 	}
 
@@ -22041,7 +23526,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortOutpostFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa79aa46a);
 		return ptr;
 	}
 
@@ -22084,7 +23570,6 @@ public:
 	void STATIC_FabricateItem(class AFortPlayerControllerOutpost* FortPC, class UFortWorldItemDefinition* ItemDef);
 	bool STATIC_DeployOutpostBuildingTagOnPlacementTag(class UObject* WorldContextObject, const struct FGameplayTag& BuildingTag, const struct FGameplayTag& PlacementTag);
 	void STATIC_DeactivateCraftingTable(class AFortPlayerControllerOutpost* FortPC);
-	int STATIC_CountOverflowFromAddingItem(class AFortPlayerControllerOutpost* Player, class UFortWorldItem* Item, int Count);
 	bool STATIC_CanActivateCraftingTable(class AFortPlayerControllerOutpost* FortPC);
 	void STATIC_ActivateCraftingTable(class AFortPlayerControllerOutpost* FortPC);
 };
@@ -22126,7 +23611,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPackPersonality");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfd3fa076);
 		return ptr;
 	}
 
@@ -22142,7 +23628,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortParty");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61adbc5b);
 		return ptr;
 	}
 
@@ -22163,7 +23650,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPartyBeaconClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf3416a9a);
 		return ptr;
 	}
 
@@ -22187,7 +23675,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPartyBeaconHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbab0931d);
 		return ptr;
 	}
 
@@ -22195,15 +23684,16 @@ public:
 
 
 // Class FortniteGame.FortPartyGameState
-// 0x07F0 (0x0DD0 - 0x05E0)
+// 0x0860 (0x0E40 - 0x05E0)
 class UFortPartyGameState : public UPartyGameState
 {
 public:
-	unsigned char                                      UnknownData00[0x7F0];                                     // 0x05E0(0x07F0) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x860];                                     // 0x05E0(0x0860) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPartyGameState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf4453ec);
 		return ptr;
 	}
 
@@ -22220,7 +23710,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPartyMemberState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x69900ce8);
 		return ptr;
 	}
 
@@ -22238,7 +23729,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPathCostEstimator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe836454f);
 		return ptr;
 	}
 
@@ -22253,7 +23745,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortBotPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x24a756b6);
 		return ptr;
 	}
 
@@ -22268,7 +23761,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPawn_Flinger");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5c726289);
 		return ptr;
 	}
 
@@ -22284,7 +23778,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPawn_InteractablePawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb361ed72);
 		return ptr;
 	}
 
@@ -22305,7 +23800,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPawn_Taker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x45551ca7);
 		return ptr;
 	}
 
@@ -22320,7 +23816,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPawn_FeedbackAnnouncer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2da6a1e0);
 		return ptr;
 	}
 
@@ -22335,7 +23832,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPermaniteStructureInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6a657fa);
 		return ptr;
 	}
 
@@ -22353,7 +23851,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDeployableBasePickup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ebacccb);
 		return ptr;
 	}
 
@@ -22368,7 +23867,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPickupAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe62bfadc);
 		return ptr;
 	}
 
@@ -22383,7 +23883,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPickupBackpack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7bcea83);
 		return ptr;
 	}
 
@@ -22398,7 +23899,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlacedPawnMarker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4636c2d2);
 		return ptr;
 	}
 
@@ -22466,7 +23968,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf30a8c21);
 		return ptr;
 	}
 
@@ -22510,7 +24013,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerAttributesProxyActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13f274c6);
 		return ptr;
 	}
 
@@ -22539,7 +24043,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerCameraBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29d2ad48);
 		return ptr;
 	}
 
@@ -22556,7 +24061,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortFrontEndCameraManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61a5d139);
 		return ptr;
 	}
 
@@ -22568,22 +24074,23 @@ public:
 
 
 // Class FortniteGame.FortReplaySpectator
-// 0x00A0 (0x2570 - 0x24D0)
+// 0x00A0 (0x2430 - 0x2390)
 class AFortReplaySpectator : public AFortPlayerControllerGameplay
 {
 public:
-	class AFortPlayerPawn*                             FollowedPawn;                                             // 0x24D0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<float>                                      PlaybackSpeedLUT;                                         // 0x24D8(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData00[0x8];                                       // 0x24E8(0x0008) MISSED OFFSET
-	class UPostProcessComponent*                       OutsideSafeZonePPComponent;                               // 0x24F0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_InstancedReference, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x18];                                      // 0x24F8(0x0018) MISSED OFFSET
-	class UFortReplaySpectatorCameraComponent*         CurrentViewTargetSpectatorCameraComponent;                // 0x2510(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	TMap<ESpectatorCameraType, class ASpectatorPawn*>  PawnMap;                                                  // 0x2518(0x0050) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData02[0x8];                                       // 0x2568(0x0008) MISSED OFFSET
+	class AFortPlayerPawn*                             FollowedPawn;                                             // 0x2390(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<float>                                      PlaybackSpeedLUT;                                         // 0x2398(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x23A8(0x0008) MISSED OFFSET
+	class UPostProcessComponent*                       OutsideSafeZonePPComponent;                               // 0x23B0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_InstancedReference, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x18];                                      // 0x23B8(0x0018) MISSED OFFSET
+	class UFortReplaySpectatorCameraComponent*         CurrentViewTargetSpectatorCameraComponent;                // 0x23D0(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	TMap<ESpectatorCameraType, class ASpectatorPawn*>  PawnMap;                                                  // 0x23D8(0x0050) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x2428(0x0008) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortReplaySpectator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x348aee77);
 		return ptr;
 	}
 
@@ -22614,7 +24121,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortReplaySpectatorCameraComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9920376f);
 		return ptr;
 	}
 
@@ -22630,7 +24138,24 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerCameraSpectator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x10762bbe);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortPlayerControllerChunkDownloader
+// 0x0000 (0x2300 - 0x2300)
+class AFortPlayerControllerChunkDownloader : public AFortPlayerController
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x972d9cc4);
 		return ptr;
 	}
 
@@ -22638,14 +24163,15 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerFrontEnd
-// 0x0000 (0x2440 - 0x2440)
+// 0x0000 (0x2300 - 0x2300)
 class AFortPlayerControllerFrontEnd : public AFortPlayerController
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerFrontEnd");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3486f2e2);
 		return ptr;
 	}
 
@@ -22653,17 +24179,18 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerDeployableBase
-// 0x0170 (0x2AD0 - 0x2960)
+// 0x0170 (0x29A0 - 0x2830)
 class AFortPlayerControllerDeployableBase : public AFortPlayerControllerZone
 {
 public:
-	class ADeployableBasePlot*                         CurrentPlot;                                              // 0x2960(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class ADeployableBasePlot*                         PreviousPlot;                                             // 0x2968(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x160];                                     // 0x2970(0x0160) MISSED OFFSET
+	class ADeployableBasePlot*                         CurrentPlot;                                              // 0x2830(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class ADeployableBasePlot*                         PreviousPlot;                                             // 0x2838(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x160];                                     // 0x2840(0x0160) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerDeployableBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fb1e828);
 		return ptr;
 	}
 
@@ -22683,14 +24210,15 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerFOB
-// 0x0000 (0x2960 - 0x2960)
+// 0x0000 (0x2830 - 0x2830)
 class AFortPlayerControllerFOB : public AFortPlayerControllerZone
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerFOB");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f2b3507);
 		return ptr;
 	}
 
@@ -22703,18 +24231,19 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerKeep
-// 0x0020 (0x2980 - 0x2960)
+// 0x0020 (0x2850 - 0x2830)
 class AFortPlayerControllerKeep : public AFortPlayerControllerZone
 {
 public:
-	unsigned char                                      UnknownData00[0x4];                                       // 0x2960(0x0004) MISSED OFFSET
-	int                                                WorkshopPickedItems;                                      // 0x2964(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                ArmoryPickedItems;                                        // 0x2968(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x14];                                      // 0x296C(0x0014) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x4];                                       // 0x2830(0x0004) MISSED OFFSET
+	int                                                WorkshopPickedItems;                                      // 0x2834(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                ArmoryPickedItems;                                        // 0x2838(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x14];                                      // 0x283C(0x0014) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerKeep");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd18d7b1);
 		return ptr;
 	}
 
@@ -22731,15 +24260,16 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerManor
-// 0x0040 (0x29A0 - 0x2960)
+// 0x0040 (0x2870 - 0x2830)
 class AFortPlayerControllerManor : public AFortPlayerControllerZone
 {
 public:
-	unsigned char                                      UnknownData00[0x40];                                      // 0x2960(0x0040) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x40];                                      // 0x2830(0x0040) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerManor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb84fcd5);
 		return ptr;
 	}
 
@@ -22750,30 +24280,31 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerOutpost
-// 0x0080 (0x29E0 - 0x2960)
+// 0x0080 (0x28B0 - 0x2830)
 class AFortPlayerControllerOutpost : public AFortPlayerControllerZone
 {
 public:
-	struct FScriptMulticastDelegate                    OnItemFabricated;                                         // 0x2960(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	class UFortOutpostItemDefinition*                  BuildingBeingUpgraded;                                    // 0x2970(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	int                                                LevelBeforeUpgrade;                                       // 0x2978(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	bool                                               bOutpostRefundDialogPending;                              // 0x297C(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x297D(0x0003) MISSED OFFSET
-	class UFortWorldItemDefinition*                    ItemPendingToFabricate;                                   // 0x2980(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x2988(0x0010) MISSED OFFSET
-	class UFortWorldItem*                              FabricatedItemPendingForNotification;                     // 0x2998(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x8];                                       // 0x29A0(0x0008) MISSED OFFSET
-	int64_t                                            DisintegrationStartTime;                                  // 0x29A8(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                QuantumGooCompleted;                                      // 0x29B0(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                QuantumGooIncoming;                                       // 0x29B4(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x29B8(0x0008) MISSED OFFSET
-	TArray<struct FFortDepositedResources>             PostDepositedResources;                                   // 0x29C0(0x0010) (CPF_Net, CPF_ZeroConstructor)
-	bool                                               bIsOutpostOwnerInPIE;                                     // 0x29D0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0xF];                                       // 0x29D1(0x000F) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnItemFabricated;                                         // 0x2830(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	class UFortOutpostItemDefinition*                  BuildingBeingUpgraded;                                    // 0x2840(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	int                                                LevelBeforeUpgrade;                                       // 0x2848(0x0004) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bOutpostRefundDialogPending;                              // 0x284C(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x284D(0x0003) MISSED OFFSET
+	class UFortWorldItemDefinition*                    ItemPendingToFabricate;                                   // 0x2850(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x2858(0x0010) MISSED OFFSET
+	class UFortWorldItem*                              FabricatedItemPendingForNotification;                     // 0x2868(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x8];                                       // 0x2870(0x0008) MISSED OFFSET
+	int64_t                                            DisintegrationStartTime;                                  // 0x2878(0x0008) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                QuantumGooCompleted;                                      // 0x2880(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                QuantumGooIncoming;                                       // 0x2884(0x0004) (CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x8];                                       // 0x2888(0x0008) MISSED OFFSET
+	TArray<struct FFortDepositedResources>             PostDepositedResources;                                   // 0x2890(0x0010) (CPF_Net, CPF_ZeroConstructor)
+	bool                                               bIsOutpostOwnerInPIE;                                     // 0x28A0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0xF];                                       // 0x28A1(0x000F) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerOutpost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2c28e44);
 		return ptr;
 	}
 
@@ -22817,14 +24348,15 @@ public:
 
 
 // Class FortniteGame.FortPlayerControllerPvPBaseDestruction
-// 0x0000 (0x2960 - 0x2960)
+// 0x0000 (0x2830 - 0x2830)
 class AFortPlayerControllerPvPBaseDestruction : public AFortPlayerControllerPvP
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerControllerPvPBaseDestruction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x525ecb5d);
 		return ptr;
 	}
 
@@ -22832,22 +24364,25 @@ public:
 
 
 // Class FortniteGame.FortPlayerInputAthena
-// 0x0038 (0x0518 - 0x04E0)
+// 0x0040 (0x0530 - 0x04F0)
 class UFortPlayerInputAthena : public UFortPlayerInput
 {
 public:
-	bool                                               bIsTargeting;                                             // 0x04E0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsScoped;                                                // 0x04E1(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x2];                                       // 0x04E2(0x0002) MISSED OFFSET
-	float                                              TargetingMultiplier;                                      // 0x04E4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              ScopedMultiplier;                                         // 0x04E8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x4];                                       // 0x04EC(0x0004) MISSED OFFSET
-	class UFortGamepadSettings*                        GamepadSettings;                                          // 0x04F0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x20];                                      // 0x04F8(0x0020) MISSED OFFSET
+	bool                                               bIsTargeting;                                             // 0x04F0(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsScoped;                                                // 0x04F1(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x2];                                       // 0x04F2(0x0002) MISSED OFFSET
+	float                                              TargetingMultiplier;                                      // 0x04F4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              ScopedMultiplier;                                         // 0x04F8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              GamepadTargetingMultiplier;                               // 0x04FC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              GamepadScopedMultiplier;                                  // 0x0500(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              GamepadFOVScale;                                          // 0x0504(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortGamepadSettings*                        GamepadSettings;                                          // 0x0508(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x20];                                      // 0x0510(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerInputAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdaef8aa3);
 		return ptr;
 	}
 
@@ -22879,7 +24414,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerInputSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa22e822d);
 		return ptr;
 	}
 
@@ -22887,7 +24423,7 @@ public:
 
 
 // Class FortniteGame.FortPlayerMannequin
-// 0x0188 (0x0598 - 0x0410)
+// 0x0190 (0x05A0 - 0x0410)
 class AFortPlayerMannequin : public ASkeletalMeshActor
 {
 public:
@@ -22895,22 +24431,27 @@ public:
 	class UFortHeroType*                               FortHeroType;                                             // 0x0418(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UCustomCharacterPart*                        CharacterParts[0x7];                                      // 0x0420(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FLightingChannels                           MannequinLightingChannels;                                // 0x0458(0x0001) (CPF_Edit)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0459(0x0007) MISSED OFFSET
-	class UCustomCharacterPart*                        CharacterPartList[0x6];                                   // 0x0460(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UCustomColorSwatch*                          CharacterPartColorSwatches[0x7];                          // 0x0490(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UCustomColorSwatch*                          ColorSwatchesForCharacterParts[0x6];                      // 0x04C8(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UCustomColorComponent*                       AccessoryColorSwatchHandler[0x6];                         // 0x04F8(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
-	class UCustomColorSwatch*                          ColorSwatches[0x2];                                       // 0x0528(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class USkeletalMesh*                               WeaponSkeletalMesh;                                       // 0x0538(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       WeaponAttachSocket;                                       // 0x0540(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x38];                                      // 0x0548(0x0038) MISSED OFFSET
-	TArray<struct FMorphValuePair>                     MorphTargets;                                             // 0x0580(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
-	bool                                               bInitialized;                                             // 0x0590(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x7];                                       // 0x0591(0x0007) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x3];                                       // 0x0459(0x0003) MISSED OFFSET
+	float                                              MannequinBoundsScale;                                     // 0x045C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsMannequinVisible;                                      // 0x0460(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bMannequinCastsHiddenShadow;                              // 0x0461(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x6];                                       // 0x0462(0x0006) MISSED OFFSET
+	class UCustomCharacterPart*                        CharacterPartList[0x6];                                   // 0x0468(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UCustomColorSwatch*                          CharacterPartColorSwatches[0x7];                          // 0x0498(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UCustomColorSwatch*                          ColorSwatchesForCharacterParts[0x6];                      // 0x04D0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UCustomColorComponent*                       AccessoryColorSwatchHandler[0x6];                         // 0x0500(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UCustomColorSwatch*                          ColorSwatches[0x2];                                       // 0x0530(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USkeletalMesh*                               WeaponSkeletalMesh;                                       // 0x0540(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       WeaponAttachSocket;                                       // 0x0548(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x38];                                      // 0x0550(0x0038) MISSED OFFSET
+	TArray<struct FMorphValuePair>                     MorphTargets;                                             // 0x0588(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor)
+	bool                                               bInitialized;                                             // 0x0598(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x7];                                       // 0x0599(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerMannequin");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc4e56076);
 		return ptr;
 	}
 
@@ -22938,7 +24479,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStart");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d3735d2);
 		return ptr;
 	}
 
@@ -22954,7 +24496,24 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStartWarmup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5f53502);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortPlayerStateChunkDownloader
+// 0x0000 (0x0AD0 - 0x0AD0)
+class AFortPlayerStateChunkDownloader : public AFortPlayerState
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7b92efd);
 		return ptr;
 	}
 
@@ -22969,7 +24528,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStateFrontEnd");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xecbdd25);
 		return ptr;
 	}
 
@@ -23000,7 +24560,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStateZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xead4abe3);
 		return ptr;
 	}
 
@@ -23019,7 +24580,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStateFOB");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0fabb2a);
 		return ptr;
 	}
 
@@ -23034,7 +24596,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStateKeep");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x118da3be);
 		return ptr;
 	}
 
@@ -23049,7 +24612,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStateManor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbfd8345c);
 		return ptr;
 	}
 
@@ -23064,7 +24628,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStateOutpost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fab754d);
 		return ptr;
 	}
 
@@ -23089,7 +24654,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStatePvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb140e01d);
 		return ptr;
 	}
 
@@ -23099,7 +24665,7 @@ public:
 
 
 // Class FortniteGame.FortPlayerStateAthena
-// 0x0030 (0x0DD0 - 0x0DA0)
+// 0x0060 (0x0E00 - 0x0DA0)
 class AFortPlayerStateAthena : public AFortPlayerStatePvP
 {
 public:
@@ -23108,18 +24674,21 @@ public:
 	bool                                               bHasWonAGame;                                             // 0x0DA9(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData01[0x2];                                       // 0x0DAA(0x0002) MISSED OFFSET
 	int                                                Place;                                                    // 0x0DAC(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Kills;                                                    // 0x0DB0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Downs;                                                    // 0x0DB4(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FVector2D                                   MapIndicatorPos;                                          // 0x0DB8(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_IsPlainOldData)
-	bool                                               bIsTalking;                                               // 0x0DC0(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsMuted;                                                 // 0x0DC1(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x2];                                       // 0x0DC2(0x0002) MISSED OFFSET
-	int                                                SecondsAlive;                                             // 0x0DC4(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x0DC8(0x0008) MISSED OFFSET
+	int                                                KillScore;                                                // 0x0DB0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                TeamKillScore;                                            // 0x0DB4(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                DownScore;                                                // 0x0DB8(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x24];                                      // 0x0DBC(0x0024) MISSED OFFSET
+	struct FVector2D                                   MapIndicatorPos;                                          // 0x0DE0(0x0008) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_Net, CPF_IsPlainOldData)
+	bool                                               bIsTalking;                                               // 0x0DE8(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsMuted;                                                 // 0x0DE9(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x2];                                       // 0x0DEA(0x0002) MISSED OFFSET
+	int                                                SecondsAlive;                                             // 0x0DEC(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x10];                                      // 0x0DF0(0x0010) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPlayerStateAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0718d40);
 		return ptr;
 	}
 
@@ -23143,7 +24712,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPooledSkelMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x896347af);
 		return ptr;
 	}
 
@@ -23158,7 +24728,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortProceduralFoliageComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4fa4d56);
 		return ptr;
 	}
 
@@ -23175,7 +24746,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPrototypingContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1193536d);
 		return ptr;
 	}
 
@@ -23194,7 +24766,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPushNotificationManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b511c49);
 		return ptr;
 	}
 
@@ -23209,7 +24782,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x46e29cda);
 		return ptr;
 	}
 
@@ -23240,7 +24814,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortPvPPlayerStart");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaacc5166);
 		return ptr;
 	}
 
@@ -23255,7 +24830,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_AllEnemies");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f6006a0);
 		return ptr;
 	}
 
@@ -23270,7 +24846,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_AllGoals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe4fa7758);
 		return ptr;
 	}
 
@@ -23285,7 +24862,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_AllPlayers");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b85496e);
 		return ptr;
 	}
 
@@ -23300,7 +24878,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_EncounterFallbackTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9780e1df);
 		return ptr;
 	}
 
@@ -23315,7 +24894,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_EncounterGoalsCenterLocation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83e2890c);
 		return ptr;
 	}
 
@@ -23330,7 +24910,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_EncounterGoalsOnGround");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9d64f58);
 		return ptr;
 	}
 
@@ -23345,7 +24926,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_EncounterPrimaryAssignmentGoals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6315e001);
 		return ptr;
 	}
 
@@ -23360,7 +24942,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_EncounterQueryActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f09c381);
 		return ptr;
 	}
 
@@ -23375,7 +24958,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_EncounterRandomDirection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa4de1b82);
 		return ptr;
 	}
 
@@ -23390,7 +24974,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_EncounterTargetObjective");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7d18ee36);
 		return ptr;
 	}
 
@@ -23405,7 +24990,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_Goal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x719f566e);
 		return ptr;
 	}
 
@@ -23420,7 +25006,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_GoalProviderRootAssignmentGoals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2236c50e);
 		return ptr;
 	}
 
@@ -23435,7 +25022,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_NearbyFriends");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x430c7029);
 		return ptr;
 	}
 
@@ -23450,7 +25038,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_TwoPointSolverPointA");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb446635d);
 		return ptr;
 	}
 
@@ -23465,7 +25054,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryContext_TwoPointSolverRotationA");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2aa9839);
 		return ptr;
 	}
 
@@ -23482,7 +25072,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryData_CurvesAroundLine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30be77fb);
 		return ptr;
 	}
 
@@ -23497,7 +25088,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_ActorsAround");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9097fb1c);
 		return ptr;
 	}
 
@@ -23512,7 +25104,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_AssignmentGoal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca7bc8eb);
 		return ptr;
 	}
 
@@ -23535,7 +25128,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_Buildings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd256eb58);
 		return ptr;
 	}
 
@@ -23554,7 +25148,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_BuildingsOnCachedPath");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3105a388);
 		return ptr;
 	}
 
@@ -23574,7 +25169,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_Enemies");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x984d17e3);
 		return ptr;
 	}
 
@@ -23591,7 +25187,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_GoalOnCircle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e6b03b7);
 		return ptr;
 	}
 
@@ -23611,7 +25208,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_HotspotSlots");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c4a6761);
 		return ptr;
 	}
 
@@ -23630,7 +25228,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_InfluenceMapPoints");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa322d305);
 		return ptr;
 	}
 
@@ -23646,7 +25245,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_MissionPlacementActors");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x105fade4);
 		return ptr;
 	}
 
@@ -23665,7 +25265,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_PointsAroundLine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa95d4405);
 		return ptr;
 	}
 
@@ -23700,7 +25301,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_PointsFromNavGraph");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaaadf29);
 		return ptr;
 	}
 
@@ -23719,7 +25321,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_PointsInVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3f0121e7);
 		return ptr;
 	}
 
@@ -23740,7 +25343,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_PointsOnBuildingGrid");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1e35b723);
 		return ptr;
 	}
 
@@ -23758,7 +25362,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_SpecificAssignmentGoals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8829c8f6);
 		return ptr;
 	}
 
@@ -23781,7 +25386,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_TerrainDonut");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a72bd4c);
 		return ptr;
 	}
 
@@ -23797,7 +25403,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryGenerator_ValidSpawnRiftActors");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60e63f31);
 		return ptr;
 	}
 
@@ -23812,7 +25419,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryItemType_Goal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5fafc804);
 		return ptr;
 	}
 
@@ -23827,7 +25435,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryItemType_PointOrSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc2a1de7a);
 		return ptr;
 	}
 
@@ -23845,7 +25454,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_CanHitWithGameplayAbility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f1b9793);
 		return ptr;
 	}
 
@@ -23861,7 +25471,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_DecoyDistance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdb02cd8f);
 		return ptr;
 	}
 
@@ -23877,7 +25488,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GameplayTagsPerDifficulty");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c9d7179);
 		return ptr;
 	}
 
@@ -23898,7 +25510,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdada901c);
 		return ptr;
 	}
 
@@ -23921,7 +25534,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_AssignmentTypeInterest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x258f47bf);
 		return ptr;
 	}
 
@@ -23952,7 +25566,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_BuildingCriteria");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1fd64319);
 		return ptr;
 	}
 
@@ -23967,7 +25582,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_CanAttackTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa3bb12c3);
 		return ptr;
 	}
 
@@ -23982,7 +25598,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_CanBeDamaged");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40d2ac6c);
 		return ptr;
 	}
 
@@ -24002,7 +25619,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalActorDot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8a1a30e7);
 		return ptr;
 	}
 
@@ -24018,7 +25636,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalDiscouragement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f1a9a03);
 		return ptr;
 	}
 
@@ -24038,7 +25657,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalDistance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xacc1ef2);
 		return ptr;
 	}
 
@@ -24060,7 +25680,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalDistanceRanges");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5bc29720);
 		return ptr;
 	}
 
@@ -24075,7 +25696,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalFrustrationDiscouragement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2434a9a0);
 		return ptr;
 	}
 
@@ -24090,7 +25712,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalMarkedByPlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x869729f3);
 		return ptr;
 	}
 
@@ -24107,7 +25730,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalNumberOfAIAssigned");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb38ed915);
 		return ptr;
 	}
 
@@ -24122,7 +25746,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalOverallDamageCaused");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8bc6c6e);
 		return ptr;
 	}
 
@@ -24142,7 +25767,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalStickiness");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf4058517);
 		return ptr;
 	}
 
@@ -24157,7 +25783,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14a87353);
 		return ptr;
 	}
 
@@ -24172,7 +25799,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_GoalWithinTetheredBounds");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ccc976e);
 		return ptr;
 	}
 
@@ -24190,7 +25818,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_PerceptionAll");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1fa964f8);
 		return ptr;
 	}
 
@@ -24212,7 +25841,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_PrimaryAssignment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2948233);
 		return ptr;
 	}
 
@@ -24235,7 +25865,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_HasNearbyBuildings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x693f3a8e);
 		return ptr;
 	}
 
@@ -24253,7 +25884,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_HasNearbyEncounterGoals");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca327aae);
 		return ptr;
 	}
 
@@ -24270,7 +25902,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_HotspotSlotOrientation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf3c19bb);
 		return ptr;
 	}
 
@@ -24287,7 +25920,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_HotspotSlotState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x22391a2a);
 		return ptr;
 	}
 
@@ -24302,7 +25936,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_InfluenceScore");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a4cb1f3);
 		return ptr;
 	}
 
@@ -24317,7 +25952,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_InsideBuilding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6fec9d02);
 		return ptr;
 	}
 
@@ -24334,7 +25970,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_InsideWater");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3bd4ac87);
 		return ptr;
 	}
 
@@ -24353,7 +25990,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_IsCloseToHotspotSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a9ff2);
 		return ptr;
 	}
 
@@ -24370,7 +26008,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_IsCloseToPatrolWard");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5bf52e5);
 		return ptr;
 	}
 
@@ -24388,7 +26027,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_IsGoalForAssignment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2bcbfadb);
 		return ptr;
 	}
 
@@ -24405,7 +26045,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_MissionGameplayTagMatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c04728f);
 		return ptr;
 	}
 
@@ -24421,7 +26062,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_MissionSameMap");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x86156490);
 		return ptr;
 	}
 
@@ -24437,7 +26079,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_NavGraphDistance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6427e236);
 		return ptr;
 	}
 
@@ -24456,7 +26099,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_OnFlatSurface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9af9b239);
 		return ptr;
 	}
 
@@ -24474,7 +26118,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_PerceptionAge");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe72fc90);
 		return ptr;
 	}
 
@@ -24492,7 +26137,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_PerceptionExists");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x52f465bb);
 		return ptr;
 	}
 
@@ -24510,7 +26156,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTest_Random");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x12e19703);
 		return ptr;
 	}
 
@@ -24540,7 +26187,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQueryTwoPointSolver");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbde4f9aa);
 		return ptr;
 	}
 
@@ -24552,91 +26200,6 @@ public:
 	struct FRotator GetRandomRotationOffset();
 	void AddNamedFloatParamB(const struct FName& ParamName, float Value);
 	void AddNamedFloatParamA(const struct FName& ParamName, float Value);
-};
-
-
-// Class FortniteGame.FortQuestCategory
-// 0x0060 (0x0088 - 0x0028)
-class UFortQuestCategory : public UObject
-{
-public:
-	struct FText                                       Name;                                                     // 0x0028(0x0018) (CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	TArray<class UFortQuestItem*>                      CurrentQuests;                                            // 0x0040(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	bool                                               bExpanded;                                                // 0x0050(0x0001) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0051(0x0007) MISSED OFFSET
-	struct FFortCategoryTableRow                       CategoryInfo;                                             // 0x0058(0x0028)
-	unsigned char                                      UnknownData01[0x8];                                       // 0x0080(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuestCategory");
-		return ptr;
-	}
-
-
-	bool HasUnseenQuests();
-};
-
-
-// Class FortniteGame.FortQuestManager
-// 0x0308 (0x0330 - 0x0028)
-class UFortQuestManager : public UObject
-{
-public:
-	struct FScriptMulticastDelegate                    OnQuestsUpdated;                                          // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnQuestsCompleted;                                        // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnQuestsGranted;                                          // 0x0048(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnQuestRewardClaimed;                                     // 0x0058(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnQuestSeen;                                              // 0x0068(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnNoQuestRewardsToClaim;                                  // 0x0078(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnPinnedQuestsChanged;                                    // 0x0088(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnDailyQuestRerolled;                                     // 0x0098(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnDisplayDynamicQuestUpdate;                              // 0x00A8(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	TArray<class UFortQuestItem*>                      CurrentQuests;                                            // 0x00B8(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	TMap<struct FName, class UFortQuestCategory*>      CurrentCategorizedQuestsMap;                              // 0x00C8(0x0050) (CPF_ZeroConstructor)
-	TArray<struct FFortQuestObjectiveCompletion>       PendingChanges;                                           // 0x0118(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData00[0x88];                                      // 0x0128(0x0088) MISSED OFFSET
-	TArray<struct FString>                             ActiveEventFlags;                                         // 0x01B0(0x0010) (CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData01[0x170];                                     // 0x01C0(0x0170) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuestManager");
-		return ptr;
-	}
-
-
-	bool SetQuestPinned(class UFortQuestItem* Quest, bool bEnabled);
-	void SendCustomStatEvent(const struct FDataTableRowHandle& ObjectiveStat, int Count, bool bForceFlush);
-	void RerollDailyQuest(class UFortQuestItem* QuestToDiscard);
-	void MarkQuestsSeen(bool bOnlyMarkPendingSeenQuests);
-	void MarkQuestSeen(class UFortQuestItem* Quest);
-	bool IsQuestInProgress(class UFortQuestItemDefinition* Definition);
-	bool IsObjectiveWithNameInProgress(class UFortQuestItemDefinition* Definition, const struct FName& BackendName);
-	bool IsObjectiveInProgress(class UFortQuestItemDefinition* Definition, const struct FDataTableRowHandle& ObjectiveStatHandle);
-	bool IsMainQuest(class UFortQuestItem* Quest);
-	bool HasUnseenQuests();
-	bool HasUnsavedPrimaryMissionProgress();
-	bool HasQuestBeenSeenLocally(class UFortQuestItem* Quest);
-	bool HasCompletedQuest(class UFortQuestItemDefinition* Definition);
-	bool HasCompletedObjectiveWithName(class UFortQuestItemDefinition* Definition, const struct FName& BackendName);
-	bool HasCompletedObjective(class UFortQuestItemDefinition* Definition, const struct FDataTableRowHandle& ObjectiveStatHandle);
-	void GrantFirstDailyQuest();
-	void GetSourceAndContextTags(struct FGameplayTagContainer* OutSourceTags, struct FGameplayTagContainer* OutContextTags);
-	int GetRemainingDailyQuestRerolls();
-	class UFortQuestItem* GetQuestWithDefinition(class UFortQuestItemDefinition* Definition);
-	class UFortQuestCategory* GetQuestCategory(class UFortQuestItem* QuestItem);
-	void GetPinnedQuests(TArray<class UFortQuestItem*>* OutPinnedQuestItems);
-	class UFortQuestItem* GetNextUnseenQuest(EFortQuestType QuestType);
-	class UFortQuestItem* GetMainQuest();
-	void GetCurrentQuestsCategories(TArray<class UFortQuestCategory*>* Categories);
-	void GetCurrentQuests(TArray<class UFortQuestItem*>* OutCurrentQuests);
-	void GetCompletedQuests(TArray<class UFortQuestItem*>* OutCompletedQuests);
-	class UFortQuestItem* GetBroadcasterQuestWithOpenWindow();
-	void ForceTriggerQuestsUpdated();
-	void ClaimSelectedQuestReward(class UFortQuestItem* Quest, int RewardIndex);
-	void ClaimQuestReward(class UFortQuestItem* Quest);
-	void ClaimNextCompletedQuestReward(EFortQuestType QuestType);
 };
 
 
@@ -24662,7 +26225,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuestObjectiveInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8fdc083e);
 		return ptr;
 	}
 
@@ -24685,7 +26249,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortRarityData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x768e33b4);
 		return ptr;
 	}
 
@@ -24695,7 +26260,7 @@ public:
 
 
 // Class FortniteGame.FortRegisteredPlayerInfo
-// 0x0158 (0x0180 - 0x0028)
+// 0x01B0 (0x01D8 - 0x0028)
 class UFortRegisteredPlayerInfo : public UObject
 {
 public:
@@ -24718,16 +26283,20 @@ public:
 	class UFortMcpProfileWorld*                        WorldProfile;                                             // 0x00A8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UFortMcpProfileWorld*                        OutpostProfile;                                           // 0x00B0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UFortMcpProfileMetadata*                     MetadataProfile;                                          // 0x00B8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortQuestManager*                           QuestManager;                                             // 0x00C0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortCollectionBookManager*                  CollectionBookManager;                                    // 0x00C8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortExpeditionManager*                      ExpeditionManager;                                        // 0x00D0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortLinkedAccountManager*                   LinkedAccountManager;                                     // 0x00D8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x98];                                      // 0x00E0(0x0098) MISSED OFFSET
-	class UFortHero*                                   AthenaMenuHeroDef;                                        // 0x0178(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UFortMcpProfileAthena*                       AthenaProfile;                                            // 0x00C0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TMap<ESubGame, class UFortQuestManager*>           QuestManagers;                                            // 0x00C8(0x0050) (CPF_ZeroConstructor)
+	class UFortCollectionBookManager*                  CollectionBookManager;                                    // 0x0118(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortExpeditionManager*                      ExpeditionManager;                                        // 0x0120(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortLinkedAccountManager*                   LinkedAccountManager;                                     // 0x0128(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x98];                                      // 0x0130(0x0098) MISSED OFFSET
+	class UFortHero*                                   AthenaMenuHeroDef;                                        // 0x01C8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bAthenaMenuHeroDirty;                                     // 0x01D0(0x0001) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData04[0x7];                                       // 0x01D1(0x0007) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortRegisteredPlayerInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f42f1d6);
 		return ptr;
 	}
 
@@ -24748,7 +26317,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHoverDroneCameraComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6922d161);
 		return ptr;
 	}
 
@@ -24764,7 +26334,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortReplaySpectatorPawnBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8ba00e2a);
 		return ptr;
 	}
 
@@ -24780,7 +26351,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.HoverDronePawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9f01cbf4);
 		return ptr;
 	}
 
@@ -24800,7 +26372,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortRiftBlockerComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5aa3333);
 		return ptr;
 	}
 
@@ -24828,7 +26401,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSaveFileBuildingInstructionsHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5bef0de1);
 		return ptr;
 	}
 
@@ -24848,7 +26422,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FOBSaveFileBuildingInstructionsHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac7b57f);
 		return ptr;
 	}
 
@@ -24864,7 +26439,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortScoreStylingData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68575655);
 		return ptr;
 	}
 
@@ -24890,7 +26466,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortScriptedAction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61e274e9);
 		return ptr;
 	}
 
@@ -24918,7 +26495,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortScriptedActionManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe17bd526);
 		return ptr;
 	}
 
@@ -24941,7 +26519,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSearchPass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8b0f173e);
 		return ptr;
 	}
 
@@ -24973,7 +26552,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortServerBehaviorTrackerConfig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6852f168);
 		return ptr;
 	}
 
@@ -24993,7 +26573,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortServerBehaviorTrackerAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7485307);
 		return ptr;
 	}
 
@@ -25016,7 +26597,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSharedMissionLists");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8438ee53);
 		return ptr;
 	}
 
@@ -25034,7 +26616,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSignificanceManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14612697);
 		return ptr;
 	}
 
@@ -25052,7 +26635,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSpawnPointsPercentageCurveSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4003b1fb);
 		return ptr;
 	}
 
@@ -25070,7 +26654,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortStaticMeshActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2e899a7);
 		return ptr;
 	}
 
@@ -25086,7 +26671,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortStaticMeshLinkComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6aac2289);
 		return ptr;
 	}
 
@@ -25102,7 +26688,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortStaticMeshUserData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6839c4bd);
 		return ptr;
 	}
 
@@ -25118,7 +26705,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTaggedActorsManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4e2846c);
 		return ptr;
 	}
 
@@ -25136,7 +26724,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTeamIdentification");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe800588);
 		return ptr;
 	}
 
@@ -25157,7 +26746,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTeamInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x164fa572);
 		return ptr;
 	}
 
@@ -25176,7 +26766,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTeamInfoAthena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57bc8e6f);
 		return ptr;
 	}
 
@@ -25204,7 +26795,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTeamInfoPvPBaseDestruction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe7a7bb4d);
 		return ptr;
 	}
 
@@ -25229,7 +26821,25 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTestControllerBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd4869866);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortTestControllerAutoTest
+// 0x0008 (0x0058 - 0x0050)
+class UFortTestControllerAutoTest : public UFortTestControllerBase
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0050(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa63d0378);
 		return ptr;
 	}
 
@@ -25245,7 +26855,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTestControllerMemoryReport");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e1c7b66);
 		return ptr;
 	}
 
@@ -25260,7 +26871,25 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTestControllerBootTest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x970611c5);
+		return ptr;
+	}
+
+};
+
+
+// Class FortniteGame.FortTestControllerPerfReplayTest
+// 0x0008 (0x0038 - 0x0030)
+class UFortTestControllerPerfReplayTest : public UGauntletTestController
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0030(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1a99f19);
 		return ptr;
 	}
 
@@ -25276,7 +26905,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTheaterList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xebf7907c);
 		return ptr;
 	}
 
@@ -25292,7 +26922,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortThreatParticleActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2c5b692);
 		return ptr;
 	}
 
@@ -25312,7 +26943,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTips");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc320c9b);
 		return ptr;
 	}
 
@@ -25329,7 +26961,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemComponentTooltipContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ed2cafd);
 		return ptr;
 	}
 
@@ -25348,7 +26981,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySystemComponentTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x91dfcd44);
 		return ptr;
 	}
 
@@ -25369,7 +27003,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTokenToAttributeTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2fd1f783);
 		return ptr;
 	}
 
@@ -25386,7 +27021,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTokenToTextTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4689266);
 		return ptr;
 	}
 
@@ -25401,7 +27037,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityKitTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8c5a9008);
 		return ptr;
 	}
 
@@ -25419,7 +27056,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilitySetTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa32353ec);
 		return ptr;
 	}
 
@@ -25440,7 +27078,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGameplayAbilityTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2cf145d2);
 		return ptr;
 	}
 
@@ -25466,7 +27105,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdb905984);
 		return ptr;
 	}
 
@@ -25484,7 +27124,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuestItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7497e9d4);
 		return ptr;
 	}
 
@@ -25502,7 +27143,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorldItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27a146a);
 		return ptr;
 	}
 
@@ -25520,7 +27162,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConsumableItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2cb500b);
 		return ptr;
 	}
 
@@ -25538,7 +27181,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGadgetItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa31fdc4);
 		return ptr;
 	}
 
@@ -25557,7 +27201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2af3184);
 		return ptr;
 	}
 
@@ -25576,7 +27221,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTrapItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1d76e4ab);
 		return ptr;
 	}
 
@@ -25595,7 +27241,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponMeleeItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdccea46);
 		return ptr;
 	}
 
@@ -25614,7 +27261,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponRangedItemDefinitionTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x578daa23);
 		return ptr;
 	}
 
@@ -25633,7 +27281,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortItemTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xadc9f751);
 		return ptr;
 	}
 
@@ -25652,7 +27301,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAccountItemTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9ddfe8fc);
 		return ptr;
 	}
 
@@ -25672,7 +27322,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCharacterTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2937e0f);
 		return ptr;
 	}
 
@@ -25692,7 +27343,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHeroTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6be13626);
 		return ptr;
 	}
 
@@ -25711,7 +27363,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorkerTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70fdedb0);
 		return ptr;
 	}
 
@@ -25730,7 +27383,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortSchematicTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f57d1d5);
 		return ptr;
 	}
 
@@ -25749,7 +27403,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortHomebaseNodeItemTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4691bd13);
 		return ptr;
 	}
 
@@ -25768,7 +27423,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWorldItemTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x922b1377);
 		return ptr;
 	}
 
@@ -25787,7 +27443,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortConsumableItemTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f25457a);
 		return ptr;
 	}
 
@@ -25806,7 +27463,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortGadgetItemTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0abee91);
 		return ptr;
 	}
 
@@ -25826,7 +27484,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTrapTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65c162e1);
 		return ptr;
 	}
 
@@ -25847,7 +27506,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5bcbf462);
 		return ptr;
 	}
 
@@ -25866,7 +27526,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponRangedTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf0e16b9);
 		return ptr;
 	}
 
@@ -25885,7 +27546,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortQuestObjectiveTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x278fc2cb);
 		return ptr;
 	}
 
@@ -25904,7 +27566,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortRegisteredPlayerInfoTooltip");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4eae83ab);
 		return ptr;
 	}
 
@@ -25924,7 +27587,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTooltipLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbea4e2b);
 		return ptr;
 	}
 
@@ -25955,7 +27619,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTrackMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc02c7b66);
 		return ptr;
 	}
 
@@ -25978,7 +27643,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIBaseClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x239aa2c8);
 		return ptr;
 	}
 
@@ -26008,7 +27674,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ac9b96d);
 		return ptr;
 	}
 
@@ -26029,7 +27696,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIPvP");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x47f43a4b);
 		return ptr;
 	}
 
@@ -26044,7 +27712,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIPvPBaseDestruction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbbf3570);
 		return ptr;
 	}
 
@@ -26059,7 +27728,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIManagerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c324855);
 		return ptr;
 	}
 
@@ -26078,7 +27748,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIFriendNotification");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf57a7982);
 		return ptr;
 	}
 
@@ -26099,7 +27770,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortUIProxyActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb03c5728);
 		return ptr;
 	}
 
@@ -26114,7 +27786,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortValidationInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2143a91);
 		return ptr;
 	}
 
@@ -26235,7 +27908,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeapon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcddacd85);
 		return ptr;
 	}
 
@@ -26247,6 +27921,7 @@ public:
 	void SetShouldDrawNativeReticle(bool bInShouldDrawReticle);
 	void ServerSetChargeState(unsigned char NewState);
 	void ServerResetShotReport();
+	void ServerReleaseWeaponPrimaryAbility();
 	void ResetTempWeaponMaterialOverride();
 	void Reload();
 	void PlayWeaponFireFX(bool bSecondaryFire);
@@ -26322,7 +27997,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortDecoTool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd3f55b98);
 		return ptr;
 	}
 
@@ -26344,7 +28020,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortAbilityDecoTool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x67cc40ec);
 		return ptr;
 	}
 
@@ -26364,7 +28041,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortCustomizableAbilityDecoTool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x73829220);
 		return ptr;
 	}
 
@@ -26393,7 +28071,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortTrapTool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f14ce3e);
 		return ptr;
 	}
 
@@ -26412,7 +28091,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeap_BuildingToolBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82762e24);
 		return ptr;
 	}
 
@@ -26437,7 +28117,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeap_BuildingTool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x22f6f813);
 		return ptr;
 	}
 
@@ -26458,7 +28139,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeap_EditingTool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa6cedbb1);
 		return ptr;
 	}
 
@@ -26519,7 +28201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeaponRanged");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2fa8c498);
 		return ptr;
 	}
 
@@ -26549,7 +28232,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FortWeap_WannaGun");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20401ad8);
 		return ptr;
 	}
 
@@ -26567,7 +28251,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.FrontEndSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3a6a1a35);
 		return ptr;
 	}
 
@@ -26588,7 +28273,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.HeartbeatManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x741ee5af);
 		return ptr;
 	}
 
@@ -26618,7 +28304,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.HoverDroneMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xccfb62a6);
 		return ptr;
 	}
 
@@ -26633,7 +28320,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.LevelTestingActorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x594dae18);
 		return ptr;
 	}
 
@@ -26652,7 +28340,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.ManorPortal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36fbcf5b);
 		return ptr;
 	}
 
@@ -26681,7 +28370,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.MatchHeartbeatManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xec683238);
 		return ptr;
 	}
 
@@ -26698,7 +28388,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.MovementComp_Tracer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6572afc);
 		return ptr;
 	}
 
@@ -26713,7 +28404,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.NavGraphDebugActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c9a164f);
 		return ptr;
 	}
 
@@ -26732,10 +28424,86 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.StatManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf889125d);
 		return ptr;
 	}
 
+};
+
+
+// Class FortniteGame.TimeOfDayController_BlueprintBase
+// 0x00D0 (0x0458 - 0x0388)
+class ATimeOfDayController_BlueprintBase : public AActor
+{
+public:
+	unsigned char                                      bOverride_FogCutoffDistance : 1;                          // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogDensity : 1;                                 // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogHeightFalloff : 1;                           // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogInscatteringColor : 1;                       // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogMaxOpacity : 1;                              // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogStartDistance : 1;                           // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogDirectionalInscatteringColor : 1;            // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogDirectionalInscatteringExponent : 1;         // 0x0388(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogDirectionalInscatteringStartDistance : 1;    // 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogFullyDirectionalInscatteringColorDistance : 1;// 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogUseVolumetricFog : 1;                        // 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogVolumetricFogAbsorptionScale : 1;            // 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogVolumetricFogDistance : 1;                   // 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogVolumetricFogScatteringDistribution : 1;     // 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_FogVolumetricFogScatteringScale : 1;            // 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_TimeOfDay : 1;                                  // 0x0389(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_PostProcessBlendWeight : 1;                     // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_PostProcessFogOpacity : 1;                      // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_PostProcessFogColor : 1;                        // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_DirectionalLightColor : 1;                      // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_DirectionalLightIntensity : 1;                  // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_SkyboxHorizonColor : 1;                         // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_SkyboxZenithColor : 1;                          // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_CloudAmountHorizon : 1;                         // 0x038A(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_CloudAmountZenith : 1;                          // 0x038B(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bOverride_StormStrength : 1;                              // 0x038B(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	float                                              FogCutoffDistance;                                        // 0x038C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogDensity;                                               // 0x0390(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogHeightFalloff;                                         // 0x0394(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FLinearColor                                FogInscatteringColor;                                     // 0x0398(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
+	float                                              FogMaxOpacity;                                            // 0x03A8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogStartDistance;                                         // 0x03AC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FLinearColor                                FogDirectionalInscatteringColor;                          // 0x03B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
+	float                                              FogDirectionalInscatteringExponent;                       // 0x03C0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogDirectionalInscatteringStartDistance;                  // 0x03C4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogFullyDirectionalInscatteringColorDistance;             // 0x03C8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               FogUseVolumetricFog;                                      // 0x03CC(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x03CD(0x0003) MISSED OFFSET
+	float                                              FogVolumetricFogAbsorptionScale;                          // 0x03D0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogVolumetricFogDistance;                                 // 0x03D4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogVolumetricFogScatteringDistribution;                   // 0x03D8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              FogVolumetricFogScatteringScale;                          // 0x03DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              TimeOfDay;                                                // 0x03E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PostProcessBlendWeight;                                   // 0x03E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PostProcessFogOpacity;                                    // 0x03E8(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FLinearColor                                PostProcessFogColor;                                      // 0x03EC(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
+	struct FLinearColor                                DirectionalLightColor;                                    // 0x03FC(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
+	float                                              DirectionalLightIntensity;                                // 0x040C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FLinearColor                                SkyboxHorizonColor;                                       // 0x0410(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
+	struct FLinearColor                                SkyboxZenithColor;                                        // 0x0420(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_IsPlainOldData)
+	float                                              CloudAmountHorizon;                                       // 0x0430(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              CloudAmountZenith;                                        // 0x0434(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              StormStrength;                                            // 0x0438(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x043C(0x0004) MISSED OFFSET
+	class AFortTimeOfDayManager*                       TODM;                                                     // 0x0440(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UExponentialHeightFogComponent*              ExponentialHeightFog;                                     // 0x0448(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UDirectionalLightComponent*                  DirectionalLight;                                         // 0x0450(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x43e270e3);
+		return ptr;
+	}
+
+
+	void SetPostProcessSettings();
 };
 
 
@@ -26751,7 +28519,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WaterVolume_Deep");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c280f2a);
 		return ptr;
 	}
 
@@ -26768,7 +28537,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WaterVolume_Shallow");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8e59303c);
 		return ptr;
 	}
 
@@ -26786,7 +28556,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WorldMapPinManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3259bbf2);
 		return ptr;
 	}
 
@@ -26820,7 +28591,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WorldTheme");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9152db0d);
 		return ptr;
 	}
 
@@ -26846,7 +28618,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WorldTileGroup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x365ffd8f);
 		return ptr;
 	}
 
@@ -26869,7 +28642,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteGame.WorldTileType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd08ea0d6);
 		return ptr;
 	}
 

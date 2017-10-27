@@ -17,7 +17,8 @@ namespace SDK
 
 void UGAB_GenericStunned_C::K2_OnEndAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericStunned.GAB_GenericStunned_C.K2_OnEndAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf75e2851);
 
 	UGAB_GenericStunned_C_K2_OnEndAbility_Params params;
 
@@ -36,7 +37,8 @@ void UGAB_GenericStunned_C::K2_OnEndAbility()
 
 void UGAB_GenericStunned_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericStunned.GAB_GenericStunned_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12b3a128);
 
 	UGAB_GenericStunned_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -56,7 +58,8 @@ void UGAB_GenericStunned_C::K2_ActivateAbilityFromEvent(struct FGameplayEventDat
 
 void UGAB_GenericStunned_C::ExecuteUbergraph_GAB_GenericStunned(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericStunned.GAB_GenericStunned_C.ExecuteUbergraph_GAB_GenericStunned");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc399e7f4);
 
 	UGAB_GenericStunned_C_ExecuteUbergraph_GAB_GenericStunned_Params params;
 	params.EntryPoint = EntryPoint;

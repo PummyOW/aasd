@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_Map_Commando_Prowess_TrapDamage.GE_Map_Commando_Prowess_TrapDamage_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c6c1b13);
 		return ptr;
 	}
 

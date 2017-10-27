@@ -105,6 +105,15 @@ enum class ECommonSwitcherTransition : uint8_t
 //Script Structs
 //---------------------------------------------------------------------------
 
+// ScriptStruct CommonUI.CommonInputActionHandlerData
+// 0x0018
+struct FCommonInputActionHandlerData
+{
+	struct FDataTableRowHandle                         InputActionRow;                                           // 0x0000(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	EInputActionState                                  State;                                                    // 0x0010(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
+};
+
 // ScriptStruct CommonUI.CommonRegisteredTabInfo
 // 0x0018
 struct FCommonRegisteredTabInfo
@@ -113,15 +122,6 @@ struct FCommonRegisteredTabInfo
 	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
 	class UCommonButton*                               TabButton;                                                // 0x0008(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 	class UWidget*                                     ContentInstance;                                          // 0x0010(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-};
-
-// ScriptStruct CommonUI.CommonInputActionHandlerData
-// 0x0018
-struct FCommonInputActionHandlerData
-{
-	struct FDataTableRowHandle                         InputActionRow;                                           // 0x0000(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	EInputActionState                                  State;                                                    // 0x0010(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
 };
 
 // ScriptStruct CommonUI.CommonNumberFormattingOptions

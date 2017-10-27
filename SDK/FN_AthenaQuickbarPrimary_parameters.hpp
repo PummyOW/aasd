@@ -19,11 +19,6 @@ struct UAthenaQuickbarPrimary_C_HandleShowHideWeaponRail_Params
 {
 };
 
-// Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HandleUpdateSlots
-struct UAthenaQuickbarPrimary_C_HandleUpdateSlots_Params
-{
-};
-
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HasOneNonHarvestWeapon
 struct UAthenaQuickbarPrimary_C_HasOneNonHarvestWeapon_Params
 {

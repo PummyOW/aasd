@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaKillerPortraitWidget_C::GetOwningPlayerState(class AFortPlayerStateAthena** AsFort_Player_State_Athena)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillerPortraitWidget.AthenaKillerPortraitWidget_C.GetOwningPlayerState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x356d20af);
 
 	UAthenaKillerPortraitWidget_C_GetOwningPlayerState_Params params;
 
@@ -41,7 +42,8 @@ void UAthenaKillerPortraitWidget_C::GetOwningPlayerState(class AFortPlayerStateA
 
 void UAthenaKillerPortraitWidget_C::Init(struct FFortPlayerDeathReport* DeathReport)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillerPortraitWidget.AthenaKillerPortraitWidget_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6d7eb3b);
 
 	UAthenaKillerPortraitWidget_C_Init_Params params;
 

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass UsedPrimaryMissionPlacementActorsContext.UsedPrimaryMissionPlacementActorsContext_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdfc55c17);
 		return ptr;
 	}
 

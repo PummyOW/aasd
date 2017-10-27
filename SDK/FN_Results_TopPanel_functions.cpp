@@ -19,7 +19,8 @@ namespace SDK
 
 void UResults_TopPanel_C::Initialize(EFortCompletionResult CompletionResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TopPanel.Results_TopPanel_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x123f5799);
 
 	UResults_TopPanel_C_Initialize_Params params;
 	params.CompletionResult = CompletionResult;
@@ -37,7 +38,8 @@ void UResults_TopPanel_C::Initialize(EFortCompletionResult CompletionResult)
 
 void UResults_TopPanel_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_56_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TopPanel.Results_TopPanel_C.BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_56_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1ac5fc);
 
 	UResults_TopPanel_C_BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_56_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -54,7 +56,8 @@ void UResults_TopPanel_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_56_OnWid
 
 void UResults_TopPanel_C::Intro_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TopPanel.Results_TopPanel_C.Intro Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x325e5ace);
 
 	UResults_TopPanel_C_Intro_Sequence_Params params;
 
@@ -73,7 +76,8 @@ void UResults_TopPanel_C::Intro_Sequence()
 
 void UResults_TopPanel_C::ExecuteUbergraph_Results_TopPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TopPanel.Results_TopPanel_C.ExecuteUbergraph_Results_TopPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4f00c93);
 
 	UResults_TopPanel_C_ExecuteUbergraph_Results_TopPanel_Params params;
 	params.EntryPoint = EntryPoint;
@@ -91,7 +95,8 @@ void UResults_TopPanel_C::ExecuteUbergraph_Results_TopPanel(int EntryPoint)
 
 void UResults_TopPanel_C::IntroComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TopPanel.Results_TopPanel_C.IntroComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed7279fd);
 
 	UResults_TopPanel_C_IntroComplete__DelegateSignature_Params params;
 

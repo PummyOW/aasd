@@ -86,12 +86,6 @@ struct UAthenaDeathWidget_C_TeamMemberChanged_Params
 {
 };
 
-// Function AthenaDeathWidget.AthenaDeathWidget_C.PreConstruct
-struct UAthenaDeathWidget_C_PreConstruct_Params
-{
-	bool*                                              IsDesignTime;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // Function AthenaDeathWidget.AthenaDeathWidget_C.BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature
 struct UAthenaDeathWidget_C_BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature_Params
 {

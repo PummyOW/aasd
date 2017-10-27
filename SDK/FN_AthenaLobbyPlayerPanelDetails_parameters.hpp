@@ -14,6 +14,11 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.RefreshBanner
+struct UAthenaLobbyPlayerPanelDetails_C_RefreshBanner_Params
+{
+};
+
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.SetTeamMemberInfo
 struct UAthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo_Params
 {

@@ -19,7 +19,8 @@ namespace SDK
 
 void UMulchRefundItemQuantityList_C::AddListEntry(class UFortItemQuantityListEntryBase** ListEntry)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchRefundItemQuantityList.MulchRefundItemQuantityList_C.AddListEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd52ffe9c);
 
 	UMulchRefundItemQuantityList_C_AddListEntry_Params params;
 	params.ListEntry = ListEntry;
@@ -39,7 +40,8 @@ void UMulchRefundItemQuantityList_C::AddListEntry(class UFortItemQuantityListEnt
 
 void UMulchRefundItemQuantityList_C::ExecuteUbergraph_MulchRefundItemQuantityList(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchRefundItemQuantityList.MulchRefundItemQuantityList_C.ExecuteUbergraph_MulchRefundItemQuantityList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc915d572);
 
 	UMulchRefundItemQuantityList_C_ExecuteUbergraph_MulchRefundItemQuantityList_Params params;
 	params.EntryPoint = EntryPoint;

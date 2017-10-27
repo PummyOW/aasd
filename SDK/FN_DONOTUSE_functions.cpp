@@ -17,7 +17,8 @@ namespace SDK
 
 void UDONOTUSE_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DONOTUSE.DONOTUSE_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x304d330a);
 
 	UDONOTUSE_C_Refresh_Params params;
 
@@ -34,7 +35,8 @@ void UDONOTUSE_C::Refresh()
 
 void UDONOTUSE_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DONOTUSE.DONOTUSE_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x434191cc);
 
 	UDONOTUSE_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UDONOTUSE_C::Construct()
 
 void UDONOTUSE_C::ExecuteUbergraph_DONOTUSE(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DONOTUSE.DONOTUSE_C.ExecuteUbergraph_DONOTUSE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb44e908a);
 
 	UDONOTUSE_C_ExecuteUbergraph_DONOTUSE_Params params;
 	params.EntryPoint = EntryPoint;

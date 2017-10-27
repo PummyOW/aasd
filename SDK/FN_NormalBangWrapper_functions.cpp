@@ -19,7 +19,8 @@ namespace SDK
 
 void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D& Translation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.Adjust Bang Image Translation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8713ade);
 
 	UNormalBangWrapper_C_Adjust_Bang_Image_Translation_Params params;
 	params.Translation = Translation;
@@ -39,7 +40,8 @@ void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D&
 
 void UNormalBangWrapper_C::Update_Bang_Icon_Version(int InCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.Update Bang Icon Version");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd444ab9);
 
 	UNormalBangWrapper_C_Update_Bang_Icon_Version_Params params;
 	params.InCount = InCount;
@@ -59,7 +61,8 @@ void UNormalBangWrapper_C::Update_Bang_Icon_Version(int InCount)
 
 void UNormalBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.SetTutorialBorderStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd05d7024);
 
 	UNormalBangWrapper_C_SetTutorialBorderStyle_Params params;
 	params.BorderStyle = BorderStyle;
@@ -80,7 +83,8 @@ void UNormalBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 
 void UNormalBangWrapper_C::OnBangStateChanged(bool* bEnabled, int* Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.OnBangStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0435c6b);
 
 	UNormalBangWrapper_C_OnBangStateChanged_Params params;
 	params.bEnabled = bEnabled;
@@ -99,7 +103,8 @@ void UNormalBangWrapper_C::OnBangStateChanged(bool* bEnabled, int* Count)
 
 void UNormalBangWrapper_C::OnStopCallout()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.OnStopCallout");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76c4aac8);
 
 	UNormalBangWrapper_C_OnStopCallout_Params params;
 
@@ -116,7 +121,8 @@ void UNormalBangWrapper_C::OnStopCallout()
 
 void UNormalBangWrapper_C::OnStartCallout()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.OnStartCallout");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11b02a1c);
 
 	UNormalBangWrapper_C_OnStartCallout_Params params;
 
@@ -135,7 +141,8 @@ void UNormalBangWrapper_C::OnStartCallout()
 
 void UNormalBangWrapper_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0084f41);
 
 	UNormalBangWrapper_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -155,7 +162,8 @@ void UNormalBangWrapper_C::PreConstruct(bool* IsDesignTime)
 
 void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NormalBangWrapper.NormalBangWrapper_C.ExecuteUbergraph_NormalBangWrapper");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf9b835d);
 
 	UNormalBangWrapper_C_ExecuteUbergraph_NormalBangWrapper_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemWindow_C::Set_Description_Text(class UFortItemDefinition* Item_Definition, class UCommonTextBlock* Text_Box_to_Set)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.Set Description Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f45951e);
 
 	UItemWindow_C_Set_Description_Text_Params params;
 	params.Item_Definition = Item_Definition;
@@ -42,7 +43,8 @@ void UItemWindow_C::Set_Description_Text(class UFortItemDefinition* Item_Definit
 
 void UItemWindow_C::InternalToExternalRarity(EFortRarity InRarity, struct FText* ExternalRarity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.InternalToExternalRarity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1d41b79);
 
 	UItemWindow_C_InternalToExternalRarity_Params params;
 	params.InRarity = InRarity;
@@ -66,7 +68,8 @@ void UItemWindow_C::InternalToExternalRarity(EFortRarity InRarity, struct FText*
 
 void UItemWindow_C::HandleButton(class UWidget* Content, int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.HandleButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x381a4b9f);
 
 	UItemWindow_C_HandleButton_Params params;
 	params.Content = Content;
@@ -85,7 +88,8 @@ void UItemWindow_C::HandleButton(class UWidget* Content, int Index)
 
 void UItemWindow_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d913eaf);
 
 	UItemWindow_C_Initialize_Params params;
 
@@ -105,7 +109,8 @@ void UItemWindow_C::Initialize()
 
 void UItemWindow_C::AddInfo(const struct FText& Title, TArray<class UFortItemDefinition*>* Info_Items)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.AddInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e3e9686);
 
 	UItemWindow_C_AddInfo_Params params;
 	params.Title = Title;
@@ -129,7 +134,8 @@ void UItemWindow_C::AddInfo(const struct FText& Title, TArray<class UFortItemDef
 
 void UItemWindow_C::OnSelectedButtonChanged_Event_1(class UCommonButton* AssociatedButton, int ButtonIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.OnSelectedButtonChanged_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd267dc4a);
 
 	UItemWindow_C_OnSelectedButtonChanged_Event_1_Params params;
 	params.AssociatedButton = AssociatedButton;
@@ -148,7 +154,8 @@ void UItemWindow_C::OnSelectedButtonChanged_Event_1(class UCommonButton* Associa
 
 void UItemWindow_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7fa6587);
 
 	UItemWindow_C_Destruct_Params params;
 
@@ -165,7 +172,8 @@ void UItemWindow_C::Destruct()
 
 void UItemWindow_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa15560e8);
 
 	UItemWindow_C_Construct_Params params;
 
@@ -184,7 +192,8 @@ void UItemWindow_C::Construct()
 
 void UItemWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaacc7297);
 
 	UItemWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -204,7 +213,8 @@ void UItemWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonB
 
 void UItemWindow_C::ExecuteUbergraph_ItemWindow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemWindow.ItemWindow_C.ExecuteUbergraph_ItemWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1756b4f8);
 
 	UItemWindow_C_ExecuteUbergraph_ItemWindow_Params params;
 	params.EntryPoint = EntryPoint;

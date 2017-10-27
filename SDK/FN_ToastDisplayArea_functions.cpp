@@ -17,7 +17,8 @@ namespace SDK
 
 void UToastDisplayArea_C::AttemptDisplayNextToast()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.AttemptDisplayNextToast");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2806f614);
 
 	UToastDisplayArea_C_AttemptDisplayNextToast_Params params;
 
@@ -34,7 +35,8 @@ void UToastDisplayArea_C::AttemptDisplayNextToast()
 
 void UToastDisplayArea_C::RegisterToastHandler()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.RegisterToastHandler");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x796f7ec7);
 
 	UToastDisplayArea_C_RegisterToastHandler_Params params;
 
@@ -51,7 +53,8 @@ void UToastDisplayArea_C::RegisterToastHandler()
 
 void UToastDisplayArea_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdbae79ea);
 
 	UToastDisplayArea_C_Construct_Params params;
 
@@ -68,7 +71,8 @@ void UToastDisplayArea_C::Construct()
 
 void UToastDisplayArea_C::HandleNewToastAvailable()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.HandleNewToastAvailable");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2917d407);
 
 	UToastDisplayArea_C_HandleNewToastAvailable_Params params;
 
@@ -85,7 +89,8 @@ void UToastDisplayArea_C::HandleNewToastAvailable()
 
 void UToastDisplayArea_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9eae631);
 
 	UToastDisplayArea_C_Destruct_Params params;
 
@@ -102,7 +107,8 @@ void UToastDisplayArea_C::Destruct()
 
 void UToastDisplayArea_C::BndEvt__ToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.BndEvt__ToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ff9e504);
 
 	UToastDisplayArea_C_BndEvt__ToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature_Params params;
 
@@ -119,7 +125,8 @@ void UToastDisplayArea_C::BndEvt__ToastWidget_K2Node_ComponentBoundEvent_2_OnFin
 
 void UToastDisplayArea_C::BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_8_OnFinishedToast__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_8_OnFinishedToast__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe68cabe7);
 
 	UToastDisplayArea_C_BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_8_OnFinishedToast__DelegateSignature_Params params;
 
@@ -138,7 +145,8 @@ void UToastDisplayArea_C::BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_8_
 
 void UToastDisplayArea_C::ExecuteUbergraph_ToastDisplayArea(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastDisplayArea.ToastDisplayArea_C.ExecuteUbergraph_ToastDisplayArea");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f64ed85);
 
 	UToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea_Params params;
 	params.EntryPoint = EntryPoint;

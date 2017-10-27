@@ -20,7 +20,8 @@ namespace SDK
 
 class UCommonButton* UHorizontalTabList_C::Get_Tab_From_Id(const struct FName& TabNameID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.Get Tab From Id");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb873ecdb);
 
 	UHorizontalTabList_C_Get_Tab_From_Id_Params params;
 	params.TabNameID = TabNameID;
@@ -43,7 +44,8 @@ class UCommonButton* UHorizontalTabList_C::Get_Tab_From_Id(const struct FName& T
 
 void UHorizontalTabList_C::ChangeInputBindings(const struct FDataTableRowHandle& NextBinding, const struct FDataTableRowHandle& PreviousBinding)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.ChangeInputBindings");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x332c3b7);
 
 	UHorizontalTabList_C_ChangeInputBindings_Params params;
 	params.NextBinding = NextBinding;
@@ -62,7 +64,8 @@ void UHorizontalTabList_C::ChangeInputBindings(const struct FDataTableRowHandle&
 
 void UHorizontalTabList_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26703b96);
 
 	UHorizontalTabList_C_Construct_Params params;
 
@@ -81,7 +84,8 @@ void UHorizontalTabList_C::Construct()
 
 void UHorizontalTabList_C::Handle_OnInputMethodChanged(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.Handle OnInputMethodChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa8a41835);
 
 	UHorizontalTabList_C_Handle_OnInputMethodChanged_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -101,7 +105,8 @@ void UHorizontalTabList_C::Handle_OnInputMethodChanged(bool bUsingGamepad)
 
 void UHorizontalTabList_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26cbdbed);
 
 	UHorizontalTabList_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -119,7 +124,8 @@ void UHorizontalTabList_C::PreConstruct(bool* IsDesignTime)
 
 void UHorizontalTabList_C::Previous_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.Previous Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7aa43c3c);
 
 	UHorizontalTabList_C_Previous_Visibility_Params params;
 
@@ -139,7 +145,8 @@ void UHorizontalTabList_C::Previous_Visibility()
 
 void UHorizontalTabList_C::HandleTabCreated(struct FName* TabNameID, class UCommonButton** TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.HandleTabCreated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x732083aa);
 
 	UHorizontalTabList_C_HandleTabCreated_Params params;
 	params.TabNameID = TabNameID;
@@ -160,7 +167,8 @@ void UHorizontalTabList_C::HandleTabCreated(struct FName* TabNameID, class UComm
 
 void UHorizontalTabList_C::CustomEvent_1(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.CustomEvent_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x480c663e);
 
 	UHorizontalTabList_C_CustomEvent_1_Params params;
 	params.TabId = TabId;
@@ -180,7 +188,8 @@ void UHorizontalTabList_C::CustomEvent_1(const struct FName& TabId)
 
 void UHorizontalTabList_C::ExecuteUbergraph_HorizontalTabList(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HorizontalTabList.HorizontalTabList_C.ExecuteUbergraph_HorizontalTabList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfcf18508);
 
 	UHorizontalTabList_C_ExecuteUbergraph_HorizontalTabList_Params params;
 	params.EntryPoint = EntryPoint;

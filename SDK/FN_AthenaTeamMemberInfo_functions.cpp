@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaTeamMemberInfo_C::SetTalking(bool NewTalking)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetTalking");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce438245);
 
 	UAthenaTeamMemberInfo_C_SetTalking_Params params;
 	params.NewTalking = NewTalking;
@@ -37,7 +38,8 @@ void UAthenaTeamMemberInfo_C::SetTalking(bool NewTalking)
 
 void UAthenaTeamMemberInfo_C::UpdateMicIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdateMicIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63de9c52);
 
 	UAthenaTeamMemberInfo_C_UpdateMicIcon_Params params;
 
@@ -56,7 +58,8 @@ void UAthenaTeamMemberInfo_C::UpdateMicIcon()
 
 void UAthenaTeamMemberInfo_C::SetMuted(bool NewMuted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetMuted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa37dc3d6);
 
 	UAthenaTeamMemberInfo_C_SetMuted_Params params;
 	params.NewMuted = NewMuted;
@@ -74,7 +77,8 @@ void UAthenaTeamMemberInfo_C::SetMuted(bool NewMuted)
 
 void UAthenaTeamMemberInfo_C::ShowPlayerInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.ShowPlayerInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3c41d93);
 
 	UAthenaTeamMemberInfo_C_ShowPlayerInfo_Params params;
 
@@ -91,7 +95,8 @@ void UAthenaTeamMemberInfo_C::ShowPlayerInfo()
 
 void UAthenaTeamMemberInfo_C::ShowConnecting()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.ShowConnecting");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea2f8dd2);
 
 	UAthenaTeamMemberInfo_C_ShowConnecting_Params params;
 
@@ -110,7 +115,8 @@ void UAthenaTeamMemberInfo_C::ShowConnecting()
 
 void UAthenaTeamMemberInfo_C::SetReviving(bool Reviving)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetReviving");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79d08c8f);
 
 	UAthenaTeamMemberInfo_C_SetReviving_Params params;
 	params.Reviving = Reviving;
@@ -128,7 +134,8 @@ void UAthenaTeamMemberInfo_C::SetReviving(bool Reviving)
 
 void UAthenaTeamMemberInfo_C::UpdatePlayerName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdatePlayerName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f960de);
 
 	UAthenaTeamMemberInfo_C_UpdatePlayerName_Params params;
 
@@ -147,7 +154,8 @@ void UAthenaTeamMemberInfo_C::UpdatePlayerName()
 
 void UAthenaTeamMemberInfo_C::SetDBNO(bool DBNO)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetDBNO");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83f3a896);
 
 	UAthenaTeamMemberInfo_C_SetDBNO_Params params;
 	params.DBNO = DBNO;
@@ -167,7 +175,8 @@ void UAthenaTeamMemberInfo_C::SetDBNO(bool DBNO)
 
 void UAthenaTeamMemberInfo_C::SetDead(bool Dead)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetDead");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e509c17);
 
 	UAthenaTeamMemberInfo_C_SetDead_Params params;
 	params.Dead = Dead;
@@ -187,7 +196,8 @@ void UAthenaTeamMemberInfo_C::SetDead(bool Dead)
 
 void UAthenaTeamMemberInfo_C::UpdatePS(class AFortPlayerStateAthena* InPlayerState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.UpdatePS");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf81d6cf);
 
 	UAthenaTeamMemberInfo_C_UpdatePS_Params params;
 	params.InPlayerState = InPlayerState;
@@ -207,7 +217,8 @@ void UAthenaTeamMemberInfo_C::UpdatePS(class AFortPlayerStateAthena* InPlayerSta
 
 void UAthenaTeamMemberInfo_C::SetShield(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetShield");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1dfffdf6);
 
 	UAthenaTeamMemberInfo_C_SetShield_Params params;
 	params.Value = Value;
@@ -227,7 +238,8 @@ void UAthenaTeamMemberInfo_C::SetShield(float Value)
 
 void UAthenaTeamMemberInfo_C::SetHealth(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.SetHealth");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x925c3447);
 
 	UAthenaTeamMemberInfo_C_SetHealth_Params params;
 	params.Value = Value;
@@ -245,7 +257,8 @@ void UAthenaTeamMemberInfo_C::SetHealth(float Value)
 
 void UAthenaTeamMemberInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd8bc87e);
 
 	UAthenaTeamMemberInfo_C_Construct_Params params;
 
@@ -264,7 +277,8 @@ void UAthenaTeamMemberInfo_C::Construct()
 
 void UAthenaTeamMemberInfo_C::ExecuteUbergraph_AthenaTeamMemberInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberInfo.AthenaTeamMemberInfo_C.ExecuteUbergraph_AthenaTeamMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50ea87df);
 
 	UAthenaTeamMemberInfo_C_ExecuteUbergraph_AthenaTeamMemberInfo_Params params;
 	params.EntryPoint = EntryPoint;

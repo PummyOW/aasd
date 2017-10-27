@@ -19,7 +19,8 @@ namespace SDK
 
 void ULobbyPlayerPadGadgets_C::Initialize(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef824349);
 
 	ULobbyPlayerPadGadgets_C_Initialize_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -37,7 +38,8 @@ void ULobbyPlayerPadGadgets_C::Initialize(int PlayerIndex)
 
 void ULobbyPlayerPadGadgets_C::OnInputClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnInputClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0f95ebf);
 
 	ULobbyPlayerPadGadgets_C_OnInputClicked_Params params;
 
@@ -58,7 +60,8 @@ void ULobbyPlayerPadGadgets_C::OnInputClicked()
 
 struct FEventReply ULobbyPlayerPadGadgets_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseButtonDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1c81fb5);
 
 	ULobbyPlayerPadGadgets_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -81,7 +84,8 @@ struct FEventReply ULobbyPlayerPadGadgets_C::OnMouseButtonDown(struct FGeometry*
 
 void ULobbyPlayerPadGadgets_C::Refresh(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7764a24);
 
 	ULobbyPlayerPadGadgets_C_Refresh_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -102,7 +106,8 @@ void ULobbyPlayerPadGadgets_C::Refresh(const struct FFortTeamMemberInfo& TeamMem
 
 void ULobbyPlayerPadGadgets_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49ef5485);
 
 	ULobbyPlayerPadGadgets_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -123,7 +128,8 @@ void ULobbyPlayerPadGadgets_C::OnMouseEnter(struct FGeometry* MyGeometry, struct
 
 void ULobbyPlayerPadGadgets_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4721fc2);
 
 	ULobbyPlayerPadGadgets_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -143,7 +149,8 @@ void ULobbyPlayerPadGadgets_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void ULobbyPlayerPadGadgets_C::ExecuteUbergraph_LobbyPlayerPadGadgets(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.ExecuteUbergraph_LobbyPlayerPadGadgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44be5ae0);
 
 	ULobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets_Params params;
 	params.EntryPoint = EntryPoint;
@@ -161,7 +168,8 @@ void ULobbyPlayerPadGadgets_C::ExecuteUbergraph_LobbyPlayerPadGadgets(int EntryP
 
 void ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnGadgetsMouseLeft__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1646d252);
 
 	ULobbyPlayerPadGadgets_C_OnGadgetsMouseLeft__DelegateSignature_Params params;
 
@@ -178,7 +186,8 @@ void ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft__DelegateSignature()
 
 void ULobbyPlayerPadGadgets_C::OnGadgetsMouseEntered__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.OnGadgetsMouseEntered__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14d74144);
 
 	ULobbyPlayerPadGadgets_C_OnGadgetsMouseEntered__DelegateSignature_Params params;
 

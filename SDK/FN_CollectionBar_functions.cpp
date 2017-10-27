@@ -19,7 +19,8 @@ namespace SDK
 
 void UCollectionBar_C::SetIcon(const struct FSlateBrush& InIcon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBar.CollectionBar_C.SetIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f3848de);
 
 	UCollectionBar_C_SetIcon_Params params;
 	params.InIcon = InIcon;
@@ -39,7 +40,8 @@ void UCollectionBar_C::SetIcon(const struct FSlateBrush& InIcon)
 
 void UCollectionBar_C::IsAchievedCountInRange(bool* bIsInRange)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBar.CollectionBar_C.IsAchievedCountInRange");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd38c68d3);
 
 	UCollectionBar_C_IsAchievedCountInRange_Params params;
 
@@ -61,7 +63,8 @@ void UCollectionBar_C::IsAchievedCountInRange(bool* bIsInRange)
 
 void UCollectionBar_C::SetAchievedCount(int InAchievedCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBar.CollectionBar_C.SetAchievedCount");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71a141af);
 
 	UCollectionBar_C_SetAchievedCount_Params params;
 	params.InAchievedCount = InAchievedCount;
@@ -79,7 +82,8 @@ void UCollectionBar_C::SetAchievedCount(int InAchievedCount)
 
 void UCollectionBar_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBar.CollectionBar_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c006414);
 
 	UCollectionBar_C_Update_Params params;
 
@@ -99,7 +103,8 @@ void UCollectionBar_C::Update()
 
 void UCollectionBar_C::GetProgressBarPercentage(int AchievedCount, float* Percentage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBar.CollectionBar_C.GetProgressBarPercentage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa436662f);
 
 	UCollectionBar_C_GetProgressBarPercentage_Params params;
 	params.AchievedCount = AchievedCount;
@@ -120,7 +125,8 @@ void UCollectionBar_C::GetProgressBarPercentage(int AchievedCount, float* Percen
 
 void UCollectionBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBar.CollectionBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e4de2fe);
 
 	UCollectionBar_C_Construct_Params params;
 
@@ -139,7 +145,8 @@ void UCollectionBar_C::Construct()
 
 void UCollectionBar_C::ExecuteUbergraph_CollectionBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBar.CollectionBar_C.ExecuteUbergraph_CollectionBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4ecade2);
 
 	UCollectionBar_C_ExecuteUbergraph_CollectionBar_Params params;
 	params.EntryPoint = EntryPoint;

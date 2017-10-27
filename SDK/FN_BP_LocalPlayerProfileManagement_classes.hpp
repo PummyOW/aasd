@@ -32,7 +32,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61dd7bdd);
 		return ptr;
 	}
 

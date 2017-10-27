@@ -21,7 +21,8 @@ namespace SDK
 
 bool UGCN_RiftZapPlayer_C::OnExecute(class AActor** MyTarget, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_RiftZapPlayer.GCN_RiftZapPlayer_C.OnExecute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x355feffd);
 
 	UGCN_RiftZapPlayer_C_OnExecute_Params params;
 	params.MyTarget = MyTarget;

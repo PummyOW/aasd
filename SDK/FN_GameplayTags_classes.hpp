@@ -24,7 +24,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQuery");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaea02e32);
 		return ptr;
 	}
 
@@ -39,7 +40,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQueryExpression");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96ae14ac);
 		return ptr;
 	}
 
@@ -55,7 +57,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQueryExpression_AnyTagsMatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc35c5877);
 		return ptr;
 	}
 
@@ -71,7 +74,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQueryExpression_AllTagsMatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36f9272e);
 		return ptr;
 	}
 
@@ -87,7 +91,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQueryExpression_NoTagsMatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed19da08);
 		return ptr;
 	}
 
@@ -103,7 +108,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQueryExpression_AnyExprMatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f46c211);
 		return ptr;
 	}
 
@@ -119,7 +125,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQueryExpression_AllExprMatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56c54f08);
 		return ptr;
 	}
 
@@ -135,7 +142,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.EditableGameplayTagQueryExpression_NoExprMatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5108de0e);
 		return ptr;
 	}
 
@@ -150,7 +158,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.GameplayTagAssetInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed4a299f);
 		return ptr;
 	}
 
@@ -170,7 +179,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.BlueprintGameplayTagLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xede5f332);
 		return ptr;
 	}
 
@@ -220,7 +230,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.GameplayTagsManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70e3667e);
 		return ptr;
 	}
 
@@ -237,7 +248,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.GameplayTagsList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1ea86a9);
 		return ptr;
 	}
 
@@ -263,7 +275,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.GameplayTagsSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a064002);
 		return ptr;
 	}
 
@@ -279,7 +292,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTags.GameplayTagsDeveloperSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x39f41632);
 		return ptr;
 	}
 

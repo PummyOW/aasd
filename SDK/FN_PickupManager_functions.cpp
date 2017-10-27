@@ -17,7 +17,8 @@ namespace SDK
 
 void UPickupManager_C::UpdateKeybinds()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.UpdateKeybinds");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7878d3ff);
 
 	UPickupManager_C_UpdateKeybinds_Params params;
 
@@ -34,7 +35,8 @@ void UPickupManager_C::UpdateKeybinds()
 
 void UPickupManager_C::RefreshCounts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.RefreshCounts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb30a80b0);
 
 	UPickupManager_C_RefreshCounts_Params params;
 
@@ -54,7 +56,8 @@ void UPickupManager_C::RefreshCounts()
 
 void UPickupManager_C::HandleItemPickedUp(class UFortWorldItem* NewItem, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.HandleItemPickedUp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51fd1fc3);
 
 	UPickupManager_C_HandleItemPickedUp_Params params;
 	params.NewItem = NewItem;
@@ -75,7 +78,8 @@ void UPickupManager_C::HandleItemPickedUp(class UFortWorldItem* NewItem, int Cou
 
 void UPickupManager_C::HandleMessageExpired(class UFortUIMessageItemWidget* Message_Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.HandleMessageExpired");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3d11ca9);
 
 	UPickupManager_C_HandleMessageExpired_Params params;
 	params.Message_Item = Message_Item;
@@ -93,7 +97,8 @@ void UPickupManager_C::HandleMessageExpired(class UFortUIMessageItemWidget* Mess
 
 void UPickupManager_C::TryGetNextItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.TryGetNextItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a90ae18);
 
 	UPickupManager_C_TryGetNextItem_Params params;
 
@@ -110,7 +115,8 @@ void UPickupManager_C::TryGetNextItem()
 
 void UPickupManager_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9486d81e);
 
 	UPickupManager_C_Construct_Params params;
 
@@ -127,7 +133,8 @@ void UPickupManager_C::Construct()
 
 void UPickupManager_C::HandleWorldItemsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.HandleWorldItemsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x567f2723);
 
 	UPickupManager_C_HandleWorldItemsChanged_Params params;
 
@@ -147,7 +154,8 @@ void UPickupManager_C::HandleWorldItemsChanged()
 
 void UPickupManager_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.HandleWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7a09e96);
 
 	UPickupManager_C_HandleWorldItemListChanged_Params params;
 	params.ItemsAdded = ItemsAdded;
@@ -166,9 +174,28 @@ void UPickupManager_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*> 
 
 void UPickupManager_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x191f8c5d);
 
 	UPickupManager_C_Destruct_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PickupManager.PickupManager_C.HandleBuildingMaterialChanged
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UPickupManager_C::HandleBuildingMaterialChanged()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf866606);
+
+	UPickupManager_C_HandleBuildingMaterialChanged_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -185,7 +212,8 @@ void UPickupManager_C::Destruct()
 
 void UPickupManager_C::ExecuteUbergraph_PickupManager(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupManager.PickupManager_C.ExecuteUbergraph_PickupManager");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0c16f2c);
 
 	UPickupManager_C_ExecuteUbergraph_PickupManager_Params params;
 	params.EntryPoint = EntryPoint;

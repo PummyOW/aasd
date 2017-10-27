@@ -42,7 +42,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass CollectionMultiProgressBar.CollectionMultiProgressBar_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf81bc03);
 		return ptr;
 	}
 

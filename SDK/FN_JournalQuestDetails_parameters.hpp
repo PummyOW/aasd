@@ -60,6 +60,7 @@ struct UJournalQuestDetails_C_StopConversation_Params
 // Function JournalQuestDetails.JournalQuestDetails_C.AbandonQuest
 struct UJournalQuestDetails_C_AbandonQuest_Params
 {
+	class UFortQuestItem*                              QuestToAbandon;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               questAbandoned_;                                          // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 

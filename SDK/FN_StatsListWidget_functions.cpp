@@ -20,7 +20,8 @@ namespace SDK
 
 void UStatsListWidget_C::AdjustClampCount(class UFortAttributeListItem_NUI* Widget, bool Add)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListWidget.StatsListWidget_C.AdjustClampCount");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c531de0);
 
 	UStatsListWidget_C_AdjustClampCount_Params params;
 	params.Widget = Widget;
@@ -41,7 +42,8 @@ void UStatsListWidget_C::AdjustClampCount(class UFortAttributeListItem_NUI* Widg
 
 void UStatsListWidget_C::ToggleClampedValueMessage(bool inShow)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListWidget.StatsListWidget_C.ToggleClampedValueMessage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64ad92ff);
 
 	UStatsListWidget_C_ToggleClampedValueMessage_Params params;
 	params.inShow = inShow;
@@ -59,7 +61,8 @@ void UStatsListWidget_C::ToggleClampedValueMessage(bool inShow)
 
 void UStatsListWidget_C::OnClearShownAttributes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListWidget.StatsListWidget_C.OnClearShownAttributes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ccd12ad);
 
 	UStatsListWidget_C_OnClearShownAttributes_Params params;
 
@@ -78,7 +81,8 @@ void UStatsListWidget_C::OnClearShownAttributes()
 
 void UStatsListWidget_C::OnAddShownAttributeListItem(class UFortAttributeListItem_NUI** AttributeListItemWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListWidget.StatsListWidget_C.OnAddShownAttributeListItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec613a69);
 
 	UStatsListWidget_C_OnAddShownAttributeListItem_Params params;
 	params.AttributeListItemWidget = AttributeListItemWidget;
@@ -99,7 +103,8 @@ void UStatsListWidget_C::OnAddShownAttributeListItem(class UFortAttributeListIte
 
 void UStatsListWidget_C::OnRemoveShownAttributeListItem(class UFortAttributeListItem_NUI** AttributeListItemWidget, int* AtIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListWidget.StatsListWidget_C.OnRemoveShownAttributeListItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd88f0bb4);
 
 	UStatsListWidget_C_OnRemoveShownAttributeListItem_Params params;
 	params.AttributeListItemWidget = AttributeListItemWidget;
@@ -120,7 +125,8 @@ void UStatsListWidget_C::OnRemoveShownAttributeListItem(class UFortAttributeList
 
 void UStatsListWidget_C::ExecuteUbergraph_StatsListWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListWidget.StatsListWidget_C.ExecuteUbergraph_StatsListWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28a67af4);
 
 	UStatsListWidget_C_ExecuteUbergraph_StatsListWidget_Params params;
 	params.EntryPoint = EntryPoint;

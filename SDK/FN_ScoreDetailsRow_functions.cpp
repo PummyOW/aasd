@@ -23,7 +23,8 @@ namespace SDK
 
 void UScoreDetailsRow_C::UpdateRow(const struct FText& PlayerName, int TotalScore, int Combat, int Building, int Utility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreDetailsRow.ScoreDetailsRow_C.UpdateRow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f5c6588);
 
 	UScoreDetailsRow_C_UpdateRow_Params params;
 	params.PlayerName = PlayerName;

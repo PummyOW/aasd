@@ -22,7 +22,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x90f32297);
 		return ptr;
 	}
 
@@ -38,7 +39,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequencePlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfec432b8);
 		return ptr;
 	}
 
@@ -55,7 +57,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceBurnInInitSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65b8f37c);
 		return ptr;
 	}
 
@@ -74,7 +77,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceBurnInOptions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a716ef1);
 		return ptr;
 	}
 
@@ -98,7 +102,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9623a3a6);
 		return ptr;
 	}
 
@@ -123,7 +128,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class LevelSequence.LevelSequenceBurnIn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x39524cfd);
 		return ptr;
 	}
 

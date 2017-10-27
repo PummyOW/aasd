@@ -20,7 +20,8 @@ namespace SDK
 
 void ALobbyBeaconClient::ServerSetPartyOwner(const struct FUniqueNetIdRepl& InUniqueId, const struct FUniqueNetIdRepl& InPartyOwnerId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ServerSetPartyOwner");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c2e0ae4);
 
 	ALobbyBeaconClient_ServerSetPartyOwner_Params params;
 	params.InUniqueId = InUniqueId;
@@ -40,7 +41,8 @@ void ALobbyBeaconClient::ServerSetPartyOwner(const struct FUniqueNetIdRepl& InUn
 
 void ALobbyBeaconClient::ServerNotifyJoiningServer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ServerNotifyJoiningServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e3aa5e5);
 
 	ALobbyBeaconClient_ServerNotifyJoiningServer_Params params;
 
@@ -62,7 +64,8 @@ void ALobbyBeaconClient::ServerNotifyJoiningServer()
 
 void ALobbyBeaconClient::ServerLoginPlayer(const struct FString& InSessionId, const struct FUniqueNetIdRepl& InUniqueId, const struct FString& UrlString)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ServerLoginPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30efe5a9);
 
 	ALobbyBeaconClient_ServerLoginPlayer_Params params;
 	params.InSessionId = InSessionId;
@@ -86,7 +89,8 @@ void ALobbyBeaconClient::ServerLoginPlayer(const struct FString& InSessionId, co
 
 void ALobbyBeaconClient::ServerKickPlayer(const struct FUniqueNetIdRepl& PlayerToKick, const struct FText& Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ServerKickPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47e9f092);
 
 	ALobbyBeaconClient_ServerKickPlayer_Params params;
 	params.PlayerToKick = PlayerToKick;
@@ -106,7 +110,8 @@ void ALobbyBeaconClient::ServerKickPlayer(const struct FUniqueNetIdRepl& PlayerT
 
 void ALobbyBeaconClient::ServerDisconnectFromLobby()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ServerDisconnectFromLobby");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d090427);
 
 	ALobbyBeaconClient_ServerDisconnectFromLobby_Params params;
 
@@ -126,7 +131,8 @@ void ALobbyBeaconClient::ServerDisconnectFromLobby()
 
 void ALobbyBeaconClient::ServerCheat(const struct FString& Msg)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ServerCheat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9d14dac);
 
 	ALobbyBeaconClient_ServerCheat_Params params;
 	params.Msg = Msg;
@@ -147,7 +153,8 @@ void ALobbyBeaconClient::ServerCheat(const struct FString& Msg)
 
 void ALobbyBeaconClient::ClientWasKicked(const struct FText& KickReason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ClientWasKicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a1e0133);
 
 	ALobbyBeaconClient_ClientWasKicked_Params params;
 	params.KickReason = KickReason;
@@ -168,7 +175,8 @@ void ALobbyBeaconClient::ClientWasKicked(const struct FText& KickReason)
 
 void ALobbyBeaconClient::ClientSetInviteFlags(const struct FJoinabilitySettings& Settings)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ClientSetInviteFlags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf01a4af);
 
 	ALobbyBeaconClient_ClientSetInviteFlags_Params params;
 	params.Settings = Settings;
@@ -189,7 +197,8 @@ void ALobbyBeaconClient::ClientSetInviteFlags(const struct FJoinabilitySettings&
 
 void ALobbyBeaconClient::ClientPlayerLeft(const struct FUniqueNetIdRepl& InUniqueId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ClientPlayerLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1d5414f);
 
 	ALobbyBeaconClient_ClientPlayerLeft_Params params;
 	params.InUniqueId = InUniqueId;
@@ -211,7 +220,8 @@ void ALobbyBeaconClient::ClientPlayerLeft(const struct FUniqueNetIdRepl& InUniqu
 
 void ALobbyBeaconClient::ClientPlayerJoined(const struct FText& NewPlayerName, const struct FUniqueNetIdRepl& InUniqueId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ClientPlayerJoined");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x668d1f);
 
 	ALobbyBeaconClient_ClientPlayerJoined_Params params;
 	params.NewPlayerName = NewPlayerName;
@@ -234,7 +244,8 @@ void ALobbyBeaconClient::ClientPlayerJoined(const struct FText& NewPlayerName, c
 
 void ALobbyBeaconClient::ClientLoginComplete(const struct FUniqueNetIdRepl& InUniqueId, bool bWasSuccessful)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ClientLoginComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b7e51af);
 
 	ALobbyBeaconClient_ClientLoginComplete_Params params;
 	params.InUniqueId = InUniqueId;
@@ -254,7 +265,8 @@ void ALobbyBeaconClient::ClientLoginComplete(const struct FUniqueNetIdRepl& InUn
 
 void ALobbyBeaconClient::ClientJoinGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ClientJoinGame");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb957218d);
 
 	ALobbyBeaconClient_ClientJoinGame_Params params;
 
@@ -272,7 +284,8 @@ void ALobbyBeaconClient::ClientJoinGame()
 
 void ALobbyBeaconClient::ClientAckJoiningServer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconClient.ClientAckJoiningServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63d6e3c3);
 
 	ALobbyBeaconClient_ClientAckJoiningServer_Params params;
 
@@ -290,7 +303,8 @@ void ALobbyBeaconClient::ClientAckJoiningServer()
 
 void ALobbyBeaconPlayerState::OnRep_PartyOwner()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconPlayerState.OnRep_PartyOwner");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd3306e7);
 
 	ALobbyBeaconPlayerState_OnRep_PartyOwner_Params params;
 
@@ -308,7 +322,8 @@ void ALobbyBeaconPlayerState::OnRep_PartyOwner()
 
 void ALobbyBeaconPlayerState::OnRep_InLobby()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconPlayerState.OnRep_InLobby");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfb012f7d);
 
 	ALobbyBeaconPlayerState_OnRep_InLobby_Params params;
 
@@ -326,7 +341,8 @@ void ALobbyBeaconPlayerState::OnRep_InLobby()
 
 void ALobbyBeaconState::OnRep_WaitForPlayersTimeRemaining()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconState.OnRep_WaitForPlayersTimeRemaining");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x362ea0c8);
 
 	ALobbyBeaconState_OnRep_WaitForPlayersTimeRemaining_Params params;
 
@@ -344,7 +360,8 @@ void ALobbyBeaconState::OnRep_WaitForPlayersTimeRemaining()
 
 void ALobbyBeaconState::OnRep_LobbyStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Lobby.LobbyBeaconState.OnRep_LobbyStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8bdfd66);
 
 	ALobbyBeaconState_OnRep_LobbyStarted_Params params;
 

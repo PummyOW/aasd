@@ -17,7 +17,8 @@ namespace SDK
 
 void UInfoWindow_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ae19b69);
 
 	UInfoWindow_C_Initialize_Params params;
 
@@ -37,7 +38,8 @@ void UInfoWindow_C::Initialize()
 
 void UInfoWindow_C::AddInfo(const struct FText& Title, TArray<class UFortItemDefinition*>* Info_Items)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.AddInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54a54320);
 
 	UInfoWindow_C_AddInfo_Params params;
 	params.Title = Title;
@@ -60,7 +62,8 @@ void UInfoWindow_C::AddInfo(const struct FText& Title, TArray<class UFortItemDef
 
 void UInfoWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x959a22d5);
 
 	UInfoWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -78,7 +81,8 @@ void UInfoWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonB
 
 void UInfoWindow_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10136f0e);
 
 	UInfoWindow_C_Construct_Params params;
 
@@ -95,7 +99,8 @@ void UInfoWindow_C::Construct()
 
 void UInfoWindow_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x129a372d);
 
 	UInfoWindow_C_Destruct_Params params;
 
@@ -112,7 +117,8 @@ void UInfoWindow_C::Destruct()
 
 void UInfoWindow_C::BndEvt__Lightbox_K2Node_ComponentBoundEvent_0_IntroEnded__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.BndEvt__Lightbox_K2Node_ComponentBoundEvent_0_IntroEnded__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e548702);
 
 	UInfoWindow_C_BndEvt__Lightbox_K2Node_ComponentBoundEvent_0_IntroEnded__DelegateSignature_Params params;
 
@@ -129,7 +135,8 @@ void UInfoWindow_C::BndEvt__Lightbox_K2Node_ComponentBoundEvent_0_IntroEnded__De
 
 void UInfoWindow_C::BndEvt__Lightbox_K2Node_ComponentBoundEvent_1_OutroEnded__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.BndEvt__Lightbox_K2Node_ComponentBoundEvent_1_OutroEnded__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c6b840);
 
 	UInfoWindow_C_BndEvt__Lightbox_K2Node_ComponentBoundEvent_1_OutroEnded__DelegateSignature_Params params;
 
@@ -146,7 +153,8 @@ void UInfoWindow_C::BndEvt__Lightbox_K2Node_ComponentBoundEvent_1_OutroEnded__De
 
 void UInfoWindow_C::OnBeginOutro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.OnBeginOutro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc602a70);
 
 	UInfoWindow_C_OnBeginOutro_Params params;
 
@@ -163,7 +171,8 @@ void UInfoWindow_C::OnBeginOutro()
 
 void UInfoWindow_C::OnBeginIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.OnBeginIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7289f0b);
 
 	UInfoWindow_C_OnBeginIntro_Params params;
 
@@ -182,7 +191,8 @@ void UInfoWindow_C::OnBeginIntro()
 
 void UInfoWindow_C::BndEvt__InfoButtons_K2Node_ComponentBoundEvent_212_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.BndEvt__InfoButtons_K2Node_ComponentBoundEvent_212_OnListViewItemWidgetCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2fb100ba);
 
 	UInfoWindow_C_BndEvt__InfoButtons_K2Node_ComponentBoundEvent_212_OnListViewItemWidgetCreated__DelegateSignature_Params params;
 	params.Widget = Widget;
@@ -202,7 +212,8 @@ void UInfoWindow_C::BndEvt__InfoButtons_K2Node_ComponentBoundEvent_212_OnListVie
 
 void UInfoWindow_C::Set_Info(class UFortItemDefinition* Entry_Item_Definition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.Set Info");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1bb9e2b);
 
 	UInfoWindow_C_Set_Info_Params params;
 	params.Entry_Item_Definition = Entry_Item_Definition;
@@ -222,7 +233,8 @@ void UInfoWindow_C::Set_Info(class UFortItemDefinition* Entry_Item_Definition)
 
 void UInfoWindow_C::ExecuteUbergraph_InfoWindow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InfoWindow.InfoWindow_C.ExecuteUbergraph_InfoWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f4b06f);
 
 	UInfoWindow_C_ExecuteUbergraph_InfoWindow_Params params;
 	params.EntryPoint = EntryPoint;

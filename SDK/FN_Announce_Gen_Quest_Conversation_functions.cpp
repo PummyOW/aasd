@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_Gen_Quest_Conversation_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b157130);
 
 	AAnnounce_Gen_Quest_Conversation_C_UserConstructionScript_Params params;
 
@@ -37,7 +38,8 @@ void AAnnounce_Gen_Quest_Conversation_C::UserConstructionScript()
 
 void AAnnounce_Gen_Quest_Conversation_C::OnConversationFinished(struct FFortConversationSentence* FinishingSentence, int* FinishingSentenceSentenceIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.OnConversationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x974524eb);
 
 	AAnnounce_Gen_Quest_Conversation_C_OnConversationFinished_Params params;
 	params.FinishingSentence = FinishingSentence;
@@ -58,7 +60,8 @@ void AAnnounce_Gen_Quest_Conversation_C::OnConversationFinished(struct FFortConv
 
 void AAnnounce_Gen_Quest_Conversation_C::ExecuteUbergraph_Announce_Gen_Quest_Conversation(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x716821fc);
 
 	AAnnounce_Gen_Quest_Conversation_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation_Params params;
 	params.EntryPoint = EntryPoint;

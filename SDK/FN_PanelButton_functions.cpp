@@ -19,7 +19,8 @@ namespace SDK
 
 void UPanelButton_C::UpdateStyle(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.UpdateStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3e2fa73);
 
 	UPanelButton_C_UpdateStyle_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -37,7 +38,8 @@ void UPanelButton_C::UpdateStyle(bool bUsingGamepad)
 
 void UPanelButton_C::InitializeButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.InitializeButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b3a6761);
 
 	UPanelButton_C_InitializeButton_Params params;
 
@@ -54,7 +56,8 @@ void UPanelButton_C::InitializeButton()
 
 void UPanelButton_C::UpdateTextAndStyle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.UpdateTextAndStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bc55f23);
 
 	UPanelButton_C_UpdateTextAndStyle_Params params;
 
@@ -73,7 +76,8 @@ void UPanelButton_C::UpdateTextAndStyle()
 
 void UPanelButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2210e215);
 
 	UPanelButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -93,7 +97,8 @@ void UPanelButton_C::PreConstruct(bool* IsDesignTime)
 
 void UPanelButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa14c7b12);
 
 	UPanelButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -113,7 +118,8 @@ void UPanelButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent
 
 void UPanelButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle* NewTriggeredAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.OnTriggeredInputActionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbcdc7835);
 
 	UPanelButton_C_OnTriggeredInputActionChanged_Params params;
 	params.NewTriggeredAction = NewTriggeredAction;
@@ -133,7 +139,8 @@ void UPanelButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle* N
 
 void UPanelButton_C::OnActionProgress(float* HeldPercent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.OnActionProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x107d4117);
 
 	UPanelButton_C_OnActionProgress_Params params;
 	params.HeldPercent = HeldPercent;
@@ -151,7 +158,8 @@ void UPanelButton_C::OnActionProgress(float* HeldPercent)
 
 void UPanelButton_C::OnActionComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.OnActionComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd20b8db);
 
 	UPanelButton_C_OnActionComplete_Params params;
 
@@ -168,7 +176,8 @@ void UPanelButton_C::OnActionComplete()
 
 void UPanelButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67b15c8e);
 
 	UPanelButton_C_Construct_Params params;
 
@@ -185,7 +194,8 @@ void UPanelButton_C::Construct()
 
 void UPanelButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x933917c1);
 
 	UPanelButton_C_OnHovered_Params params;
 
@@ -202,7 +212,8 @@ void UPanelButton_C::OnHovered()
 
 void UPanelButton_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46636d5e);
 
 	UPanelButton_C_OnUnhovered_Params params;
 
@@ -221,7 +232,8 @@ void UPanelButton_C::OnUnhovered()
 
 void UPanelButton_C::ExecuteUbergraph_PanelButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PanelButton.PanelButton_C.ExecuteUbergraph_PanelButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa387c55b);
 
 	UPanelButton_C_ExecuteUbergraph_PanelButton_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UDayWidget_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DayWidget.DayWidget_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfce026d4);
 
 	UDayWidget_C_Update_Params params;
 
@@ -34,7 +35,8 @@ void UDayWidget_C::Update()
 
 void UDayWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DayWidget.DayWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba416be);
 
 	UDayWidget_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UDayWidget_C::Construct()
 
 void UDayWidget_C::ExecuteUbergraph_DayWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DayWidget.DayWidget_C.ExecuteUbergraph_DayWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaee6cddf);
 
 	UDayWidget_C_ExecuteUbergraph_DayWidget_Params params;
 	params.EntryPoint = EntryPoint;

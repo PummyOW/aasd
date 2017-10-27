@@ -14,6 +14,75 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleMulchItemsCallback
+struct UItemManagementScreen_C_HandleMulchItemsCallback_Params
+{
+	int                                                Quantity;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.GetMaxTransferCount
+struct UItemManagementScreen_C_GetMaxTransferCount_Params
+{
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Count;                                                    // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.CompleteItemDrop
+struct UItemManagementScreen_C_CompleteItemDrop_Params
+{
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Quantity;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleDropItemsCallback
+struct UItemManagementScreen_C_HandleDropItemsCallback_Params
+{
+	int                                                Quantity;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleDrop
+struct UItemManagementScreen_C_HandleDrop_Params
+{
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.CompleteItemTransfer
+struct UItemManagementScreen_C_CompleteItemTransfer_Params
+{
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Quantity;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleTransferItemsCallback
+struct UItemManagementScreen_C_HandleTransferItemsCallback_Params
+{
+	int                                                Quantity;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.DestroyQuantitySelector
+struct UItemManagementScreen_C_DestroyQuantitySelector_Params
+{
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.CreateQuantitySelector
+struct UItemManagementScreen_C_CreateQuantitySelector_Params
+{
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText                                       Title;                                                    // (CPF_Parm)
+	struct FText                                       ConfirmText;                                              // (CPF_Parm)
+	int                                                InitialQuantity;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxQuantity;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleTransfer
+struct UItemManagementScreen_C_HandleTransfer_Params
+{
+	class UFortItem*                                   ItemToTransfer;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function ItemManagementScreen.ItemManagementScreen_C.ShowCraftError
 struct UItemManagementScreen_C_ShowCraftError_Params
 {
@@ -29,8 +98,7 @@ struct UItemManagementScreen_C_CraftAndSlot_Params
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleEquip
 struct UItemManagementScreen_C_HandleEquip_Params
 {
-	class UFortItem*                                   ItemToEquip;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               PassThrough;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function ItemManagementScreen.ItemManagementScreen_C.SizeInventoryPanel
@@ -57,7 +125,6 @@ struct UItemManagementScreen_C_GetDescriptionText_Params
 struct UItemManagementScreen_C_HandleInspect_Params
 {
 	class UFortItem*                                   ItemToInspect;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               PassThrough;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleClose
@@ -94,8 +161,13 @@ struct UItemManagementScreen_C_HandleCraftItemBP_Params
 	class UFortSchematicItem**                         SchematicItem;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function ItemManagementScreen.ItemManagementScreen_C.CraftabilityRefresh
-struct UItemManagementScreen_C_CraftabilityRefresh_Params
+// Function ItemManagementScreen.ItemManagementScreen_C.DefaultActionRefresh
+struct UItemManagementScreen_C_DefaultActionRefresh_Params
+{
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.OnActivated
+struct UItemManagementScreen_C_OnActivated_Params
 {
 };
 
@@ -105,13 +177,26 @@ struct UItemManagementScreen_C_HandleConsumeItemBP_Params
 	class UFortConsumableAccountItem**                 ConsumableItem;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function ItemManagementScreen.ItemManagementScreen_C.OnActivated
-struct UItemManagementScreen_C_OnActivated_Params
-{
-};
-
 // Function ItemManagementScreen.ItemManagementScreen_C.HandleInspectItemBP
 struct UItemManagementScreen_C_HandleInspectItemBP_Params
+{
+	class UFortItem**                                  Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleTransferItemBP
+struct UItemManagementScreen_C_HandleTransferItemBP_Params
+{
+	class UFortItem**                                  Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleDropItemBP
+struct UItemManagementScreen_C_HandleDropItemBP_Params
+{
+	class UFortItem**                                  Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemManagementScreen.ItemManagementScreen_C.HandleMulchQuantitySelection
+struct UItemManagementScreen_C_HandleMulchQuantitySelection_Params
 {
 	class UFortItem**                                  Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };

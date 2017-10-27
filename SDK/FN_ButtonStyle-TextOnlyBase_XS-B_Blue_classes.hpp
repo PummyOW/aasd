@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ButtonStyle-TextOnlyBase_XS-B_Blue.ButtonStyle-TextOnlyBase_XS-B_Blue_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb2319dd);
 		return ptr;
 	}
 

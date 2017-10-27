@@ -17,7 +17,8 @@ namespace SDK
 
 void UScoreBarsWidget_C::UnregisterForScoreStreamEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.UnregisterForScoreStreamEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x207626fb);
 
 	UScoreBarsWidget_C_UnregisterForScoreStreamEvents_Params params;
 
@@ -36,7 +37,8 @@ void UScoreBarsWidget_C::UnregisterForScoreStreamEvents()
 
 void UScoreBarsWidget_C::HandleScoreNumberChanged(EStatCategory ScoreCategory)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HandleScoreNumberChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcada765a);
 
 	UScoreBarsWidget_C_HandleScoreNumberChanged_Params params;
 	params.ScoreCategory = ScoreCategory;
@@ -56,7 +58,8 @@ void UScoreBarsWidget_C::HandleScoreNumberChanged(EStatCategory ScoreCategory)
 
 void UScoreBarsWidget_C::HandleMessageDisplayed(class UFortUIMessageItemWidget* ItemWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HandleMessageDisplayed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee7126bf);
 
 	UScoreBarsWidget_C_HandleMessageDisplayed_Params params;
 	params.ItemWidget = ItemWidget;
@@ -74,7 +77,8 @@ void UScoreBarsWidget_C::HandleMessageDisplayed(class UFortUIMessageItemWidget* 
 
 void UScoreBarsWidget_C::HideScoreMessageSlots()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HideScoreMessageSlots");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28bf8b37);
 
 	UScoreBarsWidget_C_HideScoreMessageSlots_Params params;
 
@@ -91,7 +95,8 @@ void UScoreBarsWidget_C::HideScoreMessageSlots()
 
 void UScoreBarsWidget_C::RegisterForScoreStreamEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.RegisterForScoreStreamEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x686db1c6);
 
 	UScoreBarsWidget_C_RegisterForScoreStreamEvents_Params params;
 
@@ -110,7 +115,8 @@ void UScoreBarsWidget_C::RegisterForScoreStreamEvents()
 
 void UScoreBarsWidget_C::HandleScoreMessageExpired(class UFortUIMessageItemWidget* Expired_Message)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HandleScoreMessageExpired");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e722559);
 
 	UScoreBarsWidget_C_HandleScoreMessageExpired_Params params;
 	params.Expired_Message = Expired_Message;
@@ -128,7 +134,8 @@ void UScoreBarsWidget_C::HandleScoreMessageExpired(class UFortUIMessageItemWidge
 
 void UScoreBarsWidget_C::TryGetNextScoreMessage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.TryGetNextScoreMessage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x981daafa);
 
 	UScoreBarsWidget_C_TryGetNextScoreMessage_Params params;
 
@@ -150,7 +157,8 @@ void UScoreBarsWidget_C::TryGetNextScoreMessage()
 
 void UScoreBarsWidget_C::HandleScoreStatChanged(int Delta, TEnumAsByte<EFortReplicatedStat> StatType, EStatCategory StatCategory, struct FText* Name)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HandleScoreStatChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd7a3dfd);
 
 	UScoreBarsWidget_C_HandleScoreStatChanged_Params params;
 	params.Delta = Delta;
@@ -173,7 +181,8 @@ void UScoreBarsWidget_C::HandleScoreStatChanged(int Delta, TEnumAsByte<EFortRepl
 
 void UScoreBarsWidget_C::InitializeIcons()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.InitializeIcons");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbabfef85);
 
 	UScoreBarsWidget_C_InitializeIcons_Params params;
 
@@ -190,7 +199,8 @@ void UScoreBarsWidget_C::InitializeIcons()
 
 void UScoreBarsWidget_C::UpdateScoreBars()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.UpdateScoreBars");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x474d5428);
 
 	UScoreBarsWidget_C_UpdateScoreBars_Params params;
 
@@ -209,7 +219,8 @@ void UScoreBarsWidget_C::UpdateScoreBars()
 
 void UScoreBarsWidget_C::HandleUpdateUI(class AFortMissionState* Mission)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HandleUpdateUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x417da9d0);
 
 	UScoreBarsWidget_C_HandleUpdateUI_Params params;
 	params.Mission = Mission;
@@ -227,7 +238,8 @@ void UScoreBarsWidget_C::HandleUpdateUI(class AFortMissionState* Mission)
 
 void UScoreBarsWidget_C::UpdateScoreTotals()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.UpdateScoreTotals");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd183f6ff);
 
 	UScoreBarsWidget_C_UpdateScoreTotals_Params params;
 
@@ -246,7 +258,8 @@ void UScoreBarsWidget_C::UpdateScoreTotals()
 
 void UScoreBarsWidget_C::HasValidBadgeInfos(bool* bHasValidBadgeInfos)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HasValidBadgeInfos");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1238dc29);
 
 	UScoreBarsWidget_C_HasValidBadgeInfos_Params params;
 
@@ -266,7 +279,8 @@ void UScoreBarsWidget_C::HasValidBadgeInfos(bool* bHasValidBadgeInfos)
 
 void UScoreBarsWidget_C::InitializeScoreBars()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.InitializeScoreBars");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4afdd87);
 
 	UScoreBarsWidget_C_InitializeScoreBars_Params params;
 
@@ -283,7 +297,8 @@ void UScoreBarsWidget_C::InitializeScoreBars()
 
 void UScoreBarsWidget_C::HandleMissionsUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.HandleMissionsUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d051261);
 
 	UScoreBarsWidget_C_HandleMissionsUpdated_Params params;
 
@@ -300,7 +315,8 @@ void UScoreBarsWidget_C::HandleMissionsUpdated()
 
 void UScoreBarsWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe5f7cc2);
 
 	UScoreBarsWidget_C_Construct_Params params;
 
@@ -317,7 +333,8 @@ void UScoreBarsWidget_C::Construct()
 
 void UScoreBarsWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e202899);
 
 	UScoreBarsWidget_C_Destruct_Params params;
 
@@ -336,7 +353,8 @@ void UScoreBarsWidget_C::Destruct()
 
 void UScoreBarsWidget_C::ExecuteUbergraph_ScoreBarsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsWidget.ScoreBarsWidget_C.ExecuteUbergraph_ScoreBarsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9498abd);
 
 	UScoreBarsWidget_C_ExecuteUbergraph_ScoreBarsWidget_Params params;
 	params.EntryPoint = EntryPoint;

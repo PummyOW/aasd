@@ -17,7 +17,8 @@ namespace SDK
 
 void URadialPickerItem_C::SetKeybindVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPickerItem.RadialPickerItem_C.SetKeybindVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79ec04f);
 
 	URadialPickerItem_C_SetKeybindVisibility_Params params;
 
@@ -36,7 +37,8 @@ void URadialPickerItem_C::SetKeybindVisibility()
 
 void URadialPickerItem_C::SetShowImageAndLabel(bool ShowImageAndLabel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPickerItem.RadialPickerItem_C.SetShowImageAndLabel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a96c24a);
 
 	URadialPickerItem_C_SetShowImageAndLabel_Params params;
 	params.ShowImageAndLabel = ShowImageAndLabel;
@@ -58,7 +60,8 @@ void URadialPickerItem_C::SetShowImageAndLabel(bool ShowImageAndLabel)
 
 void URadialPickerItem_C::SetItemContent(class UFortItem* Item, bool Option_Enabled, int Radial_Item_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPickerItem.RadialPickerItem_C.SetItemContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29f04057);
 
 	URadialPickerItem_C_SetItemContent_Params params;
 	params.Item = Item;
@@ -80,7 +83,8 @@ void URadialPickerItem_C::SetItemContent(class UFortItem* Item, bool Option_Enab
 
 void URadialPickerItem_C::SetSelected(bool IsSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPickerItem.RadialPickerItem_C.SetSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2c27fba);
 
 	URadialPickerItem_C_SetSelected_Params params;
 	params.IsSelected = IsSelected;
@@ -103,7 +107,8 @@ void URadialPickerItem_C::SetSelected(bool IsSelected)
 
 void URadialPickerItem_C::SetImageAndLabelContent(const struct FText& Text, const struct FSlateBrush& Brush, bool Option_Enabled, int RadialItemIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPickerItem.RadialPickerItem_C.SetImageAndLabelContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bd8abfe);
 
 	URadialPickerItem_C_SetImageAndLabelContent_Params params;
 	params.Text = Text;
@@ -124,7 +129,8 @@ void URadialPickerItem_C::SetImageAndLabelContent(const struct FText& Text, cons
 
 void URadialPickerItem_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPickerItem.RadialPickerItem_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3694d712);
 
 	URadialPickerItem_C_Construct_Params params;
 
@@ -143,7 +149,8 @@ void URadialPickerItem_C::Construct()
 
 void URadialPickerItem_C::ExecuteUbergraph_RadialPickerItem(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RadialPickerItem.RadialPickerItem_C.ExecuteUbergraph_RadialPickerItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x312b33ad);
 
 	URadialPickerItem_C_ExecuteUbergraph_RadialPickerItem_Params params;
 	params.EntryPoint = EntryPoint;

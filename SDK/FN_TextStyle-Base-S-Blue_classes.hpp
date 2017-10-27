@@ -14,13 +14,14 @@ namespace SDK
 
 // BlueprintGeneratedClass TextStyle-Base-S-Blue.TextStyle-Base-S-Blue_C
 // 0x0000 (0x00D0 - 0x00D0)
-class UTextStyle_Base_S_Blue_C : public UTextStyle_Base_S_B_Blue_C
+class UTextStyle_Base_S_Blue_C2 : public UTextStyle_Base_S_B_Blue_C
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass TextStyle-Base-S-Blue.TextStyle-Base-S-Blue_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xce12721);
 		return ptr;
 	}
 

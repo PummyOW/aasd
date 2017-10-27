@@ -21,7 +21,8 @@ namespace SDK
 
 void APlayerPawn_Athena_Generic_Parent_C::Teleport(const struct FGameplayCueParameters& GameplayCueParameters, bool TeleportOut_, float Default_PlayLength)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.Teleport");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d9f4082);
 
 	APlayerPawn_Athena_Generic_Parent_C_Teleport_Params params;
 	params.GameplayCueParameters = GameplayCueParameters;
@@ -41,7 +42,8 @@ void APlayerPawn_Athena_Generic_Parent_C::Teleport(const struct FGameplayCuePara
 
 void APlayerPawn_Athena_Generic_Parent_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11800ec0);
 
 	APlayerPawn_Athena_Generic_Parent_C_UserConstructionScript_Params params;
 
@@ -61,7 +63,8 @@ void APlayerPawn_Athena_Generic_Parent_C::UserConstructionScript()
 
 void APlayerPawn_Athena_Generic_Parent_C::GameplayCue_Teleport_Out(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.GameplayCue.Teleport.Out");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a630441);
 
 	APlayerPawn_Athena_Generic_Parent_C_GameplayCue_Teleport_Out_Params params;
 	params.EventType = EventType;
@@ -83,7 +86,8 @@ void APlayerPawn_Athena_Generic_Parent_C::GameplayCue_Teleport_Out(TEnumAsByte<E
 
 void APlayerPawn_Athena_Generic_Parent_C::GameplayCue_Teleport_In(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.GameplayCue.Teleport.In");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4102866);
 
 	APlayerPawn_Athena_Generic_Parent_C_GameplayCue_Teleport_In_Params params;
 	params.EventType = EventType;
@@ -102,7 +106,8 @@ void APlayerPawn_Athena_Generic_Parent_C::GameplayCue_Teleport_In(TEnumAsByte<EG
 
 void APlayerPawn_Athena_Generic_Parent_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81647367);
 
 	APlayerPawn_Athena_Generic_Parent_C_ReceiveBeginPlay_Params params;
 
@@ -121,7 +126,8 @@ void APlayerPawn_Athena_Generic_Parent_C::ReceiveBeginPlay()
 
 void APlayerPawn_Athena_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86e1b1d);
 
 	APlayerPawn_Athena_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent_Params params;
 	params.EntryPoint = EntryPoint;

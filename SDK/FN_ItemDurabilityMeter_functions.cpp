@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemDurabilityMeter_C::Set_Backfill_Color(const struct FLinearColor& Backfill_Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDurabilityMeter.ItemDurabilityMeter_C.Set Backfill Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc04736f8);
 
 	UItemDurabilityMeter_C_Set_Backfill_Color_Params params;
 	params.Backfill_Color = Backfill_Color;
@@ -39,7 +40,8 @@ void UItemDurabilityMeter_C::Set_Backfill_Color(const struct FLinearColor& Backf
 
 void UItemDurabilityMeter_C::Set_Durability(float Durability)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDurabilityMeter.ItemDurabilityMeter_C.Set Durability");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9c32d9a);
 
 	UItemDurabilityMeter_C_Set_Durability_Params params;
 	params.Durability = Durability;
@@ -60,7 +62,8 @@ void UItemDurabilityMeter_C::Set_Durability(float Durability)
 
 void UItemDurabilityMeter_C::Update(const struct FVector2D& Draw_Size, float Durability)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDurabilityMeter.ItemDurabilityMeter_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6c8d788);
 
 	UItemDurabilityMeter_C_Update_Params params;
 	params.Draw_Size = Draw_Size;
@@ -79,7 +82,8 @@ void UItemDurabilityMeter_C::Update(const struct FVector2D& Draw_Size, float Dur
 
 void UItemDurabilityMeter_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDurabilityMeter.ItemDurabilityMeter_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90defe12);
 
 	UItemDurabilityMeter_C_Construct_Params params;
 
@@ -98,7 +102,8 @@ void UItemDurabilityMeter_C::Construct()
 
 void UItemDurabilityMeter_C::ExecuteUbergraph_ItemDurabilityMeter(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDurabilityMeter.ItemDurabilityMeter_C.ExecuteUbergraph_ItemDurabilityMeter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6806ee2);
 
 	UItemDurabilityMeter_C_ExecuteUbergraph_ItemDurabilityMeter_Params params;
 	params.EntryPoint = EntryPoint;

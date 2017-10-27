@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemDetailsHeaderTagListText_C::FormatItemDisplayTags(TArray<struct FText>* TagTexts, struct FText* FormatedText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.FormatItemDisplayTags");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1fac02ce);
 
 	UItemDetailsHeaderTagListText_C_FormatItemDisplayTags_Params params;
 
@@ -42,7 +43,8 @@ void UItemDetailsHeaderTagListText_C::FormatItemDisplayTags(TArray<struct FText>
 
 void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb99a32cf);
 
 	UItemDetailsHeaderTagListText_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -59,26 +61,10 @@ void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.HandlePostDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x569e951d);
 
 	UItemDetailsHeaderTagListText_C_HandlePostDifferentItemToCompareWithSet_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.Construct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UItemDetailsHeaderTagListText_C::Construct()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.Construct");
-
-	UItemDetailsHeaderTagListText_C_Construct_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -95,7 +81,8 @@ void UItemDetailsHeaderTagListText_C::Construct()
 
 void UItemDetailsHeaderTagListText_C::ExecuteUbergraph_ItemDetailsHeaderTagListText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.ExecuteUbergraph_ItemDetailsHeaderTagListText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75cb4362);
 
 	UItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText_Params params;
 	params.EntryPoint = EntryPoint;

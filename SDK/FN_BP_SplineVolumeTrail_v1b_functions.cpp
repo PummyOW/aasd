@@ -17,7 +17,8 @@ namespace SDK
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateCheapSplinesWPOVectors()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateCheapSplinesWPOVectors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f45b005);
 
 	ABP_SplineVolumeTrail_v1b_C_UpdateCheapSplinesWPOVectors_Params params;
 
@@ -37,7 +38,8 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateCheapSplinesWPOVectors()
 
 void ABP_SplineVolumeTrail_v1b_C::GetSocketLocationWS(const struct FName& Socket_Name, struct FVector* LocationWS)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.GetSocketLocationWS");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7cf6f29);
 
 	ABP_SplineVolumeTrail_v1b_C_GetSocketLocationWS_Params params;
 	params.Socket_Name = Socket_Name;
@@ -60,7 +62,8 @@ void ABP_SplineVolumeTrail_v1b_C::GetSocketLocationWS(const struct FName& Socket
 
 void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndAllSplineMeshes(bool Update_All_Spline_Meshes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetStartAndEndAllSplineMeshes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdaa85a5e);
 
 	ABP_SplineVolumeTrail_v1b_C_SetStartAndEndAllSplineMeshes_Params params;
 	params.Update_All_Spline_Meshes = Update_All_Spline_Meshes;
@@ -78,7 +81,8 @@ void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndAllSplineMeshes(bool Update_All_
 
 void ABP_SplineVolumeTrail_v1b_C::DestroyAllSplineMeshes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.DestroyAllSplineMeshes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3323d74);
 
 	ABP_SplineVolumeTrail_v1b_C_DestroyAllSplineMeshes_Params params;
 
@@ -99,7 +103,8 @@ void ABP_SplineVolumeTrail_v1b_C::DestroyAllSplineMeshes()
 
 void ABP_SplineVolumeTrail_v1b_C::BakeLinearColor(class UCurveLinearColor* Curve_Linear_Color, int Pixel__X_, struct FLinearColor* LinearColorOut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.BakeLinearColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21bf38f8);
 
 	ABP_SplineVolumeTrail_v1b_C_BakeLinearColor_Params params;
 	params.Curve_Linear_Color = Curve_Linear_Color;
@@ -124,7 +129,8 @@ void ABP_SplineVolumeTrail_v1b_C::BakeLinearColor(class UCurveLinearColor* Curve
 
 void ABP_SplineVolumeTrail_v1b_C::ReturnSplineMeshToPool(class USplineMeshComponent* SplineMesh, int IndexToRemove)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ReturnSplineMeshToPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0108844);
 
 	ABP_SplineVolumeTrail_v1b_C_ReturnSplineMeshToPool_Params params;
 	params.SplineMesh = SplineMesh;
@@ -143,7 +149,8 @@ void ABP_SplineVolumeTrail_v1b_C::ReturnSplineMeshToPool(class USplineMeshCompon
 
 void ABP_SplineVolumeTrail_v1b_C::SplineUpdateOnTick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SplineUpdateOnTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58027e33);
 
 	ABP_SplineVolumeTrail_v1b_C_SplineUpdateOnTick_Params params;
 
@@ -160,7 +167,8 @@ void ABP_SplineVolumeTrail_v1b_C::SplineUpdateOnTick()
 
 void ABP_SplineVolumeTrail_v1b_C::RedistributePointsAlongSpline()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.RedistributePointsAlongSpline");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8deeea40);
 
 	ABP_SplineVolumeTrail_v1b_C_RedistributePointsAlongSpline_Params params;
 
@@ -181,7 +189,8 @@ void ABP_SplineVolumeTrail_v1b_C::RedistributePointsAlongSpline()
 
 void ABP_SplineVolumeTrail_v1b_C::GetLinearColorFromCurveAtTime(class UCurveLinearColor* Curve_Linear_Color, int Index, struct FLinearColor* LinearColorOut)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.GetLinearColorFromCurveAtTime");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x426de344);
 
 	ABP_SplineVolumeTrail_v1b_C_GetLinearColorFromCurveAtTime_Params params;
 	params.Curve_Linear_Color = Curve_Linear_Color;
@@ -203,7 +212,8 @@ void ABP_SplineVolumeTrail_v1b_C::GetLinearColorFromCurveAtTime(class UCurveLine
 
 void ABP_SplineVolumeTrail_v1b_C::TickIntervalLODCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.TickIntervalLODCheck");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd99577e4);
 
 	ABP_SplineVolumeTrail_v1b_C_TickIntervalLODCheck_Params params;
 
@@ -220,7 +230,8 @@ void ABP_SplineVolumeTrail_v1b_C::TickIntervalLODCheck()
 
 void ABP_SplineVolumeTrail_v1b_C::SetWasRecentlyRendered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetWasRecentlyRendered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66959f2f);
 
 	ABP_SplineVolumeTrail_v1b_C_SetWasRecentlyRendered_Params params;
 
@@ -239,7 +250,8 @@ void ABP_SplineVolumeTrail_v1b_C::SetWasRecentlyRendered()
 
 bool ABP_SplineVolumeTrail_v1b_C::AddSplineDistanceCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplineDistanceCheck");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x712afe2);
 
 	ABP_SplineVolumeTrail_v1b_C_AddSplineDistanceCheck_Params params;
 
@@ -258,7 +270,8 @@ bool ABP_SplineVolumeTrail_v1b_C::AddSplineDistanceCheck()
 
 void ABP_SplineVolumeTrail_v1b_C::SetNewSplinePointsBool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetNewSplinePointsBool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf500ba33);
 
 	ABP_SplineVolumeTrail_v1b_C_SetNewSplinePointsBool_Params params;
 
@@ -277,7 +290,8 @@ void ABP_SplineVolumeTrail_v1b_C::SetNewSplinePointsBool()
 
 void ABP_SplineVolumeTrail_v1b_C::SetForwardAxisOnSplineMesh(class USplineMeshComponent* SplineMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetForwardAxisOnSplineMesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1176288);
 
 	ABP_SplineVolumeTrail_v1b_C_SetForwardAxisOnSplineMesh_Params params;
 	params.SplineMesh = SplineMesh;
@@ -295,7 +309,8 @@ void ABP_SplineVolumeTrail_v1b_C::SetForwardAxisOnSplineMesh(class USplineMeshCo
 
 void ABP_SplineVolumeTrail_v1b_C::RollSplineMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.RollSplineMesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99c7c3e2);
 
 	ABP_SplineVolumeTrail_v1b_C_RollSplineMesh_Params params;
 
@@ -312,7 +327,8 @@ void ABP_SplineVolumeTrail_v1b_C::RollSplineMesh()
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateParticleSystemPosition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateParticleSystemPosition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35a87df0);
 
 	ABP_SplineVolumeTrail_v1b_C_UpdateParticleSystemPosition_Params params;
 
@@ -329,7 +345,8 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateParticleSystemPosition()
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateMID()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateMID");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79a64b6e);
 
 	ABP_SplineVolumeTrail_v1b_C_UpdateMID_Params params;
 
@@ -346,7 +363,8 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateMID()
 
 void ABP_SplineVolumeTrail_v1b_C::ScaleSplineMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ScaleSplineMesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x885ae863);
 
 	ABP_SplineVolumeTrail_v1b_C_ScaleSplineMesh_Params params;
 
@@ -363,7 +381,8 @@ void ABP_SplineVolumeTrail_v1b_C::ScaleSplineMesh()
 
 void ABP_SplineVolumeTrail_v1b_C::SplineTimestampManagement()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SplineTimestampManagement");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20b59091);
 
 	ABP_SplineVolumeTrail_v1b_C_SplineTimestampManagement_Params params;
 
@@ -380,7 +399,8 @@ void ABP_SplineVolumeTrail_v1b_C::SplineTimestampManagement()
 
 void ABP_SplineVolumeTrail_v1b_C::UpdateSplinePointPosition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UpdateSplinePointPosition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40726646);
 
 	ABP_SplineVolumeTrail_v1b_C_UpdateSplinePointPosition_Params params;
 
@@ -397,7 +417,8 @@ void ABP_SplineVolumeTrail_v1b_C::UpdateSplinePointPosition()
 
 void ABP_SplineVolumeTrail_v1b_C::AddSplinePoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplinePoint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb09feaef);
 
 	ABP_SplineVolumeTrail_v1b_C_AddSplinePoint_Params params;
 
@@ -416,7 +437,8 @@ void ABP_SplineVolumeTrail_v1b_C::AddSplinePoint()
 
 void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndSplineMesh(bool Update_Spline_Mesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SetStartAndEndSplineMesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb013f61);
 
 	ABP_SplineVolumeTrail_v1b_C_SetStartAndEndSplineMesh_Params params;
 	params.Update_Spline_Mesh = Update_Spline_Mesh;
@@ -434,7 +456,8 @@ void ABP_SplineVolumeTrail_v1b_C::SetStartAndEndSplineMesh(bool Update_Spline_Me
 
 void ABP_SplineVolumeTrail_v1b_C::AddSplineMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.AddSplineMesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x39c49df0);
 
 	ABP_SplineVolumeTrail_v1b_C_AddSplineMesh_Params params;
 
@@ -451,7 +474,8 @@ void ABP_SplineVolumeTrail_v1b_C::AddSplineMesh()
 
 void ABP_SplineVolumeTrail_v1b_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3036dfc);
 
 	ABP_SplineVolumeTrail_v1b_C_UserConstructionScript_Params params;
 
@@ -468,7 +492,8 @@ void ABP_SplineVolumeTrail_v1b_C::UserConstructionScript()
 
 void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.DebugRotateTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17778da);
 
 	ABP_SplineVolumeTrail_v1b_C_DebugRotateTimeline__FinishedFunc_Params params;
 
@@ -485,7 +510,8 @@ void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__FinishedFunc()
 
 void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.DebugRotateTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cd90727);
 
 	ABP_SplineVolumeTrail_v1b_C_DebugRotateTimeline__UpdateFunc_Params params;
 
@@ -504,7 +530,8 @@ void ABP_SplineVolumeTrail_v1b_C::DebugRotateTimeline__UpdateFunc()
 
 void ABP_SplineVolumeTrail_v1b_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8acadee9);
 
 	ABP_SplineVolumeTrail_v1b_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -522,7 +549,8 @@ void ABP_SplineVolumeTrail_v1b_C::ReceiveTick(float* DeltaSeconds)
 
 void ABP_SplineVolumeTrail_v1b_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95dfff23);
 
 	ABP_SplineVolumeTrail_v1b_C_ReceiveBeginPlay_Params params;
 
@@ -539,7 +567,8 @@ void ABP_SplineVolumeTrail_v1b_C::ReceiveBeginPlay()
 
 void ABP_SplineVolumeTrail_v1b_C::SplineSystemDurationReached()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.SplineSystemDurationReached");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa33caccf);
 
 	ABP_SplineVolumeTrail_v1b_C_SplineSystemDurationReached_Params params;
 
@@ -556,7 +585,8 @@ void ABP_SplineVolumeTrail_v1b_C::SplineSystemDurationReached()
 
 void ABP_SplineVolumeTrail_v1b_C::DebugMode_Rotate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.DebugMode_Rotate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x523c931d);
 
 	ABP_SplineVolumeTrail_v1b_C_DebugMode_Rotate_Params params;
 
@@ -573,7 +603,8 @@ void ABP_SplineVolumeTrail_v1b_C::DebugMode_Rotate()
 
 void ABP_SplineVolumeTrail_v1b_C::ManuallyStopSplineSystem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ManuallyStopSplineSystem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d4f05a8);
 
 	ABP_SplineVolumeTrail_v1b_C_ManuallyStopSplineSystem_Params params;
 
@@ -590,7 +621,8 @@ void ABP_SplineVolumeTrail_v1b_C::ManuallyStopSplineSystem()
 
 void ABP_SplineVolumeTrail_v1b_C::Tick_Interval_LOD_Check()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.Tick Interval LOD Check");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x499ceb26);
 
 	ABP_SplineVolumeTrail_v1b_C_Tick_Interval_LOD_Check_Params params;
 
@@ -607,7 +639,8 @@ void ABP_SplineVolumeTrail_v1b_C::Tick_Interval_LOD_Check()
 
 void ABP_SplineVolumeTrail_v1b_C::Recently_Rendered_Check()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.Recently Rendered Check");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb030c446);
 
 	ABP_SplineVolumeTrail_v1b_C_Recently_Rendered_Check_Params params;
 
@@ -624,7 +657,8 @@ void ABP_SplineVolumeTrail_v1b_C::Recently_Rendered_Check()
 
 void ABP_SplineVolumeTrail_v1b_C::ClearRenderTarget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ClearRenderTarget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec52aec1);
 
 	ABP_SplineVolumeTrail_v1b_C_ClearRenderTarget_Params params;
 
@@ -641,7 +675,8 @@ void ABP_SplineVolumeTrail_v1b_C::ClearRenderTarget()
 
 void ABP_SplineVolumeTrail_v1b_C::GenerateCurveTextures()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.GenerateCurveTextures");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf97da18b);
 
 	ABP_SplineVolumeTrail_v1b_C_GenerateCurveTextures_Params params;
 
@@ -660,7 +695,8 @@ void ABP_SplineVolumeTrail_v1b_C::GenerateCurveTextures()
 
 void ABP_SplineVolumeTrail_v1b_C::ExecuteUbergraph_BP_SplineVolumeTrail_v1b(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SplineVolumeTrail_v1b.BP_SplineVolumeTrail_v1b_C.ExecuteUbergraph_BP_SplineVolumeTrail_v1b");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe40e5989);
 
 	ABP_SplineVolumeTrail_v1b_C_ExecuteUbergraph_BP_SplineVolumeTrail_v1b_Params params;
 	params.EntryPoint = EntryPoint;

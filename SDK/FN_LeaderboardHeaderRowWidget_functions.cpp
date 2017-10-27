@@ -19,7 +19,8 @@ namespace SDK
 
 void ULeaderboardHeaderRowWidget_C::SetStatNameText(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.SetStatNameText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3db32e7);
 
 	ULeaderboardHeaderRowWidget_C_SetStatNameText_Params params;
 	params.Text = Text;
@@ -37,7 +38,8 @@ void ULeaderboardHeaderRowWidget_C::SetStatNameText(const struct FText& Text)
 
 void ULeaderboardHeaderRowWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2528a81a);
 
 	ULeaderboardHeaderRowWidget_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void ULeaderboardHeaderRowWidget_C::Construct()
 
 void ULeaderboardHeaderRowWidget_C::ExecuteUbergraph_LeaderboardHeaderRowWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.ExecuteUbergraph_LeaderboardHeaderRowWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e78aed1);
 
 	ULeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UInterfacePlayerPawn_C::FootStepRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterfacePlayerPawn.InterfacePlayerPawn_C.FootStepRight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21cffb89);
 
 	UInterfacePlayerPawn_C_FootStepRight_Params params;
 
@@ -34,7 +35,8 @@ void UInterfacePlayerPawn_C::FootStepRight()
 
 void UInterfacePlayerPawn_C::FootStepLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterfacePlayerPawn.InterfacePlayerPawn_C.FootStepLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x309d0aba);
 
 	UInterfacePlayerPawn_C_FootStepLeft_Params params;
 
@@ -53,7 +55,8 @@ void UInterfacePlayerPawn_C::FootStepLeft()
 
 void UInterfacePlayerPawn_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterfacePlayerPawn.InterfacePlayerPawn_C.Melee_Effect_Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66edd257);
 
 	UInterfacePlayerPawn_C_Melee_Effect_Color_Params params;
 
@@ -73,7 +76,8 @@ void UInterfacePlayerPawn_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 
 void UInterfacePlayerPawn_C::MeleeSwingLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa90e040a);
 
 	UInterfacePlayerPawn_C_MeleeSwingLeft_Params params;
 
@@ -90,7 +94,8 @@ void UInterfacePlayerPawn_C::MeleeSwingLeft()
 
 void UInterfacePlayerPawn_C::MeleeSwingRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingRight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcfada9d9);
 
 	UInterfacePlayerPawn_C_MeleeSwingRight_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void AHexmapLevelSettings_Temperate01_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe82e4474);
 
 	AHexmapLevelSettings_Temperate01_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void AHexmapLevelSettings_Temperate01_C::UserConstructionScript()
 
 void AHexmapLevelSettings_Temperate01_C::CustomSettings(bool Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C.CustomSettings");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x911d11c5);
 
 	AHexmapLevelSettings_Temperate01_C_CustomSettings_Params params;
 	params.Visibility = Visibility;
@@ -56,7 +58,8 @@ void AHexmapLevelSettings_Temperate01_C::CustomSettings(bool Visibility)
 
 void AHexmapLevelSettings_Temperate01_C::ExecuteUbergraph_HexmapLevelSettings_Temperate01(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C.ExecuteUbergraph_HexmapLevelSettings_Temperate01");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fdfbb9c);
 
 	AHexmapLevelSettings_Temperate01_C_ExecuteUbergraph_HexmapLevelSettings_Temperate01_Params params;
 	params.EntryPoint = EntryPoint;

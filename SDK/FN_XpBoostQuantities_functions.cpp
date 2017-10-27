@@ -20,7 +20,8 @@ namespace SDK
 
 int UXpBoostQuantities_C::ScaledRestBalance(int AmountToLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostQuantities.XpBoostQuantities_C.ScaledRestBalance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee4f7f0d);
 
 	UXpBoostQuantities_C_ScaledRestBalance_Params params;
 	params.AmountToLevel = AmountToLevel;
@@ -43,7 +44,8 @@ int UXpBoostQuantities_C::ScaledRestBalance(int AmountToLevel)
 
 int UXpBoostQuantities_C::ScaledBoostBalance(int AmountToLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostQuantities.XpBoostQuantities_C.ScaledBoostBalance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafe3d4ba);
 
 	UXpBoostQuantities_C_ScaledBoostBalance_Params params;
 	params.AmountToLevel = AmountToLevel;
@@ -63,7 +65,8 @@ int UXpBoostQuantities_C::ScaledBoostBalance(int AmountToLevel)
 
 void UXpBoostQuantities_C::UpdateXPQuantitiesInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostQuantities.XpBoostQuantities_C.UpdateXPQuantitiesInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2745ae7f);
 
 	UXpBoostQuantities_C_UpdateXPQuantitiesInfo_Params params;
 
@@ -80,7 +83,8 @@ void UXpBoostQuantities_C::UpdateXPQuantitiesInfo()
 
 void UXpBoostQuantities_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostQuantities.XpBoostQuantities_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x717feb7e);
 
 	UXpBoostQuantities_C_Construct_Params params;
 
@@ -99,7 +103,8 @@ void UXpBoostQuantities_C::Construct()
 
 void UXpBoostQuantities_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostQuantities.XpBoostQuantities_C.HandleAccountUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72b84e65);
 
 	UXpBoostQuantities_C_HandleAccountUpdate_Params params;
 	params.NewInfo = NewInfo;
@@ -119,7 +124,8 @@ void UXpBoostQuantities_C::HandleAccountUpdate(const struct FFortPublicAccountIn
 
 void UXpBoostQuantities_C::Xp_Boost_Changed(int BoostAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostQuantities.XpBoostQuantities_C.Xp Boost Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1549dae);
 
 	UXpBoostQuantities_C_Xp_Boost_Changed_Params params;
 	params.BoostAmount = BoostAmount;
@@ -139,7 +145,8 @@ void UXpBoostQuantities_C::Xp_Boost_Changed(int BoostAmount)
 
 void UXpBoostQuantities_C::ExecuteUbergraph_XpBoostQuantities(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostQuantities.XpBoostQuantities_C.ExecuteUbergraph_XpBoostQuantities");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x192cb66f);
 
 	UXpBoostQuantities_C_ExecuteUbergraph_XpBoostQuantities_Params params;
 	params.EntryPoint = EntryPoint;

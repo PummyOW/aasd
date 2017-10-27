@@ -34,24 +34,6 @@ struct UItemManagementInventoryPanel_C_SelectTrapByTag_Params
 	bool                                               Success;                                                  // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.HandleMulchQuantityCallback
-struct UItemManagementInventoryPanel_C_HandleMulchQuantityCallback_Params
-{
-	int                                                Quantity;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.DestroyMulchQuantitySelector
-struct UItemManagementInventoryPanel_C_DestroyMulchQuantitySelector_Params
-{
-};
-
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.CreateMulchQuantitySelector
-struct UItemManagementInventoryPanel_C_CreateMulchQuantitySelector_Params
-{
-	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.HideEquipSlotDragTargets
 struct UItemManagementInventoryPanel_C_HideEquipSlotDragTargets_Params
 {
@@ -150,12 +132,6 @@ struct UItemManagementInventoryPanel_C_HandleDifferentFrontendInventoryFilterSet
 struct UItemManagementInventoryPanel_C_HandleQuickBarChangedBP_Params
 {
 	EFortQuickBars*                                    QuickBarType;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.HandleMulchQuantitySelection
-struct UItemManagementInventoryPanel_C_HandleMulchQuantitySelection_Params
-{
-	class UFortItem**                                  Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.BndEvt__SortTypeButtonWorldItems_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature

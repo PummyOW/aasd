@@ -20,7 +20,8 @@ namespace SDK
 
 void UScoreBadgeProviderMission_C::GetTotalScore(EStatCategory ScoreCategory, int* Score)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBadgeProviderMission.ScoreBadgeProviderMission_C.GetTotalScore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe81addc1);
 
 	UScoreBadgeProviderMission_C_GetTotalScore_Params params;
 	params.ScoreCategory = ScoreCategory;
@@ -44,7 +45,8 @@ void UScoreBadgeProviderMission_C::GetTotalScore(EStatCategory ScoreCategory, in
 
 void UScoreBadgeProviderMission_C::GetScoreBadgeInfos(EStatCategory ScoreCategory, TArray<struct FCollectionMissionBadgeDisplayInfo>* BadgeInfos)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBadgeProviderMission.ScoreBadgeProviderMission_C.GetScoreBadgeInfos");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5cca12f1);
 
 	UScoreBadgeProviderMission_C_GetScoreBadgeInfos_Params params;
 	params.ScoreCategory = ScoreCategory;

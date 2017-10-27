@@ -19,7 +19,8 @@ namespace SDK
 
 void ULegacyBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Brush_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.Set Brush Size");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79a9e7b4);
 
 	ULegacyBasicGradientFill_C_Set_Brush_Size_Params params;
 	params.Brush_Size = Brush_Size;
@@ -41,7 +42,8 @@ void ULegacyBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Brush_Si
 
 void ULegacyBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1, const struct FLinearColor& Color_2, float Rotation__0___1_)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.Set Fill");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff360abc);
 
 	ULegacyBasicGradientFill_C_Set_Fill_Params params;
 	params.Color_1 = Color_1;
@@ -63,7 +65,8 @@ void ULegacyBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1, co
 
 void ULegacyBasicGradientFill_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2edf91d);
 
 	ULegacyBasicGradientFill_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -83,7 +86,8 @@ void ULegacyBasicGradientFill_C::PreConstruct(bool* IsDesignTime)
 
 void ULegacyBasicGradientFill_C::ExecuteUbergraph_LegacyBasicGradientFill(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyBasicGradientFill.LegacyBasicGradientFill_C.ExecuteUbergraph_LegacyBasicGradientFill");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1e415e7);
 
 	ULegacyBasicGradientFill_C_ExecuteUbergraph_LegacyBasicGradientFill_Params params;
 	params.EntryPoint = EntryPoint;

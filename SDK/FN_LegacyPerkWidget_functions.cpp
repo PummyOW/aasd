@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* ULegacyPerkWidget_C::CreateToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.CreateToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e6a1482);
 
 	ULegacyPerkWidget_C_CreateToolTipWidget_Params params;
 
@@ -38,7 +39,8 @@ class UWidget* ULegacyPerkWidget_C::CreateToolTipWidget()
 
 void ULegacyPerkWidget_C::InitializeTextInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.InitializeTextInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5688ade);
 
 	ULegacyPerkWidget_C_InitializeTextInfo_Params params;
 
@@ -55,7 +57,8 @@ void ULegacyPerkWidget_C::InitializeTextInfo()
 
 void ULegacyPerkWidget_C::HighlightBadge()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.HighlightBadge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf91dd41c);
 
 	ULegacyPerkWidget_C_HighlightBadge_Params params;
 
@@ -74,7 +77,8 @@ void ULegacyPerkWidget_C::HighlightBadge()
 
 void ULegacyPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.GetPerkStat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe1e09d);
 
 	ULegacyPerkWidget_C_GetPerkStat_Params params;
 
@@ -94,7 +98,8 @@ void ULegacyPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 
 void ULegacyPerkWidget_C::ShowTierImage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.ShowTierImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x776cfdf1);
 
 	ULegacyPerkWidget_C_ShowTierImage_Params params;
 
@@ -111,7 +116,8 @@ void ULegacyPerkWidget_C::ShowTierImage()
 
 void ULegacyPerkWidget_C::SetupBadge()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.SetupBadge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d300b35);
 
 	ULegacyPerkWidget_C_SetupBadge_Params params;
 
@@ -128,7 +134,8 @@ void ULegacyPerkWidget_C::SetupBadge()
 
 void ULegacyPerkWidget_C::InitializeHeroBonusIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.InitializeHeroBonusIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x575a267f);
 
 	ULegacyPerkWidget_C_InitializeHeroBonusIcon_Params params;
 
@@ -145,7 +152,8 @@ void ULegacyPerkWidget_C::InitializeHeroBonusIcon()
 
 void ULegacyPerkWidget_C::InitializeTextOnlyPerk()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.InitializeTextOnlyPerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b7580f0);
 
 	ULegacyPerkWidget_C_InitializeTextOnlyPerk_Params params;
 
@@ -164,7 +172,8 @@ void ULegacyPerkWidget_C::InitializeTextOnlyPerk()
 
 void ULegacyPerkWidget_C::ShouldFadePerk(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.ShouldFadePerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e9a37a6);
 
 	ULegacyPerkWidget_C_ShouldFadePerk_Params params;
 
@@ -186,7 +195,8 @@ void ULegacyPerkWidget_C::ShouldFadePerk(bool* Result)
 
 void ULegacyPerkWidget_C::GetHighlightColor(struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.GetHighlightColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd729e62);
 
 	ULegacyPerkWidget_C_GetHighlightColor_Params params;
 
@@ -208,7 +218,8 @@ void ULegacyPerkWidget_C::GetHighlightColor(struct FLinearColor* Color)
 
 void ULegacyPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.GetTierAbilityBrush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f4a6c91);
 
 	ULegacyPerkWidget_C_GetTierAbilityBrush_Params params;
 
@@ -228,7 +239,8 @@ void ULegacyPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 
 void ULegacyPerkWidget_C::InitializeAbilityPerk()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.InitializeAbilityPerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7f67567);
 
 	ULegacyPerkWidget_C_InitializeAbilityPerk_Params params;
 
@@ -245,7 +257,8 @@ void ULegacyPerkWidget_C::InitializeAbilityPerk()
 
 void ULegacyPerkWidget_C::InitializeBasicPerk()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.InitializeBasicPerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1694dfa3);
 
 	ULegacyPerkWidget_C_InitializeBasicPerk_Params params;
 
@@ -264,7 +277,8 @@ void ULegacyPerkWidget_C::InitializeBasicPerk()
 
 void ULegacyPerkWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x18a3f78b);
 
 	ULegacyPerkWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -282,7 +296,8 @@ void ULegacyPerkWidget_C::PreConstruct(bool* IsDesignTime)
 
 void ULegacyPerkWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98263fac);
 
 	ULegacyPerkWidget_C_Construct_Params params;
 
@@ -301,7 +316,8 @@ void ULegacyPerkWidget_C::Construct()
 
 void ULegacyPerkWidget_C::ExecuteUbergraph_LegacyPerkWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkWidget.LegacyPerkWidget_C.ExecuteUbergraph_LegacyPerkWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83617a60);
 
 	ULegacyPerkWidget_C_ExecuteUbergraph_LegacyPerkWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UMTXButton_C::UpdateState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.UpdateState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa2beb07);
 
 	UMTXButton_C_UpdateState_Params params;
 
@@ -36,7 +37,8 @@ void UMTXButton_C::UpdateState()
 
 class UWidget* UMTXButton_C::Get_Button_ToolTipWidget_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.Get_Button_ToolTipWidget_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x387052d8);
 
 	UMTXButton_C_Get_Button_ToolTipWidget_1_Params params;
 
@@ -57,7 +59,8 @@ class UWidget* UMTXButton_C::Get_Button_ToolTipWidget_1()
 
 void UMTXButton_C::UpdateAmount(const struct FFortPrivateAccountInfo& FortPrivateAccountInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.UpdateAmount");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad58d8ec);
 
 	UMTXButton_C_UpdateAmount_Params params;
 	params.FortPrivateAccountInfo = FortPrivateAccountInfo;
@@ -75,7 +78,8 @@ void UMTXButton_C::UpdateAmount(const struct FFortPrivateAccountInfo& FortPrivat
 
 void UMTXButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87398d12);
 
 	UMTXButton_C_Construct_Params params;
 
@@ -94,7 +98,8 @@ void UMTXButton_C::Construct()
 
 void UMTXButton_C::HandleLocalAccountInfoChanged(const struct FFortPrivateAccountInfo& NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.HandleLocalAccountInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35b431fd);
 
 	UMTXButton_C_HandleLocalAccountInfoChanged_Params params;
 	params.NewInfo = NewInfo;
@@ -114,7 +119,8 @@ void UMTXButton_C::HandleLocalAccountInfoChanged(const struct FFortPrivateAccoun
 
 void UMTXButton_C::BndEvt__VBucksButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.BndEvt__VBucksButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb97a330a);
 
 	UMTXButton_C_BndEvt__VBucksButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -134,7 +140,8 @@ void UMTXButton_C::BndEvt__VBucksButton_K2Node_ComponentBoundEvent_5_CommonButto
 
 void UMTXButton_C::HandleInputActionChnaged(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.HandleInputActionChnaged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ed181ed);
 
 	UMTXButton_C_HandleInputActionChnaged_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -152,7 +159,8 @@ void UMTXButton_C::HandleInputActionChnaged(bool bUsingGamepad)
 
 void UMTXButton_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95c82909);
 
 	UMTXButton_C_Destruct_Params params;
 
@@ -171,7 +179,8 @@ void UMTXButton_C::Destruct()
 
 void UMTXButton_C::ExecuteUbergraph_MTXButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MTXButton.MTXButton_C.ExecuteUbergraph_MTXButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1e6502c);
 
 	UMTXButton_C_ExecuteUbergraph_MTXButton_Params params;
 	params.EntryPoint = EntryPoint;

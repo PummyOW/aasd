@@ -17,7 +17,8 @@ namespace SDK
 
 void UQuickbarBase_C::RefreshQuickbar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.RefreshQuickbar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaeb8de86);
 
 	UQuickbarBase_C_RefreshQuickbar_Params params;
 
@@ -34,7 +35,8 @@ void UQuickbarBase_C::RefreshQuickbar()
 
 void UQuickbarBase_C::HandleKeybindsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.HandleKeybindsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21f6ff98);
 
 	UQuickbarBase_C_HandleKeybindsChanged_Params params;
 
@@ -51,7 +53,8 @@ void UQuickbarBase_C::HandleKeybindsChanged()
 
 void UQuickbarBase_C::Minimize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.Minimize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc19e9cc5);
 
 	UQuickbarBase_C_Minimize_Params params;
 
@@ -68,7 +71,8 @@ void UQuickbarBase_C::Minimize()
 
 void UQuickbarBase_C::Maximize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.Maximize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb82dd7f);
 
 	UQuickbarBase_C_Maximize_Params params;
 
@@ -89,7 +93,8 @@ void UQuickbarBase_C::Maximize()
 
 void UQuickbarBase_C::Is_Valid_Slot(int Slot, bool* Is_Valid, int* Array_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.Is Valid Slot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69561c11);
 
 	UQuickbarBase_C_Is_Valid_Slot_Params params;
 	params.Slot = Slot;
@@ -112,7 +117,8 @@ void UQuickbarBase_C::Is_Valid_Slot(int Slot, bool* Is_Valid, int* Array_Index)
 
 void UQuickbarBase_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a09a8d0);
 
 	UQuickbarBase_C_Construct_Params params;
 
@@ -132,7 +138,8 @@ void UQuickbarBase_C::Construct()
 
 void UQuickbarBase_C::OnWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x779025c5);
 
 	UQuickbarBase_C_OnWorldItemListChanged_Params params;
 	params.ItemsAdded = ItemsAdded;
@@ -154,7 +161,8 @@ void UQuickbarBase_C::OnWorldItemListChanged(TArray<class UFortWorldItem*> Items
 
 void UQuickbarBase_C::OnQuickbarSlotFocusChanged(EFortQuickBars QuickbarIndex, int Slot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnQuickbarSlotFocusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4aa36722);
 
 	UQuickbarBase_C_OnQuickbarSlotFocusChanged_Params params;
 	params.QuickbarIndex = QuickbarIndex;
@@ -175,7 +183,8 @@ void UQuickbarBase_C::OnQuickbarSlotFocusChanged(EFortQuickBars QuickbarIndex, i
 
 void UQuickbarBase_C::OnQuickbarContentsChanged(EFortQuickBars QuickbarIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnQuickbarContentsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a67d43c);
 
 	UQuickbarBase_C_OnQuickbarContentsChanged_Params params;
 	params.QuickbarIndex = QuickbarIndex;
@@ -195,7 +204,8 @@ void UQuickbarBase_C::OnQuickbarContentsChanged(EFortQuickBars QuickbarIndex)
 
 void UQuickbarBase_C::OnQuickbarForceFullUpdate(EFortQuickBars QuickbarIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnQuickbarForceFullUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5a6f5ab);
 
 	UQuickbarBase_C_OnQuickbarForceFullUpdate_Params params;
 	params.QuickbarIndex = QuickbarIndex;
@@ -216,7 +226,8 @@ void UQuickbarBase_C::OnQuickbarForceFullUpdate(EFortQuickBars QuickbarIndex)
 
 void UQuickbarBase_C::OnQuickbarSecondarySlotFocusChanged_Event_1(EFortQuickBars QuickbarIndex, int Slot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnQuickbarSecondarySlotFocusChanged_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9d4ef85);
 
 	UQuickbarBase_C_OnQuickbarSecondarySlotFocusChanged_Event_1_Params params;
 	params.QuickbarIndex = QuickbarIndex;
@@ -237,7 +248,8 @@ void UQuickbarBase_C::OnQuickbarSecondarySlotFocusChanged_Event_1(EFortQuickBars
 
 void UQuickbarBase_C::OnLocalPlayerDied(const struct FFortPlayerDeathReport& DeathReport)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnLocalPlayerDied");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x42c40a7e);
 
 	UQuickbarBase_C_OnLocalPlayerDied_Params params;
 	params.DeathReport = DeathReport;
@@ -255,7 +267,8 @@ void UQuickbarBase_C::OnLocalPlayerDied(const struct FFortPlayerDeathReport& Dea
 
 void UQuickbarBase_C::OnLocalPlayerRevived()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnLocalPlayerRevived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4e72a49);
 
 	UQuickbarBase_C_OnLocalPlayerRevived_Params params;
 
@@ -272,7 +285,8 @@ void UQuickbarBase_C::OnLocalPlayerRevived()
 
 void UQuickbarBase_C::OnLocalPlayerSpawned()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.OnLocalPlayerSpawned");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1e7ef0e);
 
 	UQuickbarBase_C_OnLocalPlayerSpawned_Params params;
 
@@ -289,7 +303,8 @@ void UQuickbarBase_C::OnLocalPlayerSpawned()
 
 void UQuickbarBase_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92c9c89f);
 
 	UQuickbarBase_C_Destruct_Params params;
 
@@ -308,7 +323,8 @@ void UQuickbarBase_C::Destruct()
 
 void UQuickbarBase_C::ExecuteUbergraph_QuickbarBase(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarBase.QuickbarBase_C.ExecuteUbergraph_QuickbarBase");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xebc0860e);
 
 	UQuickbarBase_C_ExecuteUbergraph_QuickbarBase_Params params;
 	params.EntryPoint = EntryPoint;

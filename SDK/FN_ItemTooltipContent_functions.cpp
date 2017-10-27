@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemTooltipContent_C::ClearExtendedInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.ClearExtendedInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88b64a93);
 
 	UItemTooltipContent_C_ClearExtendedInfo_Params params;
 
@@ -34,7 +35,8 @@ void UItemTooltipContent_C::ClearExtendedInfo()
 
 void UItemTooltipContent_C::Set_Rating()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Rating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1d8a502);
 
 	UItemTooltipContent_C_Set_Rating_Params params;
 
@@ -51,7 +53,8 @@ void UItemTooltipContent_C::Set_Rating()
 
 void UItemTooltipContent_C::Set_Quantity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Quantity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa976a3d2);
 
 	UItemTooltipContent_C_Set_Quantity_Params params;
 
@@ -68,7 +71,8 @@ void UItemTooltipContent_C::Set_Quantity()
 
 void UItemTooltipContent_C::SetDescriptionText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.SetDescriptionText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x793cf616);
 
 	UItemTooltipContent_C_SetDescriptionText_Params params;
 
@@ -92,7 +96,8 @@ void UItemTooltipContent_C::SetDescriptionText()
 
 void UItemTooltipContent_C::Create_Custom_Integer_Stat(EFortStatValueDisplayType Display_Type, const struct FText& Label, int Value, int Comparison_Value, bool HigherIsBetter, struct FFortDisplayAttribute* Display_Attribute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Create Custom Integer Stat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d271062);
 
 	UItemTooltipContent_C_Create_Custom_Integer_Stat_Params params;
 	params.Display_Type = Display_Type;
@@ -117,7 +122,8 @@ void UItemTooltipContent_C::Create_Custom_Integer_Stat(EFortStatValueDisplayType
 
 void UItemTooltipContent_C::Build_Perks_List()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Perks List");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba1180a4);
 
 	UItemTooltipContent_C_Build_Perks_List_Params params;
 
@@ -136,7 +142,8 @@ void UItemTooltipContent_C::Build_Perks_List()
 
 bool UItemTooltipContent_C::IsComparison()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.IsComparison");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce4cd02e);
 
 	UItemTooltipContent_C_IsComparison_Params params;
 
@@ -155,7 +162,8 @@ bool UItemTooltipContent_C::IsComparison()
 
 void UItemTooltipContent_C::BuildHeroBonuses()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.BuildHeroBonuses");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x614cc7cc);
 
 	UItemTooltipContent_C_BuildHeroBonuses_Params params;
 
@@ -172,7 +180,8 @@ void UItemTooltipContent_C::BuildHeroBonuses()
 
 void UItemTooltipContent_C::Build_Ingredients()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Ingredients");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe84cb83);
 
 	UItemTooltipContent_C_Build_Ingredients_Params params;
 
@@ -191,7 +200,8 @@ void UItemTooltipContent_C::Build_Ingredients()
 
 void UItemTooltipContent_C::Init_Tooltip_Context(class UFortTooltipContext** Tooltip_Context)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Init Tooltip Context");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3809ecc3);
 
 	UItemTooltipContent_C_Init_Tooltip_Context_Params params;
 
@@ -213,7 +223,8 @@ void UItemTooltipContent_C::Init_Tooltip_Context(class UFortTooltipContext** Too
 
 void UItemTooltipContent_C::Get_Query_Tag(struct FGameplayTag* Tag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Get Query Tag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1923aa23);
 
 	UItemTooltipContent_C_Get_Query_Tag_Params params;
 
@@ -233,7 +244,8 @@ void UItemTooltipContent_C::Get_Query_Tag(struct FGameplayTag* Tag)
 
 void UItemTooltipContent_C::Build_Schematic_Ingredients()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Schematic Ingredients");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5e75f38);
 
 	UItemTooltipContent_C_Build_Schematic_Ingredients_Params params;
 
@@ -250,7 +262,8 @@ void UItemTooltipContent_C::Build_Schematic_Ingredients()
 
 void UItemTooltipContent_C::Set_Rarity_Data()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Rarity Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c66291c);
 
 	UItemTooltipContent_C_Set_Rarity_Data_Params params;
 
@@ -269,7 +282,8 @@ void UItemTooltipContent_C::Set_Rarity_Data()
 
 void UItemTooltipContent_C::Set_Display_Mode(TEnumAsByte<EItemTooltip_DisplayMode> DisplayMode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Display Mode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa062a52e);
 
 	UItemTooltipContent_C_Set_Display_Mode_Params params;
 	params.DisplayMode = DisplayMode;
@@ -287,7 +301,8 @@ void UItemTooltipContent_C::Set_Display_Mode(TEnumAsByte<EItemTooltip_DisplayMod
 
 void UItemTooltipContent_C::Set_Level_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Level Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe28c103a);
 
 	UItemTooltipContent_C_Set_Level_Text_Params params;
 
@@ -304,7 +319,8 @@ void UItemTooltipContent_C::Set_Level_Text()
 
 void UItemTooltipContent_C::Set_Tier()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Tier");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e1250a5);
 
 	UItemTooltipContent_C_Set_Tier_Params params;
 
@@ -321,7 +337,8 @@ void UItemTooltipContent_C::Set_Tier()
 
 void UItemTooltipContent_C::Set_Tertiary_Category_Icon___Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Tertiary Category Icon & Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84f18b7b);
 
 	UItemTooltipContent_C_Set_Tertiary_Category_Icon___Text_Params params;
 
@@ -338,7 +355,8 @@ void UItemTooltipContent_C::Set_Tertiary_Category_Icon___Text()
 
 void UItemTooltipContent_C::Set_Secondary_Category_Icon___Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Secondary Category Icon & Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8785c151);
 
 	UItemTooltipContent_C_Set_Secondary_Category_Icon___Text_Params params;
 
@@ -355,7 +373,8 @@ void UItemTooltipContent_C::Set_Secondary_Category_Icon___Text()
 
 void UItemTooltipContent_C::Set_Primary_Category_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Primary Category Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32785c3c);
 
 	UItemTooltipContent_C_Set_Primary_Category_Text_Params params;
 
@@ -372,7 +391,8 @@ void UItemTooltipContent_C::Set_Primary_Category_Text()
 
 void UItemTooltipContent_C::Set_Display_Name_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Display Name Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ee4b053);
 
 	UItemTooltipContent_C_Set_Display_Name_Text_Params params;
 
@@ -389,7 +409,8 @@ void UItemTooltipContent_C::Set_Display_Name_Text()
 
 void UItemTooltipContent_C::Build_Basic_Stat_Block()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Basic Stat Block");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x53e7107e);
 
 	UItemTooltipContent_C_Build_Basic_Stat_Block_Params params;
 
@@ -406,7 +427,8 @@ void UItemTooltipContent_C::Build_Basic_Stat_Block()
 
 void UItemTooltipContent_C::Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa23513d9);
 
 	UItemTooltipContent_C_Intro_Params params;
 
@@ -423,7 +445,8 @@ void UItemTooltipContent_C::Intro()
 
 void UItemTooltipContent_C::Build_Durability()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Durability");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76a7d058);
 
 	UItemTooltipContent_C_Build_Durability_Params params;
 
@@ -440,7 +463,8 @@ void UItemTooltipContent_C::Build_Durability()
 
 void UItemTooltipContent_C::Build_Alteration_Info()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Alteration Info");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77afd73e);
 
 	UItemTooltipContent_C_Build_Alteration_Info_Params params;
 
@@ -457,7 +481,8 @@ void UItemTooltipContent_C::Build_Alteration_Info()
 
 void UItemTooltipContent_C::Build_Worker_Stats()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Worker Stats");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd12815f6);
 
 	UItemTooltipContent_C_Build_Worker_Stats_Params params;
 
@@ -474,7 +499,8 @@ void UItemTooltipContent_C::Build_Worker_Stats()
 
 void UItemTooltipContent_C::Build_Weapon_DPS_Stat()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Weapon DPS Stat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b2c0d90);
 
 	UItemTooltipContent_C_Build_Weapon_DPS_Stat_Params params;
 
@@ -491,7 +517,8 @@ void UItemTooltipContent_C::Build_Weapon_DPS_Stat()
 
 void UItemTooltipContent_C::Build_Basic_Info()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Build Basic Info");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xabb572e7);
 
 	UItemTooltipContent_C_Build_Basic_Info_Params params;
 
@@ -513,7 +540,8 @@ void UItemTooltipContent_C::Build_Basic_Info()
 
 void UItemTooltipContent_C::Set_Item_Data(class UFortItem* Item, class UFortItem* Comparison_Item, TEnumAsByte<EItemTooltip_DisplayMode> DisplayMode, int OverrideQuantity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Set Item Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4cc8788);
 
 	UItemTooltipContent_C_Set_Item_Data_Params params;
 	params.Item = Item;
@@ -536,7 +564,8 @@ void UItemTooltipContent_C::Set_Item_Data(class UFortItem* Item, class UFortItem
 
 void UItemTooltipContent_C::Update(bool* Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd27b692);
 
 	UItemTooltipContent_C_Update_Params params;
 
@@ -556,7 +585,8 @@ void UItemTooltipContent_C::Update(bool* Success)
 
 void UItemTooltipContent_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a871520);
 
 	UItemTooltipContent_C_Construct_Params params;
 
@@ -575,7 +605,8 @@ void UItemTooltipContent_C::Construct()
 
 void UItemTooltipContent_C::ExecuteUbergraph_ItemTooltipContent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTooltipContent.ItemTooltipContent_C.ExecuteUbergraph_ItemTooltipContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd742fa00);
 
 	UItemTooltipContent_C_ExecuteUbergraph_ItemTooltipContent_Params params;
 	params.EntryPoint = EntryPoint;

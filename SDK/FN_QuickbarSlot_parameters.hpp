@@ -14,6 +14,11 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function QuickbarSlot.QuickbarSlot_C.UpdateItemBoxSize
+struct UQuickbarSlot_C_UpdateItemBoxSize_Params
+{
+};
+
 // Function QuickbarSlot.QuickbarSlot_C.UpdateItemCardsVisibility
 struct UQuickbarSlot_C_UpdateItemCardsVisibility_Params
 {
@@ -67,39 +72,25 @@ struct UQuickbarSlot_C_UpdateKeyBindingText_Params
 // Function QuickbarSlot.QuickbarSlot_C.Resize
 struct UQuickbarSlot_C_Resize_Params
 {
-	TEnumAsByte<EFortBrushSize>                        Brush_Size;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	EFortItemCardSize                                  Card_Size;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function QuickbarSlot.QuickbarSlot_C.Maximize
 struct UQuickbarSlot_C_Maximize_Params
 {
+	bool                                               ShouldSkipAnimation;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function QuickbarSlot.QuickbarSlot_C.Minimize
 struct UQuickbarSlot_C_Minimize_Params
 {
+	bool                                               ShouldSkipAnimation;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function QuickbarSlot.QuickbarSlot_C.SetSelected
 struct UQuickbarSlot_C_SetSelected_Params
 {
 	bool                                               Selected;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function QuickbarSlot.QuickbarSlot_C.RefreshItem
-struct UQuickbarSlot_C_RefreshItem_Params
-{
-};
-
-// Function QuickbarSlot.QuickbarSlot_C.PreConstruct
-struct UQuickbarSlot_C_PreConstruct_Params
-{
-	bool*                                              IsDesignTime;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function QuickbarSlot.QuickbarSlot_C.Construct
-struct UQuickbarSlot_C_Construct_Params
-{
 };
 
 // Function QuickbarSlot.QuickbarSlot_C.HandleMaximizeStarted
@@ -120,6 +111,35 @@ struct UQuickbarSlot_C_HandleMaximizeFinished_Params
 // Function QuickbarSlot.QuickbarSlot_C.HandleMinimizeStarted
 struct UQuickbarSlot_C_HandleMinimizeStarted_Params
 {
+};
+
+// Function QuickbarSlot.QuickbarSlot_C.Tick
+struct UQuickbarSlot_C_Tick_Params
+{
+	struct FGeometry*                                  MyGeometry;                                               // (CPF_Parm, CPF_IsPlainOldData)
+	float*                                             InDeltaTime;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function QuickbarSlot.QuickbarSlot_C.PreConstruct
+struct UQuickbarSlot_C_PreConstruct_Params
+{
+	bool*                                              IsDesignTime;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function QuickbarSlot.QuickbarSlot_C.RefreshItem
+struct UQuickbarSlot_C_RefreshItem_Params
+{
+};
+
+// Function QuickbarSlot.QuickbarSlot_C.Construct
+struct UQuickbarSlot_C_Construct_Params
+{
+};
+
+// Function QuickbarSlot.QuickbarSlot_C.SetAnimatedBoxScaleFactor
+struct UQuickbarSlot_C_SetAnimatedBoxScaleFactor_Params
+{
+	float                                              AnimatedBoxScaleFactor;                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function QuickbarSlot.QuickbarSlot_C.ExecuteUbergraph_QuickbarSlot

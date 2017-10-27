@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ButtonStyle-Primary-Radio-M-NoText.ButtonStyle-Primary-Radio-M-NoText_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x589c151f);
 		return ptr;
 	}
 

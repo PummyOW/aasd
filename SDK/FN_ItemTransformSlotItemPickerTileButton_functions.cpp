@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemTransformSlotItemPickerTileButton_C::SetData(class UObject** InData, class UCommonListView** OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5852e31);
 
 	UItemTransformSlotItemPickerTileButton_C_SetData_Params params;
 	params.InData = InData;
@@ -41,7 +42,8 @@ void UItemTransformSlotItemPickerTileButton_C::SetData(class UObject** InData, c
 
 void UItemTransformSlotItemPickerTileButton_C::ExecuteUbergraph_ItemTransformSlotItemPickerTileButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotItemPickerTileButton.ItemTransformSlotItemPickerTileButton_C.ExecuteUbergraph_ItemTransformSlotItemPickerTileButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x975f0dc5);
 
 	UItemTransformSlotItemPickerTileButton_C_ExecuteUbergraph_ItemTransformSlotItemPickerTileButton_Params params;
 	params.EntryPoint = EntryPoint;

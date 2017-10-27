@@ -22,13 +22,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass QuestTrackerEntry.QuestTrackerEntry_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9f79bc5);
 		return ptr;
 	}
 
 
 	void Construct();
-	void OnSetup();
 	void ExecuteUbergraph_QuestTrackerEntry(int EntryPoint);
 };
 

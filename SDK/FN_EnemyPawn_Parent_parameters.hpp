@@ -14,6 +14,43 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.Orphaned
+struct AEnemyPawn_Parent_C_Orphaned_Params
+{
+	bool                                               IsOrphaned;                                               // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortPawn*                                   AttachedPawn;                                             // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnRep_SpecialEventHalloweenPumpkinHeadApplied
+struct AEnemyPawn_Parent_C_OnRep_SpecialEventHalloweenPumpkinHeadApplied_Params
+{
+};
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpecialEventHalloweenPumpkinHeadHusk
+struct AEnemyPawn_Parent_C_SpecialEventHalloweenPumpkinHeadHusk_Params
+{
+	bool                                               ApplyPumpkinHeadMesh;                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               DebugApplicationOrRemoval_;                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnMeshAttachedToCharacter
+struct AEnemyPawn_Parent_C_SpawnMeshAttachedToCharacter_Params
+{
+	class UStaticMesh*                                 Static_Mesh;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       Socket_Name;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FTransform                                  Relative_Transform;                                       // (CPF_Parm, CPF_IsPlainOldData)
+	bool                                               Absolute_Location;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               Absolute_Rotation;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               Absolute_Scale;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UStaticMeshComponent*                        Static_Mesh_Component_Reference;                          // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialOnCharacterMesh
+struct AEnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterMesh_Params
+{
+	float                                              Delay_in_Seconds;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.CharacterSpawnInSafetyCheck
 struct AEnemyPawn_Parent_C_CharacterSpawnInSafetyCheck_Params
 {
@@ -33,13 +70,21 @@ struct AEnemyPawn_Parent_C_SetCharacterFresnelGlowColors_Params
 	struct FLinearColor                                Outer_Color;                                              // (CPF_Parm, CPF_IsPlainOldData)
 };
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnParticleSystemAttachedToCharacterMesh
-struct AEnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh_Params
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnParticleSystemOnCharacterMesh
+struct AEnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh_Params
 {
-	class UParticleSystem*                             Particle_System;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FName                                       Attach_Point_Name;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UParticleSystem*                             ParticleSystemTemplate;                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UParticleSystemComponent*                    ParticleSystemComponentReferenceVar;                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       AttachPointName;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FVector                                     Location;                                                 // (CPF_Parm, CPF_IsPlainOldData)
 	struct FRotator                                    Rotation;                                                 // (CPF_Parm, CPF_IsPlainOldData)
+	TArray<struct FParticleSysParam>                   InstanceParameters;                                       // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+	bool                                               AutoActivate;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               AutoDestroy;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               AbsoluteLocation;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               AbsoluteRotation;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               AbsoluteScale;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UParticleSystemComponent*                    PSComponentReference;                                     // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OverridePhysicalMaterialOnCharacterMesh
@@ -59,11 +104,6 @@ struct AEnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterMesh_Para
 	class UMaterial*                                   New_Material_To_Apply;                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnRep_PumpkinHeadActiveGE
-struct AEnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE_Params
-{
-};
-
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PlayAdditiveHitReacts
 struct AEnemyPawn_Parent_C_PlayAdditiveHitReacts_Params
 {
@@ -71,22 +111,22 @@ struct AEnemyPawn_Parent_C_PlayAdditiveHitReacts_Params
 	class UAnimMontage*                                Anim_Montage;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetActiveElementalAmbientParticles
-struct AEnemyPawn_Parent_C_SetActiveElementalAmbientParticles_Params
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetActiveParticlesOnCharacterMesh
+struct AEnemyPawn_Parent_C_SetActiveParticlesOnCharacterMesh_Params
 {
 	bool                                               Active;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               Reset;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetScalarParameterOnAllMIDs
-struct AEnemyPawn_Parent_C_SetScalarParameterOnAllMIDs_Params
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetScalarParameterOnAllCharacterMIDs
+struct AEnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs_Params
 {
 	struct FName                                       Parameter_Name;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	float                                              Scalar_Value;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllMIDs
-struct AEnemyPawn_Parent_C_SetVectorParameterOnAllMIDs_Params
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllCharacterMIDs
+struct AEnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs_Params
 {
 	struct FName                                       Parameter_Name;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FLinearColor                                Linear_Color;                                             // (CPF_Parm, CPF_IsPlainOldData)
@@ -177,13 +217,8 @@ struct AEnemyPawn_Parent_C_BeginDeathFX_Params
 {
 };
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.DeactivateEffectsPreDespawn
-struct AEnemyPawn_Parent_C_DeactivateEffectsPreDespawn_Params
-{
-};
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.ActivateEffectsPostSpawnIn
-struct AEnemyPawn_Parent_C_ActivateEffectsPostSpawnIn_Params
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.PostSpawnIn
+struct AEnemyPawn_Parent_C_PostSpawnIn_Params
 {
 };
 
@@ -238,6 +273,23 @@ struct AEnemyPawn_Parent_C_OnBeginSleepEffects_Params
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnEndSleepEffects
 struct AEnemyPawn_Parent_C_OnEndSleepEffects_Params
 {
+};
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialDelayCompleted
+struct AEnemyPawn_Parent_C_RestorePreviousMaterialDelayCompleted_Params
+{
+};
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialDelay
+struct AEnemyPawn_Parent_C_RestorePreviousMaterialDelay_Params
+{
+	float                                              Delay_Amount;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnCheatUpdateSpecialEventGE
+struct AEnemyPawn_Parent_C_OnCheatUpdateSpecialEventGE_Params
+{
+	bool*                                              bShouldUseSpecialEventGE;                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ExecuteUbergraph_EnemyPawn_Parent

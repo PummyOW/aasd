@@ -31,11 +31,6 @@ struct UItemDetailsHeaderTagListText_C_HandlePostDifferentItemToCompareWithSet_P
 {
 };
 
-// Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.Construct
-struct UItemDetailsHeaderTagListText_C_Construct_Params
-{
-};
-
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.ExecuteUbergraph_ItemDetailsHeaderTagListText
 struct UItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText_Params
 {

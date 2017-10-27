@@ -17,7 +17,8 @@ namespace SDK
 
 void UShowFriendCodesSelection_C::SetFocus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.SetFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffb10505);
 
 	UShowFriendCodesSelection_C_SetFocus_Params params;
 
@@ -34,7 +35,8 @@ void UShowFriendCodesSelection_C::SetFocus()
 
 void UShowFriendCodesSelection_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67f01e1c);
 
 	UShowFriendCodesSelection_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UShowFriendCodesSelection_C::Construct()
 
 void UShowFriendCodesSelection_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f0d5171);
 
 	UShowFriendCodesSelection_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -71,7 +74,8 @@ void UShowFriendCodesSelection_C::BndEvt__IconTextButton_K2Node_ComponentBoundEv
 
 void UShowFriendCodesSelection_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe43d2b0b);
 
 	UShowFriendCodesSelection_C_OnActivated_Params params;
 
@@ -90,7 +94,8 @@ void UShowFriendCodesSelection_C::OnActivated()
 
 void UShowFriendCodesSelection_C::ExecuteUbergraph_ShowFriendCodesSelection(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ShowFriendCodesSelection.ShowFriendCodesSelection_C.ExecuteUbergraph_ShowFriendCodesSelection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21e1739a);
 
 	UShowFriendCodesSelection_C_ExecuteUbergraph_ShowFriendCodesSelection_Params params;
 	params.EntryPoint = EntryPoint;

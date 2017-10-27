@@ -20,7 +20,8 @@ namespace SDK
 
 void UQuestProgressWidget_C::Update(int Required, int Achieved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestProgressWidget.QuestProgressWidget_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3869f3fc);
 
 	UQuestProgressWidget_C_Update_Params params;
 	params.Required = Required;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemIconWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemIconWidget.ItemIconWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34080e6e);
 
 	UItemIconWidget_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UItemIconWidget_C::Construct()
 
 void UItemIconWidget_C::ExecuteUbergraph_ItemIconWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemIconWidget.ItemIconWidget_C.ExecuteUbergraph_ItemIconWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafda7b1);
 
 	UItemIconWidget_C_ExecuteUbergraph_ItemIconWidget_Params params;
 	params.EntryPoint = EntryPoint;

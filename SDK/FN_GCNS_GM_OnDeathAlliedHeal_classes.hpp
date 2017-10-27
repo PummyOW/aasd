@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_GM_OnDeathAlliedHeal.GCNS_GM_OnDeathAlliedHeal_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2db2525);
 		return ptr;
 	}
 

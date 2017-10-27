@@ -31,7 +31,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ScrollingTextButton.ScrollingTextButton_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x19ef1081);
 		return ptr;
 	}
 

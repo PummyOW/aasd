@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_OnboardingSatelliteCine_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7802b51a);
 
 	AAnnounce_OnboardingSatelliteCine_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_OnboardingSatelliteCine_C::UserConstructionScript()
 
 void AAnnounce_OnboardingSatelliteCine_C::OnStateEntered_9B2A7CB14D8998F7D97BBB902DE431B7()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.OnStateEntered_9B2A7CB14D8998F7D97BBB902DE431B7");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2dd490d0);
 
 	AAnnounce_OnboardingSatelliteCine_C_OnStateEntered_9B2A7CB14D8998F7D97BBB902DE431B7_Params params;
 
@@ -51,7 +53,8 @@ void AAnnounce_OnboardingSatelliteCine_C::OnStateEntered_9B2A7CB14D8998F7D97BBB9
 
 void AAnnounce_OnboardingSatelliteCine_C::OnStateEntered_9AA291E3426E3967D1365A9851D878CE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.OnStateEntered_9AA291E3426E3967D1365A9851D878CE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14503f88);
 
 	AAnnounce_OnboardingSatelliteCine_C_OnStateEntered_9AA291E3426E3967D1365A9851D878CE_Params params;
 
@@ -68,7 +71,8 @@ void AAnnounce_OnboardingSatelliteCine_C::OnStateEntered_9AA291E3426E3967D1365A9
 
 void AAnnounce_OnboardingSatelliteCine_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64e2e67a);
 
 	AAnnounce_OnboardingSatelliteCine_C_OnClientAnnouncementStart_Params params;
 
@@ -85,7 +89,8 @@ void AAnnounce_OnboardingSatelliteCine_C::OnClientAnnouncementStart()
 
 void AAnnounce_OnboardingSatelliteCine_C::OnClientAnnouncementStop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.OnClientAnnouncementStop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79bdbb12);
 
 	AAnnounce_OnboardingSatelliteCine_C_OnClientAnnouncementStop_Params params;
 
@@ -102,7 +107,8 @@ void AAnnounce_OnboardingSatelliteCine_C::OnClientAnnouncementStop()
 
 void AAnnounce_OnboardingSatelliteCine_C::OnPlayerSkippedCutscene()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.OnPlayerSkippedCutscene");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc834c4b7);
 
 	AAnnounce_OnboardingSatelliteCine_C_OnPlayerSkippedCutscene_Params params;
 
@@ -123,7 +129,8 @@ void AAnnounce_OnboardingSatelliteCine_C::OnPlayerSkippedCutscene()
 
 void AAnnounce_OnboardingSatelliteCine_C::HandleClientEvent_CinematicFinishedPlaying(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.HandleClientEvent_CinematicFinishedPlaying");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe33daa24);
 
 	AAnnounce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying_Params params;
 	params.EventSource = EventSource;
@@ -143,7 +150,8 @@ void AAnnounce_OnboardingSatelliteCine_C::HandleClientEvent_CinematicFinishedPla
 
 void AAnnounce_OnboardingSatelliteCine_C::HandleAllowSkip()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.HandleAllowSkip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bc219e7);
 
 	AAnnounce_OnboardingSatelliteCine_C_HandleAllowSkip_Params params;
 
@@ -162,7 +170,8 @@ void AAnnounce_OnboardingSatelliteCine_C::HandleAllowSkip()
 
 void AAnnounce_OnboardingSatelliteCine_C::ExecuteUbergraph_Announce_OnboardingSatelliteCine(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.ExecuteUbergraph_Announce_OnboardingSatelliteCine");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6d6c38);
 
 	AAnnounce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine_Params params;
 	params.EntryPoint = EntryPoint;

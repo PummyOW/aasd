@@ -17,7 +17,8 @@ namespace SDK
 
 void UQuestInfo_Widget_C::SetQuestText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.SetQuestText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5070e42);
 
 	UQuestInfo_Widget_C_SetQuestText_Params params;
 
@@ -34,7 +35,8 @@ void UQuestInfo_Widget_C::SetQuestText()
 
 void UQuestInfo_Widget_C::SetQuestIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.SetQuestIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x789950b8);
 
 	UQuestInfo_Widget_C_SetQuestIcon_Params params;
 
@@ -51,7 +53,8 @@ void UQuestInfo_Widget_C::SetQuestIcon()
 
 void UQuestInfo_Widget_C::PopulateRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a7725b5);
 
 	UQuestInfo_Widget_C_PopulateRewards_Params params;
 
@@ -68,7 +71,8 @@ void UQuestInfo_Widget_C::PopulateRewards()
 
 void UQuestInfo_Widget_C::PopulateObjectives()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateObjectives");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafdc804f);
 
 	UQuestInfo_Widget_C_PopulateObjectives_Params params;
 
@@ -85,7 +89,8 @@ void UQuestInfo_Widget_C::PopulateObjectives()
 
 void UQuestInfo_Widget_C::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.Reset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29b81a);
 
 	UQuestInfo_Widget_C_Reset_Params params;
 
@@ -102,7 +107,8 @@ void UQuestInfo_Widget_C::Reset()
 
 void UQuestInfo_Widget_C::InitDesignView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.InitDesignView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b82dd32);
 
 	UQuestInfo_Widget_C_InitDesignView_Params params;
 
@@ -121,7 +127,8 @@ void UQuestInfo_Widget_C::InitDesignView()
 
 void UQuestInfo_Widget_C::PopulateFromQuest(class UFortQuestItem** InQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.PopulateFromQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1836533);
 
 	UQuestInfo_Widget_C_PopulateFromQuest_Params params;
 
@@ -141,7 +148,8 @@ void UQuestInfo_Widget_C::PopulateFromQuest(class UFortQuestItem** InQuest)
 
 void UQuestInfo_Widget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca3b7d98);
 
 	UQuestInfo_Widget_C_Construct_Params params;
 
@@ -160,7 +168,8 @@ void UQuestInfo_Widget_C::Construct()
 
 void UQuestInfo_Widget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd037b507);
 
 	UQuestInfo_Widget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -180,7 +189,8 @@ void UQuestInfo_Widget_C::PreConstruct(bool* IsDesignTime)
 
 void UQuestInfo_Widget_C::ExecuteUbergraph_QuestInfo_Widget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_Widget.QuestInfo_Widget_C.ExecuteUbergraph_QuestInfo_Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3769b7dc);
 
 	UQuestInfo_Widget_C_ExecuteUbergraph_QuestInfo_Widget_Params params;
 	params.EntryPoint = EntryPoint;

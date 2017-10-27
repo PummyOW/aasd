@@ -20,7 +20,8 @@ namespace SDK
 
 void UCollectionBookItemPicker_C::Get_Type_Text(class UFortItem* Item, struct FText* Type)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookItemPicker.CollectionBookItemPicker_C.Get Type Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x988fb868);
 
 	UCollectionBookItemPicker_C_Get_Type_Text_Params params;
 	params.Item = Item;
@@ -43,7 +44,8 @@ void UCollectionBookItemPicker_C::Get_Type_Text(class UFortItem* Item, struct FT
 
 void UCollectionBookItemPicker_C::HandleCommitAction(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookItemPicker.CollectionBookItemPicker_C.HandleCommitAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb8a5930);
 
 	UCollectionBookItemPicker_C_HandleCommitAction_Params params;
 
@@ -66,7 +68,8 @@ void UCollectionBookItemPicker_C::HandleCommitAction(bool* PassThrough)
 
 void UCollectionBookItemPicker_C::HandleItemSelected(class UObject* ItemSelected, bool IsSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookItemPicker.CollectionBookItemPicker_C.HandleItemSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e4a14bf);
 
 	UCollectionBookItemPicker_C_HandleItemSelected_Params params;
 	params.ItemSelected = ItemSelected;
@@ -90,7 +93,8 @@ void UCollectionBookItemPicker_C::HandleItemSelected(class UObject* ItemSelected
 
 void UCollectionBookItemPicker_C::DialogResult_C897FB8741239C9DAE2430AD3D91A030(EFortDialogResult Result, const struct FName& ResultName, bool bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& WaitingDialogHandle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookItemPicker.CollectionBookItemPicker_C.DialogResult_C897FB8741239C9DAE2430AD3D91A030");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55053409);
 
 	UCollectionBookItemPicker_C_DialogResult_C897FB8741239C9DAE2430AD3D91A030_Params params;
 	params.Result = Result;
@@ -111,7 +115,8 @@ void UCollectionBookItemPicker_C::DialogResult_C897FB8741239C9DAE2430AD3D91A030(
 
 void UCollectionBookItemPicker_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookItemPicker.CollectionBookItemPicker_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f2564de);
 
 	UCollectionBookItemPicker_C_Construct_Params params;
 
@@ -130,7 +135,8 @@ void UCollectionBookItemPicker_C::Construct()
 
 void UCollectionBookItemPicker_C::ShowSlotItemConfirmation(class UFortItem* SelectedItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookItemPicker.CollectionBookItemPicker_C.ShowSlotItemConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7667951e);
 
 	UCollectionBookItemPicker_C_ShowSlotItemConfirmation_Params params;
 	params.SelectedItem = SelectedItem;
@@ -150,7 +156,8 @@ void UCollectionBookItemPicker_C::ShowSlotItemConfirmation(class UFortItem* Sele
 
 void UCollectionBookItemPicker_C::ExecuteUbergraph_CollectionBookItemPicker(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookItemPicker.CollectionBookItemPicker_C.ExecuteUbergraph_CollectionBookItemPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf18e45c3);
 
 	UCollectionBookItemPicker_C_ExecuteUbergraph_CollectionBookItemPicker_Params params;
 	params.EntryPoint = EntryPoint;

@@ -60,11 +60,6 @@ struct UQuestTrackerSubEntry_C_PostCompletionDelay_Params
 {
 };
 
-// Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.OnSetup
-struct UQuestTrackerSubEntry_C_OnSetup_Params
-{
-};
-
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.ExecuteUbergraph_QuestTrackerSubEntry
 struct UQuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry_Params
 {

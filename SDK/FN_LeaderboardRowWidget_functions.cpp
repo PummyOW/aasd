@@ -19,7 +19,8 @@ namespace SDK
 
 void ULeaderboardRowWidget_C::Refresh(class UFortLeaderboardRowProxyInstance* RowObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardRowWidget.LeaderboardRowWidget_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f590bd2);
 
 	ULeaderboardRowWidget_C_Refresh_Params params;
 	params.RowObject = RowObject;
@@ -39,7 +40,8 @@ void ULeaderboardRowWidget_C::Refresh(class UFortLeaderboardRowProxyInstance* Ro
 
 void ULeaderboardRowWidget_C::SetDataDirect(class UFortLeaderboardRowProxyInstance* NewData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardRowWidget.LeaderboardRowWidget_C.SetDataDirect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b10e020);
 
 	ULeaderboardRowWidget_C_SetDataDirect_Params params;
 	params.NewData = NewData;
@@ -57,7 +59,8 @@ void ULeaderboardRowWidget_C::SetDataDirect(class UFortLeaderboardRowProxyInstan
 
 void ULeaderboardRowWidget_C::OnLeaderboardEntryDataSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnLeaderboardEntryDataSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x349b873f);
 
 	ULeaderboardRowWidget_C_OnLeaderboardEntryDataSet_Params params;
 
@@ -76,7 +79,8 @@ void ULeaderboardRowWidget_C::OnLeaderboardEntryDataSet()
 
 void ULeaderboardRowWidget_C::ExecuteUbergraph_LeaderboardRowWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardRowWidget.LeaderboardRowWidget_C.ExecuteUbergraph_LeaderboardRowWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b7f3ba6);
 
 	ULeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget_Params params;
 	params.EntryPoint = EntryPoint;

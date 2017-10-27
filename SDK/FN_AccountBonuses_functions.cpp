@@ -17,7 +17,8 @@ namespace SDK
 
 void UAccountBonuses_C::Update_Badges()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AccountBonuses.AccountBonuses_C.Update Badges");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4759b40c);
 
 	UAccountBonuses_C_Update_Badges_Params params;
 
@@ -36,7 +37,8 @@ void UAccountBonuses_C::Update_Badges()
 
 void UAccountBonuses_C::Has_VIP_Badge(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AccountBonuses.AccountBonuses_C.Has VIP Badge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb9c434d);
 
 	UAccountBonuses_C_Has_VIP_Badge_Params params;
 
@@ -58,7 +60,8 @@ void UAccountBonuses_C::Has_VIP_Badge(bool* Result)
 
 void UAccountBonuses_C::Has_Founder_Badge(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AccountBonuses.AccountBonuses_C.Has Founder Badge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4d7a789);
 
 	UAccountBonuses_C_Has_Founder_Badge_Params params;
 
@@ -78,7 +81,8 @@ void UAccountBonuses_C::Has_Founder_Badge(bool* Result)
 
 void UAccountBonuses_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AccountBonuses.AccountBonuses_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30007d3e);
 
 	UAccountBonuses_C_Construct_Params params;
 
@@ -95,7 +99,8 @@ void UAccountBonuses_C::Construct()
 
 void UAccountBonuses_C::Founder_Changed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AccountBonuses.AccountBonuses_C.Founder Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb30a110);
 
 	UAccountBonuses_C_Founder_Changed_Params params;
 
@@ -114,7 +119,8 @@ void UAccountBonuses_C::Founder_Changed()
 
 void UAccountBonuses_C::ExecuteUbergraph_AccountBonuses(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AccountBonuses.AccountBonuses_C.ExecuteUbergraph_AccountBonuses");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cb30291);
 
 	UAccountBonuses_C_ExecuteUbergraph_AccountBonuses_Params params;
 	params.EntryPoint = EntryPoint;

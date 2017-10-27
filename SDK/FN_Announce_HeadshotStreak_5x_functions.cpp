@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_HeadshotStreak_5x_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_HeadshotStreak_5x.Announce_HeadshotStreak_5x_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa86c4ff0);
 
 	AAnnounce_HeadshotStreak_5x_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_HeadshotStreak_5x_C::UserConstructionScript()
 
 void AAnnounce_HeadshotStreak_5x_C::OnClientAnnouncementStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_HeadshotStreak_5x.Announce_HeadshotStreak_5x_C.OnClientAnnouncementStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x641f0088);
 
 	AAnnounce_HeadshotStreak_5x_C_OnClientAnnouncementStart_Params params;
 
@@ -53,7 +55,8 @@ void AAnnounce_HeadshotStreak_5x_C::OnClientAnnouncementStart()
 
 void AAnnounce_HeadshotStreak_5x_C::ExecuteUbergraph_Announce_HeadshotStreak_5x(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_HeadshotStreak_5x.Announce_HeadshotStreak_5x_C.ExecuteUbergraph_Announce_HeadshotStreak_5x");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd870c75b);
 
 	AAnnounce_HeadshotStreak_5x_C_ExecuteUbergraph_Announce_HeadshotStreak_5x_Params params;
 	params.EntryPoint = EntryPoint;

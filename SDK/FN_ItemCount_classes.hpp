@@ -35,11 +35,15 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ItemCount.ItemCount_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae862b0d);
 		return ptr;
 	}
 
 
+	void SetBrushAndTextStyle(TEnumAsByte<EFortBrushSize> InBrushSize, class UClass* InStyle);
+	void UpdateOverrideState();
+	void SetOverrideValue(int OverrrideValue);
 	void SetIsBeingPreviewed(bool BeingPreviewed);
 	void SetItemDefinition(class UFortItemDefinition* ItemDefinition);
 	void Construct();

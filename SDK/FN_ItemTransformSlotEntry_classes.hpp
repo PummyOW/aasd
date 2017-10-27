@@ -28,7 +28,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ItemTransformSlotEntry.ItemTransformSlotEntry_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe27d400f);
 		return ptr;
 	}
 

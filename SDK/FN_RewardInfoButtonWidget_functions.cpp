@@ -19,7 +19,8 @@ namespace SDK
 
 void URewardInfoButtonWidget_C::GetDisplayName(struct FText* DisplayName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.GetDisplayName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fcece7e);
 
 	URewardInfoButtonWidget_C_GetDisplayName_Params params;
 
@@ -41,7 +42,8 @@ void URewardInfoButtonWidget_C::GetDisplayName(struct FText* DisplayName)
 
 void URewardInfoButtonWidget_C::SetShowDescriptionBP(bool* bInShowDescription)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.SetShowDescriptionBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x697fa2cc);
 
 	URewardInfoButtonWidget_C_SetShowDescriptionBP_Params params;
 	params.bInShowDescription = bInShowDescription;
@@ -59,7 +61,8 @@ void URewardInfoButtonWidget_C::SetShowDescriptionBP(bool* bInShowDescription)
 
 void URewardInfoButtonWidget_C::HandleDifferentItemOrQuantitySetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.HandleDifferentItemOrQuantitySetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac4549a7);
 
 	URewardInfoButtonWidget_C_HandleDifferentItemOrQuantitySetBP_Params params;
 
@@ -78,7 +81,8 @@ void URewardInfoButtonWidget_C::HandleDifferentItemOrQuantitySetBP()
 
 void URewardInfoButtonWidget_C::ExecuteUbergraph_RewardInfoButtonWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardInfoButtonWidget.RewardInfoButtonWidget_C.ExecuteUbergraph_RewardInfoButtonWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a08850);
 
 	URewardInfoButtonWidget_C_ExecuteUbergraph_RewardInfoButtonWidget_Params params;
 	params.EntryPoint = EntryPoint;

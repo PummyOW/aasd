@@ -12,6 +12,29 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function QuestScreen.QuestScreen_C.HandleAbandonQuest
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           PassThrough                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::HandleAbandonQuest(bool* PassThrough)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c9ede66);
+
+	UQuestScreen_C_HandleAbandonQuest_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PassThrough != nullptr)
+		*PassThrough = params.PassThrough;
+}
+
+
 // Function QuestScreen.QuestScreen_C.ShouldShowPlayQuest
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -20,7 +43,8 @@ namespace SDK
 
 void UQuestScreen_C::ShouldShowPlayQuest(class UFortQuestItem* Quest, bool* ShouldShowPlay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.ShouldShowPlayQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1ae0aa7);
 
 	UQuestScreen_C_ShouldShowPlayQuest_Params params;
 	params.Quest = Quest;
@@ -43,7 +67,8 @@ void UQuestScreen_C::ShouldShowPlayQuest(class UFortQuestItem* Quest, bool* Shou
 
 void UQuestScreen_C::Toggle_Disable_Claim_Reward_Button(bool ToDisable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.Toggle Disable Claim Reward Button");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3f346e4);
 
 	UQuestScreen_C_Toggle_Disable_Claim_Reward_Button_Params params;
 	params.ToDisable = ToDisable;
@@ -63,7 +88,8 @@ void UQuestScreen_C::Toggle_Disable_Claim_Reward_Button(bool ToDisable)
 
 void UQuestScreen_C::HandleInventory(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.HandleInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa419855f);
 
 	UQuestScreen_C_HandleInventory_Params params;
 
@@ -83,7 +109,8 @@ void UQuestScreen_C::HandleInventory(bool* PassThrough)
 
 void UQuestScreen_C::Update_Category_Buttons_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.Update Category Buttons Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45b656c0);
 
 	UQuestScreen_C_Update_Category_Buttons_Bang_State_Params params;
 
@@ -100,7 +127,8 @@ void UQuestScreen_C::Update_Category_Buttons_Bang_State()
 
 void UQuestScreen_C::Update_Pending_Seen_Quest_Items()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.Update Pending Seen Quest Items");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2d77dcc);
 
 	UQuestScreen_C_Update_Pending_Seen_Quest_Items_Params params;
 
@@ -117,7 +145,8 @@ void UQuestScreen_C::Update_Pending_Seen_Quest_Items()
 
 void UQuestScreen_C::RefreshQuestCategories()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.RefreshQuestCategories");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f83fdfa);
 
 	UQuestScreen_C_RefreshQuestCategories_Params params;
 
@@ -134,7 +163,8 @@ void UQuestScreen_C::RefreshQuestCategories()
 
 void UQuestScreen_C::HandleOnEndSpokenDialog()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.HandleOnEndSpokenDialog");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48a8648f);
 
 	UQuestScreen_C_HandleOnEndSpokenDialog_Params params;
 
@@ -153,7 +183,8 @@ void UQuestScreen_C::HandleOnEndSpokenDialog()
 
 void UQuestScreen_C::StopConversation(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.StopConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4767d78a);
 
 	UQuestScreen_C_StopConversation_Params params;
 
@@ -175,7 +206,8 @@ void UQuestScreen_C::StopConversation(bool* PassThrough)
 
 void UQuestScreen_C::ReplayOutroAudio(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.ReplayOutroAudio");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f4cd61f);
 
 	UQuestScreen_C_ReplayOutroAudio_Params params;
 
@@ -195,7 +227,8 @@ void UQuestScreen_C::ReplayOutroAudio(bool* PassThrough)
 
 void UQuestScreen_C::HandlePendingNavigationOp()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.HandlePendingNavigationOp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd8d8655);
 
 	UQuestScreen_C_HandlePendingNavigationOp_Params params;
 
@@ -214,7 +247,8 @@ void UQuestScreen_C::HandlePendingNavigationOp()
 
 void UQuestScreen_C::SelectQuest(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.SelectQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdcc957c7);
 
 	UQuestScreen_C_SelectQuest_Params params;
 	params.Quest = Quest;
@@ -234,7 +268,8 @@ void UQuestScreen_C::SelectQuest(class UFortQuestItem* Quest)
 
 void UQuestScreen_C::HandleQuestOp(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.HandleQuestOp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44c0580c);
 
 	UQuestScreen_C_HandleQuestOp_Params params;
 	params.Quest = Quest;
@@ -254,7 +289,8 @@ void UQuestScreen_C::HandleQuestOp(class UFortQuestItem* Quest)
 
 void UQuestScreen_C::PinQuest(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.PinQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe30ccfea);
 
 	UQuestScreen_C_PinQuest_Params params;
 
@@ -276,7 +312,8 @@ void UQuestScreen_C::PinQuest(bool* PassThrough)
 
 void UQuestScreen_C::UpdateInputHandlers(class UFortQuestItem* Active_Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.UpdateInputHandlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16c20017);
 
 	UQuestScreen_C_UpdateInputHandlers_Params params;
 	params.Active_Quest = Active_Quest;
@@ -296,7 +333,8 @@ void UQuestScreen_C::UpdateInputHandlers(class UFortQuestItem* Active_Quest)
 
 void UQuestScreen_C::ClaimReward(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.ClaimReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4445ad90);
 
 	UQuestScreen_C_ClaimReward_Params params;
 
@@ -316,7 +354,8 @@ void UQuestScreen_C::ClaimReward(bool* PassThrough)
 
 void UQuestScreen_C::SelectInitialQuest()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.SelectInitialQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f919f9);
 
 	UQuestScreen_C_SelectInitialQuest_Params params;
 
@@ -328,25 +367,24 @@ void UQuestScreen_C::SelectInitialQuest()
 }
 
 
-// Function QuestScreen.QuestScreen_C.AbandonQuest
-// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Function QuestScreen.QuestScreen_C.OnAbandonQuestConfirmed
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// bool                           PassThrough                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void UQuestScreen_C::AbandonQuest(bool* PassThrough)
+void UQuestScreen_C::OnAbandonQuestConfirmed(class UFortQuestItem* QuestToAbandon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.AbandonQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6dca1972);
 
-	UQuestScreen_C_AbandonQuest_Params params;
+	UQuestScreen_C_OnAbandonQuestConfirmed_Params params;
+	params.QuestToAbandon = QuestToAbandon;
 
 	auto flags = fn->FunctionFlags;
 
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-
-	if (PassThrough != nullptr)
-		*PassThrough = params.PassThrough;
 }
 
 
@@ -357,7 +395,8 @@ void UQuestScreen_C::AbandonQuest(bool* PassThrough)
 
 void UQuestScreen_C::ReplayIntroAudio(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.ReplayIntroAudio");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x481fd21a);
 
 	UQuestScreen_C_ReplayIntroAudio_Params params;
 
@@ -377,7 +416,8 @@ void UQuestScreen_C::ReplayIntroAudio(bool* PassThrough)
 
 void UQuestScreen_C::SetupInputHandlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.SetupInputHandlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29fed7d1);
 
 	UQuestScreen_C_SetupInputHandlers_Params params;
 
@@ -394,7 +434,8 @@ void UQuestScreen_C::SetupInputHandlers()
 
 void UQuestScreen_C::populateDetailWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.populateDetailWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8522bc3d);
 
 	UQuestScreen_C_populateDetailWidgets_Params params;
 
@@ -413,7 +454,8 @@ void UQuestScreen_C::populateDetailWidgets()
 
 void UQuestScreen_C::PlayQuest(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.PlayQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ecc8ea1);
 
 	UQuestScreen_C_PlayQuest_Params params;
 
@@ -435,7 +477,8 @@ void UQuestScreen_C::PlayQuest(bool* PassThrough)
 
 void UQuestScreen_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54e87ec);
 
 	UQuestScreen_C_HandleBack_Params params;
 
@@ -458,7 +501,8 @@ void UQuestScreen_C::HandleBack(bool* PassThrough)
 
 TArray<class UObject*> UQuestScreen_C::OnGetChildrenForCategory(class UObject* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnGetChildrenForCategory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x719b87a);
 
 	UQuestScreen_C_OnGetChildrenForCategory_Params params;
 	params.Item = Item;
@@ -473,6 +517,29 @@ TArray<class UObject*> UQuestScreen_C::OnGetChildrenForCategory(class UObject* I
 }
 
 
+// Function QuestScreen.QuestScreen_C.DialogResult_CE39442C4BCACCFD8414B495A3B27A21
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// EFortDialogResult              Result                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   ResultName                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::DialogResult_CE39442C4BCACCFD8414B495A3B27A21(EFortDialogResult Result, const struct FName& ResultName)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc92953c);
+
+	UQuestScreen_C_DialogResult_CE39442C4BCACCFD8414B495A3B27A21_Params params;
+	params.Result = Result;
+	params.ResultName = ResultName;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function QuestScreen.QuestScreen_C.BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_23_OnListViewItemWidgetCreated__DelegateSignature
 // (FUNC_BlueprintEvent)
 // Parameters:
@@ -480,7 +547,8 @@ TArray<class UObject*> UQuestScreen_C::OnGetChildrenForCategory(class UObject* I
 
 void UQuestScreen_C::BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_23_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_23_OnListViewItemWidgetCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3ff382b);
 
 	UQuestScreen_C_BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_23_OnListViewItemWidgetCreated__DelegateSignature_Params params;
 	params.Widget = Widget;
@@ -501,7 +569,8 @@ void UQuestScreen_C::BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_23_OnList
 
 void UQuestScreen_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_150_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_150_OnTabButtonCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2772b2c4);
 
 	UQuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_150_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -522,7 +591,8 @@ void UQuestScreen_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_150_On
 
 void UQuestScreen_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x132c7778);
 
 	UQuestScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -540,7 +610,8 @@ void UQuestScreen_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_On
 
 void UQuestScreen_C::Refresh_Tree_View()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.Refresh Tree View");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23df2a4f);
 
 	UQuestScreen_C_Refresh_Tree_View_Params params;
 
@@ -557,7 +628,8 @@ void UQuestScreen_C::Refresh_Tree_View()
 
 void UQuestScreen_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x25b0a835);
 
 	UQuestScreen_C_OnActivated_Params params;
 
@@ -574,7 +646,8 @@ void UQuestScreen_C::OnActivated()
 
 void UQuestScreen_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x407a068a);
 
 	UQuestScreen_C_OnDeactivated_Params params;
 
@@ -593,7 +666,8 @@ void UQuestScreen_C::OnDeactivated()
 
 void UQuestScreen_C::BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_200_OnListViewItemWidgetDestroyed__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_200_OnListViewItemWidgetDestroyed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdec71927);
 
 	UQuestScreen_C_BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_200_OnListViewItemWidgetDestroyed__DelegateSignature_Params params;
 	params.Widget = Widget;
@@ -613,7 +687,8 @@ void UQuestScreen_C::BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_200_OnLis
 
 void UQuestScreen_C::PlayerPartyStateChanged(const struct FFortTeamMemberInfo& PlayerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.PlayerPartyStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8f4c13d);
 
 	UQuestScreen_C_PlayerPartyStateChanged_Params params;
 	params.PlayerInfo = PlayerInfo;
@@ -633,7 +708,8 @@ void UQuestScreen_C::PlayerPartyStateChanged(const struct FFortTeamMemberInfo& P
 
 void UQuestScreen_C::OnClientPartyStateChanged(EFortPartyState PartyState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnClientPartyStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f728b2a);
 
 	UQuestScreen_C_OnClientPartyStateChanged_Params params;
 	params.PartyState = PartyState;
@@ -653,7 +729,8 @@ void UQuestScreen_C::OnClientPartyStateChanged(EFortPartyState PartyState)
 
 void UQuestScreen_C::OnMatchamkingComplete(EMatchmakingCompleteResult Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnMatchamkingComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bcd9019);
 
 	UQuestScreen_C_OnMatchamkingComplete_Params params;
 	params.Result = Result;
@@ -671,7 +748,8 @@ void UQuestScreen_C::OnMatchamkingComplete(EMatchmakingCompleteResult Result)
 
 void UQuestScreen_C::OnMatchmakingStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnMatchmakingStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2bb14ecb);
 
 	UQuestScreen_C_OnMatchmakingStarted_Params params;
 
@@ -688,7 +766,8 @@ void UQuestScreen_C::OnMatchmakingStarted()
 
 void UQuestScreen_C::OnPartyLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnPartyLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb4aff57);
 
 	UQuestScreen_C_OnPartyLeft_Params params;
 
@@ -705,7 +784,8 @@ void UQuestScreen_C::OnPartyLeft()
 
 void UQuestScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72fdb59e);
 
 	UQuestScreen_C_Construct_Params params;
 
@@ -725,11 +805,33 @@ void UQuestScreen_C::Construct()
 
 void UQuestScreen_C::OnItemSelected(class UObject* Item, bool bIsSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.OnItemSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2032632);
 
 	UQuestScreen_C_OnItemSelected_Params params;
 	params.Item = Item;
 	params.bIsSelected = bIsSelected;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function QuestScreen.QuestScreen_C.ShowAbandonQuestDialog
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::ShowAbandonQuestDialog(class UFortQuestItem* QuestToAbandon)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa39256f);
+
+	UQuestScreen_C_ShowAbandonQuestDialog_Params params;
+	params.QuestToAbandon = QuestToAbandon;
 
 	auto flags = fn->FunctionFlags;
 
@@ -746,10 +848,32 @@ void UQuestScreen_C::OnItemSelected(class UObject* Item, bool bIsSelected)
 
 void UQuestScreen_C::ExecuteUbergraph_QuestScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.ExecuteUbergraph_QuestScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51c20213);
 
 	UQuestScreen_C_ExecuteUbergraph_QuestScreen_Params params;
 	params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function QuestScreen.QuestScreen_C.AbandonQuest__DelegateSignature
+// (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::AbandonQuest__DelegateSignature(class UFortQuestItem* QuestToAbandon)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7bc68a3);
+
+	UQuestScreen_C_AbandonQuest__DelegateSignature_Params params;
+	params.QuestToAbandon = QuestToAbandon;
 
 	auto flags = fn->FunctionFlags;
 
@@ -764,7 +888,8 @@ void UQuestScreen_C::ExecuteUbergraph_QuestScreen(int EntryPoint)
 
 void UQuestScreen_C::CloseJournal__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestScreen.QuestScreen_C.CloseJournal__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1bbb781);
 
 	UQuestScreen_C_CloseJournal__DelegateSignature_Params params;
 

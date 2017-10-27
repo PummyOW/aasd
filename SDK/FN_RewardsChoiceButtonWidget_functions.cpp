@@ -19,7 +19,8 @@ namespace SDK
 
 void URewardsChoiceButtonWidget_C::SetHighlight(bool EnableHighlight)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.SetHighlight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c567b6f);
 
 	URewardsChoiceButtonWidget_C_SetHighlight_Params params;
 	params.EnableHighlight = EnableHighlight;
@@ -37,7 +38,8 @@ void URewardsChoiceButtonWidget_C::SetHighlight(bool EnableHighlight)
 
 void URewardsChoiceButtonWidget_C::SelectRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.SelectRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x381f393d);
 
 	URewardsChoiceButtonWidget_C_SelectRewards_Params params;
 
@@ -58,7 +60,8 @@ void URewardsChoiceButtonWidget_C::SelectRewards()
 
 struct FEventReply URewardsChoiceButtonWidget_C::OnPreviewMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.OnPreviewMouseButtonDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14bd2795);
 
 	URewardsChoiceButtonWidget_C_OnPreviewMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -83,7 +86,8 @@ struct FEventReply URewardsChoiceButtonWidget_C::OnPreviewMouseButtonDown(struct
 
 void URewardsChoiceButtonWidget_C::PopulateRewards(class URewardsWidget_C* Owner, int RewardIndex, TArray<struct FFortItemInstanceQuantityPair>* Rewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsChoiceButtonWidget.RewardsChoiceButtonWidget_C.PopulateRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x981f4c3b);
 
 	URewardsChoiceButtonWidget_C_PopulateRewards_Params params;
 	params.Owner = Owner;

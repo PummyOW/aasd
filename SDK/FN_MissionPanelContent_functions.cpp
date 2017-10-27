@@ -20,7 +20,8 @@ namespace SDK
 
 void UMissionPanelContent_C::Setup_Mission_Rewards(TEnumAsByte<ERewardListEntryType> RewardType, TArray<class UFortItem*>* Array)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionPanelContent.MissionPanelContent_C.Setup Mission Rewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c1eab88);
 
 	UMissionPanelContent_C_Setup_Mission_Rewards_Params params;
 	params.RewardType = RewardType;
@@ -41,7 +42,8 @@ void UMissionPanelContent_C::Setup_Mission_Rewards(TEnumAsByte<ERewardListEntryT
 
 void UMissionPanelContent_C::UpdateOverviewObjectives()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionPanelContent.MissionPanelContent_C.UpdateOverviewObjectives");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80fb7c9);
 
 	UMissionPanelContent_C_UpdateOverviewObjectives_Params params;
 
@@ -58,7 +60,8 @@ void UMissionPanelContent_C::UpdateOverviewObjectives()
 
 void UMissionPanelContent_C::UpdateMissionRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionPanelContent.MissionPanelContent_C.UpdateMissionRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf87b89e);
 
 	UMissionPanelContent_C_UpdateMissionRewards_Params params;
 
@@ -75,7 +78,8 @@ void UMissionPanelContent_C::UpdateMissionRewards()
 
 void UMissionPanelContent_C::UpdateMissionDisplay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionPanelContent.MissionPanelContent_C.UpdateMissionDisplay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56c421e8);
 
 	UMissionPanelContent_C_UpdateMissionDisplay_Params params;
 
@@ -92,7 +96,8 @@ void UMissionPanelContent_C::UpdateMissionDisplay()
 
 void UMissionPanelContent_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionPanelContent.MissionPanelContent_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa492f1b6);
 
 	UMissionPanelContent_C_Construct_Params params;
 
@@ -111,7 +116,8 @@ void UMissionPanelContent_C::Construct()
 
 void UMissionPanelContent_C::ExecuteUbergraph_MissionPanelContent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionPanelContent.MissionPanelContent_C.ExecuteUbergraph_MissionPanelContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x53a6ddda);
 
 	UMissionPanelContent_C_ExecuteUbergraph_MissionPanelContent_Params params;
 	params.EntryPoint = EntryPoint;

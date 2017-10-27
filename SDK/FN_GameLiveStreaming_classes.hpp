@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameLiveStreaming.GameLiveStreamingFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6730bcc8);
 		return ptr;
 	}
 
@@ -44,7 +45,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameLiveStreaming.QueryLiveStreamsCallbackProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb70cc03b);
 		return ptr;
 	}
 

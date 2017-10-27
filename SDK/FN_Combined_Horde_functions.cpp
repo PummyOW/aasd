@@ -19,7 +19,8 @@ namespace SDK
 
 void UCombined_Horde_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Combined_Horde.Combined_Horde_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e560fa5);
 
 	UCombined_Horde_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -37,7 +38,8 @@ void UCombined_Horde_C::PreConstruct(bool* IsDesignTime)
 
 void UCombined_Horde_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Combined_Horde.Combined_Horde_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf979437e);
 
 	UCombined_Horde_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UCombined_Horde_C::Construct()
 
 void UCombined_Horde_C::ExecuteUbergraph_Combined_Horde(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Combined_Horde.Combined_Horde_C.ExecuteUbergraph_Combined_Horde");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c72c4d5);
 
 	UCombined_Horde_C_ExecuteUbergraph_Combined_Horde_Params params;
 	params.EntryPoint = EntryPoint;

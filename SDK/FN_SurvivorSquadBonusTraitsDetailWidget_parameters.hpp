@@ -14,11 +14,6 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C.HandlePostDifferentItemToDetailSet
-struct USurvivorSquadBonusTraitsDetailWidget_C_HandlePostDifferentItemToDetailSet_Params
-{
-};
-
 // Function SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C.HandlePostDifferentSquadSlotSetBP
 struct USurvivorSquadBonusTraitsDetailWidget_C_HandlePostDifferentSquadSlotSetBP_Params
 {
@@ -26,6 +21,11 @@ struct USurvivorSquadBonusTraitsDetailWidget_C_HandlePostDifferentSquadSlotSetBP
 
 // Function SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C.HandleTraitValuesUpdatedBP
 struct USurvivorSquadBonusTraitsDetailWidget_C_HandleTraitValuesUpdatedBP_Params
+{
+};
+
+// Function SurvivorSquadBonusTraitsDetailWidget.SurvivorSquadBonusTraitsDetailWidget_C.HandlePostDifferentItemToDetailSet
+struct USurvivorSquadBonusTraitsDetailWidget_C_HandlePostDifferentItemToDetailSet_Params
 {
 };
 

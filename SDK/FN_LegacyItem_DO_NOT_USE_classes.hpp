@@ -68,7 +68,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd1287795);
 		return ptr;
 	}
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UPowerWidget_C::Check_For_Power_Change()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.Check For Power Change");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e998ac1);
 
 	UPowerWidget_C_Check_For_Power_Change_Params params;
 
@@ -36,7 +37,8 @@ void UPowerWidget_C::Check_For_Power_Change()
 
 class UWidget* UPowerWidget_C::GetPowerRatingTooltipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.GetPowerRatingTooltipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4932e708);
 
 	UPowerWidget_C_GetPowerRatingTooltipWidget_Params params;
 
@@ -57,7 +59,8 @@ class UWidget* UPowerWidget_C::GetPowerRatingTooltipWidget()
 
 bool UPowerWidget_C::PlayerHasTeammates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.PlayerHasTeammates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5502be73);
 
 	UPowerWidget_C_PlayerHasTeammates_Params params;
 
@@ -76,7 +79,8 @@ bool UPowerWidget_C::PlayerHasTeammates()
 
 void UPowerWidget_C::Debug()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.Debug");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d05b47c);
 
 	UPowerWidget_C_Debug_Params params;
 
@@ -95,7 +99,8 @@ void UPowerWidget_C::Debug()
 
 void UPowerWidget_C::SetState(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.SetState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35ae78e0);
 
 	UPowerWidget_C_SetState_Params params;
 
@@ -115,7 +120,8 @@ void UPowerWidget_C::SetState(bool* PassThrough)
 
 void UPowerWidget_C::Update_Rating()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.Update Rating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22362217);
 
 	UPowerWidget_C_Update_Rating_Params params;
 
@@ -134,7 +140,8 @@ void UPowerWidget_C::Update_Rating()
 
 void UPowerWidget_C::Update_Rating_Value(int New_Rating_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.Update Rating Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cb8cf64);
 
 	UPowerWidget_C_Update_Rating_Value_Params params;
 	params.New_Rating_Value = New_Rating_Value;
@@ -152,7 +159,8 @@ void UPowerWidget_C::Update_Rating_Value(int New_Rating_Value)
 
 void UPowerWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae54c512);
 
 	UPowerWidget_C_Construct_Params params;
 
@@ -171,7 +179,8 @@ void UPowerWidget_C::Construct()
 
 void UPowerWidget_C::OnPlayerInfoChanged(struct FFortTeamMemberInfo* NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.OnPlayerInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1a98aad);
 
 	UPowerWidget_C_OnPlayerInfoChanged_Params params;
 	params.NewInfo = NewInfo;
@@ -191,7 +200,8 @@ void UPowerWidget_C::OnPlayerInfoChanged(struct FFortTeamMemberInfo* NewInfo)
 
 void UPowerWidget_C::ExecuteUbergraph_PowerWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.ExecuteUbergraph_PowerWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a3c96f2);
 
 	UPowerWidget_C_ExecuteUbergraph_PowerWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -209,7 +219,8 @@ void UPowerWidget_C::ExecuteUbergraph_PowerWidget(int EntryPoint)
 
 void UPowerWidget_C::Power_Increased__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerWidget.PowerWidget_C.Power Increased__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x942c7c0d);
 
 	UPowerWidget_C_Power_Increased__DelegateSignature_Params params;
 

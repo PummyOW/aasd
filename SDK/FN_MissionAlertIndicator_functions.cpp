@@ -17,7 +17,8 @@ namespace SDK
 
 void UMissionAlertIndicator_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionAlertIndicator.MissionAlertIndicator_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62e35980);
 
 	UMissionAlertIndicator_C_Update_Params params;
 
@@ -36,7 +37,8 @@ void UMissionAlertIndicator_C::Update()
 
 void UMissionAlertIndicator_C::ToggleTimer(bool IsEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionAlertIndicator.MissionAlertIndicator_C.ToggleTimer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f10a13a);
 
 	UMissionAlertIndicator_C_ToggleTimer_Params params;
 	params.IsEnabled = IsEnabled;
@@ -54,7 +56,8 @@ void UMissionAlertIndicator_C::ToggleTimer(bool IsEnabled)
 
 void UMissionAlertIndicator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionAlertIndicator.MissionAlertIndicator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd40a0a5a);
 
 	UMissionAlertIndicator_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UMissionAlertIndicator_C::Construct()
 
 void UMissionAlertIndicator_C::ExecuteUbergraph_MissionAlertIndicator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionAlertIndicator.MissionAlertIndicator_C.ExecuteUbergraph_MissionAlertIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x621fd47e);
 
 	UMissionAlertIndicator_C_ExecuteUbergraph_MissionAlertIndicator_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemDragIcon_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDragIcon.ItemDragIcon_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x278e294e);
 
 	UItemDragIcon_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UItemDragIcon_C::Construct()
 
 void UItemDragIcon_C::ExecuteUbergraph_ItemDragIcon(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDragIcon.ItemDragIcon_C.ExecuteUbergraph_ItemDragIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc051d8b);
 
 	UItemDragIcon_C_ExecuteUbergraph_ItemDragIcon_Params params;
 	params.EntryPoint = EntryPoint;

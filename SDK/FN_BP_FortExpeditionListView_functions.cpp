@@ -17,7 +17,8 @@ namespace SDK
 
 void UBP_FortExpeditionListView_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ddbaaf6);
 
 	UBP_FortExpeditionListView_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UBP_FortExpeditionListView_C::Construct()
 
 void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_10_OnListViewItemClicked__DelegateSignature(class UObject* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_10_OnListViewItemClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2dc416b4);
 
 	UBP_FortExpeditionListView_C_BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_10_OnListViewItemClicked__DelegateSignature_Params params;
 	params.Item = Item;
@@ -56,7 +58,8 @@ void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBo
 
 void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_52_OnListViewItemClicked__DelegateSignature(class UObject* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_52_OnListViewItemClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f8d828e);
 
 	UBP_FortExpeditionListView_C_BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_52_OnListViewItemClicked__DelegateSignature_Params params;
 	params.Item = Item;
@@ -76,7 +79,8 @@ void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBo
 
 void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature(class UObject* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x78ac0121);
 
 	UBP_FortExpeditionListView_C_BndEvt__ExpeditionListView_K2Node_ComponentBoundEvent_6_OnListViewItemClicked__DelegateSignature_Params params;
 	params.Item = Item;
@@ -96,7 +100,8 @@ void UBP_FortExpeditionListView_C::BndEvt__ExpeditionListView_K2Node_ComponentBo
 
 void UBP_FortExpeditionListView_C::ExecuteUbergraph_BP_FortExpeditionListView(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.ExecuteUbergraph_BP_FortExpeditionListView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x691c8191);
 
 	UBP_FortExpeditionListView_C_ExecuteUbergraph_BP_FortExpeditionListView_Params params;
 	params.EntryPoint = EntryPoint;
@@ -116,7 +121,8 @@ void UBP_FortExpeditionListView_C::ExecuteUbergraph_BP_FortExpeditionListView(in
 
 void UBP_FortExpeditionListView_C::OnItemHovered__DelegateSignature(class UObject* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.OnItemHovered__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ee9b545);
 
 	UBP_FortExpeditionListView_C_OnItemHovered__DelegateSignature_Params params;
 	params.Item = Item;
@@ -136,7 +142,8 @@ void UBP_FortExpeditionListView_C::OnItemHovered__DelegateSignature(class UObjec
 
 void UBP_FortExpeditionListView_C::OnItemClicked__DelegateSignature(class UObject* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionListView.BP_FortExpeditionListView_C.OnItemClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19d67a73);
 
 	UBP_FortExpeditionListView_C_OnItemClicked__DelegateSignature_Params params;
 	params.Item = Item;

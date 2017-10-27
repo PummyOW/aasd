@@ -12,12 +12,36 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.IsInInvalidSlot
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
+// Parameters:
+// bool                           InInvalidSlot                  (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UFortHeroSupportPerkWidget_C::IsInInvalidSlot(bool* InInvalidSlot)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x18f7918b);
+
+	UFortHeroSupportPerkWidget_C_IsInInvalidSlot_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (InInvalidSlot != nullptr)
+		*InInvalidSlot = params.InInvalidSlot;
+}
+
+
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateComparisonVisibility
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
 void UFortHeroSupportPerkWidget_C::UpdateComparisonVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateComparisonVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb08eca6f);
 
 	UFortHeroSupportPerkWidget_C_UpdateComparisonVisibility_Params params;
 
@@ -34,7 +58,8 @@ void UFortHeroSupportPerkWidget_C::UpdateComparisonVisibility()
 
 void UFortHeroSupportPerkWidget_C::UpdateEmptyVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateEmptyVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2e1adcf);
 
 	UFortHeroSupportPerkWidget_C_UpdateEmptyVisibility_Params params;
 
@@ -51,7 +76,8 @@ void UFortHeroSupportPerkWidget_C::UpdateEmptyVisibility()
 
 void UFortHeroSupportPerkWidget_C::UpdateActiveDisplay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateActiveDisplay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe60ec62c);
 
 	UFortHeroSupportPerkWidget_C_UpdateActiveDisplay_Params params;
 
@@ -64,11 +90,12 @@ void UFortHeroSupportPerkWidget_C::UpdateActiveDisplay()
 
 
 // Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateLockedVisibility
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
 void UFortHeroSupportPerkWidget_C::UpdateLockedVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateLockedVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29d6a406);
 
 	UFortHeroSupportPerkWidget_C_UpdateLockedVisibility_Params params;
 
@@ -85,7 +112,8 @@ void UFortHeroSupportPerkWidget_C::UpdateLockedVisibility()
 
 void UFortHeroSupportPerkWidget_C::UpdateVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.UpdateVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4f77e38);
 
 	UFortHeroSupportPerkWidget_C_UpdateVisibility_Params params;
 
@@ -105,7 +133,8 @@ void UFortHeroSupportPerkWidget_C::UpdateVisibility()
 
 void UFortHeroSupportPerkWidget_C::Update(bool DisplayedOutsideOfHeroSquad, EFortSupportBonusType TargetedSupportType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x368fad9c);
 
 	UFortHeroSupportPerkWidget_C_Update_Params params;
 	params.DisplayedOutsideOfHeroSquad = DisplayedOutsideOfHeroSquad;
@@ -124,7 +153,8 @@ void UFortHeroSupportPerkWidget_C::Update(bool DisplayedOutsideOfHeroSquad, EFor
 
 void UFortHeroSupportPerkWidget_C::OnHeroUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.OnHeroUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32488b7d);
 
 	UFortHeroSupportPerkWidget_C_OnHeroUpdated_Params params;
 
@@ -141,7 +171,8 @@ void UFortHeroSupportPerkWidget_C::OnHeroUpdated()
 
 void UFortHeroSupportPerkWidget_C::OnSupportTypeUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.OnSupportTypeUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb542f0a);
 
 	UFortHeroSupportPerkWidget_C_OnSupportTypeUpdated_Params params;
 
@@ -158,7 +189,8 @@ void UFortHeroSupportPerkWidget_C::OnSupportTypeUpdated()
 
 void UFortHeroSupportPerkWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x53477f76);
 
 	UFortHeroSupportPerkWidget_C_Construct_Params params;
 
@@ -175,7 +207,8 @@ void UFortHeroSupportPerkWidget_C::Construct()
 
 void UFortHeroSupportPerkWidget_C::OnStateChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.OnStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7dcd661);
 
 	UFortHeroSupportPerkWidget_C_OnStateChanged_Params params;
 
@@ -194,7 +227,8 @@ void UFortHeroSupportPerkWidget_C::OnStateChanged()
 
 void UFortHeroSupportPerkWidget_C::ExecuteUbergraph_FortHeroSupportPerkWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget.FortHeroSupportPerkWidget_C.ExecuteUbergraph_FortHeroSupportPerkWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8e3b301);
 
 	UFortHeroSupportPerkWidget_C_ExecuteUbergraph_FortHeroSupportPerkWidget_Params params;
 	params.EntryPoint = EntryPoint;

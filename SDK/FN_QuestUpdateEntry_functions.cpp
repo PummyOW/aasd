@@ -19,7 +19,8 @@ namespace SDK
 
 void UQuestUpdateEntry_C::GetNumDisplayedObjectives(int* NumObjectives)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.GetNumDisplayedObjectives");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4269561a);
 
 	UQuestUpdateEntry_C_GetNumDisplayedObjectives_Params params;
 
@@ -42,7 +43,8 @@ void UQuestUpdateEntry_C::GetNumDisplayedObjectives(int* NumObjectives)
 
 void UQuestUpdateEntry_C::CreateObjectiveEntryWidget(class UFortQuestObjectiveInfo* Objective, int LastAchievedCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.CreateObjectiveEntryWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9e3f97a);
 
 	UQuestUpdateEntry_C_CreateObjectiveEntryWidget_Params params;
 	params.Objective = Objective;
@@ -61,7 +63,8 @@ void UQuestUpdateEntry_C::CreateObjectiveEntryWidget(class UFortQuestObjectiveIn
 
 void UQuestUpdateEntry_C::OnDisappearAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.OnDisappearAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f56e557);
 
 	UQuestUpdateEntry_C_OnDisappearAnimationFinished_Params params;
 
@@ -78,7 +81,8 @@ void UQuestUpdateEntry_C::OnDisappearAnimationFinished()
 
 void UQuestUpdateEntry_C::OnPostUpdatesDelayFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.OnPostUpdatesDelayFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae72e0d9);
 
 	UQuestUpdateEntry_C_OnPostUpdatesDelayFinished_Params params;
 
@@ -97,7 +101,8 @@ void UQuestUpdateEntry_C::OnPostUpdatesDelayFinished()
 
 void UQuestUpdateEntry_C::HaveAllUpdatesFinished(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.HaveAllUpdatesFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a3e6378);
 
 	UQuestUpdateEntry_C_HaveAllUpdatesFinished_Params params;
 
@@ -120,7 +125,8 @@ void UQuestUpdateEntry_C::HaveAllUpdatesFinished(bool* Result)
 
 void UQuestUpdateEntry_C::IsUpdateActive(struct FDynamicQuestUpdateInfo* Update, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.IsUpdateActive");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a2054d4);
 
 	UQuestUpdateEntry_C_IsUpdateActive_Params params;
 
@@ -145,7 +151,8 @@ void UQuestUpdateEntry_C::IsUpdateActive(struct FDynamicQuestUpdateInfo* Update,
 
 void UQuestUpdateEntry_C::GetObjectiveWidget(class UFortQuestObjectiveInfo* QuestObjective, class UQuestObjectiveEntry_C** ObjectiveWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.GetObjectiveWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88f191b8);
 
 	UQuestUpdateEntry_C_GetObjectiveWidget_Params params;
 	params.QuestObjective = QuestObjective;
@@ -169,7 +176,8 @@ void UQuestUpdateEntry_C::GetObjectiveWidget(class UFortQuestObjectiveInfo* Ques
 
 void UQuestUpdateEntry_C::HasUpdateStarted(struct FDynamicQuestUpdateInfo* Update, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.HasUpdateStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc573d9eb);
 
 	UQuestUpdateEntry_C_HasUpdateStarted_Params params;
 
@@ -191,7 +199,8 @@ void UQuestUpdateEntry_C::HasUpdateStarted(struct FDynamicQuestUpdateInfo* Updat
 
 void UQuestUpdateEntry_C::OnUpdateFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.OnUpdateFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2429001f);
 
 	UQuestUpdateEntry_C_OnUpdateFinished_Params params;
 
@@ -211,7 +220,8 @@ void UQuestUpdateEntry_C::OnUpdateFinished()
 
 void UQuestUpdateEntry_C::HasUpdateFinished(struct FDynamicQuestUpdateInfo* Update, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.HasUpdateFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x691872b6);
 
 	UQuestUpdateEntry_C_HasUpdateFinished_Params params;
 
@@ -236,7 +246,8 @@ void UQuestUpdateEntry_C::HasUpdateFinished(struct FDynamicQuestUpdateInfo* Upda
 
 void UQuestUpdateEntry_C::CanStartUpdate(int UpdateIndex, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.CanStartUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c2cecb8);
 
 	UQuestUpdateEntry_C_CanStartUpdate_Params params;
 	params.UpdateIndex = UpdateIndex;
@@ -257,7 +268,8 @@ void UQuestUpdateEntry_C::CanStartUpdate(int UpdateIndex, bool* Result)
 
 void UQuestUpdateEntry_C::TryStartUpdates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.TryStartUpdates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdcd75386);
 
 	UQuestUpdateEntry_C_TryStartUpdates_Params params;
 
@@ -274,7 +286,8 @@ void UQuestUpdateEntry_C::TryStartUpdates()
 
 void UQuestUpdateEntry_C::OnAppearAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.OnAppearAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20811cf3);
 
 	UQuestUpdateEntry_C_OnAppearAnimationFinished_Params params;
 
@@ -294,7 +307,8 @@ void UQuestUpdateEntry_C::OnAppearAnimationFinished()
 
 void UQuestUpdateEntry_C::CanAddUpdate(const struct FDynamicQuestUpdateInfo& UpdateToAdd, bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.CanAddUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41d3a7a5);
 
 	UQuestUpdateEntry_C_CanAddUpdate_Params params;
 	params.UpdateToAdd = UpdateToAdd;
@@ -318,7 +332,8 @@ void UQuestUpdateEntry_C::CanAddUpdate(const struct FDynamicQuestUpdateInfo& Upd
 
 void UQuestUpdateEntry_C::OnReceiveQuestUpdate(const struct FDynamicQuestUpdateInfo& QuestUpdateInfo, bool* Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.OnReceiveQuestUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa58b552);
 
 	UQuestUpdateEntry_C_OnReceiveQuestUpdate_Params params;
 	params.QuestUpdateInfo = QuestUpdateInfo;
@@ -342,7 +357,8 @@ void UQuestUpdateEntry_C::OnReceiveQuestUpdate(const struct FDynamicQuestUpdateI
 
 void UQuestUpdateEntry_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf45e2f2);
 
 	UQuestUpdateEntry_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -361,7 +377,8 @@ void UQuestUpdateEntry_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 
 void UQuestUpdateEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4de034c0);
 
 	UQuestUpdateEntry_C_Construct_Params params;
 
@@ -380,7 +397,8 @@ void UQuestUpdateEntry_C::Construct()
 
 void UQuestUpdateEntry_C::ExecuteUbergraph_QuestUpdateEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.ExecuteUbergraph_QuestUpdateEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80392e96);
 
 	UQuestUpdateEntry_C_ExecuteUbergraph_QuestUpdateEntry_Params params;
 	params.EntryPoint = EntryPoint;
@@ -400,7 +418,8 @@ void UQuestUpdateEntry_C::ExecuteUbergraph_QuestUpdateEntry(int EntryPoint)
 
 void UQuestUpdateEntry_C::AllQuestUpdatesFinished__DelegateSignature(class UQuestUpdateEntry_C* UpdateWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestUpdateEntry.QuestUpdateEntry_C.AllQuestUpdatesFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7f2bb7);
 
 	UQuestUpdateEntry_C_AllQuestUpdatesFinished__DelegateSignature_Params params;
 	params.UpdateWidget = UpdateWidget;

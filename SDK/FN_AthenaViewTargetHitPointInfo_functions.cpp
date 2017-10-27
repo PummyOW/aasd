@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaViewTargetHitPointInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointInfo.AthenaViewTargetHitPointInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54140cd2);
 
 	UAthenaViewTargetHitPointInfo_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UAthenaViewTargetHitPointInfo_C::Construct()
 
 void UAthenaViewTargetHitPointInfo_C::ExecuteUbergraph_AthenaViewTargetHitPointInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointInfo.AthenaViewTargetHitPointInfo_C.ExecuteUbergraph_AthenaViewTargetHitPointInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x688b7069);
 
 	UAthenaViewTargetHitPointInfo_C_ExecuteUbergraph_AthenaViewTargetHitPointInfo_Params params;
 	params.EntryPoint = EntryPoint;

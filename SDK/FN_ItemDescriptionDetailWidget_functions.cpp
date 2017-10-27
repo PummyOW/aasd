@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemDescriptionDetailWidget_C::IsItemSimple(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.IsItemSimple");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8c3870c);
 
 	UItemDescriptionDetailWidget_C_IsItemSimple_Params params;
 
@@ -39,7 +40,8 @@ void UItemDescriptionDetailWidget_C::IsItemSimple(bool* Result)
 
 void UItemDescriptionDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b498575);
 
 	UItemDescriptionDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -58,7 +60,8 @@ void UItemDescriptionDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDescriptionDetailWidget_C::ExecuteUbergraph_ItemDescriptionDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.ExecuteUbergraph_ItemDescriptionDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaedc2b0b);
 
 	UItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

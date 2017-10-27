@@ -20,7 +20,8 @@ namespace SDK
 
 void UGamepadMappingInfo_C::HandleConfigChanged(int Mode, int Config)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GamepadMappingInfo.GamepadMappingInfo_C.HandleConfigChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f803533);
 
 	UGamepadMappingInfo_C_HandleConfigChanged_Params params;
 	params.Mode = Mode;
@@ -42,7 +43,8 @@ void UGamepadMappingInfo_C::HandleConfigChanged(int Mode, int Config)
 
 void UGamepadMappingInfo_C::HandleConfigChanged_Athena(int Mode, int Config)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GamepadMappingInfo.GamepadMappingInfo_C.HandleConfigChanged_Athena");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c032023);
 
 	UGamepadMappingInfo_C_HandleConfigChanged_Athena_Params params;
 	params.Mode = Mode;
@@ -64,7 +66,8 @@ void UGamepadMappingInfo_C::HandleConfigChanged_Athena(int Mode, int Config)
 
 void UGamepadMappingInfo_C::OnConfigChanged(int Mode, int Config)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GamepadMappingInfo.GamepadMappingInfo_C.OnConfigChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a0a4db8);
 
 	UGamepadMappingInfo_C_OnConfigChanged_Params params;
 	params.Mode = Mode;
@@ -87,7 +90,8 @@ void UGamepadMappingInfo_C::OnConfigChanged(int Mode, int Config)
 
 void UGamepadMappingInfo_C::Update_Displayed_Mapping(int platform, int Mode, int Configuration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GamepadMappingInfo.GamepadMappingInfo_C.Update Displayed Mapping");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x826006bd);
 
 	UGamepadMappingInfo_C_Update_Displayed_Mapping_Params params;
 	params.platform = platform;

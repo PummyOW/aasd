@@ -274,7 +274,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("AnimBlueprintGeneratedClass DefenderAnimBlueprint.DefenderAnimBlueprint_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe91c5a04);
 		return ptr;
 	}
 

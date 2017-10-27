@@ -28,14 +28,15 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe0986da7);
 		return ptr;
 	}
 
 
 	void UserConstructionScript();
-	void OnDeactivated();
 	void OnActivated();
+	void OnDeactivated();
 	void ExecuteUbergraph_FortnitePartyBackdrop_Camera(int EntryPoint);
 };
 

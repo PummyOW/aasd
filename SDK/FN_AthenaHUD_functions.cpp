@@ -12,6 +12,24 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaHUD.AthenaHUD_C.SetupCameraMode
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaHUD_C::SetupCameraMode()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24f3642);
+
+	UAthenaHUD_C_SetupCameraMode_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaHUD.AthenaHUD_C.AddTeamMemberIndicator
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -20,7 +38,8 @@ namespace SDK
 
 void UAthenaHUD_C::AddTeamMemberIndicator(class AFortPlayerStateAthena* Player_State, int Team_Member_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.AddTeamMemberIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4491d7cc);
 
 	UAthenaHUD_C_AddTeamMemberIndicator_Params params;
 	params.Player_State = Player_State;
@@ -39,7 +58,8 @@ void UAthenaHUD_C::AddTeamMemberIndicator(class AFortPlayerStateAthena* Player_S
 
 void UAthenaHUD_C::HandleAircraftModeChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleAircraftModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0c56c8a);
 
 	UAthenaHUD_C_HandleAircraftModeChanged_Params params;
 
@@ -60,7 +80,8 @@ void UAthenaHUD_C::HandleAircraftModeChanged()
 
 void UAthenaHUD_C::CheckHUDElementVisibility(const struct FGameplayTag& HUDElementTagToCheck, struct FGameplayTagContainer* HiddenHUDElementTags, class UWidget** HUDElement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.CheckHUDElementVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b7857dc);
 
 	UAthenaHUD_C_CheckHUDElementVisibility_Params params;
 	params.HUDElementTagToCheck = HUDElementTagToCheck;
@@ -85,7 +106,8 @@ void UAthenaHUD_C::CheckHUDElementVisibility(const struct FGameplayTag& HUDEleme
 
 void UAthenaHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer* HiddenHUDElementTags)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnHUDElementVisibilityChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x39190b5b);
 
 	UAthenaHUD_C_OnHUDElementVisibilityChanged_Params params;
 
@@ -108,7 +130,8 @@ void UAthenaHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer* H
 
 class UWidget* UAthenaHUD_C::PopContentWidgetInternal(struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.PopContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6fff9b54);
 
 	UAthenaHUD_C_PopContentWidgetInternal_Params params;
 	params.State = State;
@@ -128,7 +151,8 @@ class UWidget* UAthenaHUD_C::PopContentWidgetInternal(struct FContentPushState* 
 
 void UAthenaHUD_C::CreateInterestIndicatorWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.CreateInterestIndicatorWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e7a6d40);
 
 	UAthenaHUD_C_CreateInterestIndicatorWidget_Params params;
 
@@ -147,7 +171,8 @@ void UAthenaHUD_C::CreateInterestIndicatorWidget()
 
 void UAthenaHUD_C::HandleOnPointOfInterestRemoved(class AActor* PointOfInterest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleOnPointOfInterestRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6973be13);
 
 	UAthenaHUD_C_HandleOnPointOfInterestRemoved_Params params;
 	params.PointOfInterest = PointOfInterest;
@@ -169,7 +194,8 @@ void UAthenaHUD_C::HandleOnPointOfInterestRemoved(class AActor* PointOfInterest)
 
 void UAthenaHUD_C::HandleOnPointOfInterestAdded(class AActor* PointOfInterest, const struct FText& DisplayText, class UTexture2D* DisplayImage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleOnPointOfInterestAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ea18d15);
 
 	UAthenaHUD_C_HandleOnPointOfInterestAdded_Params params;
 	params.PointOfInterest = PointOfInterest;
@@ -193,7 +219,8 @@ void UAthenaHUD_C::HandleOnPointOfInterestAdded(class AActor* PointOfInterest, c
 
 void UAthenaHUD_C::ShowPicker(EFortPickerMode Mode, int InitialOption, bool IgnoreFirstAccept)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.ShowPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1969226);
 
 	UAthenaHUD_C_ShowPicker_Params params;
 	params.Mode = Mode;
@@ -213,7 +240,8 @@ void UAthenaHUD_C::ShowPicker(EFortPickerMode Mode, int InitialOption, bool Igno
 
 void UAthenaHUD_C::HandleFocusChat()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleFocusChat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c44c8f5);
 
 	UAthenaHUD_C_HandleFocusChat_Params params;
 
@@ -232,7 +260,8 @@ void UAthenaHUD_C::HandleFocusChat()
 
 void UAthenaHUD_C::ToggleTopLevelMenu(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.ToggleTopLevelMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13a72e73);
 
 	UAthenaHUD_C_ToggleTopLevelMenu_Params params;
 	params.Show = Show;
@@ -252,7 +281,8 @@ void UAthenaHUD_C::ToggleTopLevelMenu(bool Show)
 
 void UAthenaHUD_C::ToggleChat(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.ToggleChat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86329a95);
 
 	UAthenaHUD_C_ToggleChat_Params params;
 	params.Show = Show;
@@ -272,7 +302,8 @@ void UAthenaHUD_C::ToggleChat(bool Show)
 
 void UAthenaHUD_C::SetPersistentHUDContentVisibility(bool Visible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.SetPersistentHUDContentVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab0443ec);
 
 	UAthenaHUD_C_SetPersistentHUDContentVisibility_Params params;
 	params.Visible = Visible;
@@ -292,7 +323,8 @@ void UAthenaHUD_C::SetPersistentHUDContentVisibility(bool Visible)
 
 void UAthenaHUD_C::HandleIndicatorModeChanged(bool InidicatorsEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleIndicatorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa67987f);
 
 	UAthenaHUD_C_HandleIndicatorModeChanged_Params params;
 	params.InidicatorsEnabled = InidicatorsEnabled;
@@ -313,7 +345,8 @@ void UAthenaHUD_C::HandleIndicatorModeChanged(bool InidicatorsEnabled)
 
 void UAthenaHUD_C::SetCursorModeContent(class UUserWidget* CustomWidget, struct FName* ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.SetCursorModeContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97bd6f39);
 
 	UAthenaHUD_C_SetCursorModeContent_Params params;
 	params.CustomWidget = CustomWidget;
@@ -336,7 +369,8 @@ void UAthenaHUD_C::SetCursorModeContent(class UUserWidget* CustomWidget, struct 
 
 void UAthenaHUD_C::OnPlayerTargetingChanged(bool IsTargeting)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnPlayerTargetingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc882a768);
 
 	UAthenaHUD_C_OnPlayerTargetingChanged_Params params;
 	params.IsTargeting = IsTargeting;
@@ -354,7 +388,8 @@ void UAthenaHUD_C::OnPlayerTargetingChanged(bool IsTargeting)
 
 void UAthenaHUD_C::HandleKeybindsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleKeybindsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x426bf66a);
 
 	UAthenaHUD_C_HandleKeybindsChanged_Params params;
 
@@ -374,7 +409,8 @@ void UAthenaHUD_C::HandleKeybindsChanged()
 
 void UAthenaHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnHandleAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e593f08);
 
 	UAthenaHUD_C_OnHandleAction_Params params;
 
@@ -396,7 +432,8 @@ void UAthenaHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough
 
 void UAthenaHUD_C::SetQuickbarSizes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.SetQuickbarSizes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87e80a89);
 
 	UAthenaHUD_C_SetQuickbarSizes_Params params;
 
@@ -416,7 +453,8 @@ void UAthenaHUD_C::SetQuickbarSizes()
 
 void UAthenaHUD_C::HandleQuickbarSlotFocusSlotChanged(EFortQuickBars Quickbar_Index, int Slot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleQuickbarSlotFocusSlotChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6cba5c89);
 
 	UAthenaHUD_C_HandleQuickbarSlotFocusSlotChanged_Params params;
 	params.Quickbar_Index = Quickbar_Index;
@@ -439,7 +477,8 @@ void UAthenaHUD_C::HandleQuickbarSlotFocusSlotChanged(EFortQuickBars Quickbar_In
 
 void UAthenaHUD_C::HandleCursorModeChanged(bool IsEnabled, const struct FName& ActionName, class UUserWidget* CursorModeContentCustomWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleCursorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97a73b02);
 
 	UAthenaHUD_C_HandleCursorModeChanged_Params params;
 	params.IsEnabled = IsEnabled;
@@ -459,7 +498,8 @@ void UAthenaHUD_C::HandleCursorModeChanged(bool IsEnabled, const struct FName& A
 
 void UAthenaHUD_C::OnDeclined_13B571B74B3BBCF095CCFA8AED69EBED()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnDeclined_13B571B74B3BBCF095CCFA8AED69EBED");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97af58cd);
 
 	UAthenaHUD_C_OnDeclined_13B571B74B3BBCF095CCFA8AED69EBED_Params params;
 
@@ -476,7 +516,8 @@ void UAthenaHUD_C::OnDeclined_13B571B74B3BBCF095CCFA8AED69EBED()
 
 void UAthenaHUD_C::OnConfirmed_13B571B74B3BBCF095CCFA8AED69EBED()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnConfirmed_13B571B74B3BBCF095CCFA8AED69EBED");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe9a6a3a);
 
 	UAthenaHUD_C_OnConfirmed_13B571B74B3BBCF095CCFA8AED69EBED_Params params;
 
@@ -493,7 +534,8 @@ void UAthenaHUD_C::OnConfirmed_13B571B74B3BBCF095CCFA8AED69EBED()
 
 void UAthenaHUD_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7fc490a2);
 
 	UAthenaHUD_C_Construct_Params params;
 
@@ -512,7 +554,8 @@ void UAthenaHUD_C::Construct()
 
 void UAthenaHUD_C::OnEnterState(EFortUIState* PreviousUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnEnterState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94dfdc75);
 
 	UAthenaHUD_C_OnEnterState_Params params;
 	params.PreviousUIState = PreviousUIState;
@@ -532,7 +575,8 @@ void UAthenaHUD_C::OnEnterState(EFortUIState* PreviousUIState)
 
 void UAthenaHUD_C::QuestsCompleted(TArray<class UFortQuestItem*> Quests)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.QuestsCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a56a571);
 
 	UAthenaHUD_C_QuestsCompleted_Params params;
 	params.Quests = Quests;
@@ -553,7 +597,8 @@ void UAthenaHUD_C::QuestsCompleted(TArray<class UFortQuestItem*> Quests)
 
 void UAthenaHUD_C::PushContentWidgetInternal(class UWidget** Widget, struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.PushContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2c9980d);
 
 	UAthenaHUD_C_PushContentWidgetInternal_Params params;
 	params.Widget = Widget;
@@ -572,7 +617,8 @@ void UAthenaHUD_C::PushContentWidgetInternal(class UWidget** Widget, struct FCon
 
 void UAthenaHUD_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x380de4f9);
 
 	UAthenaHUD_C_Destruct_Params params;
 
@@ -591,7 +637,8 @@ void UAthenaHUD_C::Destruct()
 
 void UAthenaHUD_C::HandleInputMethodChanged(bool UsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleInputMethodChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71934eec);
 
 	UAthenaHUD_C_HandleInputMethodChanged_Params params;
 	params.UsingGamepad = UsingGamepad;
@@ -609,7 +656,8 @@ void UAthenaHUD_C::HandleInputMethodChanged(bool UsingGamepad)
 
 void UAthenaHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_8_StreamTimerExpired__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_8_StreamTimerExpired__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73d0ba61);
 
 	UAthenaHUD_C_BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_8_StreamTimerExpired__DelegateSignature_Params params;
 
@@ -626,7 +674,8 @@ void UAthenaHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentB
 
 void UAthenaHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_13_StreamTimerStarted__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_13_StreamTimerStarted__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb756343);
 
 	UAthenaHUD_C_BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_13_StreamTimerStarted__DelegateSignature_Params params;
 
@@ -643,7 +692,8 @@ void UAthenaHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentB
 
 void UAthenaHUD_C::Prepare_Game_Over()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.Prepare Game Over");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83e93c2c);
 
 	UAthenaHUD_C_Prepare_Game_Over_Params params;
 
@@ -662,7 +712,8 @@ void UAthenaHUD_C::Prepare_Game_Over()
 
 void UAthenaHUD_C::On_Player_Died(const struct FFortPlayerDeathReport& DeathReport)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.On Player Died");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfdb8d14f);
 
 	UAthenaHUD_C_On_Player_Died_Params params;
 	params.DeathReport = DeathReport;
@@ -680,7 +731,8 @@ void UAthenaHUD_C::On_Player_Died(const struct FFortPlayerDeathReport& DeathRepo
 
 void UAthenaHUD_C::PrepareToShowEndGameUI()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.PrepareToShowEndGameUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8703e58f);
 
 	UAthenaHUD_C_PrepareToShowEndGameUI_Params params;
 
@@ -697,7 +749,8 @@ void UAthenaHUD_C::PrepareToShowEndGameUI()
 
 void UAthenaHUD_C::On_Player_Won()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.On Player Won");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbdc4ffff);
 
 	UAthenaHUD_C_On_Player_Won_Params params;
 
@@ -714,7 +767,8 @@ void UAthenaHUD_C::On_Player_Won()
 
 void UAthenaHUD_C::OnRevived()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnRevived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdcaf2439);
 
 	UAthenaHUD_C_OnRevived_Params params;
 
@@ -731,7 +785,8 @@ void UAthenaHUD_C::OnRevived()
 
 void UAthenaHUD_C::HandleRevived()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.HandleRevived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56945fca);
 
 	UAthenaHUD_C_HandleRevived_Params params;
 
@@ -751,7 +806,8 @@ void UAthenaHUD_C::HandleRevived()
 
 void UAthenaHUD_C::OnUnableToPerformAction(const struct FGameplayTagContainer& FailedReason, const struct FText& FailureText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.OnUnableToPerformAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3590f2f);
 
 	UAthenaHUD_C_OnUnableToPerformAction_Params params;
 	params.FailedReason = FailedReason;
@@ -770,7 +826,8 @@ void UAthenaHUD_C::OnUnableToPerformAction(const struct FGameplayTagContainer& F
 
 void UAthenaHUD_C::On_Team_Won()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.On Team Won");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa271da2b);
 
 	UAthenaHUD_C_On_Team_Won_Params params;
 
@@ -787,9 +844,28 @@ void UAthenaHUD_C::On_Team_Won()
 
 void UAthenaHUD_C::TeamMembersChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.TeamMembersChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9846fe33);
 
 	UAthenaHUD_C_TeamMembersChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaHUD.AthenaHUD_C.ShowGameOverLayer
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaHUD_C::ShowGameOverLayer()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5b9837f);
+
+	UAthenaHUD_C_ShowGameOverLayer_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -806,7 +882,8 @@ void UAthenaHUD_C::TeamMembersChanged()
 
 void UAthenaHUD_C::ExecuteUbergraph_AthenaHUD(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHUD.AthenaHUD_C.ExecuteUbergraph_AthenaHUD");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe626395d);
 
 	UAthenaHUD_C_ExecuteUbergraph_AthenaHUD_Params params;
 	params.EntryPoint = EntryPoint;

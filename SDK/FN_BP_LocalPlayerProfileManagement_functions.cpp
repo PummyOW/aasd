@@ -17,7 +17,8 @@ namespace SDK
 
 void UBP_LocalPlayerProfileManagement_C::Update_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.Update Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d5afa0d);
 
 	UBP_LocalPlayerProfileManagement_C_Update_Bang_State_Params params;
 
@@ -34,7 +35,8 @@ void UBP_LocalPlayerProfileManagement_C::Update_Bang_State()
 
 void UBP_LocalPlayerProfileManagement_C::UpdateBannerEditorButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.UpdateBannerEditorButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x540b8749);
 
 	UBP_LocalPlayerProfileManagement_C_UpdateBannerEditorButton_Params params;
 
@@ -53,7 +55,8 @@ void UBP_LocalPlayerProfileManagement_C::UpdateBannerEditorButton()
 
 ESlateVisibility UBP_LocalPlayerProfileManagement_C::Get_LeavePartyButton_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.Get_LeavePartyButton_Visibility_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48ba884a);
 
 	UBP_LocalPlayerProfileManagement_C_Get_LeavePartyButton_Visibility_1_Params params;
 
@@ -74,7 +77,8 @@ ESlateVisibility UBP_LocalPlayerProfileManagement_C::Get_LeavePartyButton_Visibi
 
 ESlateVisibility UBP_LocalPlayerProfileManagement_C::Get_ViewProfileButton_Visibility_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.Get_ViewProfileButton_Visibility_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2dd806dd);
 
 	UBP_LocalPlayerProfileManagement_C_Get_ViewProfileButton_Visibility_1_Params params;
 
@@ -96,7 +100,8 @@ ESlateVisibility UBP_LocalPlayerProfileManagement_C::Get_ViewProfileButton_Visib
 
 void UBP_LocalPlayerProfileManagement_C::UpdateBannerIconAndColor(const struct FName& InBannerIconId, const struct FName& InBannerColorId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.UpdateBannerIconAndColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9e4ba35);
 
 	UBP_LocalPlayerProfileManagement_C_UpdateBannerIconAndColor_Params params;
 	params.InBannerIconId = InBannerIconId;
@@ -115,7 +120,8 @@ void UBP_LocalPlayerProfileManagement_C::UpdateBannerIconAndColor(const struct F
 
 void UBP_LocalPlayerProfileManagement_C::OnWidgetDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.OnWidgetDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x900c5256);
 
 	UBP_LocalPlayerProfileManagement_C_OnWidgetDeactivated_Params params;
 
@@ -132,7 +138,8 @@ void UBP_LocalPlayerProfileManagement_C::OnWidgetDeactivated()
 
 void UBP_LocalPlayerProfileManagement_C::OnWidgetActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.OnWidgetActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1bcf2d01);
 
 	UBP_LocalPlayerProfileManagement_C_OnWidgetActivated_Params params;
 
@@ -149,7 +156,8 @@ void UBP_LocalPlayerProfileManagement_C::OnWidgetActivated()
 
 void UBP_LocalPlayerProfileManagement_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe54bdc16);
 
 	UBP_LocalPlayerProfileManagement_C_Construct_Params params;
 
@@ -168,7 +176,8 @@ void UBP_LocalPlayerProfileManagement_C::Construct()
 
 void UBP_LocalPlayerProfileManagement_C::BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x715a1e00);
 
 	UBP_LocalPlayerProfileManagement_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -188,7 +197,8 @@ void UBP_LocalPlayerProfileManagement_C::BndEvt__IconTextButton_0_K2Node_Compone
 
 void UBP_LocalPlayerProfileManagement_C::BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b29f410);
 
 	UBP_LocalPlayerProfileManagement_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -208,7 +218,8 @@ void UBP_LocalPlayerProfileManagement_C::BndEvt__CloseProfileButton_K2Node_Compo
 
 void UBP_LocalPlayerProfileManagement_C::BndEvt__LeavePartyButton_K2Node_ComponentBoundEvent_100_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.BndEvt__LeavePartyButton_K2Node_ComponentBoundEvent_100_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae1c004f);
 
 	UBP_LocalPlayerProfileManagement_C_BndEvt__LeavePartyButton_K2Node_ComponentBoundEvent_100_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -228,7 +239,8 @@ void UBP_LocalPlayerProfileManagement_C::BndEvt__LeavePartyButton_K2Node_Compone
 
 void UBP_LocalPlayerProfileManagement_C::BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_126_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_126_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3af55876);
 
 	UBP_LocalPlayerProfileManagement_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_126_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -248,7 +260,8 @@ void UBP_LocalPlayerProfileManagement_C::BndEvt__ViewProfileButton_K2Node_Compon
 
 void UBP_LocalPlayerProfileManagement_C::ExecuteUbergraph_BP_LocalPlayerProfileManagement(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.ExecuteUbergraph_BP_LocalPlayerProfileManagement");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83de1ce4);
 
 	UBP_LocalPlayerProfileManagement_C_ExecuteUbergraph_BP_LocalPlayerProfileManagement_Params params;
 	params.EntryPoint = EntryPoint;
@@ -266,7 +279,8 @@ void UBP_LocalPlayerProfileManagement_C::ExecuteUbergraph_BP_LocalPlayerProfileM
 
 void UBP_LocalPlayerProfileManagement_C::CloseProfileModal__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.CloseProfileModal__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33adde2);
 
 	UBP_LocalPlayerProfileManagement_C_CloseProfileModal__DelegateSignature_Params params;
 
@@ -283,7 +297,8 @@ void UBP_LocalPlayerProfileManagement_C::CloseProfileModal__DelegateSignature()
 
 void UBP_LocalPlayerProfileManagement_C::OpenBannerEditor__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LocalPlayerProfileManagement.BP_LocalPlayerProfileManagement_C.OpenBannerEditor__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16501195);
 
 	UBP_LocalPlayerProfileManagement_C_OpenBannerEditor__DelegateSignature_Params params;
 

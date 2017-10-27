@@ -17,7 +17,8 @@ namespace SDK
 
 void ATODM_Disabled_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TODM_Disabled.TODM_Disabled_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd16b15b0);
 
 	ATODM_Disabled_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void ATODM_Disabled_C::UserConstructionScript()
 
 void ATODM_Disabled_C::DisableLightAndFog(bool* Enable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TODM_Disabled.TODM_Disabled_C.DisableLightAndFog");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6e05f0a);
 
 	ATODM_Disabled_C_DisableLightAndFog_Params params;
 	params.Enable = Enable;
@@ -54,7 +56,8 @@ void ATODM_Disabled_C::DisableLightAndFog(bool* Enable)
 
 void ATODM_Disabled_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TODM_Disabled.TODM_Disabled_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e982557);
 
 	ATODM_Disabled_C_ReceiveBeginPlay_Params params;
 
@@ -73,7 +76,8 @@ void ATODM_Disabled_C::ReceiveBeginPlay()
 
 void ATODM_Disabled_C::ExecuteUbergraph_TODM_Disabled(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TODM_Disabled.TODM_Disabled_C.ExecuteUbergraph_TODM_Disabled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe45a2f78);
 
 	ATODM_Disabled_C_ExecuteUbergraph_TODM_Disabled_Params params;
 	params.EntryPoint = EntryPoint;

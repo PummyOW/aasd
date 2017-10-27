@@ -17,7 +17,8 @@ namespace SDK
 
 void AStoreWeaponMaster_BP_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe48cb7f4);
 
 	AStoreWeaponMaster_BP_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void AStoreWeaponMaster_BP_C::UserConstructionScript()
 
 void AStoreWeaponMaster_BP_C::OnLoaded_F90E39F1410BE83EB4E318A6426EF786(class UObject* Loaded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.OnLoaded_F90E39F1410BE83EB4E318A6426EF786");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x983c9f35);
 
 	AStoreWeaponMaster_BP_C_OnLoaded_F90E39F1410BE83EB4E318A6426EF786_Params params;
 	params.Loaded = Loaded;
@@ -54,7 +56,8 @@ void AStoreWeaponMaster_BP_C::OnLoaded_F90E39F1410BE83EB4E318A6426EF786(class UO
 
 void AStoreWeaponMaster_BP_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcaba9c2b);
 
 	AStoreWeaponMaster_BP_C_ReceiveBeginPlay_Params params;
 
@@ -73,7 +76,8 @@ void AStoreWeaponMaster_BP_C::ReceiveBeginPlay()
 
 void AStoreWeaponMaster_BP_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44ea12c1);
 
 	AStoreWeaponMaster_BP_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -93,7 +97,8 @@ void AStoreWeaponMaster_BP_C::ReceiveTick(float* DeltaSeconds)
 
 void AStoreWeaponMaster_BP_C::ExecuteUbergraph_StoreWeaponMaster_BP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreWeaponMaster_BP.StoreWeaponMaster_BP_C.ExecuteUbergraph_StoreWeaponMaster_BP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71564c25);
 
 	AStoreWeaponMaster_BP_C_ExecuteUbergraph_StoreWeaponMaster_BP_Params params;
 	params.EntryPoint = EntryPoint;

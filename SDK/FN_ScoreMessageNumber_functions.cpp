@@ -19,7 +19,8 @@ namespace SDK
 
 void UScoreMessageNumber_C::SetScore(int InScore)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreMessageNumber.ScoreMessageNumber_C.SetScore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x168b74cd);
 
 	UScoreMessageNumber_C_SetScore_Params params;
 	params.InScore = InScore;
@@ -37,7 +38,8 @@ void UScoreMessageNumber_C::SetScore(int InScore)
 
 void UScoreMessageNumber_C::UpdateScoreText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreMessageNumber.ScoreMessageNumber_C.UpdateScoreText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9996f947);
 
 	UScoreMessageNumber_C_UpdateScoreText_Params params;
 
@@ -54,7 +56,8 @@ void UScoreMessageNumber_C::UpdateScoreText()
 
 void UScoreMessageNumber_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreMessageNumber.ScoreMessageNumber_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16748016);
 
 	UScoreMessageNumber_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UScoreMessageNumber_C::Construct()
 
 void UScoreMessageNumber_C::ExecuteUbergraph_ScoreMessageNumber(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreMessageNumber.ScoreMessageNumber_C.ExecuteUbergraph_ScoreMessageNumber");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3515df7f);
 
 	UScoreMessageNumber_C_ExecuteUbergraph_ScoreMessageNumber_Params params;
 	params.EntryPoint = EntryPoint;
@@ -93,7 +97,8 @@ void UScoreMessageNumber_C::ExecuteUbergraph_ScoreMessageNumber(int EntryPoint)
 
 void UScoreMessageNumber_C::OnScoreValueSet__DelegateSignature(EStatCategory ChangedScoreCategory)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreMessageNumber.ScoreMessageNumber_C.OnScoreValueSet__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbdaa707e);
 
 	UScoreMessageNumber_C_OnScoreValueSet__DelegateSignature_Params params;
 	params.ChangedScoreCategory = ChangedScoreCategory;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UAmbientControllerComponent_Athena_C::SetTargetLPFFreq(float Target)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.SetTargetLPFFreq");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa62da1e2);
 
 	UAmbientControllerComponent_Athena_C_SetTargetLPFFreq_Params params;
 	params.Target = Target;
@@ -39,7 +40,8 @@ void UAmbientControllerComponent_Athena_C::SetTargetLPFFreq(float Target)
 
 void UAmbientControllerComponent_Athena_C::SetIndoorMixEnabled(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.SetIndoorMixEnabled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1168b41);
 
 	UAmbientControllerComponent_Athena_C_SetIndoorMixEnabled_Params params;
 	params.Enabled = Enabled;
@@ -61,7 +63,8 @@ void UAmbientControllerComponent_Athena_C::SetIndoorMixEnabled(bool Enabled)
 
 bool UAmbientControllerComponent_Athena_C::Trace(const struct FVector& Start, const struct FVector& Direction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.Trace");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5aee93d2);
 
 	UAmbientControllerComponent_Athena_C_Trace_Params params;
 	params.Start = Start;
@@ -84,7 +87,8 @@ bool UAmbientControllerComponent_Athena_C::Trace(const struct FVector& Start, co
 
 void UAmbientControllerComponent_Athena_C::Crossfade(class USoundBase* NewSound)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.Crossfade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d656ab7);
 
 	UAmbientControllerComponent_Athena_C_Crossfade_Params params;
 	params.NewSound = NewSound;
@@ -102,7 +106,8 @@ void UAmbientControllerComponent_Athena_C::Crossfade(class USoundBase* NewSound)
 
 void UAmbientControllerComponent_Athena_C::RegisterTimeOfDayCallbacks()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.RegisterTimeOfDayCallbacks");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x260d0f32);
 
 	UAmbientControllerComponent_Athena_C_RegisterTimeOfDayCallbacks_Params params;
 
@@ -119,7 +124,8 @@ void UAmbientControllerComponent_Athena_C::RegisterTimeOfDayCallbacks()
 
 void UAmbientControllerComponent_Athena_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67c7cf77);
 
 	UAmbientControllerComponent_Athena_C_ReceiveBeginPlay_Params params;
 
@@ -138,7 +144,8 @@ void UAmbientControllerComponent_Athena_C::ReceiveBeginPlay()
 
 void UAmbientControllerComponent_Athena_C::ReceiveEndPlay(TEnumAsByte<EEndPlayReason>* EndPlayReason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.ReceiveEndPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x43ebea3f);
 
 	UAmbientControllerComponent_Athena_C_ReceiveEndPlay_Params params;
 	params.EndPlayReason = EndPlayReason;
@@ -156,7 +163,8 @@ void UAmbientControllerComponent_Athena_C::ReceiveEndPlay(TEnumAsByte<EEndPlayRe
 
 void UAmbientControllerComponent_Athena_C::OnCheckIfSurrounded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.OnCheckIfSurrounded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87e4f008);
 
 	UAmbientControllerComponent_Athena_C_OnCheckIfSurrounded_Params params;
 
@@ -173,7 +181,8 @@ void UAmbientControllerComponent_Athena_C::OnCheckIfSurrounded()
 
 void UAmbientControllerComponent_Athena_C::Evaluate_Inside_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.Evaluate Inside State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2f65ec1);
 
 	UAmbientControllerComponent_Athena_C_Evaluate_Inside_State_Params params;
 
@@ -194,7 +203,8 @@ void UAmbientControllerComponent_Athena_C::Evaluate_Inside_State()
 
 void UAmbientControllerComponent_Athena_C::On_Day_Phase_Change(TEnumAsByte<EFortDayPhase> CurrentDayPhase, TEnumAsByte<EFortDayPhase> PreviousDayPhase, bool bAtCreation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.On Day Phase Change");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77d36919);
 
 	UAmbientControllerComponent_Athena_C_On_Day_Phase_Change_Params params;
 	params.CurrentDayPhase = CurrentDayPhase;
@@ -216,7 +226,8 @@ void UAmbientControllerComponent_Athena_C::On_Day_Phase_Change(TEnumAsByte<EFort
 
 void UAmbientControllerComponent_Athena_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7de1abdd);
 
 	UAmbientControllerComponent_Athena_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -236,7 +247,8 @@ void UAmbientControllerComponent_Athena_C::ReceiveTick(float* DeltaSeconds)
 
 void UAmbientControllerComponent_Athena_C::On_Game_Phase_Change(EAthenaGamePhase GamePhase)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.On Game Phase Change");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce123471);
 
 	UAmbientControllerComponent_Athena_C_On_Game_Phase_Change_Params params;
 	params.GamePhase = GamePhase;
@@ -256,7 +268,8 @@ void UAmbientControllerComponent_Athena_C::On_Game_Phase_Change(EAthenaGamePhase
 
 void UAmbientControllerComponent_Athena_C::On_Game_Phase_Step_Change(EAthenaGamePhaseStep GamePhaseStep)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.On Game Phase Step Change");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc40659b9);
 
 	UAmbientControllerComponent_Athena_C_On_Game_Phase_Step_Change_Params params;
 	params.GamePhaseStep = GamePhaseStep;
@@ -276,7 +289,8 @@ void UAmbientControllerComponent_Athena_C::On_Game_Phase_Step_Change(EAthenaGame
 
 void UAmbientControllerComponent_Athena_C::Set_Storm_Amb_Layer_Enabled(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.Set Storm Amb Layer Enabled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bb2143a);
 
 	UAmbientControllerComponent_Athena_C_Set_Storm_Amb_Layer_Enabled_Params params;
 	params.Enabled = Enabled;
@@ -296,7 +310,8 @@ void UAmbientControllerComponent_Athena_C::Set_Storm_Amb_Layer_Enabled(bool Enab
 
 void UAmbientControllerComponent_Athena_C::ExecuteUbergraph_AmbientControllerComponent_Athena(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C.ExecuteUbergraph_AmbientControllerComponent_Athena");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9de29b4);
 
 	UAmbientControllerComponent_Athena_C_ExecuteUbergraph_AmbientControllerComponent_Athena_Params params;
 	params.EntryPoint = EntryPoint;

@@ -3216,6 +3216,267 @@ struct UAnimInstance_BlueprintInitializeAnimation_Params
 {
 };
 
+// Function Engine.BlueprintAsyncActionBase.Activate
+struct UBlueprintAsyncActionBase_Activate_Params
+{
+};
+
+// Function Engine.GameModeBase.StartPlay
+struct AGameModeBase_StartPlay_Params
+{
+};
+
+// Function Engine.GameModeBase.SpawnDefaultPawnFor
+struct AGameModeBase_SpawnDefaultPawnFor_Params
+{
+	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AActor*                                      StartSpot;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class APawn*                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.SpawnDefaultPawnAtTransform
+struct AGameModeBase_SpawnDefaultPawnAtTransform_Params
+{
+	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FTransform                                  SpawnTransform;                                           // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+	class APawn*                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.ShouldReset
+struct AGameModeBase_ShouldReset_Params
+{
+	class AActor*                                      ActorToReset;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.ReturnToMainMenuHost
+struct AGameModeBase_ReturnToMainMenuHost_Params
+{
+};
+
+// Function Engine.GameModeBase.RestartPlayerAtTransform
+struct AGameModeBase_RestartPlayerAtTransform_Params
+{
+	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FTransform                                  SpawnTransform;                                           // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.RestartPlayerAtPlayerStart
+struct AGameModeBase_RestartPlayerAtPlayerStart_Params
+{
+	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AActor*                                      StartSpot;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.RestartPlayer
+struct AGameModeBase_RestartPlayer_Params
+{
+	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.ResetLevel
+struct AGameModeBase_ResetLevel_Params
+{
+};
+
+// Function Engine.GameModeBase.PlayerCanRestart
+struct AGameModeBase_PlayerCanRestart_Params
+{
+	class APlayerController*                           Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.MustSpectate
+struct AGameModeBase_MustSpectate_Params
+{
+	class APlayerController*                           NewPlayerController;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.K2_PostLogin
+struct AGameModeBase_K2_PostLogin_Params
+{
+	class APlayerController*                           NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.K2_OnSwapPlayerControllers
+struct AGameModeBase_K2_OnSwapPlayerControllers_Params
+{
+	class APlayerController*                           OldPC;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class APlayerController*                           NewPC;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.K2_OnRestartPlayer
+struct AGameModeBase_K2_OnRestartPlayer_Params
+{
+	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.K2_OnLogout
+struct AGameModeBase_K2_OnLogout_Params
+{
+	class AController*                                 ExitingController;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.K2_OnChangeName
+struct AGameModeBase_K2_OnChangeName_Params
+{
+	class AController*                                 Other;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FString                                     NewName;                                                  // (CPF_Parm, CPF_ZeroConstructor)
+	bool                                               bNameChange;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.K2_FindPlayerStart
+struct AGameModeBase_K2_FindPlayerStart_Params
+{
+	class AController*                                 Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FString                                     IncomingName;                                             // (CPF_Parm, CPF_ZeroConstructor)
+	class AActor*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.InitStartSpot
+struct AGameModeBase_InitStartSpot_Params
+{
+	class AActor*                                      StartSpot;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.InitializeHUDForPlayer
+struct AGameModeBase_InitializeHUDForPlayer_Params
+{
+	class APlayerController*                           NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.HasMatchStarted
+struct AGameModeBase_HasMatchStarted_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.HandleStartingNewPlayer
+struct AGameModeBase_HandleStartingNewPlayer_Params
+{
+	class APlayerController*                           NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.GetNumSpectators
+struct AGameModeBase_GetNumSpectators_Params
+{
+	int                                                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.GetNumPlayers
+struct AGameModeBase_GetNumPlayers_Params
+{
+	int                                                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.GetDefaultPawnClassForController
+struct AGameModeBase_GetDefaultPawnClassForController_Params
+{
+	class AController*                                 InController;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.FindPlayerStart
+struct AGameModeBase_FindPlayerStart_Params
+{
+	class AController*                                 Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FString                                     IncomingName;                                             // (CPF_Parm, CPF_ZeroConstructor)
+	class AActor*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.ChoosePlayerStart
+struct AGameModeBase_ChoosePlayerStart_Params
+{
+	class AController*                                 Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AActor*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.ChangeName
+struct AGameModeBase_ChangeName_Params
+{
+	class AController*                                 Controller;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FString                                     NewName;                                                  // (CPF_Parm, CPF_ZeroConstructor)
+	bool                                               bNameChange;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameModeBase.CanSpectate
+struct AGameModeBase_CanSpectate_Params
+{
+	class APlayerController*                           Viewer;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class APlayerState*                                ViewTarget;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.StartMatch
+struct AGameMode_StartMatch_Params
+{
+};
+
+// Function Engine.GameMode.SetBandwidthLimit
+struct AGameMode_SetBandwidthLimit_Params
+{
+	float                                              AsyncIOBandwidthLimit;                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.Say
+struct AGameMode_Say_Params
+{
+	struct FString                                     Msg;                                                      // (CPF_Parm, CPF_ZeroConstructor)
+};
+
+// Function Engine.GameMode.RestartGame
+struct AGameMode_RestartGame_Params
+{
+};
+
+// Function Engine.GameMode.ReadyToStartMatch
+struct AGameMode_ReadyToStartMatch_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.ReadyToEndMatch
+struct AGameMode_ReadyToEndMatch_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.K2_OnSetMatchState
+struct AGameMode_K2_OnSetMatchState_Params
+{
+	struct FName                                       NewState;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.IsMatchInProgress
+struct AGameMode_IsMatchInProgress_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.HasMatchEnded
+struct AGameMode_HasMatchEnded_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.GetMatchState
+struct AGameMode_GetMatchState_Params
+{
+	struct FName                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function Engine.GameMode.EndMatch
+struct AGameMode_EndMatch_Params
+{
+};
+
+// Function Engine.GameMode.AbortMatch
+struct AGameMode_AbortMatch_Params
+{
+};
+
 // Function Engine.AnimNotify.Received_Notify
 struct UAnimNotify_Received_Notify_Params
 {
@@ -3260,11 +3521,6 @@ struct UAnimNotifyState_Received_NotifyBegin_Params
 struct UAnimNotifyState_GetNotifyName_Params
 {
 	struct FString                                     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
-};
-
-// Function Engine.BlueprintAsyncActionBase.Activate
-struct UBlueprintAsyncActionBase_Activate_Params
-{
 };
 
 // Function Engine.MovementComponent.StopMovementImmediately
@@ -4650,262 +4906,6 @@ struct UCheatManager_BugItGo_Params
 struct UCheatManager_BugIt_Params
 {
 	struct FString                                     ScreenShotDescription;                                    // (CPF_Parm, CPF_ZeroConstructor)
-};
-
-// Function Engine.GameModeBase.StartPlay
-struct AGameModeBase_StartPlay_Params
-{
-};
-
-// Function Engine.GameModeBase.SpawnDefaultPawnFor
-struct AGameModeBase_SpawnDefaultPawnFor_Params
-{
-	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AActor*                                      StartSpot;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class APawn*                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.SpawnDefaultPawnAtTransform
-struct AGameModeBase_SpawnDefaultPawnAtTransform_Params
-{
-	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FTransform                                  SpawnTransform;                                           // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-	class APawn*                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.ShouldReset
-struct AGameModeBase_ShouldReset_Params
-{
-	class AActor*                                      ActorToReset;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.ReturnToMainMenuHost
-struct AGameModeBase_ReturnToMainMenuHost_Params
-{
-};
-
-// Function Engine.GameModeBase.RestartPlayerAtTransform
-struct AGameModeBase_RestartPlayerAtTransform_Params
-{
-	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FTransform                                  SpawnTransform;                                           // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.RestartPlayerAtPlayerStart
-struct AGameModeBase_RestartPlayerAtPlayerStart_Params
-{
-	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AActor*                                      StartSpot;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.RestartPlayer
-struct AGameModeBase_RestartPlayer_Params
-{
-	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.ResetLevel
-struct AGameModeBase_ResetLevel_Params
-{
-};
-
-// Function Engine.GameModeBase.PlayerCanRestart
-struct AGameModeBase_PlayerCanRestart_Params
-{
-	class APlayerController*                           Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.MustSpectate
-struct AGameModeBase_MustSpectate_Params
-{
-	class APlayerController*                           NewPlayerController;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.K2_PostLogin
-struct AGameModeBase_K2_PostLogin_Params
-{
-	class APlayerController*                           NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.K2_OnSwapPlayerControllers
-struct AGameModeBase_K2_OnSwapPlayerControllers_Params
-{
-	class APlayerController*                           OldPC;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class APlayerController*                           NewPC;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.K2_OnRestartPlayer
-struct AGameModeBase_K2_OnRestartPlayer_Params
-{
-	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.K2_OnLogout
-struct AGameModeBase_K2_OnLogout_Params
-{
-	class AController*                                 ExitingController;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.K2_OnChangeName
-struct AGameModeBase_K2_OnChangeName_Params
-{
-	class AController*                                 Other;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FString                                     NewName;                                                  // (CPF_Parm, CPF_ZeroConstructor)
-	bool                                               bNameChange;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.K2_FindPlayerStart
-struct AGameModeBase_K2_FindPlayerStart_Params
-{
-	class AController*                                 Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FString                                     IncomingName;                                             // (CPF_Parm, CPF_ZeroConstructor)
-	class AActor*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.InitStartSpot
-struct AGameModeBase_InitStartSpot_Params
-{
-	class AActor*                                      StartSpot;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AController*                                 NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.InitializeHUDForPlayer
-struct AGameModeBase_InitializeHUDForPlayer_Params
-{
-	class APlayerController*                           NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.HasMatchStarted
-struct AGameModeBase_HasMatchStarted_Params
-{
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.HandleStartingNewPlayer
-struct AGameModeBase_HandleStartingNewPlayer_Params
-{
-	class APlayerController*                           NewPlayer;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.GetNumSpectators
-struct AGameModeBase_GetNumSpectators_Params
-{
-	int                                                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.GetNumPlayers
-struct AGameModeBase_GetNumPlayers_Params
-{
-	int                                                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.GetDefaultPawnClassForController
-struct AGameModeBase_GetDefaultPawnClassForController_Params
-{
-	class AController*                                 InController;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.FindPlayerStart
-struct AGameModeBase_FindPlayerStart_Params
-{
-	class AController*                                 Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FString                                     IncomingName;                                             // (CPF_Parm, CPF_ZeroConstructor)
-	class AActor*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.ChoosePlayerStart
-struct AGameModeBase_ChoosePlayerStart_Params
-{
-	class AController*                                 Player;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class AActor*                                      ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.ChangeName
-struct AGameModeBase_ChangeName_Params
-{
-	class AController*                                 Controller;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FString                                     NewName;                                                  // (CPF_Parm, CPF_ZeroConstructor)
-	bool                                               bNameChange;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameModeBase.CanSpectate
-struct AGameModeBase_CanSpectate_Params
-{
-	class APlayerController*                           Viewer;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class APlayerState*                                ViewTarget;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.StartMatch
-struct AGameMode_StartMatch_Params
-{
-};
-
-// Function Engine.GameMode.SetBandwidthLimit
-struct AGameMode_SetBandwidthLimit_Params
-{
-	float                                              AsyncIOBandwidthLimit;                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.Say
-struct AGameMode_Say_Params
-{
-	struct FString                                     Msg;                                                      // (CPF_Parm, CPF_ZeroConstructor)
-};
-
-// Function Engine.GameMode.RestartGame
-struct AGameMode_RestartGame_Params
-{
-};
-
-// Function Engine.GameMode.ReadyToStartMatch
-struct AGameMode_ReadyToStartMatch_Params
-{
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.ReadyToEndMatch
-struct AGameMode_ReadyToEndMatch_Params
-{
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.K2_OnSetMatchState
-struct AGameMode_K2_OnSetMatchState_Params
-{
-	struct FName                                       NewState;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.IsMatchInProgress
-struct AGameMode_IsMatchInProgress_Params
-{
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.HasMatchEnded
-struct AGameMode_HasMatchEnded_Params
-{
-	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.GetMatchState
-struct AGameMode_GetMatchState_Params
-{
-	struct FName                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-};
-
-// Function Engine.GameMode.EndMatch
-struct AGameMode_EndMatch_Params
-{
-};
-
-// Function Engine.GameMode.AbortMatch
-struct AGameMode_AbortMatch_Params
-{
 };
 
 // Function Engine.GameViewportClient.SSSwapControllers

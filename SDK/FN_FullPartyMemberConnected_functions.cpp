@@ -19,7 +19,8 @@ namespace SDK
 
 void UFullPartyMemberConnected_C::UpdateDimensions(const struct FVector2D& NewDimensions)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateDimensions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x135cc5a3);
 
 	UFullPartyMemberConnected_C_UpdateDimensions_Params params;
 	params.NewDimensions = NewDimensions;
@@ -39,7 +40,8 @@ void UFullPartyMemberConnected_C::UpdateDimensions(const struct FVector2D& NewDi
 
 void UFullPartyMemberConnected_C::UpdateMemberInfo(const struct FFortTeamMemberInfo& NewMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FullPartyMemberConnected.FullPartyMemberConnected_C.UpdateMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x343bdd92);
 
 	UFullPartyMemberConnected_C_UpdateMemberInfo_Params params;
 	params.NewMemberInfo = NewMemberInfo;
@@ -59,7 +61,8 @@ void UFullPartyMemberConnected_C::UpdateMemberInfo(const struct FFortTeamMemberI
 
 void UFullPartyMemberConnected_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FullPartyMemberConnected.FullPartyMemberConnected_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e0bc17d);
 
 	UFullPartyMemberConnected_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -77,7 +80,8 @@ void UFullPartyMemberConnected_C::PreConstruct(bool* IsDesignTime)
 
 void UFullPartyMemberConnected_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FullPartyMemberConnected.FullPartyMemberConnected_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9be8dc6);
 
 	UFullPartyMemberConnected_C_Construct_Params params;
 
@@ -96,7 +100,8 @@ void UFullPartyMemberConnected_C::Construct()
 
 void UFullPartyMemberConnected_C::ExecuteUbergraph_FullPartyMemberConnected(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FullPartyMemberConnected.FullPartyMemberConnected_C.ExecuteUbergraph_FullPartyMemberConnected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xddc86f33);
 
 	UFullPartyMemberConnected_C_ExecuteUbergraph_FullPartyMemberConnected_Params params;
 	params.EntryPoint = EntryPoint;

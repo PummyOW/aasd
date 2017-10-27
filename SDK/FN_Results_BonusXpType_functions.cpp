@@ -21,7 +21,8 @@ namespace SDK
 
 void UResults_BonusXpType_C::setInformation(int InXPAmount, const struct FText& PlayerName, const struct FName& InType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BonusXpType.Results_BonusXpType_C.setInformation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4cf649d);
 
 	UResults_BonusXpType_C_setInformation_Params params;
 	params.InXPAmount = InXPAmount;
@@ -41,7 +42,8 @@ void UResults_BonusXpType_C::setInformation(int InXPAmount, const struct FText& 
 
 void UResults_BonusXpType_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BonusXpType.Results_BonusXpType_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8d807ce);
 
 	UResults_BonusXpType_C_Construct_Params params;
 
@@ -60,7 +62,8 @@ void UResults_BonusXpType_C::Construct()
 
 void UResults_BonusXpType_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BonusXpType.Results_BonusXpType_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7c40055);
 
 	UResults_BonusXpType_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -80,7 +83,8 @@ void UResults_BonusXpType_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_BonusXpType_C::ExecuteUbergraph_Results_BonusXpType(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BonusXpType.Results_BonusXpType_C.ExecuteUbergraph_Results_BonusXpType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e785b03);
 
 	UResults_BonusXpType_C_ExecuteUbergraph_Results_BonusXpType_Params params;
 	params.EntryPoint = EntryPoint;

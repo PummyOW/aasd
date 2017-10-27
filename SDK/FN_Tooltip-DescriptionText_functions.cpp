@@ -17,7 +17,8 @@ namespace SDK
 
 void UTooltip_DescriptionText_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DescriptionText.Tooltip-DescriptionText_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96a4e51e);
 
 	UTooltip_DescriptionText_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UTooltip_DescriptionText_C::Construct()
 
 void UTooltip_DescriptionText_C::ExecuteUbergraph_Tooltip_DescriptionText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DescriptionText.Tooltip-DescriptionText_C.ExecuteUbergraph_Tooltip-DescriptionText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c004edc);
 
 	UTooltip_DescriptionText_C_ExecuteUbergraph_Tooltip_DescriptionText_Params params;
 	params.EntryPoint = EntryPoint;

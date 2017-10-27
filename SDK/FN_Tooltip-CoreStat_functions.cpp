@@ -20,7 +20,8 @@ namespace SDK
 
 void UTooltip_CoreStat_C::Update(const struct FHeroCoreStat& Data, float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-CoreStat.Tooltip-CoreStat_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xacc4506);
 
 	UTooltip_CoreStat_C_Update_Params params;
 	params.Data = Data;
@@ -39,7 +40,8 @@ void UTooltip_CoreStat_C::Update(const struct FHeroCoreStat& Data, float Value)
 
 void UTooltip_CoreStat_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-CoreStat.Tooltip-CoreStat_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28069ec4);
 
 	UTooltip_CoreStat_C_Construct_Params params;
 
@@ -58,7 +60,8 @@ void UTooltip_CoreStat_C::Construct()
 
 void UTooltip_CoreStat_C::ExecuteUbergraph_Tooltip_CoreStat(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-CoreStat.Tooltip-CoreStat_C.ExecuteUbergraph_Tooltip-CoreStat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c1d3c90);
 
 	UTooltip_CoreStat_C_ExecuteUbergraph_Tooltip_CoreStat_Params params;
 	params.EntryPoint = EntryPoint;

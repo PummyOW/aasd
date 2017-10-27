@@ -17,7 +17,8 @@ namespace SDK
 
 void UOnlineHotfixManager::StartHotfixProcess()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Hotfix.OnlineHotfixManager.StartHotfixProcess");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf13007fc);
 
 	UOnlineHotfixManager_StartHotfixProcess_Params params;
 

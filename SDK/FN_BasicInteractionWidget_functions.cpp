@@ -19,7 +19,8 @@ namespace SDK
 
 void UBasicInteractionWidget_C::UpdateDescription(const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicInteractionWidget.BasicInteractionWidget_C.UpdateDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6edc0ee);
 
 	UBasicInteractionWidget_C_UpdateDescription_Params params;
 	params.Description = Description;
@@ -37,7 +38,8 @@ void UBasicInteractionWidget_C::UpdateDescription(const struct FText& Descriptio
 
 void UBasicInteractionWidget_C::InitBasicInteraction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicInteractionWidget.BasicInteractionWidget_C.InitBasicInteraction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe270caff);
 
 	UBasicInteractionWidget_C_InitBasicInteraction_Params params;
 
@@ -54,7 +56,8 @@ void UBasicInteractionWidget_C::InitBasicInteraction()
 
 void UBasicInteractionWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicInteractionWidget.BasicInteractionWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc74690a);
 
 	UBasicInteractionWidget_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UBasicInteractionWidget_C::Construct()
 
 void UBasicInteractionWidget_C::ExecuteUbergraph_BasicInteractionWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicInteractionWidget.BasicInteractionWidget_C.ExecuteUbergraph_BasicInteractionWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66622d25);
 
 	UBasicInteractionWidget_C_ExecuteUbergraph_BasicInteractionWidget_Params params;
 	params.EntryPoint = EntryPoint;

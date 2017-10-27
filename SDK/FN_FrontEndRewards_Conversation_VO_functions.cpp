@@ -19,7 +19,8 @@ namespace SDK
 
 void UFrontEndRewards_Conversation_VO_C::CreateConversationActor(class AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C** NewAnnoucement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.CreateConversationActor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf38fa791);
 
 	UFrontEndRewards_Conversation_VO_C_CreateConversationActor_Params params;
 
@@ -41,7 +42,8 @@ void UFrontEndRewards_Conversation_VO_C::CreateConversationActor(class AAnnounce
 
 void UFrontEndRewards_Conversation_VO_C::PlayConversation(class UFortQuestItem* QuestItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.PlayConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e718408);
 
 	UFrontEndRewards_Conversation_VO_C_PlayConversation_Params params;
 	params.QuestItem = QuestItem;
@@ -59,7 +61,8 @@ void UFrontEndRewards_Conversation_VO_C::PlayConversation(class UFortQuestItem* 
 
 void UFrontEndRewards_Conversation_VO_C::HandleConversationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleConversationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c224b6a);
 
 	UFrontEndRewards_Conversation_VO_C_HandleConversationFinished_Params params;
 
@@ -78,7 +81,8 @@ void UFrontEndRewards_Conversation_VO_C::HandleConversationFinished()
 
 void UFrontEndRewards_Conversation_VO_C::HandleNewSentence(const struct FFortConversationSentence& Sentence)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleNewSentence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cec82e2);
 
 	UFrontEndRewards_Conversation_VO_C_HandleNewSentence_Params params;
 	params.Sentence = Sentence;
@@ -96,7 +100,8 @@ void UFrontEndRewards_Conversation_VO_C::HandleNewSentence(const struct FFortCon
 
 void UFrontEndRewards_Conversation_VO_C::StopConversation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.StopConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7b5b13e);
 
 	UFrontEndRewards_Conversation_VO_C_StopConversation_Params params;
 
@@ -115,7 +120,8 @@ void UFrontEndRewards_Conversation_VO_C::StopConversation()
 
 void UFrontEndRewards_Conversation_VO_C::HandleReplayAction(bool* Committed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.HandleReplayAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeaf67886);
 
 	UFrontEndRewards_Conversation_VO_C_HandleReplayAction_Params params;
 
@@ -137,7 +143,8 @@ void UFrontEndRewards_Conversation_VO_C::HandleReplayAction(bool* Committed)
 
 void UFrontEndRewards_Conversation_VO_C::PopulateFromConversation(class UFortConversation* Conversation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Conversation_VO.FrontEndRewards_Conversation_VO_C.PopulateFromConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7b6d1bc);
 
 	UFrontEndRewards_Conversation_VO_C_PopulateFromConversation_Params params;
 	params.Conversation = Conversation;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemCountRecycling_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountRecycling.ItemCountRecycling_C.SetItemDefinition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1d16a8f);
 
 	UItemCountRecycling_C_SetItemDefinition_Params params;
 	params.ItemDefinition = ItemDefinition;
@@ -37,7 +38,8 @@ void UItemCountRecycling_C::SetItemDefinition(class UFortItemDefinition* ItemDef
 
 void UItemCountRecycling_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountRecycling.ItemCountRecycling_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5330640e);
 
 	UItemCountRecycling_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UItemCountRecycling_C::Construct()
 
 void UItemCountRecycling_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountRecycling.ItemCountRecycling_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf869495);
 
 	UItemCountRecycling_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -76,7 +79,8 @@ void UItemCountRecycling_C::PreConstruct(bool* IsDesignTime)
 
 void UItemCountRecycling_C::ExecuteUbergraph_ItemCountRecycling(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountRecycling.ItemCountRecycling_C.ExecuteUbergraph_ItemCountRecycling");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8841ae53);
 
 	UItemCountRecycling_C_ExecuteUbergraph_ItemCountRecycling_Params params;
 	params.EntryPoint = EntryPoint;

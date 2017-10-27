@@ -17,7 +17,8 @@ namespace SDK
 
 void UMulchConfirmationItem_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchConfirmationItem.MulchConfirmationItem_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e608d0a);
 
 	UMulchConfirmationItem_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UMulchConfirmationItem_C::Construct()
 
 void UMulchConfirmationItem_C::ExecuteUbergraph_MulchConfirmationItem(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchConfirmationItem.MulchConfirmationItem_C.ExecuteUbergraph_MulchConfirmationItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7adff7c0);
 
 	UMulchConfirmationItem_C_ExecuteUbergraph_MulchConfirmationItem_Params params;
 	params.EntryPoint = EntryPoint;

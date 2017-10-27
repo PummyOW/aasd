@@ -17,7 +17,8 @@ namespace SDK
 
 void UXpBonusToolTip_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBonusToolTip.XpBonusToolTip_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa44fd502);
 
 	UXpBonusToolTip_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UXpBonusToolTip_C::Construct()
 
 void UXpBonusToolTip_C::ExecuteUbergraph_XpBonusToolTip(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBonusToolTip.XpBonusToolTip_C.ExecuteUbergraph_XpBonusToolTip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3b5e0a9);
 
 	UXpBonusToolTip_C_ExecuteUbergraph_XpBonusToolTip_Params params;
 	params.EntryPoint = EntryPoint;

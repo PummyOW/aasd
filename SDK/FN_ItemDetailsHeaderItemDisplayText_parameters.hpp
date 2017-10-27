@@ -20,13 +20,13 @@ struct UItemDetailsHeaderItemDisplayText_C_GetDisplayName_Params
 	struct FText                                       DisplayName;                                              // (CPF_Parm, CPF_OutParm)
 };
 
-// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToCompareWithSet
-struct UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToCompareWithSet_Params
+// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToDetailSet
+struct UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToDetailSet_Params
 {
 };
 
-// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToDetailSet
-struct UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToDetailSet_Params
+// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToCompareWithSet
+struct UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToCompareWithSet_Params
 {
 };
 

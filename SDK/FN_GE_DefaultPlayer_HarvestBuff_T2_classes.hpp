@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_DefaultPlayer_HarvestBuff_T2.GE_DefaultPlayer_HarvestBuff_T2_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e5f05b9);
 		return ptr;
 	}
 

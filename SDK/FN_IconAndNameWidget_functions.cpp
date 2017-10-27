@@ -19,7 +19,8 @@ namespace SDK
 
 void UIconAndNameWidget_C::Set_Border_Color(const struct FLinearColor& Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconAndNameWidget.IconAndNameWidget_C.Set Border Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd68120c);
 
 	UIconAndNameWidget_C_Set_Border_Color_Params params;
 	params.Value = Value;
@@ -37,7 +38,8 @@ void UIconAndNameWidget_C::Set_Border_Color(const struct FLinearColor& Value)
 
 void UIconAndNameWidget_C::Setup_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconAndNameWidget.IconAndNameWidget_C.Setup Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcfae79e3);
 
 	UIconAndNameWidget_C_Setup_Text_Params params;
 
@@ -54,7 +56,8 @@ void UIconAndNameWidget_C::Setup_Text()
 
 void UIconAndNameWidget_C::Setup_Border()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconAndNameWidget.IconAndNameWidget_C.Setup Border");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x143cb4e0);
 
 	UIconAndNameWidget_C_Setup_Border_Params params;
 
@@ -73,7 +76,8 @@ void UIconAndNameWidget_C::Setup_Border()
 
 void UIconAndNameWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconAndNameWidget.IconAndNameWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e7af575);
 
 	UIconAndNameWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -93,7 +97,8 @@ void UIconAndNameWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UIconAndNameWidget_C::ExecuteUbergraph_IconAndNameWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconAndNameWidget.IconAndNameWidget_C.ExecuteUbergraph_IconAndNameWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x184fbf72);
 
 	UIconAndNameWidget_C_ExecuteUbergraph_IconAndNameWidget_Params params;
 	params.EntryPoint = EntryPoint;

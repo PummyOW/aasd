@@ -17,7 +17,8 @@ namespace SDK
 
 void AHeroesCamera_Blueprint_C::HandleMousePress()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.HandleMousePress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e2adac1);
 
 	AHeroesCamera_Blueprint_C_HandleMousePress_Params params;
 
@@ -34,7 +35,8 @@ void AHeroesCamera_Blueprint_C::HandleMousePress()
 
 void AHeroesCamera_Blueprint_C::HandleMouseRelease()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.HandleMouseRelease");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7703c53b);
 
 	AHeroesCamera_Blueprint_C_HandleMouseRelease_Params params;
 
@@ -51,7 +53,8 @@ void AHeroesCamera_Blueprint_C::HandleMouseRelease()
 
 void AHeroesCamera_Blueprint_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9e91e76);
 
 	AHeroesCamera_Blueprint_C_UserConstructionScript_Params params;
 
@@ -70,7 +73,8 @@ void AHeroesCamera_Blueprint_C::UserConstructionScript()
 
 void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_8(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_8");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4823e96d);
 
 	AHeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_8_Params params;
 	params.Key = Key;
@@ -90,7 +94,8 @@ void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_8
 
 void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6304d7a);
 
 	AHeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7_Params params;
 	params.Key = Key;
@@ -110,7 +115,8 @@ void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_7
 
 void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x186a24f2);
 
 	AHeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6_Params params;
 	params.Key = Key;
@@ -130,7 +136,8 @@ void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 
 void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf267aa89);
 
 	AHeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_5_Params params;
 	params.Key = Key;
@@ -148,7 +155,8 @@ void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 
 void AHeroesCamera_Blueprint_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd6def08);
 
 	AHeroesCamera_Blueprint_C_OnDeactivated_Params params;
 
@@ -167,7 +175,8 @@ void AHeroesCamera_Blueprint_C::OnDeactivated()
 
 void AHeroesCamera_Blueprint_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0123477);
 
 	AHeroesCamera_Blueprint_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -185,7 +194,8 @@ void AHeroesCamera_Blueprint_C::ReceiveTick(float* DeltaSeconds)
 
 void AHeroesCamera_Blueprint_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb40c4583);
 
 	AHeroesCamera_Blueprint_C_OnActivated_Params params;
 
@@ -204,7 +214,8 @@ void AHeroesCamera_Blueprint_C::OnActivated()
 
 void AHeroesCamera_Blueprint_C::ExecuteUbergraph_HeroesCamera_Blueprint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.ExecuteUbergraph_HeroesCamera_Blueprint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8883bd4);
 
 	AHeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint_Params params;
 	params.EntryPoint = EntryPoint;

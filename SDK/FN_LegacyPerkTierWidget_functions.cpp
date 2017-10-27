@@ -17,7 +17,8 @@ namespace SDK
 
 void ULegacyPerkTierWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkTierWidget.LegacyPerkTierWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e40aa1c);
 
 	ULegacyPerkTierWidget_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void ULegacyPerkTierWidget_C::Construct()
 
 void ULegacyPerkTierWidget_C::OnGeneratePerk(struct FFortUIPerk* Perk)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkTierWidget.LegacyPerkTierWidget_C.OnGeneratePerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce414c4b);
 
 	ULegacyPerkTierWidget_C_OnGeneratePerk_Params params;
 	params.Perk = Perk;
@@ -56,7 +58,8 @@ void ULegacyPerkTierWidget_C::OnGeneratePerk(struct FFortUIPerk* Perk)
 
 void ULegacyPerkTierWidget_C::ExecuteUbergraph_LegacyPerkTierWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyPerkTierWidget.LegacyPerkTierWidget_C.ExecuteUbergraph_LegacyPerkTierWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87486b74);
 
 	ULegacyPerkTierWidget_C_ExecuteUbergraph_LegacyPerkTierWidget_Params params;
 	params.EntryPoint = EntryPoint;

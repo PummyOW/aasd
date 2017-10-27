@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.ButtonWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xab0f29bf);
 		return ptr;
 	}
 
@@ -37,7 +38,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.CheckBoxWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd194c696);
 		return ptr;
 	}
 
@@ -53,7 +55,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.ComboBoxWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d9d3fb4);
 		return ptr;
 	}
 
@@ -69,7 +72,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.ComboButtonWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb86cb8f5);
 		return ptr;
 	}
 
@@ -85,7 +89,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.EditableTextBoxWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ca64be7);
 		return ptr;
 	}
 
@@ -101,7 +106,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.EditableTextWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb1a84c);
 		return ptr;
 	}
 
@@ -117,7 +123,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.ProgressWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x59582c44);
 		return ptr;
 	}
 
@@ -133,7 +140,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.ScrollBarWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x86b63cfd);
 		return ptr;
 	}
 
@@ -149,7 +157,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.ScrollBoxWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36373efd);
 		return ptr;
 	}
 
@@ -166,7 +175,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.SlateSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x307d9558);
 		return ptr;
 	}
 
@@ -182,7 +192,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.SpinBoxWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x35673a76);
 		return ptr;
 	}
 
@@ -198,7 +209,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Slate.TextBlockWidgetStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80f30493);
 		return ptr;
 	}
 

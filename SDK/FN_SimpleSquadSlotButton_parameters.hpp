@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.UpdateTypeIconOffset
+struct USimpleSquadSlotButton_C_UpdateTypeIconOffset_Params
+{
+	float                                              VerticalOffset;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Update SubType Icon Glow
 struct USimpleSquadSlotButton_C_Update_SubType_Icon_Glow_Params
 {

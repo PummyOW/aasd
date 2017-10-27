@@ -28,7 +28,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTasks.GameplayTasksComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1d8c121c);
 		return ptr;
 	}
 
@@ -50,7 +51,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTasks.GameplayTask");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ca2ea50);
 		return ptr;
 	}
 
@@ -69,7 +71,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTasks.GameplayTaskOwnerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf24e6232);
 		return ptr;
 	}
 
@@ -89,7 +92,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTasks.GameplayTaskResource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd99921ec);
 		return ptr;
 	}
 
@@ -104,7 +108,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTasks.GameplayTask_ClaimResource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50214189);
 		return ptr;
 	}
 
@@ -126,7 +131,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTasks.GameplayTask_SpawnActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x727861d3);
 		return ptr;
 	}
 
@@ -147,7 +153,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class GameplayTasks.GameplayTask_WaitDelay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x674aa145);
 		return ptr;
 	}
 

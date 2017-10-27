@@ -17,7 +17,8 @@ namespace SDK
 
 void ULoginScreen_C::SafePopContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.SafePopContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f63f6b8);
 
 	ULoginScreen_C_SafePopContent_Params params;
 
@@ -34,7 +35,8 @@ void ULoginScreen_C::SafePopContent()
 
 void ULoginScreen_C::ShowAccountSelectWindow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShowAccountSelectWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcdd6cec1);
 
 	ULoginScreen_C_ShowAccountSelectWindow_Params params;
 
@@ -51,7 +53,8 @@ void ULoginScreen_C::ShowAccountSelectWindow()
 
 void ULoginScreen_C::CheckSkipSplashScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.CheckSkipSplashScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde9bb58d);
 
 	ULoginScreen_C_CheckSkipSplashScreen_Params params;
 
@@ -68,7 +71,8 @@ void ULoginScreen_C::CheckSkipSplashScreen()
 
 void ULoginScreen_C::EmptyLoginStack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.EmptyLoginStack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6aaa6117);
 
 	ULoginScreen_C_EmptyLoginStack_Params params;
 
@@ -85,7 +89,8 @@ void ULoginScreen_C::EmptyLoginStack()
 
 void ULoginScreen_C::HideNonSplashScreenContent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.HideNonSplashScreenContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9baba50);
 
 	ULoginScreen_C_HideNonSplashScreenContent_Params params;
 
@@ -102,7 +107,8 @@ void ULoginScreen_C::HideNonSplashScreenContent()
 
 void ULoginScreen_C::RollbackToSplashScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.RollbackToSplashScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3774dcd);
 
 	ULoginScreen_C_RollbackToSplashScreen_Params params;
 
@@ -122,7 +128,8 @@ void ULoginScreen_C::RollbackToSplashScreen()
 
 class UWidget* ULoginScreen_C::PopContentWidgetInternal(struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.PopContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71554530);
 
 	ULoginScreen_C_PopContentWidgetInternal_Params params;
 	params.State = State;
@@ -142,7 +149,8 @@ class UWidget* ULoginScreen_C::PopContentWidgetInternal(struct FContentPushState
 
 void ULoginScreen_C::ShowSplashScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShowSplashScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d3a2d5d);
 
 	ULoginScreen_C_ShowSplashScreen_Params params;
 
@@ -161,7 +169,8 @@ void ULoginScreen_C::ShowSplashScreen()
 
 class UWidget* ULoginScreen_C::GetLoginMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.GetLoginMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd049ea9);
 
 	ULoginScreen_C_GetLoginMenu_Params params;
 
@@ -184,7 +193,8 @@ class UWidget* ULoginScreen_C::GetLoginMenu()
 
 struct FEventReply ULoginScreen_C::OnMouseButtonUp_MenuBorder(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnMouseButtonUp_MenuBorder");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5309ba6);
 
 	ULoginScreen_C_OnMouseButtonUp_MenuBorder_Params params;
 	params.MyGeometry = MyGeometry;
@@ -205,7 +215,8 @@ struct FEventReply ULoginScreen_C::OnMouseButtonUp_MenuBorder(const struct FGeom
 
 void ULoginScreen_C::SkipBenchmark()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.SkipBenchmark");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc347ad5b);
 
 	ULoginScreen_C_SkipBenchmark_Params params;
 
@@ -222,7 +233,8 @@ void ULoginScreen_C::SkipBenchmark()
 
 void ULoginScreen_C::RunBenchmark()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.RunBenchmark");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b75af83);
 
 	ULoginScreen_C_RunBenchmark_Params params;
 
@@ -241,7 +253,8 @@ void ULoginScreen_C::RunBenchmark()
 
 void ULoginScreen_C::ShouldShowBenchmark(bool* Return_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShouldShowBenchmark");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a79181a);
 
 	ULoginScreen_C_ShouldShowBenchmark_Params params;
 
@@ -264,7 +277,8 @@ void ULoginScreen_C::ShouldShowBenchmark(bool* Return_Value)
 
 void ULoginScreen_C::ShowEulaWindow(const struct FText& Text, bool ViewOnly)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShowEulaWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab942d7b);
 
 	ULoginScreen_C_ShowEulaWindow_Params params;
 	params.Text = Text;
@@ -285,7 +299,8 @@ void ULoginScreen_C::ShowEulaWindow(const struct FText& Text, bool ViewOnly)
 
 void ULoginScreen_C::SetResultsDescription(const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.SetResultsDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3425356d);
 
 	ULoginScreen_C_SetResultsDescription_Params params;
 	params.Description = Description;
@@ -306,7 +321,8 @@ void ULoginScreen_C::SetResultsDescription(const struct FText& Description)
 
 void ULoginScreen_C::SetResultTitle(const struct FText& Title, bool bShowError)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.SetResultTitle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4675034);
 
 	ULoginScreen_C_SetResultTitle_Params params;
 	params.Title = Title;
@@ -329,7 +345,8 @@ void ULoginScreen_C::SetResultTitle(const struct FText& Title, bool bShowError)
 
 void ULoginScreen_C::ShowResultWindow(const struct FText& Title, const struct FText& Description, bool bShowError)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShowResultWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3fa493a7);
 
 	ULoginScreen_C_ShowResultWindow_Params params;
 	params.Title = Title;
@@ -349,7 +366,8 @@ void ULoginScreen_C::ShowResultWindow(const struct FText& Title, const struct FT
 
 void ULoginScreen_C::ToggleLoginMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ToggleLoginMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82380a0f);
 
 	ULoginScreen_C_ToggleLoginMenu_Params params;
 
@@ -368,7 +386,8 @@ void ULoginScreen_C::ToggleLoginMenu()
 
 void ULoginScreen_C::UpdateStatusTitle(const struct FText& Title)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.UpdateStatusTitle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x294d6e88);
 
 	ULoginScreen_C_UpdateStatusTitle_Params params;
 	params.Title = Title;
@@ -388,7 +407,8 @@ void ULoginScreen_C::UpdateStatusTitle(const struct FText& Title)
 
 void ULoginScreen_C::ShowAccountLinkingWindow(bool InLinkedAccountNeedsPurchase)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShowAccountLinkingWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa677a253);
 
 	ULoginScreen_C_ShowAccountLinkingWindow_Params params;
 	params.InLinkedAccountNeedsPurchase = InLinkedAccountNeedsPurchase;
@@ -408,7 +428,8 @@ void ULoginScreen_C::ShowAccountLinkingWindow(bool InLinkedAccountNeedsPurchase)
 
 void ULoginScreen_C::ShowStatusWindow(const struct FText& StatusText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShowStatusWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d79444e);
 
 	ULoginScreen_C_ShowStatusWindow_Params params;
 	params.StatusText = StatusText;
@@ -428,7 +449,8 @@ void ULoginScreen_C::ShowStatusWindow(const struct FText& StatusText)
 
 void ULoginScreen_C::ShowSignInWindow(bool DirectSignIn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ShowSignInWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fb0869e);
 
 	ULoginScreen_C_ShowSignInWindow_Params params;
 	params.DirectSignIn = DirectSignIn;
@@ -449,7 +471,8 @@ void ULoginScreen_C::ShowSignInWindow(bool DirectSignIn)
 
 void ULoginScreen_C::DialogResult_EE7DC32F44B9651770AED08101A03510(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.DialogResult_EE7DC32F44B9651770AED08101A03510");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1556dd9);
 
 	ULoginScreen_C_DialogResult_EE7DC32F44B9651770AED08101A03510_Params params;
 	params.Result = Result;
@@ -471,7 +494,8 @@ void ULoginScreen_C::DialogResult_EE7DC32F44B9651770AED08101A03510(EFortDialogRe
 
 void ULoginScreen_C::DialogResult_B952A8754B3836D2151B4981F531542E(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.DialogResult_B952A8754B3836D2151B4981F531542E");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed68047c);
 
 	ULoginScreen_C_DialogResult_B952A8754B3836D2151B4981F531542E_Params params;
 	params.Result = Result;
@@ -490,7 +514,8 @@ void ULoginScreen_C::DialogResult_B952A8754B3836D2151B4981F531542E(EFortDialogRe
 
 void ULoginScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5a02296);
 
 	ULoginScreen_C_Construct_Params params;
 
@@ -509,7 +534,8 @@ void ULoginScreen_C::Construct()
 
 void ULoginScreen_C::OnPatchingComplete(bool* bProceed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnPatchingComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52dd44cb);
 
 	ULoginScreen_C_OnPatchingComplete_Params params;
 	params.bProceed = bProceed;
@@ -529,7 +555,8 @@ void ULoginScreen_C::OnPatchingComplete(bool* bProceed)
 
 void ULoginScreen_C::OnEnterState(EFortUIState* PreviousUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnEnterState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86b9e1f1);
 
 	ULoginScreen_C_OnEnterState_Params params;
 	params.PreviousUIState = PreviousUIState;
@@ -549,7 +576,8 @@ void ULoginScreen_C::OnEnterState(EFortUIState* PreviousUIState)
 
 void ULoginScreen_C::OnExitState(EFortUIState* NextUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnExitState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2204ac0f);
 
 	ULoginScreen_C_OnExitState_Params params;
 	params.NextUIState = NextUIState;
@@ -570,7 +598,8 @@ void ULoginScreen_C::OnExitState(EFortUIState* NextUIState)
 
 void ULoginScreen_C::HandleOnStartLogin(const struct FString& LoginEmail, const struct FString& LoginPassword)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.HandleOnStartLogin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd19ec5b1);
 
 	ULoginScreen_C_HandleOnStartLogin_Params params;
 	params.LoginEmail = LoginEmail;
@@ -591,7 +620,8 @@ void ULoginScreen_C::HandleOnStartLogin(const struct FString& LoginEmail, const 
 
 void ULoginScreen_C::OnLoginFailed(struct FText* Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnLoginFailed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95540924);
 
 	ULoginScreen_C_OnLoginFailed_Params params;
 	params.Reason = Reason;
@@ -609,7 +639,8 @@ void ULoginScreen_C::OnLoginFailed(struct FText* Reason)
 
 void ULoginScreen_C::OnLoginSuceeded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnLoginSuceeded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c21e9ef);
 
 	ULoginScreen_C_OnLoginSuceeded_Params params;
 
@@ -628,7 +659,8 @@ void ULoginScreen_C::OnLoginSuceeded()
 
 void ULoginScreen_C::OnEulaAvailable(struct FText* EulaText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnEulaAvailable");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa538868);
 
 	ULoginScreen_C_OnEulaAvailable_Params params;
 	params.EulaText = EulaText;
@@ -648,7 +680,8 @@ void ULoginScreen_C::OnEulaAvailable(struct FText* EulaText)
 
 void ULoginScreen_C::HandleEulaResponse(bool Accepted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.HandleEulaResponse");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58445da3);
 
 	ULoginScreen_C_HandleEulaResponse_Params params;
 	params.Accepted = Accepted;
@@ -666,7 +699,8 @@ void ULoginScreen_C::HandleEulaResponse(bool Accepted)
 
 void ULoginScreen_C::HandleResultConfirmed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.HandleResultConfirmed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd18a41b9);
 
 	ULoginScreen_C_HandleResultConfirmed_Params params;
 
@@ -683,7 +717,8 @@ void ULoginScreen_C::HandleResultConfirmed()
 
 void ULoginScreen_C::HandlerBenchmarkFlow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.HandlerBenchmarkFlow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48452e2a);
 
 	ULoginScreen_C_HandlerBenchmarkFlow_Params params;
 
@@ -702,7 +737,8 @@ void ULoginScreen_C::HandlerBenchmarkFlow()
 
 void ULoginScreen_C::AccountLinking_PushStatus(const struct FText& StatusText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.AccountLinking_PushStatus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa695d71);
 
 	ULoginScreen_C_AccountLinking_PushStatus_Params params;
 	params.StatusText = StatusText;
@@ -720,7 +756,8 @@ void ULoginScreen_C::AccountLinking_PushStatus(const struct FText& StatusText)
 
 void ULoginScreen_C::AccountLinking_PopStatus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.AccountLinking_PopStatus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7497f8a);
 
 	ULoginScreen_C_AccountLinking_PopStatus_Params params;
 
@@ -739,7 +776,8 @@ void ULoginScreen_C::AccountLinking_PopStatus()
 
 void ULoginScreen_C::AccountLinking_LinkingFailed(const struct FText& FailReason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.AccountLinking_LinkingFailed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6dd5429a);
 
 	ULoginScreen_C_AccountLinking_LinkingFailed_Params params;
 	params.FailReason = FailReason;
@@ -757,7 +795,8 @@ void ULoginScreen_C::AccountLinking_LinkingFailed(const struct FText& FailReason
 
 void ULoginScreen_C::AccountLinking_RequestSignIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.AccountLinking_RequestSignIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f34feb8);
 
 	ULoginScreen_C_AccountLinking_RequestSignIn_Params params;
 
@@ -774,7 +813,8 @@ void ULoginScreen_C::AccountLinking_RequestSignIn()
 
 void ULoginScreen_C::AccountLinking_RequestAutoLogin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.AccountLinking_RequestAutoLogin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x102c3e52);
 
 	ULoginScreen_C_AccountLinking_RequestAutoLogin_Params params;
 
@@ -791,7 +831,8 @@ void ULoginScreen_C::AccountLinking_RequestAutoLogin()
 
 void ULoginScreen_C::OnSplashScreenClosed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnSplashScreenClosed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65f18ff5);
 
 	ULoginScreen_C_OnSplashScreenClosed_Params params;
 
@@ -811,7 +852,8 @@ void ULoginScreen_C::OnSplashScreenClosed()
 
 void ULoginScreen_C::PushContentWidgetInternal(class UWidget** Widget, struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.PushContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xadd64991);
 
 	ULoginScreen_C_PushContentWidgetInternal_Params params;
 	params.Widget = Widget;
@@ -830,7 +872,8 @@ void ULoginScreen_C::PushContentWidgetInternal(class UWidget** Widget, struct FC
 
 void ULoginScreen_C::OnLogoutComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnLogoutComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad4d90a7);
 
 	ULoginScreen_C_OnLogoutComplete_Params params;
 
@@ -849,7 +892,8 @@ void ULoginScreen_C::OnLogoutComplete()
 
 void ULoginScreen_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x886b5add);
 
 	ULoginScreen_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -867,7 +911,8 @@ void ULoginScreen_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_20_Common
 
 void ULoginScreen_C::AccountLinking_ViewEula()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.AccountLinking_ViewEula");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b011b63);
 
 	ULoginScreen_C_AccountLinking_ViewEula_Params params;
 
@@ -884,7 +929,8 @@ void ULoginScreen_C::AccountLinking_ViewEula()
 
 void ULoginScreen_C::HandleViewOnlyClose()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.HandleViewOnlyClose");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80cb308c);
 
 	ULoginScreen_C_HandleViewOnlyClose_Params params;
 
@@ -903,7 +949,8 @@ void ULoginScreen_C::HandleViewOnlyClose()
 
 void ULoginScreen_C::OnNeedsPurchaseOrAccountLinking(bool* bLinkedAccountNeedsPurchase)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnNeedsPurchaseOrAccountLinking");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5fd0f3a);
 
 	ULoginScreen_C_OnNeedsPurchaseOrAccountLinking_Params params;
 	params.bLinkedAccountNeedsPurchase = bLinkedAccountNeedsPurchase;
@@ -921,7 +968,8 @@ void ULoginScreen_C::OnNeedsPurchaseOrAccountLinking(bool* bLinkedAccountNeedsPu
 
 void ULoginScreen_C::OnDisplayErrorComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnDisplayErrorComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef29c69d);
 
 	ULoginScreen_C_OnDisplayErrorComplete_Params params;
 
@@ -940,7 +988,8 @@ void ULoginScreen_C::OnDisplayErrorComplete()
 
 void ULoginScreen_C::HandleOnLoginAccountTypeSelected(EFortLoginAccountType LoginAccountType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.HandleOnLoginAccountTypeSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf854cf5);
 
 	ULoginScreen_C_HandleOnLoginAccountTypeSelected_Params params;
 	params.LoginAccountType = LoginAccountType;
@@ -960,7 +1009,8 @@ void ULoginScreen_C::HandleOnLoginAccountTypeSelected(EFortLoginAccountType Logi
 
 void ULoginScreen_C::OnPostLoginLogoutComplete(struct FText* Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnPostLoginLogoutComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc767c9ca);
 
 	ULoginScreen_C_OnPostLoginLogoutComplete_Params params;
 	params.Reason = Reason;
@@ -982,7 +1032,8 @@ void ULoginScreen_C::OnPostLoginLogoutComplete(struct FText* Reason)
 
 void ULoginScreen_C::OnShowLoginMessage(bool* bShow, struct FText* Tile, struct FText* Body)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.OnShowLoginMessage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2fccf2b7);
 
 	ULoginScreen_C_OnShowLoginMessage_Params params;
 	params.bShow = bShow;
@@ -1004,7 +1055,8 @@ void ULoginScreen_C::OnShowLoginMessage(bool* bShow, struct FText* Tile, struct 
 
 void ULoginScreen_C::ExecuteUbergraph_LoginScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginScreen.LoginScreen_C.ExecuteUbergraph_LoginScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49e1cfea);
 
 	ULoginScreen_C_ExecuteUbergraph_LoginScreen_Params params;
 	params.EntryPoint = EntryPoint;

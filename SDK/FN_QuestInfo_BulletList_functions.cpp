@@ -20,7 +20,8 @@ namespace SDK
 
 void UQuestInfo_BulletList_C::AddEntryWithBrush(const struct FText& EntryText, const struct FSlateBrush& EntryIconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntryWithBrush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22ce300e);
 
 	UQuestInfo_BulletList_C_AddEntryWithBrush_Params params;
 	params.EntryText = EntryText;
@@ -39,7 +40,8 @@ void UQuestInfo_BulletList_C::AddEntryWithBrush(const struct FText& EntryText, c
 
 void UQuestInfo_BulletList_C::InitDesignView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletList.QuestInfo_BulletList_C.InitDesignView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59c38da6);
 
 	UQuestInfo_BulletList_C_InitDesignView_Params params;
 
@@ -58,7 +60,8 @@ void UQuestInfo_BulletList_C::InitDesignView()
 
 void UQuestInfo_BulletList_C::AddEntry(const struct FText& EntryText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletList.QuestInfo_BulletList_C.AddEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f59385a);
 
 	UQuestInfo_BulletList_C_AddEntry_Params params;
 	params.EntryText = EntryText;
@@ -78,7 +81,8 @@ void UQuestInfo_BulletList_C::AddEntry(const struct FText& EntryText)
 
 void UQuestInfo_BulletList_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletList.QuestInfo_BulletList_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed524173);
 
 	UQuestInfo_BulletList_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -96,7 +100,8 @@ void UQuestInfo_BulletList_C::PreConstruct(bool* IsDesignTime)
 
 void UQuestInfo_BulletList_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletList.QuestInfo_BulletList_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9e559c4);
 
 	UQuestInfo_BulletList_C_Construct_Params params;
 
@@ -115,7 +120,8 @@ void UQuestInfo_BulletList_C::Construct()
 
 void UQuestInfo_BulletList_C::ExecuteUbergraph_QuestInfo_BulletList(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestInfo_BulletList.QuestInfo_BulletList_C.ExecuteUbergraph_QuestInfo_BulletList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36ca1bac);
 
 	UQuestInfo_BulletList_C_ExecuteUbergraph_QuestInfo_BulletList_Params params;
 	params.EntryPoint = EntryPoint;

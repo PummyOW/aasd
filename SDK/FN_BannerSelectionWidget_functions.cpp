@@ -19,7 +19,8 @@ namespace SDK
 
 void UBannerSelectionWidget_C::HandleNextCategoryAction(bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.HandleNextCategoryAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5aca6798);
 
 	UBannerSelectionWidget_C_HandleNextCategoryAction_Params params;
 
@@ -41,7 +42,8 @@ void UBannerSelectionWidget_C::HandleNextCategoryAction(bool* bPassThrough)
 
 void UBannerSelectionWidget_C::HandlePreviousCategoryAction(bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.HandlePreviousCategoryAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf2cfeb4);
 
 	UBannerSelectionWidget_C_HandlePreviousCategoryAction_Params params;
 
@@ -61,7 +63,8 @@ void UBannerSelectionWidget_C::HandlePreviousCategoryAction(bool* bPassThrough)
 
 void UBannerSelectionWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2364064e);
 
 	UBannerSelectionWidget_C_Construct_Params params;
 
@@ -81,7 +84,8 @@ void UBannerSelectionWidget_C::Construct()
 
 void UBannerSelectionWidget_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature(const struct FName& IconId, const struct FName& ColorId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54b9c4da);
 
 	UBannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature_Params params;
 	params.IconId = IconId;
@@ -100,7 +104,8 @@ void UBannerSelectionWidget_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_Compone
 
 void UBannerSelectionWidget_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf368e25);
 
 	UBannerSelectionWidget_C_OnActivated_Params params;
 
@@ -119,7 +124,8 @@ void UBannerSelectionWidget_C::OnActivated()
 
 void UBannerSelectionWidget_C::BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7165e388);
 
 	UBannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -137,7 +143,8 @@ void UBannerSelectionWidget_C::BndEvt__ConfirmHomebaseNameButton_K2Node_Componen
 
 void UBannerSelectionWidget_C::OnHomebaseNameCommitFailed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.OnHomebaseNameCommitFailed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d20a0f);
 
 	UBannerSelectionWidget_C_OnHomebaseNameCommitFailed_Params params;
 
@@ -154,7 +161,8 @@ void UBannerSelectionWidget_C::OnHomebaseNameCommitFailed()
 
 void UBannerSelectionWidget_C::OnHomebaseNameCommitSucceeded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.OnHomebaseNameCommitSucceeded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8741bc07);
 
 	UBannerSelectionWidget_C_OnHomebaseNameCommitSucceeded_Params params;
 
@@ -171,7 +179,8 @@ void UBannerSelectionWidget_C::OnHomebaseNameCommitSucceeded()
 
 void UBannerSelectionWidget_C::GainFocusOfTextBox()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.GainFocusOfTextBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d9f996f);
 
 	UBannerSelectionWidget_C_GainFocusOfTextBox_Params params;
 
@@ -190,7 +199,8 @@ void UBannerSelectionWidget_C::GainFocusOfTextBox()
 
 void UBannerSelectionWidget_C::ExecuteUbergraph_BannerSelectionWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerSelectionWidget.BannerSelectionWidget_C.ExecuteUbergraph_BannerSelectionWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6295f9);
 
 	UBannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget_Params params;
 	params.EntryPoint = EntryPoint;

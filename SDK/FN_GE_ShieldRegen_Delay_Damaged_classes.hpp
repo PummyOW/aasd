@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_ShieldRegen_Delay_Damaged.GE_ShieldRegen_Delay_Damaged_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37eb375b);
 		return ptr;
 	}
 

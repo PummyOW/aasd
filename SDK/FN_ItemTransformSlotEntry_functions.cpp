@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemTransformSlotEntry_C::SetSlotSelection(bool Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.SetSlotSelection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xccfa44f);
 
 	UItemTransformSlotEntry_C_SetSlotSelection_Params params;
 	params.Selected = Selected;
@@ -39,7 +40,8 @@ void UItemTransformSlotEntry_C::SetSlotSelection(bool Selected)
 
 void UItemTransformSlotEntry_C::SetSacrificeItem(class UFortItem* SelectedSacrificeItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.SetSacrificeItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x581bef73);
 
 	UItemTransformSlotEntry_C_SetSacrificeItem_Params params;
 	params.SelectedSacrificeItem = SelectedSacrificeItem;
@@ -59,7 +61,8 @@ void UItemTransformSlotEntry_C::SetSacrificeItem(class UFortItem* SelectedSacrif
 
 void UItemTransformSlotEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f7fe073);
 
 	UItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -79,7 +82,8 @@ void UItemTransformSlotEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_0
 
 void UItemTransformSlotEntry_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67098213);
 
 	UItemTransformSlotEntry_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -99,7 +103,8 @@ void UItemTransformSlotEntry_C::PreConstruct(bool* IsDesignTime)
 
 void UItemTransformSlotEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2de10349);
 
 	UItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -120,7 +125,8 @@ void UItemTransformSlotEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_9
 
 void UItemTransformSlotEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature(class UCommonButton* Button, bool Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea3cd46d);
 
 	UItemTransformSlotEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_115_CommonSelectedStateChanged__DelegateSignature_Params params;
 	params.Button = Button;
@@ -135,13 +141,14 @@ void UItemTransformSlotEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_1
 
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.ExecuteUbergraph_ItemTransformSlotEntry
-// (FUNC_HasDefaults)
+// ()
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 void UItemTransformSlotEntry_C::ExecuteUbergraph_ItemTransformSlotEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.ExecuteUbergraph_ItemTransformSlotEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x504536bc);
 
 	UItemTransformSlotEntry_C_ExecuteUbergraph_ItemTransformSlotEntry_Params params;
 	params.EntryPoint = EntryPoint;
@@ -159,7 +166,8 @@ void UItemTransformSlotEntry_C::ExecuteUbergraph_ItemTransformSlotEntry(int Entr
 
 void UItemTransformSlotEntry_C::OnSlotSelected__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.OnSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cabde3c);
 
 	UItemTransformSlotEntry_C_OnSlotSelected__DelegateSignature_Params params;
 
@@ -176,7 +184,8 @@ void UItemTransformSlotEntry_C::OnSlotSelected__DelegateSignature()
 
 void UItemTransformSlotEntry_C::OnSlotChosen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.OnSlotChosen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f0ea3ef);
 
 	UItemTransformSlotEntry_C_OnSlotChosen__DelegateSignature_Params params;
 

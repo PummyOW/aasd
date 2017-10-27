@@ -17,7 +17,8 @@ namespace SDK
 
 void UMissionOverviewObjective_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionOverviewObjective.MissionOverviewObjective_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x204ae15e);
 
 	UMissionOverviewObjective_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UMissionOverviewObjective_C::Construct()
 
 void UMissionOverviewObjective_C::ExecuteUbergraph_MissionOverviewObjective(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionOverviewObjective.MissionOverviewObjective_C.ExecuteUbergraph_MissionOverviewObjective");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x837cd88b);
 
 	UMissionOverviewObjective_C_ExecuteUbergraph_MissionOverviewObjective_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void USynthComponent::Stop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.Stop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40c51dc9);
 
 	USynthComponent_Stop_Params params;
 
@@ -35,7 +36,8 @@ void USynthComponent::Stop()
 
 void USynthComponent::Start()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.Start");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa933599b);
 
 	USynthComponent_Start_Params params;
 
@@ -55,7 +57,8 @@ void USynthComponent::Start()
 
 bool USynthComponent::IsPlaying()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AudioMixer.SynthComponent.IsPlaying");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d8cfda9);
 
 	USynthComponent_IsPlaying_Params params;
 

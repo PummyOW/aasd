@@ -17,7 +17,8 @@ namespace SDK
 
 void AGCN_TakerMarkedForDeath_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7ff2e60);
 
 	AGCN_TakerMarkedForDeath_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AGCN_TakerMarkedForDeath_C::UserConstructionScript()
 
 void AGCN_TakerMarkedForDeath_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4174e87);
 
 	AGCN_TakerMarkedForDeath_C_ReceiveBeginPlay_Params params;
 
@@ -51,7 +53,8 @@ void AGCN_TakerMarkedForDeath_C::ReceiveBeginPlay()
 
 void AGCN_TakerMarkedForDeath_C::SoulSuckCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C.SoulSuckCheck");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51a90b04);
 
 	AGCN_TakerMarkedForDeath_C_SoulSuckCheck_Params params;
 
@@ -70,7 +73,8 @@ void AGCN_TakerMarkedForDeath_C::SoulSuckCheck()
 
 void AGCN_TakerMarkedForDeath_C::ExecuteUbergraph_GCN_TakerMarkedForDeath(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_TakerMarkedForDeath.GCN_TakerMarkedForDeath_C.ExecuteUbergraph_GCN_TakerMarkedForDeath");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x681c8eec);
 
 	AGCN_TakerMarkedForDeath_C_ExecuteUbergraph_GCN_TakerMarkedForDeath_Params params;
 	params.EntryPoint = EntryPoint;

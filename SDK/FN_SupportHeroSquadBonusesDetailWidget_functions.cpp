@@ -19,7 +19,8 @@ namespace SDK
 
 void USupportHeroSquadBonusesDetailWidget_C::SetState(EFortSupportPerkWidgetState InState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.SetState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e939074);
 
 	USupportHeroSquadBonusesDetailWidget_C_SetState_Params params;
 	params.InState = InState;
@@ -37,7 +38,8 @@ void USupportHeroSquadBonusesDetailWidget_C::SetState(EFortSupportPerkWidgetStat
 
 void USupportHeroSquadBonusesDetailWidget_C::UpdatePerkWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.UpdatePerkWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7431672f);
 
 	USupportHeroSquadBonusesDetailWidget_C_UpdatePerkWidgets_Params params;
 
@@ -54,7 +56,8 @@ void USupportHeroSquadBonusesDetailWidget_C::UpdatePerkWidgets()
 
 void USupportHeroSquadBonusesDetailWidget_C::UpdateVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.UpdateVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf77e230);
 
 	USupportHeroSquadBonusesDetailWidget_C_UpdateVisibility_Params params;
 
@@ -71,7 +74,8 @@ void USupportHeroSquadBonusesDetailWidget_C::UpdateVisibility()
 
 void USupportHeroSquadBonusesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7030305);
 
 	USupportHeroSquadBonusesDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -88,7 +92,8 @@ void USupportHeroSquadBonusesDetailWidget_C::HandlePostDifferentItemToDetailSet(
 
 void USupportHeroSquadBonusesDetailWidget_C::HandlePostDifferentSquadSlotSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.HandlePostDifferentSquadSlotSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x891cdc06);
 
 	USupportHeroSquadBonusesDetailWidget_C_HandlePostDifferentSquadSlotSetBP_Params params;
 
@@ -105,7 +110,8 @@ void USupportHeroSquadBonusesDetailWidget_C::HandlePostDifferentSquadSlotSetBP()
 
 void USupportHeroSquadBonusesDetailWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31f199e);
 
 	USupportHeroSquadBonusesDetailWidget_C_Construct_Params params;
 
@@ -124,7 +130,8 @@ void USupportHeroSquadBonusesDetailWidget_C::Construct()
 
 void USupportHeroSquadBonusesDetailWidget_C::ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SupportHeroSquadBonusesDetailWidget.SupportHeroSquadBonusesDetailWidget_C.ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6af44b8c);
 
 	USupportHeroSquadBonusesDetailWidget_C_ExecuteUbergraph_SupportHeroSquadBonusesDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

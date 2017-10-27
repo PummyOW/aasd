@@ -17,7 +17,8 @@ namespace SDK
 
 void AAIGoalManager_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AIGoalManager.AIGoalManager_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf12d0474);
 
 	AAIGoalManager_C_UserConstructionScript_Params params;
 

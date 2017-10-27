@@ -19,7 +19,8 @@ namespace SDK
 
 void UDailyRewards_C::Handle_Collect(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.Handle Collect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e84d821);
 
 	UDailyRewards_C_Handle_Collect_Params params;
 
@@ -41,7 +42,8 @@ void UDailyRewards_C::Handle_Collect(bool* PassThrough)
 
 void UDailyRewards_C::Handle_Close(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.Handle Close");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe77da3cf);
 
 	UDailyRewards_C_Handle_Close_Params params;
 
@@ -61,7 +63,8 @@ void UDailyRewards_C::Handle_Close(bool* PassThrough)
 
 void UDailyRewards_C::Set_Input_Action_Handlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.Set Input Action Handlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd814de06);
 
 	UDailyRewards_C_Set_Input_Action_Handlers_Params params;
 
@@ -78,7 +81,8 @@ void UDailyRewards_C::Set_Input_Action_Handlers()
 
 void UDailyRewards_C::PopPanelWhileInGame()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.PopPanelWhileInGame");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1723968);
 
 	UDailyRewards_C_PopPanelWhileInGame_Params params;
 
@@ -95,7 +99,8 @@ void UDailyRewards_C::PopPanelWhileInGame()
 
 void UDailyRewards_C::Setup_Daily_Rewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.Setup Daily Rewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2672163);
 
 	UDailyRewards_C_Setup_Daily_Rewards_Params params;
 
@@ -112,7 +117,8 @@ void UDailyRewards_C::Setup_Daily_Rewards()
 
 void UDailyRewards_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x970c86d4);
 
 	UDailyRewards_C_Construct_Params params;
 
@@ -129,7 +135,8 @@ void UDailyRewards_C::Construct()
 
 void UDailyRewards_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e1bc653);
 
 	UDailyRewards_C_OnActivated_Params params;
 
@@ -148,7 +155,8 @@ void UDailyRewards_C::OnActivated()
 
 void UDailyRewards_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb812e23);
 
 	UDailyRewards_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -168,7 +176,8 @@ void UDailyRewards_C::PreConstruct(bool* IsDesignTime)
 
 void UDailyRewards_C::ClaimResultReceived(TArray<struct FFortItemInstanceQuantityPair>* Loot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.ClaimResultReceived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29ce4a7d);
 
 	UDailyRewards_C_ClaimResultReceived_Params params;
 	params.Loot = Loot;
@@ -186,7 +195,8 @@ void UDailyRewards_C::ClaimResultReceived(TArray<struct FFortItemInstanceQuantit
 
 void UDailyRewards_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd1c2bd8);
 
 	UDailyRewards_C_OnDeactivated_Params params;
 
@@ -203,7 +213,8 @@ void UDailyRewards_C::OnDeactivated()
 
 void UDailyRewards_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffaf52ab);
 
 	UDailyRewards_C_Destruct_Params params;
 
@@ -222,7 +233,8 @@ void UDailyRewards_C::Destruct()
 
 void UDailyRewards_C::ExecuteUbergraph_DailyRewards(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.ExecuteUbergraph_DailyRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdec52de8);
 
 	UDailyRewards_C_ExecuteUbergraph_DailyRewards_Params params;
 	params.EntryPoint = EntryPoint;
@@ -240,7 +252,8 @@ void UDailyRewards_C::ExecuteUbergraph_DailyRewards(int EntryPoint)
 
 void UDailyRewards_C::OnDailyRewardsComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewards.DailyRewards_C.OnDailyRewardsComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe062b9b1);
 
 	UDailyRewards_C_OnDailyRewardsComplete__DelegateSignature_Params params;
 

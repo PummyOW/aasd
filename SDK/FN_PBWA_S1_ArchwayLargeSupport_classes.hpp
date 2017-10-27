@@ -13,14 +13,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass PBWA_S1_ArchwayLargeSupport.PBWA_S1_ArchwayLargeSupport_C
-// 0x0000 (0x10B0 - 0x10B0)
+// 0x0000 (0x10C0 - 0x10C0)
 class APBWA_S1_ArchwayLargeSupport_C : public ABuildingWall
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass PBWA_S1_ArchwayLargeSupport.PBWA_S1_ArchwayLargeSupport_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a5b3331);
 		return ptr;
 	}
 

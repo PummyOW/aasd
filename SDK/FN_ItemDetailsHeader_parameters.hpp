@@ -29,12 +29,6 @@ struct UItemDetailsHeader_C_Construct_Params
 {
 };
 
-// Function ItemDetailsHeader.ItemDetailsHeader_C.PreConstruct
-struct UItemDetailsHeader_C_PreConstruct_Params
-{
-	bool*                                              IsDesignTime;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // Function ItemDetailsHeader.ItemDetailsHeader_C.HandleDifferentItemToDetailSet
 struct UItemDetailsHeader_C_HandleDifferentItemToDetailSet_Params
 {

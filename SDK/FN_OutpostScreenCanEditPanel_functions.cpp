@@ -17,7 +17,8 @@ namespace SDK
 
 void UOutpostScreenCanEditPanel_C::CenterWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.CenterWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c6c7468);
 
 	UOutpostScreenCanEditPanel_C_CenterWidget_Params params;
 
@@ -36,7 +37,8 @@ void UOutpostScreenCanEditPanel_C::CenterWidget()
 
 void UOutpostScreenCanEditPanel_C::SetMasterSwitch(bool bCanEdit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.SetMasterSwitch");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56e18317);
 
 	UOutpostScreenCanEditPanel_C_SetMasterSwitch_Params params;
 	params.bCanEdit = bCanEdit;
@@ -56,7 +58,8 @@ void UOutpostScreenCanEditPanel_C::SetMasterSwitch(bool bCanEdit)
 
 void UOutpostScreenCanEditPanel_C::Init(class AFortPlayerControllerOutpost* InOutpostOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d9ad849);
 
 	UOutpostScreenCanEditPanel_C_Init_Params params;
 	params.InOutpostOwner = InOutpostOwner;
@@ -77,7 +80,8 @@ void UOutpostScreenCanEditPanel_C::Init(class AFortPlayerControllerOutpost* InOu
 
 void UOutpostScreenCanEditPanel_C::BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature(class UFortBaseButton* Button, bool Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a6f5847);
 
 	UOutpostScreenCanEditPanel_C_BndEvt__MasterSwitchButton_K2Node_ComponentBoundEvent_407_FortSelectedStateChanged__DelegateSignature_Params params;
 	params.Button = Button;
@@ -96,7 +100,8 @@ void UOutpostScreenCanEditPanel_C::BndEvt__MasterSwitchButton_K2Node_ComponentBo
 
 void UOutpostScreenCanEditPanel_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1e79cb6);
 
 	UOutpostScreenCanEditPanel_C_Construct_Params params;
 
@@ -115,7 +120,8 @@ void UOutpostScreenCanEditPanel_C::Construct()
 
 void UOutpostScreenCanEditPanel_C::HandleJoined(const struct FFortTeamMemberInfo& NewTeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.HandleJoined");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1149a0d6);
 
 	UOutpostScreenCanEditPanel_C_HandleJoined_Params params;
 	params.NewTeamMemberInfo = NewTeamMemberInfo;
@@ -135,7 +141,8 @@ void UOutpostScreenCanEditPanel_C::HandleJoined(const struct FFortTeamMemberInfo
 
 void UOutpostScreenCanEditPanel_C::HandleRemoved(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.HandleRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2706def3);
 
 	UOutpostScreenCanEditPanel_C_HandleRemoved_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -156,7 +163,8 @@ void UOutpostScreenCanEditPanel_C::HandleRemoved(int PlayerIndex)
 
 void UOutpostScreenCanEditPanel_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_71_CommonSelectedStateChanged__DelegateSignature(class UCommonButton* Button, bool Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_71_CommonSelectedStateChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d7588ce);
 
 	UOutpostScreenCanEditPanel_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_71_CommonSelectedStateChanged__DelegateSignature_Params params;
 	params.Button = Button;
@@ -177,7 +185,8 @@ void UOutpostScreenCanEditPanel_C::BndEvt__IconTextButton_K2Node_ComponentBoundE
 
 void UOutpostScreenCanEditPanel_C::PartyUpdated(const struct FFortTeamMemberInfo& PlayerInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.PartyUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd54b6b52);
 
 	UOutpostScreenCanEditPanel_C_PartyUpdated_Params params;
 	params.PlayerInfo = PlayerInfo;
@@ -197,7 +206,8 @@ void UOutpostScreenCanEditPanel_C::PartyUpdated(const struct FFortTeamMemberInfo
 
 void UOutpostScreenCanEditPanel_C::ExecuteUbergraph_OutpostScreenCanEditPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditPanel.OutpostScreenCanEditPanel_C.ExecuteUbergraph_OutpostScreenCanEditPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95aed353);
 
 	UOutpostScreenCanEditPanel_C_ExecuteUbergraph_OutpostScreenCanEditPanel_Params params;
 	params.EntryPoint = EntryPoint;

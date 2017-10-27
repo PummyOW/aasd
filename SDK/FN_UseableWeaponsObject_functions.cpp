@@ -19,7 +19,8 @@ namespace SDK
 
 void UUseableWeaponsObject_C::ExecuteUbergraph_UseableWeaponsObject(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UseableWeaponsObject.UseableWeaponsObject_C.ExecuteUbergraph_UseableWeaponsObject");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1489a74c);
 
 	UUseableWeaponsObject_C_ExecuteUbergraph_UseableWeaponsObject_Params params;
 	params.EntryPoint = EntryPoint;

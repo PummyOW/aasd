@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_Pickups_C::CreateHologramMIDs()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.CreateHologramMIDs");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb52a6367);
 
 	AB_Pickups_C_CreateHologramMIDs_Params params;
 
@@ -36,7 +37,8 @@ void AB_Pickups_C::CreateHologramMIDs()
 
 void AB_Pickups_C::SetHologramPickedUpParams(bool Tier_0_or_1)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.SetHologramPickedUpParams");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98596215);
 
 	AB_Pickups_C_SetHologramPickedUpParams_Params params;
 	params.Tier_0_or_1 = Tier_0_or_1;
@@ -54,7 +56,8 @@ void AB_Pickups_C::SetHologramPickedUpParams(bool Tier_0_or_1)
 
 void AB_Pickups_C::SpawnPickedUpTrailPS()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.SpawnPickedUpTrailPS");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x513affce);
 
 	AB_Pickups_C_SpawnPickedUpTrailPS_Params params;
 
@@ -71,7 +74,8 @@ void AB_Pickups_C::SpawnPickedUpTrailPS()
 
 void AB_Pickups_C::SetRarityColor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.SetRarityColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ec54469);
 
 	AB_Pickups_C_SetRarityColor_Params params;
 
@@ -88,7 +92,8 @@ void AB_Pickups_C::SetRarityColor()
 
 void AB_Pickups_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe192dcf4);
 
 	AB_Pickups_C_UserConstructionScript_Params params;
 
@@ -107,7 +112,8 @@ void AB_Pickups_C::UserConstructionScript()
 
 void AB_Pickups_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcea181c1);
 
 	AB_Pickups_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -127,7 +133,8 @@ void AB_Pickups_C::ReceiveTick(float* DeltaSeconds)
 
 void AB_Pickups_C::OnAboutToEnterBackpack(class AFortPawn** PickupTarget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.OnAboutToEnterBackpack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcebf7698);
 
 	AB_Pickups_C_OnAboutToEnterBackpack_Params params;
 	params.PickupTarget = PickupTarget;
@@ -145,7 +152,8 @@ void AB_Pickups_C::OnAboutToEnterBackpack(class AFortPawn** PickupTarget)
 
 void AB_Pickups_C::OnTossed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.OnTossed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa88ab0e);
 
 	AB_Pickups_C_OnTossed_Params params;
 
@@ -162,7 +170,8 @@ void AB_Pickups_C::OnTossed()
 
 void AB_Pickups_C::OnPickedUp()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.OnPickedUp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x445668fb);
 
 	AB_Pickups_C_OnPickedUp_Params params;
 
@@ -179,7 +188,8 @@ void AB_Pickups_C::OnPickedUp()
 
 void AB_Pickups_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa3d292b);
 
 	AB_Pickups_C_ReceiveBeginPlay_Params params;
 
@@ -198,7 +208,8 @@ void AB_Pickups_C::ReceiveBeginPlay()
 
 void AB_Pickups_C::ExecuteUbergraph_B_Pickups(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Pickups.B_Pickups_C.ExecuteUbergraph_B_Pickups");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd9a57e35);
 
 	AB_Pickups_C_ExecuteUbergraph_B_Pickups_Params params;
 	params.EntryPoint = EntryPoint;

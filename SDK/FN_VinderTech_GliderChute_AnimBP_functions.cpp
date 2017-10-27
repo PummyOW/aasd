@@ -17,7 +17,8 @@ namespace SDK
 
 void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_713B895F48F2801365CB0CA497F43775()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_713B895F48F2801365CB0CA497F43775");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc55a066a);
 
 	UVinderTech_GliderChute_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_713B895F48F2801365CB0CA497F43775_Params params;
 
@@ -34,7 +35,8 @@ void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergra
 
 void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_6AAED3AF491F53722B9FE2B1DDF77122()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_6AAED3AF491F53722B9FE2B1DDF77122");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x772a202b);
 
 	UVinderTech_GliderChute_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_6AAED3AF491F53722B9FE2B1DDF77122_Params params;
 
@@ -51,7 +53,8 @@ void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergra
 
 void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_326A11214546037B4E81ADB615DF6BEE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_326A11214546037B4E81ADB615DF6BEE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe428bbd6);
 
 	UVinderTech_GliderChute_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_326A11214546037B4E81ADB615DF6BEE_Params params;
 
@@ -68,7 +71,8 @@ void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergra
 
 void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_BlendSpacePlayer_7E66AFF7488A41D3156C3C9367D0163D()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_BlendSpacePlayer_7E66AFF7488A41D3156C3C9367D0163D");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e6cde9e);
 
 	UVinderTech_GliderChute_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_BlendSpacePlayer_7E66AFF7488A41D3156C3C9367D0163D_Params params;
 
@@ -85,7 +89,8 @@ void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergra
 
 void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_953326594E4978729F3C6F9E722F8648()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_953326594E4978729F3C6F9E722F8648");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9a5204d);
 
 	UVinderTech_GliderChute_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_AnimGraphNode_TransitionResult_953326594E4978729F3C6F9E722F8648_Params params;
 
@@ -104,7 +109,8 @@ void UVinderTech_GliderChute_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergra
 
 void UVinderTech_GliderChute_AnimBP_C::BlueprintUpdateAnimation(float* DeltaTimeX)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.BlueprintUpdateAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x923e4e8f);
 
 	UVinderTech_GliderChute_AnimBP_C_BlueprintUpdateAnimation_Params params;
 	params.DeltaTimeX = DeltaTimeX;
@@ -124,7 +130,8 @@ void UVinderTech_GliderChute_AnimBP_C::BlueprintUpdateAnimation(float* DeltaTime
 
 void UVinderTech_GliderChute_AnimBP_C::ExecuteUbergraph_VinderTech_GliderChute_AnimBP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VinderTech_GliderChute_AnimBP.VinderTech_GliderChute_AnimBP_C.ExecuteUbergraph_VinderTech_GliderChute_AnimBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30c5f366);
 
 	UVinderTech_GliderChute_AnimBP_C_ExecuteUbergraph_VinderTech_GliderChute_AnimBP_Params params;
 	params.EntryPoint = EntryPoint;

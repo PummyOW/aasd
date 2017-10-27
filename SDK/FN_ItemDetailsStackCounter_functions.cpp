@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemDetailsStackCounter_C::Refresh_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.Refresh Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e37b5a4);
 
 	UItemDetailsStackCounter_C_Refresh_Visibility_Params params;
 
@@ -36,7 +37,8 @@ void UItemDetailsStackCounter_C::Refresh_Visibility()
 
 void UItemDetailsStackCounter_C::Set_Stack_Count(int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.Set Stack Count");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb098d5c4);
 
 	UItemDetailsStackCounter_C_Set_Stack_Count_Params params;
 	params.Count = Count;
@@ -57,7 +59,8 @@ void UItemDetailsStackCounter_C::Set_Stack_Count(int Count)
 
 void UItemDetailsStackCounter_C::Update(TEnumAsByte<EFortBrushSize> Brush_Size, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0bf1600);
 
 	UItemDetailsStackCounter_C_Update_Params params;
 	params.Brush_Size = Brush_Size;
@@ -78,7 +81,8 @@ void UItemDetailsStackCounter_C::Update(TEnumAsByte<EFortBrushSize> Brush_Size, 
 
 void UItemDetailsStackCounter_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe74b4371);
 
 	UItemDetailsStackCounter_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -96,7 +100,8 @@ void UItemDetailsStackCounter_C::PreConstruct(bool* IsDesignTime)
 
 void UItemDetailsStackCounter_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6337c3da);
 
 	UItemDetailsStackCounter_C_Construct_Params params;
 
@@ -115,7 +120,8 @@ void UItemDetailsStackCounter_C::Construct()
 
 void UItemDetailsStackCounter_C::ExecuteUbergraph_ItemDetailsStackCounter(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.ExecuteUbergraph_ItemDetailsStackCounter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x42afd05c);
 
 	UItemDetailsStackCounter_C_ExecuteUbergraph_ItemDetailsStackCounter_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UMissionObjectiveContentWidgetInterface_C::GetHeightEstimate(float* Height)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveContentWidgetInterface.MissionObjectiveContentWidgetInterface_C.GetHeightEstimate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xedef7910);
 
 	UMissionObjectiveContentWidgetInterface_C_GetHeightEstimate_Params params;
 
@@ -42,7 +43,8 @@ void UMissionObjectiveContentWidgetInterface_C::GetHeightEstimate(float* Height)
 
 void UMissionObjectiveContentWidgetInterface_C::Setup(class AFortObjectiveBase* Objective, bool bInConfigureAsHUD)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveContentWidgetInterface.MissionObjectiveContentWidgetInterface_C.Setup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x633d2bd0);
 
 	UMissionObjectiveContentWidgetInterface_C_Setup_Params params;
 	params.Objective = Objective;

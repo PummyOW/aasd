@@ -19,7 +19,8 @@ namespace SDK
 
 void UEarnedBadgeTile_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EarnedBadgeTile.EarnedBadgeTile_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a73df25);
 
 	UEarnedBadgeTile_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -37,7 +38,8 @@ void UEarnedBadgeTile_C::PreConstruct(bool* IsDesignTime)
 
 void UEarnedBadgeTile_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EarnedBadgeTile.EarnedBadgeTile_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x968181fe);
 
 	UEarnedBadgeTile_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UEarnedBadgeTile_C::Construct()
 
 void UEarnedBadgeTile_C::ExecuteUbergraph_EarnedBadgeTile(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EarnedBadgeTile.EarnedBadgeTile_C.ExecuteUbergraph_EarnedBadgeTile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6224e3cb);
 
 	UEarnedBadgeTile_C_ExecuteUbergraph_EarnedBadgeTile_Params params;
 	params.EntryPoint = EntryPoint;

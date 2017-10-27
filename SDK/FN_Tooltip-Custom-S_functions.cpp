@@ -19,7 +19,8 @@ namespace SDK
 
 struct FSlateBrush UTooltip_Custom_S_C::Get_Icon_Brush()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Custom-S.Tooltip-Custom-S_C.Get Icon Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e3053f6);
 
 	UTooltip_Custom_S_C_Get_Icon_Brush_Params params;
 
@@ -40,7 +41,8 @@ struct FSlateBrush UTooltip_Custom_S_C::Get_Icon_Brush()
 
 struct FText UTooltip_Custom_S_C::Get_Header_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Custom-S.Tooltip-Custom-S_C.Get Header Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55082e33);
 
 	UTooltip_Custom_S_C_Get_Header_Text_Params params;
 
@@ -61,7 +63,8 @@ struct FText UTooltip_Custom_S_C::Get_Header_Text()
 
 struct FText UTooltip_Custom_S_C::Get_Body_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Custom-S.Tooltip-Custom-S_C.Get Body Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6c81262);
 
 	UTooltip_Custom_S_C_Get_Body_Text_Params params;
 
@@ -80,7 +83,8 @@ struct FText UTooltip_Custom_S_C::Get_Body_Text()
 
 void UTooltip_Custom_S_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Custom-S.Tooltip-Custom-S_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99554614);
 
 	UTooltip_Custom_S_C_Construct_Params params;
 
@@ -99,7 +103,8 @@ void UTooltip_Custom_S_C::Construct()
 
 void UTooltip_Custom_S_C::ExecuteUbergraph_Tooltip_Custom_S(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Custom-S.Tooltip-Custom-S_C.ExecuteUbergraph_Tooltip-Custom-S");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcddb1c66);
 
 	UTooltip_Custom_S_C_ExecuteUbergraph_Tooltip_Custom_S_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void USpeechBubbleWidget_C::InitFromObject(class UObject* InitObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SpeechBubbleWidget.SpeechBubbleWidget_C.InitFromObject");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7361f2c);
 
 	USpeechBubbleWidget_C_InitFromObject_Params params;
 	params.InitObject = InitObject;
@@ -39,7 +40,8 @@ void USpeechBubbleWidget_C::InitFromObject(class UObject* InitObject)
 
 void USpeechBubbleWidget_C::ExecuteUbergraph_SpeechBubbleWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SpeechBubbleWidget.SpeechBubbleWidget_C.ExecuteUbergraph_SpeechBubbleWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ca870ef);
 
 	USpeechBubbleWidget_C_ExecuteUbergraph_SpeechBubbleWidget_Params params;
 	params.EntryPoint = EntryPoint;

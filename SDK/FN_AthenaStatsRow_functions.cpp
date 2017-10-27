@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaStatsRow_C::SetStatValueAsText(const struct FText& StatValue)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaStatsRow.AthenaStatsRow_C.SetStatValueAsText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xabcf0017);
 
 	UAthenaStatsRow_C_SetStatValueAsText_Params params;
 	params.StatValue = StatValue;
@@ -39,7 +40,8 @@ void UAthenaStatsRow_C::SetStatValueAsText(const struct FText& StatValue)
 
 void UAthenaStatsRow_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaStatsRow.AthenaStatsRow_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa77b6921);
 
 	UAthenaStatsRow_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -59,7 +61,8 @@ void UAthenaStatsRow_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaStatsRow_C::ExecuteUbergraph_AthenaStatsRow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaStatsRow.AthenaStatsRow_C.ExecuteUbergraph_AthenaStatsRow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12019845);
 
 	UAthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow_Params params;
 	params.EntryPoint = EntryPoint;

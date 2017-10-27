@@ -17,7 +17,8 @@ namespace SDK
 
 void UReticleStatusWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReticleStatusWidget.ReticleStatusWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6457c71e);
 
 	UReticleStatusWidget_C_Construct_Params params;
 
@@ -37,7 +38,8 @@ void UReticleStatusWidget_C::Construct()
 
 void UReticleStatusWidget_C::OnUnableToPerformAction(const struct FGameplayTagContainer& FailedReason, const struct FText& FailureText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReticleStatusWidget.ReticleStatusWidget_C.OnUnableToPerformAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa139a0db);
 
 	UReticleStatusWidget_C_OnUnableToPerformAction_Params params;
 	params.FailedReason = FailedReason;
@@ -58,7 +60,8 @@ void UReticleStatusWidget_C::OnUnableToPerformAction(const struct FGameplayTagCo
 
 void UReticleStatusWidget_C::ExecuteUbergraph_ReticleStatusWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ReticleStatusWidget.ReticleStatusWidget_C.ExecuteUbergraph_ReticleStatusWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7783a343);
 
 	UReticleStatusWidget_C_ExecuteUbergraph_ReticleStatusWidget_Params params;
 	params.EntryPoint = EntryPoint;

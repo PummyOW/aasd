@@ -17,7 +17,8 @@ namespace SDK
 
 void APBW_BP_Parent_C::OnRep_Random_Chance()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PBW_BP_Parent.PBW_BP_Parent_C.OnRep_Random Chance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab33f82b);
 
 	APBW_BP_Parent_C_OnRep_Random_Chance_Params params;
 
@@ -34,7 +35,8 @@ void APBW_BP_Parent_C::OnRep_Random_Chance()
 
 void APBW_BP_Parent_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PBW_BP_Parent.PBW_BP_Parent_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70bf1a5c);
 
 	APBW_BP_Parent_C_UserConstructionScript_Params params;
 
@@ -51,7 +53,8 @@ void APBW_BP_Parent_C::UserConstructionScript()
 
 void APBW_BP_Parent_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PBW_BP_Parent.PBW_BP_Parent_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa6c5383);
 
 	APBW_BP_Parent_C_ReceiveBeginPlay_Params params;
 
@@ -70,7 +73,8 @@ void APBW_BP_Parent_C::ReceiveBeginPlay()
 
 void APBW_BP_Parent_C::ExecuteUbergraph_PBW_BP_Parent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PBW_BP_Parent.PBW_BP_Parent_C.ExecuteUbergraph_PBW_BP_Parent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9107f14);
 
 	APBW_BP_Parent_C_ExecuteUbergraph_PBW_BP_Parent_Params params;
 	params.EntryPoint = EntryPoint;

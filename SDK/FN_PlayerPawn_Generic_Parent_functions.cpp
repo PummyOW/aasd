@@ -21,7 +21,8 @@ namespace SDK
 
 void APlayerPawn_Generic_Parent_C::Teleport(const struct FGameplayCueParameters& GameplayCueParameters, bool TeleportOut_, float Default_PlayLength)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.Teleport");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb63f34b2);
 
 	APlayerPawn_Generic_Parent_C_Teleport_Params params;
 	params.GameplayCueParameters = GameplayCueParameters;
@@ -41,7 +42,8 @@ void APlayerPawn_Generic_Parent_C::Teleport(const struct FGameplayCueParameters&
 
 void APlayerPawn_Generic_Parent_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66a7b7b0);
 
 	APlayerPawn_Generic_Parent_C_UserConstructionScript_Params params;
 
@@ -61,7 +63,8 @@ void APlayerPawn_Generic_Parent_C::UserConstructionScript()
 
 void APlayerPawn_Generic_Parent_C::GameplayCue_Teleport_Out(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.GameplayCue.Teleport.Out");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x607c4251);
 
 	APlayerPawn_Generic_Parent_C_GameplayCue_Teleport_Out_Params params;
 	params.EventType = EventType;
@@ -80,7 +83,8 @@ void APlayerPawn_Generic_Parent_C::GameplayCue_Teleport_Out(TEnumAsByte<EGamepla
 
 void APlayerPawn_Generic_Parent_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f565757);
 
 	APlayerPawn_Generic_Parent_C_ReceiveBeginPlay_Params params;
 
@@ -100,7 +104,8 @@ void APlayerPawn_Generic_Parent_C::ReceiveBeginPlay()
 
 void APlayerPawn_Generic_Parent_C::GameplayCue_Teleport_In(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.GameplayCue.Teleport.In");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b457c96);
 
 	APlayerPawn_Generic_Parent_C_GameplayCue_Teleport_In_Params params;
 	params.EventType = EventType;
@@ -121,7 +126,8 @@ void APlayerPawn_Generic_Parent_C::GameplayCue_Teleport_In(TEnumAsByte<EGameplay
 
 void APlayerPawn_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Generic_Parent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.ExecuteUbergraph_PlayerPawn_Generic_Parent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9654f5bb);
 
 	APlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent_Params params;
 	params.EntryPoint = EntryPoint;

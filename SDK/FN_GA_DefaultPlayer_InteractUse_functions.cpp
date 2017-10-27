@@ -17,7 +17,8 @@ namespace SDK
 
 void UGA_DefaultPlayer_InteractUse_C::OnCancelled_A513E1E044E129CC612DF5A23589BC9C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractUse.GA_DefaultPlayer_InteractUse_C.OnCancelled_A513E1E044E129CC612DF5A23589BC9C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa43cc299);
 
 	UGA_DefaultPlayer_InteractUse_C_OnCancelled_A513E1E044E129CC612DF5A23589BC9C_Params params;
 
@@ -34,7 +35,8 @@ void UGA_DefaultPlayer_InteractUse_C::OnCancelled_A513E1E044E129CC612DF5A23589BC
 
 void UGA_DefaultPlayer_InteractUse_C::OnInterrupted_A513E1E044E129CC612DF5A23589BC9C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractUse.GA_DefaultPlayer_InteractUse_C.OnInterrupted_A513E1E044E129CC612DF5A23589BC9C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75b7cef8);
 
 	UGA_DefaultPlayer_InteractUse_C_OnInterrupted_A513E1E044E129CC612DF5A23589BC9C_Params params;
 
@@ -51,7 +53,8 @@ void UGA_DefaultPlayer_InteractUse_C::OnInterrupted_A513E1E044E129CC612DF5A23589
 
 void UGA_DefaultPlayer_InteractUse_C::OnBlendOut_A513E1E044E129CC612DF5A23589BC9C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractUse.GA_DefaultPlayer_InteractUse_C.OnBlendOut_A513E1E044E129CC612DF5A23589BC9C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5f687ab);
 
 	UGA_DefaultPlayer_InteractUse_C_OnBlendOut_A513E1E044E129CC612DF5A23589BC9C_Params params;
 
@@ -68,7 +71,8 @@ void UGA_DefaultPlayer_InteractUse_C::OnBlendOut_A513E1E044E129CC612DF5A23589BC9
 
 void UGA_DefaultPlayer_InteractUse_C::OnCompleted_A513E1E044E129CC612DF5A23589BC9C()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractUse.GA_DefaultPlayer_InteractUse_C.OnCompleted_A513E1E044E129CC612DF5A23589BC9C");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x189b5cc7);
 
 	UGA_DefaultPlayer_InteractUse_C_OnCompleted_A513E1E044E129CC612DF5A23589BC9C_Params params;
 
@@ -85,7 +89,8 @@ void UGA_DefaultPlayer_InteractUse_C::OnCompleted_A513E1E044E129CC612DF5A23589BC
 
 void UGA_DefaultPlayer_InteractUse_C::K2_ActivateAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractUse.GA_DefaultPlayer_InteractUse_C.K2_ActivateAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23fbafc);
 
 	UGA_DefaultPlayer_InteractUse_C_K2_ActivateAbility_Params params;
 
@@ -104,7 +109,8 @@ void UGA_DefaultPlayer_InteractUse_C::K2_ActivateAbility()
 
 void UGA_DefaultPlayer_InteractUse_C::ExecuteUbergraph_GA_DefaultPlayer_InteractUse(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_InteractUse.GA_DefaultPlayer_InteractUse_C.ExecuteUbergraph_GA_DefaultPlayer_InteractUse");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5fe86536);
 
 	UGA_DefaultPlayer_InteractUse_C_ExecuteUbergraph_GA_DefaultPlayer_InteractUse_Params params;
 	params.EntryPoint = EntryPoint;

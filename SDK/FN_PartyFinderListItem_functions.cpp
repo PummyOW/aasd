@@ -17,7 +17,8 @@ namespace SDK
 
 void UPartyFinderListItem_C::UnbindSocialItemDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.UnbindSocialItemDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c4dbf61);
 
 	UPartyFinderListItem_C_UnbindSocialItemDelegates_Params params;
 
@@ -34,7 +35,8 @@ void UPartyFinderListItem_C::UnbindSocialItemDelegates()
 
 void UPartyFinderListItem_C::UpdateStateText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.UpdateStateText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4282f5ae);
 
 	UPartyFinderListItem_C_UpdateStateText_Params params;
 
@@ -53,7 +55,8 @@ void UPartyFinderListItem_C::UpdateStateText()
 
 void UPartyFinderListItem_C::SetupExpansion(bool Expanded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.SetupExpansion");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xace55ba5);
 
 	UPartyFinderListItem_C_SetupExpansion_Params params;
 	params.Expanded = Expanded;
@@ -71,7 +74,8 @@ void UPartyFinderListItem_C::SetupExpansion(bool Expanded)
 
 void UPartyFinderListItem_C::HandlePresenceUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.HandlePresenceUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc49be0b7);
 
 	UPartyFinderListItem_C_HandlePresenceUpdated_Params params;
 
@@ -88,7 +92,8 @@ void UPartyFinderListItem_C::HandlePresenceUpdated()
 
 void UPartyFinderListItem_C::BindSocialItemDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.BindSocialItemDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd5900d2);
 
 	UPartyFinderListItem_C_BindSocialItemDelegates_Params params;
 
@@ -105,7 +110,8 @@ void UPartyFinderListItem_C::BindSocialItemDelegates()
 
 void UPartyFinderListItem_C::InitializeItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.InitializeItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd2c7974);
 
 	UPartyFinderListItem_C_InitializeItem_Params params;
 
@@ -122,7 +128,8 @@ void UPartyFinderListItem_C::InitializeItem()
 
 void UPartyFinderListItem_C::OnSocialItemSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.OnSocialItemSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4550a5d4);
 
 	UPartyFinderListItem_C_OnSocialItemSet_Params params;
 
@@ -141,7 +148,8 @@ void UPartyFinderListItem_C::OnSocialItemSet()
 
 void UPartyFinderListItem_C::ExpansionChanged(bool* bExpanded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.ExpansionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbade36a2);
 
 	UPartyFinderListItem_C_ExpansionChanged_Params params;
 	params.bExpanded = bExpanded;
@@ -159,7 +167,8 @@ void UPartyFinderListItem_C::ExpansionChanged(bool* bExpanded)
 
 void UPartyFinderListItem_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc6b0c6);
 
 	UPartyFinderListItem_C_Construct_Params params;
 
@@ -176,7 +185,8 @@ void UPartyFinderListItem_C::Construct()
 
 void UPartyFinderListItem_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd86bcd5);
 
 	UPartyFinderListItem_C_Destruct_Params params;
 
@@ -195,7 +205,8 @@ void UPartyFinderListItem_C::Destruct()
 
 void UPartyFinderListItem_C::ExecuteUbergraph_PartyFinderListItem(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.ExecuteUbergraph_PartyFinderListItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5f9a9ac);
 
 	UPartyFinderListItem_C_ExecuteUbergraph_PartyFinderListItem_Params params;
 	params.EntryPoint = EntryPoint;
@@ -213,7 +224,8 @@ void UPartyFinderListItem_C::ExecuteUbergraph_PartyFinderListItem(int EntryPoint
 
 void UPartyFinderListItem_C::InviteJoinChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyFinderListItem.PartyFinderListItem_C.InviteJoinChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93bd764f);
 
 	UPartyFinderListItem_C_InviteJoinChanged__DelegateSignature_Params params;
 

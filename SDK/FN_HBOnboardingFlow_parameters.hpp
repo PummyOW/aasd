@@ -14,6 +14,24 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function HBOnboardingFlow.HBOnboardingFlow_C.CanAccessManagementFeatures
+struct AHBOnboardingFlow_C_CanAccessManagementFeatures_Params
+{
+	bool                                               Can_Manage;                                               // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.RecheckNeedToPlayEventMovie
+struct AHBOnboardingFlow_C_RecheckNeedToPlayEventMovie_Params
+{
+	bool                                               WaitingToCheckAgain;                                      // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.NeedsToPlayEventMovie
+struct AHBOnboardingFlow_C_NeedsToPlayEventMovie_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
 // Function HBOnboardingFlow.HBOnboardingFlow_C.Handle Client Quest Login Failed
 struct AHBOnboardingFlow_C_Handle_Client_Quest_Login_Failed_Params
 {
@@ -50,13 +68,13 @@ struct AHBOnboardingFlow_C_OnAllClientsReady_C2C889344301B8DBF8F046A2A175D133_Pa
 {
 };
 
-// Function HBOnboardingFlow.HBOnboardingFlow_C.OnCanceled_856A325D44ECC73B857CE5B35313D7CD
-struct AHBOnboardingFlow_C_OnCanceled_856A325D44ECC73B857CE5B35313D7CD_Params
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnCanceled_856A325D44ECC73B857CE5B301E90D33
+struct AHBOnboardingFlow_C_OnCanceled_856A325D44ECC73B857CE5B301E90D33_Params
 {
 };
 
-// Function HBOnboardingFlow.HBOnboardingFlow_C.OnAllClientsReady_856A325D44ECC73B857CE5B35313D7CD
-struct AHBOnboardingFlow_C_OnAllClientsReady_856A325D44ECC73B857CE5B35313D7CD_Params
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33
+struct AHBOnboardingFlow_C_OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33_Params
 {
 };
 
@@ -92,6 +110,16 @@ struct AHBOnboardingFlow_C_OnSuccess_F17CF9054AFDDDAF314AC4911BC9818F_Params
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.OnStateEntered_CC1C02F844ADF1F9F5546C8115CF00F0
 struct AHBOnboardingFlow_C_OnStateEntered_CC1C02F844ADF1F9F5546C8115CF00F0_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnCanceled_856A325D44ECC73B857CE5B35313D7CD
+struct AHBOnboardingFlow_C_OnCanceled_856A325D44ECC73B857CE5B35313D7CD_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnAllClientsReady_856A325D44ECC73B857CE5B35313D7CD
+struct AHBOnboardingFlow_C_OnAllClientsReady_856A325D44ECC73B857CE5B35313D7CD_Params
 {
 };
 
@@ -132,6 +160,33 @@ struct AHBOnboardingFlow_C_OnStateEntered_7FBC276641DD576B7417ED97A4734318_Param
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.OnStateEntered_B1212BA945BD8297BCCDC69BA3015CC2
 struct AHBOnboardingFlow_C_OnStateEntered_B1212BA945BD8297BCCDC69BA3015CC2_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.DialogResult_1D81E4B94CE33A3425130BABD5A7283B
+struct AHBOnboardingFlow_C_DialogResult_1D81E4B94CE33A3425130BABD5A7283B_Params
+{
+	EFortDialogResult                                  Result;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       ResultName;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnStateEntered_7E48C3B34B1AC823ECCC5BB9D4D63515
+struct AHBOnboardingFlow_C_OnStateEntered_7E48C3B34B1AC823ECCC5BB9D4D63515_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnFailure_50CD26324B96B121A5B49DA66113AE5D
+struct AHBOnboardingFlow_C_OnFailure_50CD26324B96B121A5B49DA66113AE5D_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnIgnored_50CD26324B96B121A5B49DA66113AE5D
+struct AHBOnboardingFlow_C_OnIgnored_50CD26324B96B121A5B49DA66113AE5D_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.OnSuccess_50CD26324B96B121A5B49DA66113AE5D
+struct AHBOnboardingFlow_C_OnSuccess_50CD26324B96B121A5B49DA66113AE5D_Params
 {
 };
 
@@ -219,6 +274,41 @@ struct AHBOnboardingFlow_C_HandleSubGameSelection_Params
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.HandleClientEvent_OnRejoinGameAbandoned
 struct AHBOnboardingFlow_C_HandleClientEvent_OnRejoinGameAbandoned_Params
+{
+	class UObject*                                     EventSource;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UObject*                                     EventFocus;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FFortClientEvent                            ClientEvent;                                              // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.HandleCompanionAppOnboardingAbort
+struct AHBOnboardingFlow_C_HandleCompanionAppOnboardingAbort_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.HandleNoEntitlement
+struct AHBOnboardingFlow_C_HandleNoEntitlement_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.HandleForcedLogout
+struct AHBOnboardingFlow_C_HandleForcedLogout_Params
+{
+	struct FText                                       Reason_Title;                                             // (CPF_Parm)
+	struct FText                                       Reason;                                                   // (CPF_Parm)
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.HandlePlayEventCine
+struct AHBOnboardingFlow_C_HandlePlayEventCine_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.HandleMobileManagementRestricted
+struct AHBOnboardingFlow_C_HandleMobileManagementRestricted_Params
+{
+};
+
+// Function HBOnboardingFlow.HBOnboardingFlow_C.HandleClientEvent_PlayEventMovie
+struct AHBOnboardingFlow_C_HandleClientEvent_PlayEventMovie_Params
 {
 	class UObject*                                     EventSource;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UObject*                                     EventFocus;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)

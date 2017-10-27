@@ -17,7 +17,8 @@ namespace SDK
 
 void ABP_PlayerControllerOutpost_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63f0fc60);
 
 	ABP_PlayerControllerOutpost_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void ABP_PlayerControllerOutpost_C::UserConstructionScript()
 
 void ABP_PlayerControllerOutpost_C::ServerStartExpandingOutpost(bool GetHelp)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C.ServerStartExpandingOutpost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa75af50);
 
 	ABP_PlayerControllerOutpost_C_ServerStartExpandingOutpost_Params params;
 	params.GetHelp = GetHelp;
@@ -56,7 +58,8 @@ void ABP_PlayerControllerOutpost_C::ServerStartExpandingOutpost(bool GetHelp)
 
 void ABP_PlayerControllerOutpost_C::ExecuteUbergraph_BP_PlayerControllerOutpost(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_PlayerControllerOutpost.BP_PlayerControllerOutpost_C.ExecuteUbergraph_BP_PlayerControllerOutpost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5af2d19f);
 
 	ABP_PlayerControllerOutpost_C_ExecuteUbergraph_BP_PlayerControllerOutpost_Params params;
 	params.EntryPoint = EntryPoint;

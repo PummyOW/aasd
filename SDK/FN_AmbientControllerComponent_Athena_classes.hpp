@@ -41,7 +41,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass AmbientControllerComponent_Athena.AmbientControllerComponent_Athena_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5c79775);
 		return ptr;
 	}
 

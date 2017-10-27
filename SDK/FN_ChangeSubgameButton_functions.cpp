@@ -20,7 +20,8 @@ namespace SDK
 
 void UChangeSubgameButton_C::DialogResult_3A1F478D47C301F9F1E029927174E059(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.DialogResult_3A1F478D47C301F9F1E029927174E059");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb318fe08);
 
 	UChangeSubgameButton_C_DialogResult_3A1F478D47C301F9F1E029927174E059_Params params;
 	params.Result = Result;
@@ -39,7 +40,8 @@ void UChangeSubgameButton_C::DialogResult_3A1F478D47C301F9F1E029927174E059(EFort
 
 void UChangeSubgameButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdddf773a);
 
 	UChangeSubgameButton_C_Construct_Params params;
 
@@ -58,7 +60,8 @@ void UChangeSubgameButton_C::Construct()
 
 void UChangeSubgameButton_C::BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3dd67d87);
 
 	UChangeSubgameButton_C_BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -76,7 +79,8 @@ void UChangeSubgameButton_C::BndEvt__Leave_K2Node_ComponentBoundEvent_90_CommonB
 
 void UChangeSubgameButton_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72ad3561);
 
 	UChangeSubgameButton_C_Destruct_Params params;
 
@@ -95,7 +99,8 @@ void UChangeSubgameButton_C::Destruct()
 
 void UChangeSubgameButton_C::UpdateButtonState(bool* bVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.UpdateButtonState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa399e10b);
 
 	UChangeSubgameButton_C_UpdateButtonState_Params params;
 	params.bVisible = bVisible;
@@ -116,7 +121,8 @@ void UChangeSubgameButton_C::UpdateButtonState(bool* bVisible)
 
 void UChangeSubgameButton_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55e52ed1);
 
 	UChangeSubgameButton_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -137,7 +143,8 @@ void UChangeSubgameButton_C::OnMouseEnter(struct FGeometry* MyGeometry, struct F
 
 void UChangeSubgameButton_C::ExecuteUbergraph_ChangeSubgameButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.ExecuteUbergraph_ChangeSubgameButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6ca8019);
 
 	UChangeSubgameButton_C_ExecuteUbergraph_ChangeSubgameButton_Params params;
 	params.EntryPoint = EntryPoint;
@@ -155,7 +162,8 @@ void UChangeSubgameButton_C::ExecuteUbergraph_ChangeSubgameButton(int EntryPoint
 
 void UChangeSubgameButton_C::OnClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ChangeSubgameButton.ChangeSubgameButton_C.OnClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ef83fea);
 
 	UChangeSubgameButton_C_OnClicked__DelegateSignature_Params params;
 

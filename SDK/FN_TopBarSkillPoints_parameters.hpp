@@ -14,6 +14,18 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function TopBarSkillPoints.TopBarSkillPoints_C.GetMissionRewardBadgeTooltipWidget
+struct UTopBarSkillPoints_C_GetMissionRewardBadgeTooltipWidget_Params
+{
+	class UWidget*                                     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function TopBarSkillPoints.TopBarSkillPoints_C.Has Mission Reward Boost
+struct UTopBarSkillPoints_C_Has_Mission_Reward_Boost_Params
+{
+	bool                                               Result;                                                   // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function TopBarSkillPoints.TopBarSkillPoints_C.GetFounderBadgetTooltipWidget
 struct UTopBarSkillPoints_C_GetFounderBadgetTooltipWidget_Params
 {

@@ -13,15 +13,16 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass TheaterMapViewer.TheaterMapViewer_C
-// 0x0008 (0x0618 - 0x0610)
+// 0x0008 (0x0698 - 0x0690)
 class ATheaterMapViewer_C : public AFortTheaterMapViewer
 {
 public:
-	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0610(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0690(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass TheaterMapViewer.TheaterMapViewer_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x136a8c8f);
 		return ptr;
 	}
 

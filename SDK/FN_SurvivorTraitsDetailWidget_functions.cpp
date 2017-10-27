@@ -17,7 +17,8 @@ namespace SDK
 
 void USurvivorTraitsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SurvivorTraitsDetailWidget.SurvivorTraitsDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7701c651);
 
 	USurvivorTraitsDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -36,7 +37,8 @@ void USurvivorTraitsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void USurvivorTraitsDetailWidget_C::ExecuteUbergraph_SurvivorTraitsDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SurvivorTraitsDetailWidget.SurvivorTraitsDetailWidget_C.ExecuteUbergraph_SurvivorTraitsDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef8dae5);
 
 	USurvivorTraitsDetailWidget_C_ExecuteUbergraph_SurvivorTraitsDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

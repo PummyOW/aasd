@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_CameraRainDrops_01_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_CameraRainDrops_01.B_CameraRainDrops_01_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ae42c1c);
 
 	AB_CameraRainDrops_01_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AB_CameraRainDrops_01_C::UserConstructionScript()
 
 void AB_CameraRainDrops_01_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_CameraRainDrops_01.B_CameraRainDrops_01_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38160743);
 
 	AB_CameraRainDrops_01_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +55,8 @@ void AB_CameraRainDrops_01_C::ReceiveBeginPlay()
 
 void AB_CameraRainDrops_01_C::ExecuteUbergraph_B_CameraRainDrops_01(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_CameraRainDrops_01.B_CameraRainDrops_01_C.ExecuteUbergraph_B_CameraRainDrops_01");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x110787c1);
 
 	AB_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01_Params params;
 	params.EntryPoint = EntryPoint;

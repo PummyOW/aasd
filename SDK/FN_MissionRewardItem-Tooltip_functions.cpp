@@ -19,7 +19,8 @@ namespace SDK
 
 struct FSlateColor UMissionRewardItem_Tooltip_C::Get_Rarity_Color__SlateColor_()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionRewardItem-Tooltip.MissionRewardItem-Tooltip_C.Get Rarity Color (SlateColor)");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf09a550);
 
 	UMissionRewardItem_Tooltip_C_Get_Rarity_Color__SlateColor__Params params;
 
@@ -40,7 +41,8 @@ struct FSlateColor UMissionRewardItem_Tooltip_C::Get_Rarity_Color__SlateColor_()
 
 struct FLinearColor UMissionRewardItem_Tooltip_C::Get_Rarity_Color()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionRewardItem-Tooltip.MissionRewardItem-Tooltip_C.Get Rarity Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xebaf55b7);
 
 	UMissionRewardItem_Tooltip_C_Get_Rarity_Color_Params params;
 
@@ -61,7 +63,8 @@ struct FLinearColor UMissionRewardItem_Tooltip_C::Get_Rarity_Color()
 
 struct FSlateBrush UMissionRewardItem_Tooltip_C::Get_Reward_Icon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionRewardItem-Tooltip.MissionRewardItem-Tooltip_C.Get Reward Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62928fc5);
 
 	UMissionRewardItem_Tooltip_C_Get_Reward_Icon_Params params;
 
@@ -82,7 +85,8 @@ struct FSlateBrush UMissionRewardItem_Tooltip_C::Get_Reward_Icon()
 
 struct FText UMissionRewardItem_Tooltip_C::Get_Reward_Name()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionRewardItem-Tooltip.MissionRewardItem-Tooltip_C.Get Reward Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7ba99e3);
 
 	UMissionRewardItem_Tooltip_C_Get_Reward_Name_Params params;
 

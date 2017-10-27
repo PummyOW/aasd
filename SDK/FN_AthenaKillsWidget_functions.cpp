@@ -20,7 +20,8 @@ namespace SDK
 
 void UAthenaKillsWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillsWidget.AthenaKillsWidget_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87954df8);
 
 	UAthenaKillsWidget_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -41,7 +42,8 @@ void UAthenaKillsWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime
 
 void UAthenaKillsWidget_C::ExecuteUbergraph_AthenaKillsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillsWidget.AthenaKillsWidget_C.ExecuteUbergraph_AthenaKillsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c86bb0d);
 
 	UAthenaKillsWidget_C_ExecuteUbergraph_AthenaKillsWidget_Params params;
 	params.EntryPoint = EntryPoint;

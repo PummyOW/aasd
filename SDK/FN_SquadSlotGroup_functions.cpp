@@ -17,7 +17,8 @@ namespace SDK
 
 void USquadSlotGroup_C::RemoveDarkeningFromAllSlotsInGroup()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.RemoveDarkeningFromAllSlotsInGroup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d14c74e);
 
 	USquadSlotGroup_C_RemoveDarkeningFromAllSlotsInGroup_Params params;
 
@@ -36,7 +37,8 @@ void USquadSlotGroup_C::RemoveDarkeningFromAllSlotsInGroup()
 
 void USquadSlotGroup_C::DarkenAllSlotsExceptIndex(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.DarkenAllSlotsExceptIndex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea66075d);
 
 	USquadSlotGroup_C_DarkenAllSlotsExceptIndex_Params params;
 	params.Index = Index;
@@ -56,7 +58,8 @@ void USquadSlotGroup_C::DarkenAllSlotsExceptIndex(int Index)
 
 void USquadSlotGroup_C::SelectSquadSlot(int SlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.SelectSquadSlot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x956826d9);
 
 	USquadSlotGroup_C_SelectSquadSlot_Params params;
 	params.SlotIndex = SlotIndex;
@@ -76,7 +79,8 @@ void USquadSlotGroup_C::SelectSquadSlot(int SlotIndex)
 
 class UWidget* USquadSlotGroup_C::Get_SquadSlotBox_ToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.Get_SquadSlotBox_ToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8990117);
 
 	USquadSlotGroup_C_Get_SquadSlotBox_ToolTipWidget_Params params;
 
@@ -95,7 +99,8 @@ class UWidget* USquadSlotGroup_C::Get_SquadSlotBox_ToolTipWidget()
 
 void USquadSlotGroup_C::Update_Squad_Slot_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.Update Squad Slot Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ae030f0);
 
 	USquadSlotGroup_C_Update_Squad_Slot_Visibility_Params params;
 
@@ -114,7 +119,8 @@ void USquadSlotGroup_C::Update_Squad_Slot_Visibility()
 
 void USquadSlotGroup_C::AddSquadSlots(TArray<class UWidget*>* SquadSlots)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.AddSquadSlots");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe033ab2f);
 
 	USquadSlotGroup_C_AddSquadSlots_Params params;
 
@@ -136,7 +142,8 @@ void USquadSlotGroup_C::AddSquadSlots(TArray<class UWidget*>* SquadSlots)
 
 void USquadSlotGroup_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9da4e06b);
 
 	USquadSlotGroup_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -157,7 +164,8 @@ void USquadSlotGroup_C::PreConstruct(bool* IsDesignTime)
 
 void USquadSlotGroup_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77bdd5ff);
 
 	USquadSlotGroup_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -178,7 +186,8 @@ void USquadSlotGroup_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoint
 
 void USquadSlotGroup_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b14448);
 
 	USquadSlotGroup_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -198,7 +207,8 @@ void USquadSlotGroup_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void USquadSlotGroup_C::ExecuteUbergraph_SquadSlotGroup(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.ExecuteUbergraph_SquadSlotGroup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5152cda);
 
 	USquadSlotGroup_C_ExecuteUbergraph_SquadSlotGroup_Params params;
 	params.EntryPoint = EntryPoint;
@@ -216,7 +226,8 @@ void USquadSlotGroup_C::ExecuteUbergraph_SquadSlotGroup(int EntryPoint)
 
 void USquadSlotGroup_C::HandleMouseLeave__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.HandleMouseLeave__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7bc567c);
 
 	USquadSlotGroup_C_HandleMouseLeave__DelegateSignature_Params params;
 
@@ -233,7 +244,8 @@ void USquadSlotGroup_C::HandleMouseLeave__DelegateSignature()
 
 void USquadSlotGroup_C::HandleMouseEnter__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotGroup.SquadSlotGroup_C.HandleMouseEnter__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x169da641);
 
 	USquadSlotGroup_C_HandleMouseEnter__DelegateSignature_Params params;
 

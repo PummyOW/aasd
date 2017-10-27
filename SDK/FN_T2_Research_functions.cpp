@@ -19,7 +19,8 @@ namespace SDK
 
 void UT2_Research_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T2_Research.T2_Research_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0c49785);
 
 	UT2_Research_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -37,7 +38,8 @@ void UT2_Research_C::PreConstruct(bool* IsDesignTime)
 
 void UT2_Research_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T2_Research.T2_Research_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x683ee01e);
 
 	UT2_Research_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UT2_Research_C::Construct()
 
 void UT2_Research_C::ExecuteUbergraph_T2_Research(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T2_Research.T2_Research_C.ExecuteUbergraph_T2_Research");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe9ed1e3);
 
 	UT2_Research_C_ExecuteUbergraph_T2_Research_Params params;
 	params.EntryPoint = EntryPoint;

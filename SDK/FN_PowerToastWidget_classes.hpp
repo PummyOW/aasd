@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass PowerToastWidget.PowerToastWidget_C
-// 0x0091 (0x02F1 - 0x0260)
+// 0x00A4 (0x0304 - 0x0260)
 class UPowerToastWidget_C : public UFortPlayerTrackerBase
 {
 public:
@@ -36,17 +36,23 @@ public:
 	struct FScriptMulticastDelegate                    OnFinishedToast;                                          // 0x02D8(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_BlueprintAssignable)
 	struct FTimerHandle                                AnimationDelayTimer;                                      // 0x02E8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
 	bool                                               Show_Toast;                                               // 0x02F0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x02F1(0x0007) MISSED OFFSET
+	struct FTimerHandle                                SynchronizeTimeoutTimer;                                  // 0x02F8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
+	float                                              SynchronizeTimeoutDuration;                               // 0x0300(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass PowerToastWidget.PowerToastWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa61c0095);
 		return ptr;
 	}
 
 
+	void UpdatePowerRating();
 	void StartIntro();
 	void ShowText(const struct FText& Text, class UCommonTextBlock* TextBlock);
 	void SetToast(class UFortUINotification* Toast);
+	void Construct();
 	void HandleIntroFinished();
 	void HandleOutroFinished();
 	void HandleAnimationDelay();
@@ -54,10 +60,10 @@ public:
 	void OnMouseLeave(struct FPointerEvent* MouseEvent);
 	void BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void OnPlayerInfoChanged(struct FFortTeamMemberInfo* NewInfo);
-	void Construct();
 	void BndEvt__Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void BndEvt__Outro_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature();
 	void OnTeamMemberFinishedSynchronizing_Event_1(const struct FUniqueNetIdRepl& NewTeamMemberId);
+	void HandleSynchronizeTimeout();
 	void ExecuteUbergraph_PowerToastWidget(int EntryPoint);
 	void OnFinishedToast__DelegateSignature();
 };

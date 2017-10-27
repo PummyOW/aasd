@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaSessionId_C::UpdateSessionId()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaSessionId.AthenaSessionId_C.UpdateSessionId");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x858f16b7);
 
 	UAthenaSessionId_C_UpdateSessionId_Params params;
 
@@ -34,7 +35,8 @@ void UAthenaSessionId_C::UpdateSessionId()
 
 void UAthenaSessionId_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaSessionId.AthenaSessionId_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ee0576);
 
 	UAthenaSessionId_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UAthenaSessionId_C::Construct()
 
 void UAthenaSessionId_C::ExecuteUbergraph_AthenaSessionId(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaSessionId.AthenaSessionId_C.ExecuteUbergraph_AthenaSessionId");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x43a37475);
 
 	UAthenaSessionId_C_ExecuteUbergraph_AthenaSessionId_Params params;
 	params.EntryPoint = EntryPoint;

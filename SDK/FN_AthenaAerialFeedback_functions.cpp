@@ -20,7 +20,8 @@ namespace SDK
 
 void UAthenaAerialFeedback_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaAerialFeedback.AthenaAerialFeedback_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14f385f0);
 
 	UAthenaAerialFeedback_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -41,7 +42,8 @@ void UAthenaAerialFeedback_C::Tick(struct FGeometry* MyGeometry, float* InDeltaT
 
 void UAthenaAerialFeedback_C::ExecuteUbergraph_AthenaAerialFeedback(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaAerialFeedback.AthenaAerialFeedback_C.ExecuteUbergraph_AthenaAerialFeedback");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf650421);
 
 	UAthenaAerialFeedback_C_ExecuteUbergraph_AthenaAerialFeedback_Params params;
 	params.EntryPoint = EntryPoint;

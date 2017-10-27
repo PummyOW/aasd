@@ -19,7 +19,8 @@ namespace SDK
 
 void UGA_Default_KilledEnemy_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_Default_KilledEnemy.GA_Default_KilledEnemy_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb9951ee);
 
 	UGA_Default_KilledEnemy_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -39,7 +40,8 @@ void UGA_Default_KilledEnemy_C::K2_ActivateAbilityFromEvent(struct FGameplayEven
 
 void UGA_Default_KilledEnemy_C::ExecuteUbergraph_GA_Default_KilledEnemy(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_Default_KilledEnemy.GA_Default_KilledEnemy_C.ExecuteUbergraph_GA_Default_KilledEnemy");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a61dc4d);
 
 	UGA_Default_KilledEnemy_C_ExecuteUbergraph_GA_Default_KilledEnemy_Params params;
 	params.EntryPoint = EntryPoint;

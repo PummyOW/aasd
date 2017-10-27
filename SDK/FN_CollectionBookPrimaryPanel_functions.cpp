@@ -19,7 +19,8 @@ namespace SDK
 
 void UCollectionBookPrimaryPanel_C::OnSummonInfoPanelExecuted(bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C.OnSummonInfoPanelExecuted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a2bd64c);
 
 	UCollectionBookPrimaryPanel_C_OnSummonInfoPanelExecuted_Params params;
 
@@ -39,7 +40,8 @@ void UCollectionBookPrimaryPanel_C::OnSummonInfoPanelExecuted(bool* bPassThrough
 
 void UCollectionBookPrimaryPanel_C::HandleDisplayInfoBox()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C.HandleDisplayInfoBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd370ade);
 
 	UCollectionBookPrimaryPanel_C_HandleDisplayInfoBox_Params params;
 
@@ -58,7 +60,8 @@ void UCollectionBookPrimaryPanel_C::HandleDisplayInfoBox()
 
 void UCollectionBookPrimaryPanel_C::ExecuteUbergraph_CollectionBookPrimaryPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPrimaryPanel.CollectionBookPrimaryPanel_C.ExecuteUbergraph_CollectionBookPrimaryPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9056493e);
 
 	UCollectionBookPrimaryPanel_C_ExecuteUbergraph_CollectionBookPrimaryPanel_Params params;
 	params.EntryPoint = EntryPoint;

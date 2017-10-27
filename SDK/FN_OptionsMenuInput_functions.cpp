@@ -19,7 +19,8 @@ namespace SDK
 
 int UOptionsMenuInput_C::DoesItemHaveChildren()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.DoesItemHaveChildren");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65faecb4);
 
 	UOptionsMenuInput_C_DoesItemHaveChildren_Params params;
 
@@ -40,7 +41,8 @@ int UOptionsMenuInput_C::DoesItemHaveChildren()
 
 int UOptionsMenuInput_C::GetIndentLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.GetIndentLevel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd855d921);
 
 	UOptionsMenuInput_C_GetIndentLevel_Params params;
 
@@ -61,7 +63,8 @@ int UOptionsMenuInput_C::GetIndentLevel()
 
 bool UOptionsMenuInput_C::IsItemExpanded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.IsItemExpanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96e2b5f3);
 
 	UOptionsMenuInput_C_IsItemExpanded_Params params;
 
@@ -82,7 +85,8 @@ bool UOptionsMenuInput_C::IsItemExpanded()
 
 class UObject* UOptionsMenuInput_C::GetData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.GetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x953127ff);
 
 	UOptionsMenuInput_C_GetData_Params params;
 
@@ -104,7 +108,8 @@ class UObject* UOptionsMenuInput_C::GetData()
 
 void UOptionsMenuInput_C::Change_Key(bool Primary_Key, const struct FText& Key_To_Sets)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.Change Key");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9db251bc);
 
 	UOptionsMenuInput_C_Change_Key_Params params;
 	params.Primary_Key = Primary_Key;
@@ -123,7 +128,8 @@ void UOptionsMenuInput_C::Change_Key(bool Primary_Key, const struct FText& Key_T
 
 void UOptionsMenuInput_C::Center_on_Widget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.Center on Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc759cb73);
 
 	UOptionsMenuInput_C_Center_on_Widget_Params params;
 
@@ -140,7 +146,8 @@ void UOptionsMenuInput_C::Center_on_Widget()
 
 void UOptionsMenuInput_C::OnAcquireFromPool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.OnAcquireFromPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd83c78f8);
 
 	UOptionsMenuInput_C_OnAcquireFromPool_Params params;
 
@@ -157,7 +164,8 @@ void UOptionsMenuInput_C::OnAcquireFromPool()
 
 void UOptionsMenuInput_C::OnReleaseToPool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.OnReleaseToPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50151f8);
 
 	UOptionsMenuInput_C_OnReleaseToPool_Params params;
 
@@ -174,7 +182,8 @@ void UOptionsMenuInput_C::OnReleaseToPool()
 
 void UOptionsMenuInput_C::Private_OnExpanderArrowShiftClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.Private_OnExpanderArrowShiftClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb33773b5);
 
 	UOptionsMenuInput_C_Private_OnExpanderArrowShiftClicked_Params params;
 
@@ -193,7 +202,8 @@ void UOptionsMenuInput_C::Private_OnExpanderArrowShiftClicked()
 
 void UOptionsMenuInput_C::RegisterOnClicked(const struct FScriptDelegate& Callback)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.RegisterOnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3c501a0);
 
 	UOptionsMenuInput_C_RegisterOnClicked_Params params;
 	params.Callback = Callback;
@@ -213,7 +223,8 @@ void UOptionsMenuInput_C::RegisterOnClicked(const struct FScriptDelegate& Callba
 
 void UOptionsMenuInput_C::SetExpanded(bool bExpanded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.SetExpanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd762578c);
 
 	UOptionsMenuInput_C_SetExpanded_Params params;
 	params.bExpanded = bExpanded;
@@ -233,7 +244,8 @@ void UOptionsMenuInput_C::SetExpanded(bool bExpanded)
 
 void UOptionsMenuInput_C::SetIndexInList(int InIndexInList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.SetIndexInList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x318d15b4);
 
 	UOptionsMenuInput_C_SetIndexInList_Params params;
 	params.InIndexInList = InIndexInList;
@@ -253,7 +265,8 @@ void UOptionsMenuInput_C::SetIndexInList(int InIndexInList)
 
 void UOptionsMenuInput_C::SetSelected(bool bSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.SetSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96f388a8);
 
 	UOptionsMenuInput_C_SetSelected_Params params;
 	params.bSelected = bSelected;
@@ -271,7 +284,8 @@ void UOptionsMenuInput_C::SetSelected(bool bSelected)
 
 void UOptionsMenuInput_C::ToggleExpansion()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.ToggleExpansion");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc988ea58);
 
 	UOptionsMenuInput_C_ToggleExpansion_Params params;
 
@@ -288,7 +302,8 @@ void UOptionsMenuInput_C::ToggleExpansion()
 
 void UOptionsMenuInput_C::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.Reset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ea8374e);
 
 	UOptionsMenuInput_C_Reset_Params params;
 
@@ -307,7 +322,8 @@ void UOptionsMenuInput_C::Reset()
 
 void UOptionsMenuInput_C::BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d7d3007);
 
 	UOptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -327,7 +343,8 @@ void UOptionsMenuInput_C::BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_Com
 
 void UOptionsMenuInput_C::BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1f96f57);
 
 	UOptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -348,7 +365,8 @@ void UOptionsMenuInput_C::BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_C
 
 void UOptionsMenuInput_C::SetData(class UObject* InData, class UCommonListView* OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c3454b);
 
 	UOptionsMenuInput_C_SetData_Params params;
 	params.InData = InData;
@@ -369,7 +387,8 @@ void UOptionsMenuInput_C::SetData(class UObject* InData, class UCommonListView* 
 
 void UOptionsMenuInput_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37359fe8);
 
 	UOptionsMenuInput_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -390,7 +409,8 @@ void UOptionsMenuInput_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UOptionsMenuInput_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa742319f);
 
 	UOptionsMenuInput_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -411,7 +431,8 @@ void UOptionsMenuInput_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoi
 
 void UOptionsMenuInput_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee32ac05);
 
 	UOptionsMenuInput_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -431,7 +452,8 @@ void UOptionsMenuInput_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_
 
 void UOptionsMenuInput_C::ExecuteUbergraph_OptionsMenuInput(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.ExecuteUbergraph_OptionsMenuInput");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda401890);
 
 	UOptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput_Params params;
 	params.EntryPoint = EntryPoint;
@@ -451,7 +473,8 @@ void UOptionsMenuInput_C::ExecuteUbergraph_OptionsMenuInput(int EntryPoint)
 
 void UOptionsMenuInput_C::UnbindClicked__DelegateSignature(int Number_in_List)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.UnbindClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7a01267);
 
 	UOptionsMenuInput_C_UnbindClicked__DelegateSignature_Params params;
 	params.Number_in_List = Number_in_List;
@@ -472,7 +495,8 @@ void UOptionsMenuInput_C::UnbindClicked__DelegateSignature(int Number_in_List)
 
 void UOptionsMenuInput_C::Input_Clicked__DelegateSignature(int Number_in_List, bool Is_Primary_Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuInput.OptionsMenuInput_C.Input Clicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69a1287f);
 
 	UOptionsMenuInput_C_Input_Clicked__DelegateSignature_Params params;
 	params.Number_in_List = Number_in_List;

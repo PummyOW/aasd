@@ -20,7 +20,8 @@ namespace SDK
 
 void UHUD_TeamInfo_C::HandleTeamHitInfoChanged(TArray<float>* HealthFractions, TArray<float>* ShieldFractions)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamHitInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1e10c41);
 
 	UHUD_TeamInfo_C_HandleTeamHitInfoChanged_Params params;
 
@@ -42,7 +43,8 @@ void UHUD_TeamInfo_C::HandleTeamHitInfoChanged(TArray<float>* HealthFractions, T
 
 void UHUD_TeamInfo_C::ClearContents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.ClearContents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb69bcaf6);
 
 	UHUD_TeamInfo_C_ClearContents_Params params;
 
@@ -61,7 +63,8 @@ void UHUD_TeamInfo_C::ClearContents()
 
 void UHUD_TeamInfo_C::AppendTeamMember(struct FFortTeamMemberInfo* TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.AppendTeamMember");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26e99550);
 
 	UHUD_TeamInfo_C_AppendTeamMember_Params params;
 
@@ -84,7 +87,8 @@ void UHUD_TeamInfo_C::AppendTeamMember(struct FFortTeamMemberInfo* TeamMemberInf
 
 void UHUD_TeamInfo_C::ShiftTeamMembers(int Index, struct FFortTeamMemberInfo* TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.ShiftTeamMembers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x531a85);
 
 	UHUD_TeamInfo_C_ShiftTeamMembers_Params params;
 	params.Index = Index;
@@ -107,7 +111,8 @@ void UHUD_TeamInfo_C::ShiftTeamMembers(int Index, struct FFortTeamMemberInfo* Te
 
 void UHUD_TeamInfo_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& Member_Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamMemberChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2edc202);
 
 	UHUD_TeamInfo_C_HandleTeamMemberChanged_Params params;
 	params.Member_Info = Member_Info;
@@ -127,7 +132,8 @@ void UHUD_TeamInfo_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& 
 
 void UHUD_TeamInfo_C::HandleTeamMemberRemoved(int Member_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.HandleTeamMemberRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4e71bf2);
 
 	UHUD_TeamInfo_C_HandleTeamMemberRemoved_Params params;
 	params.Member_Index = Member_Index;
@@ -145,7 +151,8 @@ void UHUD_TeamInfo_C::HandleTeamMemberRemoved(int Member_Index)
 
 void UHUD_TeamInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f483dc8);
 
 	UHUD_TeamInfo_C_Construct_Params params;
 
@@ -162,7 +169,8 @@ void UHUD_TeamInfo_C::Construct()
 
 void UHUD_TeamInfo_C::HandlePartyLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.HandlePartyLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x260f6cce);
 
 	UHUD_TeamInfo_C_HandlePartyLeft_Params params;
 
@@ -181,7 +189,8 @@ void UHUD_TeamInfo_C::HandlePartyLeft()
 
 void UHUD_TeamInfo_C::ExecuteUbergraph_HUD_TeamInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD_TeamInfo.HUD_TeamInfo_C.ExecuteUbergraph_HUD_TeamInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4128ff20);
 
 	UHUD_TeamInfo_C_ExecuteUbergraph_HUD_TeamInfo_Params params;
 	params.EntryPoint = EntryPoint;

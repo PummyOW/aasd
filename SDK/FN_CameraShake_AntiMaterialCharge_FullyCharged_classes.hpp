@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass CameraShake_AntiMaterialCharge_FullyCharged.CameraShake_AntiMaterialCharge_FullyCharged_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb9955fb5);
 		return ptr;
 	}
 

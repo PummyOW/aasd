@@ -19,7 +19,8 @@ namespace SDK
 
 int UItemEntry_C::DoesItemHaveChildren()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.DoesItemHaveChildren");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a5a15ca);
 
 	UItemEntry_C_DoesItemHaveChildren_Params params;
 
@@ -40,7 +41,8 @@ int UItemEntry_C::DoesItemHaveChildren()
 
 int UItemEntry_C::GetIndentLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.GetIndentLevel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8cc843f);
 
 	UItemEntry_C_GetIndentLevel_Params params;
 
@@ -61,7 +63,8 @@ int UItemEntry_C::GetIndentLevel()
 
 bool UItemEntry_C::IsItemExpanded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.IsItemExpanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50426ef9);
 
 	UItemEntry_C_IsItemExpanded_Params params;
 
@@ -82,7 +85,8 @@ bool UItemEntry_C::IsItemExpanded()
 
 class UObject* UItemEntry_C::GetData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.GetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd474604d);
 
 	UItemEntry_C_GetData_Params params;
 
@@ -101,7 +105,8 @@ class UObject* UItemEntry_C::GetData()
 
 void UItemEntry_C::OnAcquireFromPool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.OnAcquireFromPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x806b7fe6);
 
 	UItemEntry_C_OnAcquireFromPool_Params params;
 
@@ -118,7 +123,8 @@ void UItemEntry_C::OnAcquireFromPool()
 
 void UItemEntry_C::OnReleaseToPool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.OnReleaseToPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c100246);
 
 	UItemEntry_C_OnReleaseToPool_Params params;
 
@@ -135,7 +141,8 @@ void UItemEntry_C::OnReleaseToPool()
 
 void UItemEntry_C::Private_OnExpanderArrowShiftClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.Private_OnExpanderArrowShiftClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6bcb1caf);
 
 	UItemEntry_C_Private_OnExpanderArrowShiftClicked_Params params;
 
@@ -154,7 +161,8 @@ void UItemEntry_C::Private_OnExpanderArrowShiftClicked()
 
 void UItemEntry_C::RegisterOnClicked(const struct FScriptDelegate& Callback)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.RegisterOnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8dcbc556);
 
 	UItemEntry_C_RegisterOnClicked_Params params;
 	params.Callback = Callback;
@@ -174,7 +182,8 @@ void UItemEntry_C::RegisterOnClicked(const struct FScriptDelegate& Callback)
 
 void UItemEntry_C::SetExpanded(bool bExpanded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.SetExpanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4df5e8de);
 
 	UItemEntry_C_SetExpanded_Params params;
 	params.bExpanded = bExpanded;
@@ -194,7 +203,8 @@ void UItemEntry_C::SetExpanded(bool bExpanded)
 
 void UItemEntry_C::SetIndexInList(int InIndexInList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.SetIndexInList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb645802);
 
 	UItemEntry_C_SetIndexInList_Params params;
 	params.InIndexInList = InIndexInList;
@@ -214,7 +224,8 @@ void UItemEntry_C::SetIndexInList(int InIndexInList)
 
 void UItemEntry_C::SetSelected(bool bSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.SetSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f7db2b6);
 
 	UItemEntry_C_SetSelected_Params params;
 	params.bSelected = bSelected;
@@ -232,7 +243,8 @@ void UItemEntry_C::SetSelected(bool bSelected)
 
 void UItemEntry_C::ToggleExpansion()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.ToggleExpansion");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x475268b6);
 
 	UItemEntry_C_ToggleExpansion_Params params;
 
@@ -249,7 +261,8 @@ void UItemEntry_C::ToggleExpansion()
 
 void UItemEntry_C::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.Reset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5803de0);
 
 	UItemEntry_C_Reset_Params params;
 
@@ -269,7 +282,8 @@ void UItemEntry_C::Reset()
 
 void UItemEntry_C::SetData(class UObject* InData, class UCommonListView* OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ca30071);
 
 	UItemEntry_C_SetData_Params params;
 	params.InData = InData;
@@ -288,7 +302,8 @@ void UItemEntry_C::SetData(class UObject* InData, class UCommonListView* OwningL
 
 void UItemEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37a67616);
 
 	UItemEntry_C_Construct_Params params;
 
@@ -307,7 +322,8 @@ void UItemEntry_C::Construct()
 
 void UItemEntry_C::ExecuteUbergraph_ItemEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.ExecuteUbergraph_ItemEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2c6dd5a);
 
 	UItemEntry_C_ExecuteUbergraph_ItemEntry_Params params;
 	params.EntryPoint = EntryPoint;
@@ -327,7 +343,8 @@ void UItemEntry_C::ExecuteUbergraph_ItemEntry(int EntryPoint)
 
 void UItemEntry_C::Entry_Selected__DelegateSignature(class UFortItemDefinition* Items_Definition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemEntry.ItemEntry_C.Entry Selected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x850cda03);
 
 	UItemEntry_C_Entry_Selected__DelegateSignature_Params params;
 	params.Items_Definition = Items_Definition;

@@ -19,7 +19,8 @@ namespace SDK
 
 float UQuestTrackerSubEntry_C::GetHeightEstimate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.GetHeightEstimate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7cd84892);
 
 	UQuestTrackerSubEntry_C_GetHeightEstimate_Params params;
 
@@ -38,7 +39,8 @@ float UQuestTrackerSubEntry_C::GetHeightEstimate()
 
 void UQuestTrackerSubEntry_C::HandleRemoveFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.HandleRemoveFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf75f143);
 
 	UQuestTrackerSubEntry_C_HandleRemoveFinished_Params params;
 
@@ -55,7 +57,8 @@ void UQuestTrackerSubEntry_C::HandleRemoveFinished()
 
 void UQuestTrackerSubEntry_C::HideIfEmpty()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.HideIfEmpty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x120686a1);
 
 	UQuestTrackerSubEntry_C_HideIfEmpty_Params params;
 
@@ -72,7 +75,8 @@ void UQuestTrackerSubEntry_C::HideIfEmpty()
 
 void UQuestTrackerSubEntry_C::UpdateObjectiveText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.UpdateObjectiveText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x265ed708);
 
 	UQuestTrackerSubEntry_C_UpdateObjectiveText_Params params;
 
@@ -89,7 +93,8 @@ void UQuestTrackerSubEntry_C::UpdateObjectiveText()
 
 void UQuestTrackerSubEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8451b37e);
 
 	UQuestTrackerSubEntry_C_Construct_Params params;
 
@@ -106,7 +111,8 @@ void UQuestTrackerSubEntry_C::Construct()
 
 void UQuestTrackerSubEntry_C::OnQuestsUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.OnQuestsUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6794e08e);
 
 	UQuestTrackerSubEntry_C_OnQuestsUpdated_Params params;
 
@@ -123,7 +129,8 @@ void UQuestTrackerSubEntry_C::OnQuestsUpdated()
 
 void UQuestTrackerSubEntry_C::OnPlayObjectiveCompletedAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.OnPlayObjectiveCompletedAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffa97a08);
 
 	UQuestTrackerSubEntry_C_OnPlayObjectiveCompletedAnimation_Params params;
 
@@ -140,7 +147,8 @@ void UQuestTrackerSubEntry_C::OnPlayObjectiveCompletedAnimation()
 
 void UQuestTrackerSubEntry_C::OnCompletionFlashFInished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.OnCompletionFlashFInished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49b962f6);
 
 	UQuestTrackerSubEntry_C_OnCompletionFlashFInished_Params params;
 
@@ -157,26 +165,10 @@ void UQuestTrackerSubEntry_C::OnCompletionFlashFInished()
 
 void UQuestTrackerSubEntry_C::PostCompletionDelay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.PostCompletionDelay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x124db83c);
 
 	UQuestTrackerSubEntry_C_PostCompletionDelay_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.OnSetup
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UQuestTrackerSubEntry_C::OnSetup()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.OnSetup");
-
-	UQuestTrackerSubEntry_C_OnSetup_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -193,7 +185,8 @@ void UQuestTrackerSubEntry_C::OnSetup()
 
 void UQuestTrackerSubEntry_C::ExecuteUbergraph_QuestTrackerSubEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.ExecuteUbergraph_QuestTrackerSubEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe484a67b);
 
 	UQuestTrackerSubEntry_C_ExecuteUbergraph_QuestTrackerSubEntry_Params params;
 	params.EntryPoint = EntryPoint;

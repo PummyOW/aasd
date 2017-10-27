@@ -19,7 +19,8 @@ namespace SDK
 
 void UQuickbarPrimary_C::HasOneNonHarvestWeapon(bool* HasNonHarvestWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.HasOneNonHarvestWeapon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1885e487);
 
 	UQuickbarPrimary_C_HasOneNonHarvestWeapon_Params params;
 
@@ -41,7 +42,8 @@ void UQuickbarPrimary_C::HasOneNonHarvestWeapon(bool* HasNonHarvestWeapon)
 
 void UQuickbarPrimary_C::Show_Primary_Quickbar_Rail(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.Show Primary Quickbar Rail");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e47180a);
 
 	UQuickbarPrimary_C_Show_Primary_Quickbar_Rail_Params params;
 	params.Show = Show;
@@ -59,7 +61,8 @@ void UQuickbarPrimary_C::Show_Primary_Quickbar_Rail(bool Show)
 
 void UQuickbarPrimary_C::HandleKeybindsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.HandleKeybindsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b484fa6);
 
 	UQuickbarPrimary_C_HandleKeybindsChanged_Params params;
 
@@ -76,7 +79,8 @@ void UQuickbarPrimary_C::HandleKeybindsChanged()
 
 void UQuickbarPrimary_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49d6e6de);
 
 	UQuickbarPrimary_C_Construct_Params params;
 
@@ -95,7 +99,8 @@ void UQuickbarPrimary_C::Construct()
 
 void UQuickbarPrimary_C::HandleInputMethodChanged(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.HandleInputMethodChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8c78e18);
 
 	UQuickbarPrimary_C_HandleInputMethodChanged_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -113,7 +118,8 @@ void UQuickbarPrimary_C::HandleInputMethodChanged(bool bUsingGamepad)
 
 void UQuickbarPrimary_C::RefreshQuickbar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.RefreshQuickbar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee762d24);
 
 	UQuickbarPrimary_C_RefreshQuickbar_Params params;
 
@@ -130,7 +136,8 @@ void UQuickbarPrimary_C::RefreshQuickbar()
 
 void UQuickbarPrimary_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb059a51d);
 
 	UQuickbarPrimary_C_Destruct_Params params;
 
@@ -149,7 +156,8 @@ void UQuickbarPrimary_C::Destruct()
 
 void UQuickbarPrimary_C::ExecuteUbergraph_QuickbarPrimary(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuickbarPrimary.QuickbarPrimary_C.ExecuteUbergraph_QuickbarPrimary");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e551aef);
 
 	UQuickbarPrimary_C_ExecuteUbergraph_QuickbarPrimary_Params params;
 	params.EntryPoint = EntryPoint;

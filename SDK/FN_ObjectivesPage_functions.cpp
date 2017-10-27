@@ -19,7 +19,8 @@ namespace SDK
 
 void UObjectivesPage_C::MissionHasModifiers(bool* MissionHasModifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.MissionHasModifiers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf724ef87);
 
 	UObjectivesPage_C_MissionHasModifiers_Params params;
 
@@ -41,7 +42,8 @@ void UObjectivesPage_C::MissionHasModifiers(bool* MissionHasModifiers)
 
 void UObjectivesPage_C::ConfigureModifiersView(bool ShowModifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.ConfigureModifiersView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf0eb584);
 
 	UObjectivesPage_C_ConfigureModifiersView_Params params;
 	params.ShowModifiers = ShowModifiers;
@@ -61,7 +63,8 @@ void UObjectivesPage_C::ConfigureModifiersView(bool ShowModifiers)
 
 void UObjectivesPage_C::HandleInventory(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.HandleInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2eafe7d);
 
 	UObjectivesPage_C_HandleInventory_Params params;
 
@@ -84,7 +87,8 @@ void UObjectivesPage_C::HandleInventory(bool* PassThrough)
 
 void UObjectivesPage_C::HandleSelectedButtonChanged(class UCommonButton* InButton, int InButtonIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.HandleSelectedButtonChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafe97fbc);
 
 	UObjectivesPage_C_HandleSelectedButtonChanged_Params params;
 	params.InButton = InButton;
@@ -105,7 +109,8 @@ void UObjectivesPage_C::HandleSelectedButtonChanged(class UCommonButton* InButto
 
 void UObjectivesPage_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f5d8ff6);
 
 	UObjectivesPage_C_HandleBack_Params params;
 
@@ -125,7 +130,8 @@ void UObjectivesPage_C::HandleBack(bool* PassThrough)
 
 void UObjectivesPage_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f052014);
 
 	UObjectivesPage_C_Construct_Params params;
 
@@ -142,7 +148,8 @@ void UObjectivesPage_C::Construct()
 
 void UObjectivesPage_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef1b8693);
 
 	UObjectivesPage_C_OnActivated_Params params;
 
@@ -159,7 +166,8 @@ void UObjectivesPage_C::OnActivated()
 
 void UObjectivesPage_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20e43eb);
 
 	UObjectivesPage_C_Destruct_Params params;
 
@@ -178,7 +186,8 @@ void UObjectivesPage_C::Destruct()
 
 void UObjectivesPage_C::OnActiveGameplayModifiersChanged_Event_1(TArray<class UFortGameplayModifierItemDefinition*> AppliedModifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.OnActiveGameplayModifiersChanged_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x971b406b);
 
 	UObjectivesPage_C_OnActiveGameplayModifiersChanged_Event_1_Params params;
 	params.AppliedModifiers = AppliedModifiers;
@@ -198,7 +207,8 @@ void UObjectivesPage_C::OnActiveGameplayModifiersChanged_Event_1(TArray<class UF
 
 void UObjectivesPage_C::ExecuteUbergraph_ObjectivesPage(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ObjectivesPage.ObjectivesPage_C.ExecuteUbergraph_ObjectivesPage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x788c45f8);
 
 	UObjectivesPage_C_ExecuteUbergraph_ObjectivesPage_Params params;
 	params.EntryPoint = EntryPoint;

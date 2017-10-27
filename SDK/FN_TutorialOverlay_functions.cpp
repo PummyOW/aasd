@@ -17,7 +17,8 @@ namespace SDK
 
 void UTutorialOverlay_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialOverlay.TutorialOverlay_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c2c1456);
 
 	UTutorialOverlay_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UTutorialOverlay_C::Construct()
 
 void UTutorialOverlay_C::ExecuteUbergraph_TutorialOverlay(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialOverlay.TutorialOverlay_C.ExecuteUbergraph_TutorialOverlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6a0404f);
 
 	UTutorialOverlay_C_ExecuteUbergraph_TutorialOverlay_Params params;
 	params.EntryPoint = EntryPoint;

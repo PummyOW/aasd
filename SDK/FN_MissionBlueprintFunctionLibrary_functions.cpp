@@ -12,6 +12,67 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.HideParticleComponentsAttachedToMesh
+// (FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UStaticMeshComponent*    MeshComponent                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UObject*                 __WorldContext                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           SuccessfullyDeactivatedParticle (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UMissionBlueprintFunctionLibrary_C::STATIC_HideParticleComponentsAttachedToMesh(class UStaticMeshComponent* MeshComponent, class UObject* __WorldContext, bool* SuccessfullyDeactivatedParticle)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5518fde5);
+
+	UMissionBlueprintFunctionLibrary_C_HideParticleComponentsAttachedToMesh_Params params;
+	params.MeshComponent = MeshComponent;
+	params.__WorldContext = __WorldContext;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (SuccessfullyDeactivatedParticle != nullptr)
+		*SuccessfullyDeactivatedParticle = params.SuccessfullyDeactivatedParticle;
+}
+
+
+// Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.HasPlayerCompletedQuestObjective
+// (FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class AFortPlayerController*   PlayerController               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UFortQuestItemDefinition* QuestReference                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   QuestBackendObjectiveName      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UObject*                 __WorldContext                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AFortPlayerController*   PlayerControllerOut            (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           CompletedQuestObjective        (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UMissionBlueprintFunctionLibrary_C::STATIC_HasPlayerCompletedQuestObjective(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* QuestReference, const struct FName& QuestBackendObjectiveName, class UObject* __WorldContext, class AFortPlayerController** PlayerControllerOut, bool* CompletedQuestObjective)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x174a4fca);
+
+	UMissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuestObjective_Params params;
+	params.PlayerController = PlayerController;
+	params.QuestReference = QuestReference;
+	params.QuestBackendObjectiveName = QuestBackendObjectiveName;
+	params.__WorldContext = __WorldContext;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PlayerControllerOut != nullptr)
+		*PlayerControllerOut = params.PlayerControllerOut;
+	if (CompletedQuestObjective != nullptr)
+		*CompletedQuestObjective = params.CompletedQuestObjective;
+}
+
+
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetContributingControllersNearActor
 // (FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -23,7 +84,8 @@ namespace SDK
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_GetContributingControllersNearActor(float Distance, class AActor* Actor, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayerControllersNearby, bool* SuccessfullyFoundPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetContributingControllersNearActor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24da0b11);
 
 	UMissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor_Params params;
 	params.Distance = Distance;
@@ -55,7 +117,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_GetContributingControllersNearAc
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_PointLocationsBetweenTwoVectors(const struct FVector& Vector_1, const struct FVector& Vector_2, int HowManyPoints, class UObject* __WorldContext, TArray<struct FVector>* VectorPoints, bool* SuccessfullyFoundPoints)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.PointLocationsBetweenTwoVectors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x158d2f59);
 
 	UMissionBlueprintFunctionLibrary_C_PointLocationsBetweenTwoVectors_Params params;
 	params.Vector_1 = Vector_1;
@@ -85,7 +148,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_PointLocationsBetweenTwoVectors(
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_GetCurrentDifficulty(class UObject* __WorldContext, float* Difficulty, bool* Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetCurrentDifficulty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa25dfe1f);
 
 	UMissionBlueprintFunctionLibrary_C_GetCurrentDifficulty_Params params;
 	params.__WorldContext = __WorldContext;
@@ -113,7 +177,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_GetCurrentDifficulty(class UObje
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_ApplyDifficultyOffset(const struct FName& RowName, float BaseDifficulty, class UObject* __WorldContext, bool* Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.ApplyDifficultyOffset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf671e9eb);
 
 	UMissionBlueprintFunctionLibrary_C_ApplyDifficultyOffset_Params params;
 	params.RowName = RowName;
@@ -141,7 +206,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_ApplyDifficultyOffset(const stru
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_DistanceBetweenTwoVectors(const struct FVector& Vector1, const struct FVector& Vector2, class UObject* __WorldContext, float* Distance)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.DistanceBetweenTwoVectors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7aba5ff0);
 
 	UMissionBlueprintFunctionLibrary_C_DistanceBetweenTwoVectors_Params params;
 	params.Vector1 = Vector1;
@@ -171,7 +237,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_DistanceBetweenTwoVectors(const 
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_HasPlayerCompletedQuest(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* QuestReference, const struct FName& QuestBackendName, class UObject* __WorldContext, class AFortPlayerController** PlayerControllerOut, bool* CompletedQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.HasPlayerCompletedQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f303f09);
 
 	UMissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuest_Params params;
 	params.PlayerController = PlayerController;
@@ -203,7 +270,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_HasPlayerCompletedQuest(class AF
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_SeperatePlayersWhoNeedQuest(class UFortQuestItemDefinition* QuestItemReference, const struct FName& QuestObjectiveBackendName, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayersWhoNeedQuest, TArray<class AFortPlayerController*>* PlayersWhoDoNotNeedQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.SeperatePlayersWhoNeedQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86e23fb8);
 
 	UMissionBlueprintFunctionLibrary_C_SeperatePlayersWhoNeedQuest_Params params;
 	params.QuestItemReference = QuestItemReference;
@@ -232,7 +300,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_SeperatePlayersWhoNeedQuest(clas
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_BasicBuildingItemDrop(TEnumAsByte<EnumEventWorldItemDrop> Item_Drop_Level, const struct FVector& LootDropLocation, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.BasicBuildingItemDrop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcebab68d);
 
 	UMissionBlueprintFunctionLibrary_C_BasicBuildingItemDrop_Params params;
 	params.Item_Drop_Level = Item_Drop_Level;
@@ -256,7 +325,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_BasicBuildingItemDrop(TEnumAsByt
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_GrantSurvivorBadge(int LootLevelIn, TEnumAsByte<ESurvivorBadgeTypes> BadgeType, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GrantSurvivorBadge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe488c50e);
 
 	UMissionBlueprintFunctionLibrary_C_GrantSurvivorBadge_Params params;
 	params.LootLevelIn = LootLevelIn;
@@ -281,7 +351,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_GrantSurvivorBadge(int LootLevel
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_GetBuildingRecommendation(const struct FName& RowName, class UObject* __WorldContext, int* BuildingCount, bool* RowFound)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetBuildingRecommendation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1611000);
 
 	UMissionBlueprintFunctionLibrary_C_GetBuildingRecommendation_Params params;
 	params.RowName = RowName;
@@ -310,7 +381,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_GetBuildingRecommendation(const 
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_Random_360_VectorInRange(float MinDistance, float MaxDistance, class UObject* __WorldContext, struct FVector* Random_Vector_Result_)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.Random_360_VectorInRange");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed5cf96c);
 
 	UMissionBlueprintFunctionLibrary_C_Random_360_VectorInRange_Params params;
 	params.MinDistance = MinDistance;
@@ -339,7 +411,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_Random_360_VectorInRange(float M
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_AnyPawnNearActor(float DistanceToCheck, class AActor* Actor, class UObject* __WorldContext, bool* IsPawnNearActor, TArray<class AFortPawn*>* PawnsNearActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.AnyPawnNearActor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6631c4a2);
 
 	UMissionBlueprintFunctionLibrary_C_AnyPawnNearActor_Params params;
 	params.DistanceToCheck = DistanceToCheck;
@@ -370,7 +443,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_AnyPawnNearActor(float DistanceT
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_GiveQuestUpdateToPlayers(class UFortQuestItemDefinition* Quest_Reference, const struct FName& Quest_Objective_Backend_Name, const struct FDataTableRowHandle& ObjectiveStatEvent, class UObject* __WorldContext, TArray<class AFortPlayerController*>* PlayerControllersForUpdate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GiveQuestUpdateToPlayers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75d9bab4);
 
 	UMissionBlueprintFunctionLibrary_C_GiveQuestUpdateToPlayers_Params params;
 	params.Quest_Reference = Quest_Reference;
@@ -398,7 +472,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_GiveQuestUpdateToPlayers(class U
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_DropChance(float DropPercentChance, class UObject* __WorldContext, bool* DropResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.DropChance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9c31ec4);
 
 	UMissionBlueprintFunctionLibrary_C_DropChance_Params params;
 	params.DropPercentChance = DropPercentChance;
@@ -426,7 +501,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_DropChance(float DropPercentChan
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_AnyPlayerNearActor(float DistanceToCheck, class AActor* Actor, class UObject* __WorldContext, bool* IsPlayerNearActor, TArray<class AFortPlayerPawn*>* PlayersNearActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.AnyPlayerNearActor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9aa34f5);
 
 	UMissionBlueprintFunctionLibrary_C_AnyPlayerNearActor_Params params;
 	params.DistanceToCheck = DistanceToCheck;
@@ -454,7 +530,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_AnyPlayerNearActor(float Distanc
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_FlashObjectiveUI(class AFortObjectiveBase* Objective_Reference, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.FlashObjectiveUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x421932ee);
 
 	UMissionBlueprintFunctionLibrary_C_FlashObjectiveUI_Params params;
 	params.Objective_Reference = Objective_Reference;
@@ -477,7 +554,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_FlashObjectiveUI(class AFortObje
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_NPC_DroneStopRescue(class AActor* Actor, class AActor* Instigator, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.NPC_DroneStopRescue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc21e6394);
 
 	UMissionBlueprintFunctionLibrary_C_NPC_DroneStopRescue_Params params;
 	params.Actor = Actor;
@@ -501,7 +579,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_NPC_DroneStopRescue(class AActor
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_NPC_DroneStartRescue(class AActor* Actor, class AActor* Instigator, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.NPC_DroneStartRescue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1eb3976);
 
 	UMissionBlueprintFunctionLibrary_C_NPC_DroneStartRescue_Params params;
 	params.Actor = Actor;
@@ -527,7 +606,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_NPC_DroneStartRescue(class AActo
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_ListPlayersWhoNeedQuest(class UFortQuestItemDefinition* Quest_Reference, const struct FName& Quest_Backend_Name, class UObject* __WorldContext, TArray<class AFortPlayerController*>* Player_Controllers_Who_Require_The_Quest, bool* DoesAnyoneRequireTheQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.ListPlayersWhoNeedQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e74e6bd);
 
 	UMissionBlueprintFunctionLibrary_C_ListPlayersWhoNeedQuest_Params params;
 	params.Quest_Reference = Quest_Reference;
@@ -557,7 +637,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_ListPlayersWhoNeedQuest(class UF
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_DoesAnyoneRequireQuest(class UFortQuestItemDefinition* QuestReference, const struct FName& Quest_Backend_Name, class UObject* __WorldContext, bool* SomePlayerNeedsTheQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.DoesAnyoneRequireQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f7c4203);
 
 	UMissionBlueprintFunctionLibrary_C_DoesAnyoneRequireQuest_Params params;
 	params.QuestReference = QuestReference;
@@ -588,7 +669,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_DoesAnyoneRequireQuest(class UFo
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_QuestObjectiveCountAchieved(class AFortPlayerController* PlayerControllerReference, class UFortQuestItemDefinition* Quest_Item_Reference, const struct FDataTableRowHandle& ObjectiveStatHandle, class UObject* __WorldContext, int* Quest_Count_Achieved, int* Quest_Count_Required, bool* SuccessfullyFoundCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.QuestObjectiveCountAchieved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ffb0122);
 
 	UMissionBlueprintFunctionLibrary_C_QuestObjectiveCountAchieved_Params params;
 	params.PlayerControllerReference = PlayerControllerReference;
@@ -620,7 +702,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_QuestObjectiveCountAchieved(clas
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_HighlightQuestActor(class AActor* ActorToHighlight, bool HighlightEnabled, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.HighlightQuestActor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81e85808);
 
 	UMissionBlueprintFunctionLibrary_C_HighlightQuestActor_Params params;
 	params.ActorToHighlight = ActorToHighlight;
@@ -647,7 +730,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_HighlightQuestActor(class AActor
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_DoesPlayerHaveQuest(class AFortPlayerController* PlayerController, class UFortQuestItemDefinition* Quest_Item_Reference, const struct FName& Quest_Item_Objective_Backend_Name, class UObject* __WorldContext, bool* QuestValid, class AFortPlayerController** PlayerControllerRef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.DoesPlayerHaveQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ea79c35);
 
 	UMissionBlueprintFunctionLibrary_C_DoesPlayerHaveQuest_Params params;
 	params.PlayerController = PlayerController;
@@ -678,7 +762,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_DoesPlayerHaveQuest(class AFortP
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_GetObjectiveBadgeIconBrush(class AFortObjectiveBase* Objective, const struct FGameplayTag& RewardTag, class UObject* __WorldContext, struct FSlateBrush* IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetObjectiveBadgeIconBrush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x215c64a8);
 
 	UMissionBlueprintFunctionLibrary_C_GetObjectiveBadgeIconBrush_Params params;
 	params.Objective = Objective;
@@ -705,7 +790,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_GetObjectiveBadgeIconBrush(class
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_UnRegisterUI_UpdatesWithDamageEvents(class AActor* ActorToUnRegisterWith, class AFortMissionState* MissionState, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.UnRegisterUI UpdatesWithDamageEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf98ce39);
 
 	UMissionBlueprintFunctionLibrary_C_UnRegisterUI_UpdatesWithDamageEvents_Params params;
 	params.ActorToUnRegisterWith = ActorToUnRegisterWith;
@@ -729,7 +815,8 @@ void UMissionBlueprintFunctionLibrary_C::STATIC_UnRegisterUI_UpdatesWithDamageEv
 
 void UMissionBlueprintFunctionLibrary_C::STATIC_RegisterUI_UpdatesWithDamageEvents(class AActor* ActorToRegisterWith, class AFortMissionState* MissionState, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.RegisterUI UpdatesWithDamageEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x359c9400);
 
 	UMissionBlueprintFunctionLibrary_C_RegisterUI_UpdatesWithDamageEvents_Params params;
 	params.ActorToRegisterWith = ActorToRegisterWith;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UCollectionBookPageListWidget_C::Update_Available_Slots_Widget(int NumAvailableSlots)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.Update Available Slots Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38dd5f82);
 
 	UCollectionBookPageListWidget_C_Update_Available_Slots_Widget_Params params;
 	params.NumAvailableSlots = NumAvailableSlots;
@@ -37,7 +38,8 @@ void UCollectionBookPageListWidget_C::Update_Available_Slots_Widget(int NumAvail
 
 void UCollectionBookPageListWidget_C::UpdateAvailableSlotsBorderColors()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.UpdateAvailableSlotsBorderColors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5fd8655a);
 
 	UCollectionBookPageListWidget_C_UpdateAvailableSlotsBorderColors_Params params;
 
@@ -56,7 +58,8 @@ void UCollectionBookPageListWidget_C::UpdateAvailableSlotsBorderColors()
 
 void UCollectionBookPageListWidget_C::SetupAsCategory(class UFortCollectionBookCategory** Category)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.SetupAsCategory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8531165e);
 
 	UCollectionBookPageListWidget_C_SetupAsCategory_Params params;
 	params.Category = Category;
@@ -76,7 +79,8 @@ void UCollectionBookPageListWidget_C::SetupAsCategory(class UFortCollectionBookC
 
 void UCollectionBookPageListWidget_C::SetupAsPage(class UFortCollectionBookPage** Page)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.SetupAsPage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe2ef953b);
 
 	UCollectionBookPageListWidget_C_SetupAsPage_Params params;
 	params.Page = Page;
@@ -96,7 +100,8 @@ void UCollectionBookPageListWidget_C::SetupAsPage(class UFortCollectionBookPage*
 
 void UCollectionBookPageListWidget_C::OnExpansionChanged(bool* bExpanded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.OnExpansionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1396161);
 
 	UCollectionBookPageListWidget_C_OnExpansionChanged_Params params;
 	params.bExpanded = bExpanded;
@@ -116,7 +121,8 @@ void UCollectionBookPageListWidget_C::OnExpansionChanged(bool* bExpanded)
 
 void UCollectionBookPageListWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9ec50ed);
 
 	UCollectionBookPageListWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -137,7 +143,8 @@ void UCollectionBookPageListWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UCollectionBookPageListWidget_C::OnPageDetailsUpdated(int* NumAvailableSlots, EFortCollectionBookState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.OnPageDetailsUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64ddb9ce);
 
 	UCollectionBookPageListWidget_C_OnPageDetailsUpdated_Params params;
 	params.NumAvailableSlots = NumAvailableSlots;
@@ -159,7 +166,8 @@ void UCollectionBookPageListWidget_C::OnPageDetailsUpdated(int* NumAvailableSlot
 
 void UCollectionBookPageListWidget_C::OnSelectionChanged(class UCommonButton* ThisButton, bool bSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.OnSelectionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x42c5191e);
 
 	UCollectionBookPageListWidget_C_OnSelectionChanged_Params params;
 	params.ThisButton = ThisButton;
@@ -180,7 +188,8 @@ void UCollectionBookPageListWidget_C::OnSelectionChanged(class UCommonButton* Th
 
 void UCollectionBookPageListWidget_C::ExecuteUbergraph_CollectionBookPageListWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookPageListWidget.CollectionBookPageListWidget_C.ExecuteUbergraph_CollectionBookPageListWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x714dd39d);
 
 	UCollectionBookPageListWidget_C_ExecuteUbergraph_CollectionBookPageListWidget_Params params;
 	params.EntryPoint = EntryPoint;

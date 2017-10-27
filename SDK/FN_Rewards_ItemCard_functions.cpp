@@ -19,7 +19,8 @@ namespace SDK
 
 void URewards_ItemCard_C::SetOutpostInventoryNotification(bool ShouldShow)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SetOutpostInventoryNotification");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a107e);
 
 	URewards_ItemCard_C_SetOutpostInventoryNotification_Params params;
 	params.ShouldShow = ShouldShow;
@@ -37,7 +38,8 @@ void URewards_ItemCard_C::SetOutpostInventoryNotification(bool ShouldShow)
 
 void URewards_ItemCard_C::SetOpaque()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SetOpaque");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1389ff88);
 
 	URewards_ItemCard_C_SetOpaque_Params params;
 
@@ -54,7 +56,8 @@ void URewards_ItemCard_C::SetOpaque()
 
 void URewards_ItemCard_C::SkipPopInAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SkipPopInAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x122e4c28);
 
 	URewards_ItemCard_C_SkipPopInAnimation_Params params;
 
@@ -71,7 +74,8 @@ void URewards_ItemCard_C::SkipPopInAnimation()
 
 void URewards_ItemCard_C::SetTransparent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SetTransparent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f1549e5);
 
 	URewards_ItemCard_C_SetTransparent_Params params;
 
@@ -88,7 +92,8 @@ void URewards_ItemCard_C::SetTransparent()
 
 void URewards_ItemCard_C::PlaySecondaryPopInAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.PlaySecondaryPopInAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f88350f);
 
 	URewards_ItemCard_C_PlaySecondaryPopInAnimation_Params params;
 
@@ -105,7 +110,8 @@ void URewards_ItemCard_C::PlaySecondaryPopInAnimation()
 
 void URewards_ItemCard_C::PlayPrimaryPopInAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.PlayPrimaryPopInAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x490dae9b);
 
 	URewards_ItemCard_C_PlayPrimaryPopInAnimation_Params params;
 
@@ -124,7 +130,8 @@ void URewards_ItemCard_C::PlayPrimaryPopInAnimation()
 
 void URewards_ItemCard_C::GetDropShadowDepth(float* DropShadowDepth)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.GetDropShadowDepth");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcafcce9d);
 
 	URewards_ItemCard_C_GetDropShadowDepth_Params params;
 
@@ -144,7 +151,8 @@ void URewards_ItemCard_C::GetDropShadowDepth(float* DropShadowDepth)
 
 void URewards_ItemCard_C::InitDropShadow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.InitDropShadow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e72f95e);
 
 	URewards_ItemCard_C_InitDropShadow_Params params;
 
@@ -161,7 +169,8 @@ void URewards_ItemCard_C::InitDropShadow()
 
 void URewards_ItemCard_C::SetDropShadowSize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SetDropShadowSize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f2a1879);
 
 	URewards_ItemCard_C_SetDropShadowSize_Params params;
 
@@ -180,7 +189,8 @@ void URewards_ItemCard_C::SetDropShadowSize()
 
 void URewards_ItemCard_C::SetDropShadowDepth(float ShadowDepth)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SetDropShadowDepth");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f782ca9);
 
 	URewards_ItemCard_C_SetDropShadowDepth_Params params;
 	params.ShadowDepth = ShadowDepth;
@@ -198,7 +208,8 @@ void URewards_ItemCard_C::SetDropShadowDepth(float ShadowDepth)
 
 void URewards_ItemCard_C::HideDropShadow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.HideDropShadow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40461948);
 
 	URewards_ItemCard_C_HideDropShadow_Params params;
 
@@ -217,7 +228,8 @@ void URewards_ItemCard_C::HideDropShadow()
 
 void URewards_ItemCard_C::ShowDropShadow(float ShadowDepth)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.ShowDropShadow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0fdd7af);
 
 	URewards_ItemCard_C_ShowDropShadow_Params params;
 	params.ShadowDepth = ShadowDepth;
@@ -235,7 +247,8 @@ void URewards_ItemCard_C::ShowDropShadow(float ShadowDepth)
 
 void URewards_ItemCard_C::StartResizeAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.StartResizeAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81deb6c5);
 
 	URewards_ItemCard_C_StartResizeAnimation_Params params;
 
@@ -256,7 +269,8 @@ void URewards_ItemCard_C::StartResizeAnimation()
 
 void URewards_ItemCard_C::SizeUp(float Duration, float Delay, float DropShadowDepth)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SizeUp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8687884b);
 
 	URewards_ItemCard_C_SizeUp_Params params;
 	params.Duration = Duration;
@@ -276,7 +290,8 @@ void URewards_ItemCard_C::SizeUp(float Duration, float Delay, float DropShadowDe
 
 void URewards_ItemCard_C::TickResizeAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.TickResizeAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c2a116);
 
 	URewards_ItemCard_C_TickResizeAnimation_Params params;
 
@@ -297,7 +312,8 @@ void URewards_ItemCard_C::TickResizeAnimation()
 
 void URewards_ItemCard_C::SizeDown(float Duration, float Delay, float DropShadowDepth)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SizeDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0cda7f0);
 
 	URewards_ItemCard_C_SizeDown_Params params;
 	params.Duration = Duration;
@@ -319,7 +335,8 @@ void URewards_ItemCard_C::SizeDown(float Duration, float Delay, float DropShadow
 
 struct FVector2D URewards_ItemCard_C::GetCardSize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.GetCardSize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84374a8);
 
 	URewards_ItemCard_C_GetCardSize_Params params;
 
@@ -340,7 +357,8 @@ struct FVector2D URewards_ItemCard_C::GetCardSize()
 
 void URewards_ItemCard_C::GetItemToRepresent(class UFortItem** ItemToRepresent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.GetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb49c9da5);
 
 	URewards_ItemCard_C_GetItemToRepresent_Params params;
 
@@ -360,7 +378,8 @@ void URewards_ItemCard_C::GetItemToRepresent(class UFortItem** ItemToRepresent)
 
 void URewards_ItemCard_C::HandlePopInAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.HandlePopInAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69422cc5);
 
 	URewards_ItemCard_C_HandlePopInAnimationFinished_Params params;
 
@@ -377,7 +396,8 @@ void URewards_ItemCard_C::HandlePopInAnimationFinished()
 
 void URewards_ItemCard_C::SetInspectAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SetInspectAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e54b57d);
 
 	URewards_ItemCard_C_SetInspectAction_Params params;
 
@@ -394,7 +414,8 @@ void URewards_ItemCard_C::SetInspectAction()
 
 void URewards_ItemCard_C::TickScaleAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.TickScaleAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x133eac6c);
 
 	URewards_ItemCard_C_TickScaleAnimation_Params params;
 
@@ -415,7 +436,8 @@ void URewards_ItemCard_C::TickScaleAnimation()
 
 void URewards_ItemCard_C::PlayScaleAnimation(float TargetScale, float Duration, float DropShadowDepth)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.PlayScaleAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26564ec1);
 
 	URewards_ItemCard_C_PlayScaleAnimation_Params params;
 	params.TargetScale = TargetScale;
@@ -435,7 +457,8 @@ void URewards_ItemCard_C::PlayScaleAnimation(float TargetScale, float Duration, 
 
 void URewards_ItemCard_C::StartSlideAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.StartSlideAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88f00532);
 
 	URewards_ItemCard_C_StartSlideAnimation_Params params;
 
@@ -452,7 +475,8 @@ void URewards_ItemCard_C::StartSlideAnimation()
 
 void URewards_ItemCard_C::EndSlideAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.EndSlideAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe27c83dd);
 
 	URewards_ItemCard_C_EndSlideAnimation_Params params;
 
@@ -478,7 +502,8 @@ void URewards_ItemCard_C::EndSlideAnimation()
 
 void URewards_ItemCard_C::PlaySlideAnimation(const struct FVector2D& TargetAlignment, const struct FAnchors& TargetAnchors, float TargetScale, float TargetOffset, float TargetAngle, float Duration, float StaggerDelay, const struct FVector2D& TargetTranslation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.PlaySlideAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89ba937e);
 
 	URewards_ItemCard_C_PlaySlideAnimation_Params params;
 	params.TargetAlignment = TargetAlignment;
@@ -503,7 +528,8 @@ void URewards_ItemCard_C::PlaySlideAnimation(const struct FVector2D& TargetAlign
 
 void URewards_ItemCard_C::TickSlideAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.TickSlideAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98a11feb);
 
 	URewards_ItemCard_C_TickSlideAnimation_Params params;
 
@@ -522,7 +548,8 @@ void URewards_ItemCard_C::TickSlideAnimation()
 
 void URewards_ItemCard_C::SetItemToRepresent(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.SetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a0082d1);
 
 	URewards_ItemCard_C_SetItemToRepresent_Params params;
 	params.Item = Item;
@@ -540,7 +567,8 @@ void URewards_ItemCard_C::SetItemToRepresent(class UFortItem* Item)
 
 void URewards_ItemCard_C::InitDesignView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.InitDesignView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9652b9cc);
 
 	URewards_ItemCard_C_InitDesignView_Params params;
 
@@ -559,7 +587,8 @@ void URewards_ItemCard_C::InitDesignView()
 
 void URewards_ItemCard_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x765f7905);
 
 	URewards_ItemCard_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -579,7 +608,8 @@ void URewards_ItemCard_C::PreConstruct(bool* IsDesignTime)
 
 void URewards_ItemCard_C::BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4127080);
 
 	URewards_ItemCard_C_BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -597,7 +627,8 @@ void URewards_ItemCard_C::BndEvt__ButtonInspect_K2Node_ComponentBoundEvent_5_Com
 
 void URewards_ItemCard_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e01149e);
 
 	URewards_ItemCard_C_Construct_Params params;
 
@@ -616,7 +647,8 @@ void URewards_ItemCard_C::Construct()
 
 void URewards_ItemCard_C::ExecuteUbergraph_Rewards_ItemCard(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.ExecuteUbergraph_Rewards_ItemCard");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe266ba07);
 
 	URewards_ItemCard_C_ExecuteUbergraph_Rewards_ItemCard_Params params;
 	params.EntryPoint = EntryPoint;
@@ -634,7 +666,8 @@ void URewards_ItemCard_C::ExecuteUbergraph_Rewards_ItemCard(int EntryPoint)
 
 void URewards_ItemCard_C::OnPopInAnimationFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.OnPopInAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82e3184f);
 
 	URewards_ItemCard_C_OnPopInAnimationFinished__DelegateSignature_Params params;
 
@@ -653,7 +686,8 @@ void URewards_ItemCard_C::OnPopInAnimationFinished__DelegateSignature()
 
 void URewards_ItemCard_C::OnResizeAnimationFinished__DelegateSignature(class URewards_ItemCard_C* RewardsItemCard)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.OnResizeAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae19902b);
 
 	URewards_ItemCard_C_OnResizeAnimationFinished__DelegateSignature_Params params;
 	params.RewardsItemCard = RewardsItemCard;
@@ -673,7 +707,8 @@ void URewards_ItemCard_C::OnResizeAnimationFinished__DelegateSignature(class URe
 
 void URewards_ItemCard_C::OnInspectClicked__DelegateSignature(class URewards_ItemCard_C* Card)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.OnInspectClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ac3dc1a);
 
 	URewards_ItemCard_C_OnInspectClicked__DelegateSignature_Params params;
 	params.Card = Card;
@@ -693,7 +728,8 @@ void URewards_ItemCard_C::OnInspectClicked__DelegateSignature(class URewards_Ite
 
 void URewards_ItemCard_C::OnSlideAnimationFinished__DelegateSignature(class URewards_ItemCard_C* RewardsItemCard)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Rewards_ItemCard.Rewards_ItemCard_C.OnSlideAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x353d8f8c);
 
 	URewards_ItemCard_C_OnSlideAnimationFinished__DelegateSignature_Params params;
 	params.RewardsItemCard = RewardsItemCard;

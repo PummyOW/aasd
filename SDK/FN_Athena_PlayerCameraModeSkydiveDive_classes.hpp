@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Athena_PlayerCameraModeSkydiveDive.Athena_PlayerCameraModeSkydiveDive_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x12ff1741);
 		return ptr;
 	}
 

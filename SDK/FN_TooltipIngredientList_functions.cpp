@@ -17,7 +17,8 @@ namespace SDK
 
 void UTooltipIngredientList_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipIngredientList.TooltipIngredientList_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab7504f0);
 
 	UTooltipIngredientList_C_Refresh_Params params;
 
@@ -34,7 +35,8 @@ void UTooltipIngredientList_C::Refresh()
 
 void UTooltipIngredientList_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipIngredientList.TooltipIngredientList_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbab77e9a);
 
 	UTooltipIngredientList_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UTooltipIngredientList_C::Construct()
 
 void UTooltipIngredientList_C::ExecuteUbergraph_TooltipIngredientList(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipIngredientList.TooltipIngredientList_C.ExecuteUbergraph_TooltipIngredientList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8656bab1);
 
 	UTooltipIngredientList_C_ExecuteUbergraph_TooltipIngredientList_Params params;
 	params.EntryPoint = EntryPoint;

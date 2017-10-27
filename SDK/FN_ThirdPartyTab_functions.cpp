@@ -17,7 +17,8 @@ namespace SDK
 
 void UThirdPartyTab_C::Activate_Scroll_Box()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThirdPartyTab.ThirdPartyTab_C.Activate Scroll Box");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46662bb4);
 
 	UThirdPartyTab_C_Activate_Scroll_Box_Params params;
 

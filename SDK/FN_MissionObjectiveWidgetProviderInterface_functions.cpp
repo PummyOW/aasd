@@ -19,7 +19,8 @@ namespace SDK
 
 void UMissionObjectiveWidgetProviderInterface_C::GetObjectiveBulletIcon(struct FSlateBrush* BulletIcon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveWidgetProviderInterface.MissionObjectiveWidgetProviderInterface_C.GetObjectiveBulletIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58eebfd5);
 
 	UMissionObjectiveWidgetProviderInterface_C_GetObjectiveBulletIcon_Params params;
 
@@ -41,7 +42,8 @@ void UMissionObjectiveWidgetProviderInterface_C::GetObjectiveBulletIcon(struct F
 
 void UMissionObjectiveWidgetProviderInterface_C::GetObjectiveContentWidgetClass(class UClass** Objective_WIdget_Class)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveWidgetProviderInterface.MissionObjectiveWidgetProviderInterface_C.GetObjectiveContentWidgetClass");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdcb12173);
 
 	UMissionObjectiveWidgetProviderInterface_C_GetObjectiveContentWidgetClass_Params params;
 

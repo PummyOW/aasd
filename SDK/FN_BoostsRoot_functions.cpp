@@ -19,7 +19,8 @@ namespace SDK
 
 void UBoostsRoot_C::HandleStore(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.HandleStore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c1343d4);
 
 	UBoostsRoot_C_HandleStore_Params params;
 
@@ -41,7 +42,8 @@ void UBoostsRoot_C::HandleStore(bool* PassThrough)
 
 void UBoostsRoot_C::HandleCursorModeChanging(bool IsEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.HandleCursorModeChanging");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81fd7117);
 
 	UBoostsRoot_C_HandleCursorModeChanging_Params params;
 	params.IsEnabled = IsEnabled;
@@ -59,7 +61,8 @@ void UBoostsRoot_C::HandleCursorModeChanging(bool IsEnabled)
 
 void UBoostsRoot_C::Set_Input_Action_Handlers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.Set Input Action Handlers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb174f9a0);
 
 	UBoostsRoot_C_Set_Input_Action_Handlers_Params params;
 
@@ -78,7 +81,8 @@ void UBoostsRoot_C::Set_Input_Action_Handlers()
 
 void UBoostsRoot_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x612ee564);
 
 	UBoostsRoot_C_HandleBack_Params params;
 
@@ -98,7 +102,8 @@ void UBoostsRoot_C::HandleBack(bool* PassThrough)
 
 void UBoostsRoot_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x309b0a66);
 
 	UBoostsRoot_C_Construct_Params params;
 
@@ -115,7 +120,8 @@ void UBoostsRoot_C::Construct()
 
 void UBoostsRoot_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6beef5);
 
 	UBoostsRoot_C_Destruct_Params params;
 
@@ -132,7 +138,8 @@ void UBoostsRoot_C::Destruct()
 
 void UBoostsRoot_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9b07a6d);
 
 	UBoostsRoot_C_OnActivated_Params params;
 
@@ -152,7 +159,8 @@ void UBoostsRoot_C::OnActivated()
 
 void UBoostsRoot_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d91e786);
 
 	UBoostsRoot_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -174,7 +182,8 @@ void UBoostsRoot_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButt
 
 void UBoostsRoot_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int ActiveWidgetIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0557d98);
 
 	UBoostsRoot_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnActiveWidgetChanged__DelegateSignature_Params params;
 	params.ActiveWidget = ActiveWidget;
@@ -195,7 +204,8 @@ void UBoostsRoot_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_29_OnA
 
 void UBoostsRoot_C::ExecuteUbergraph_BoostsRoot(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BoostsRoot.BoostsRoot_C.ExecuteUbergraph_BoostsRoot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x973c0e47);
 
 	UBoostsRoot_C_ExecuteUbergraph_BoostsRoot_Params params;
 	params.EntryPoint = EntryPoint;

@@ -122,6 +122,11 @@ struct UQuestTreeEntry_C_Destruct_Params
 {
 };
 
+// Function QuestTreeEntry.QuestTreeEntry_C.OnDeselected
+struct UQuestTreeEntry_C_OnDeselected_Params
+{
+};
+
 // Function QuestTreeEntry.QuestTreeEntry_C.ExecuteUbergraph_QuestTreeEntry
 struct UQuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry_Params
 {

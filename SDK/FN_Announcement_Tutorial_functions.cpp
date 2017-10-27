@@ -17,7 +17,8 @@ namespace SDK
 
 void UAnnouncement_Tutorial_C::ContinueTutorial()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.ContinueTutorial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3603e8c2);
 
 	UAnnouncement_Tutorial_C_ContinueTutorial_Params params;
 
@@ -36,7 +37,8 @@ void UAnnouncement_Tutorial_C::ContinueTutorial()
 
 void UAnnouncement_Tutorial_C::CheckContinueTutorial(const struct FFortClientAnnouncementData_Tutorial& TutorialData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.CheckContinueTutorial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x955e7e10);
 
 	UAnnouncement_Tutorial_C_CheckContinueTutorial_Params params;
 	params.TutorialData = TutorialData;
@@ -57,7 +59,8 @@ void UAnnouncement_Tutorial_C::CheckContinueTutorial(const struct FFortClientAnn
 
 ESlateVisibility UAnnouncement_Tutorial_C::GetLightboxVisibility(const struct FFortClientAnnouncementData_Tutorial& FortClientAnnouncementData_Tutorial)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.GetLightboxVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe28199a2);
 
 	UAnnouncement_Tutorial_C_GetLightboxVisibility_Params params;
 	params.FortClientAnnouncementData_Tutorial = FortClientAnnouncementData_Tutorial;
@@ -77,7 +80,8 @@ ESlateVisibility UAnnouncement_Tutorial_C::GetLightboxVisibility(const struct FF
 
 void UAnnouncement_Tutorial_C::RefreshTextLines()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.RefreshTextLines");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecf13152);
 
 	UAnnouncement_Tutorial_C_RefreshTextLines_Params params;
 
@@ -96,7 +100,8 @@ void UAnnouncement_Tutorial_C::RefreshTextLines()
 
 void UAnnouncement_Tutorial_C::UpdateTutorialData(const struct FFortClientAnnouncementData_Tutorial& TutorialData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.UpdateTutorialData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97115cd2);
 
 	UAnnouncement_Tutorial_C_UpdateTutorialData_Params params;
 	params.TutorialData = TutorialData;
@@ -117,7 +122,8 @@ void UAnnouncement_Tutorial_C::UpdateTutorialData(const struct FFortClientAnnoun
 
 void UAnnouncement_Tutorial_C::AddTextLine(const struct FText& Text, bool Transparent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.AddTextLine");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4347ab3);
 
 	UAnnouncement_Tutorial_C_AddTextLine_Params params;
 	params.Text = Text;
@@ -139,7 +145,8 @@ void UAnnouncement_Tutorial_C::AddTextLine(const struct FText& Text, bool Transp
 
 void UAnnouncement_Tutorial_C::HandleUpdateTutorial(const struct FFortClientAnnouncementData_Tutorial& TutorialData, bool bShow)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.HandleUpdateTutorial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc008974);
 
 	UAnnouncement_Tutorial_C_HandleUpdateTutorial_Params params;
 	params.TutorialData = TutorialData;
@@ -158,7 +165,8 @@ void UAnnouncement_Tutorial_C::HandleUpdateTutorial(const struct FFortClientAnno
 
 void UAnnouncement_Tutorial_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x241e65de);
 
 	UAnnouncement_Tutorial_C_Construct_Params params;
 
@@ -179,7 +187,8 @@ void UAnnouncement_Tutorial_C::Construct()
 
 void UAnnouncement_Tutorial_C::HandleClientEvent_OnboardingShowUI(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.HandleClientEvent_OnboardingShowUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86773779);
 
 	UAnnouncement_Tutorial_C_HandleClientEvent_OnboardingShowUI_Params params;
 	params.EventSource = EventSource;
@@ -203,7 +212,8 @@ void UAnnouncement_Tutorial_C::HandleClientEvent_OnboardingShowUI(class UObject*
 
 void UAnnouncement_Tutorial_C::HandleClientEvent_OnboardingHideUI(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.HandleClientEvent_OnboardingHideUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f71629a);
 
 	UAnnouncement_Tutorial_C_HandleClientEvent_OnboardingHideUI_Params params;
 	params.EventSource = EventSource;
@@ -223,7 +233,8 @@ void UAnnouncement_Tutorial_C::HandleClientEvent_OnboardingHideUI(class UObject*
 
 void UAnnouncement_Tutorial_C::ResetTutorialAnnoucementWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.ResetTutorialAnnoucementWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79ee5657);
 
 	UAnnouncement_Tutorial_C_ResetTutorialAnnoucementWidget_Params params;
 
@@ -242,7 +253,8 @@ void UAnnouncement_Tutorial_C::ResetTutorialAnnoucementWidget()
 
 void UAnnouncement_Tutorial_C::ExecuteUbergraph_Announcement_Tutorial(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Tutorial.Announcement_Tutorial_C.ExecuteUbergraph_Announcement_Tutorial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa70c07e3);
 
 	UAnnouncement_Tutorial_C_ExecuteUbergraph_Announcement_Tutorial_Params params;
 	params.EntryPoint = EntryPoint;

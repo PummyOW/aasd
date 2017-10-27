@@ -19,7 +19,8 @@ namespace SDK
 
 int UOptionsMenuHudRotator_C::DoesItemHaveChildren()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.DoesItemHaveChildren");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbbcb73be);
 
 	UOptionsMenuHudRotator_C_DoesItemHaveChildren_Params params;
 
@@ -40,7 +41,8 @@ int UOptionsMenuHudRotator_C::DoesItemHaveChildren()
 
 int UOptionsMenuHudRotator_C::GetIndentLevel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.GetIndentLevel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2957d0b);
 
 	UOptionsMenuHudRotator_C_GetIndentLevel_Params params;
 
@@ -61,7 +63,8 @@ int UOptionsMenuHudRotator_C::GetIndentLevel()
 
 bool UOptionsMenuHudRotator_C::IsItemExpanded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.IsItemExpanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x412d15d);
 
 	UOptionsMenuHudRotator_C_IsItemExpanded_Params params;
 
@@ -82,7 +85,8 @@ bool UOptionsMenuHudRotator_C::IsItemExpanded()
 
 class UObject* UOptionsMenuHudRotator_C::GetData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.GetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x273be271);
 
 	UOptionsMenuHudRotator_C_GetData_Params params;
 
@@ -105,7 +109,8 @@ class UObject* UOptionsMenuHudRotator_C::GetData()
 
 struct FEventReply UOptionsMenuHudRotator_C::OnFocusReceived(struct FGeometry* MyGeometry, struct FFocusEvent* InFocusEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnFocusReceived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe132dde5);
 
 	UOptionsMenuHudRotator_C_OnFocusReceived_Params params;
 	params.MyGeometry = MyGeometry;
@@ -128,7 +133,8 @@ struct FEventReply UOptionsMenuHudRotator_C::OnFocusReceived(struct FGeometry* M
 
 void UOptionsMenuHudRotator_C::Update_Options(TArray<struct FText>* NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Update Options");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe30087ca);
 
 	UOptionsMenuHudRotator_C_Update_Options_Params params;
 
@@ -148,7 +154,8 @@ void UOptionsMenuHudRotator_C::Update_Options(TArray<struct FText>* NewParam)
 
 void UOptionsMenuHudRotator_C::Center_on_Widget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Center on Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5177a4e1);
 
 	UOptionsMenuHudRotator_C_Center_on_Widget_Params params;
 
@@ -167,7 +174,8 @@ void UOptionsMenuHudRotator_C::Center_on_Widget()
 
 void UOptionsMenuHudRotator_C::Update_Row_Selector(int Currently_Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Update Row Selector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x737b3f9b);
 
 	UOptionsMenuHudRotator_C_Update_Row_Selector_Params params;
 	params.Currently_Selected = Currently_Selected;
@@ -185,7 +193,8 @@ void UOptionsMenuHudRotator_C::Update_Row_Selector(int Currently_Selected)
 
 void UOptionsMenuHudRotator_C::OnAcquireFromPool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnAcquireFromPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a5c0422);
 
 	UOptionsMenuHudRotator_C_OnAcquireFromPool_Params params;
 
@@ -202,7 +211,8 @@ void UOptionsMenuHudRotator_C::OnAcquireFromPool()
 
 void UOptionsMenuHudRotator_C::OnReleaseToPool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnReleaseToPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5cd1fc4a);
 
 	UOptionsMenuHudRotator_C_OnReleaseToPool_Params params;
 
@@ -219,7 +229,8 @@ void UOptionsMenuHudRotator_C::OnReleaseToPool()
 
 void UOptionsMenuHudRotator_C::Private_OnExpanderArrowShiftClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Private_OnExpanderArrowShiftClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7fa1703);
 
 	UOptionsMenuHudRotator_C_Private_OnExpanderArrowShiftClicked_Params params;
 
@@ -238,7 +249,8 @@ void UOptionsMenuHudRotator_C::Private_OnExpanderArrowShiftClicked()
 
 void UOptionsMenuHudRotator_C::RegisterOnClicked(const struct FScriptDelegate& Callback)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.RegisterOnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x136d63aa);
 
 	UOptionsMenuHudRotator_C_RegisterOnClicked_Params params;
 	params.Callback = Callback;
@@ -258,7 +270,8 @@ void UOptionsMenuHudRotator_C::RegisterOnClicked(const struct FScriptDelegate& C
 
 void UOptionsMenuHudRotator_C::SetExpanded(bool bExpanded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.SetExpanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x871fec2);
 
 	UOptionsMenuHudRotator_C_SetExpanded_Params params;
 	params.bExpanded = bExpanded;
@@ -278,7 +291,8 @@ void UOptionsMenuHudRotator_C::SetExpanded(bool bExpanded)
 
 void UOptionsMenuHudRotator_C::SetIndexInList(int InIndexInList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.SetIndexInList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95d737a6);
 
 	UOptionsMenuHudRotator_C_SetIndexInList_Params params;
 	params.InIndexInList = InIndexInList;
@@ -298,7 +312,8 @@ void UOptionsMenuHudRotator_C::SetIndexInList(int InIndexInList)
 
 void UOptionsMenuHudRotator_C::SetSelected(bool bSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.SetSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x872d0c2);
 
 	UOptionsMenuHudRotator_C_SetSelected_Params params;
 	params.bSelected = bSelected;
@@ -316,7 +331,8 @@ void UOptionsMenuHudRotator_C::SetSelected(bool bSelected)
 
 void UOptionsMenuHudRotator_C::ToggleExpansion()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.ToggleExpansion");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b1bb8d2);
 
 	UOptionsMenuHudRotator_C_ToggleExpansion_Params params;
 
@@ -333,7 +349,8 @@ void UOptionsMenuHudRotator_C::ToggleExpansion()
 
 void UOptionsMenuHudRotator_C::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Reset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91be69d4);
 
 	UOptionsMenuHudRotator_C_Reset_Params params;
 
@@ -350,7 +367,8 @@ void UOptionsMenuHudRotator_C::Reset()
 
 void UOptionsMenuHudRotator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x755af02a);
 
 	UOptionsMenuHudRotator_C_Construct_Params params;
 
@@ -369,7 +387,8 @@ void UOptionsMenuHudRotator_C::Construct()
 
 void UOptionsMenuHudRotator_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c9c180e);
 
 	UOptionsMenuHudRotator_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -390,7 +409,8 @@ void UOptionsMenuHudRotator_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UOptionsMenuHudRotator_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd5ee9c1);
 
 	UOptionsMenuHudRotator_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -411,7 +431,8 @@ void UOptionsMenuHudRotator_C::OnMouseEnter(struct FGeometry* MyGeometry, struct
 
 void UOptionsMenuHudRotator_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d080bec);
 
 	UOptionsMenuHudRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature_Params params;
 	params.Value = Value;
@@ -432,7 +453,8 @@ void UOptionsMenuHudRotator_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_
 
 void UOptionsMenuHudRotator_C::SetData(class UObject* InData, class UCommonListView* OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f0d424d);
 
 	UOptionsMenuHudRotator_C_SetData_Params params;
 	params.InData = InData;
@@ -453,7 +475,8 @@ void UOptionsMenuHudRotator_C::SetData(class UObject* InData, class UCommonListV
 
 void UOptionsMenuHudRotator_C::ExecuteUbergraph_OptionsMenuHudRotator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.ExecuteUbergraph_OptionsMenuHudRotator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecb363cc);
 
 	UOptionsMenuHudRotator_C_ExecuteUbergraph_OptionsMenuHudRotator_Params params;
 	params.EntryPoint = EntryPoint;
@@ -474,7 +497,8 @@ void UOptionsMenuHudRotator_C::ExecuteUbergraph_OptionsMenuHudRotator(int EntryP
 
 void UOptionsMenuHudRotator_C::Selection_Changed__DelegateSignature(int Selected_Index, const struct FGameplayTag& Gameplay_Tag)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuHudRotator.OptionsMenuHudRotator_C.Selection Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e53a1e6);
 
 	UOptionsMenuHudRotator_C_Selection_Changed__DelegateSignature_Params params;
 	params.Selected_Index = Selected_Index;

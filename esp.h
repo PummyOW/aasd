@@ -345,7 +345,12 @@ class ESP
 					}
 
 					std::wstring name = itemDef->DisplayName.Get();
-					if (name == L"Bandage" || name == L"Med Kit")
+					std::wstring::size_type found = name.find(L"Potion", found);
+					if (found != std::wstring::npos)
+					{
+						color = Color{ 0.55f, 0.95f, 0.80f, 0.95f };
+					}
+					else if (name == L"Bandage" || name == L"Med Kit")
 					{
 						color = Color{ 0.9f, 0.55f, 0.55f, 0.95f };
 					}

@@ -19,7 +19,8 @@ namespace SDK
 
 void UConsoleProfileWidget_C::SetDisplayName(const struct FText& DisplayName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ConsoleProfileWidget.ConsoleProfileWidget_C.SetDisplayName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30a4db2c);
 
 	UConsoleProfileWidget_C_SetDisplayName_Params params;
 	params.DisplayName = DisplayName;

@@ -50,7 +50,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass LegacyRatingWidget.LegacyRatingWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x782eb9ed);
 		return ptr;
 	}
 

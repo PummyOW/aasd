@@ -19,7 +19,8 @@ namespace SDK
 
 void UQuestTreeEntry_C::Get_Streaming_Attached_Quest_Name(struct FText* ModifiedName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Get Streaming Attached Quest Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28366692);
 
 	UQuestTreeEntry_C_Get_Streaming_Attached_Quest_Name_Params params;
 
@@ -41,7 +42,8 @@ void UQuestTreeEntry_C::Get_Streaming_Attached_Quest_Name(struct FText* Modified
 
 void UQuestTreeEntry_C::Is_Streaming_Quest(bool* bStreamingQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Is Streaming Quest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a3c89d5);
 
 	UQuestTreeEntry_C_Is_Streaming_Quest_Params params;
 
@@ -61,7 +63,8 @@ void UQuestTreeEntry_C::Is_Streaming_Quest(bool* bStreamingQuest)
 
 void UQuestTreeEntry_C::Set_Quest_Category_Display_Name()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Set Quest Category Display Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b2d0090);
 
 	UQuestTreeEntry_C_Set_Quest_Category_Display_Name_Params params;
 
@@ -78,7 +81,8 @@ void UQuestTreeEntry_C::Set_Quest_Category_Display_Name()
 
 void UQuestTreeEntry_C::Set_Quest_Display_Name()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Set Quest Display Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6a3650a);
 
 	UQuestTreeEntry_C_Set_Quest_Display_Name_Params params;
 
@@ -97,7 +101,8 @@ void UQuestTreeEntry_C::Set_Quest_Display_Name()
 
 void UQuestTreeEntry_C::Get_Quest_Item_Def(class UFortQuestItemDefinition** AsFort_Quest_Item_Definition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Get Quest Item Def");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b3ac629);
 
 	UQuestTreeEntry_C_Get_Quest_Item_Def_Params params;
 
@@ -119,7 +124,8 @@ void UQuestTreeEntry_C::Get_Quest_Item_Def(class UFortQuestItemDefinition** AsFo
 
 void UQuestTreeEntry_C::Quest_Category_Have_Unseen_Quests(bool* HasUnseen)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Quest Category Have Unseen Quests");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf886b7c);
 
 	UQuestTreeEntry_C_Quest_Category_Have_Unseen_Quests_Params params;
 
@@ -139,7 +145,8 @@ void UQuestTreeEntry_C::Quest_Category_Have_Unseen_Quests(bool* HasUnseen)
 
 void UQuestTreeEntry_C::Update_Quest_Category_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Update Quest Category Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6cc166b7);
 
 	UQuestTreeEntry_C_Update_Quest_Category_Bang_State_Params params;
 
@@ -156,7 +163,8 @@ void UQuestTreeEntry_C::Update_Quest_Category_Bang_State()
 
 void UQuestTreeEntry_C::Update_Quest_Item_Seen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Update Quest Item Seen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf223b3bc);
 
 	UQuestTreeEntry_C_Update_Quest_Item_Seen_Params params;
 
@@ -173,7 +181,8 @@ void UQuestTreeEntry_C::Update_Quest_Item_Seen()
 
 void UQuestTreeEntry_C::Update_Quest_Item_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Update Quest Item Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa3aa2d4);
 
 	UQuestTreeEntry_C_Update_Quest_Item_Bang_State_Params params;
 
@@ -190,7 +199,8 @@ void UQuestTreeEntry_C::Update_Quest_Item_Bang_State()
 
 void UQuestTreeEntry_C::SetCompletionPercentage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.SetCompletionPercentage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6196f1bb);
 
 	UQuestTreeEntry_C_SetCompletionPercentage_Params params;
 
@@ -207,7 +217,8 @@ void UQuestTreeEntry_C::SetCompletionPercentage()
 
 void UQuestTreeEntry_C::Unpin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Unpin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x42378617);
 
 	UQuestTreeEntry_C_Unpin_Params params;
 
@@ -224,7 +235,8 @@ void UQuestTreeEntry_C::Unpin()
 
 void UQuestTreeEntry_C::SetPinnedState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.SetPinnedState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1cfe04c6);
 
 	UQuestTreeEntry_C_SetPinnedState_Params params;
 
@@ -243,7 +255,8 @@ void UQuestTreeEntry_C::SetPinnedState()
 
 void UQuestTreeEntry_C::SetupAsCategory(class UFortQuestCategory** Category)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.SetupAsCategory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x843ca82);
 
 	UQuestTreeEntry_C_SetupAsCategory_Params params;
 	params.Category = Category;
@@ -263,7 +276,8 @@ void UQuestTreeEntry_C::SetupAsCategory(class UFortQuestCategory** Category)
 
 void UQuestTreeEntry_C::SetupAsQuest(class UFortQuestItem** Category)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.SetupAsQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15374ee8);
 
 	UQuestTreeEntry_C_SetupAsQuest_Params params;
 	params.Category = Category;
@@ -283,7 +297,8 @@ void UQuestTreeEntry_C::SetupAsQuest(class UFortQuestItem** Category)
 
 void UQuestTreeEntry_C::ExpansionChanged(bool* bExpanded)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.ExpansionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49310c66);
 
 	UQuestTreeEntry_C_ExpansionChanged_Params params;
 	params.bExpanded = bExpanded;
@@ -301,7 +316,8 @@ void UQuestTreeEntry_C::ExpansionChanged(bool* bExpanded)
 
 void UQuestTreeEntry_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x122dc9cf);
 
 	UQuestTreeEntry_C_OnSelected_Params params;
 
@@ -318,7 +334,8 @@ void UQuestTreeEntry_C::OnSelected()
 
 void UQuestTreeEntry_C::OnQuestsUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.OnQuestsUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c8b38b2);
 
 	UQuestTreeEntry_C_OnQuestsUpdated_Params params;
 
@@ -335,7 +352,8 @@ void UQuestTreeEntry_C::OnQuestsUpdated()
 
 void UQuestTreeEntry_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21ff58ed);
 
 	UQuestTreeEntry_C_OnHovered_Params params;
 
@@ -354,7 +372,8 @@ void UQuestTreeEntry_C::OnHovered()
 
 void UQuestTreeEntry_C::OnQuestSeen_Event_1(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.OnQuestSeen_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38c3dde);
 
 	UQuestTreeEntry_C_OnQuestSeen_Event_1_Params params;
 	params.Quest = Quest;
@@ -372,9 +391,28 @@ void UQuestTreeEntry_C::OnQuestSeen_Event_1(class UFortQuestItem* Quest)
 
 void UQuestTreeEntry_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x832dc751);
 
 	UQuestTreeEntry_C_Destruct_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function QuestTreeEntry.QuestTreeEntry_C.OnDeselected
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UQuestTreeEntry_C::OnDeselected()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8207be42);
+
+	UQuestTreeEntry_C_OnDeselected_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -391,7 +429,8 @@ void UQuestTreeEntry_C::Destruct()
 
 void UQuestTreeEntry_C::ExecuteUbergraph_QuestTreeEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTreeEntry.QuestTreeEntry_C.ExecuteUbergraph_QuestTreeEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4573895d);
 
 	UQuestTreeEntry_C_ExecuteUbergraph_QuestTreeEntry_Params params;
 	params.EntryPoint = EntryPoint;

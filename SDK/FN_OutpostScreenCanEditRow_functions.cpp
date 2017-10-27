@@ -17,7 +17,8 @@ namespace SDK
 
 void UOutpostScreenCanEditRow_C::CenterWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.CenterWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86293660);
 
 	UOutpostScreenCanEditRow_C_CenterWidget_Params params;
 
@@ -37,7 +38,8 @@ void UOutpostScreenCanEditRow_C::CenterWidget()
 
 void UOutpostScreenCanEditRow_C::Init(class AFortPlayerStateOutpost* InPlayer, class AFortPlayerStateOutpost* InOutpostOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3e320d1);
 
 	UOutpostScreenCanEditRow_C_Init_Params params;
 	params.InPlayer = InPlayer;
@@ -58,7 +60,8 @@ void UOutpostScreenCanEditRow_C::Init(class AFortPlayerStateOutpost* InPlayer, c
 
 void UOutpostScreenCanEditRow_C::BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe93b01ba);
 
 	UOutpostScreenCanEditRow_C_BndEvt__CanEditButton_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -78,7 +81,8 @@ void UOutpostScreenCanEditRow_C::BndEvt__CanEditButton_K2Node_ComponentBoundEven
 
 void UOutpostScreenCanEditRow_C::ExecuteUbergraph_OutpostScreenCanEditRow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OutpostScreenCanEditRow.OutpostScreenCanEditRow_C.ExecuteUbergraph_OutpostScreenCanEditRow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c1489c5);
 
 	UOutpostScreenCanEditRow_C_ExecuteUbergraph_OutpostScreenCanEditRow_Params params;
 	params.EntryPoint = EntryPoint;

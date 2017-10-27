@@ -19,7 +19,8 @@ namespace SDK
 
 TArray<class UFortQuestItem*> UQuestTrackerTrackedQuestsList_C::GetQuestsToDisplay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerTrackedQuestsList.QuestTrackerTrackedQuestsList_C.GetQuestsToDisplay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61135f83);
 
 	UQuestTrackerTrackedQuestsList_C_GetQuestsToDisplay_Params params;
 

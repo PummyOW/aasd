@@ -19,7 +19,8 @@ namespace SDK
 
 void UAnnouncement_Basic_C::UpdateWidgetData(class AFortClientAnnouncement** Announcement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Basic.Announcement_Basic_C.UpdateWidgetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32a1a68c);
 
 	UAnnouncement_Basic_C_UpdateWidgetData_Params params;
 	params.Announcement = Announcement;
@@ -37,7 +38,8 @@ void UAnnouncement_Basic_C::UpdateWidgetData(class AFortClientAnnouncement** Ann
 
 void UAnnouncement_Basic_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Basic.Announcement_Basic_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f251faa);
 
 	UAnnouncement_Basic_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UAnnouncement_Basic_C::Construct()
 
 void UAnnouncement_Basic_C::AnnouncementStopped(class AFortClientAnnouncement** Announcement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Basic.Announcement_Basic_C.AnnouncementStopped");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63f0cc41);
 
 	UAnnouncement_Basic_C_AnnouncementStopped_Params params;
 	params.Announcement = Announcement;
@@ -76,7 +79,8 @@ void UAnnouncement_Basic_C::AnnouncementStopped(class AFortClientAnnouncement** 
 
 void UAnnouncement_Basic_C::ExecuteUbergraph_Announcement_Basic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_Basic.Announcement_Basic_C.ExecuteUbergraph_Announcement_Basic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93742851);
 
 	UAnnouncement_Basic_C_ExecuteUbergraph_Announcement_Basic_Params params;
 	params.EntryPoint = EntryPoint;

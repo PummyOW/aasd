@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Overlay.Overlays");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa3960d66);
 		return ptr;
 	}
 
@@ -36,7 +37,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Overlay.BasicOverlays");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1091d61e);
 		return ptr;
 	}
 
@@ -53,7 +55,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Overlay.LocalizedOverlays");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x85e7bfd7);
 		return ptr;
 	}
 

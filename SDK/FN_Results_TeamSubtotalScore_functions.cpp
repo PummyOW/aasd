@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_TeamSubtotalScore_C::UpdateBackground()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.UpdateBackground");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3dc1a5b4);
 
 	UResults_TeamSubtotalScore_C_UpdateBackground_Params params;
 
@@ -36,7 +37,8 @@ void UResults_TeamSubtotalScore_C::UpdateBackground()
 
 void UResults_TeamSubtotalScore_C::SetScore(int Score)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.SetScore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d494ea9);
 
 	UResults_TeamSubtotalScore_C_SetScore_Params params;
 	params.Score = Score;
@@ -56,7 +58,8 @@ void UResults_TeamSubtotalScore_C::SetScore(int Score)
 
 void UResults_TeamSubtotalScore_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb553eb89);
 
 	UResults_TeamSubtotalScore_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -74,7 +77,8 @@ void UResults_TeamSubtotalScore_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_TeamSubtotalScore_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45bb5b62);
 
 	UResults_TeamSubtotalScore_C_Construct_Params params;
 
@@ -93,7 +97,8 @@ void UResults_TeamSubtotalScore_C::Construct()
 
 void UResults_TeamSubtotalScore_C::ExecuteUbergraph_Results_TeamSubtotalScore(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamSubtotalScore.Results_TeamSubtotalScore_C.ExecuteUbergraph_Results_TeamSubtotalScore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70740421);
 
 	UResults_TeamSubtotalScore_C_ExecuteUbergraph_Results_TeamSubtotalScore_Params params;
 	params.EntryPoint = EntryPoint;

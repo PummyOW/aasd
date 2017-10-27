@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemTransformKeyPicker_C::NavigateToFirstItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPicker.ItemTransformKeyPicker_C.NavigateToFirstItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0739c4);
 
 	UItemTransformKeyPicker_C_NavigateToFirstItem_Params params;
 
@@ -36,7 +37,8 @@ void UItemTransformKeyPicker_C::NavigateToFirstItem()
 
 void UItemTransformKeyPicker_C::NavigateToSelectedItem(class UFortItem* InItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPicker.ItemTransformKeyPicker_C.NavigateToSelectedItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ac6e0e7);
 
 	UItemTransformKeyPicker_C_NavigateToSelectedItem_Params params;
 	params.InItem = InItem;
@@ -56,7 +58,8 @@ void UItemTransformKeyPicker_C::NavigateToSelectedItem(class UFortItem* InItem)
 
 void UItemTransformKeyPicker_C::GetSelectedKey(class UFortItem** SelectedKey)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPicker.ItemTransformKeyPicker_C.GetSelectedKey");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ae51ecb);
 
 	UItemTransformKeyPicker_C_GetSelectedKey_Params params;
 
@@ -78,7 +81,8 @@ void UItemTransformKeyPicker_C::GetSelectedKey(class UFortItem** SelectedKey)
 
 void UItemTransformKeyPicker_C::SetSelectedKey(class UFortAccountItem* AccountKey)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyPicker.ItemTransformKeyPicker_C.SetSelectedKey");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71bad147);
 
 	UItemTransformKeyPicker_C_SetSelectedKey_Params params;
 	params.AccountKey = AccountKey;

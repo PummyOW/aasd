@@ -17,7 +17,8 @@ namespace SDK
 
 void UJournalQuestProgressBar_C::SetStylesToDefault()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestProgressBar.JournalQuestProgressBar_C.SetStylesToDefault");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5627d2cb);
 
 	UJournalQuestProgressBar_C_SetStylesToDefault_Params params;
 
@@ -34,7 +35,8 @@ void UJournalQuestProgressBar_C::SetStylesToDefault()
 
 void UJournalQuestProgressBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestProgressBar.JournalQuestProgressBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73793186);
 
 	UJournalQuestProgressBar_C_Construct_Params params;
 
@@ -51,7 +53,8 @@ void UJournalQuestProgressBar_C::Construct()
 
 void UJournalQuestProgressBar_C::HandleNewQuestObjectiveBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestProgressBar.JournalQuestProgressBar_C.HandleNewQuestObjectiveBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48911b94);
 
 	UJournalQuestProgressBar_C_HandleNewQuestObjectiveBP_Params params;
 
@@ -68,7 +71,8 @@ void UJournalQuestProgressBar_C::HandleNewQuestObjectiveBP()
 
 void UJournalQuestProgressBar_C::Handle_Quests_Updated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestProgressBar.JournalQuestProgressBar_C.Handle Quests Updated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf06287c7);
 
 	UJournalQuestProgressBar_C_Handle_Quests_Updated_Params params;
 
@@ -87,7 +91,8 @@ void UJournalQuestProgressBar_C::Handle_Quests_Updated()
 
 void UJournalQuestProgressBar_C::ExecuteUbergraph_JournalQuestProgressBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestProgressBar.JournalQuestProgressBar_C.ExecuteUbergraph_JournalQuestProgressBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8744dcae);
 
 	UJournalQuestProgressBar_C_ExecuteUbergraph_JournalQuestProgressBar_Params params;
 	params.EntryPoint = EntryPoint;

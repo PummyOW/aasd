@@ -405,6 +405,12 @@ struct UFrontEndRewards_Widget_C_ExecuteUbergraph_FrontEndRewards_Widget_Params
 	int                                                EntryPoint;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsIgnored__DelegateSignature
+struct UFrontEndRewards_Widget_C_OnRewardsIgnored__DelegateSignature_Params
+{
+	class UFrontEndRewards_Widget_C*                   RewardsWidget;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function FrontEndRewards_Widget.FrontEndRewards_Widget_C.OnRewardsClaimError__DelegateSignature
 struct UFrontEndRewards_Widget_C_OnRewardsClaimError__DelegateSignature_Params
 {

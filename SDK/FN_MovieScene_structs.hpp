@@ -43,6 +43,16 @@ enum class EMovieSceneCompletionMode : uint8_t
 };
 
 
+// Enum MovieScene.ESectionEvaluationFlags
+enum class ESectionEvaluationFlags : uint8_t
+{
+	None                           = 0,
+	PreRoll                        = 1,
+	PostRoll                       = 2,
+	ESectionEvaluationFlags_MAX    = 3
+};
+
+
 // Enum MovieScene.EEvaluationMethod
 enum class EEvaluationMethod : uint8_t
 {
@@ -139,10 +149,10 @@ struct FMovieSceneTrackEvalOptions
 };
 
 // ScriptStruct MovieScene.MovieSceneSegment
-// 0x0040
+// 0x0050
 struct FMovieSceneSegment
 {
-	unsigned char                                      UnknownData00[0x40];                                      // 0x0000(0x0040) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x50];                                      // 0x0000(0x0050) MISSED OFFSET
 };
 
 // ScriptStruct MovieScene.MovieSceneEvalTemplatePtr
@@ -336,11 +346,13 @@ struct FMovieSceneEditorData
 };
 
 // ScriptStruct MovieScene.SectionEvaluationData
-// 0x0008
+// 0x000C
 struct FSectionEvaluationData
 {
 	int                                                ImplIndex;                                                // 0x0000(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	float                                              ForcedTime;                                               // 0x0004(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	ESectionEvaluationFlags                            Flags;                                                    // 0x0008(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0009(0x0003) MISSED OFFSET
 };
 
 // ScriptStruct MovieScene.MovieSceneEvalTemplateBase
@@ -378,8 +390,8 @@ struct FMovieSceneSectionParameters
 {
 	float                                              StartOffset;                                              // 0x0000(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	float                                              TimeScale;                                                // 0x0004(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PrerollTime;                                              // 0x0008(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PostrollTime;                                             // 0x000C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PrerollTime;                                              // 0x0008(0x0004) (CPF_ZeroConstructor, CPF_Deprecated, CPF_IsPlainOldData)
+	float                                              PostrollTime;                                             // 0x000C(0x0004) (CPF_ZeroConstructor, CPF_Deprecated, CPF_IsPlainOldData)
 };
 
 // ScriptStruct MovieScene.MovieSceneSequenceCachedSignature

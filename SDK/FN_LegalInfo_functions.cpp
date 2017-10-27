@@ -19,7 +19,8 @@ namespace SDK
 
 void ULegalInfo_C::On_Scroll_Down(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegalInfo.LegalInfo_C.On Scroll Down");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70e93141);
 
 	ULegalInfo_C_On_Scroll_Down_Params params;
 
@@ -42,7 +43,8 @@ void ULegalInfo_C::On_Scroll_Down(bool* PassThrough)
 
 void ULegalInfo_C::BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int ActiveWidgetIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegalInfo.LegalInfo_C.BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef353eed);
 
 	ULegalInfo_C_BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_OnActiveWidgetChanged__DelegateSignature_Params params;
 	params.ActiveWidget = ActiveWidget;
@@ -63,7 +65,8 @@ void ULegalInfo_C::BndEvt__CommonWidgetSwitcher_0_K2Node_ComponentBoundEvent_68_
 
 void ULegalInfo_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegalInfo.LegalInfo_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb305a676);
 
 	ULegalInfo_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -84,7 +87,8 @@ void ULegalInfo_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_34_CommonButto
 
 void ULegalInfo_C::BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegalInfo.LegalInfo_C.BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f1a0730);
 
 	ULegalInfo_C_BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -103,7 +107,8 @@ void ULegalInfo_C::BndEvt__LegalOptions_K2Node_ComponentBoundEvent_101_OnTabButt
 
 void ULegalInfo_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegalInfo.LegalInfo_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d5b4562);
 
 	ULegalInfo_C_Construct_Params params;
 
@@ -122,7 +127,8 @@ void ULegalInfo_C::Construct()
 
 void ULegalInfo_C::ExecuteUbergraph_LegalInfo(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegalInfo.LegalInfo_C.ExecuteUbergraph_LegalInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58cd88c2);
 
 	ULegalInfo_C_ExecuteUbergraph_LegalInfo_Params params;
 	params.EntryPoint = EntryPoint;

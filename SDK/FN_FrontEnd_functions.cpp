@@ -17,7 +17,8 @@ namespace SDK
 
 void AFrontEnd_C::OnMatchStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Frontend.FrontEnd_C.OnMatchStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e0d6ffe);
 
 	AFrontEnd_C_OnMatchStarted_Params params;
 
@@ -34,7 +35,8 @@ void AFrontEnd_C::OnMatchStarted()
 
 void AFrontEnd_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Frontend.FrontEnd_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68dde9b7);
 
 	AFrontEnd_C_ReceiveBeginPlay_Params params;
 
@@ -51,7 +53,8 @@ void AFrontEnd_C::ReceiveBeginPlay()
 
 void AFrontEnd_C::EnableTutorial()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Frontend.FrontEnd_C.EnableTutorial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14a59fd0);
 
 	AFrontEnd_C_EnableTutorial_Params params;
 
@@ -70,7 +73,8 @@ void AFrontEnd_C::EnableTutorial()
 
 void AFrontEnd_C::ExecuteUbergraph_FrontEnd(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Frontend.FrontEnd_C.ExecuteUbergraph_FrontEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1615500f);
 
 	AFrontEnd_C_ExecuteUbergraph_FrontEnd_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 ESlateVisibility UTooltip_Item_C::Get_Tooltip_Header_Text_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Item.Tooltip-Item_C.Get Tooltip Header Text Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e591a5e);
 
 	UTooltip_Item_C_Get_Tooltip_Header_Text_Visibility_Params params;
 
@@ -40,7 +41,8 @@ ESlateVisibility UTooltip_Item_C::Get_Tooltip_Header_Text_Visibility()
 
 ESlateVisibility UTooltip_Item_C::Get_Tooltip_Header_Icon_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Item.Tooltip-Item_C.Get Tooltip Header Icon Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1bff501c);
 
 	UTooltip_Item_C_Get_Tooltip_Header_Icon_Visibility_Params params;
 
@@ -61,7 +63,8 @@ ESlateVisibility UTooltip_Item_C::Get_Tooltip_Header_Icon_Visibility()
 
 ESlateVisibility UTooltip_Item_C::Get_Tooltip_Header_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Item.Tooltip-Item_C.Get Tooltip Header Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1722d577);
 
 	UTooltip_Item_C_Get_Tooltip_Header_Visibility_Params params;
 
@@ -82,7 +85,8 @@ ESlateVisibility UTooltip_Item_C::Get_Tooltip_Header_Visibility()
 
 struct FLinearColor UTooltip_Item_C::Get_Theme_Color__Normal_()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Item.Tooltip-Item_C.Get Theme Color [Normal]");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x42edd2b8);
 
 	UTooltip_Item_C_Get_Theme_Color__Normal__Params params;
 
@@ -103,7 +107,8 @@ struct FLinearColor UTooltip_Item_C::Get_Theme_Color__Normal_()
 
 struct FSlateBrush UTooltip_Item_C::Get_Icon_Brush()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Item.Tooltip-Item_C.Get Icon Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0b4a59a);
 
 	UTooltip_Item_C_Get_Icon_Brush_Params params;
 
@@ -122,7 +127,8 @@ struct FSlateBrush UTooltip_Item_C::Get_Icon_Brush()
 
 void UTooltip_Item_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Item.Tooltip-Item_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98f47e68);
 
 	UTooltip_Item_C_Construct_Params params;
 
@@ -141,7 +147,8 @@ void UTooltip_Item_C::Construct()
 
 void UTooltip_Item_C::ExecuteUbergraph_Tooltip_Item(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Item.Tooltip-Item_C.ExecuteUbergraph_Tooltip-Item");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8cdb67a);
 
 	UTooltip_Item_C_ExecuteUbergraph_Tooltip_Item_Params params;
 	params.EntryPoint = EntryPoint;

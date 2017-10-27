@@ -21,7 +21,8 @@ namespace SDK
 
 void UCollectionBookSectionPanel_C::OnInspectItem(class UFortItem* Item, bool AllowItemModifications, bool IsTemporaryItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.OnInspectItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e867c8d);
 
 	UCollectionBookSectionPanel_C_OnInspectItem_Params params;
 	params.Item = Item;
@@ -43,7 +44,8 @@ void UCollectionBookSectionPanel_C::OnInspectItem(class UFortItem* Item, bool Al
 
 void UCollectionBookSectionPanel_C::OnSlotItemConfirm(class UFortItem* ItemToSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.OnSlotItemConfirm");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ae02f2b);
 
 	UCollectionBookSectionPanel_C_OnSlotItemConfirm_Params params;
 	params.ItemToSlot = ItemToSlot;
@@ -63,7 +65,8 @@ void UCollectionBookSectionPanel_C::OnSlotItemConfirm(class UFortItem* ItemToSlo
 
 void UCollectionBookSectionPanel_C::ShowItemDetail(class UFortItem* SelectedItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.ShowItemDetail");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52755892);
 
 	UCollectionBookSectionPanel_C_ShowItemDetail_Params params;
 	params.SelectedItem = SelectedItem;
@@ -81,7 +84,8 @@ void UCollectionBookSectionPanel_C::ShowItemDetail(class UFortItem* SelectedItem
 
 void UCollectionBookSectionPanel_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfdd770a);
 
 	UCollectionBookSectionPanel_C_Construct_Params params;
 
@@ -100,7 +104,8 @@ void UCollectionBookSectionPanel_C::Construct()
 
 void UCollectionBookSectionPanel_C::OnSectionChanged(class UFortCollectionBookSection** Section)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.OnSectionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc6c5c73);
 
 	UCollectionBookSectionPanel_C_OnSectionChanged_Params params;
 	params.Section = Section;
@@ -118,7 +123,8 @@ void UCollectionBookSectionPanel_C::OnSectionChanged(class UFortCollectionBookSe
 
 void UCollectionBookSectionPanel_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58162f81);
 
 	UCollectionBookSectionPanel_C_OnActivated_Params params;
 
@@ -137,7 +143,8 @@ void UCollectionBookSectionPanel_C::OnActivated()
 
 void UCollectionBookSectionPanel_C::ExecuteUbergraph_CollectionBookSectionPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionPanel.CollectionBookSectionPanel_C.ExecuteUbergraph_CollectionBookSectionPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7713e9a5);
 
 	UCollectionBookSectionPanel_C_ExecuteUbergraph_CollectionBookSectionPanel_Params params;
 	params.EntryPoint = EntryPoint;

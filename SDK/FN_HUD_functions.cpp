@@ -21,7 +21,8 @@ namespace SDK
 
 void UHUD_C::CheckHUDElementVisibility(const struct FGameplayTag& HUDElementTagToCheck, struct FGameplayTagContainer* HiddenHUDElementTags, class UWidget** HUDElement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.CheckHUDElementVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d5b45a8);
 
 	UHUD_C_CheckHUDElementVisibility_Params params;
 	params.HUDElementTagToCheck = HUDElementTagToCheck;
@@ -46,7 +47,8 @@ void UHUD_C::CheckHUDElementVisibility(const struct FGameplayTag& HUDElementTagT
 
 void UHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer* HiddenHUDElementTags)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnHUDElementVisibilityChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x885da32f);
 
 	UHUD_C_OnHUDElementVisibilityChanged_Params params;
 
@@ -68,7 +70,8 @@ void UHUD_C::OnHUDElementVisibilityChanged(struct FGameplayTagContainer* HiddenH
 
 void UHUD_C::OnManagementTabSelected(const struct FName& TabName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnManagementTabSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4c3b8c9);
 
 	UHUD_C_OnManagementTabSelected_Params params;
 	params.TabName = TabName;
@@ -89,7 +92,8 @@ void UHUD_C::OnManagementTabSelected(const struct FName& TabName)
 
 class UWidget* UHUD_C::PopContentWidgetInternal(struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.PopContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0b413a8);
 
 	UHUD_C_PopContentWidgetInternal_Params params;
 	params.State = State;
@@ -109,7 +113,8 @@ class UWidget* UHUD_C::PopContentWidgetInternal(struct FContentPushState* State)
 
 void UHUD_C::CreateInterestIndicatorWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.CreateInterestIndicatorWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0dde05c);
 
 	UHUD_C_CreateInterestIndicatorWidget_Params params;
 
@@ -128,7 +133,8 @@ void UHUD_C::CreateInterestIndicatorWidget()
 
 void UHUD_C::HandleOnPointOfInterestRemoved(class AActor* PointOfInterest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleOnPointOfInterestRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x482d21cf);
 
 	UHUD_C_HandleOnPointOfInterestRemoved_Params params;
 	params.PointOfInterest = PointOfInterest;
@@ -150,7 +156,8 @@ void UHUD_C::HandleOnPointOfInterestRemoved(class AActor* PointOfInterest)
 
 void UHUD_C::HandleOnPointOfInterestAdded(class AActor* PointOfInterest, const struct FText& DisplayText, class UTexture2D* DisplayImage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleOnPointOfInterestAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73d6dc61);
 
 	UHUD_C_HandleOnPointOfInterestAdded_Params params;
 	params.PointOfInterest = PointOfInterest;
@@ -174,7 +181,8 @@ void UHUD_C::HandleOnPointOfInterestAdded(class AActor* PointOfInterest, const s
 
 void UHUD_C::ShowPicker(EFortPickerMode Mode, int InitialOption, bool IgnoreFirstAccept)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.ShowPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfababa9a);
 
 	UHUD_C_ShowPicker_Params params;
 	params.Mode = Mode;
@@ -194,7 +202,8 @@ void UHUD_C::ShowPicker(EFortPickerMode Mode, int InitialOption, bool IgnoreFirs
 
 void UHUD_C::OnHordeTierCompleteWidgetFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnHordeTierCompleteWidgetFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa47dfe2d);
 
 	UHUD_C_OnHordeTierCompleteWidgetFinished_Params params;
 
@@ -213,7 +222,8 @@ void UHUD_C::OnHordeTierCompleteWidgetFinished()
 
 void UHUD_C::HandleHordeTierComplete(EFortCompletionResult Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleHordeTierComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe12f5c78);
 
 	UHUD_C_HandleHordeTierComplete_Params params;
 	params.Result = Result;
@@ -231,7 +241,8 @@ void UHUD_C::HandleHordeTierComplete(EFortCompletionResult Result)
 
 void UHUD_C::HandleFocusChat()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleFocusChat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7001de89);
 
 	UHUD_C_HandleFocusChat_Params params;
 
@@ -250,7 +261,8 @@ void UHUD_C::HandleFocusChat()
 
 void UHUD_C::ToggleTopLevelMenu(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.ToggleTopLevelMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ae10397);
 
 	UHUD_C_ToggleTopLevelMenu_Params params;
 	params.Show = Show;
@@ -270,7 +282,8 @@ void UHUD_C::ToggleTopLevelMenu(bool Show)
 
 void UHUD_C::ToggleChat(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.ToggleChat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce386c29);
 
 	UHUD_C_ToggleChat_Params params;
 	params.Show = Show;
@@ -290,7 +303,8 @@ void UHUD_C::ToggleChat(bool Show)
 
 void UHUD_C::SetPersistentHUDContentVisibility(bool Visible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.SetPersistentHUDContentVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc5f2f70);
 
 	UHUD_C_SetPersistentHUDContentVisibility_Params params;
 	params.Visible = Visible;
@@ -310,7 +324,8 @@ void UHUD_C::SetPersistentHUDContentVisibility(bool Visible)
 
 void UHUD_C::HandleIndicatorModeChanged(bool InidicatorsEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleIndicatorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a303b4b);
 
 	UHUD_C_HandleIndicatorModeChanged_Params params;
 	params.InidicatorsEnabled = InidicatorsEnabled;
@@ -331,7 +346,8 @@ void UHUD_C::HandleIndicatorModeChanged(bool InidicatorsEnabled)
 
 void UHUD_C::SetCursorModeContent(class UUserWidget* CustomWidget, struct FName* ActionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.SetCursorModeContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4bedb875);
 
 	UHUD_C_SetCursorModeContent_Params params;
 	params.CustomWidget = CustomWidget;
@@ -352,7 +368,8 @@ void UHUD_C::SetCursorModeContent(class UUserWidget* CustomWidget, struct FName*
 
 void UHUD_C::SetGameMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.SetGameMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd794af32);
 
 	UHUD_C_SetGameMode_Params params;
 
@@ -371,7 +388,8 @@ void UHUD_C::SetGameMode()
 
 void UHUD_C::OnPlayerTargetingChanged(bool IsTargeting)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnPlayerTargetingChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47532544);
 
 	UHUD_C_OnPlayerTargetingChanged_Params params;
 	params.IsTargeting = IsTargeting;
@@ -389,7 +407,8 @@ void UHUD_C::OnPlayerTargetingChanged(bool IsTargeting)
 
 void UHUD_C::HandleKeybindsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleKeybindsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c543ef6);
 
 	UHUD_C_HandleKeybindsChanged_Params params;
 
@@ -406,7 +425,8 @@ void UHUD_C::HandleKeybindsChanged()
 
 void UHUD_C::HandleZoneCompleted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleZoneCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad19797a);
 
 	UHUD_C_HandleZoneCompleted_Params params;
 
@@ -426,7 +446,8 @@ void UHUD_C::HandleZoneCompleted()
 
 void UHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnHandleAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86065c1c);
 
 	UHUD_C_OnHandleAction_Params params;
 
@@ -448,7 +469,8 @@ void UHUD_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 
 void UHUD_C::SetQuickbarSizes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.SetQuickbarSizes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf86c3b75);
 
 	UHUD_C_SetQuickbarSizes_Params params;
 
@@ -468,7 +490,8 @@ void UHUD_C::SetQuickbarSizes()
 
 void UHUD_C::HandleQuickbarSlotFocusSlotChanged(EFortQuickBars Quickbar_Index, int Slot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleQuickbarSlotFocusSlotChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69294f65);
 
 	UHUD_C_HandleQuickbarSlotFocusSlotChanged_Params params;
 	params.Quickbar_Index = Quickbar_Index;
@@ -491,7 +514,8 @@ void UHUD_C::HandleQuickbarSlotFocusSlotChanged(EFortQuickBars Quickbar_Index, i
 
 void UHUD_C::HandleCursorModeChanged(bool IsEnabled, const struct FName& ActionName, class UUserWidget* CursorModeContentCustomWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleCursorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61501e86);
 
 	UHUD_C_HandleCursorModeChanged_Params params;
 	params.IsEnabled = IsEnabled;
@@ -511,7 +535,8 @@ void UHUD_C::HandleCursorModeChanged(bool IsEnabled, const struct FName& ActionN
 
 void UHUD_C::OnDeclined_0E0300084F8A9EB1D6CB5E836DBF8C7A()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnDeclined_0E0300084F8A9EB1D6CB5E836DBF8C7A");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa42b385c);
 
 	UHUD_C_OnDeclined_0E0300084F8A9EB1D6CB5E836DBF8C7A_Params params;
 
@@ -528,7 +553,8 @@ void UHUD_C::OnDeclined_0E0300084F8A9EB1D6CB5E836DBF8C7A()
 
 void UHUD_C::OnConfirmed_0E0300084F8A9EB1D6CB5E836DBF8C7A()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnConfirmed_0E0300084F8A9EB1D6CB5E836DBF8C7A");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb55a37b);
 
 	UHUD_C_OnConfirmed_0E0300084F8A9EB1D6CB5E836DBF8C7A_Params params;
 
@@ -547,7 +573,8 @@ void UHUD_C::OnConfirmed_0E0300084F8A9EB1D6CB5E836DBF8C7A()
 
 void UHUD_C::OnEnterState(EFortUIState* PreviousUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.OnEnterState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3bc7ce29);
 
 	UHUD_C_OnEnterState_Params params;
 	params.PreviousUIState = PreviousUIState;
@@ -567,7 +594,8 @@ void UHUD_C::OnEnterState(EFortUIState* PreviousUIState)
 
 void UHUD_C::QuestsCompleted(TArray<class UFortQuestItem*> Quests)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.QuestsCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a24a4f5);
 
 	UHUD_C_QuestsCompleted_Params params;
 	params.Quests = Quests;
@@ -585,7 +613,8 @@ void UHUD_C::QuestsCompleted(TArray<class UFortQuestItem*> Quests)
 
 void UHUD_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcceecc0e);
 
 	UHUD_C_Construct_Params params;
 
@@ -604,7 +633,8 @@ void UHUD_C::Construct()
 
 void UHUD_C::LoadingScreenChanged(bool bVisible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.LoadingScreenChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c386a6b);
 
 	UHUD_C_LoadingScreenChanged_Params params;
 	params.bVisible = bVisible;
@@ -624,7 +654,8 @@ void UHUD_C::LoadingScreenChanged(bool bVisible)
 
 void UHUD_C::EndOfDayRecapStarted(const struct FEndOfDayRecap& EndOfDayRecap)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.EndOfDayRecapStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6176f9d);
 
 	UHUD_C_EndOfDayRecapStarted_Params params;
 	params.EndOfDayRecap = EndOfDayRecap;
@@ -642,7 +673,8 @@ void UHUD_C::EndOfDayRecapStarted(const struct FEndOfDayRecap& EndOfDayRecap)
 
 void UHUD_C::EndOfDayRecapEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.EndOfDayRecapEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd62fae6e);
 
 	UHUD_C_EndOfDayRecapEnded_Params params;
 
@@ -662,7 +694,8 @@ void UHUD_C::EndOfDayRecapEnded()
 
 void UHUD_C::PushContentWidgetInternal(class UWidget** Widget, struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.PushContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f7811b9);
 
 	UHUD_C_PushContentWidgetInternal_Params params;
 	params.Widget = Widget;
@@ -681,7 +714,8 @@ void UHUD_C::PushContentWidgetInternal(class UWidget** Widget, struct FContentPu
 
 void UHUD_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c1f862d);
 
 	UHUD_C_Destruct_Params params;
 
@@ -700,7 +734,8 @@ void UHUD_C::Destruct()
 
 void UHUD_C::HandleInputMethodChanged(bool UsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.HandleInputMethodChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97dc53c8);
 
 	UHUD_C_HandleInputMethodChanged_Params params;
 	params.UsingGamepad = UsingGamepad;
@@ -718,7 +753,8 @@ void UHUD_C::HandleInputMethodChanged(bool UsingGamepad)
 
 void UHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_8_StreamTimerExpired__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_8_StreamTimerExpired__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9ccf98d);
 
 	UHUD_C_BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_8_StreamTimerExpired__DelegateSignature_Params params;
 
@@ -735,7 +771,8 @@ void UHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEv
 
 void UHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_13_StreamTimerStarted__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_13_StreamTimerStarted__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13b7676f);
 
 	UHUD_C_BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEvent_13_StreamTimerStarted__DelegateSignature_Params params;
 
@@ -754,7 +791,8 @@ void UHUD_C::BndEvt__BP_FortLiveStreamGrantWindowExpires_K2Node_ComponentBoundEv
 
 void UHUD_C::ExecuteUbergraph_HUD(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HUD.HUD_C.ExecuteUbergraph_HUD");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef5e3b5a);
 
 	UHUD_C_ExecuteUbergraph_HUD_Params params;
 	params.EntryPoint = EntryPoint;

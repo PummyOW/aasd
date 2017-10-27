@@ -12,6 +12,27 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.UpdateTypeIconOffset
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// float                          VerticalOffset                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void USimpleSquadSlotButton_C::UpdateTypeIconOffset(float VerticalOffset)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e2e5bba);
+
+	USimpleSquadSlotButton_C_UpdateTypeIconOffset_Params params;
+	params.VerticalOffset = VerticalOffset;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Update SubType Icon Glow
 // (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -19,7 +40,8 @@ namespace SDK
 
 void USimpleSquadSlotButton_C::Update_SubType_Icon_Glow(bool GlowIcon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Update SubType Icon Glow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4e8a278);
 
 	USimpleSquadSlotButton_C_Update_SubType_Icon_Glow_Params params;
 	params.GlowIcon = GlowIcon;
@@ -37,7 +59,8 @@ void USimpleSquadSlotButton_C::Update_SubType_Icon_Glow(bool GlowIcon)
 
 void USimpleSquadSlotButton_C::Update_SubType_Icon_Image()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Update SubType Icon Image");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d796802);
 
 	USimpleSquadSlotButton_C_Update_SubType_Icon_Image_Params params;
 
@@ -56,7 +79,8 @@ void USimpleSquadSlotButton_C::Update_SubType_Icon_Image()
 
 void USimpleSquadSlotButton_C::IsSlotEmpty(bool* IsEmpty)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.IsSlotEmpty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22f8a0b2);
 
 	USimpleSquadSlotButton_C_IsSlotEmpty_Params params;
 
@@ -76,7 +100,8 @@ void USimpleSquadSlotButton_C::IsSlotEmpty(bool* IsEmpty)
 
 void USimpleSquadSlotButton_C::Mark_Squad_Slot_Seen_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Mark Squad Slot Seen State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34f05234);
 
 	USimpleSquadSlotButton_C_Mark_Squad_Slot_Seen_State_Params params;
 
@@ -93,7 +118,8 @@ void USimpleSquadSlotButton_C::Mark_Squad_Slot_Seen_State()
 
 void USimpleSquadSlotButton_C::Update_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Update Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50a1b8b9);
 
 	USimpleSquadSlotButton_C_Update_Bang_State_Params params;
 
@@ -112,7 +138,8 @@ void USimpleSquadSlotButton_C::Update_Bang_State()
 
 class UWidget* USimpleSquadSlotButton_C::GetSimpleSquadButtonTooltipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.GetSimpleSquadButtonTooltipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc284f3a8);
 
 	USimpleSquadSlotButton_C_GetSimpleSquadButtonTooltipWidget_Params params;
 
@@ -133,7 +160,8 @@ class UWidget* USimpleSquadSlotButton_C::GetSimpleSquadButtonTooltipWidget()
 
 void USimpleSquadSlotButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x459bd329);
 
 	USimpleSquadSlotButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -151,7 +179,8 @@ void USimpleSquadSlotButton_C::PreConstruct(bool* IsDesignTime)
 
 void USimpleSquadSlotButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe587bc2);
 
 	USimpleSquadSlotButton_C_Construct_Params params;
 
@@ -168,7 +197,8 @@ void USimpleSquadSlotButton_C::Construct()
 
 void USimpleSquadSlotButton_C::HandlePostDifferentSquadSlotSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.HandlePostDifferentSquadSlotSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63e237f2);
 
 	USimpleSquadSlotButton_C_HandlePostDifferentSquadSlotSetBP_Params params;
 
@@ -185,7 +215,8 @@ void USimpleSquadSlotButton_C::HandlePostDifferentSquadSlotSetBP()
 
 void USimpleSquadSlotButton_C::SquadSlotWidgetUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.SquadSlotWidgetUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b299ba4);
 
 	USimpleSquadSlotButton_C_SquadSlotWidgetUpdated_Params params;
 
@@ -202,7 +233,8 @@ void USimpleSquadSlotButton_C::SquadSlotWidgetUpdated()
 
 void USimpleSquadSlotButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f313c07);
 
 	USimpleSquadSlotButton_C_OnSelected_Params params;
 
@@ -221,7 +253,8 @@ void USimpleSquadSlotButton_C::OnSelected()
 
 void USimpleSquadSlotButton_C::ExecuteUbergraph_SimpleSquadSlotButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.ExecuteUbergraph_SimpleSquadSlotButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdfda9851);
 
 	USimpleSquadSlotButton_C_ExecuteUbergraph_SimpleSquadSlotButton_Params params;
 	params.EntryPoint = EntryPoint;

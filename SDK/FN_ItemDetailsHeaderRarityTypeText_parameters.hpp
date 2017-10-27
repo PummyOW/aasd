@@ -14,11 +14,6 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
-// Function ItemDetailsHeaderRarityTypeText.ItemDetailsHeaderRarityTypeText_C.Construct
-struct UItemDetailsHeaderRarityTypeText_C_Construct_Params
-{
-};
-
 // Function ItemDetailsHeaderRarityTypeText.ItemDetailsHeaderRarityTypeText_C.HandlePostDifferentItemToDetailSet
 struct UItemDetailsHeaderRarityTypeText_C_HandlePostDifferentItemToDetailSet_Params
 {

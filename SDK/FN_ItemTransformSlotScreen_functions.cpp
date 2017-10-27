@@ -19,7 +19,8 @@ namespace SDK
 
 class UItemTransformSlotEntry_C* UItemTransformSlotScreen_C::GetSlotFromIndex()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.GetSlotFromIndex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x663b726f);
 
 	UItemTransformSlotScreen_C_GetSlotFromIndex_Params params;
 
@@ -38,7 +39,8 @@ class UItemTransformSlotEntry_C* UItemTransformSlotScreen_C::GetSlotFromIndex()
 
 void UItemTransformSlotScreen_C::NavigateToFirstItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.NavigateToFirstItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88409af0);
 
 	UItemTransformSlotScreen_C_NavigateToFirstItem_Params params;
 
@@ -59,7 +61,8 @@ void UItemTransformSlotScreen_C::NavigateToFirstItem()
 
 void UItemTransformSlotScreen_C::Get_Transform_Data(TArray<class UFortItem*>* SacrificeItems, int* CurrentSacrificePoints, int* CurrentTier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.Get Transform Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83190a8b);
 
 	UItemTransformSlotScreen_C_Get_Transform_Data_Params params;
 
@@ -83,7 +86,8 @@ void UItemTransformSlotScreen_C::Get_Transform_Data(TArray<class UFortItem*>* Sa
 
 void UItemTransformSlotScreen_C::ResetScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.ResetScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb13551b4);
 
 	UItemTransformSlotScreen_C_ResetScreen_Params params;
 
@@ -100,7 +104,8 @@ void UItemTransformSlotScreen_C::ResetScreen()
 
 void UItemTransformSlotScreen_C::CloseItemPicker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.CloseItemPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce638c2);
 
 	UItemTransformSlotScreen_C_CloseItemPicker_Params params;
 
@@ -117,7 +122,8 @@ void UItemTransformSlotScreen_C::CloseItemPicker()
 
 void UItemTransformSlotScreen_C::SetupSlotScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.SetupSlotScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ca88932);
 
 	UItemTransformSlotScreen_C_SetupSlotScreen_Params params;
 
@@ -134,7 +140,8 @@ void UItemTransformSlotScreen_C::SetupSlotScreen()
 
 void UItemTransformSlotScreen_C::OpenItemPicker()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OpenItemPicker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe601baf8);
 
 	UItemTransformSlotScreen_C_OpenItemPicker_Params params;
 
@@ -153,7 +160,8 @@ void UItemTransformSlotScreen_C::OpenItemPicker()
 
 void UItemTransformSlotScreen_C::OpenSlotScreen(class UFortItem* Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OpenSlotScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9a0dd83);
 
 	UItemTransformSlotScreen_C_OpenSlotScreen_Params params;
 	params.Key = Key;
@@ -171,7 +179,8 @@ void UItemTransformSlotScreen_C::OpenSlotScreen(class UFortItem* Key)
 
 void UItemTransformSlotScreen_C::BndEvt__Slot1_K2Node_ComponentBoundEvent_1_OnSlotChosen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot1_K2Node_ComponentBoundEvent_1_OnSlotChosen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcaebb228);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot1_K2Node_ComponentBoundEvent_1_OnSlotChosen__DelegateSignature_Params params;
 
@@ -188,7 +197,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot1_K2Node_ComponentBoundEvent_1_OnSl
 
 void UItemTransformSlotScreen_C::BndEvt__Slot2_K2Node_ComponentBoundEvent_2_OnSlotChosen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot2_K2Node_ComponentBoundEvent_2_OnSlotChosen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83338c56);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot2_K2Node_ComponentBoundEvent_2_OnSlotChosen__DelegateSignature_Params params;
 
@@ -205,7 +215,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot2_K2Node_ComponentBoundEvent_2_OnSl
 
 void UItemTransformSlotScreen_C::BndEvt__Slot3_K2Node_ComponentBoundEvent_3_OnSlotChosen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot3_K2Node_ComponentBoundEvent_3_OnSlotChosen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd76e96c);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot3_K2Node_ComponentBoundEvent_3_OnSlotChosen__DelegateSignature_Params params;
 
@@ -222,7 +233,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot3_K2Node_ComponentBoundEvent_3_OnSl
 
 void UItemTransformSlotScreen_C::BndEvt__Slot4_K2Node_ComponentBoundEvent_4_OnSlotChosen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot4_K2Node_ComponentBoundEvent_4_OnSlotChosen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeccb819e);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot4_K2Node_ComponentBoundEvent_4_OnSlotChosen__DelegateSignature_Params params;
 
@@ -239,7 +251,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot4_K2Node_ComponentBoundEvent_4_OnSl
 
 void UItemTransformSlotScreen_C::BndEvt__Slot5_K2Node_ComponentBoundEvent_5_OnSlotChosen__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot5_K2Node_ComponentBoundEvent_5_OnSlotChosen__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x286d41d0);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot5_K2Node_ComponentBoundEvent_5_OnSlotChosen__DelegateSignature_Params params;
 
@@ -258,7 +271,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot5_K2Node_ComponentBoundEvent_5_OnSl
 
 void UItemTransformSlotScreen_C::BndEvt__ItemTransformItemPicker_K2Node_ComponentBoundEvent_0_OnItemSelected__DelegateSignature(class UFortItem* SelectedItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__ItemTransformItemPicker_K2Node_ComponentBoundEvent_0_OnItemSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x557da46);
 
 	UItemTransformSlotScreen_C_BndEvt__ItemTransformItemPicker_K2Node_ComponentBoundEvent_0_OnItemSelected__DelegateSignature_Params params;
 	params.SelectedItem = SelectedItem;
@@ -276,7 +290,8 @@ void UItemTransformSlotScreen_C::BndEvt__ItemTransformItemPicker_K2Node_Componen
 
 void UItemTransformSlotScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca36a90e);
 
 	UItemTransformSlotScreen_C_Construct_Params params;
 
@@ -296,7 +311,8 @@ void UItemTransformSlotScreen_C::Construct()
 
 void UItemTransformSlotScreen_C::BndEvt__ItemTransformResultInfo_K2Node_ComponentBoundEvent_2_OnTransformConfirmed__DelegateSignature(int SacrificePoints, int CurrentTier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__ItemTransformResultInfo_K2Node_ComponentBoundEvent_2_OnTransformConfirmed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30eb7a17);
 
 	UItemTransformSlotScreen_C_BndEvt__ItemTransformResultInfo_K2Node_ComponentBoundEvent_2_OnTransformConfirmed__DelegateSignature_Params params;
 	params.SacrificePoints = SacrificePoints;
@@ -317,7 +333,8 @@ void UItemTransformSlotScreen_C::BndEvt__ItemTransformResultInfo_K2Node_Componen
 
 void UItemTransformSlotScreen_C::BndEvt__ItemTransformResultInfo_K2Node_ComponentBoundEvent_225_OnUpdateSacrificeInfo__DelegateSignature(bool TransformActive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__ItemTransformResultInfo_K2Node_ComponentBoundEvent_225_OnUpdateSacrificeInfo__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28b00533);
 
 	UItemTransformSlotScreen_C_BndEvt__ItemTransformResultInfo_K2Node_ComponentBoundEvent_225_OnUpdateSacrificeInfo__DelegateSignature_Params params;
 	params.TransformActive = TransformActive;
@@ -335,7 +352,8 @@ void UItemTransformSlotScreen_C::BndEvt__ItemTransformResultInfo_K2Node_Componen
 
 void UItemTransformSlotScreen_C::BndEvt__Slot1_K2Node_ComponentBoundEvent_774_OnSlotSelected__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot1_K2Node_ComponentBoundEvent_774_OnSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91b18b74);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot1_K2Node_ComponentBoundEvent_774_OnSlotSelected__DelegateSignature_Params params;
 
@@ -352,7 +370,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot1_K2Node_ComponentBoundEvent_774_On
 
 void UItemTransformSlotScreen_C::BndEvt__Slot2_K2Node_ComponentBoundEvent_784_OnSlotSelected__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot2_K2Node_ComponentBoundEvent_784_OnSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec4ff8b8);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot2_K2Node_ComponentBoundEvent_784_OnSlotSelected__DelegateSignature_Params params;
 
@@ -369,7 +388,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot2_K2Node_ComponentBoundEvent_784_On
 
 void UItemTransformSlotScreen_C::BndEvt__Slot3_K2Node_ComponentBoundEvent_795_OnSlotSelected__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot3_K2Node_ComponentBoundEvent_795_OnSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b677b6d);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot3_K2Node_ComponentBoundEvent_795_OnSlotSelected__DelegateSignature_Params params;
 
@@ -386,7 +406,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot3_K2Node_ComponentBoundEvent_795_On
 
 void UItemTransformSlotScreen_C::BndEvt__Slot4_K2Node_ComponentBoundEvent_807_OnSlotSelected__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot4_K2Node_ComponentBoundEvent_807_OnSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59c8c166);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot4_K2Node_ComponentBoundEvent_807_OnSlotSelected__DelegateSignature_Params params;
 
@@ -403,7 +424,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot4_K2Node_ComponentBoundEvent_807_On
 
 void UItemTransformSlotScreen_C::BndEvt__Slot5_K2Node_ComponentBoundEvent_820_OnSlotSelected__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.BndEvt__Slot5_K2Node_ComponentBoundEvent_820_OnSlotSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b311bfc);
 
 	UItemTransformSlotScreen_C_BndEvt__Slot5_K2Node_ComponentBoundEvent_820_OnSlotSelected__DelegateSignature_Params params;
 
@@ -422,7 +444,8 @@ void UItemTransformSlotScreen_C::BndEvt__Slot5_K2Node_ComponentBoundEvent_820_On
 
 void UItemTransformSlotScreen_C::ExecuteUbergraph_ItemTransformSlotScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.ExecuteUbergraph_ItemTransformSlotScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x493c742a);
 
 	UItemTransformSlotScreen_C_ExecuteUbergraph_ItemTransformSlotScreen_Params params;
 	params.EntryPoint = EntryPoint;
@@ -440,7 +463,8 @@ void UItemTransformSlotScreen_C::ExecuteUbergraph_ItemTransformSlotScreen(int En
 
 void UItemTransformSlotScreen_C::OnItemPickerOpened__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OnItemPickerOpened__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58bb8673);
 
 	UItemTransformSlotScreen_C_OnItemPickerOpened__DelegateSignature_Params params;
 
@@ -457,7 +481,8 @@ void UItemTransformSlotScreen_C::OnItemPickerOpened__DelegateSignature()
 
 void UItemTransformSlotScreen_C::OnItemPickerClosed__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OnItemPickerClosed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc17c2da2);
 
 	UItemTransformSlotScreen_C_OnItemPickerClosed__DelegateSignature_Params params;
 
@@ -476,7 +501,8 @@ void UItemTransformSlotScreen_C::OnItemPickerClosed__DelegateSignature()
 
 void UItemTransformSlotScreen_C::OnTransformButtonUpdated__DelegateSignature(bool TransformActive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OnTransformButtonUpdated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa39ff0e8);
 
 	UItemTransformSlotScreen_C_OnTransformButtonUpdated__DelegateSignature_Params params;
 	params.TransformActive = TransformActive;
@@ -498,7 +524,8 @@ void UItemTransformSlotScreen_C::OnTransformButtonUpdated__DelegateSignature(boo
 
 void UItemTransformSlotScreen_C::OnTransformConfirmed__DelegateSignature(int SacrificePoints, int CurrentTier, TArray<class UFortItem*>* ItemsToSacrifice)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformSlotScreen.ItemTransformSlotScreen_C.OnTransformConfirmed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84fde962);
 
 	UItemTransformSlotScreen_C_OnTransformConfirmed__DelegateSignature_Params params;
 	params.SacrificePoints = SacrificePoints;

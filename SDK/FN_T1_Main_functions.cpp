@@ -19,7 +19,8 @@ namespace SDK
 
 void UT1_Main_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T1_Main.T1_Main_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x513a7f5d);
 
 	UT1_Main_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -37,7 +38,8 @@ void UT1_Main_C::PreConstruct(bool* IsDesignTime)
 
 void UT1_Main_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T1_Main.T1_Main_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d056066);
 
 	UT1_Main_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UT1_Main_C::Construct()
 
 void UT1_Main_C::ExecuteUbergraph_T1_Main(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T1_Main.T1_Main_C.ExecuteUbergraph_T1_Main");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e70370e);
 
 	UT1_Main_C_ExecuteUbergraph_T1_Main_Params params;
 	params.EntryPoint = EntryPoint;

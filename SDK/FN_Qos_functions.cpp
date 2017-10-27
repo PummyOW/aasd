@@ -19,7 +19,8 @@ namespace SDK
 
 void AQosBeaconClient::ServerQosRequest(const struct FString& InSessionId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Qos.QosBeaconClient.ServerQosRequest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba97ba41);
 
 	AQosBeaconClient_ServerQosRequest_Params params;
 	params.InSessionId = InSessionId;
@@ -40,7 +41,8 @@ void AQosBeaconClient::ServerQosRequest(const struct FString& InSessionId)
 
 void AQosBeaconClient::ClientQosResponse(EQosResponseType Response)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Qos.QosBeaconClient.ClientQosResponse");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d93279f);
 
 	AQosBeaconClient_ClientQosResponse_Params params;
 	params.Response = Response;

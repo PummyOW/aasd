@@ -19,7 +19,8 @@ namespace SDK
 
 void UEulaWidget_C::SetViewOnly(bool bViewOnly)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.SetViewOnly");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c07e05e);
 
 	UEulaWidget_C_SetViewOnly_Params params;
 	params.bViewOnly = bViewOnly;
@@ -39,7 +40,8 @@ void UEulaWidget_C::SetViewOnly(bool bViewOnly)
 
 void UEulaWidget_C::SetEulaText(const struct FText& EULA)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.SetEulaText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda97b0bd);
 
 	UEulaWidget_C_SetEulaText_Params params;
 	params.EULA = EULA;
@@ -59,7 +61,8 @@ void UEulaWidget_C::SetEulaText(const struct FText& EULA)
 
 void UEulaWidget_C::BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_44_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_44_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a41f836);
 
 	UEulaWidget_C_BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_44_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -79,7 +82,8 @@ void UEulaWidget_C::BndEvt__IconTextButton_0_K2Node_ComponentBoundEvent_44_Commo
 
 void UEulaWidget_C::BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdfbc41fd);
 
 	UEulaWidget_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -97,7 +101,8 @@ void UEulaWidget_C::BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_0_CommonBut
 
 void UEulaWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8d625a7);
 
 	UEulaWidget_C_Destruct_Params params;
 
@@ -114,7 +119,8 @@ void UEulaWidget_C::Destruct()
 
 void UEulaWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb296b888);
 
 	UEulaWidget_C_Construct_Params params;
 
@@ -133,7 +139,8 @@ void UEulaWidget_C::Construct()
 
 void UEulaWidget_C::ExecuteUbergraph_EulaWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.ExecuteUbergraph_EulaWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd40f80b6);
 
 	UEulaWidget_C_ExecuteUbergraph_EulaWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -153,7 +160,8 @@ void UEulaWidget_C::ExecuteUbergraph_EulaWidget(int EntryPoint)
 
 void UEulaWidget_C::OnEulaResponse__DelegateSignature(bool Accepted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EulaWidget.EulaWidget_C.OnEulaResponse__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ce7106f);
 
 	UEulaWidget_C_OnEulaResponse__DelegateSignature_Params params;
 	params.Accepted = Accepted;

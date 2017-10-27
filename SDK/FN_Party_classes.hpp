@@ -24,7 +24,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Party.Chatroom");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71eae506);
 		return ptr;
 	}
 
@@ -43,7 +44,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Party.Party");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd1d2b75f);
 		return ptr;
 	}
 
@@ -71,7 +73,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Party.PartyGameState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4372d7d8);
 		return ptr;
 	}
 
@@ -92,7 +95,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Party.PartyMemberState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3baed77c);
 		return ptr;
 	}
 

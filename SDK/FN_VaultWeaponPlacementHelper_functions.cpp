@@ -19,7 +19,8 @@ namespace SDK
 
 void AVaultWeaponPlacementHelper_C::OnLobbyPlayerUnhovered(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnLobbyPlayerUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8b67e09);
 
 	AVaultWeaponPlacementHelper_C_OnLobbyPlayerUnhovered_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -37,7 +38,8 @@ void AVaultWeaponPlacementHelper_C::OnLobbyPlayerUnhovered(int PlayerIndex)
 
 void AVaultWeaponPlacementHelper_C::GetFrontendAnimInstance()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.GetFrontendAnimInstance");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x708c5991);
 
 	AVaultWeaponPlacementHelper_C_GetFrontendAnimInstance_Params params;
 
@@ -56,7 +58,8 @@ void AVaultWeaponPlacementHelper_C::GetFrontendAnimInstance()
 
 void AVaultWeaponPlacementHelper_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnTeamMemberStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1ffc0456);
 
 	AVaultWeaponPlacementHelper_C_OnTeamMemberStateChanged_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -76,7 +79,8 @@ void AVaultWeaponPlacementHelper_C::OnTeamMemberStateChanged(const struct FFortT
 
 void AVaultWeaponPlacementHelper_C::OnTeamMemberRemoved(int TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnTeamMemberRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8831bac1);
 
 	AVaultWeaponPlacementHelper_C_OnTeamMemberRemoved_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -96,7 +100,8 @@ void AVaultWeaponPlacementHelper_C::OnTeamMemberRemoved(int TeamMemberInfo)
 
 void AVaultWeaponPlacementHelper_C::OnTeamMemberAdded(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnTeamMemberAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcac4777f);
 
 	AVaultWeaponPlacementHelper_C_OnTeamMemberAdded_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -117,7 +122,8 @@ void AVaultWeaponPlacementHelper_C::OnTeamMemberAdded(const struct FFortTeamMemb
 
 void AVaultWeaponPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnFrontEndCameraChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3292b89);
 
 	AVaultWeaponPlacementHelper_C_OnFrontEndCameraChanged_Params params;
 	params.NewCamera = NewCamera;
@@ -136,7 +142,8 @@ void AVaultWeaponPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera NewC
 
 void AVaultWeaponPlacementHelper_C::OnLobbyStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnLobbyStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89416675);
 
 	AVaultWeaponPlacementHelper_C_OnLobbyStarted_Params params;
 
@@ -153,7 +160,8 @@ void AVaultWeaponPlacementHelper_C::OnLobbyStarted()
 
 void AVaultWeaponPlacementHelper_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2fa6879b);
 
 	AVaultWeaponPlacementHelper_C_Initialize_Params params;
 
@@ -170,7 +178,8 @@ void AVaultWeaponPlacementHelper_C::Initialize()
 
 void AVaultWeaponPlacementHelper_C::InitializeContextEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.InitializeContextEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc42d40d3);
 
 	AVaultWeaponPlacementHelper_C_InitializeContextEvents_Params params;
 
@@ -189,7 +198,8 @@ void AVaultWeaponPlacementHelper_C::InitializeContextEvents()
 
 void AVaultWeaponPlacementHelper_C::OnLobbyPlayerSelected(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnLobbyPlayerSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58dbbf0a);
 
 	AVaultWeaponPlacementHelper_C_OnLobbyPlayerSelected_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -209,7 +219,8 @@ void AVaultWeaponPlacementHelper_C::OnLobbyPlayerSelected(int PlayerIndex)
 
 void AVaultWeaponPlacementHelper_C::OnLobbyPlayerHovered(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.OnLobbyPlayerHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48217b9a);
 
 	AVaultWeaponPlacementHelper_C_OnLobbyPlayerHovered_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -227,7 +238,8 @@ void AVaultWeaponPlacementHelper_C::OnLobbyPlayerHovered(int PlayerIndex)
 
 void AVaultWeaponPlacementHelper_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f670446);
 
 	AVaultWeaponPlacementHelper_C_UserConstructionScript_Params params;
 
@@ -244,7 +256,8 @@ void AVaultWeaponPlacementHelper_C::UserConstructionScript()
 
 void AVaultWeaponPlacementHelper_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2a30739);
 
 	AVaultWeaponPlacementHelper_C_ReceiveBeginPlay_Params params;
 
@@ -261,7 +274,8 @@ void AVaultWeaponPlacementHelper_C::ReceiveBeginPlay()
 
 void AVaultWeaponPlacementHelper_C::ItemRez()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ItemRez");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5892087);
 
 	AVaultWeaponPlacementHelper_C_ItemRez_Params params;
 
@@ -280,7 +294,8 @@ void AVaultWeaponPlacementHelper_C::ItemRez()
 
 void AVaultWeaponPlacementHelper_C::ExecuteUbergraph_VaultWeaponPlacementHelper(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.ExecuteUbergraph_VaultWeaponPlacementHelper");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa09320f8);
 
 	AVaultWeaponPlacementHelper_C_ExecuteUbergraph_VaultWeaponPlacementHelper_Params params;
 	params.EntryPoint = EntryPoint;
@@ -298,7 +313,8 @@ void AVaultWeaponPlacementHelper_C::ExecuteUbergraph_VaultWeaponPlacementHelper(
 
 void AVaultWeaponPlacementHelper_C::NewEventDispatcher_0__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.NewEventDispatcher_0__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3b09c44);
 
 	AVaultWeaponPlacementHelper_C_NewEventDispatcher_0__DelegateSignature_Params params;
 

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class BlueprintContext.BlueprintContextBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41692df8);
 		return ptr;
 	}
 
@@ -35,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class BlueprintContext.BlueprintContextLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9d8a680);
 		return ptr;
 	}
 

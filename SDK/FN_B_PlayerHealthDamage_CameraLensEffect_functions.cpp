@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_PlayerHealthDamage_CameraLensEffect_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_PlayerHealthDamage_CameraLensEffect.B_PlayerHealthDamage_CameraLensEffect_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed839710);
 
 	AB_PlayerHealthDamage_CameraLensEffect_C_UserConstructionScript_Params params;
 
@@ -37,7 +38,8 @@ void AB_PlayerHealthDamage_CameraLensEffect_C::UserConstructionScript()
 
 void AB_PlayerHealthDamage_CameraLensEffect_C::PassParticle_Parameter(float NewParam, bool First_Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_PlayerHealthDamage_CameraLensEffect.B_PlayerHealthDamage_CameraLensEffect_C.PassParticle_Parameter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbdfc0d1a);
 
 	AB_PlayerHealthDamage_CameraLensEffect_C_PassParticle_Parameter_Params params;
 	params.NewParam = NewParam;
@@ -58,7 +60,8 @@ void AB_PlayerHealthDamage_CameraLensEffect_C::PassParticle_Parameter(float NewP
 
 void AB_PlayerHealthDamage_CameraLensEffect_C::ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_PlayerHealthDamage_CameraLensEffect.B_PlayerHealthDamage_CameraLensEffect_C.ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c8431);
 
 	AB_PlayerHealthDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect_Params params;
 	params.EntryPoint = EntryPoint;

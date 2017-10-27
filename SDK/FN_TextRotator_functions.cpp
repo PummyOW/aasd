@@ -17,7 +17,8 @@ namespace SDK
 
 void UTextRotator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TextRotator.TextRotator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x834be6a6);
 
 	UTextRotator_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UTextRotator_C::Construct()
 
 void UTextRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TextRotator.TextRotator_C.BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91cc703b);
 
 	UTextRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -56,7 +58,8 @@ void UTextRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButto
 
 void UTextRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TextRotator.TextRotator_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x847e9235);
 
 	UTextRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -76,7 +79,8 @@ void UTextRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonBut
 
 void UTextRotator_C::ExecuteUbergraph_TextRotator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TextRotator.TextRotator_C.ExecuteUbergraph_TextRotator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6856f205);
 
 	UTextRotator_C_ExecuteUbergraph_TextRotator_Params params;
 	params.EntryPoint = EntryPoint;

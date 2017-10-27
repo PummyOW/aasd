@@ -29,7 +29,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x87daafbd);
 		return ptr;
 	}
 

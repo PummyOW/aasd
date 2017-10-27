@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_Constructor_ContainmentUnitFX.GCNS_Constructor_ContainmentUnitFX_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x994f23a3);
 		return ptr;
 	}
 

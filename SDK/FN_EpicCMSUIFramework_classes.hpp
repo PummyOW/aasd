@@ -25,7 +25,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EpicCMSUIFramework.EpicCMSScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb5e5170);
 		return ptr;
 	}
 
@@ -52,7 +53,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EpicCMSUIFramework.EpicCMSTileBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb47f368);
 		return ptr;
 	}
 
@@ -73,7 +75,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EpicCMSUIFramework.EpicCMSLayoutBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9ebc3ea);
 		return ptr;
 	}
 
@@ -92,7 +95,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EpicCMSUIFramework.EpicCMSManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c5d7128);
 		return ptr;
 	}
 
@@ -115,7 +119,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class EpicCMSUIFramework.EpicCMSTileCarousel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x59b8cea9);
 		return ptr;
 	}
 

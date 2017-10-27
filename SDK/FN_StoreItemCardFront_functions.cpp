@@ -19,7 +19,8 @@ namespace SDK
 
 void UStoreItemCardFront_C::Get_Type_Text(struct FText* OutText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.Get Type Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8ab1d7a);
 
 	UStoreItemCardFront_C_Get_Type_Text_Params params;
 
@@ -41,7 +42,8 @@ void UStoreItemCardFront_C::Get_Type_Text(struct FText* OutText)
 
 struct FText UStoreItemCardFront_C::Get_Card_Name_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.Get Card Name Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32628b95);
 
 	UStoreItemCardFront_C_Get_Card_Name_Text_Params params;
 
@@ -60,7 +62,8 @@ struct FText UStoreItemCardFront_C::Get_Card_Name_Text()
 
 void UStoreItemCardFront_C::Draw_Card()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.Draw_Card");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3809a538);
 
 	UStoreItemCardFront_C_Draw_Card_Params params;
 
@@ -79,7 +82,8 @@ void UStoreItemCardFront_C::Draw_Card()
 
 void UStoreItemCardFront_C::Initialize_Card(const struct FCard& inCard)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.Initialize_Card");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb800fcd0);
 
 	UStoreItemCardFront_C_Initialize_Card_Params params;
 	params.inCard = inCard;
@@ -97,7 +101,8 @@ void UStoreItemCardFront_C::Initialize_Card(const struct FCard& inCard)
 
 void UStoreItemCardFront_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbca5738c);
 
 	UStoreItemCardFront_C_Construct_Params params;
 
@@ -116,7 +121,8 @@ void UStoreItemCardFront_C::Construct()
 
 void UStoreItemCardFront_C::OnFortStoreStateChanged(EFortStoreState NewStoreState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.OnFortStoreStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x417d4c05);
 
 	UStoreItemCardFront_C_OnFortStoreStateChanged_Params params;
 	params.NewStoreState = NewStoreState;
@@ -136,7 +142,8 @@ void UStoreItemCardFront_C::OnFortStoreStateChanged(EFortStoreState NewStoreStat
 
 void UStoreItemCardFront_C::InitFromObject(class UObject* InitObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.InitFromObject");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3f299ae);
 
 	UStoreItemCardFront_C_InitFromObject_Params params;
 	params.InitObject = InitObject;
@@ -156,7 +163,8 @@ void UStoreItemCardFront_C::InitFromObject(class UObject* InitObject)
 
 void UStoreItemCardFront_C::ExecuteUbergraph_StoreItemCardFront(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreItemCardFront.StoreItemCardFront_C.ExecuteUbergraph_StoreItemCardFront");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf1458c4);
 
 	UStoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront_Params params;
 	params.EntryPoint = EntryPoint;

@@ -71,7 +71,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass BuildingInfoIndicator.BuildingInfoIndicator_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xea9256f9);
 		return ptr;
 	}
 

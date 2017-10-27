@@ -20,7 +20,8 @@ namespace SDK
 
 void UGCNS_GM_OnDeathAreaHeal_C::OnStartParticleSystemSpawned(class UParticleSystemComponent** SpawnedParticleSysComponent, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNS_GM_OnDeathAreaHeal.GCNS_GM_OnDeathAreaHeal_C.OnStartParticleSystemSpawned");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6e2e129);
 
 	UGCNS_GM_OnDeathAreaHeal_C_OnStartParticleSystemSpawned_Params params;
 	params.SpawnedParticleSysComponent = SpawnedParticleSysComponent;

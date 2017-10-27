@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaInventoryDragVisual_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDragVisual.AthenaInventoryDragVisual_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4493ceea);
 
 	UAthenaInventoryDragVisual_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UAthenaInventoryDragVisual_C::Construct()
 
 void UAthenaInventoryDragVisual_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDragVisual.AthenaInventoryDragVisual_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63672c61);
 
 	UAthenaInventoryDragVisual_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -56,7 +58,8 @@ void UAthenaInventoryDragVisual_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaInventoryDragVisual_C::ExecuteUbergraph_AthenaInventoryDragVisual(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaInventoryDragVisual.AthenaInventoryDragVisual_C.ExecuteUbergraph_AthenaInventoryDragVisual");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x780727bc);
 
 	UAthenaInventoryDragVisual_C_ExecuteUbergraph_AthenaInventoryDragVisual_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void USurvivorRescuedCounter_C::UpdateSurvivorsRescued(int SurvivorsRescued)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SurvivorRescuedCounter.SurvivorRescuedCounter_C.UpdateSurvivorsRescued");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x112142a4);
 
 	USurvivorRescuedCounter_C_UpdateSurvivorsRescued_Params params;
 	params.SurvivorsRescued = SurvivorsRescued;
@@ -37,7 +38,8 @@ void USurvivorRescuedCounter_C::UpdateSurvivorsRescued(int SurvivorsRescued)
 
 void USurvivorRescuedCounter_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SurvivorRescuedCounter.SurvivorRescuedCounter_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf59b4a0);
 
 	USurvivorRescuedCounter_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void USurvivorRescuedCounter_C::Construct()
 
 void USurvivorRescuedCounter_C::ExecuteUbergraph_SurvivorRescuedCounter(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SurvivorRescuedCounter.SurvivorRescuedCounter_C.ExecuteUbergraph_SurvivorRescuedCounter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d8ffeec);
 
 	USurvivorRescuedCounter_C_ExecuteUbergraph_SurvivorRescuedCounter_Params params;
 	params.EntryPoint = EntryPoint;

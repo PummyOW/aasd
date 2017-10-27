@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemPerksListDetailWidget_C::SetState(EFortPerksWidgetState InState, class UFortHero* InEvolutionOption)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemPerksListDetailWidget.ItemPerksListDetailWidget_C.SetState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c702e88);
 
 	UItemPerksListDetailWidget_C_SetState_Params params;
 	params.InState = InState;
@@ -39,7 +40,8 @@ void UItemPerksListDetailWidget_C::SetState(EFortPerksWidgetState InState, class
 
 void UItemPerksListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemPerksListDetailWidget.ItemPerksListDetailWidget_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfcb75da1);
 
 	UItemPerksListDetailWidget_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -58,7 +60,8 @@ void UItemPerksListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemPerksListDetailWidget_C::ExecuteUbergraph_ItemPerksListDetailWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemPerksListDetailWidget.ItemPerksListDetailWidget_C.ExecuteUbergraph_ItemPerksListDetailWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33b1f9de);
 
 	UItemPerksListDetailWidget_C_ExecuteUbergraph_ItemPerksListDetailWidget_Params params;
 	params.EntryPoint = EntryPoint;

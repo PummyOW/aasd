@@ -17,7 +17,8 @@ namespace SDK
 
 void URewardsIcon_C::PopulateFromMissionAlertRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromMissionAlertRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf58064b7);
 
 	URewardsIcon_C_PopulateFromMissionAlertRewards_Params params;
 
@@ -34,7 +35,8 @@ void URewardsIcon_C::PopulateFromMissionAlertRewards()
 
 void URewardsIcon_C::Play_Show_Animation_Sound()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.Play Show Animation Sound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae81226b);
 
 	URewardsIcon_C_Play_Show_Animation_Sound_Params params;
 
@@ -51,7 +53,8 @@ void URewardsIcon_C::Play_Show_Animation_Sound()
 
 void URewardsIcon_C::Play_Hide_Animation_Sound()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.Play Hide Animation Sound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8a74c00);
 
 	URewardsIcon_C_Play_Hide_Animation_Sound_Params params;
 
@@ -68,7 +71,8 @@ void URewardsIcon_C::Play_Hide_Animation_Sound()
 
 void URewardsIcon_C::PlayShowAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PlayShowAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37457094);
 
 	URewardsIcon_C_PlayShowAnimation_Params params;
 
@@ -89,7 +93,8 @@ void URewardsIcon_C::PlayShowAnimation()
 
 struct FEventReply URewardsIcon_C::On_ImageIcon_MouseButtonDown_1(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.On_ImageIcon_MouseButtonDown_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91158cf1);
 
 	URewardsIcon_C_On_ImageIcon_MouseButtonDown_1_Params params;
 	params.MyGeometry = MyGeometry;
@@ -110,7 +115,8 @@ struct FEventReply URewardsIcon_C::On_ImageIcon_MouseButtonDown_1(const struct F
 
 void URewardsIcon_C::RandomizeDesignView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.RandomizeDesignView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fbf4dd9);
 
 	URewardsIcon_C_RandomizeDesignView_Params params;
 
@@ -129,7 +135,8 @@ void URewardsIcon_C::RandomizeDesignView()
 
 void URewardsIcon_C::PopulateFromRandomLootLevel(class UTexture2D** Texture)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromRandomLootLevel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x394bd1f0);
 
 	URewardsIcon_C_PopulateFromRandomLootLevel_Params params;
 
@@ -149,7 +156,8 @@ void URewardsIcon_C::PopulateFromRandomLootLevel(class UTexture2D** Texture)
 
 void URewardsIcon_C::PopulateFromCollectionBookRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromCollectionBookRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa664cc3e);
 
 	URewardsIcon_C_PopulateFromCollectionBookRewards_Params params;
 
@@ -166,7 +174,8 @@ void URewardsIcon_C::PopulateFromCollectionBookRewards()
 
 void URewardsIcon_C::PopulateFromExpedition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromExpedition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ccea894);
 
 	URewardsIcon_C_PopulateFromExpedition_Params params;
 
@@ -183,7 +192,8 @@ void URewardsIcon_C::PopulateFromExpedition()
 
 void URewardsIcon_C::PopulateFromNewQuest()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromNewQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4dfd2bd5);
 
 	URewardsIcon_C_PopulateFromNewQuest_Params params;
 
@@ -200,7 +210,8 @@ void URewardsIcon_C::PopulateFromNewQuest()
 
 void URewardsIcon_C::PopulateFromQuestRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromQuestRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d2046fb);
 
 	URewardsIcon_C_PopulateFromQuestRewards_Params params;
 
@@ -217,7 +228,8 @@ void URewardsIcon_C::PopulateFromQuestRewards()
 
 void URewardsIcon_C::PopulateFromMissionRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromMissionRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c898d2b);
 
 	URewardsIcon_C_PopulateFromMissionRewards_Params params;
 
@@ -236,7 +248,8 @@ void URewardsIcon_C::PopulateFromMissionRewards()
 
 void URewardsIcon_C::GetScale(float* Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.GetScale");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf875f62d);
 
 	URewardsIcon_C_GetScale_Params params;
 
@@ -258,7 +271,8 @@ void URewardsIcon_C::GetScale(float* Scale)
 
 void URewardsIcon_C::SetScale(float Scale)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.SetScale");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72ddd359);
 
 	URewardsIcon_C_SetScale_Params params;
 	params.Scale = Scale;
@@ -279,7 +293,8 @@ void URewardsIcon_C::SetScale(float Scale)
 
 void URewardsIcon_C::PopulateFromLootLevel(int LootLevel, class UTexture2D** Texture)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromLootLevel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47e1f8ab);
 
 	URewardsIcon_C_PopulateFromLootLevel_Params params;
 	params.LootLevel = LootLevel;
@@ -302,7 +317,8 @@ void URewardsIcon_C::PopulateFromLootLevel(int LootLevel, class UTexture2D** Tex
 
 void URewardsIcon_C::PlaySlideAnimation(float TargetTranslation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PlaySlideAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcdba2b0e);
 
 	URewardsIcon_C_PlaySlideAnimation_Params params;
 	params.TargetTranslation = TargetTranslation;
@@ -320,7 +336,8 @@ void URewardsIcon_C::PlaySlideAnimation(float TargetTranslation)
 
 void URewardsIcon_C::TickSlideAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.TickSlideAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1ae33adb);
 
 	URewardsIcon_C_TickSlideAnimation_Params params;
 
@@ -337,7 +354,8 @@ void URewardsIcon_C::TickSlideAnimation()
 
 void URewardsIcon_C::HandleSlideAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.HandleSlideAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63238884);
 
 	URewardsIcon_C_HandleSlideAnimationFinished_Params params;
 
@@ -354,7 +372,8 @@ void URewardsIcon_C::HandleSlideAnimationFinished()
 
 void URewardsIcon_C::HandleShowAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.HandleShowAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1d3499e);
 
 	URewardsIcon_C_HandleShowAnimationFinished_Params params;
 
@@ -371,7 +390,8 @@ void URewardsIcon_C::HandleShowAnimationFinished()
 
 void URewardsIcon_C::HandleHideAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.HandleHideAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d000697);
 
 	URewardsIcon_C_HandleHideAnimationFinished_Params params;
 
@@ -390,7 +410,8 @@ void URewardsIcon_C::HandleHideAnimationFinished()
 
 void URewardsIcon_C::PopulateFromReward(class UFortRewardNotificationData* InRewardItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PopulateFromReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfec360);
 
 	URewardsIcon_C_PopulateFromReward_Params params;
 	params.InRewardItem = InRewardItem;
@@ -408,7 +429,8 @@ void URewardsIcon_C::PopulateFromReward(class UFortRewardNotificationData* InRew
 
 void URewardsIcon_C::Cleanup()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.Cleanup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b14ed21);
 
 	URewardsIcon_C_Cleanup_Params params;
 
@@ -425,7 +447,8 @@ void URewardsIcon_C::Cleanup()
 
 void URewardsIcon_C::PlayHideAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PlayHideAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa18b1e9);
 
 	URewardsIcon_C_PlayHideAnimation_Params params;
 
@@ -442,7 +465,8 @@ void URewardsIcon_C::PlayHideAnimation()
 
 void URewardsIcon_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2df80ae);
 
 	URewardsIcon_C_Construct_Params params;
 
@@ -461,7 +485,8 @@ void URewardsIcon_C::Construct()
 
 void URewardsIcon_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc45226f5);
 
 	URewardsIcon_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -481,7 +506,8 @@ void URewardsIcon_C::PreConstruct(bool* IsDesignTime)
 
 void URewardsIcon_C::whiteFadeOut(float Percent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.whiteFadeOut");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7466d294);
 
 	URewardsIcon_C_whiteFadeOut_Params params;
 	params.Percent = Percent;
@@ -501,7 +527,8 @@ void URewardsIcon_C::whiteFadeOut(float Percent)
 
 void URewardsIcon_C::ExecuteUbergraph_RewardsIcon(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.ExecuteUbergraph_RewardsIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x875b2f36);
 
 	URewardsIcon_C_ExecuteUbergraph_RewardsIcon_Params params;
 	params.EntryPoint = EntryPoint;
@@ -519,7 +546,8 @@ void URewardsIcon_C::ExecuteUbergraph_RewardsIcon(int EntryPoint)
 
 void URewardsIcon_C::OnImageClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.OnImageClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21f80d05);
 
 	URewardsIcon_C_OnImageClicked__DelegateSignature_Params params;
 
@@ -538,7 +566,8 @@ void URewardsIcon_C::OnImageClicked__DelegateSignature()
 
 void URewardsIcon_C::OnMaterializeAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.OnMaterializeAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ef752a8);
 
 	URewardsIcon_C_OnMaterializeAnimationFinished__DelegateSignature_Params params;
 	params.Icon = Icon;
@@ -558,7 +587,8 @@ void URewardsIcon_C::OnMaterializeAnimationFinished__DelegateSignature(class URe
 
 void URewardsIcon_C::OnDisperseAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.OnDisperseAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5b06156);
 
 	URewardsIcon_C_OnDisperseAnimationFinished__DelegateSignature_Params params;
 	params.Icon = Icon;
@@ -578,7 +608,8 @@ void URewardsIcon_C::OnDisperseAnimationFinished__DelegateSignature(class URewar
 
 void URewardsIcon_C::OnSlideAnimationFinished__DelegateSignature(class URewardsIcon_C* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsIcon.RewardsIcon_C.OnSlideAnimationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x501053fc);
 
 	URewardsIcon_C_OnSlideAnimationFinished__DelegateSignature_Params params;
 	params.Icon = Icon;

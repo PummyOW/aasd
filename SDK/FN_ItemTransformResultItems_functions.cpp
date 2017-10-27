@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemTransformResultItems_C::UpdateMainReward(class UFortItem* Item, int CurrentTier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformResultItems.ItemTransformResultItems_C.UpdateMainReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x481d9652);
 
 	UItemTransformResultItems_C_UpdateMainReward_Params params;
 	params.Item = Item;
@@ -44,7 +45,8 @@ void UItemTransformResultItems_C::UpdateMainReward(class UFortItem* Item, int Cu
 
 void UItemTransformResultItems_C::CalculateRecycleXP(TArray<class UFortItem*>* SacrificeItems, int* TotalHeroXP, int* TotalSchematicXP, int* TotalWorkerXP)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformResultItems.ItemTransformResultItems_C.CalculateRecycleXP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x623613b8);
 
 	UItemTransformResultItems_C_CalculateRecycleXP_Params params;
 
@@ -74,7 +76,8 @@ void UItemTransformResultItems_C::CalculateRecycleXP(TArray<class UFortItem*>* S
 
 void UItemTransformResultItems_C::UpdateItems(class UFortItem* Transform_Key, int CurrentTier, TArray<class UFortItem*>* SacrificeItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformResultItems.ItemTransformResultItems_C.UpdateItems");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafa2c3f0);
 
 	UItemTransformResultItems_C_UpdateItems_Params params;
 	params.Transform_Key = Transform_Key;
@@ -98,7 +101,8 @@ void UItemTransformResultItems_C::UpdateItems(class UFortItem* Transform_Key, in
 
 void UItemTransformResultItems_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformResultItems.ItemTransformResultItems_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d9f1375);
 
 	UItemTransformResultItems_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -118,7 +122,8 @@ void UItemTransformResultItems_C::PreConstruct(bool* IsDesignTime)
 
 void UItemTransformResultItems_C::ExecuteUbergraph_ItemTransformResultItems(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformResultItems.ItemTransformResultItems_C.ExecuteUbergraph_ItemTransformResultItems");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf777ee03);
 
 	UItemTransformResultItems_C_ExecuteUbergraph_ItemTransformResultItems_Params params;
 	params.EntryPoint = EntryPoint;

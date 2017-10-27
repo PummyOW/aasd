@@ -17,7 +17,8 @@ namespace SDK
 
 void ABP_Hex_CriticalMission_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e37f2fc);
 
 	ABP_Hex_CriticalMission_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void ABP_Hex_CriticalMission_C::UserConstructionScript()
 
 void ABP_Hex_CriticalMission_C::Rotate__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.Rotate__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x896ccce4);
 
 	ABP_Hex_CriticalMission_C_Rotate__FinishedFunc_Params params;
 
@@ -51,7 +53,8 @@ void ABP_Hex_CriticalMission_C::Rotate__FinishedFunc()
 
 void ABP_Hex_CriticalMission_C::Rotate__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.Rotate__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1423ed);
 
 	ABP_Hex_CriticalMission_C_Rotate__UpdateFunc_Params params;
 
@@ -68,7 +71,8 @@ void ABP_Hex_CriticalMission_C::Rotate__UpdateFunc()
 
 void ABP_Hex_CriticalMission_C::DeactivateCriticalMission()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.DeactivateCriticalMission");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea507030);
 
 	ABP_Hex_CriticalMission_C_DeactivateCriticalMission_Params params;
 
@@ -85,7 +89,8 @@ void ABP_Hex_CriticalMission_C::DeactivateCriticalMission()
 
 void ABP_Hex_CriticalMission_C::ActivateCriticalMission()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.ActivateCriticalMission");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7a52ba3);
 
 	ABP_Hex_CriticalMission_C_ActivateCriticalMission_Params params;
 
@@ -104,7 +109,8 @@ void ABP_Hex_CriticalMission_C::ActivateCriticalMission()
 
 void ABP_Hex_CriticalMission_C::ExecuteUbergraph_BP_Hex_CriticalMission(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_Hex_CriticalMission.BP_Hex_CriticalMission_C.ExecuteUbergraph_BP_Hex_CriticalMission");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33504e0d);
 
 	ABP_Hex_CriticalMission_C_ExecuteUbergraph_BP_Hex_CriticalMission_Params params;
 	params.EntryPoint = EntryPoint;

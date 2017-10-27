@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemManagementMulchConfirmationDialogContent_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchConfirmationDialogContent.ItemManagementMulchConfirmationDialogContent_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ea64acf);
 
 	UItemManagementMulchConfirmationDialogContent_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -37,7 +38,8 @@ void UItemManagementMulchConfirmationDialogContent_C::PreConstruct(bool* IsDesig
 
 void UItemManagementMulchConfirmationDialogContent_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchConfirmationDialogContent.ItemManagementMulchConfirmationDialogContent_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52bbe250);
 
 	UItemManagementMulchConfirmationDialogContent_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UItemManagementMulchConfirmationDialogContent_C::Construct()
 
 void UItemManagementMulchConfirmationDialogContent_C::ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementMulchConfirmationDialogContent.ItemManagementMulchConfirmationDialogContent_C.ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x756d8006);
 
 	UItemManagementMulchConfirmationDialogContent_C_ExecuteUbergraph_ItemManagementMulchConfirmationDialogContent_Params params;
 	params.EntryPoint = EntryPoint;

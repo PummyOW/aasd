@@ -17,7 +17,8 @@ namespace SDK
 
 void UPinnedSchematicItemsWidget_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3474e622);
 
 	UPinnedSchematicItemsWidget_C_Refresh_Params params;
 
@@ -34,7 +35,8 @@ void UPinnedSchematicItemsWidget_C::Refresh()
 
 void UPinnedSchematicItemsWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x334f34b4);
 
 	UPinnedSchematicItemsWidget_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UPinnedSchematicItemsWidget_C::Construct()
 
 void UPinnedSchematicItemsWidget_C::ExecuteUbergraph_PinnedSchematicItemsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PinnedSchematicItemsWidget.PinnedSchematicItemsWidget_C.ExecuteUbergraph_PinnedSchematicItemsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffbb9aea);
 
 	UPinnedSchematicItemsWidget_C_ExecuteUbergraph_PinnedSchematicItemsWidget_Params params;
 	params.EntryPoint = EntryPoint;

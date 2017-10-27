@@ -17,7 +17,8 @@ namespace SDK
 
 void AFrontendCamera_Manage_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontendCamera_Manage.FrontendCamera_Manage_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e8fb66c);
 
 	AFrontendCamera_Manage_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AFrontendCamera_Manage_C::UserConstructionScript()
 
 void AFrontendCamera_Manage_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontendCamera_Manage.FrontendCamera_Manage_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28938876);
 
 	AFrontendCamera_Manage_C_OnDeactivated_Params params;
 
@@ -51,7 +53,8 @@ void AFrontendCamera_Manage_C::OnDeactivated()
 
 void AFrontendCamera_Manage_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontendCamera_Manage.FrontendCamera_Manage_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9be3e721);
 
 	AFrontendCamera_Manage_C_OnActivated_Params params;
 
@@ -70,7 +73,8 @@ void AFrontendCamera_Manage_C::OnActivated()
 
 void AFrontendCamera_Manage_C::ExecuteUbergraph_FrontendCamera_Manage(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontendCamera_Manage.FrontendCamera_Manage_C.ExecuteUbergraph_FrontendCamera_Manage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6eeed1e0);
 
 	AFrontendCamera_Manage_C_ExecuteUbergraph_FrontendCamera_Manage_Params params;
 	params.EntryPoint = EntryPoint;

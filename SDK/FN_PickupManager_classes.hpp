@@ -36,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass PickupManager.PickupManager_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb7da275);
 		return ptr;
 	}
 
@@ -50,6 +51,7 @@ public:
 	void HandleWorldItemsChanged();
 	void HandleWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved);
 	void Destruct();
+	void HandleBuildingMaterialChanged();
 	void ExecuteUbergraph_PickupManager(int EntryPoint);
 };
 

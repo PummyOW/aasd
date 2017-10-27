@@ -19,7 +19,8 @@ namespace SDK
 
 void UMgmtTabsScreen_C::HandleMgmtMenuTabChangeRequested(const struct FName& TabName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.HandleMgmtMenuTabChangeRequested");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11092f66);
 
 	UMgmtTabsScreen_C_HandleMgmtMenuTabChangeRequested_Params params;
 	params.TabName = TabName;
@@ -37,7 +38,8 @@ void UMgmtTabsScreen_C::HandleMgmtMenuTabChangeRequested(const struct FName& Tab
 
 void UMgmtTabsScreen_C::HandleDamageReceived()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.HandleDamageReceived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x368010d1);
 
 	UMgmtTabsScreen_C_HandleDamageReceived_Params params;
 
@@ -58,7 +60,8 @@ void UMgmtTabsScreen_C::HandleDamageReceived()
 
 void UMgmtTabsScreen_C::HandleCursorModeChanged(bool IsEnabled, const struct FName& ActionName, class UUserWidget* CursorModeContentCustomWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.HandleCursorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48390934);
 
 	UMgmtTabsScreen_C_HandleCursorModeChanged_Params params;
 	params.IsEnabled = IsEnabled;
@@ -78,7 +81,8 @@ void UMgmtTabsScreen_C::HandleCursorModeChanged(bool IsEnabled, const struct FNa
 
 void UMgmtTabsScreen_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x966bd853);
 
 	UMgmtTabsScreen_C_OnActivated_Params params;
 
@@ -98,7 +102,8 @@ void UMgmtTabsScreen_C::OnActivated()
 
 void UMgmtTabsScreen_C::BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabButtonCreated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b78f111);
 
 	UMgmtTabsScreen_C_BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -117,7 +122,8 @@ void UMgmtTabsScreen_C::BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabBut
 
 void UMgmtTabsScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a5c8d4);
 
 	UMgmtTabsScreen_C_Construct_Params params;
 
@@ -134,7 +140,8 @@ void UMgmtTabsScreen_C::Construct()
 
 void UMgmtTabsScreen_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae0248ab);
 
 	UMgmtTabsScreen_C_Destruct_Params params;
 
@@ -154,7 +161,8 @@ void UMgmtTabsScreen_C::Destruct()
 
 void UMgmtTabsScreen_C::HandleShowQuests(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.HandleShowQuests");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae443185);
 
 	UMgmtTabsScreen_C_HandleShowQuests_Params params;
 	params.ChangedFeature = ChangedFeature;
@@ -176,7 +184,8 @@ void UMgmtTabsScreen_C::HandleShowQuests(EFortUIFeature ChangedFeature, EFortUIF
 
 void UMgmtTabsScreen_C::HandleShowObjectives(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.HandleShowObjectives");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeecb0dcc);
 
 	UMgmtTabsScreen_C_HandleShowObjectives_Params params;
 	params.ChangedFeature = ChangedFeature;
@@ -197,7 +206,8 @@ void UMgmtTabsScreen_C::HandleShowObjectives(EFortUIFeature ChangedFeature, EFor
 
 void UMgmtTabsScreen_C::ExecuteUbergraph_MgmtTabsScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MgmtTabsScreen.MgmtTabsScreen_C.ExecuteUbergraph_MgmtTabsScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf25ec13e);
 
 	UMgmtTabsScreen_C_ExecuteUbergraph_MgmtTabsScreen_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UMulchRefundItemQuantityListEntry_C::UpdateItemAndQuantity(bool DirectlySetQuantity)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.UpdateItemAndQuantity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e61b305);
 
 	UMulchRefundItemQuantityListEntry_C_UpdateItemAndQuantity_Params params;
 	params.DirectlySetQuantity = DirectlySetQuantity;
@@ -39,7 +40,8 @@ void UMulchRefundItemQuantityListEntry_C::UpdateItemAndQuantity(bool DirectlySet
 
 void UMulchRefundItemQuantityListEntry_C::HandleDifferentItemOrQuantitySetBP(bool* IsBeingReset)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.HandleDifferentItemOrQuantitySetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d3c4ad7);
 
 	UMulchRefundItemQuantityListEntry_C_HandleDifferentItemOrQuantitySetBP_Params params;
 	params.IsBeingReset = IsBeingReset;
@@ -57,7 +59,8 @@ void UMulchRefundItemQuantityListEntry_C::HandleDifferentItemOrQuantitySetBP(boo
 
 void UMulchRefundItemQuantityListEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2105d758);
 
 	UMulchRefundItemQuantityListEntry_C_Construct_Params params;
 
@@ -76,7 +79,8 @@ void UMulchRefundItemQuantityListEntry_C::Construct()
 
 void UMulchRefundItemQuantityListEntry_C::ExecuteUbergraph_MulchRefundItemQuantityListEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MulchRefundItemQuantityListEntry.MulchRefundItemQuantityListEntry_C.ExecuteUbergraph_MulchRefundItemQuantityListEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5e99b40);
 
 	UMulchRefundItemQuantityListEntry_C_ExecuteUbergraph_MulchRefundItemQuantityListEntry_Params params;
 	params.EntryPoint = EntryPoint;

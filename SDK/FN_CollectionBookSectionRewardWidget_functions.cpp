@@ -19,7 +19,8 @@ namespace SDK
 
 void UCollectionBookSectionRewardWidget_C::OnRewardStatusChanged(ECollectionBookRewardStatus* NewStatus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionRewardWidget.CollectionBookSectionRewardWidget_C.OnRewardStatusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21745b29);
 
 	UCollectionBookSectionRewardWidget_C_OnRewardStatusChanged_Params params;
 	params.NewStatus = NewStatus;
@@ -39,7 +40,8 @@ void UCollectionBookSectionRewardWidget_C::OnRewardStatusChanged(ECollectionBook
 
 void UCollectionBookSectionRewardWidget_C::ExecuteUbergraph_CollectionBookSectionRewardWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSectionRewardWidget.CollectionBookSectionRewardWidget_C.ExecuteUbergraph_CollectionBookSectionRewardWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fb7ae8c);
 
 	UCollectionBookSectionRewardWidget_C_ExecuteUbergraph_CollectionBookSectionRewardWidget_Params params;
 	params.EntryPoint = EntryPoint;

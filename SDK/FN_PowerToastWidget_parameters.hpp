@@ -14,6 +14,11 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function PowerToastWidget.PowerToastWidget_C.UpdatePowerRating
+struct UPowerToastWidget_C_UpdatePowerRating_Params
+{
+};
+
 // Function PowerToastWidget.PowerToastWidget_C.StartIntro
 struct UPowerToastWidget_C_StartIntro_Params
 {
@@ -30,6 +35,11 @@ struct UPowerToastWidget_C_ShowText_Params
 struct UPowerToastWidget_C_SetToast_Params
 {
 	class UFortUINotification*                         Toast;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function PowerToastWidget.PowerToastWidget_C.Construct
+struct UPowerToastWidget_C_Construct_Params
+{
 };
 
 // Function PowerToastWidget.PowerToastWidget_C.HandleIntroFinished
@@ -72,11 +82,6 @@ struct UPowerToastWidget_C_OnPlayerInfoChanged_Params
 	struct FFortTeamMemberInfo*                        NewInfo;                                                  // (CPF_Parm)
 };
 
-// Function PowerToastWidget.PowerToastWidget_C.Construct
-struct UPowerToastWidget_C_Construct_Params
-{
-};
-
 // Function PowerToastWidget.PowerToastWidget_C.BndEvt__Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
 struct UPowerToastWidget_C_BndEvt__Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params
 {
@@ -91,6 +96,11 @@ struct UPowerToastWidget_C_BndEvt__Outro_K2Node_ComponentBoundEvent_1_OnWidgetAn
 struct UPowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_1_Params
 {
 	struct FUniqueNetIdRepl                            NewTeamMemberId;                                          // (CPF_Parm)
+};
+
+// Function PowerToastWidget.PowerToastWidget_C.HandleSynchronizeTimeout
+struct UPowerToastWidget_C_HandleSynchronizeTimeout_Params
+{
 };
 
 // Function PowerToastWidget.PowerToastWidget_C.ExecuteUbergraph_PowerToastWidget

@@ -20,7 +20,8 @@ namespace SDK
 
 void UInputReflector_C::OnButtonAdded(class UCommonButton** AddedButton, struct FCommonInputActionHandlerData* Data)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InputReflector.InputReflector_C.OnButtonAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62176bf2);
 
 	UInputReflector_C_OnButtonAdded_Params params;
 	params.AddedButton = AddedButton;
@@ -39,7 +40,8 @@ void UInputReflector_C::OnButtonAdded(class UCommonButton** AddedButton, struct 
 
 void UInputReflector_C::ClearButtons()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InputReflector.InputReflector_C.ClearButtons");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3277259);
 
 	UInputReflector_C_ClearButtons_Params params;
 
@@ -56,7 +58,8 @@ void UInputReflector_C::ClearButtons()
 
 void UInputReflector_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InputReflector.InputReflector_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ee9234e);
 
 	UInputReflector_C_Construct_Params params;
 
@@ -75,7 +78,8 @@ void UInputReflector_C::Construct()
 
 void UInputReflector_C::ExecuteUbergraph_InputReflector(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InputReflector.InputReflector_C.ExecuteUbergraph_InputReflector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61d57cb7);
 
 	UInputReflector_C_ExecuteUbergraph_InputReflector_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,8 @@ namespace SDK
 
 void ABluGloManager_C::IssueBluGloRequestForMission(class AFortMission* Mission, class AActor* ActorToSpawnBluGloFrom)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.IssueBluGloRequestForMission");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaefc2b2d);
 
 	ABluGloManager_C_IssueBluGloRequestForMission_Params params;
 	params.Mission = Mission;
@@ -42,7 +43,8 @@ void ABluGloManager_C::IssueBluGloRequestForMission(class AFortMission* Mission,
 
 void ABluGloManager_C::StartSpawnFXAndAudio(const struct FVector& SpawnCenter, class UParticleSystemComponent** SpawnFXEmitter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.StartSpawnFXAndAudio");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7d29bab);
 
 	ABluGloManager_C_StartSpawnFXAndAudio_Params params;
 	params.SpawnCenter = SpawnCenter;
@@ -69,7 +71,8 @@ void ABluGloManager_C::StartSpawnFXAndAudio(const struct FVector& SpawnCenter, c
 
 void ABluGloManager_C::SpawnBluGloGroup(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid, TEnumAsByte<EEnvQueryStatus> QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int NumBluGloToSpawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.SpawnBluGloGroup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe403493a);
 
 	ABluGloManager_C_SpawnBluGloGroup_Params params;
 	params.ActorToSpawnFrom = ActorToSpawnFrom;
@@ -95,7 +98,8 @@ void ABluGloManager_C::SpawnBluGloGroup(class AActor* ActorToSpawnFrom, const st
 
 void ABluGloManager_C::ChooseSpawnCenter(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFrom, struct FVector* SpawnCenter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.ChooseSpawnCenter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a764756);
 
 	ABluGloManager_C_ChooseSpawnCenter_Params params;
 	params.ActorToSpawnFrom = ActorToSpawnFrom;
@@ -121,7 +125,8 @@ void ABluGloManager_C::ChooseSpawnCenter(class AActor* ActorToSpawnFrom, const s
 
 void ABluGloManager_C::BuildSpawnLocationsRandomly(const struct FVector& LocationToSpawnFrom, int NumBluGloToSpawn, TArray<struct FVector>* LocationsForSpawningBluGlo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.BuildSpawnLocationsRandomly");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe051fe2);
 
 	ABluGloManager_C_BuildSpawnLocationsRandomly_Params params;
 	params.LocationToSpawnFrom = LocationToSpawnFrom;
@@ -147,7 +152,8 @@ void ABluGloManager_C::BuildSpawnLocationsRandomly(const struct FVector& Locatio
 
 void ABluGloManager_C::BuildSpawnLocationsFromQueryLocations(int NumBluGloToSpawn, TArray<struct FVector>* QueryResultLocations, TArray<struct FVector>* LocationsForSpawningBluGlo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.BuildSpawnLocationsFromQueryLocations");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa20185d2);
 
 	ABluGloManager_C_BuildSpawnLocationsFromQueryLocations_Params params;
 	params.NumBluGloToSpawn = NumBluGloToSpawn;
@@ -176,7 +182,8 @@ void ABluGloManager_C::BuildSpawnLocationsFromQueryLocations(int NumBluGloToSpaw
 
 void ABluGloManager_C::BuildSpawnLocations(TEnumAsByte<EEnvQueryStatus> QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int NumBluGloToSpawn, const struct FVector& SpawnCenter, TArray<struct FVector>* LocationsForSpawningBluGlo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.BuildSpawnLocations");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48dfbc5e);
 
 	ABluGloManager_C_BuildSpawnLocations_Params params;
 	params.QueryStatus = QueryStatus;
@@ -204,7 +211,8 @@ void ABluGloManager_C::BuildSpawnLocations(TEnumAsByte<EEnvQueryStatus> QuerySta
 
 void ABluGloManager_C::IssueBluGloRequest(int NumBluGloToSpawn, class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.IssueBluGloRequest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c594610);
 
 	ABluGloManager_C_IssueBluGloRequest_Params params;
 	params.NumBluGloToSpawn = NumBluGloToSpawn;
@@ -227,7 +235,8 @@ void ABluGloManager_C::IssueBluGloRequest(int NumBluGloToSpawn, class AActor* Ac
 
 void ABluGloManager_C::SpawnBluGlo(const struct FVector& SpawnLocation, const struct FVector& SpawnFromLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.SpawnBluGlo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1fa22f55);
 
 	ABluGloManager_C_SpawnBluGlo_Params params;
 	params.SpawnLocation = SpawnLocation;
@@ -246,7 +255,8 @@ void ABluGloManager_C::SpawnBluGlo(const struct FVector& SpawnLocation, const st
 
 void ABluGloManager_C::RemoveOccupiedNodes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.RemoveOccupiedNodes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x449dc45a);
 
 	ABluGloManager_C_RemoveOccupiedNodes_Params params;
 
@@ -267,7 +277,8 @@ void ABluGloManager_C::RemoveOccupiedNodes()
 
 void ABluGloManager_C::RequestedBluGo(class AFortMission* Mission, const struct FVector& EQS_Start_Location, class AActor* Actor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.RequestedBluGo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2484f12);
 
 	ABluGloManager_C_RequestedBluGo_Params params;
 	params.Mission = Mission;
@@ -287,7 +298,8 @@ void ABluGloManager_C::RequestedBluGo(class AFortMission* Mission, const struct 
 
 void ABluGloManager_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd7106e8);
 
 	ABluGloManager_C_UserConstructionScript_Params params;
 
@@ -317,7 +329,8 @@ void ABluGloManager_C::UserConstructionScript()
 
 void ABluGloManager_C::HandleMissionEvent_RequestBluGloSpawnUseActor(const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, class UDataAsset* EventContent, class AActor* EventInstigator, int GenericInt, float GenericFloat, const struct FText& GenericText, const struct FGameplayTagContainer& GameplayTags, const struct FFortMissionEvent& MissionEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseActor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14e07b5d);
 
 	ABluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseActor_Params params;
 	params.MissionGuid = MissionGuid;
@@ -348,7 +361,8 @@ void ABluGloManager_C::HandleMissionEvent_RequestBluGloSpawnUseActor(const struc
 
 void ABluGloManager_C::StopSpawnFX(bool off)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.StopSpawnFX");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a4e5042);
 
 	ABluGloManager_C_StopSpawnFX_Params params;
 	params.off = off;
@@ -372,7 +386,8 @@ void ABluGloManager_C::StopSpawnFX(bool off)
 
 void ABluGloManager_C::OnBluGloQueryFinished(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid, TEnumAsByte<EEnvQueryStatus> QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int NumBluGloToSpawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.OnBluGloQueryFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ea57b9);
 
 	ABluGloManager_C_OnBluGloQueryFinished_Params params;
 	params.ActorToSpawnFrom = ActorToSpawnFrom;
@@ -396,7 +411,8 @@ void ABluGloManager_C::OnBluGloQueryFinished(class AActor* ActorToSpawnFrom, con
 
 void ABluGloManager_C::SpawnFXComplete(class UParticleSystemComponent* PSystem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.SpawnFXComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3125477);
 
 	ABluGloManager_C_SpawnFXComplete_Params params;
 	params.PSystem = PSystem;
@@ -416,7 +432,8 @@ void ABluGloManager_C::SpawnFXComplete(class UParticleSystemComponent* PSystem)
 
 void ABluGloManager_C::SpawnBluGloGroupEvent(const struct FVector& SpawnCenter)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.SpawnBluGloGroupEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22eb201e);
 
 	ABluGloManager_C_SpawnBluGloGroupEvent_Params params;
 	params.SpawnCenter = SpawnCenter;
@@ -436,7 +453,8 @@ void ABluGloManager_C::SpawnBluGloGroupEvent(const struct FVector& SpawnCenter)
 
 void ABluGloManager_C::AddMoreBluGloInWorld(class AFortMission* Mission)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.AddMoreBluGloInWorld");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b3e9c41);
 
 	ABluGloManager_C_AddMoreBluGloInWorld_Params params;
 	params.Mission = Mission;
@@ -467,7 +485,8 @@ void ABluGloManager_C::AddMoreBluGloInWorld(class AFortMission* Mission)
 
 void ABluGloManager_C::HandleMissionEvent_RequestBluGloSpawnUseEQS(const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, class UDataAsset* EventContent, class AActor* EventInstigator, int GenericInt, float GenericFloat, const struct FText& GenericText, const struct FGameplayTagContainer& GameplayTags, const struct FFortMissionEvent& MissionEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.HandleMissionEvent_RequestBluGloSpawnUseEQS");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xedf72283);
 
 	ABluGloManager_C_HandleMissionEvent_RequestBluGloSpawnUseEQS_Params params;
 	params.MissionGuid = MissionGuid;
@@ -498,7 +517,8 @@ void ABluGloManager_C::HandleMissionEvent_RequestBluGloSpawnUseEQS(const struct 
 
 void ABluGloManager_C::ExecuteUbergraph_BluGloManager(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloManager.BluGloManager_C.ExecuteUbergraph_BluGloManager");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1bf1c83);
 
 	ABluGloManager_C_ExecuteUbergraph_BluGloManager_Params params;
 	params.EntryPoint = EntryPoint;

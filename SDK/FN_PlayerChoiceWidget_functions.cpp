@@ -21,7 +21,8 @@ namespace SDK
 
 class UPlayerChoiceButtonWidget_C* UPlayerChoiceWidget_C::CreateButtonAndSetText(const struct FChoiceDataEntry& ChoiceData, int ChoiceID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.CreateButtonAndSetText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50b77ff7);
 
 	UPlayerChoiceWidget_C_CreateButtonAndSetText_Params params;
 	params.ChoiceData = ChoiceData;
@@ -44,7 +45,8 @@ class UPlayerChoiceButtonWidget_C* UPlayerChoiceWidget_C::CreateButtonAndSetText
 
 struct FText UPlayerChoiceWidget_C::GetText_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.GetText_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3698410);
 
 	UPlayerChoiceWidget_C_GetText_1_Params params;
 
@@ -63,7 +65,8 @@ struct FText UPlayerChoiceWidget_C::GetText_1()
 
 void UPlayerChoiceWidget_C::Get_TextBlock_Choice3_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.Get_TextBlock_Choice3_Text_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x896c6215);
 
 	UPlayerChoiceWidget_C_Get_TextBlock_Choice3_Text_1_Params params;
 
@@ -80,7 +83,8 @@ void UPlayerChoiceWidget_C::Get_TextBlock_Choice3_Text_1()
 
 void UPlayerChoiceWidget_C::Get_TextBlock_Choice2_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.Get_TextBlock_Choice2_Text_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d7f4002);
 
 	UPlayerChoiceWidget_C_Get_TextBlock_Choice2_Text_1_Params params;
 
@@ -97,7 +101,8 @@ void UPlayerChoiceWidget_C::Get_TextBlock_Choice2_Text_1()
 
 void UPlayerChoiceWidget_C::Get_TextBlock_Choice1_Text_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.Get_TextBlock_Choice1_Text_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58edd7d3);
 
 	UPlayerChoiceWidget_C_Get_TextBlock_Choice1_Text_1_Params params;
 
@@ -114,7 +119,8 @@ void UPlayerChoiceWidget_C::Get_TextBlock_Choice1_Text_1()
 
 void UPlayerChoiceWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76bd556a);
 
 	UPlayerChoiceWidget_C_Construct_Params params;
 
@@ -133,7 +139,8 @@ void UPlayerChoiceWidget_C::Construct()
 
 void UPlayerChoiceWidget_C::ChoiceSelected(int ChoiceID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.ChoiceSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bb70ee1);
 
 	UPlayerChoiceWidget_C_ChoiceSelected_Params params;
 	params.ChoiceID = ChoiceID;
@@ -153,7 +160,8 @@ void UPlayerChoiceWidget_C::ChoiceSelected(int ChoiceID)
 
 void UPlayerChoiceWidget_C::SetChoices(struct FChoiceData* ChoiceItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.SetChoices");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdebb097f);
 
 	UPlayerChoiceWidget_C_SetChoices_Params params;
 	params.ChoiceItems = ChoiceItems;
@@ -171,7 +179,8 @@ void UPlayerChoiceWidget_C::SetChoices(struct FChoiceData* ChoiceItems)
 
 void UPlayerChoiceWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2037ccb1);
 
 	UPlayerChoiceWidget_C_Destruct_Params params;
 
@@ -190,7 +199,8 @@ void UPlayerChoiceWidget_C::Destruct()
 
 void UPlayerChoiceWidget_C::ExecuteUbergraph_PlayerChoiceWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.ExecuteUbergraph_PlayerChoiceWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36eadf3d);
 
 	UPlayerChoiceWidget_C_ExecuteUbergraph_PlayerChoiceWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -210,7 +220,8 @@ void UPlayerChoiceWidget_C::ExecuteUbergraph_PlayerChoiceWidget(int EntryPoint)
 
 void UPlayerChoiceWidget_C::SurvivorStoryChoiceSelected__DelegateSignature(int SelectedChoice)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerChoiceWidget.PlayerChoiceWidget_C.SurvivorStoryChoiceSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfde5a871);
 
 	UPlayerChoiceWidget_C_SurvivorStoryChoiceSelected__DelegateSignature_Params params;
 	params.SelectedChoice = SelectedChoice;

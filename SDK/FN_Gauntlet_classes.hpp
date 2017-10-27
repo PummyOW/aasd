@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Gauntlet.GauntletTestController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x750fa7b);
 		return ptr;
 	}
 
@@ -36,7 +37,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Gauntlet.GauntletTestControllerBootTest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcedd5dab);
 		return ptr;
 	}
 
@@ -52,7 +54,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Gauntlet.GauntletTestControllerErrorTest");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x171d2e7);
 		return ptr;
 	}
 

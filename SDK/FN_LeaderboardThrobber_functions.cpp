@@ -19,7 +19,8 @@ namespace SDK
 
 void ULeaderboardThrobber_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardThrobber.LeaderboardThrobber_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82f5476d);
 
 	ULeaderboardThrobber_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -39,7 +40,8 @@ void ULeaderboardThrobber_C::PreConstruct(bool* IsDesignTime)
 
 void ULeaderboardThrobber_C::ExecuteUbergraph_LeaderboardThrobber(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardThrobber.LeaderboardThrobber_C.ExecuteUbergraph_LeaderboardThrobber");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3818ac8);
 
 	ULeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber_Params params;
 	params.EntryPoint = EntryPoint;

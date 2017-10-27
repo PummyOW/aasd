@@ -24,7 +24,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Rejoin.RejoinCheck");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9347cdc3);
 		return ptr;
 	}
 

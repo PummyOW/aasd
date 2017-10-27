@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemInspectEvolutionIngredientsList_C::SetupItemLevelRequirement(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C.SetupItemLevelRequirement");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb04e45d0);
 
 	UItemInspectEvolutionIngredientsList_C_SetupItemLevelRequirement_Params params;
 	params.Item = Item;
@@ -37,7 +38,8 @@ void UItemInspectEvolutionIngredientsList_C::SetupItemLevelRequirement(class UFo
 
 void UItemInspectEvolutionIngredientsList_C::ClearIngredients()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C.ClearIngredients");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x615396ba);
 
 	UItemInspectEvolutionIngredientsList_C_ClearIngredients_Params params;
 
@@ -57,7 +59,8 @@ void UItemInspectEvolutionIngredientsList_C::ClearIngredients()
 
 void UItemInspectEvolutionIngredientsList_C::SetIngredients(class UFortItem* Item, TArray<struct FFortItemQuantityPair>* InIngredients)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionIngredientsList.ItemInspectEvolutionIngredientsList_C.SetIngredients");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b0cdde7);
 
 	UItemInspectEvolutionIngredientsList_C_SetIngredients_Params params;
 	params.Item = Item;

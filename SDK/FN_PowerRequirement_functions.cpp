@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UPowerRequirement_C::GenerateToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.GenerateToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e974a5b);
 
 	UPowerRequirement_C_GenerateToolTipWidget_Params params;
 
@@ -40,7 +41,8 @@ class UWidget* UPowerRequirement_C::GenerateToolTipWidget()
 
 void UPowerRequirement_C::SetUIForRequired(int PartyPower)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.SetUIForRequired");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a6aa06f);
 
 	UPowerRequirement_C_SetUIForRequired_Params params;
 	params.PartyPower = PartyPower;
@@ -60,7 +62,8 @@ void UPowerRequirement_C::SetUIForRequired(int PartyPower)
 
 void UPowerRequirement_C::SetUIForRecommended(int PartyPower)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.SetUIForRecommended");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x510cfdd5);
 
 	UPowerRequirement_C_SetUIForRecommended_Params params;
 	params.PartyPower = PartyPower;
@@ -78,7 +81,8 @@ void UPowerRequirement_C::SetUIForRecommended(int PartyPower)
 
 void UPowerRequirement_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf883bb4);
 
 	UPowerRequirement_C_Update_Params params;
 
@@ -98,7 +102,8 @@ void UPowerRequirement_C::Update()
 
 void UPowerRequirement_C::SetRequirements(int RequiredPower, int RecommendedPower)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.SetRequirements");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd871f39d);
 
 	UPowerRequirement_C_SetRequirements_Params params;
 	params.RequiredPower = RequiredPower;
@@ -117,7 +122,8 @@ void UPowerRequirement_C::SetRequirements(int RequiredPower, int RecommendedPowe
 
 void UPowerRequirement_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa09aff1e);
 
 	UPowerRequirement_C_Construct_Params params;
 
@@ -136,7 +142,8 @@ void UPowerRequirement_C::Construct()
 
 void UPowerRequirement_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& UniqueId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.PlayerInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf72ae0e0);
 
 	UPowerRequirement_C_PlayerInfoChanged_Params params;
 	params.UniqueId = UniqueId;
@@ -156,7 +163,8 @@ void UPowerRequirement_C::PlayerInfoChanged(const struct FUniqueNetIdRepl& Uniqu
 
 void UPowerRequirement_C::ExecuteUbergraph_PowerRequirement(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRequirement.PowerRequirement_C.ExecuteUbergraph_PowerRequirement");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfadb4f73);
 
 	UPowerRequirement_C_ExecuteUbergraph_PowerRequirement_Params params;
 	params.EntryPoint = EntryPoint;

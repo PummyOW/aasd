@@ -79,7 +79,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("AnimBlueprintGeneratedClass Fortnite_M_Avg_Player_MenusScreen_AnimBP.Fortnite_M_Avg_Player_MenusScreen_AnimBP_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd358e32e);
 		return ptr;
 	}
 

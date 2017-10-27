@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UBP_FortLiveStreamGrantWindowExpires_C::GetToolTipWidget_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.GetToolTipWidget_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3e76a26);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_GetToolTipWidget_1_Params params;
 
@@ -38,7 +39,8 @@ class UWidget* UBP_FortLiveStreamGrantWindowExpires_C::GetToolTipWidget_1()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Clean_Up_Name_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Clean Up Name Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e8f70e3);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_Clean_Up_Name_Text_Params params;
 
@@ -55,7 +57,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::Clean_Up_Name_Text()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Update_Name_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Update Name Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45a6c082);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_Update_Name_Text_Params params;
 
@@ -74,7 +77,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::Update_Name_Text()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Update_Expiration_Text(const struct FTimespan& Timespan)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Update Expiration Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cd0687c);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_Update_Expiration_Text_Params params;
 	params.Timespan = Timespan;
@@ -94,7 +98,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::Update_Expiration_Text(const struct
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Set_Stream_Brush(const struct FSlateBrush& InBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Set Stream Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8314758b);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_Set_Stream_Brush_Params params;
 	params.InBrush = InBrush;
@@ -114,7 +119,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::Set_Stream_Brush(const struct FSlat
 
 void UBP_FortLiveStreamGrantWindowExpires_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaad22a95);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -132,7 +138,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::PreConstruct(bool* IsDesignTime)
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bf660e);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_Construct_Params params;
 
@@ -151,7 +158,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::Construct()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::OnLiveStreamingQuestWindowStarts_Event_1(float Seconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.OnLiveStreamingQuestWindowStarts_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x514dae7a);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowStarts_Event_1_Params params;
 	params.Seconds = Seconds;
@@ -169,7 +177,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::OnLiveStreamingQuestWindowStarts_Ev
 
 void UBP_FortLiveStreamGrantWindowExpires_C::OnLiveStreamingQuestWindowEnds_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.OnLiveStreamingQuestWindowEnds_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x226acd3);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowEnds_Event_1_Params params;
 
@@ -188,7 +197,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::OnLiveStreamingQuestWindowEnds_Even
 
 void UBP_FortLiveStreamGrantWindowExpires_C::OnLiveStreamingQuestWindowSelectedViewers_Event_1(TArray<struct FText> Names)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.OnLiveStreamingQuestWindowSelectedViewers_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3ab2c2d);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_OnLiveStreamingQuestWindowSelectedViewers_Event_1_Params params;
 	params.Names = Names;
@@ -206,7 +216,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::OnLiveStreamingQuestWindowSelectedV
 
 void UBP_FortLiveStreamGrantWindowExpires_C::HandleSimulateExpirationTimer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.HandleSimulateExpirationTimer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0b6177);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_HandleSimulateExpirationTimer_Params params;
 
@@ -223,7 +234,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::HandleSimulateExpirationTimer()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::OnAnimation_Finished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.OnAnimation_Finished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc3d62cf);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_OnAnimation_Finished_Params params;
 
@@ -240,7 +252,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::OnAnimation_Finished()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::Handle_Wait_Between_Names()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.Handle Wait Between Names");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde2eb34c);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_Handle_Wait_Between_Names_Params params;
 
@@ -257,7 +270,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::Handle_Wait_Between_Names()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::TextFadedOut()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.TextFadedOut");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f12c3a0);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_TextFadedOut_Params params;
 
@@ -276,7 +290,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::TextFadedOut()
 
 void UBP_FortLiveStreamGrantWindowExpires_C::ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6f9bad7);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_ExecuteUbergraph_BP_FortLiveStreamGrantWindowExpires_Params params;
 	params.EntryPoint = EntryPoint;
@@ -294,7 +309,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::ExecuteUbergraph_BP_FortLiveStreamG
 
 void UBP_FortLiveStreamGrantWindowExpires_C::StreamTimerStarted__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.StreamTimerStarted__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa855851c);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_StreamTimerStarted__DelegateSignature_Params params;
 
@@ -311,7 +327,8 @@ void UBP_FortLiveStreamGrantWindowExpires_C::StreamTimerStarted__DelegateSignatu
 
 void UBP_FortLiveStreamGrantWindowExpires_C::StreamTimerExpired__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortLiveStreamGrantWindowExpires.BP_FortLiveStreamGrantWindowExpires_C.StreamTimerExpired__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe50202e4);
 
 	UBP_FortLiveStreamGrantWindowExpires_C_StreamTimerExpired__DelegateSignature_Params params;
 

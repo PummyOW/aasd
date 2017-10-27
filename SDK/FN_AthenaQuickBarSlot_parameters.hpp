@@ -14,10 +14,26 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaQuickBarSlot.AthenaQuickBarSlot_C.UpdateKeyBindingText_SpecialCases
+struct UAthenaQuickBarSlot_C_UpdateKeyBindingText_SpecialCases_Params
+{
+};
+
 // Function AthenaQuickBarSlot.AthenaQuickBarSlot_C.GetKeyBindingAction_Gamepad
 struct UAthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad_Params
 {
 	struct FName                                       KeyBindingAction;                                         // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function AthenaQuickBarSlot.AthenaQuickBarSlot_C.UpdateKeyBindingText
+struct UAthenaQuickBarSlot_C_UpdateKeyBindingText_Params
+{
+};
+
+// Function AthenaQuickBarSlot.AthenaQuickBarSlot_C.ExecuteUbergraph_AthenaQuickBarSlot
+struct UAthenaQuickBarSlot_C_ExecuteUbergraph_AthenaQuickBarSlot_Params
+{
+	int                                                EntryPoint;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 }

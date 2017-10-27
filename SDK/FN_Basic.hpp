@@ -15,6 +15,21 @@ inline Fn GetVFunction(const void *instance, std::size_t index)
 	return reinterpret_cast<Fn>(vtable[index]);
 }
 
+// Credits to namazso <3
+static unsigned fnv_hash_runtime(const char* str) 
+{
+	static constexpr auto k_fnv_prime = 16777619u;
+	static constexpr auto k_offset_basis = 2166136261u;
+
+	auto hash = k_offset_basis;
+	do {
+		hash ^= *str++;
+		hash *= k_fnv_prime;
+	} while (*(str - 1) != 0);
+
+	return hash;
+}
+
 class UObject;
 
 class FUObjectItem

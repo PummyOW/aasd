@@ -19,7 +19,8 @@ namespace SDK
 
 ESlateVisibility UAthenaNews_C::Get_RegionNews_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaNews.AthenaNews_C.Get_RegionNews_Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31907a8);
 
 	UAthenaNews_C_Get_RegionNews_Visibility_Params params;
 
@@ -40,7 +41,8 @@ ESlateVisibility UAthenaNews_C::Get_RegionNews_Visibility()
 
 ESlateVisibility UAthenaNews_C::Get_PlatformNews_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaNews.AthenaNews_C.Get_PlatformNews_Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x139db34f);
 
 	UAthenaNews_C_Get_PlatformNews_Visibility_Params params;
 
@@ -59,7 +61,8 @@ ESlateVisibility UAthenaNews_C::Get_PlatformNews_Visibility()
 
 void UAthenaNews_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaNews.AthenaNews_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f02971e);
 
 	UAthenaNews_C_Construct_Params params;
 
@@ -78,7 +81,8 @@ void UAthenaNews_C::Construct()
 
 void UAthenaNews_C::ExecuteUbergraph_AthenaNews(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaNews.AthenaNews_C.ExecuteUbergraph_AthenaNews");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93a4e143);
 
 	UAthenaNews_C_ExecuteUbergraph_AthenaNews_Params params;
 	params.EntryPoint = EntryPoint;

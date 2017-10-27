@@ -17,7 +17,8 @@ namespace SDK
 
 void UXpBoostCounts_C::Update_Available_Boosts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostCounts.XpBoostCounts_C.Update Available Boosts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33d6163f);
 
 	UXpBoostCounts_C_Update_Available_Boosts_Params params;
 
@@ -34,7 +35,8 @@ void UXpBoostCounts_C::Update_Available_Boosts()
 
 void UXpBoostCounts_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostCounts.XpBoostCounts_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeaacb266);
 
 	UXpBoostCounts_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UXpBoostCounts_C::Construct()
 
 void UXpBoostCounts_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostCounts.XpBoostCounts_C.HandleAccountUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef6a50dd);
 
 	UXpBoostCounts_C_HandleAccountUpdate_Params params;
 	params.NewInfo = NewInfo;
@@ -73,7 +76,8 @@ void UXpBoostCounts_C::HandleAccountUpdate(const struct FFortPublicAccountInfo& 
 
 void UXpBoostCounts_C::Xp_Boost_Changed(int BoostAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostCounts.XpBoostCounts_C.Xp Boost Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72d4db16);
 
 	UXpBoostCounts_C_Xp_Boost_Changed_Params params;
 	params.BoostAmount = BoostAmount;
@@ -93,7 +97,8 @@ void UXpBoostCounts_C::Xp_Boost_Changed(int BoostAmount)
 
 void UXpBoostCounts_C::ExecuteUbergraph_XpBoostCounts(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function XpBoostCounts.XpBoostCounts_C.ExecuteUbergraph_XpBoostCounts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb34c2e0);
 
 	UXpBoostCounts_C_ExecuteUbergraph_XpBoostCounts_Params params;
 	params.EntryPoint = EntryPoint;

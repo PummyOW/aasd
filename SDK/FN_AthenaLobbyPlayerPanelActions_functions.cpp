@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaLobbyPlayerPanelActions_C::CanViewProfile(bool* CanView)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanViewProfile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f8a9603);
 
 	UAthenaLobbyPlayerPanelActions_C_CanViewProfile_Params params;
 
@@ -41,7 +42,8 @@ void UAthenaLobbyPlayerPanelActions_C::CanViewProfile(bool* CanView)
 
 bool UAthenaLobbyPlayerPanelActions_C::IsTeamMemberLocalPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsTeamMemberLocalPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d850244);
 
 	UAthenaLobbyPlayerPanelActions_C_IsTeamMemberLocalPlayer_Params params;
 
@@ -62,7 +64,8 @@ bool UAthenaLobbyPlayerPanelActions_C::IsTeamMemberLocalPlayer()
 
 void UAthenaLobbyPlayerPanelActions_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.SetTeamMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9815e1dc);
 
 	UAthenaLobbyPlayerPanelActions_C_SetTeamMemberInfo_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -82,7 +85,8 @@ void UAthenaLobbyPlayerPanelActions_C::SetTeamMemberInfo(const struct FFortTeamM
 
 void UAthenaLobbyPlayerPanelActions_C::OnActiveFriendsCountUpdated(int ActiveFriendsCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.OnActiveFriendsCountUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8696157);
 
 	UAthenaLobbyPlayerPanelActions_C_OnActiveFriendsCountUpdated_Params params;
 	params.ActiveFriendsCount = ActiveFriendsCount;
@@ -102,7 +106,8 @@ void UAthenaLobbyPlayerPanelActions_C::OnActiveFriendsCountUpdated(int ActiveFri
 
 void UAthenaLobbyPlayerPanelActions_C::OnPartyInvitesCountChanged(int InvitesCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.OnPartyInvitesCountChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3decb31);
 
 	UAthenaLobbyPlayerPanelActions_C_OnPartyInvitesCountChanged_Params params;
 	params.InvitesCount = InvitesCount;
@@ -120,7 +125,8 @@ void UAthenaLobbyPlayerPanelActions_C::OnPartyInvitesCountChanged(int InvitesCou
 
 void UAthenaLobbyPlayerPanelActions_C::InitializeContextEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.InitializeContextEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a53ac89);
 
 	UAthenaLobbyPlayerPanelActions_C_InitializeContextEvents_Params params;
 
@@ -137,7 +143,8 @@ void UAthenaLobbyPlayerPanelActions_C::InitializeContextEvents()
 
 void UAthenaLobbyPlayerPanelActions_C::Focus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.Focus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc15734e5);
 
 	UAthenaLobbyPlayerPanelActions_C_Focus_Params params;
 
@@ -156,7 +163,8 @@ void UAthenaLobbyPlayerPanelActions_C::Focus()
 
 void UAthenaLobbyPlayerPanelActions_C::HasValidActions(bool* bHasValidActions)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.HasValidActions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c1003aa);
 
 	UAthenaLobbyPlayerPanelActions_C_HasValidActions_Params params;
 
@@ -178,7 +186,8 @@ void UAthenaLobbyPlayerPanelActions_C::HasValidActions(bool* bHasValidActions)
 
 void UAthenaLobbyPlayerPanelActions_C::GetFirstActiveActionButton(class UIconTextButton_C** IconTextButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.GetFirstActiveActionButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x830b2da1);
 
 	UAthenaLobbyPlayerPanelActions_C_GetFirstActiveActionButton_Params params;
 
@@ -200,7 +209,8 @@ void UAthenaLobbyPlayerPanelActions_C::GetFirstActiveActionButton(class UIconTex
 
 void UAthenaLobbyPlayerPanelActions_C::CanManage(bool* bCanManage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanManage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9654500e);
 
 	UAthenaLobbyPlayerPanelActions_C_CanManage_Params params;
 
@@ -222,7 +232,8 @@ void UAthenaLobbyPlayerPanelActions_C::CanManage(bool* bCanManage)
 
 void UAthenaLobbyPlayerPanelActions_C::IsInvitationPending(bool* bIsInvitationPending)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsInvitationPending");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a0a64ef);
 
 	UAthenaLobbyPlayerPanelActions_C_IsInvitationPending_Params params;
 
@@ -244,7 +255,8 @@ void UAthenaLobbyPlayerPanelActions_C::IsInvitationPending(bool* bIsInvitationPe
 
 void UAthenaLobbyPlayerPanelActions_C::CanInviteToParty(bool* bCanInviteToParty)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanInviteToParty");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce636afd);
 
 	UAthenaLobbyPlayerPanelActions_C_CanInviteToParty_Params params;
 
@@ -266,7 +278,8 @@ void UAthenaLobbyPlayerPanelActions_C::CanInviteToParty(bool* bCanInviteToParty)
 
 void UAthenaLobbyPlayerPanelActions_C::CanFriend(bool* bCanFriend)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.CanFriend");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f5efab3);
 
 	UAthenaLobbyPlayerPanelActions_C_CanFriend_Params params;
 
@@ -288,7 +301,8 @@ void UAthenaLobbyPlayerPanelActions_C::CanFriend(bool* bCanFriend)
 
 void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* isLocalPlayersOutpost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsMissionLocalPlayersOutpost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b61758);
 
 	UAthenaLobbyPlayerPanelActions_C_IsMissionLocalPlayersOutpost_Params params;
 
@@ -310,7 +324,8 @@ void UAthenaLobbyPlayerPanelActions_C::IsMissionLocalPlayersOutpost(bool* isLoca
 
 void UAthenaLobbyPlayerPanelActions_C::IsLocalPlayer(bool* bIsLocalPlayer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.IsLocalPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5caa6843);
 
 	UAthenaLobbyPlayerPanelActions_C_IsLocalPlayer_Params params;
 
@@ -330,7 +345,8 @@ void UAthenaLobbyPlayerPanelActions_C::IsLocalPlayer(bool* bIsLocalPlayer)
 
 void UAthenaLobbyPlayerPanelActions_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0ba96e8);
 
 	UAthenaLobbyPlayerPanelActions_C_Refresh_Params params;
 
@@ -347,7 +363,8 @@ void UAthenaLobbyPlayerPanelActions_C::Refresh()
 
 void UAthenaLobbyPlayerPanelActions_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf66986ed);
 
 	UAthenaLobbyPlayerPanelActions_C_Initialize_Params params;
 
@@ -366,7 +383,8 @@ void UAthenaLobbyPlayerPanelActions_C::Initialize()
 
 void UAthenaLobbyPlayerPanelActions_C::OnButtonHovered(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.OnButtonHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x657d8e49);
 
 	UAthenaLobbyPlayerPanelActions_C_OnButtonHovered_Params params;
 	params.Button = Button;
@@ -386,7 +404,8 @@ void UAthenaLobbyPlayerPanelActions_C::OnButtonHovered(class UCommonButton* Butt
 
 void UAthenaLobbyPlayerPanelActions_C::BndEvt__ButtonManage_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonManage_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52f0ae00);
 
 	UAthenaLobbyPlayerPanelActions_C_BndEvt__ButtonManage_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -406,7 +425,8 @@ void UAthenaLobbyPlayerPanelActions_C::BndEvt__ButtonManage_K2Node_ComponentBoun
 
 void UAthenaLobbyPlayerPanelActions_C::BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x501a60c);
 
 	UAthenaLobbyPlayerPanelActions_C_BndEvt__ButtonAddFriend_K2Node_ComponentBoundEvent_103_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -426,7 +446,8 @@ void UAthenaLobbyPlayerPanelActions_C::BndEvt__ButtonAddFriend_K2Node_ComponentB
 
 void UAthenaLobbyPlayerPanelActions_C::BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde7adef0);
 
 	UAthenaLobbyPlayerPanelActions_C_BndEvt__ButtonInviteParty_K2Node_ComponentBoundEvent_121_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -446,7 +467,8 @@ void UAthenaLobbyPlayerPanelActions_C::BndEvt__ButtonInviteParty_K2Node_Componen
 
 void UAthenaLobbyPlayerPanelActions_C::BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48114e39);
 
 	UAthenaLobbyPlayerPanelActions_C_BndEvt__ViewProfileButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -466,7 +488,8 @@ void UAthenaLobbyPlayerPanelActions_C::BndEvt__ViewProfileButton_K2Node_Componen
 
 void UAthenaLobbyPlayerPanelActions_C::ExecuteUbergraph_AthenaLobbyPlayerPanelActions(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.ExecuteUbergraph_AthenaLobbyPlayerPanelActions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1f7a152);
 
 	UAthenaLobbyPlayerPanelActions_C_ExecuteUbergraph_AthenaLobbyPlayerPanelActions_Params params;
 	params.EntryPoint = EntryPoint;
@@ -484,7 +507,8 @@ void UAthenaLobbyPlayerPanelActions_C::ExecuteUbergraph_AthenaLobbyPlayerPanelAc
 
 void UAthenaLobbyPlayerPanelActions_C::OnGadgetsClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelActions.AthenaLobbyPlayerPanelActions_C.OnGadgetsClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa37c4289);
 
 	UAthenaLobbyPlayerPanelActions_C_OnGadgetsClicked__DelegateSignature_Params params;
 

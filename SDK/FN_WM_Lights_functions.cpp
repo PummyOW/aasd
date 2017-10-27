@@ -17,7 +17,8 @@ namespace SDK
 
 void AWM_Lights_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Lights.WM_Lights_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde1e6a90);
 
 	AWM_Lights_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AWM_Lights_C::UserConstructionScript()
 
 void AWM_Lights_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Lights.WM_Lights_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba425437);
 
 	AWM_Lights_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +55,8 @@ void AWM_Lights_C::ReceiveBeginPlay()
 
 void AWM_Lights_C::WM_Lightcontrol(bool TurnOn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Lights.WM_Lights_C.WM-Lightcontrol");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x723c77ff);
 
 	AWM_Lights_C_WM_Lightcontrol_Params params;
 	params.TurnOn = TurnOn;
@@ -73,7 +76,8 @@ void AWM_Lights_C::WM_Lightcontrol(bool TurnOn)
 
 void AWM_Lights_C::ExecuteUbergraph_WM_Lights(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Lights.WM_Lights_C.ExecuteUbergraph_WM_Lights");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0fb500d);
 
 	AWM_Lights_C_ExecuteUbergraph_WM_Lights_Params params;
 	params.EntryPoint = EntryPoint;

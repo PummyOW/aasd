@@ -19,7 +19,8 @@ namespace SDK
 
 ESlateVisibility USubtitles_C::GetSubtitleVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Subtitles.Subtitles_C.GetSubtitleVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc65879d1);
 
 	USubtitles_C_GetSubtitleVisibility_Params params;
 
@@ -38,7 +39,8 @@ ESlateVisibility USubtitles_C::GetSubtitleVisibility()
 
 void USubtitles_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Subtitles.Subtitles_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba07df0a);
 
 	USubtitles_C_Construct_Params params;
 
@@ -57,7 +59,8 @@ void USubtitles_C::Construct()
 
 void USubtitles_C::ExecuteUbergraph_Subtitles(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Subtitles.Subtitles_C.ExecuteUbergraph_Subtitles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba13d40e);
 
 	USubtitles_C_ExecuteUbergraph_Subtitles_Params params;
 	params.EntryPoint = EntryPoint;

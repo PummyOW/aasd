@@ -20,7 +20,8 @@ namespace SDK
 
 void UTooltipDurabilityMeter_C::Draw(float Normalized, const struct FFortDisplayAttribute& Display_Attribute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipDurabilityMeter.TooltipDurabilityMeter_C.Draw");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44d9818b);
 
 	UTooltipDurabilityMeter_C_Draw_Params params;
 	params.Normalized = Normalized;
@@ -39,7 +40,8 @@ void UTooltipDurabilityMeter_C::Draw(float Normalized, const struct FFortDisplay
 
 void UTooltipDurabilityMeter_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipDurabilityMeter.TooltipDurabilityMeter_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d8d585c);
 
 	UTooltipDurabilityMeter_C_Construct_Params params;
 
@@ -58,7 +60,8 @@ void UTooltipDurabilityMeter_C::Construct()
 
 void UTooltipDurabilityMeter_C::ExecuteUbergraph_TooltipDurabilityMeter(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipDurabilityMeter.TooltipDurabilityMeter_C.ExecuteUbergraph_TooltipDurabilityMeter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7526a6ae);
 
 	UTooltipDurabilityMeter_C_ExecuteUbergraph_TooltipDurabilityMeter_Params params;
 	params.EntryPoint = EntryPoint;

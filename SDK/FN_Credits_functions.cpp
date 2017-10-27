@@ -17,7 +17,8 @@ namespace SDK
 
 void UCredits_C::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.Reset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a4c84c0);
 
 	UCredits_C_Reset_Params params;
 
@@ -34,7 +35,8 @@ void UCredits_C::Reset()
 
 void UCredits_C::CaptureEndPoint()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.CaptureEndPoint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce3483c8);
 
 	UCredits_C_CaptureEndPoint_Params params;
 
@@ -51,7 +53,8 @@ void UCredits_C::CaptureEndPoint()
 
 void UCredits_C::ScrollCredits()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.ScrollCredits");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59d2b69a);
 
 	UCredits_C_ScrollCredits_Params params;
 
@@ -70,7 +73,8 @@ void UCredits_C::ScrollCredits()
 
 void UCredits_C::ToggleScrollTimer(bool EnableTimer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.ToggleScrollTimer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bc6e9d7);
 
 	UCredits_C_ToggleScrollTimer_Params params;
 	params.EnableTimer = EnableTimer;
@@ -90,7 +94,8 @@ void UCredits_C::ToggleScrollTimer(bool EnableTimer)
 
 void UCredits_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe2184cb4);
 
 	UCredits_C_HandleBack_Params params;
 
@@ -110,7 +115,8 @@ void UCredits_C::HandleBack(bool* PassThrough)
 
 void UCredits_C::HandleFadeInFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.HandleFadeInFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d0ee2c8);
 
 	UCredits_C_HandleFadeInFinished_Params params;
 
@@ -127,7 +133,8 @@ void UCredits_C::HandleFadeInFinished()
 
 void UCredits_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca6cabf2);
 
 	UCredits_C_OnDeactivated_Params params;
 
@@ -144,7 +151,8 @@ void UCredits_C::OnDeactivated()
 
 void UCredits_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0abbd3d);
 
 	UCredits_C_OnActivated_Params params;
 
@@ -161,7 +169,8 @@ void UCredits_C::OnActivated()
 
 void UCredits_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x513c5bf6);
 
 	UCredits_C_Construct_Params params;
 
@@ -180,7 +189,8 @@ void UCredits_C::Construct()
 
 void UCredits_C::ExecuteUbergraph_Credits(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Credits.Credits_C.ExecuteUbergraph_Credits");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6572e58f);
 
 	UCredits_C_ExecuteUbergraph_Credits_Params params;
 	params.EntryPoint = EntryPoint;

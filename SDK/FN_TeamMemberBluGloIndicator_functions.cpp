@@ -17,7 +17,8 @@ namespace SDK
 
 void UTeamMemberBluGloIndicator_C::OnPlayerAccumulatedItemsUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C.OnPlayerAccumulatedItemsUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63c974a6);
 
 	UTeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated_Params params;
 
@@ -36,7 +37,8 @@ void UTeamMemberBluGloIndicator_C::OnPlayerAccumulatedItemsUpdated()
 
 void UTeamMemberBluGloIndicator_C::SetPlayer(const struct FUniqueNetIdRepl& PlayerNetId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C.SetPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d1a7e5a);
 
 	UTeamMemberBluGloIndicator_C_SetPlayer_Params params;
 	params.PlayerNetId = PlayerNetId;

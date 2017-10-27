@@ -20,7 +20,8 @@ namespace SDK
 
 void URewardsWidget_C::OnHandleAction(struct FEventReply* Result, bool* bPassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.OnHandleAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x190fb82c);
 
 	URewardsWidget_C_OnHandleAction_Params params;
 
@@ -46,7 +47,8 @@ void URewardsWidget_C::OnHandleAction(struct FEventReply* Result, bool* bPassThr
 
 struct FEventReply URewardsWidget_C::On_ClosedChest_MouseButtonDown_2(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.On_ClosedChest_MouseButtonDown_2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e03a181);
 
 	URewardsWidget_C_On_ClosedChest_MouseButtonDown_2_Params params;
 	params.MyGeometry = MyGeometry;
@@ -69,7 +71,8 @@ struct FEventReply URewardsWidget_C::On_ClosedChest_MouseButtonDown_2(const stru
 
 void URewardsWidget_C::GetClosedChestImage(class UTexture2D** ChestImage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.GetClosedChestImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b05915f);
 
 	URewardsWidget_C_GetClosedChestImage_Params params;
 
@@ -89,7 +92,8 @@ void URewardsWidget_C::GetClosedChestImage(class UTexture2D** ChestImage)
 
 void URewardsWidget_C::TerminateQuestConverstation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.TerminateQuestConverstation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7dbb063);
 
 	URewardsWidget_C_TerminateQuestConverstation_Params params;
 
@@ -106,7 +110,8 @@ void URewardsWidget_C::TerminateQuestConverstation()
 
 void URewardsWidget_C::Init()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21302591);
 
 	URewardsWidget_C_Init_Params params;
 
@@ -125,7 +130,8 @@ void URewardsWidget_C::Init()
 
 void URewardsWidget_C::SetupQuestRewardsChoice(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.SetupQuestRewardsChoice");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe2cfa3d);
 
 	URewardsWidget_C_SetupQuestRewardsChoice_Params params;
 	params.Quest = Quest;
@@ -147,7 +153,8 @@ void URewardsWidget_C::SetupQuestRewardsChoice(class UFortQuestItem* Quest)
 
 void URewardsWidget_C::CreateRewardChoice(int RewardIndex, bool IsRewardSelection, TArray<struct FFortItemInstanceQuantityPair>* Rewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.CreateRewardChoice");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a1ac5fb);
 
 	URewardsWidget_C_CreateRewardChoice_Params params;
 	params.RewardIndex = RewardIndex;
@@ -171,7 +178,8 @@ void URewardsWidget_C::CreateRewardChoice(int RewardIndex, bool IsRewardSelectio
 
 void URewardsWidget_C::SelectRewards(int RewardIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.SelectRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe078e071);
 
 	URewardsWidget_C_SelectRewards_Params params;
 	params.RewardIndex = RewardIndex;
@@ -191,7 +199,8 @@ void URewardsWidget_C::SelectRewards(int RewardIndex)
 
 void URewardsWidget_C::PlayQuestConversation(class UFortConversation* Conversation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.PlayQuestConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f444e6c);
 
 	URewardsWidget_C_PlayQuestConversation_Params params;
 	params.Conversation = Conversation;
@@ -209,7 +218,8 @@ void URewardsWidget_C::PlayQuestConversation(class UFortConversation* Conversati
 
 void URewardsWidget_C::OnConversationEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.OnConversationEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa7d45b7);
 
 	URewardsWidget_C_OnConversationEnded_Params params;
 
@@ -228,7 +238,8 @@ void URewardsWidget_C::OnConversationEnded()
 
 void URewardsWidget_C::GetChestImage(class UTexture2D** MissionIcon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.GetChestImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6ee095b);
 
 	URewardsWidget_C_GetChestImage_Params params;
 
@@ -252,7 +263,8 @@ void URewardsWidget_C::GetChestImage(class UTexture2D** MissionIcon)
 
 struct FText URewardsWidget_C::SelectText(const struct FText& InText, const struct FText& Default)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.SelectText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8295d3a);
 
 	URewardsWidget_C_SelectText_Params params;
 	params.InText = InText;
@@ -276,7 +288,8 @@ struct FText URewardsWidget_C::SelectText(const struct FText& InText, const stru
 
 void URewardsWidget_C::PopulateFromMissionWithRewards(const struct FFortLastMissionInfo& LastMissionInfo, TArray<struct FFortItemInstanceQuantityPair>* MissionRewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.PopulateFromMissionWithRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4881c463);
 
 	URewardsWidget_C_PopulateFromMissionWithRewards_Params params;
 	params.LastMissionInfo = LastMissionInfo;
@@ -299,7 +312,8 @@ void URewardsWidget_C::PopulateFromMissionWithRewards(const struct FFortLastMiss
 
 void URewardsWidget_C::PopulateMissionUI(const struct FFortLastMissionInfo& Mission)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.PopulateMissionUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd55a492b);
 
 	URewardsWidget_C_PopulateMissionUI_Params params;
 	params.Mission = Mission;
@@ -319,7 +333,8 @@ void URewardsWidget_C::PopulateMissionUI(const struct FFortLastMissionInfo& Miss
 
 void URewardsWidget_C::SetupUI(TEnumAsByte<ERewardType> RewardType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.SetupUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x677b0d68);
 
 	URewardsWidget_C_SetupUI_Params params;
 	params.RewardType = RewardType;
@@ -340,7 +355,8 @@ void URewardsWidget_C::SetupUI(TEnumAsByte<ERewardType> RewardType)
 
 void URewardsWidget_C::PopulateFromQuestWithRewards(class UFortQuestItem* Quest, TArray<struct FFortItemInstanceQuantityPair>* Rewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.PopulateFromQuestWithRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe08f5cf3);
 
 	URewardsWidget_C_PopulateFromQuestWithRewards_Params params;
 	params.Quest = Quest;
@@ -364,7 +380,8 @@ void URewardsWidget_C::PopulateFromQuestWithRewards(class UFortQuestItem* Quest,
 
 void URewardsWidget_C::PopulateQuestUI(class UFortQuestItem* Quest, bool RewardSelect)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.PopulateQuestUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60192fab);
 
 	URewardsWidget_C_PopulateQuestUI_Params params;
 	params.Quest = Quest;
@@ -385,7 +402,8 @@ void URewardsWidget_C::PopulateQuestUI(class UFortQuestItem* Quest, bool RewardS
 
 void URewardsWidget_C::PopulateFromQuest(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.PopulateFromQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97ca1fa5);
 
 	URewardsWidget_C_PopulateFromQuest_Params params;
 	params.Quest = Quest;
@@ -405,7 +423,8 @@ void URewardsWidget_C::PopulateFromQuest(class UFortQuestItem* Quest)
 
 void URewardsWidget_C::BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature(class UFortBaseButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa715b2a1);
 
 	URewardsWidget_C_BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_FortBaseButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -423,7 +442,8 @@ void URewardsWidget_C::BndEvt__ButtonIconText_K2Node_ComponentBoundEvent_377_For
 
 void URewardsWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x945b4cfd);
 
 	URewardsWidget_C_Destruct_Params params;
 
@@ -442,7 +462,8 @@ void URewardsWidget_C::Destruct()
 
 void URewardsWidget_C::BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature(class UFortBaseButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b280c4e);
 
 	URewardsWidget_C_BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_FortBaseButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -462,7 +483,8 @@ void URewardsWidget_C::BndEvt__ButtonIconText_C_0_K2Node_ComponentBoundEvent_70_
 
 void URewardsWidget_C::SetQuest(class UFortQuestItem** Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.SetQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5990b71);
 
 	URewardsWidget_C_SetQuest_Params params;
 	params.Quest = Quest;
@@ -480,7 +502,8 @@ void URewardsWidget_C::SetQuest(class UFortQuestItem** Quest)
 
 void URewardsWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f416a3e);
 
 	URewardsWidget_C_Construct_Params params;
 
@@ -501,7 +524,8 @@ void URewardsWidget_C::Construct()
 
 void URewardsWidget_C::HandleClientEvent_ConversationFinished(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.HandleClientEvent_ConversationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe4ec814);
 
 	URewardsWidget_C_HandleClientEvent_ConversationFinished_Params params;
 	params.EventSource = EventSource;
@@ -523,7 +547,8 @@ void URewardsWidget_C::HandleClientEvent_ConversationFinished(class UObject* Eve
 
 void URewardsWidget_C::BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature(class UFortBaseButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf65f1ce);
 
 	URewardsWidget_C_BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_FortBaseButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -541,7 +566,8 @@ void URewardsWidget_C::BndEvt__OpenChestButton_K2Node_ComponentBoundEvent_234_Fo
 
 void URewardsWidget_C::HandleImageClickedEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.HandleImageClickedEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a855c59);
 
 	URewardsWidget_C_HandleImageClickedEvent_Params params;
 
@@ -558,7 +584,8 @@ void URewardsWidget_C::HandleImageClickedEvent()
 
 void URewardsWidget_C::HandleSkipOpenEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.HandleSkipOpenEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a21c1b0);
 
 	URewardsWidget_C_HandleSkipOpenEvent_Params params;
 
@@ -577,7 +604,8 @@ void URewardsWidget_C::HandleSkipOpenEvent()
 
 void URewardsWidget_C::ExecuteUbergraph_RewardsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsWidget.RewardsWidget_C.ExecuteUbergraph_RewardsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4da7b179);
 
 	URewardsWidget_C_ExecuteUbergraph_RewardsWidget_Params params;
 	params.EntryPoint = EntryPoint;

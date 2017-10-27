@@ -17,7 +17,8 @@ namespace SDK
 
 void UPrivacyWidget_C::SetMode()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.SetMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20658880);
 
 	UPrivacyWidget_C_SetMode_Params params;
 
@@ -34,7 +35,8 @@ void UPrivacyWidget_C::SetMode()
 
 void UPrivacyWidget_C::InitializePrivacyButtons()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.InitializePrivacyButtons");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70967dd6);
 
 	UPrivacyWidget_C_InitializePrivacyButtons_Params params;
 
@@ -51,7 +53,8 @@ void UPrivacyWidget_C::InitializePrivacyButtons()
 
 void UPrivacyWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca4368fa);
 
 	UPrivacyWidget_C_Construct_Params params;
 
@@ -70,7 +73,8 @@ void UPrivacyWidget_C::Construct()
 
 void UPrivacyWidget_C::BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdbec1c48);
 
 	UPrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -90,7 +94,8 @@ void UPrivacyWidget_C::BndEvt__PublicButton_K2Node_ComponentBoundEvent_0_CommonB
 
 void UPrivacyWidget_C::BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6cc1e0cf);
 
 	UPrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -110,7 +115,8 @@ void UPrivacyWidget_C::BndEvt__FriendsButton_K2Node_ComponentBoundEvent_1_Common
 
 void UPrivacyWidget_C::BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d32f840);
 
 	UPrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -130,7 +136,8 @@ void UPrivacyWidget_C::BndEvt__PrivateButton_K2Node_ComponentBoundEvent_2_Common
 
 void UPrivacyWidget_C::BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbea87fd);
 
 	UPrivacyWidget_C_BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -150,7 +157,8 @@ void UPrivacyWidget_C::BndEvt__PublicButton_K2Node_ComponentBoundEvent_3_CommonB
 
 void UPrivacyWidget_C::BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe2bb6380);
 
 	UPrivacyWidget_C_BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -170,7 +178,8 @@ void UPrivacyWidget_C::BndEvt__FriendsButton_K2Node_ComponentBoundEvent_4_Common
 
 void UPrivacyWidget_C::BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cfa2509);
 
 	UPrivacyWidget_C_BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -190,7 +199,8 @@ void UPrivacyWidget_C::BndEvt__PrivateButton_K2Node_ComponentBoundEvent_5_Common
 
 void UPrivacyWidget_C::BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x143024b9);
 
 	UPrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -210,7 +220,8 @@ void UPrivacyWidget_C::BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBound
 
 void UPrivacyWidget_C::BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b78f98e);
 
 	UPrivacyWidget_C_BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -230,7 +241,8 @@ void UPrivacyWidget_C::BndEvt__AllowFriendsOfFriendsButton_K2Node_ComponentBound
 
 void UPrivacyWidget_C::BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x223c37df);
 
 	UPrivacyWidget_C_BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -250,7 +262,8 @@ void UPrivacyWidget_C::BndEvt__Apply_K2Node_ComponentBoundEvent_8_CommonButtonCl
 
 void UPrivacyWidget_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbabfd8c6);
 
 	UPrivacyWidget_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -270,7 +283,8 @@ void UPrivacyWidget_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_9_CommonB
 
 void UPrivacyWidget_C::ExecuteUbergraph_PrivacyWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PrivacyWidget.PrivacyWidget_C.ExecuteUbergraph_PrivacyWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50434da9);
 
 	UPrivacyWidget_C_ExecuteUbergraph_PrivacyWidget_Params params;
 	params.EntryPoint = EntryPoint;

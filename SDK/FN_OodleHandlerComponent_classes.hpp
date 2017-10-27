@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class OodleHandlerComponent.OodleTrainerCommandlet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9e6e303);
 		return ptr;
 	}
 

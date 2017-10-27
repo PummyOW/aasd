@@ -19,7 +19,8 @@ namespace SDK
 
 void UPlayerZoneTeamScoreContributionWidget_C::Update_Contribution_LERP(float LERP_Factor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.Update Contribution LERP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x784606cd);
 
 	UPlayerZoneTeamScoreContributionWidget_C_Update_Contribution_LERP_Params params;
 	params.LERP_Factor = LERP_Factor;
@@ -37,7 +38,8 @@ void UPlayerZoneTeamScoreContributionWidget_C::Update_Contribution_LERP(float LE
 
 void UPlayerZoneTeamScoreContributionWidget_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7335f479);
 
 	UPlayerZoneTeamScoreContributionWidget_C_Initialize_Params params;
 
@@ -54,7 +56,8 @@ void UPlayerZoneTeamScoreContributionWidget_C::Initialize()
 
 void UPlayerZoneTeamScoreContributionWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x754ea31e);
 
 	UPlayerZoneTeamScoreContributionWidget_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UPlayerZoneTeamScoreContributionWidget_C::Construct()
 
 void UPlayerZoneTeamScoreContributionWidget_C::ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerZoneTeamScoreContributionWidget.PlayerZoneTeamScoreContributionWidget_C.ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcdf77783);
 
 	UPlayerZoneTeamScoreContributionWidget_C_ExecuteUbergraph_PlayerZoneTeamScoreContributionWidget_Params params;
 	params.EntryPoint = EntryPoint;

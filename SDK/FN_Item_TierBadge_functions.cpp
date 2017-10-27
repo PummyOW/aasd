@@ -20,7 +20,8 @@ namespace SDK
 
 void UItem_TierBadge_C::Set_Level(int Current_Level, int Max_Level)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Item_TierBadge.Item_TierBadge_C.Set Level");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa0182e5);
 
 	UItem_TierBadge_C_Set_Level_Params params;
 	params.Current_Level = Current_Level;
@@ -44,7 +45,8 @@ void UItem_TierBadge_C::Set_Level(int Current_Level, int Max_Level)
 
 void UItem_TierBadge_C::Refresh_Visibility(TEnumAsByte<EFortBrushSize> Brush_Size, TEnumAsByte<EItemDisplayMode> Display_Mode, TEnumAsByte<EFortItemTier> Current_Tier, bool* Visible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Item_TierBadge.Item_TierBadge_C.Refresh Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x43adac7a);
 
 	UItem_TierBadge_C_Refresh_Visibility_Params params;
 	params.Brush_Size = Brush_Size;
@@ -76,7 +78,8 @@ void UItem_TierBadge_C::Refresh_Visibility(TEnumAsByte<EFortBrushSize> Brush_Siz
 
 void UItem_TierBadge_C::Update(TEnumAsByte<EFortItemTier> Current_Tier, TEnumAsByte<EFortItemTier> Max_Tier, TEnumAsByte<EFortBrushSize> Brush_Size, TEnumAsByte<EItemDisplayStyle> Item_Display_Style, TEnumAsByte<EItemDisplayMode> Item_Display_Mode, const struct FFortRarityItemData& Rarity_Colors, int Current_Level, int Max_Level)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Item_TierBadge.Item_TierBadge_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28c89492);
 
 	UItem_TierBadge_C_Update_Params params;
 	params.Current_Tier = Current_Tier;

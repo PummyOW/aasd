@@ -19,7 +19,8 @@ namespace SDK
 
 void APlayerPawn_Athena_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Melee_Effect_Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5687c6b);
 
 	APlayerPawn_Athena_Generic_C_Melee_Effect_Color_Params params;
 
@@ -41,7 +42,8 @@ void APlayerPawn_Athena_Generic_C::Melee_Effect_Color(struct FVector* Melee_Colo
 
 void APlayerPawn_Athena_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Are the wind and water RTT passes enabled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c0cf124);
 
 	APlayerPawn_Athena_Generic_C_Are_the_wind_and_water_RTT_passes_enabled_Params params;
 
@@ -61,7 +63,8 @@ void APlayerPawn_Athena_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(boo
 
 void APlayerPawn_Athena_Generic_C::DisableWaterLevelTick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.DisableWaterLevelTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x139520cf);
 
 	APlayerPawn_Athena_Generic_C_DisableWaterLevelTick_Params params;
 
@@ -80,7 +83,8 @@ void APlayerPawn_Athena_Generic_C::DisableWaterLevelTick()
 
 void APlayerPawn_Athena_Generic_C::SetAdrenalineRushVisibility(bool Visible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetAdrenalineRushVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b80094e);
 
 	APlayerPawn_Athena_Generic_C_SetAdrenalineRushVisibility_Params params;
 	params.Visible = Visible;
@@ -98,7 +102,8 @@ void APlayerPawn_Athena_Generic_C::SetAdrenalineRushVisibility(bool Visible)
 
 void APlayerPawn_Athena_Generic_C::OnRep_On_Player_Built_Floor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnRep_On_Player_Built_Floor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9276922f);
 
 	APlayerPawn_Athena_Generic_C_OnRep_On_Player_Built_Floor_Params params;
 
@@ -125,7 +130,8 @@ void APlayerPawn_Athena_Generic_C::OnRep_On_Player_Built_Floor()
 
 void APlayerPawn_Athena_Generic_C::Setup_FX_Mesh_Duplicates(int Translucent_Sort_Order, bool Transfer_Material_Parameters, class UMaterialInterface** Material_to_Apply, TArray<class UMaterialInstanceDynamic*>* Charm_MID_Array, class USkeletalMeshComponent** Charm_Mesh, TArray<class UMaterialInstanceDynamic*>* Head_MID_Array, class USkeletalMeshComponent** Head_Mesh, TArray<class UMaterialInstanceDynamic*>* Body_MID_Array, class USkeletalMeshComponent** Body_Mesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Setup FX Mesh Duplicates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5514790f);
 
 	APlayerPawn_Athena_Generic_C_Setup_FX_Mesh_Duplicates_Params params;
 	params.Translucent_Sort_Order = Translucent_Sort_Order;
@@ -165,7 +171,8 @@ void APlayerPawn_Athena_Generic_C::Setup_FX_Mesh_Duplicates(int Translucent_Sort
 
 void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(TEnumAsByte<EFortCustomPartType> BodyType, class UMaterialInterface* Material_to_Apply, int TranslucentSortPriority, TArray<class UMaterialInstanceDynamic*>* Empty_MID_Array, class UPoseableMeshComponent** PoseableMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Create and Duplicate Effect Poseable Skeletal Mesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe3116d);
 
 	APlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh_Params params;
 	params.BodyType = BodyType;
@@ -190,7 +197,8 @@ void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal
 
 void APlayerPawn_Athena_Generic_C::ToggleShieldVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ToggleShieldVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd51399c);
 
 	APlayerPawn_Athena_Generic_C_ToggleShieldVisibility_Params params;
 
@@ -210,7 +218,8 @@ void APlayerPawn_Athena_Generic_C::ToggleShieldVisibility()
 
 void APlayerPawn_Athena_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Mesh, class USkeletalMeshComponent* Master)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SlaveAMeshToTheBody");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x190096ae);
 
 	APlayerPawn_Athena_Generic_C_SlaveAMeshToTheBody_Params params;
 	params.Mesh = Mesh;
@@ -235,7 +244,8 @@ void APlayerPawn_Athena_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshCompon
 
 void APlayerPawn_Athena_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push, TArray<class UMaterialInstanceDynamic*>* NewParam1)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetShieldMids_InternalLoop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7c5bd17);
 
 	APlayerPawn_Athena_Generic_C_SetShieldMids_InternalLoop_Params params;
 	params.Highlight_Cracks = Highlight_Cracks;
@@ -264,7 +274,8 @@ void APlayerPawn_Athena_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cr
 
 void APlayerPawn_Athena_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetShieldMids");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a0caf53);
 
 	APlayerPawn_Athena_Generic_C_SetShieldMids_Params params;
 	params.Highlight_Cracks = Highlight_Cracks;
@@ -285,7 +296,8 @@ void APlayerPawn_Athena_Generic_C::SetShieldMids(float Highlight_Cracks, bool Se
 
 void APlayerPawn_Athena_Generic_C::FindShieldOpacity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.FindShieldOpacity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3af07774);
 
 	APlayerPawn_Athena_Generic_C_FindShieldOpacity_Params params;
 
@@ -308,7 +320,8 @@ void APlayerPawn_Athena_Generic_C::FindShieldOpacity()
 
 void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(TEnumAsByte<EFortCustomPartType> BodyType, class UMaterialInterface* Material_to_Apply, int TranslucentSortPriority, class USkeletalMeshComponent** DuplicatedSkeletalMeshComponent, TArray<class UMaterialInstanceDynamic*>* Empty_MID_Array)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Create and Duplicate Effect Skeletal Meshes Parent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bdf627a);
 
 	APlayerPawn_Athena_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent_Params params;
 	params.BodyType = BodyType;
@@ -333,7 +346,8 @@ void APlayerPawn_Athena_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_P
 
 void APlayerPawn_Athena_Generic_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc68a8240);
 
 	APlayerPawn_Athena_Generic_C_UserConstructionScript_Params params;
 
@@ -350,7 +364,8 @@ void APlayerPawn_Athena_Generic_C::UserConstructionScript()
 
 void APlayerPawn_Athena_Generic_C::CapsuleFadeTL__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.CapsuleFadeTL__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf6a1e68);
 
 	APlayerPawn_Athena_Generic_C_CapsuleFadeTL__FinishedFunc_Params params;
 
@@ -367,7 +382,8 @@ void APlayerPawn_Athena_Generic_C::CapsuleFadeTL__FinishedFunc()
 
 void APlayerPawn_Athena_Generic_C::CapsuleFadeTL__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.CapsuleFadeTL__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe48ddf11);
 
 	APlayerPawn_Athena_Generic_C_CapsuleFadeTL__UpdateFunc_Params params;
 
@@ -384,7 +400,8 @@ void APlayerPawn_Athena_Generic_C::CapsuleFadeTL__UpdateFunc()
 
 void APlayerPawn_Athena_Generic_C::HealthSweep__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.HealthSweep__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d871c59);
 
 	APlayerPawn_Athena_Generic_C_HealthSweep__FinishedFunc_Params params;
 
@@ -401,7 +418,8 @@ void APlayerPawn_Athena_Generic_C::HealthSweep__FinishedFunc()
 
 void APlayerPawn_Athena_Generic_C::HealthSweep__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.HealthSweep__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef359e38);
 
 	APlayerPawn_Athena_Generic_C_HealthSweep__UpdateFunc_Params params;
 
@@ -418,7 +436,8 @@ void APlayerPawn_Athena_Generic_C::HealthSweep__UpdateFunc()
 
 void APlayerPawn_Athena_Generic_C::Shield_Regen_Timeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Shield Regen Timeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6fd466b2);
 
 	APlayerPawn_Athena_Generic_C_Shield_Regen_Timeline__FinishedFunc_Params params;
 
@@ -435,7 +454,8 @@ void APlayerPawn_Athena_Generic_C::Shield_Regen_Timeline__FinishedFunc()
 
 void APlayerPawn_Athena_Generic_C::Shield_Regen_Timeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Shield Regen Timeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3dd8d67f);
 
 	APlayerPawn_Athena_Generic_C_Shield_Regen_Timeline__UpdateFunc_Params params;
 
@@ -452,7 +472,8 @@ void APlayerPawn_Athena_Generic_C::Shield_Regen_Timeline__UpdateFunc()
 
 void APlayerPawn_Athena_Generic_C::Shield_ShatterTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Shield_ShatterTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x266135ed);
 
 	APlayerPawn_Athena_Generic_C_Shield_ShatterTimeline__FinishedFunc_Params params;
 
@@ -469,7 +490,8 @@ void APlayerPawn_Athena_Generic_C::Shield_ShatterTimeline__FinishedFunc()
 
 void APlayerPawn_Athena_Generic_C::Shield_ShatterTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Shield_ShatterTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca2b0f7c);
 
 	APlayerPawn_Athena_Generic_C_Shield_ShatterTimeline__UpdateFunc_Params params;
 
@@ -486,7 +508,8 @@ void APlayerPawn_Athena_Generic_C::Shield_ShatterTimeline__UpdateFunc()
 
 void APlayerPawn_Athena_Generic_C::Shield_DamageTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Shield_DamageTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ee3f087);
 
 	APlayerPawn_Athena_Generic_C_Shield_DamageTimeline__FinishedFunc_Params params;
 
@@ -503,7 +526,8 @@ void APlayerPawn_Athena_Generic_C::Shield_DamageTimeline__FinishedFunc()
 
 void APlayerPawn_Athena_Generic_C::Shield_DamageTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Shield_DamageTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbced5f12);
 
 	APlayerPawn_Athena_Generic_C_Shield_DamageTimeline__UpdateFunc_Params params;
 
@@ -520,7 +544,8 @@ void APlayerPawn_Athena_Generic_C::Shield_DamageTimeline__UpdateFunc()
 
 void APlayerPawn_Athena_Generic_C::Full_Shield_Health__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Full Shield Health__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9362999);
 
 	APlayerPawn_Athena_Generic_C_Full_Shield_Health__FinishedFunc_Params params;
 
@@ -537,7 +562,8 @@ void APlayerPawn_Athena_Generic_C::Full_Shield_Health__FinishedFunc()
 
 void APlayerPawn_Athena_Generic_C::Full_Shield_Health__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Full Shield Health__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63426278);
 
 	APlayerPawn_Athena_Generic_C_Full_Shield_Health__UpdateFunc_Params params;
 
@@ -554,7 +580,8 @@ void APlayerPawn_Athena_Generic_C::Full_Shield_Health__UpdateFunc()
 
 void APlayerPawn_Athena_Generic_C::MeleeSwingRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MeleeSwingRight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa69197dd);
 
 	APlayerPawn_Athena_Generic_C_MeleeSwingRight_Params params;
 
@@ -571,7 +598,8 @@ void APlayerPawn_Athena_Generic_C::MeleeSwingRight()
 
 void APlayerPawn_Athena_Generic_C::MeleeSwingLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MeleeSwingLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb76914c6);
 
 	APlayerPawn_Athena_Generic_C_MeleeSwingLeft_Params params;
 
@@ -596,7 +624,8 @@ void APlayerPawn_Athena_Generic_C::MeleeSwingLeft()
 
 void APlayerPawn_Athena_Generic_C::OnDamagePlayEffects(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AFortPawn** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDamagePlayEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf432271);
 
 	APlayerPawn_Athena_Generic_C_OnDamagePlayEffects_Params params;
 	params.Damage = Damage;
@@ -622,7 +651,8 @@ void APlayerPawn_Athena_Generic_C::OnDamagePlayEffects(float* Damage, struct FGa
 
 void APlayerPawn_Athena_Generic_C::OnLanded(struct FHitResult* Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnLanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba7e217c);
 
 	APlayerPawn_Athena_Generic_C_OnLanded_Params params;
 	params.Hit = Hit;
@@ -648,7 +678,8 @@ void APlayerPawn_Athena_Generic_C::OnLanded(struct FHitResult* Hit)
 
 void APlayerPawn_Athena_Generic_C::OnDeathPlayEffects(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AFortPawn** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDeathPlayEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae54933e);
 
 	APlayerPawn_Athena_Generic_C_OnDeathPlayEffects_Params params;
 	params.Damage = Damage;
@@ -675,7 +706,8 @@ void APlayerPawn_Athena_Generic_C::OnDeathPlayEffects(float* Damage, struct FGam
 
 void APlayerPawn_Athena_Generic_C::OnWeaponEquipped(class AFortWeapon** NewWeapon, class AFortWeapon** PrevWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnWeaponEquipped");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb349f00b);
 
 	APlayerPawn_Athena_Generic_C_OnWeaponEquipped_Params params;
 	params.NewWeapon = NewWeapon;
@@ -696,7 +728,8 @@ void APlayerPawn_Athena_Generic_C::OnWeaponEquipped(class AFortWeapon** NewWeapo
 
 void APlayerPawn_Athena_Generic_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e5f0bcd);
 
 	APlayerPawn_Athena_Generic_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -714,7 +747,8 @@ void APlayerPawn_Athena_Generic_C::ReceiveTick(float* DeltaSeconds)
 
 void APlayerPawn_Athena_Generic_C::FootStepLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.FootStepLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46384966);
 
 	APlayerPawn_Athena_Generic_C_FootStepLeft_Params params;
 
@@ -731,7 +765,8 @@ void APlayerPawn_Athena_Generic_C::FootStepLeft()
 
 void APlayerPawn_Athena_Generic_C::FootStepRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.FootStepRight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0acbefd);
 
 	APlayerPawn_Athena_Generic_C_FootStepRight_Params params;
 
@@ -748,7 +783,8 @@ void APlayerPawn_Athena_Generic_C::FootStepRight()
 
 void APlayerPawn_Athena_Generic_C::OnCharacterPartsReinitialized()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnCharacterPartsReinitialized");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x595a6424);
 
 	APlayerPawn_Athena_Generic_C_OnCharacterPartsReinitialized_Params params;
 
@@ -768,7 +804,8 @@ void APlayerPawn_Athena_Generic_C::OnCharacterPartsReinitialized()
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5c99106);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params params;
 	params.EventType = EventType;
@@ -790,7 +827,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_Harv
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9fc7169d);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params params;
 	params.EventType = EventType;
@@ -811,7 +849,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_Generic_Harv
 
 void APlayerPawn_Athena_Generic_C::SetFirstPersonCamera(bool* bNewUseFirstPersonCamera)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetFirstPersonCamera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xadf135d3);
 
 	APlayerPawn_Athena_Generic_C_SetFirstPersonCamera_Params params;
 	params.bNewUseFirstPersonCamera = bNewUseFirstPersonCamera;
@@ -832,7 +871,8 @@ void APlayerPawn_Athena_Generic_C::SetFirstPersonCamera(bool* bNewUseFirstPerson
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_GravitySphere(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.GravitySphere");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe5cd417);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_GravitySphere_Params params;
 	params.EventType = EventType;
@@ -853,7 +893,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_GravitySphere(TEnumAsByte<EGamepl
 
 void APlayerPawn_Athena_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonCamera)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.InternalSetFirstPersonCamera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46da3214);
 
 	APlayerPawn_Athena_Generic_C_InternalSetFirstPersonCamera_Params params;
 	params.NewUseFirstPersonCamera = NewUseFirstPersonCamera;
@@ -874,7 +915,8 @@ void APlayerPawn_Athena_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirst
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_DBNOResurrect(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Abilities.Activation.DBNOResurrect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda8b0cd4);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect_Params params;
 	params.EventType = EventType;
@@ -895,7 +937,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Abilities_Activation_DBNOResurrec
 
 void APlayerPawn_Athena_Generic_C::OnBaseChanged(class AActor** NewBase)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnBaseChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3faac9);
 
 	APlayerPawn_Athena_Generic_C_OnBaseChanged_Params params;
 	params.NewBase = NewBase;
@@ -915,7 +958,8 @@ void APlayerPawn_Athena_Generic_C::OnBaseChanged(class AActor** NewBase)
 
 void APlayerPawn_Athena_Generic_C::ReceivePossessed(class AController** NewController)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ReceivePossessed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d0b02c9);
 
 	APlayerPawn_Athena_Generic_C_ReceivePossessed_Params params;
 	params.NewController = NewController;
@@ -933,7 +977,8 @@ void APlayerPawn_Athena_Generic_C::ReceivePossessed(class AController** NewContr
 
 void APlayerPawn_Athena_Generic_C::CleanupGravitySphereFootEffects()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.CleanupGravitySphereFootEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f7dd700);
 
 	APlayerPawn_Athena_Generic_C_CleanupGravitySphereFootEffects_Params params;
 
@@ -950,7 +995,8 @@ void APlayerPawn_Athena_Generic_C::CleanupGravitySphereFootEffects()
 
 void APlayerPawn_Athena_Generic_C::ReceiveDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ReceiveDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe96e1cff);
 
 	APlayerPawn_Athena_Generic_C_ReceiveDestroyed_Params params;
 
@@ -970,7 +1016,8 @@ void APlayerPawn_Athena_Generic_C::ReceiveDestroyed()
 
 void APlayerPawn_Athena_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ClientBindWeaponSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72e3d656);
 
 	APlayerPawn_Athena_Generic_C_ClientBindWeaponSwap_Params params;
 	params.NewWeapon = NewWeapon;
@@ -991,7 +1038,8 @@ void APlayerPawn_Athena_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWe
 
 void APlayerPawn_Athena_Generic_C::BindWeaponSwap(float InDuration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.BindWeaponSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20eaf3a3);
 
 	APlayerPawn_Athena_Generic_C_BindWeaponSwap_Params params;
 	params.InDuration = InDuration;
@@ -1012,7 +1060,8 @@ void APlayerPawn_Athena_Generic_C::BindWeaponSwap(float InDuration)
 
 void APlayerPawn_Athena_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class AFortWeapon* Prev)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MultiSwapWeapon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa327519b);
 
 	APlayerPawn_Athena_Generic_C_MultiSwapWeapon_Params params;
 	params.New = New;
@@ -1031,7 +1080,8 @@ void APlayerPawn_Athena_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class
 
 void APlayerPawn_Athena_Generic_C::UnBindWeaponSwap()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.UnBindWeaponSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec441612);
 
 	APlayerPawn_Athena_Generic_C_UnBindWeaponSwap_Params params;
 
@@ -1050,7 +1100,8 @@ void APlayerPawn_Athena_Generic_C::UnBindWeaponSwap()
 
 void APlayerPawn_Athena_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.MultiEndSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c89f9b0);
 
 	APlayerPawn_Athena_Generic_C_MultiEndSwap_Params params;
 	params.CurrentWeapon = CurrentWeapon;
@@ -1068,7 +1119,8 @@ void APlayerPawn_Athena_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon
 
 void APlayerPawn_Athena_Generic_C::Clean_up_DBNO_fx()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Clean up DBNO fx");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fa0a6ba);
 
 	APlayerPawn_Athena_Generic_C_Clean_up_DBNO_fx_Params params;
 
@@ -1093,7 +1145,8 @@ void APlayerPawn_Athena_Generic_C::Clean_up_DBNO_fx()
 
 void APlayerPawn_Athena_Generic_C::OnDeathServer(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AController** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnDeathServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4cd5c67);
 
 	APlayerPawn_Athena_Generic_C_OnDeathServer_Params params;
 	params.Damage = Damage;
@@ -1112,75 +1165,13 @@ void APlayerPawn_Athena_Generic_C::OnDeathServer(float* Damage, struct FGameplay
 }
 
 
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetupAnimTrails
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UParticleSystem*         Particle_System_Reference      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   First_Socket_Name              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   Second_Socket_Name             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// float                          Width                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void APlayerPawn_Athena_Generic_C::SetupAnimTrails(class UParticleSystem* Particle_System_Reference, const struct FName& First_Socket_Name, const struct FName& Second_Socket_Name, float Width)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetupAnimTrails");
-
-	APlayerPawn_Athena_Generic_C_SetupAnimTrails_Params params;
-	params.Particle_System_Reference = Particle_System_Reference;
-	params.First_Socket_Name = First_Socket_Name;
-	params.Second_Socket_Name = Second_Socket_Name;
-	params.Width = Width;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsCE
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// bool                           Active                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void APlayerPawn_Athena_Generic_C::AnimTrailsCE(bool Active)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsCE");
-
-	APlayerPawn_Athena_Generic_C_AnimTrailsCE_Params params;
-	params.Active = Active;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.DisableAnimTrails
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void APlayerPawn_Athena_Generic_C::DisableAnimTrails()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.DisableAnimTrails");
-
-	APlayerPawn_Athena_Generic_C_DisableAnimTrails_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Entered WaterVolume
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
 void APlayerPawn_Athena_Generic_C::Entered_WaterVolume()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Entered WaterVolume");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa208c17);
 
 	APlayerPawn_Athena_Generic_C_Entered_WaterVolume_Params params;
 
@@ -1199,7 +1190,8 @@ void APlayerPawn_Athena_Generic_C::Entered_WaterVolume()
 
 void APlayerPawn_Athena_Generic_C::CharacterDestroyed(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.CharacterDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc3a8439);
 
 	APlayerPawn_Athena_Generic_C_CharacterDestroyed_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -1217,7 +1209,8 @@ void APlayerPawn_Athena_Generic_C::CharacterDestroyed(class AActor* DestroyedAct
 
 void APlayerPawn_Athena_Generic_C::BindOnDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.BindOnDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b6b266a);
 
 	APlayerPawn_Athena_Generic_C_BindOnDestroyed_Params params;
 
@@ -1234,9 +1227,76 @@ void APlayerPawn_Athena_Generic_C::BindOnDestroyed()
 
 void APlayerPawn_Athena_Generic_C::FadeOutCapsuleShadow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.FadeOutCapsuleShadow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cba1aa0);
 
 	APlayerPawn_Athena_Generic_C_FadeOutCapsuleShadow_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsNotify
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool*                          bActive                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Athena_Generic_C::AnimTrailsNotify(bool* bActive)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x489abc94);
+
+	APlayerPawn_Athena_Generic_C_AnimTrailsNotify_Params params;
+	params.bActive = bActive;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsSetup
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UParticleSystem**        ParticleSystemReference        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName*                  FirstSocketName                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName*                  SecondSocketName               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float*                         Width                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Athena_Generic_C::AnimTrailsSetup(class UParticleSystem** ParticleSystemReference, struct FName* FirstSocketName, struct FName* SecondSocketName, float* Width)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55c4e2a2);
+
+	APlayerPawn_Athena_Generic_C_AnimTrailsSetup_Params params;
+	params.ParticleSystemReference = ParticleSystemReference;
+	params.FirstSocketName = FirstSocketName;
+	params.SecondSocketName = SecondSocketName;
+	params.Width = Width;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsDisable
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void APlayerPawn_Athena_Generic_C::AnimTrailsDisable()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb56d7279);
+
+	APlayerPawn_Athena_Generic_C_AnimTrailsDisable_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -1251,7 +1311,8 @@ void APlayerPawn_Athena_Generic_C::FadeOutCapsuleShadow()
 
 void APlayerPawn_Athena_Generic_C::OnLand_CE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.OnLand_CE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91a869da);
 
 	APlayerPawn_Athena_Generic_C_OnLand_CE_Params params;
 
@@ -1268,7 +1329,8 @@ void APlayerPawn_Athena_Generic_C::OnLand_CE()
 
 void APlayerPawn_Athena_Generic_C::Test_Adrenaline_Rush()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Test Adrenaline Rush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0fbca7a);
 
 	APlayerPawn_Athena_Generic_C_Test_Adrenaline_Rush_Params params;
 
@@ -1288,7 +1350,8 @@ void APlayerPawn_Athena_Generic_C::Test_Adrenaline_Rush()
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Generic_AdrenalineRush_PeriodicHeal(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Generic.AdrenalineRush.PeriodicHeal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb61115);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal_Params params;
 	params.EventType = EventType;
@@ -1310,7 +1373,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Generic_AdrenalineRush_PeriodicHe
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Generic_AdrenalineRush_DirectHeal(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Generic.AdrenalineRush.DirectHeal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3109b075);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal_Params params;
 	params.EventType = EventType;
@@ -1332,7 +1396,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Generic_AdrenalineRush_DirectHeal
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Damage_Shielded(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Damage.Shielded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x429183c1);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Damage_Shielded_Params params;
 	params.EventType = EventType;
@@ -1354,7 +1419,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Damage_Shielded(TEnumAsByte<EGame
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Destroyed(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.Destroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf902b7e);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Shield_Destroyed_Params params;
 	params.EventType = EventType;
@@ -1376,7 +1442,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Destroyed(TEnumAsByte<EGam
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_FullyCharged(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.FullyCharged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe36b3dd);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Shield_FullyCharged_Params params;
 	params.EventType = EventType;
@@ -1398,7 +1465,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_FullyCharged(TEnumAsByte<E
 
 void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Reapplied(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.GameplayCue.Shield.Reapplied");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x782b9091);
 
 	APlayerPawn_Athena_Generic_C_GameplayCue_Shield_Reapplied_Params params;
 	params.EventType = EventType;
@@ -1419,7 +1487,8 @@ void APlayerPawn_Athena_Generic_C::GameplayCue_Shield_Reapplied(TEnumAsByte<EGam
 
 void APlayerPawn_Athena_Generic_C::ExecuteUbergraph_PlayerPawn_Athena_Generic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.ExecuteUbergraph_PlayerPawn_Athena_Generic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45673f4e);
 
 	APlayerPawn_Athena_Generic_C_ExecuteUbergraph_PlayerPawn_Athena_Generic_Params params;
 	params.EntryPoint = EntryPoint;

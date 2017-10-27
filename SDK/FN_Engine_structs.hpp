@@ -8472,7 +8472,7 @@ struct FDataTableRowHandle
 };
 
 // ScriptStruct Engine.ExposedValueCopyRecord
-// 0x0070
+// 0x0080
 struct FExposedValueCopyRecord
 {
 	class UProperty*                                   SourceProperty;                                           // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_Deprecated, CPF_IsPlainOldData)
@@ -8489,7 +8489,9 @@ struct FExposedValueCopyRecord
 	class UBoolProperty*                               CachedBoolSourceProperty;                                 // 0x0038(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	class UBoolProperty*                               CachedBoolDestProperty;                                   // 0x0040(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 	class UStructProperty*                             CachedStructDestProperty;                                 // 0x0048(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x20];                                      // 0x0050(0x0020) MISSED OFFSET
+	class UProperty*                                   CachedSourceProperty;                                     // 0x0050(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UProperty*                                   CachedSourceStructSubProperty;                            // 0x0058(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x20];                                      // 0x0060(0x0020) MISSED OFFSET
 };
 
 // ScriptStruct Engine.ExposedValueHandler
@@ -8498,7 +8500,8 @@ struct FExposedValueHandler
 {
 	struct FName                                       BoundFunction;                                            // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	TArray<struct FExposedValueCopyRecord>             CopyRecords;                                              // 0x0008(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0018(0x0010) MISSED OFFSET
+	class UFunction*                                   Function;                                                 // 0x0018(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0020(0x0008) MISSED OFFSET
 };
 
 // ScriptStruct Engine.AnimNode_Base

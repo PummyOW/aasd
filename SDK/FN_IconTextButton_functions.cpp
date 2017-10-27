@@ -19,7 +19,8 @@ namespace SDK
 
 void UIconTextButton_C::SetTextInternal(const struct FText& InButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.SetTextInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9bd36b3);
 
 	UIconTextButton_C_SetTextInternal_Params params;
 	params.InButtonText = InButtonText;
@@ -37,7 +38,8 @@ void UIconTextButton_C::SetTextInternal(const struct FText& InButtonText)
 
 void UIconTextButton_C::SetInitialMouseKeyboardStyle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.SetInitialMouseKeyboardStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2d011fe);
 
 	UIconTextButton_C_SetInitialMouseKeyboardStyle_Params params;
 
@@ -54,7 +56,8 @@ void UIconTextButton_C::SetInitialMouseKeyboardStyle()
 
 void UIconTextButton_C::UpdateTextStyle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.UpdateTextStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbbf689b8);
 
 	UIconTextButton_C_UpdateTextStyle_Params params;
 
@@ -73,7 +76,8 @@ void UIconTextButton_C::UpdateTextStyle()
 
 void UIconTextButton_C::SetContentAlignment(TEnumAsByte<EHorizontalAlignment> ContentAlignment)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.SetContentAlignment");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa374e47f);
 
 	UIconTextButton_C_SetContentAlignment_Params params;
 	params.ContentAlignment = ContentAlignment;
@@ -91,7 +95,8 @@ void UIconTextButton_C::SetContentAlignment(TEnumAsByte<EHorizontalAlignment> Co
 
 void UIconTextButton_C::UpdateContentAlignment()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.UpdateContentAlignment");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e1d5fa);
 
 	UIconTextButton_C_UpdateContentAlignment_Params params;
 
@@ -110,7 +115,8 @@ void UIconTextButton_C::UpdateContentAlignment()
 
 void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.SetMouseKeyboardStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2db1a328);
 
 	UIconTextButton_C_SetMouseKeyboardStyle_Params params;
 	params.ControllerInputStyle = ControllerInputStyle;
@@ -130,7 +136,8 @@ void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle
 
 void UIconTextButton_C::UpdateStyle(bool UsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.UpdateStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e5bb2bf);
 
 	UIconTextButton_C_UpdateStyle_Params params;
 	params.UsingGamepad = UsingGamepad;
@@ -148,7 +155,8 @@ void UIconTextButton_C::UpdateStyle(bool UsingGamepad)
 
 void UIconTextButton_C::UpdateText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.UpdateText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b56c8d5);
 
 	UIconTextButton_C_UpdateText_Params params;
 
@@ -167,7 +175,8 @@ void UIconTextButton_C::UpdateText()
 
 void UIconTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.SetControllerStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc33a0ff4);
 
 	UIconTextButton_C_SetControllerStyle_Params params;
 	params.ControllerInputStyle = ControllerInputStyle;
@@ -187,7 +196,8 @@ void UIconTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle)
 
 void UIconTextButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.UpdateTextAndStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54b4f6ff);
 
 	UIconTextButton_C_UpdateTextAndStyle_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -205,7 +215,8 @@ void UIconTextButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 
 void UIconTextButton_C::InitializeButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.InitializeButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a8ba895);
 
 	UIconTextButton_C_InitializeButton_Params params;
 
@@ -224,7 +235,8 @@ void UIconTextButton_C::InitializeButton()
 
 void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4196b450);
 
 	UIconTextButton_C_Set_Icon_Params params;
 	params.IconBrush = IconBrush;
@@ -244,7 +256,8 @@ void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UIconTextButton_C::Set_Text(const struct FText& ButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa41571a);
 
 	UIconTextButton_C_Set_Text_Params params;
 	params.ButtonText = ButtonText;
@@ -262,7 +275,8 @@ void UIconTextButton_C::Set_Text(const struct FText& ButtonText)
 
 void UIconTextButton_C::OnCurrentTextStyleChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.OnCurrentTextStyleChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcaf473b7);
 
 	UIconTextButton_C_OnCurrentTextStyleChanged_Params params;
 
@@ -281,7 +295,8 @@ void UIconTextButton_C::OnCurrentTextStyleChanged()
 
 void UIconTextButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f491351);
 
 	UIconTextButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -301,7 +316,8 @@ void UIconTextButton_C::PreConstruct(bool* IsDesignTime)
 
 void UIconTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.SetTabLabelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x253d12e8);
 
 	UIconTextButton_C_SetTabLabelInfo_Params params;
 	params.TabLabelInfo = TabLabelInfo;
@@ -321,7 +337,8 @@ void UIconTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& Ta
 
 void UIconTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5511f9de);
 
 	UIconTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -341,7 +358,8 @@ void UIconTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEv
 
 void UIconTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle* NewTriggeredAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.OnTriggeredInputActionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92f55e39);
 
 	UIconTextButton_C_OnTriggeredInputActionChanged_Params params;
 	params.NewTriggeredAction = NewTriggeredAction;
@@ -361,7 +379,8 @@ void UIconTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle
 
 void UIconTextButton_C::OnActionProgress(float* HeldPercent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.OnActionProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4597e363);
 
 	UIconTextButton_C_OnActionProgress_Params params;
 	params.HeldPercent = HeldPercent;
@@ -379,7 +398,8 @@ void UIconTextButton_C::OnActionProgress(float* HeldPercent)
 
 void UIconTextButton_C::OnActionComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.OnActionComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8cd3d1f);
 
 	UIconTextButton_C_OnActionComplete_Params params;
 
@@ -396,7 +416,8 @@ void UIconTextButton_C::OnActionComplete()
 
 void UIconTextButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3bb8d3fa);
 
 	UIconTextButton_C_Construct_Params params;
 
@@ -413,7 +434,8 @@ void UIconTextButton_C::Construct()
 
 void UIconTextButton_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4bf8e321);
 
 	UIconTextButton_C_Destruct_Params params;
 
@@ -432,7 +454,8 @@ void UIconTextButton_C::Destruct()
 
 void UIconTextButton_C::ExecuteUbergraph_IconTextButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTextButton.IconTextButton_C.ExecuteUbergraph_IconTextButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45410bb9);
 
 	UIconTextButton_C_ExecuteUbergraph_IconTextButton_Params params;
 	params.EntryPoint = EntryPoint;

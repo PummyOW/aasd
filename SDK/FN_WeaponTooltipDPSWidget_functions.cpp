@@ -17,7 +17,8 @@ namespace SDK
 
 void UWeaponTooltipDPSWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeaponTooltipDPSWidget.WeaponTooltipDPSWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc194e1e);
 
 	UWeaponTooltipDPSWidget_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UWeaponTooltipDPSWidget_C::Construct()
 
 void UWeaponTooltipDPSWidget_C::ExecuteUbergraph_WeaponTooltipDPSWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeaponTooltipDPSWidget.WeaponTooltipDPSWidget_C.ExecuteUbergraph_WeaponTooltipDPSWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c5a70a3);
 
 	UWeaponTooltipDPSWidget_C_ExecuteUbergraph_WeaponTooltipDPSWidget_Params params;
 	params.EntryPoint = EntryPoint;

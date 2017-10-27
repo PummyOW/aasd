@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_GM_Player_OnShieldDestroyed_AOE.GCNS_GM_Player_OnShieldDestroyed_AOE_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c24fc75);
 		return ptr;
 	}
 

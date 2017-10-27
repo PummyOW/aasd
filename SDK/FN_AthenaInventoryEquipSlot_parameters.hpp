@@ -14,6 +14,11 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.TryAndShowDropTarget
+struct UAthenaInventoryEquipSlot_C_TryAndShowDropTarget_Params
+{
+};
+
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.IsSelected
 struct UAthenaInventoryEquipSlot_C_IsSelected_Params
 {

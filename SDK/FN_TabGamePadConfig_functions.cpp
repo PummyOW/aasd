@@ -17,7 +17,8 @@ namespace SDK
 
 void UTabGamePadConfig_C::HandleGamepadMappingInfoChange()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.HandleGamepadMappingInfoChange");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x305fbbf4);
 
 	UTabGamePadConfig_C_HandleGamepadMappingInfoChange_Params params;
 
@@ -34,7 +35,8 @@ void UTabGamePadConfig_C::HandleGamepadMappingInfoChange()
 
 void UTabGamePadConfig_C::Handle_Mode_Toggled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.Handle Mode Toggled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c128276);
 
 	UTabGamePadConfig_C_Handle_Mode_Toggled_Params params;
 
@@ -51,7 +53,8 @@ void UTabGamePadConfig_C::Handle_Mode_Toggled()
 
 void UTabGamePadConfig_C::Update_Data()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.Update Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ff7c254);
 
 	UTabGamePadConfig_C_Update_Data_Params params;
 
@@ -68,7 +71,8 @@ void UTabGamePadConfig_C::Update_Data()
 
 void UTabGamePadConfig_C::Initialize_Data()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.Initialize Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf540688b);
 
 	UTabGamePadConfig_C_Initialize_Data_Params params;
 
@@ -85,7 +89,8 @@ void UTabGamePadConfig_C::Initialize_Data()
 
 void UTabGamePadConfig_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc68c69e);
 
 	UTabGamePadConfig_C_Construct_Params params;
 
@@ -104,7 +109,8 @@ void UTabGamePadConfig_C::Construct()
 
 void UTabGamePadConfig_C::Configuration_Changed(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.Configuration Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x462c871b);
 
 	UTabGamePadConfig_C_Configuration_Changed_Params params;
 	params.Selected_Index = Selected_Index;
@@ -122,7 +128,8 @@ void UTabGamePadConfig_C::Configuration_Changed(int Selected_Index)
 
 void UTabGamePadConfig_C::CenterOnTab()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.CenterOnTab");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1984a9e4);
 
 	UTabGamePadConfig_C_CenterOnTab_Params params;
 
@@ -141,7 +148,8 @@ void UTabGamePadConfig_C::CenterOnTab()
 
 void UTabGamePadConfig_C::Gamepad_Config_Changed(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.Gamepad Config Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x640da17a);
 
 	UTabGamePadConfig_C_Gamepad_Config_Changed_Params params;
 	params.Selected_Index = Selected_Index;
@@ -159,7 +167,8 @@ void UTabGamePadConfig_C::Gamepad_Config_Changed(int Selected_Index)
 
 void UTabGamePadConfig_C::UpdateOptionsTab()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.UpdateOptionsTab");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b100973);
 
 	UTabGamePadConfig_C_UpdateOptionsTab_Params params;
 
@@ -178,7 +187,8 @@ void UTabGamePadConfig_C::UpdateOptionsTab()
 
 void UTabGamePadConfig_C::ControllerPlatformConfigChanged(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.ControllerPlatformConfigChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50db574);
 
 	UTabGamePadConfig_C_ControllerPlatformConfigChanged_Params params;
 	params.Selected_Index = Selected_Index;
@@ -198,7 +208,8 @@ void UTabGamePadConfig_C::ControllerPlatformConfigChanged(int Selected_Index)
 
 void UTabGamePadConfig_C::ExecuteUbergraph_TabGamePadConfig(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabGamePadConfig.TabGamePadConfig_C.ExecuteUbergraph_TabGamePadConfig");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22df1897);
 
 	UTabGamePadConfig_C_ExecuteUbergraph_TabGamePadConfig_Params params;
 	params.EntryPoint = EntryPoint;

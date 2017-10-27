@@ -12,6 +12,24 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.RefreshBanner
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaLobbyPlayerPanelDetails_C::RefreshBanner()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d0439ea);
+
+	UAthenaLobbyPlayerPanelDetails_C_RefreshBanner_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.SetTeamMemberInfo
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -19,7 +37,8 @@ namespace SDK
 
 void UAthenaLobbyPlayerPanelDetails_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.SetTeamMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7acc6034);
 
 	UAthenaLobbyPlayerPanelDetails_C_SetTeamMemberInfo_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -37,7 +56,8 @@ void UAthenaLobbyPlayerPanelDetails_C::SetTeamMemberInfo(const struct FFortTeamM
 
 void UAthenaLobbyPlayerPanelDetails_C::InitializeContextEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.InitializeContextEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xced28771);
 
 	UAthenaLobbyPlayerPanelDetails_C_InitializeContextEvents_Params params;
 
@@ -56,7 +76,8 @@ void UAthenaLobbyPlayerPanelDetails_C::InitializeContextEvents()
 
 void UAthenaLobbyPlayerPanelDetails_C::OnActiveFriendsCountUpdated(int ActiveFriendsCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.OnActiveFriendsCountUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf9d617f);
 
 	UAthenaLobbyPlayerPanelDetails_C_OnActiveFriendsCountUpdated_Params params;
 	params.ActiveFriendsCount = ActiveFriendsCount;
@@ -76,7 +97,8 @@ void UAthenaLobbyPlayerPanelDetails_C::OnActiveFriendsCountUpdated(int ActiveFri
 
 void UAthenaLobbyPlayerPanelDetails_C::OnPartyInvitesCountChanged(int InvitesCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.OnPartyInvitesCountChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c15f479);
 
 	UAthenaLobbyPlayerPanelDetails_C_OnPartyInvitesCountChanged_Params params;
 	params.InvitesCount = InvitesCount;
@@ -94,7 +116,8 @@ void UAthenaLobbyPlayerPanelDetails_C::OnPartyInvitesCountChanged(int InvitesCou
 
 void UAthenaLobbyPlayerPanelDetails_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55cad3a5);
 
 	UAthenaLobbyPlayerPanelDetails_C_Initialize_Params params;
 
@@ -113,7 +136,8 @@ void UAthenaLobbyPlayerPanelDetails_C::Initialize()
 
 void UAthenaLobbyPlayerPanelDetails_C::IsInvitationPending(bool* bIsInvitationPending)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.IsInvitationPending");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6612ba7);
 
 	UAthenaLobbyPlayerPanelDetails_C_IsInvitationPending_Params params;
 
@@ -133,7 +157,8 @@ void UAthenaLobbyPlayerPanelDetails_C::IsInvitationPending(bool* bIsInvitationPe
 
 void UAthenaLobbyPlayerPanelDetails_C::RefreshPendingInvite()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.RefreshPendingInvite");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7abac5d2);
 
 	UAthenaLobbyPlayerPanelDetails_C_RefreshPendingInvite_Params params;
 
@@ -150,7 +175,8 @@ void UAthenaLobbyPlayerPanelDetails_C::RefreshPendingInvite()
 
 void UAthenaLobbyPlayerPanelDetails_C::RefreshPlayerName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.RefreshPlayerName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf196b7f2);
 
 	UAthenaLobbyPlayerPanelDetails_C_RefreshPlayerName_Params params;
 
@@ -167,7 +193,8 @@ void UAthenaLobbyPlayerPanelDetails_C::RefreshPlayerName()
 
 void UAthenaLobbyPlayerPanelDetails_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf90a9f0);
 
 	UAthenaLobbyPlayerPanelDetails_C_Refresh_Params params;
 
@@ -186,7 +213,8 @@ void UAthenaLobbyPlayerPanelDetails_C::Refresh()
 
 void UAthenaLobbyPlayerPanelDetails_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa42a2131);
 
 	UAthenaLobbyPlayerPanelDetails_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -206,7 +234,8 @@ void UAthenaLobbyPlayerPanelDetails_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaLobbyPlayerPanelDetails_C::ExecuteUbergraph_AthenaLobbyPlayerPanelDetails(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanelDetails.AthenaLobbyPlayerPanelDetails_C.ExecuteUbergraph_AthenaLobbyPlayerPanelDetails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa31c5d11);
 
 	UAthenaLobbyPlayerPanelDetails_C_ExecuteUbergraph_AthenaLobbyPlayerPanelDetails_Params params;
 	params.EntryPoint = EntryPoint;

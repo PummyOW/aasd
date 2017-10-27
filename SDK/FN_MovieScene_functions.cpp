@@ -17,7 +17,8 @@ namespace SDK
 
 void UMovieSceneSequencePlayer::Stop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Stop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6afb1c9);
 
 	UMovieSceneSequencePlayer_Stop_Params params;
 
@@ -35,7 +36,8 @@ void UMovieSceneSequencePlayer::Stop()
 
 void UMovieSceneSequencePlayer::StartPlayingNextTick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca1dd0b);
 
 	UMovieSceneSequencePlayer_StartPlayingNextTick_Params params;
 
@@ -55,7 +57,8 @@ void UMovieSceneSequencePlayer::StartPlayingNextTick()
 
 void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlayRate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0580df);
 
 	UMovieSceneSequencePlayer_SetPlayRate_Params params;
 	params.PlayRate = PlayRate;
@@ -77,7 +80,8 @@ void UMovieSceneSequencePlayer::SetPlayRate(float PlayRate)
 
 void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEndTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlaybackRange");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2bfdb557);
 
 	UMovieSceneSequencePlayer_SetPlaybackRange_Params params;
 	params.NewStartTime = NewStartTime;
@@ -99,7 +103,8 @@ void UMovieSceneSequencePlayer::SetPlaybackRange(float NewStartTime, float NewEn
 
 void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13383c91);
 
 	UMovieSceneSequencePlayer_SetPlaybackPosition_Params params;
 	params.NewPlaybackPosition = NewPlaybackPosition;
@@ -118,7 +123,8 @@ void UMovieSceneSequencePlayer::SetPlaybackPosition(float NewPlaybackPosition)
 
 void UMovieSceneSequencePlayer::PlayReverse()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.PlayReverse");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f8925fb);
 
 	UMovieSceneSequencePlayer_PlayReverse_Params params;
 
@@ -138,7 +144,8 @@ void UMovieSceneSequencePlayer::PlayReverse()
 
 void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.PlayLooping");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc315a1bb);
 
 	UMovieSceneSequencePlayer_PlayLooping_Params params;
 	params.NumLoops = NumLoops;
@@ -157,7 +164,8 @@ void UMovieSceneSequencePlayer::PlayLooping(int NumLoops)
 
 void UMovieSceneSequencePlayer::Play()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Play");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26ee0343);
 
 	UMovieSceneSequencePlayer_Play_Params params;
 
@@ -175,7 +183,8 @@ void UMovieSceneSequencePlayer::Play()
 
 void UMovieSceneSequencePlayer::Pause()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.Pause");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6938ea49);
 
 	UMovieSceneSequencePlayer_Pause_Params params;
 
@@ -195,7 +204,8 @@ void UMovieSceneSequencePlayer::Pause()
 
 bool UMovieSceneSequencePlayer::IsPlaying()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.IsPlaying");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa47b9a9);
 
 	UMovieSceneSequencePlayer_IsPlaying_Params params;
 
@@ -217,7 +227,8 @@ bool UMovieSceneSequencePlayer::IsPlaying()
 
 float UMovieSceneSequencePlayer::GetPlayRate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlayRate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88f3c03b);
 
 	UMovieSceneSequencePlayer_GetPlayRate_Params params;
 
@@ -239,7 +250,8 @@ float UMovieSceneSequencePlayer::GetPlayRate()
 
 float UMovieSceneSequencePlayer::GetPlaybackStart()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackStart");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1a1d030);
 
 	UMovieSceneSequencePlayer_GetPlaybackStart_Params params;
 
@@ -261,7 +273,8 @@ float UMovieSceneSequencePlayer::GetPlaybackStart()
 
 float UMovieSceneSequencePlayer::GetPlaybackPosition()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1ff23b4d);
 
 	UMovieSceneSequencePlayer_GetPlaybackPosition_Params params;
 
@@ -283,7 +296,8 @@ float UMovieSceneSequencePlayer::GetPlaybackPosition()
 
 float UMovieSceneSequencePlayer::GetPlaybackEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd479843);
 
 	UMovieSceneSequencePlayer_GetPlaybackEnd_Params params;
 
@@ -305,7 +319,8 @@ float UMovieSceneSequencePlayer::GetPlaybackEnd()
 
 float UMovieSceneSequencePlayer::GetLength()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.GetLength");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27fd6f7f);
 
 	UMovieSceneSequencePlayer_GetLength_Params params;
 
@@ -325,7 +340,8 @@ float UMovieSceneSequencePlayer::GetLength()
 
 void UMovieSceneSequencePlayer::ChangePlaybackDirection()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4aa2c34d);
 
 	UMovieSceneSequencePlayer_ChangePlaybackDirection_Params params;
 

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_GM_OnDeath_SpeedUpFriends.GCNS_GM_OnDeath_SpeedUpFriends_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae715b85);
 		return ptr;
 	}
 

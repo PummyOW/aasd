@@ -20,7 +20,8 @@ namespace SDK
 
 void UMcpProfile::UnlockProfileForWrite(const struct FString& Code, struct FDedicatedServerUrlContext* Context)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function McpProfileSys.McpProfile.UnlockProfileForWrite");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe245f91d);
 
 	UMcpProfile_UnlockProfileForWrite_Params params;
 	params.Code = Code;
@@ -44,7 +45,8 @@ void UMcpProfile::UnlockProfileForWrite(const struct FString& Code, struct FDedi
 
 void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function McpProfileSys.McpProfile.QueryProfile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80f71e0f);
 
 	UMcpProfile_QueryProfile_Params params;
 
@@ -69,7 +71,8 @@ void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 
 void UMcpProfile::LockProfileForWrite(const struct FString& Code, int Timeout, struct FDedicatedServerUrlContext* Context)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function McpProfileSys.McpProfile.LockProfileForWrite");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1acb7e2a);
 
 	UMcpProfile_LockProfileForWrite_Params params;
 	params.Code = Code;
@@ -94,7 +97,8 @@ void UMcpProfile::LockProfileForWrite(const struct FString& Code, int Timeout, s
 
 void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function McpProfileSys.McpProfile.DeleteProfile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf287fe30);
 
 	UMcpProfile_DeleteProfile_Params params;
 
@@ -117,7 +121,8 @@ void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 
 void UMcpProfile::DeleteAllProfiles(struct FClientUrlContext* Context)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function McpProfileSys.McpProfile.DeleteAllProfiles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x78aa7f14);
 
 	UMcpProfile_DeleteAllProfiles_Params params;
 

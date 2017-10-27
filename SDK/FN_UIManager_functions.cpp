@@ -19,7 +19,8 @@ namespace SDK
 
 void UUIManager_C::IsShowingModalsConfirmationsErrors(bool* bShowing)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.IsShowingModalsConfirmationsErrors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45d2d941);
 
 	UUIManager_C_IsShowingModalsConfirmationsErrors_Params params;
 
@@ -39,7 +40,8 @@ void UUIManager_C::IsShowingModalsConfirmationsErrors(bool* bShowing)
 
 void UUIManager_C::ClearConfirmationLayer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.ClearConfirmationLayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c8b2510);
 
 	UUIManager_C_ClearConfirmationLayer_Params params;
 
@@ -58,7 +60,8 @@ void UUIManager_C::ClearConfirmationLayer()
 
 void UUIManager_C::RemoveModalPanel(class UCommonActivatablePanel* Panel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.RemoveModalPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1bc559a8);
 
 	UUIManager_C_RemoveModalPanel_Params params;
 	params.Panel = Panel;
@@ -78,7 +81,8 @@ void UUIManager_C::RemoveModalPanel(class UCommonActivatablePanel* Panel)
 
 void UUIManager_C::PopModalPanel(class UCommonActivatablePanel* ActivatablePanel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.PopModalPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62a8dccf);
 
 	UUIManager_C_PopModalPanel_Params params;
 	params.ActivatablePanel = ActivatablePanel;
@@ -98,7 +102,8 @@ void UUIManager_C::PopModalPanel(class UCommonActivatablePanel* ActivatablePanel
 
 void UUIManager_C::HandleStateContentUpdated(class UFortUIStateWidget_NUI* NewStateWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.HandleStateContentUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5695c78);
 
 	UUIManager_C_HandleStateContentUpdated_Params params;
 	params.NewStateWidget = NewStateWidget;
@@ -118,7 +123,8 @@ void UUIManager_C::HandleStateContentUpdated(class UFortUIStateWidget_NUI* NewSt
 
 void UUIManager_C::HandleControllerConnectionChanged(bool bConnected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.HandleControllerConnectionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x852ad0e3);
 
 	UUIManager_C_HandleControllerConnectionChanged_Params params;
 	params.bConnected = bConnected;
@@ -138,7 +144,8 @@ void UUIManager_C::HandleControllerConnectionChanged(bool bConnected)
 
 void UUIManager_C::OnEndLatentWaitForConfirmationDialog(struct FFortDialogExternalLatentActionHandle* WaitingDialogHandle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.OnEndLatentWaitForConfirmationDialog");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfcfd01c);
 
 	UUIManager_C_OnEndLatentWaitForConfirmationDialog_Params params;
 
@@ -160,7 +167,8 @@ void UUIManager_C::OnEndLatentWaitForConfirmationDialog(struct FFortDialogExtern
 
 bool UUIManager_C::IsConsole()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.IsConsole");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4ec2c9a);
 
 	UUIManager_C_IsConsole_Params params;
 
@@ -179,7 +187,8 @@ bool UUIManager_C::IsConsole()
 
 void UUIManager_C::DismissWebPurchase()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.DismissWebPurchase");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2bf22e20);
 
 	UUIManager_C_DismissWebPurchase_Params params;
 
@@ -199,7 +208,8 @@ void UUIManager_C::DismissWebPurchase()
 
 void UUIManager_C::DisplayWebPurchase(class UWidget* WebWidget, const struct FString& OfferId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.DisplayWebPurchase");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b3a7006);
 
 	UUIManager_C_DisplayWebPurchase_Params params;
 	params.WebWidget = WebWidget;
@@ -220,7 +230,8 @@ void UUIManager_C::DisplayWebPurchase(class UWidget* WebWidget, const struct FSt
 
 void UUIManager_C::HandleDeactivatedErrorWindow(class UCommonActivatablePanel* DeactivatedPanel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.HandleDeactivatedErrorWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c853379);
 
 	UUIManager_C_HandleDeactivatedErrorWindow_Params params;
 	params.DeactivatedPanel = DeactivatedPanel;
@@ -240,7 +251,8 @@ void UUIManager_C::HandleDeactivatedErrorWindow(class UCommonActivatablePanel* D
 
 void UUIManager_C::ShowErrorInErrorWindow(const struct FFortErrorInfo& ErrorInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.ShowErrorInErrorWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe07d2fdf);
 
 	UUIManager_C_ShowErrorInErrorWindow_Params params;
 	params.ErrorInfo = ErrorInfo;
@@ -260,7 +272,8 @@ void UUIManager_C::ShowErrorInErrorWindow(const struct FFortErrorInfo& ErrorInfo
 
 void UUIManager_C::HandleDeactivatedPanelModalLayer(class UCommonActivatablePanel* DeactivatedPanel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.HandleDeactivatedPanelModalLayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x57eca25b);
 
 	UUIManager_C_HandleDeactivatedPanelModalLayer_Params params;
 	params.DeactivatedPanel = DeactivatedPanel;
@@ -280,7 +293,8 @@ void UUIManager_C::HandleDeactivatedPanelModalLayer(class UCommonActivatablePane
 
 void UUIManager_C::AddActivatablePanelToModalLayer(class UCommonActivatablePanel* ActivatablePanel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.AddActivatablePanelToModalLayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96dacc15);
 
 	UUIManager_C_AddActivatablePanelToModalLayer_Params params;
 	params.ActivatablePanel = ActivatablePanel;
@@ -298,7 +312,8 @@ void UUIManager_C::AddActivatablePanelToModalLayer(class UCommonActivatablePanel
 
 void UUIManager_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e7a9d2d);
 
 	UUIManager_C_Initialize_Params params;
 
@@ -317,7 +332,8 @@ void UUIManager_C::Initialize()
 
 void UUIManager_C::QueueConfirmation(const struct FFortDialogDescription_NUI& ConfirmationDescription)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.QueueConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffa4baeb);
 
 	UUIManager_C_QueueConfirmation_Params params;
 	params.ConfirmationDescription = ConfirmationDescription;
@@ -335,7 +351,8 @@ void UUIManager_C::QueueConfirmation(const struct FFortDialogDescription_NUI& Co
 
 void UUIManager_C::ShowNextConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.ShowNextConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35ef44d8);
 
 	UUIManager_C_ShowNextConfirmation_Params params;
 
@@ -354,7 +371,8 @@ void UUIManager_C::ShowNextConfirmation()
 
 void UUIManager_C::HandleDeactivatedPanelConfirmationLayer(class UCommonActivatablePanel* DeactivatedPanel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.HandleDeactivatedPanelConfirmationLayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x85adc261);
 
 	UUIManager_C_HandleDeactivatedPanelConfirmationLayer_Params params;
 	params.DeactivatedPanel = DeactivatedPanel;
@@ -372,7 +390,8 @@ void UUIManager_C::HandleDeactivatedPanelConfirmationLayer(class UCommonActivata
 
 void UUIManager_C::HandleModalContentCleared()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.HandleModalContentCleared");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd377f149);
 
 	UUIManager_C_HandleModalContentCleared_Params params;
 
@@ -391,7 +410,8 @@ void UUIManager_C::HandleModalContentCleared()
 
 bool UUIManager_C::IsStateContentChildShowing()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.IsStateContentChildShowing");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ebee966);
 
 	UUIManager_C_IsStateContentChildShowing_Params params;
 
@@ -410,7 +430,8 @@ bool UUIManager_C::IsStateContentChildShowing()
 
 void UUIManager_C::BindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.BindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb18e8ed6);
 
 	UUIManager_C_BindDelegates_Params params;
 
@@ -427,7 +448,8 @@ void UUIManager_C::BindDelegates()
 
 void UUIManager_C::ShowNextModalWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.ShowNextModalWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa21759a);
 
 	UUIManager_C_ShowNextModalWidget_Params params;
 
@@ -446,7 +468,8 @@ void UUIManager_C::ShowNextModalWidget()
 
 void UUIManager_C::QueueModalPanel(class UCommonActivatablePanel* ActivatablePanel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.QueueModalPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1734dacf);
 
 	UUIManager_C_QueueModalPanel_Params params;
 	params.ActivatablePanel = ActivatablePanel;
@@ -464,7 +487,8 @@ void UUIManager_C::QueueModalPanel(class UCommonActivatablePanel* ActivatablePan
 
 void UUIManager_C::PopCurrentModal()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.PopCurrentModal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc012716);
 
 	UUIManager_C_PopCurrentModal_Params params;
 
@@ -481,7 +505,8 @@ void UUIManager_C::PopCurrentModal()
 
 void UUIManager_C::ClearLayers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.ClearLayers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2eb3dbe0);
 
 	UUIManager_C_ClearLayers_Params params;
 
@@ -500,7 +525,8 @@ void UUIManager_C::ClearLayers()
 
 void UUIManager_C::DisplayStateContent(bool* bDisplay)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.DisplayStateContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x521e0811);
 
 	UUIManager_C_DisplayStateContent_Params params;
 	params.bDisplay = bDisplay;
@@ -518,7 +544,8 @@ void UUIManager_C::DisplayStateContent(bool* bDisplay)
 
 void UUIManager_C::OnStateStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.OnStateStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52a6fafe);
 
 	UUIManager_C_OnStateStarted_Params params;
 
@@ -535,7 +562,8 @@ void UUIManager_C::OnStateStarted()
 
 void UUIManager_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c4ec559);
 
 	UUIManager_C_Destruct_Params params;
 
@@ -552,7 +580,8 @@ void UUIManager_C::Destruct()
 
 void UUIManager_C::KillConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.KillConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bcc4474);
 
 	UUIManager_C_KillConfirmation_Params params;
 
@@ -571,7 +600,8 @@ void UUIManager_C::KillConfirmation()
 
 void UUIManager_C::DisplayErrorDialog(struct FFortErrorInfo* Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.DisplayErrorDialog");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1042861b);
 
 	UUIManager_C_DisplayErrorDialog_Params params;
 	params.Info = Info;
@@ -589,7 +619,8 @@ void UUIManager_C::DisplayErrorDialog(struct FFortErrorInfo* Info)
 
 void UUIManager_C::DebugToggleInvalidationPanel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.DebugToggleInvalidationPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcbdd61ba);
 
 	UUIManager_C_DebugToggleInvalidationPanel_Params params;
 
@@ -606,7 +637,8 @@ void UUIManager_C::DebugToggleInvalidationPanel()
 
 void UUIManager_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe7e3382);
 
 	UUIManager_C_Construct_Params params;
 
@@ -625,7 +657,8 @@ void UUIManager_C::Construct()
 
 void UUIManager_C::OnShowConfirmation_NUI(struct FFortDialogDescription_NUI* Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.OnShowConfirmation_NUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf486061);
 
 	UUIManager_C_OnShowConfirmation_NUI_Params params;
 	params.Description = Description;
@@ -645,7 +678,8 @@ void UUIManager_C::OnShowConfirmation_NUI(struct FFortDialogDescription_NUI* Des
 
 void UUIManager_C::UpdateStateWidgetContent(class UFortUIStateWidget_NUI** StateWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.UpdateStateWidgetContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec27ee6e);
 
 	UUIManager_C_UpdateStateWidgetContent_Params params;
 	params.StateWidget = StateWidget;
@@ -665,7 +699,8 @@ void UUIManager_C::UpdateStateWidgetContent(class UFortUIStateWidget_NUI** State
 
 void UUIManager_C::QueueActivatablePanelIntoModalLayer(class UCommonActivatablePanel** Panel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.QueueActivatablePanelIntoModalLayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0c7a708);
 
 	UUIManager_C_QueueActivatablePanelIntoModalLayer_Params params;
 	params.Panel = Panel;
@@ -683,7 +718,8 @@ void UUIManager_C::QueueActivatablePanelIntoModalLayer(class UCommonActivatableP
 
 void UUIManager_C::OnStateEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.OnStateEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ee6aedd);
 
 	UUIManager_C_OnStateEnded_Params params;
 
@@ -702,7 +738,8 @@ void UUIManager_C::OnStateEnded()
 
 void UUIManager_C::PopActivatablePanelInModalLayer(class UCommonActivatablePanel** Panel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.PopActivatablePanelInModalLayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec60052b);
 
 	UUIManager_C_PopActivatablePanelInModalLayer_Params params;
 	params.Panel = Panel;
@@ -720,7 +757,8 @@ void UUIManager_C::PopActivatablePanelInModalLayer(class UCommonActivatablePanel
 
 void UUIManager_C::CloseConfirmationWindow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.CloseConfirmationWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49cf4032);
 
 	UUIManager_C_CloseConfirmationWindow_Params params;
 
@@ -737,7 +775,8 @@ void UUIManager_C::CloseConfirmationWindow()
 
 void UUIManager_C::CloseErrorWindow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.CloseErrorWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x203313a5);
 
 	UUIManager_C_CloseErrorWindow_Params params;
 
@@ -756,7 +795,8 @@ void UUIManager_C::CloseErrorWindow()
 
 void UUIManager_C::ExecuteUbergraph_UIManager(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UIManager.UIManager_C.ExecuteUbergraph_UIManager");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d39f2ba);
 
 	UUIManager_C_ExecuteUbergraph_UIManager_Params params;
 	params.EntryPoint = EntryPoint;

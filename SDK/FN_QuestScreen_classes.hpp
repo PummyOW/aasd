@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass QuestScreen.QuestScreen_C
-// 0x00C9 (0x04A9 - 0x03E0)
+// 0x00E0 (0x04C0 - 0x03E0)
 class UQuestScreen_C : public UFortQuestScreen
 {
 public:
@@ -42,14 +42,18 @@ public:
 	struct FTimerHandle                                UpdatePendingSeenItemTimerHandle;                         // 0x0490(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_DisableEditOnInstance)
 	TArray<class UQuestTreeEntry_C*>                   QuestButtons;                                             // 0x0498(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance)
 	bool                                               bDisableClaimRewardButton;                                // 0x04A8(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x04A9(0x0007) MISSED OFFSET
+	struct FScriptMulticastDelegate                    AbandonQuest;                                             // 0x04B0(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_BlueprintAssignable)
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass QuestScreen.QuestScreen_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40074545);
 		return ptr;
 	}
 
 
+	void HandleAbandonQuest(bool* PassThrough);
 	void ShouldShowPlayQuest(class UFortQuestItem* Quest, bool* ShouldShowPlay);
 	void Toggle_Disable_Claim_Reward_Button(bool ToDisable);
 	void HandleInventory(bool* PassThrough);
@@ -66,13 +70,14 @@ public:
 	void UpdateInputHandlers(class UFortQuestItem* Active_Quest);
 	void ClaimReward(bool* PassThrough);
 	void SelectInitialQuest();
-	void AbandonQuest(bool* PassThrough);
+	void OnAbandonQuestConfirmed(class UFortQuestItem* QuestToAbandon);
 	void ReplayIntroAudio(bool* PassThrough);
 	void SetupInputHandlers();
 	void populateDetailWidgets();
 	void PlayQuest(bool* PassThrough);
 	void HandleBack(bool* PassThrough);
 	TArray<class UObject*> OnGetChildrenForCategory(class UObject* Item);
+	void DialogResult_CE39442C4BCACCFD8414B495A3B27A21(EFortDialogResult Result, const struct FName& ResultName);
 	void BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_23_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget);
 	void BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_150_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
 	void BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_252_OnTabSelected__DelegateSignature(const struct FName& TabId);
@@ -87,7 +92,9 @@ public:
 	void OnPartyLeft();
 	void Construct();
 	void OnItemSelected(class UObject* Item, bool bIsSelected);
+	void ShowAbandonQuestDialog(class UFortQuestItem* QuestToAbandon);
 	void ExecuteUbergraph_QuestScreen(int EntryPoint);
+	void AbandonQuest__DelegateSignature(class UFortQuestItem* QuestToAbandon);
 	void CloseJournal__DelegateSignature();
 };
 

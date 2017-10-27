@@ -20,7 +20,8 @@ namespace SDK
 
 void UMessageCenterWidget_C::HandleMessageSelected(class UObject* Item, bool Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.HandleMessageSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20844431);
 
 	UMessageCenterWidget_C_HandleMessageSelected_Params params;
 	params.Item = Item;
@@ -39,7 +40,8 @@ void UMessageCenterWidget_C::HandleMessageSelected(class UObject* Item, bool Sel
 
 void UMessageCenterWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x759b014e);
 
 	UMessageCenterWidget_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UMessageCenterWidget_C::Construct()
 
 void UMessageCenterWidget_C::OnBeginIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.OnBeginIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6dca804b);
 
 	UMessageCenterWidget_C_OnBeginIntro_Params params;
 
@@ -73,7 +76,8 @@ void UMessageCenterWidget_C::OnBeginIntro()
 
 void UMessageCenterWidget_C::OnBeginOutro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.OnBeginOutro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce0abdb0);
 
 	UMessageCenterWidget_C_OnBeginOutro_Params params;
 
@@ -90,7 +94,8 @@ void UMessageCenterWidget_C::OnBeginOutro()
 
 void UMessageCenterWidget_C::HandleIntroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.HandleIntroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb8b323f);
 
 	UMessageCenterWidget_C_HandleIntroEnded_Params params;
 
@@ -107,7 +112,8 @@ void UMessageCenterWidget_C::HandleIntroEnded()
 
 void UMessageCenterWidget_C::HandleOutroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.HandleOutroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6ba9306);
 
 	UMessageCenterWidget_C_HandleOutroEnded_Params params;
 
@@ -126,7 +132,8 @@ void UMessageCenterWidget_C::HandleOutroEnded()
 
 void UMessageCenterWidget_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1a303da);
 
 	UMessageCenterWidget_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -147,7 +154,8 @@ void UMessageCenterWidget_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_41_C
 
 void UMessageCenterWidget_C::BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5892f503);
 
 	UMessageCenterWidget_C_BndEvt__MessagesList_K2Node_ComponentBoundEvent_303_OnListViewItemSelected__DelegateSignature_Params params;
 	params.Item = Item;
@@ -168,7 +176,8 @@ void UMessageCenterWidget_C::BndEvt__MessagesList_K2Node_ComponentBoundEvent_303
 
 void UMessageCenterWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0f3125b);
 
 	UMessageCenterWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -188,7 +197,8 @@ void UMessageCenterWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_46_Co
 
 void UMessageCenterWidget_C::BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x524a6428);
 
 	UMessageCenterWidget_C_BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -208,7 +218,8 @@ void UMessageCenterWidget_C::BndEvt__ClearButton_K2Node_ComponentBoundEvent_62_C
 
 void UMessageCenterWidget_C::ExecuteUbergraph_MessageCenterWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MessageCenterWidget.MessageCenterWidget_C.ExecuteUbergraph_MessageCenterWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7dddbf4f);
 
 	UMessageCenterWidget_C_ExecuteUbergraph_MessageCenterWidget_Params params;
 	params.EntryPoint = EntryPoint;

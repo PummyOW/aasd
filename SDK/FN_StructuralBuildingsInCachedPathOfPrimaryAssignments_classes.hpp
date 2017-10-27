@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass StructuralBuildingsInCachedPathOfPrimaryAssignments.StructuralBuildingsInCachedPathOfPrimaryAssignments_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c5023dd);
 		return ptr;
 	}
 

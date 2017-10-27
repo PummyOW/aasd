@@ -21,7 +21,8 @@ namespace SDK
 
 void ULoginResultWIdget_C::SetResultsData(const struct FText& Title, bool bShowError, const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginResultWIdget.LoginResultWIdget_C.SetResultsData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b32c7c5);
 
 	ULoginResultWIdget_C_SetResultsData_Params params;
 	params.Title = Title;
@@ -43,7 +44,8 @@ void ULoginResultWIdget_C::SetResultsData(const struct FText& Title, bool bShowE
 
 void ULoginResultWIdget_C::SetDescription(const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginResultWIdget.LoginResultWIdget_C.SetDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9248a999);
 
 	ULoginResultWIdget_C_SetDescription_Params params;
 	params.Description = Description;
@@ -64,7 +66,8 @@ void ULoginResultWIdget_C::SetDescription(const struct FText& Description)
 
 void ULoginResultWIdget_C::SetTitle(const struct FText& Title, bool bShowError)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginResultWIdget.LoginResultWIdget_C.SetTitle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47f6a625);
 
 	ULoginResultWIdget_C_SetTitle_Params params;
 	params.Title = Title;
@@ -85,7 +88,8 @@ void ULoginResultWIdget_C::SetTitle(const struct FText& Title, bool bShowError)
 
 void ULoginResultWIdget_C::BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginResultWIdget.LoginResultWIdget_C.BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22fec230);
 
 	ULoginResultWIdget_C_BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -103,7 +107,8 @@ void ULoginResultWIdget_C::BndEvt__ContinueButton_K2Node_ComponentBoundEvent_0_C
 
 void ULoginResultWIdget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginResultWIdget.LoginResultWIdget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ffdbd2);
 
 	ULoginResultWIdget_C_Construct_Params params;
 
@@ -122,7 +127,8 @@ void ULoginResultWIdget_C::Construct()
 
 void ULoginResultWIdget_C::ExecuteUbergraph_LoginResultWIdget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginResultWIdget.LoginResultWIdget_C.ExecuteUbergraph_LoginResultWIdget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf531a3bd);
 
 	ULoginResultWIdget_C_ExecuteUbergraph_LoginResultWIdget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -140,7 +146,8 @@ void ULoginResultWIdget_C::ExecuteUbergraph_LoginResultWIdget(int EntryPoint)
 
 void ULoginResultWIdget_C::OnResultConfirmed__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginResultWIdget.LoginResultWIdget_C.OnResultConfirmed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d4440ad);
 
 	ULoginResultWIdget_C_OnResultConfirmed__DelegateSignature_Params params;
 

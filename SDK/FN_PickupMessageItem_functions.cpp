@@ -19,7 +19,8 @@ namespace SDK
 
 void UPickupMessageItem_C::Setup(class UFortItem* Picked_Up_Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupMessageItem.PickupMessageItem_C.Setup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9112f916);
 
 	UPickupMessageItem_C_Setup_Params params;
 	params.Picked_Up_Item = Picked_Up_Item;
@@ -37,7 +38,8 @@ void UPickupMessageItem_C::Setup(class UFortItem* Picked_Up_Item)
 
 void UPickupMessageItem_C::Refresh_Count()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupMessageItem.PickupMessageItem_C.Refresh Count");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7079e8d);
 
 	UPickupMessageItem_C_Refresh_Count_Params params;
 
@@ -56,7 +58,8 @@ void UPickupMessageItem_C::Refresh_Count()
 
 void UPickupMessageItem_C::OnStackSizeChanged(int* OldStackSize)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupMessageItem.PickupMessageItem_C.OnStackSizeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58f40a89);
 
 	UPickupMessageItem_C_OnStackSizeChanged_Params params;
 	params.OldStackSize = OldStackSize;
@@ -74,7 +77,8 @@ void UPickupMessageItem_C::OnStackSizeChanged(int* OldStackSize)
 
 void UPickupMessageItem_C::OnBeginRemove()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupMessageItem.PickupMessageItem_C.OnBeginRemove");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d80e9f3);
 
 	UPickupMessageItem_C_OnBeginRemove_Params params;
 
@@ -91,7 +95,8 @@ void UPickupMessageItem_C::OnBeginRemove()
 
 void UPickupMessageItem_C::OnReturnedToPool()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupMessageItem.PickupMessageItem_C.OnReturnedToPool");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51a1b20c);
 
 	UPickupMessageItem_C_OnReturnedToPool_Params params;
 
@@ -110,7 +115,8 @@ void UPickupMessageItem_C::OnReturnedToPool()
 
 void UPickupMessageItem_C::ExecuteUbergraph_PickupMessageItem(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PickupMessageItem.PickupMessageItem_C.ExecuteUbergraph_PickupMessageItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf83e16d);
 
 	UPickupMessageItem_C_ExecuteUbergraph_PickupMessageItem_Params params;
 	params.EntryPoint = EntryPoint;

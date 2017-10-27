@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_QuestUpdate_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_QuestUpdate.Announce_QuestUpdate_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e28007e);
 
 	AAnnounce_QuestUpdate_C_UserConstructionScript_Params params;
 

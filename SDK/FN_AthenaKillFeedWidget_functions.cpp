@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaKillFeedWidget_C::UpdateKillFeed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillFeedWidget.AthenaKillFeedWidget_C.UpdateKillFeed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x423aec32);
 
 	UAthenaKillFeedWidget_C_UpdateKillFeed_Params params;
 
@@ -34,7 +35,8 @@ void UAthenaKillFeedWidget_C::UpdateKillFeed()
 
 void UAthenaKillFeedWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillFeedWidget.AthenaKillFeedWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38fa4bc);
 
 	UAthenaKillFeedWidget_C_Construct_Params params;
 
@@ -51,7 +53,8 @@ void UAthenaKillFeedWidget_C::Construct()
 
 void UAthenaKillFeedWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillFeedWidget.AthenaKillFeedWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xadfd7703);
 
 	UAthenaKillFeedWidget_C_Destruct_Params params;
 
@@ -70,7 +73,8 @@ void UAthenaKillFeedWidget_C::Destruct()
 
 void UAthenaKillFeedWidget_C::ExecuteUbergraph_AthenaKillFeedWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaKillFeedWidget.AthenaKillFeedWidget_C.ExecuteUbergraph_AthenaKillFeedWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafebd47c);
 
 	UAthenaKillFeedWidget_C_ExecuteUbergraph_AthenaKillFeedWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UErrorWindow_C::CloseErrorWindow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.CloseErrorWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc973c649);
 
 	UErrorWindow_C_CloseErrorWindow_Params params;
 
@@ -36,7 +37,8 @@ void UErrorWindow_C::CloseErrorWindow()
 
 void UErrorWindow_C::GetShouldLogout(bool* Return_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.GetShouldLogout");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x947bdfe);
 
 	UErrorWindow_C_GetShouldLogout_Params params;
 
@@ -56,7 +58,8 @@ void UErrorWindow_C::GetShouldLogout(bool* Return_Value)
 
 void UErrorWindow_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6acf331);
 
 	UErrorWindow_C_Initialize_Params params;
 
@@ -76,7 +79,8 @@ void UErrorWindow_C::Initialize()
 
 void UErrorWindow_C::AddError(bool First_Error, struct FFortErrorInfo* ErrorInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.AddError");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7cf8ee66);
 
 	UErrorWindow_C_AddError_Params params;
 	params.First_Error = First_Error;
@@ -99,7 +103,8 @@ void UErrorWindow_C::AddError(bool First_Error, struct FFortErrorInfo* ErrorInfo
 
 void UErrorWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea64c0ad);
 
 	UErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -119,7 +124,8 @@ void UErrorWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_Common
 
 void UErrorWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb411778f);
 
 	UErrorWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -137,7 +143,8 @@ void UErrorWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_165_Commo
 
 void UErrorWindow_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0fee216);
 
 	UErrorWindow_C_Construct_Params params;
 
@@ -154,7 +161,8 @@ void UErrorWindow_C::Construct()
 
 void UErrorWindow_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32a391c5);
 
 	UErrorWindow_C_Destruct_Params params;
 
@@ -171,7 +179,8 @@ void UErrorWindow_C::Destruct()
 
 void UErrorWindow_C::OnBeginOutro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.OnBeginOutro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94117c08);
 
 	UErrorWindow_C_OnBeginOutro_Params params;
 
@@ -188,7 +197,8 @@ void UErrorWindow_C::OnBeginOutro()
 
 void UErrorWindow_C::OnBeginIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.OnBeginIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf750913);
 
 	UErrorWindow_C_OnBeginIntro_Params params;
 
@@ -205,7 +215,8 @@ void UErrorWindow_C::OnBeginIntro()
 
 void UErrorWindow_C::IntroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.IntroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7ee5155);
 
 	UErrorWindow_C_IntroEnded_Params params;
 
@@ -222,7 +233,8 @@ void UErrorWindow_C::IntroEnded()
 
 void UErrorWindow_C::OutroEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.OutroEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d5525c);
 
 	UErrorWindow_C_OutroEnded_Params params;
 
@@ -241,7 +253,8 @@ void UErrorWindow_C::OutroEnded()
 
 void UErrorWindow_C::ExecuteUbergraph_ErrorWindow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ErrorWindow.ErrorWindow_C.ExecuteUbergraph_ErrorWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60f2e043);
 
 	UErrorWindow_C_ExecuteUbergraph_ErrorWindow_Params params;
 	params.EntryPoint = EntryPoint;

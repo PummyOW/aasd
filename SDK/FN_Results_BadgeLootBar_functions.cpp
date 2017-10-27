@@ -20,7 +20,8 @@ namespace SDK
 
 void UResults_BadgeLootBar_C::GetNextLootLevelPoints(int LootPoints, int* NextLootLevelPoints)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.GetNextLootLevelPoints");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34e74569);
 
 	UResults_BadgeLootBar_C_GetNextLootLevelPoints_Params params;
 	params.LootPoints = LootPoints;
@@ -41,7 +42,8 @@ void UResults_BadgeLootBar_C::GetNextLootLevelPoints(int LootPoints, int* NextLo
 
 void UResults_BadgeLootBar_C::SkipToFinalState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.SkipToFinalState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63feb440);
 
 	UResults_BadgeLootBar_C_SkipToFinalState_Params params;
 
@@ -58,7 +60,8 @@ void UResults_BadgeLootBar_C::SkipToFinalState()
 
 void UResults_BadgeLootBar_C::SetSkippingToEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.SetSkippingToEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cca7334);
 
 	UResults_BadgeLootBar_C_SetSkippingToEnd_Params params;
 
@@ -77,7 +80,8 @@ void UResults_BadgeLootBar_C::SetSkippingToEnd()
 
 void UResults_BadgeLootBar_C::PlayAnimationCommon(class UWidgetAnimation* Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.PlayAnimationCommon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b91bb7c);
 
 	UResults_BadgeLootBar_C_PlayAnimationCommon_Params params;
 	params.Animation = Animation;
@@ -98,7 +102,8 @@ void UResults_BadgeLootBar_C::PlayAnimationCommon(class UWidgetAnimation* Animat
 
 void UResults_BadgeLootBar_C::GetBadgePoints(class UResults_Badge_C* Badge, int* Points)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.GetBadgePoints");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f102d9);
 
 	UResults_BadgeLootBar_C_GetBadgePoints_Params params;
 	params.Badge = Badge;
@@ -121,7 +126,8 @@ void UResults_BadgeLootBar_C::GetBadgePoints(class UResults_Badge_C* Badge, int*
 
 void UResults_BadgeLootBar_C::SetLootLevel(int Level)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.SetLootLevel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd07c3475);
 
 	UResults_BadgeLootBar_C_SetLootLevel_Params params;
 	params.Level = Level;
@@ -141,7 +147,8 @@ void UResults_BadgeLootBar_C::SetLootLevel(int Level)
 
 void UResults_BadgeLootBar_C::Initialize(float PlayRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd776ebf);
 
 	UResults_BadgeLootBar_C_Initialize_Params params;
 	params.PlayRate = PlayRate;
@@ -159,7 +166,8 @@ void UResults_BadgeLootBar_C::Initialize(float PlayRate)
 
 void UResults_BadgeLootBar_C::UpdateAddBadgePoints()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.UpdateAddBadgePoints");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca8d4b0d);
 
 	UResults_BadgeLootBar_C_UpdateAddBadgePoints_Params params;
 
@@ -176,7 +184,8 @@ void UResults_BadgeLootBar_C::UpdateAddBadgePoints()
 
 void UResults_BadgeLootBar_C::BndEvt__IntroAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.BndEvt__IntroAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4433a047);
 
 	UResults_BadgeLootBar_C_BndEvt__IntroAnim_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -193,7 +202,8 @@ void UResults_BadgeLootBar_C::BndEvt__IntroAnim_K2Node_ComponentBoundEvent_1_OnW
 
 void UResults_BadgeLootBar_C::Intro_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.Intro Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d381424);
 
 	UResults_BadgeLootBar_C_Intro_Sequence_Params params;
 
@@ -210,7 +220,8 @@ void UResults_BadgeLootBar_C::Intro_Sequence()
 
 void UResults_BadgeLootBar_C::BndEvt__Anim_LevelUp_K2Node_ComponentBoundEvent_4_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.BndEvt__Anim_LevelUp_K2Node_ComponentBoundEvent_4_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b70d6c8);
 
 	UResults_BadgeLootBar_C_BndEvt__Anim_LevelUp_K2Node_ComponentBoundEvent_4_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -229,7 +240,8 @@ void UResults_BadgeLootBar_C::BndEvt__Anim_LevelUp_K2Node_ComponentBoundEvent_4_
 
 void UResults_BadgeLootBar_C::Add_Badge_Points_Sequence(class UResults_Badge_C* Badge)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.Add Badge Points Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd338341b);
 
 	UResults_BadgeLootBar_C_Add_Badge_Points_Sequence_Params params;
 	params.Badge = Badge;
@@ -247,7 +259,8 @@ void UResults_BadgeLootBar_C::Add_Badge_Points_Sequence(class UResults_Badge_C* 
 
 void UResults_BadgeLootBar_C::BndEvt__Anim_PostLevelUpIntro_K2Node_ComponentBoundEvent_6_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.BndEvt__Anim_PostLevelUpIntro_K2Node_ComponentBoundEvent_6_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2fbc7308);
 
 	UResults_BadgeLootBar_C_BndEvt__Anim_PostLevelUpIntro_K2Node_ComponentBoundEvent_6_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -264,7 +277,8 @@ void UResults_BadgeLootBar_C::BndEvt__Anim_PostLevelUpIntro_K2Node_ComponentBoun
 
 void UResults_BadgeLootBar_C::On_Leveled_Up()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.On Leveled Up");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x413f03e6);
 
 	UResults_BadgeLootBar_C_On_Leveled_Up_Params params;
 
@@ -281,7 +295,8 @@ void UResults_BadgeLootBar_C::On_Leveled_Up()
 
 void UResults_BadgeLootBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23833838);
 
 	UResults_BadgeLootBar_C_Construct_Params params;
 
@@ -300,7 +315,8 @@ void UResults_BadgeLootBar_C::Construct()
 
 void UResults_BadgeLootBar_C::ExecuteUbergraph_Results_BadgeLootBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.ExecuteUbergraph_Results_BadgeLootBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44e3274a);
 
 	UResults_BadgeLootBar_C_ExecuteUbergraph_Results_BadgeLootBar_Params params;
 	params.EntryPoint = EntryPoint;
@@ -318,7 +334,8 @@ void UResults_BadgeLootBar_C::ExecuteUbergraph_Results_BadgeLootBar(int EntryPoi
 
 void UResults_BadgeLootBar_C::LeveledUp__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.LeveledUp__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc30a2cc);
 
 	UResults_BadgeLootBar_C_LeveledUp__DelegateSignature_Params params;
 
@@ -335,7 +352,8 @@ void UResults_BadgeLootBar_C::LeveledUp__DelegateSignature()
 
 void UResults_BadgeLootBar_C::FinishedAddingBadgePoints__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.FinishedAddingBadgePoints__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0be59e3);
 
 	UResults_BadgeLootBar_C_FinishedAddingBadgePoints__DelegateSignature_Params params;
 
@@ -352,7 +370,8 @@ void UResults_BadgeLootBar_C::FinishedAddingBadgePoints__DelegateSignature()
 
 void UResults_BadgeLootBar_C::IntroComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_BadgeLootBar.Results_BadgeLootBar_C.IntroComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7a3a23);
 
 	UResults_BadgeLootBar_C_IntroComplete__DelegateSignature_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemManangementItemTileButton_C::HandleSlottedSurvivor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleSlottedSurvivor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5eef4ad2);
 
 	UItemManangementItemTileButton_C_HandleSlottedSurvivor_Params params;
 
@@ -34,7 +35,8 @@ void UItemManangementItemTileButton_C::HandleSlottedSurvivor()
 
 void UItemManangementItemTileButton_C::UpdateQuantityProduced()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.UpdateQuantityProduced");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24d3a323);
 
 	UItemManangementItemTileButton_C_UpdateQuantityProduced_Params params;
 
@@ -51,7 +53,8 @@ void UItemManangementItemTileButton_C::UpdateQuantityProduced()
 
 void UItemManangementItemTileButton_C::UpdateBangState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.UpdateBangState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17544795);
 
 	UItemManangementItemTileButton_C_UpdateBangState_Params params;
 
@@ -68,7 +71,8 @@ void UItemManangementItemTileButton_C::UpdateBangState()
 
 void UItemManangementItemTileButton_C::UpdateInteractionWidgetVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.UpdateInteractionWidgetVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6daa0d98);
 
 	UItemManangementItemTileButton_C_UpdateInteractionWidgetVisibility_Params params;
 
@@ -87,7 +91,8 @@ void UItemManangementItemTileButton_C::UpdateInteractionWidgetVisibility()
 
 void UItemManangementItemTileButton_C::SetEquipSlotOverlay(int EquipSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.SetEquipSlotOverlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c4d729);
 
 	UItemManangementItemTileButton_C_SetEquipSlotOverlay_Params params;
 	params.EquipSlot = EquipSlot;
@@ -109,7 +114,8 @@ void UItemManangementItemTileButton_C::SetEquipSlotOverlay(int EquipSlot)
 
 void UItemManangementItemTileButton_C::OnDragDetected(struct FGeometry* MyGeometry, struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.OnDragDetected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf3e9fe0);
 
 	UItemManangementItemTileButton_C_OnDragDetected_Params params;
 	params.MyGeometry = MyGeometry;
@@ -135,7 +141,8 @@ void UItemManangementItemTileButton_C::OnDragDetected(struct FGeometry* MyGeomet
 
 struct FEventReply UItemManangementItemTileButton_C::On_ItemWidgetHolder_MouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.On_ItemWidgetHolder_MouseButtonDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84ca3ad8);
 
 	UItemManangementItemTileButton_C_On_ItemWidgetHolder_MouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -156,7 +163,8 @@ struct FEventReply UItemManangementItemTileButton_C::On_ItemWidgetHolder_MouseBu
 
 void UItemManangementItemTileButton_C::UpdateStyle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.UpdateStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x596b982f);
 
 	UItemManangementItemTileButton_C_UpdateStyle_Params params;
 
@@ -173,7 +181,8 @@ void UItemManangementItemTileButton_C::UpdateStyle()
 
 void UItemManangementItemTileButton_C::UpdateMulchStateBox()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.UpdateMulchStateBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13a68c11);
 
 	UItemManangementItemTileButton_C_UpdateMulchStateBox_Params params;
 
@@ -190,7 +199,8 @@ void UItemManangementItemTileButton_C::UpdateMulchStateBox()
 
 void UItemManangementItemTileButton_C::HandleDifferentItemManagementModeSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleDifferentItemManagementModeSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21e8d745);
 
 	UItemManangementItemTileButton_C_HandleDifferentItemManagementModeSetBP_Params params;
 
@@ -207,7 +217,8 @@ void UItemManangementItemTileButton_C::HandleDifferentItemManagementModeSetBP()
 
 void UItemManangementItemTileButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba88b0ed);
 
 	UItemManangementItemTileButton_C_OnHovered_Params params;
 
@@ -224,7 +235,8 @@ void UItemManangementItemTileButton_C::OnHovered()
 
 void UItemManangementItemTileButton_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x678e733a);
 
 	UItemManangementItemTileButton_C_OnUnhovered_Params params;
 
@@ -241,7 +253,8 @@ void UItemManangementItemTileButton_C::OnUnhovered()
 
 void UItemManangementItemTileButton_C::HandleHasItemToDetailChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleHasItemToDetailChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae52f4b2);
 
 	UItemManangementItemTileButton_C_HandleHasItemToDetailChanged_Params params;
 
@@ -258,7 +271,8 @@ void UItemManangementItemTileButton_C::HandleHasItemToDetailChanged()
 
 void UItemManangementItemTileButton_C::HandleHasItemToCompareDetailsWithChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleHasItemToCompareDetailsWithChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd843a934);
 
 	UItemManangementItemTileButton_C_HandleHasItemToCompareDetailsWithChanged_Params params;
 
@@ -275,7 +289,8 @@ void UItemManangementItemTileButton_C::HandleHasItemToCompareDetailsWithChanged(
 
 void UItemManangementItemTileButton_C::HandleItemMulchStateChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleItemMulchStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x438202a6);
 
 	UItemManangementItemTileButton_C_HandleItemMulchStateChanged_Params params;
 
@@ -294,7 +309,8 @@ void UItemManangementItemTileButton_C::HandleItemMulchStateChanged()
 
 void UItemManangementItemTileButton_C::HandleEquipSlotChanged(int* EquipSlot)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleEquipSlotChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5b7a199);
 
 	UItemManangementItemTileButton_C_HandleEquipSlotChanged_Params params;
 	params.EquipSlot = EquipSlot;
@@ -315,7 +331,8 @@ void UItemManangementItemTileButton_C::HandleEquipSlotChanged(int* EquipSlot)
 
 void UItemManangementItemTileButton_C::OnDragCancelled(struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.OnDragCancelled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27736abb);
 
 	UItemManangementItemTileButton_C_OnDragCancelled_Params params;
 	params.PointerEvent = PointerEvent;
@@ -334,7 +351,8 @@ void UItemManangementItemTileButton_C::OnDragCancelled(struct FPointerEvent* Poi
 
 void UItemManangementItemTileButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x326351cf);
 
 	UItemManangementItemTileButton_C_OnSelected_Params params;
 
@@ -351,9 +369,28 @@ void UItemManangementItemTileButton_C::OnSelected()
 
 void UItemManangementItemTileButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf08ffa8a);
 
 	UItemManangementItemTileButton_C_Construct_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleItemChangedBP
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UItemManangementItemTileButton_C::HandleItemChangedBP()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71b0ee7a);
+
+	UItemManangementItemTileButton_C_HandleItemChangedBP_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -370,7 +407,8 @@ void UItemManangementItemTileButton_C::Construct()
 
 void UItemManangementItemTileButton_C::ExecuteUbergraph_ItemManangementItemTileButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.ExecuteUbergraph_ItemManangementItemTileButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3886e866);
 
 	UItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton_Params params;
 	params.EntryPoint = EntryPoint;

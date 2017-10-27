@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_Generic_BotTurret_Impact.GCNS_Generic_BotTurret_Impact_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb9cc1f85);
 		return ptr;
 	}
 

@@ -77,7 +77,7 @@ struct UXpBoostRow_C_ExecuteUbergraph_XpBoostRow_Params
 // Function XpBoostRow.XpBoostRow_C.Give Boost Clicked__DelegateSignature
 struct UXpBoostRow_C_Give_Boost_Clicked__DelegateSignature_Params
 {
-	struct FUniqueNetIdRepl                            Player_To_Boost;                                          // (CPF_Parm)
+	struct FUniqueNetIdRepl                            Player_to_Boost;                                          // (CPF_Parm)
 };
 
 }

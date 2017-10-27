@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.ChatColorSchemeDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x538061c4);
 		return ptr;
 	}
 
@@ -37,7 +38,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialActionButtonStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3ab7fa00);
 		return ptr;
 	}
 
@@ -53,7 +55,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialChatChromeColorSchemeDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a8e612b);
 		return ptr;
 	}
 
@@ -70,7 +73,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialChatChromeMarginsDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc1435d8);
 		return ptr;
 	}
 
@@ -86,7 +90,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialChatChromeStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdef505fe);
 		return ptr;
 	}
 
@@ -102,7 +107,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialChatMarkupStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf41a804);
 		return ptr;
 	}
 
@@ -118,7 +124,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialChatStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70f7a56c);
 		return ptr;
 	}
 
@@ -134,7 +141,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialCheckBoxStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5175e91);
 		return ptr;
 	}
 
@@ -150,7 +158,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialFontStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdcca3039);
 		return ptr;
 	}
 
@@ -166,7 +175,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialListMarginsDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x314a9d34);
 		return ptr;
 	}
 
@@ -182,7 +192,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialListStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa244b2ea);
 		return ptr;
 	}
 
@@ -198,7 +209,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialProfanityDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe7b6c0f);
 		return ptr;
 	}
 
@@ -214,7 +226,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialRadioBoxStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9005296);
 		return ptr;
 	}
 
@@ -230,7 +243,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialScrollBarStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9aeb84d2);
 		return ptr;
 	}
 
@@ -246,7 +260,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialSoundSchemaDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3cc121db);
 		return ptr;
 	}
 
@@ -280,7 +295,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SocialDefaults.SocialStyleDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d98306e);
 		return ptr;
 	}
 

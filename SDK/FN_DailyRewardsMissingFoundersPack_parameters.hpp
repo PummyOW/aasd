@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function DailyRewardsMissingFoundersPack.DailyRewardsMissingFoundersPack_C.CanUpgradeFoundersPack
+struct UDailyRewardsMissingFoundersPack_C_CanUpgradeFoundersPack_Params
+{
+	bool                                               CanUpgrade;                                               // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function DailyRewardsMissingFoundersPack.DailyRewardsMissingFoundersPack_C.Construct
 struct UDailyRewardsMissingFoundersPack_C_Construct_Params
 {

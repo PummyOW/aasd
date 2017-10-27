@@ -17,7 +17,8 @@ namespace SDK
 
 void URewardsListWidget_C::PresentAllRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsListWidget.RewardsListWidget_C.PresentAllRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15ad5137);
 
 	URewardsListWidget_C_PresentAllRewards_Params params;
 
@@ -38,7 +39,8 @@ void URewardsListWidget_C::PresentAllRewards()
 
 void URewardsListWidget_C::CreateRewardWrapper(class UHomeScreenQuestRewardItem_C* Item, const struct FText& DisplayName, class UFrontEndRewardWrapperWidget_C** OutputPin)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsListWidget.RewardsListWidget_C.CreateRewardWrapper");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6aa95553);
 
 	URewardsListWidget_C_CreateRewardWrapper_Params params;
 	params.Item = Item;
@@ -63,7 +65,8 @@ void URewardsListWidget_C::CreateRewardWrapper(class UHomeScreenQuestRewardItem_
 
 void URewardsListWidget_C::CreateReward(const struct FFortItemInstanceQuantityPair& FortItemInstanceQuantityPair, bool Selectable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsListWidget.RewardsListWidget_C.CreateReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40128cd2);
 
 	URewardsListWidget_C_CreateReward_Params params;
 	params.FortItemInstanceQuantityPair = FortItemInstanceQuantityPair;
@@ -82,7 +85,8 @@ void URewardsListWidget_C::CreateReward(const struct FFortItemInstanceQuantityPa
 
 void URewardsListWidget_C::PresentNextReward()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsListWidget.RewardsListWidget_C.PresentNextReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56f9d82);
 
 	URewardsListWidget_C_PresentNextReward_Params params;
 
@@ -102,7 +106,8 @@ void URewardsListWidget_C::PresentNextReward()
 
 void URewardsListWidget_C::PopulateRewards(TArray<struct FFortItemInstanceQuantityPair>* Rewards, TArray<struct FFortItemInstanceQuantityPair>* SelectableRewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RewardsListWidget.RewardsListWidget_C.PopulateRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x719ee123);
 
 	URewardsListWidget_C_PopulateRewards_Params params;
 

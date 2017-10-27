@@ -19,7 +19,8 @@ namespace SDK
 
 bool ATheaterCamera_Blueprint_C::IsInputSuspended()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.IsInputSuspended");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5e10838);
 
 	ATheaterCamera_Blueprint_C_IsInputSuspended_Params params;
 
@@ -41,7 +42,8 @@ bool ATheaterCamera_Blueprint_C::IsInputSuspended()
 
 struct FVector2D ATheaterCamera_Blueprint_C::NewFunction_1(class AActor* self2)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.NewFunction_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x990f475f);
 
 	ATheaterCamera_Blueprint_C_NewFunction_1_Params params;
 	params.self2 = self2;
@@ -64,7 +66,8 @@ struct FVector2D ATheaterCamera_Blueprint_C::NewFunction_1(class AActor* self2)
 
 void ATheaterCamera_Blueprint_C::PanCamera(float DeltaX, float DeltaY)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.PanCamera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x906aef19);
 
 	ATheaterCamera_Blueprint_C_PanCamera_Params params;
 	params.DeltaX = DeltaX;
@@ -85,7 +88,8 @@ void ATheaterCamera_Blueprint_C::PanCamera(float DeltaX, float DeltaY)
 
 void ATheaterCamera_Blueprint_C::HandleTheaterSelected(const struct FString& TheaterId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.HandleTheaterSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21306183);
 
 	ATheaterCamera_Blueprint_C_HandleTheaterSelected_Params params;
 	params.TheaterId = TheaterId;
@@ -105,7 +109,8 @@ void ATheaterCamera_Blueprint_C::HandleTheaterSelected(const struct FString& The
 
 void ATheaterCamera_Blueprint_C::ZoomCameraStep(bool Forward)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ZoomCameraStep");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a03cf99);
 
 	ATheaterCamera_Blueprint_C_ZoomCameraStep_Params params;
 	params.Forward = Forward;
@@ -123,7 +128,8 @@ void ATheaterCamera_Blueprint_C::ZoomCameraStep(bool Forward)
 
 void ATheaterCamera_Blueprint_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8aa7e740);
 
 	ATheaterCamera_Blueprint_C_UserConstructionScript_Params params;
 
@@ -140,7 +146,8 @@ void ATheaterCamera_Blueprint_C::UserConstructionScript()
 
 void ATheaterCamera_Blueprint_C::FocusTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.FocusTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7376a1ea);
 
 	ATheaterCamera_Blueprint_C_FocusTimeline__FinishedFunc_Params params;
 
@@ -157,7 +164,8 @@ void ATheaterCamera_Blueprint_C::FocusTimeline__FinishedFunc()
 
 void ATheaterCamera_Blueprint_C::FocusTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.FocusTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb19b9237);
 
 	ATheaterCamera_Blueprint_C_FocusTimeline__UpdateFunc_Params params;
 
@@ -174,7 +182,8 @@ void ATheaterCamera_Blueprint_C::FocusTimeline__UpdateFunc()
 
 void ATheaterCamera_Blueprint_C::DebugZoomTL__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.DebugZoomTL__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7364de87);
 
 	ATheaterCamera_Blueprint_C_DebugZoomTL__FinishedFunc_Params params;
 
@@ -191,7 +200,8 @@ void ATheaterCamera_Blueprint_C::DebugZoomTL__FinishedFunc()
 
 void ATheaterCamera_Blueprint_C::DebugZoomTL__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.DebugZoomTL__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa27d1d12);
 
 	ATheaterCamera_Blueprint_C_DebugZoomTL__UpdateFunc_Params params;
 
@@ -208,7 +218,8 @@ void ATheaterCamera_Blueprint_C::DebugZoomTL__UpdateFunc()
 
 void ATheaterCamera_Blueprint_C::InitializeFX_TL__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InitializeFX-TL__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbaa051c2);
 
 	ATheaterCamera_Blueprint_C_InitializeFX_TL__FinishedFunc_Params params;
 
@@ -225,7 +236,8 @@ void ATheaterCamera_Blueprint_C::InitializeFX_TL__FinishedFunc()
 
 void ATheaterCamera_Blueprint_C::InitializeFX_TL__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InitializeFX-TL__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc3271cf);
 
 	ATheaterCamera_Blueprint_C_InitializeFX_TL__UpdateFunc_Params params;
 
@@ -242,7 +254,8 @@ void ATheaterCamera_Blueprint_C::InitializeFX_TL__UpdateFunc()
 
 void ATheaterCamera_Blueprint_C::DEBUGFOVA__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.DEBUGFOVA__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11c449c4);
 
 	ATheaterCamera_Blueprint_C_DEBUGFOVA__FinishedFunc_Params params;
 
@@ -259,7 +272,8 @@ void ATheaterCamera_Blueprint_C::DEBUGFOVA__FinishedFunc()
 
 void ATheaterCamera_Blueprint_C::DEBUGFOVA__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.DEBUGFOVA__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6ec554d);
 
 	ATheaterCamera_Blueprint_C_DEBUGFOVA__UpdateFunc_Params params;
 
@@ -278,7 +292,8 @@ void ATheaterCamera_Blueprint_C::DEBUGFOVA__UpdateFunc()
 
 void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_8(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_8");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20223b94);
 
 	ATheaterCamera_Blueprint_C_InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_8_Params params;
 	params.Key = Key;
@@ -298,7 +313,8 @@ void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollUp_K2Node_InputKeyEvent_8(
 
 void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_7");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x648294fe);
 
 	ATheaterCamera_Blueprint_C_InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_7_Params params;
 	params.Key = Key;
@@ -318,7 +334,8 @@ void ATheaterCamera_Blueprint_C::InpActEvt_MouseScrollDown_K2Node_InputKeyEvent_
 
 void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x320341ae);
 
 	ATheaterCamera_Blueprint_C_InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEvent_6_Params params;
 	params.Key = Key;
@@ -338,7 +355,8 @@ void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_LeftTrigger_K2Node_InputKeyEv
 
 void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f7ae558);
 
 	ATheaterCamera_Blueprint_C_InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyEvent_5_Params params;
 	params.Key = Key;
@@ -356,7 +374,8 @@ void ATheaterCamera_Blueprint_C::InpActEvt_Gamepad_RightTrigger_K2Node_InputKeyE
 
 void ATheaterCamera_Blueprint_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd98910c5);
 
 	ATheaterCamera_Blueprint_C_OnActivated_Params params;
 
@@ -373,7 +392,8 @@ void ATheaterCamera_Blueprint_C::OnActivated()
 
 void ATheaterCamera_Blueprint_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca11cb1a);
 
 	ATheaterCamera_Blueprint_C_OnDeactivated_Params params;
 
@@ -392,7 +412,8 @@ void ATheaterCamera_Blueprint_C::OnDeactivated()
 
 void ATheaterCamera_Blueprint_C::SetTileFocus(class AFortTheaterMapTile** TargetTile)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.SetTileFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfaa35453);
 
 	ATheaterCamera_Blueprint_C_SetTileFocus_Params params;
 	params.TargetTile = TargetTile;
@@ -412,7 +433,8 @@ void ATheaterCamera_Blueprint_C::SetTileFocus(class AFortTheaterMapTile** Target
 
 void ATheaterCamera_Blueprint_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x649c3acd);
 
 	ATheaterCamera_Blueprint_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -430,7 +452,8 @@ void ATheaterCamera_Blueprint_C::ReceiveTick(float* DeltaSeconds)
 
 void ATheaterCamera_Blueprint_C::OnDragBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.OnDragBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c9b7d3d);
 
 	ATheaterCamera_Blueprint_C_OnDragBegin_Params params;
 
@@ -447,7 +470,8 @@ void ATheaterCamera_Blueprint_C::OnDragBegin()
 
 void ATheaterCamera_Blueprint_C::OnDragEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.OnDragEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe58b18e5);
 
 	ATheaterCamera_Blueprint_C_OnDragEnd_Params params;
 
@@ -464,7 +488,8 @@ void ATheaterCamera_Blueprint_C::OnDragEnd()
 
 void ATheaterCamera_Blueprint_C::StopFocusTimeline()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.StopFocusTimeline");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecb870e0);
 
 	ATheaterCamera_Blueprint_C_StopFocusTimeline_Params params;
 
@@ -483,7 +508,8 @@ void ATheaterCamera_Blueprint_C::StopFocusTimeline()
 
 void ATheaterCamera_Blueprint_C::ForceTileFocus(const struct FVector& HexWorldLoc)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ForceTileFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ec8c960);
 
 	ATheaterCamera_Blueprint_C_ForceTileFocus_Params params;
 	params.HexWorldLoc = HexWorldLoc;
@@ -501,7 +527,8 @@ void ATheaterCamera_Blueprint_C::ForceTileFocus(const struct FVector& HexWorldLo
 
 void ATheaterCamera_Blueprint_C::PingFromHex()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.PingFromHex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a74389a);
 
 	ATheaterCamera_Blueprint_C_PingFromHex_Params params;
 
@@ -518,7 +545,8 @@ void ATheaterCamera_Blueprint_C::PingFromHex()
 
 void ATheaterCamera_Blueprint_C::RefreshCloudMask()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.RefreshCloudMask");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4257f0b);
 
 	ATheaterCamera_Blueprint_C_RefreshCloudMask_Params params;
 
@@ -535,7 +563,8 @@ void ATheaterCamera_Blueprint_C::RefreshCloudMask()
 
 void ATheaterCamera_Blueprint_C::MaskFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.MaskFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6fa199d);
 
 	ATheaterCamera_Blueprint_C_MaskFinished_Params params;
 
@@ -552,7 +581,8 @@ void ATheaterCamera_Blueprint_C::MaskFinished()
 
 void ATheaterCamera_Blueprint_C::PinnedPing()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.PinnedPing");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cad3001);
 
 	ATheaterCamera_Blueprint_C_PinnedPing_Params params;
 
@@ -571,7 +601,8 @@ void ATheaterCamera_Blueprint_C::PinnedPing()
 
 void ATheaterCamera_Blueprint_C::ExecuteUbergraph_TheaterCamera_Blueprint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TheaterCamera_Blueprint.TheaterCamera_Blueprint_C.ExecuteUbergraph_TheaterCamera_Blueprint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc06a8bf);
 
 	ATheaterCamera_Blueprint_C_ExecuteUbergraph_TheaterCamera_Blueprint_Params params;
 	params.EntryPoint = EntryPoint;

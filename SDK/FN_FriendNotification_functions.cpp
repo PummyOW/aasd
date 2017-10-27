@@ -17,7 +17,8 @@ namespace SDK
 
 void UFriendNotification_C::ShowFriendInvites()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendNotification.FriendNotification_C.ShowFriendInvites");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf2855f0);
 
 	UFriendNotification_C_ShowFriendInvites_Params params;
 
@@ -34,7 +35,8 @@ void UFriendNotification_C::ShowFriendInvites()
 
 void UFriendNotification_C::ShowPartyInvites()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendNotification.FriendNotification_C.ShowPartyInvites");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9abb86f0);
 
 	UFriendNotification_C_ShowPartyInvites_Params params;
 
@@ -51,7 +53,8 @@ void UFriendNotification_C::ShowPartyInvites()
 
 void UFriendNotification_C::TakeAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendNotification.FriendNotification_C.TakeAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2bb496e);
 
 	UFriendNotification_C_TakeAction_Params params;
 
@@ -70,7 +73,8 @@ void UFriendNotification_C::TakeAction()
 
 void UFriendNotification_C::ExecuteUbergraph_FriendNotification(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendNotification.FriendNotification_C.ExecuteUbergraph_FriendNotification");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ca79a2c);
 
 	UFriendNotification_C_ExecuteUbergraph_FriendNotification_Params params;
 	params.EntryPoint = EntryPoint;

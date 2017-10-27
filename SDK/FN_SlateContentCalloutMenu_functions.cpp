@@ -19,7 +19,8 @@ namespace SDK
 
 void USlateContentCalloutMenu_C::Get_Size_Box(class USizeBox** Size_Box)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlateContentCalloutMenu.SlateContentCalloutMenu_C.Get Size Box");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd70588b);
 
 	USlateContentCalloutMenu_C_Get_Size_Box_Params params;
 
@@ -39,7 +40,8 @@ void USlateContentCalloutMenu_C::Get_Size_Box(class USizeBox** Size_Box)
 
 void USlateContentCalloutMenu_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlateContentCalloutMenu.SlateContentCalloutMenu_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d25d302);
 
 	USlateContentCalloutMenu_C_Construct_Params params;
 
@@ -58,7 +60,8 @@ void USlateContentCalloutMenu_C::Construct()
 
 void USlateContentCalloutMenu_C::ExecuteUbergraph_SlateContentCalloutMenu(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SlateContentCalloutMenu.SlateContentCalloutMenu_C.ExecuteUbergraph_SlateContentCalloutMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf6bb9f6);
 
 	USlateContentCalloutMenu_C_ExecuteUbergraph_SlateContentCalloutMenu_Params params;
 	params.EntryPoint = EntryPoint;

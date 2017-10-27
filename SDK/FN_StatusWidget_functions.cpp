@@ -19,7 +19,8 @@ namespace SDK
 
 struct FText UStatusWidget_C::UpdateLoginStatusText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatusWidget.StatusWidget_C.UpdateLoginStatusText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa5d3b78);
 
 	UStatusWidget_C_UpdateLoginStatusText_Params params;
 
@@ -40,7 +41,8 @@ struct FText UStatusWidget_C::UpdateLoginStatusText()
 
 void UStatusWidget_C::SetStatusText(const struct FText& Status)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatusWidget.StatusWidget_C.SetStatusText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6027228e);
 
 	UStatusWidget_C_SetStatusText_Params params;
 	params.Status = Status;
@@ -60,7 +62,8 @@ void UStatusWidget_C::SetStatusText(const struct FText& Status)
 
 void UStatusWidget_C::SetTitleText(const struct FText& TitleText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatusWidget.StatusWidget_C.SetTitleText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x280ca6c0);
 
 	UStatusWidget_C_SetTitleText_Params params;
 	params.TitleText = TitleText;
@@ -78,7 +81,8 @@ void UStatusWidget_C::SetTitleText(const struct FText& TitleText)
 
 void UStatusWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatusWidget.StatusWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7f5ea92);
 
 	UStatusWidget_C_Construct_Params params;
 
@@ -95,7 +99,8 @@ void UStatusWidget_C::Construct()
 
 void UStatusWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatusWidget.StatusWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaaaac589);
 
 	UStatusWidget_C_Destruct_Params params;
 
@@ -114,7 +119,8 @@ void UStatusWidget_C::Destruct()
 
 void UStatusWidget_C::ExecuteUbergraph_StatusWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatusWidget.StatusWidget_C.ExecuteUbergraph_StatusWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23d59101);
 
 	UStatusWidget_C_ExecuteUbergraph_StatusWidget_Params params;
 	params.EntryPoint = EntryPoint;

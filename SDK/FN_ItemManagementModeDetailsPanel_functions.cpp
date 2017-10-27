@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemManagementModeDetailsPanel_C::HandleDifferentItemManagementModeSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementModeDetailsPanel.ItemManagementModeDetailsPanel_C.HandleDifferentItemManagementModeSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9051ebcf);
 
 	UItemManagementModeDetailsPanel_C_HandleDifferentItemManagementModeSetBP_Params params;
 
@@ -36,7 +37,8 @@ void UItemManagementModeDetailsPanel_C::HandleDifferentItemManagementModeSetBP()
 
 void UItemManagementModeDetailsPanel_C::ExecuteUbergraph_ItemManagementModeDetailsPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementModeDetailsPanel.ItemManagementModeDetailsPanel_C.ExecuteUbergraph_ItemManagementModeDetailsPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d13d678);
 
 	UItemManagementModeDetailsPanel_C_ExecuteUbergraph_ItemManagementModeDetailsPanel_Params params;
 	params.EntryPoint = EntryPoint;

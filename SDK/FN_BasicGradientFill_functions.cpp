@@ -19,7 +19,8 @@ namespace SDK
 
 void UBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Brush_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicGradientFill.BasicGradientFill_C.Set Brush Size");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x702de64);
 
 	UBasicGradientFill_C_Set_Brush_Size_Params params;
 	params.Brush_Size = Brush_Size;
@@ -41,7 +42,8 @@ void UBasicGradientFill_C::Set_Brush_Size(const struct FVector2D& Brush_Size)
 
 void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1, const struct FLinearColor& Color_2, float Rotation__0___1_)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicGradientFill.BasicGradientFill_C.Set Fill");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef5dc28c);
 
 	UBasicGradientFill_C_Set_Fill_Params params;
 	params.Color_1 = Color_1;
@@ -63,7 +65,8 @@ void UBasicGradientFill_C::Set_Fill(const struct FLinearColor& Color_1, const st
 
 void UBasicGradientFill_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicGradientFill.BasicGradientFill_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa89dccd);
 
 	UBasicGradientFill_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -83,7 +86,8 @@ void UBasicGradientFill_C::PreConstruct(bool* IsDesignTime)
 
 void UBasicGradientFill_C::ExecuteUbergraph_BasicGradientFill(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BasicGradientFill.BasicGradientFill_C.ExecuteUbergraph_BasicGradientFill");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ccfe90);
 
 	UBasicGradientFill_C_ExecuteUbergraph_BasicGradientFill_Params params;
 	params.EntryPoint = EntryPoint;

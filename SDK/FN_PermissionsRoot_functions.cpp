@@ -19,7 +19,8 @@ namespace SDK
 
 void UPermissionsRoot_C::Input_Handle_Back(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PermissionsRoot.PermissionsRoot_C.Input Handle Back");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e71d032);
 
 	UPermissionsRoot_C_Input_Handle_Back_Params params;
 
@@ -39,7 +40,8 @@ void UPermissionsRoot_C::Input_Handle_Back(bool* PassThrough)
 
 void UPermissionsRoot_C::RefreshOutpostInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PermissionsRoot.PermissionsRoot_C.RefreshOutpostInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e9ff54a);
 
 	UPermissionsRoot_C_RefreshOutpostInfo_Params params;
 
@@ -56,7 +58,8 @@ void UPermissionsRoot_C::RefreshOutpostInfo()
 
 void UPermissionsRoot_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PermissionsRoot.PermissionsRoot_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0567b6a);
 
 	UPermissionsRoot_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UPermissionsRoot_C::Construct()
 
 void UPermissionsRoot_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PermissionsRoot.PermissionsRoot_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3377221);
 
 	UPermissionsRoot_C_OnActivated_Params params;
 
@@ -92,7 +96,8 @@ void UPermissionsRoot_C::OnActivated()
 
 void UPermissionsRoot_C::ExecuteUbergraph_PermissionsRoot(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PermissionsRoot.PermissionsRoot_C.ExecuteUbergraph_PermissionsRoot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x199b85f1);
 
 	UPermissionsRoot_C_ExecuteUbergraph_PermissionsRoot_Params params;
 	params.EntryPoint = EntryPoint;

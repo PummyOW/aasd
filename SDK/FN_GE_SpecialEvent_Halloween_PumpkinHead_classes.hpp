@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_SpecialEvent_Halloween_PumpkinHead.GE_SpecialEvent_Halloween_PumpkinHead_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4742dac1);
 		return ptr;
 	}
 

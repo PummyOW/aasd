@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class JsonUtilities.JsonUtilitiesDummyObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3f39f85c);
 		return ptr;
 	}
 

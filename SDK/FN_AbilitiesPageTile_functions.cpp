@@ -19,7 +19,8 @@ namespace SDK
 
 void UAbilitiesPageTile_C::SetAbilityPerkInfo(const struct FFortUIPerk& AbilityPerk)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPageTile.AbilitiesPageTile_C.SetAbilityPerkInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd307b43d);
 
 	UAbilitiesPageTile_C_SetAbilityPerkInfo_Params params;
 	params.AbilityPerk = AbilityPerk;
@@ -37,7 +38,8 @@ void UAbilitiesPageTile_C::SetAbilityPerkInfo(const struct FFortUIPerk& AbilityP
 
 void UAbilitiesPageTile_C::UpdateKeyBinding()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPageTile.AbilitiesPageTile_C.UpdateKeyBinding");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd823f488);
 
 	UAbilitiesPageTile_C_UpdateKeyBinding_Params params;
 
@@ -56,7 +58,8 @@ void UAbilitiesPageTile_C::UpdateKeyBinding()
 
 void UAbilitiesPageTile_C::SetAbilityItemInfo(class UFortItem* SlottedAbilityItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPageTile.AbilitiesPageTile_C.SetAbilityItemInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3dd9888);
 
 	UAbilitiesPageTile_C_SetAbilityItemInfo_Params params;
 	params.SlottedAbilityItem = SlottedAbilityItem;
@@ -74,7 +77,8 @@ void UAbilitiesPageTile_C::SetAbilityItemInfo(class UFortItem* SlottedAbilityIte
 
 void UAbilitiesPageTile_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPageTile.AbilitiesPageTile_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c790082);
 
 	UAbilitiesPageTile_C_Construct_Params params;
 
@@ -93,7 +97,8 @@ void UAbilitiesPageTile_C::Construct()
 
 void UAbilitiesPageTile_C::HandleInputMethodChanged(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPageTile.AbilitiesPageTile_C.HandleInputMethodChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4fd1f8c);
 
 	UAbilitiesPageTile_C_HandleInputMethodChanged_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -113,7 +118,8 @@ void UAbilitiesPageTile_C::HandleInputMethodChanged(bool bUsingGamepad)
 
 void UAbilitiesPageTile_C::ExecuteUbergraph_AbilitiesPageTile(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPageTile.AbilitiesPageTile_C.ExecuteUbergraph_AbilitiesPageTile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x339c42d2);
 
 	UAbilitiesPageTile_C_ExecuteUbergraph_AbilitiesPageTile_Params params;
 	params.EntryPoint = EntryPoint;

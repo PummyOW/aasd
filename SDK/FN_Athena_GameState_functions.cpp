@@ -17,7 +17,8 @@ namespace SDK
 
 void AAthena_GameState_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Athena_GameState.Athena_GameState_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa314adb6);
 
 	AAthena_GameState_C_UserConstructionScript_Params params;
 

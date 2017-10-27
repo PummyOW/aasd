@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_StatsSubtypeBox_C::InitializeScoreType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.InitializeScoreType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9efab15d);
 
 	UResults_StatsSubtypeBox_C_InitializeScoreType_Params params;
 
@@ -34,7 +35,8 @@ void UResults_StatsSubtypeBox_C::InitializeScoreType()
 
 void UResults_StatsSubtypeBox_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x756031e6);
 
 	UResults_StatsSubtypeBox_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UResults_StatsSubtypeBox_C::Construct()
 
 void UResults_StatsSubtypeBox_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d525fdd);
 
 	UResults_StatsSubtypeBox_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -73,7 +76,8 @@ void UResults_StatsSubtypeBox_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_StatsSubtypeBox_C::ExecuteUbergraph_Results_StatsSubtypeBox(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_StatsSubtypeBox.Results_StatsSubtypeBox_C.ExecuteUbergraph_Results_StatsSubtypeBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8524af1e);
 
 	UResults_StatsSubtypeBox_C_ExecuteUbergraph_Results_StatsSubtypeBox_Params params;
 	params.EntryPoint = EntryPoint;

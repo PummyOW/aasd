@@ -45,7 +45,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass Results_TeleportPad.Results_TeleportPad_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc8c1c25);
 		return ptr;
 	}
 

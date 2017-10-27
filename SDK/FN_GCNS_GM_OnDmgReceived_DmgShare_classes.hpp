@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_GM_OnDmgReceived_DmgShare.GCNS_GM_OnDmgReceived_DmgShare_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb24e47ab);
 		return ptr;
 	}
 

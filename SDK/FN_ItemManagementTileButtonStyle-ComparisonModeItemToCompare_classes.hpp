@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ItemManagementTileButtonStyle-ComparisonModeItemToCompare.ItemManagementTileButtonStyle-ComparisonModeItemToCompare_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8bc30a8d);
 		return ptr;
 	}
 

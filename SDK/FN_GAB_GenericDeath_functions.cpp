@@ -21,7 +21,8 @@ namespace SDK
 
 void UGAB_GenericDeath_C::GetRandomSectionName(int MaxNumberOfSections, const struct FName& OriginalSectionName, struct FName* SectionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.GetRandomSectionName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3b74354);
 
 	UGAB_GenericDeath_C_GetRandomSectionName_Params params;
 	params.MaxNumberOfSections = MaxNumberOfSections;
@@ -45,7 +46,8 @@ void UGAB_GenericDeath_C::GetRandomSectionName(int MaxNumberOfSections, const st
 
 void UGAB_GenericDeath_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.InitializeDeathHitDirection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf48a7743);
 
 	UGAB_GenericDeath_C_InitializeDeathHitDirection_Params params;
 	params.EventHitData = EventHitData;
@@ -63,7 +65,8 @@ void UGAB_GenericDeath_C::InitializeDeathHitDirection(const struct FGameplayEven
 
 void UGAB_GenericDeath_C::OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefbf8347);
 
 	UGAB_GenericDeath_C_OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4_Params params;
 
@@ -80,7 +83,8 @@ void UGAB_GenericDeath_C::OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e7b50ee);
 
 	UGAB_GenericDeath_C_OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4_Params params;
 
@@ -97,7 +101,8 @@ void UGAB_GenericDeath_C::OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13036f9);
 
 	UGAB_GenericDeath_C_OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4_Params params;
 
@@ -114,7 +119,8 @@ void UGAB_GenericDeath_C::OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5533a0d5);
 
 	UGAB_GenericDeath_C_OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4_Params params;
 
@@ -131,7 +137,8 @@ void UGAB_GenericDeath_C::OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::K2_OnEndAbility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.K2_OnEndAbility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb33c4673);
 
 	UGAB_GenericDeath_C_K2_OnEndAbility_Params params;
 
@@ -148,7 +155,8 @@ void UGAB_GenericDeath_C::K2_OnEndAbility()
 
 void UGAB_GenericDeath_C::PickDeathMontageSection()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.PickDeathMontageSection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8794941e);
 
 	UGAB_GenericDeath_C_PickDeathMontageSection_Params params;
 
@@ -167,7 +175,8 @@ void UGAB_GenericDeath_C::PickDeathMontageSection()
 
 void UGAB_GenericDeath_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f15c70a);
 
 	UGAB_GenericDeath_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -187,7 +196,8 @@ void UGAB_GenericDeath_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData*
 
 void UGAB_GenericDeath_C::ExecuteUbergraph_GAB_GenericDeath(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_GenericDeath.GAB_GenericDeath_C.ExecuteUbergraph_GAB_GenericDeath");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x950f35b9);
 
 	UGAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath_Params params;
 	params.EntryPoint = EntryPoint;

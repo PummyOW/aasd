@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_NameplateWidget_C::Outro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.Outro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa8afb064);
 
 	UResults_NameplateWidget_C_Outro_Params params;
 
@@ -34,7 +35,8 @@ void UResults_NameplateWidget_C::Outro()
 
 void UResults_NameplateWidget_C::Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59007937);
 
 	UResults_NameplateWidget_C_Intro_Params params;
 
@@ -53,7 +55,8 @@ void UResults_NameplateWidget_C::Intro()
 
 void UResults_NameplateWidget_C::Initialize(EFortCompletionResult Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74c16c65);
 
 	UResults_NameplateWidget_C_Initialize_Params params;
 	params.Result = Result;
@@ -71,7 +74,8 @@ void UResults_NameplateWidget_C::Initialize(EFortCompletionResult Result)
 
 void UResults_NameplateWidget_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_97_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_97_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3359545);
 
 	UResults_NameplateWidget_C_BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_97_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -88,7 +92,8 @@ void UResults_NameplateWidget_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_9
 
 void UResults_NameplateWidget_C::BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_121_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_121_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e65012c);
 
 	UResults_NameplateWidget_C_BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_121_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -105,7 +110,8 @@ void UResults_NameplateWidget_C::BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_1
 
 void UResults_NameplateWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65bbc15a);
 
 	UResults_NameplateWidget_C_Construct_Params params;
 
@@ -124,7 +130,8 @@ void UResults_NameplateWidget_C::Construct()
 
 void UResults_NameplateWidget_C::ExecuteUbergraph_Results_NameplateWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.ExecuteUbergraph_Results_NameplateWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b87295d);
 
 	UResults_NameplateWidget_C_ExecuteUbergraph_Results_NameplateWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -142,7 +149,8 @@ void UResults_NameplateWidget_C::ExecuteUbergraph_Results_NameplateWidget(int En
 
 void UResults_NameplateWidget_C::IntroComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_NameplateWidget.Results_NameplateWidget_C.IntroComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99111df1);
 
 	UResults_NameplateWidget_C_IntroComplete__DelegateSignature_Params params;
 

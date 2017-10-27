@@ -13,14 +13,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass SquadSlotItemPicker.SquadSlotItemPicker_C
-// 0x0000 (0x0370 - 0x0370)
+// 0x0000 (0x0380 - 0x0380)
 class USquadSlotItemPicker_C : public UFortSquadSlotItemPicker
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass SquadSlotItemPicker.SquadSlotItemPicker_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d10a36d);
 		return ptr;
 	}
 

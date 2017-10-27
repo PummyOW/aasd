@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function QuestScreen.QuestScreen_C.HandleAbandonQuest
+struct UQuestScreen_C_HandleAbandonQuest_Params
+{
+	bool                                               PassThrough;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function QuestScreen.QuestScreen_C.ShouldShowPlayQuest
 struct UQuestScreen_C_ShouldShowPlayQuest_Params
 {
@@ -105,10 +111,10 @@ struct UQuestScreen_C_SelectInitialQuest_Params
 {
 };
 
-// Function QuestScreen.QuestScreen_C.AbandonQuest
-struct UQuestScreen_C_AbandonQuest_Params
+// Function QuestScreen.QuestScreen_C.OnAbandonQuestConfirmed
+struct UQuestScreen_C_OnAbandonQuestConfirmed_Params
 {
-	bool                                               PassThrough;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortQuestItem*                              QuestToAbandon;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function QuestScreen.QuestScreen_C.ReplayIntroAudio
@@ -144,6 +150,13 @@ struct UQuestScreen_C_OnGetChildrenForCategory_Params
 {
 	class UObject*                                     Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	TArray<class UObject*>                             ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+};
+
+// Function QuestScreen.QuestScreen_C.DialogResult_CE39442C4BCACCFD8414B495A3B27A21
+struct UQuestScreen_C_DialogResult_CE39442C4BCACCFD8414B495A3B27A21_Params
+{
+	EFortDialogResult                                  Result;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       ResultName;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function QuestScreen.QuestScreen_C.BndEvt__QuestsTreeView_K2Node_ComponentBoundEvent_23_OnListViewItemWidgetCreated__DelegateSignature
@@ -226,10 +239,22 @@ struct UQuestScreen_C_OnItemSelected_Params
 	bool                                               bIsSelected;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function QuestScreen.QuestScreen_C.ShowAbandonQuestDialog
+struct UQuestScreen_C_ShowAbandonQuestDialog_Params
+{
+	class UFortQuestItem*                              QuestToAbandon;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function QuestScreen.QuestScreen_C.ExecuteUbergraph_QuestScreen
 struct UQuestScreen_C_ExecuteUbergraph_QuestScreen_Params
 {
 	int                                                EntryPoint;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function QuestScreen.QuestScreen_C.AbandonQuest__DelegateSignature
+struct UQuestScreen_C_AbandonQuest__DelegateSignature_Params
+{
+	class UFortQuestItem*                              QuestToAbandon;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function QuestScreen.QuestScreen_C.CloseJournal__DelegateSignature

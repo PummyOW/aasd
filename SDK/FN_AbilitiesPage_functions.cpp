@@ -19,7 +19,8 @@ namespace SDK
 
 void UAbilitiesPage_C::HandleInventory(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.HandleInventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79fae753);
 
 	UAbilitiesPage_C_HandleInventory_Params params;
 
@@ -41,7 +42,8 @@ void UAbilitiesPage_C::HandleInventory(bool* PassThrough)
 
 void UAbilitiesPage_C::UpdateAbilityMovie(class UFortGadgetItemDefinition* inGadgetItemDef)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.UpdateAbilityMovie");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe442972);
 
 	UAbilitiesPage_C_UpdateAbilityMovie_Params params;
 	params.inGadgetItemDef = inGadgetItemDef;
@@ -59,7 +61,8 @@ void UAbilitiesPage_C::UpdateAbilityMovie(class UFortGadgetItemDefinition* inGad
 
 void UAbilitiesPage_C::InitializeAbilityTiles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.InitializeAbilityTiles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4af1eeac);
 
 	UAbilitiesPage_C_InitializeAbilityTiles_Params params;
 
@@ -78,7 +81,8 @@ void UAbilitiesPage_C::InitializeAbilityTiles()
 
 void UAbilitiesPage_C::AddTilesToButtonGroup(class UVerticalBox* ButtonContainer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.AddTilesToButtonGroup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x229f8e91);
 
 	UAbilitiesPage_C_AddTilesToButtonGroup_Params params;
 	params.ButtonContainer = ButtonContainer;
@@ -99,7 +103,8 @@ void UAbilitiesPage_C::AddTilesToButtonGroup(class UVerticalBox* ButtonContainer
 
 void UAbilitiesPage_C::HandleSelectedButtonChanged(class UCommonButton* InSelectedButton, int InSelectedButtonIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.HandleSelectedButtonChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c17ec6e);
 
 	UAbilitiesPage_C_HandleSelectedButtonChanged_Params params;
 	params.InSelectedButton = InSelectedButton;
@@ -120,7 +125,8 @@ void UAbilitiesPage_C::HandleSelectedButtonChanged(class UCommonButton* InSelect
 
 void UAbilitiesPage_C::OnAbilitySelected(class UCommonButton* AbilityButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.OnAbilitySelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb744439);
 
 	UAbilitiesPage_C_OnAbilitySelected_Params params;
 	params.AbilityButton = AbilityButton;
@@ -140,7 +146,8 @@ void UAbilitiesPage_C::OnAbilitySelected(class UCommonButton* AbilityButton)
 
 void UAbilitiesPage_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a2cfa48);
 
 	UAbilitiesPage_C_HandleBack_Params params;
 
@@ -160,7 +167,8 @@ void UAbilitiesPage_C::HandleBack(bool* PassThrough)
 
 void UAbilitiesPage_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d3097c1);
 
 	UAbilitiesPage_C_OnActivated_Params params;
 
@@ -179,7 +187,8 @@ void UAbilitiesPage_C::OnActivated()
 
 void UAbilitiesPage_C::OnQuickbarContentsChanged(EFortQuickBars QuickbarIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.OnQuickbarContentsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bc06ade);
 
 	UAbilitiesPage_C_OnQuickbarContentsChanged_Params params;
 	params.QuickbarIndex = QuickbarIndex;
@@ -197,7 +206,8 @@ void UAbilitiesPage_C::OnQuickbarContentsChanged(EFortQuickBars QuickbarIndex)
 
 void UAbilitiesPage_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90e63e4a);
 
 	UAbilitiesPage_C_Construct_Params params;
 
@@ -214,7 +224,8 @@ void UAbilitiesPage_C::Construct()
 
 void UAbilitiesPage_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46dd9516);
 
 	UAbilitiesPage_C_OnDeactivated_Params params;
 
@@ -233,7 +244,8 @@ void UAbilitiesPage_C::OnDeactivated()
 
 void UAbilitiesPage_C::ExecuteUbergraph_AbilitiesPage(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AbilitiesPage.AbilitiesPage_C.ExecuteUbergraph_AbilitiesPage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9e972ae);
 
 	UAbilitiesPage_C_ExecuteUbergraph_AbilitiesPage_Params params;
 	params.EntryPoint = EntryPoint;

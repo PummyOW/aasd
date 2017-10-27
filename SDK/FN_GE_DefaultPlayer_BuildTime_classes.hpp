@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_DefaultPlayer_BuildTime.GE_DefaultPlayer_BuildTime_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x49b264eb);
 		return ptr;
 	}
 

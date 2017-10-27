@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNL_GM_OnDmgCorrosion.GCNL_GM_OnDmgCorrosion_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99bb2f37);
 		return ptr;
 	}
 

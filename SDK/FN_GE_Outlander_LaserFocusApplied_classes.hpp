@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_Outlander_LaserFocusApplied.GE_Outlander_LaserFocusApplied_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc2e9035);
 		return ptr;
 	}
 

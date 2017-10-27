@@ -19,7 +19,8 @@ namespace SDK
 
 void UKillerPortraitWidget_C::Init(struct FFortKillerVisualInfo* KillerVisualInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function KillerPortraitWidget.KillerPortraitWidget_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c3f6d51);
 
 	UKillerPortraitWidget_C_Init_Params params;
 

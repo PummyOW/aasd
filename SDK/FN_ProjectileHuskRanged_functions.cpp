@@ -17,7 +17,8 @@ namespace SDK
 
 void AProjectileHuskRanged_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeac715f2);
 
 	AProjectileHuskRanged_C_UserConstructionScript_Params params;
 
@@ -43,7 +44,8 @@ void AProjectileHuskRanged_C::UserConstructionScript()
 
 void AProjectileHuskRanged_C::ReceiveHit(class UPrimitiveComponent** MyComp, class AActor** Other, class UPrimitiveComponent** OtherComp, bool* bSelfMoved, struct FVector* HitLocation, struct FVector* HitNormal, struct FVector* NormalImpulse, struct FHitResult* Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.ReceiveHit");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52d3b8c3);
 
 	AProjectileHuskRanged_C_ReceiveHit_Params params;
 	params.MyComp = MyComp;
@@ -68,7 +70,8 @@ void AProjectileHuskRanged_C::ReceiveHit(class UPrimitiveComponent** MyComp, cla
 
 void AProjectileHuskRanged_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1dbb745);
 
 	AProjectileHuskRanged_C_ReceiveBeginPlay_Params params;
 
@@ -85,7 +88,8 @@ void AProjectileHuskRanged_C::ReceiveBeginPlay()
 
 void AProjectileHuskRanged_C::ProjectileCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.ProjectileCheck");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9de6be2c);
 
 	AProjectileHuskRanged_C_ProjectileCheck_Params params;
 
@@ -102,7 +106,8 @@ void AProjectileHuskRanged_C::ProjectileCheck()
 
 void AProjectileHuskRanged_C::StopHoming()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.StopHoming");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x455f0895);
 
 	AProjectileHuskRanged_C_StopHoming_Params params;
 
@@ -122,7 +127,8 @@ void AProjectileHuskRanged_C::StopHoming()
 
 void AProjectileHuskRanged_C::OnExploded(TArray<class AActor*>* HitActors, TArray<struct FHitResult>* HitResults)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.OnExploded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38707b9b);
 
 	AProjectileHuskRanged_C_OnExploded_Params params;
 	params.HitActors = HitActors;
@@ -141,7 +147,8 @@ void AProjectileHuskRanged_C::OnExploded(TArray<class AActor*>* HitActors, TArra
 
 void AProjectileHuskRanged_C::OnStoppedOnServer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.OnStoppedOnServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb057d407);
 
 	AProjectileHuskRanged_C_OnStoppedOnServer_Params params;
 
@@ -160,7 +167,8 @@ void AProjectileHuskRanged_C::OnStoppedOnServer()
 
 void AProjectileHuskRanged_C::ExecuteUbergraph_ProjectileHuskRanged(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ProjectileHuskRanged.ProjectileHuskRanged_C.ExecuteUbergraph_ProjectileHuskRanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4365eaae);
 
 	AProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged_Params params;
 	params.EntryPoint = EntryPoint;

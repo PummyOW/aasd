@@ -17,7 +17,8 @@ namespace SDK
 
 void USquadStatsWidget_C::HandleAbilitySystemChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandleAbilitySystemChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1119110);
 
 	USquadStatsWidget_C_HandleAbilitySystemChanged_Params params;
 
@@ -34,7 +35,8 @@ void USquadStatsWidget_C::HandleAbilitySystemChanged()
 
 void USquadStatsWidget_C::BindToAttributeChanges()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.BindToAttributeChanges");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24444ee4);
 
 	USquadStatsWidget_C_BindToAttributeChanges_Params params;
 
@@ -53,7 +55,8 @@ void USquadStatsWidget_C::BindToAttributeChanges()
 
 void USquadStatsWidget_C::HandleActivityChanged(bool IsActive)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandleActivityChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4dd29f44);
 
 	USquadStatsWidget_C_HandleActivityChanged_Params params;
 	params.IsActive = IsActive;
@@ -71,7 +74,8 @@ void USquadStatsWidget_C::HandleActivityChanged(bool IsActive)
 
 void USquadStatsWidget_C::HandleAttributeChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandleAttributeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31c9672b);
 
 	USquadStatsWidget_C_HandleAttributeChanged_Params params;
 
@@ -90,7 +94,8 @@ void USquadStatsWidget_C::HandleAttributeChanged()
 
 void USquadStatsWidget_C::HighlightStat(int inStatIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HighlightStat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa132e75);
 
 	USquadStatsWidget_C_HighlightStat_Params params;
 	params.inStatIndex = inStatIndex;
@@ -108,7 +113,8 @@ void USquadStatsWidget_C::HighlightStat(int inStatIndex)
 
 void USquadStatsWidget_C::RefreshScroll()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.RefreshScroll");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7050199);
 
 	USquadStatsWidget_C_RefreshScroll_Params params;
 
@@ -125,7 +131,8 @@ void USquadStatsWidget_C::RefreshScroll()
 
 void USquadStatsWidget_C::UnbindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.UnbindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9546513);
 
 	USquadStatsWidget_C_UnbindDelegates_Params params;
 
@@ -142,7 +149,8 @@ void USquadStatsWidget_C::UnbindDelegates()
 
 void USquadStatsWidget_C::ToggleBetweenStats()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.ToggleBetweenStats");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xadbe7b84);
 
 	USquadStatsWidget_C_ToggleBetweenStats_Params params;
 
@@ -159,7 +167,8 @@ void USquadStatsWidget_C::ToggleBetweenStats()
 
 void USquadStatsWidget_C::BindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.BindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xabc11574);
 
 	USquadStatsWidget_C_BindDelegates_Params params;
 
@@ -176,7 +185,8 @@ void USquadStatsWidget_C::BindDelegates()
 
 void USquadStatsWidget_C::InitCoreStatsWidgetArray()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.InitCoreStatsWidgetArray");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6824eee);
 
 	USquadStatsWidget_C_InitCoreStatsWidgetArray_Params params;
 
@@ -193,7 +203,8 @@ void USquadStatsWidget_C::InitCoreStatsWidgetArray()
 
 void USquadStatsWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9a82700);
 
 	USquadStatsWidget_C_Construct_Params params;
 
@@ -212,7 +223,8 @@ void USquadStatsWidget_C::Construct()
 
 void USquadStatsWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7303a49f);
 
 	USquadStatsWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -232,7 +244,8 @@ void USquadStatsWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_37_C
 
 void USquadStatsWidget_C::BndEvt__CloseDetailedStats_K2Node_ComponentBoundEvent_119_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.BndEvt__CloseDetailedStats_K2Node_ComponentBoundEvent_119_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95e69ed5);
 
 	USquadStatsWidget_C_BndEvt__CloseDetailedStats_K2Node_ComponentBoundEvent_119_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -250,7 +263,8 @@ void USquadStatsWidget_C::BndEvt__CloseDetailedStats_K2Node_ComponentBoundEvent_
 
 void USquadStatsWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfcbe286f);
 
 	USquadStatsWidget_C_Destruct_Params params;
 
@@ -267,7 +281,8 @@ void USquadStatsWidget_C::Destruct()
 
 void USquadStatsWidget_C::HandleSquadSlottingPreviewStateChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.HandleSquadSlottingPreviewStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb705ea88);
 
 	USquadStatsWidget_C_HandleSquadSlottingPreviewStateChanged_Params params;
 
@@ -286,7 +301,8 @@ void USquadStatsWidget_C::HandleSquadSlottingPreviewStateChanged()
 
 void USquadStatsWidget_C::ExecuteUbergraph_SquadStatsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.ExecuteUbergraph_SquadStatsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaccae30a);
 
 	USquadStatsWidget_C_ExecuteUbergraph_SquadStatsWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -304,7 +320,8 @@ void USquadStatsWidget_C::ExecuteUbergraph_SquadStatsWidget(int EntryPoint)
 
 void USquadStatsWidget_C::DetailedStatsClosed__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadStatsWidget.SquadStatsWidget_C.DetailedStatsClosed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc32b7f3d);
 
 	USquadStatsWidget_C_DetailedStatsClosed__DelegateSignature_Params params;
 

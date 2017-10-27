@@ -19,7 +19,8 @@ namespace SDK
 
 void ACheckFrontEndDailyRewardsAction_C::IsFrontEndRewards_Running(bool* IsRunning)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.IsFrontEndRewards Running");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c123760);
 
 	ACheckFrontEndDailyRewardsAction_C_IsFrontEndRewards_Running_Params params;
 
@@ -41,7 +42,8 @@ void ACheckFrontEndDailyRewardsAction_C::IsFrontEndRewards_Running(bool* IsRunni
 
 void ACheckFrontEndDailyRewardsAction_C::Daily_Rewards_Open(bool* bRunning)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.Daily Rewards Open");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65d7e542);
 
 	ACheckFrontEndDailyRewardsAction_C_Daily_Rewards_Open_Params params;
 
@@ -61,7 +63,8 @@ void ACheckFrontEndDailyRewardsAction_C::Daily_Rewards_Open(bool* bRunning)
 
 void ACheckFrontEndDailyRewardsAction_C::CompleteDailyRewardAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.CompleteDailyRewardAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0df949e);
 
 	ACheckFrontEndDailyRewardsAction_C_CompleteDailyRewardAction_Params params;
 
@@ -78,7 +81,8 @@ void ACheckFrontEndDailyRewardsAction_C::CompleteDailyRewardAction()
 
 void ACheckFrontEndDailyRewardsAction_C::ShowDailyRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.ShowDailyRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a97eca1);
 
 	ACheckFrontEndDailyRewardsAction_C_ShowDailyRewards_Params params;
 
@@ -95,7 +99,8 @@ void ACheckFrontEndDailyRewardsAction_C::ShowDailyRewards()
 
 void ACheckFrontEndDailyRewardsAction_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6c37a28);
 
 	ACheckFrontEndDailyRewardsAction_C_UserConstructionScript_Params params;
 
@@ -114,7 +119,8 @@ void ACheckFrontEndDailyRewardsAction_C::UserConstructionScript()
 
 void ACheckFrontEndDailyRewardsAction_C::Execute(struct FFortScriptedActionParams* Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.Execute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x609417d8);
 
 	ACheckFrontEndDailyRewardsAction_C_Execute_Params params;
 	params.Params = Params;
@@ -136,7 +142,8 @@ void ACheckFrontEndDailyRewardsAction_C::Execute(struct FFortScriptedActionParam
 
 void ACheckFrontEndDailyRewardsAction_C::HandleClientEvent_FinishedModalQueue(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.HandleClientEvent_FinishedModalQueue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94356ead);
 
 	ACheckFrontEndDailyRewardsAction_C_HandleClientEvent_FinishedModalQueue_Params params;
 	params.EventSource = EventSource;
@@ -158,7 +165,8 @@ void ACheckFrontEndDailyRewardsAction_C::HandleClientEvent_FinishedModalQueue(cl
 
 void ACheckFrontEndDailyRewardsAction_C::ExecuteUbergraph_CheckFrontEndDailyRewardsAction(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckFrontEndDailyRewardsAction.CheckFrontEndDailyRewardsAction_C.ExecuteUbergraph_CheckFrontEndDailyRewardsAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x862f11d2);
 
 	ACheckFrontEndDailyRewardsAction_C_ExecuteUbergraph_CheckFrontEndDailyRewardsAction_Params params;
 	params.EntryPoint = EntryPoint;

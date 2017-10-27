@@ -29,8 +29,8 @@ struct UItemManagementInventoryLimitStatusIndicator_C_RefreshWorldInventoryStatu
 {
 };
 
-// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackVaultInventory
-struct UItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory_Params
+// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackAccountInventory
+struct UItemManagementInventoryLimitStatusIndicator_C_TrackAccountInventory_Params
 {
 };
 
@@ -66,6 +66,12 @@ struct UItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChang
 {
 	TArray<class UFortWorldItem*>                      ItemsAdded;                                               // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
 	TArray<class UFortWorldItem*>                      ItemsRemoved;                                             // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+};
+
+// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleDeployableBaseInventoryChanged
+struct UItemManagementInventoryLimitStatusIndicator_C_HandleDeployableBaseInventoryChanged_Params
+{
+	class ADeployableBasePlot*                         Plot;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.ExecuteUbergraph_ItemManagementInventoryLimitStatusIndicator

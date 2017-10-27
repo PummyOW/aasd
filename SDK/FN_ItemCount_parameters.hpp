@@ -14,6 +14,24 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function ItemCount.ItemCount_C.SetBrushAndTextStyle
+struct UItemCount_C_SetBrushAndTextStyle_Params
+{
+	TEnumAsByte<EFortBrushSize>                        InBrushSize;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      InStyle;                                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemCount.ItemCount_C.UpdateOverrideState
+struct UItemCount_C_UpdateOverrideState_Params
+{
+};
+
+// Function ItemCount.ItemCount_C.SetOverrideValue
+struct UItemCount_C_SetOverrideValue_Params
+{
+	int                                                OverrrideValue;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function ItemCount.ItemCount_C.SetIsBeingPreviewed
 struct UItemCount_C_SetIsBeingPreviewed_Params
 {

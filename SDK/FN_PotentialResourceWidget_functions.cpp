@@ -20,7 +20,8 @@ namespace SDK
 
 void UPotentialResourceWidget_C::ShowPotentialResource(class UFortItem* PotentialResource, bool bWeakpointDamage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.ShowPotentialResource");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9461668e);
 
 	UPotentialResourceWidget_C_ShowPotentialResource_Params params;
 	params.PotentialResource = PotentialResource;
@@ -39,7 +40,8 @@ void UPotentialResourceWidget_C::ShowPotentialResource(class UFortItem* Potentia
 
 void UPotentialResourceWidget_C::SetupFont()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.SetupFont");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb367ee15);
 
 	UPotentialResourceWidget_C_SetupFont_Params params;
 
@@ -59,7 +61,8 @@ void UPotentialResourceWidget_C::SetupFont()
 
 void UPotentialResourceWidget_C::GetResourceCountAsText(class UFortItem* Resource, struct FText* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.GetResourceCountAsText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x225eae87);
 
 	UPotentialResourceWidget_C_GetResourceCountAsText_Params params;
 	params.Resource = Resource;
@@ -80,7 +83,8 @@ void UPotentialResourceWidget_C::GetResourceCountAsText(class UFortItem* Resourc
 
 void UPotentialResourceWidget_C::UpdateResourceCountText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.UpdateResourceCountText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4dde700);
 
 	UPotentialResourceWidget_C_UpdateResourceCountText_Params params;
 
@@ -97,7 +101,8 @@ void UPotentialResourceWidget_C::UpdateResourceCountText()
 
 void UPotentialResourceWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe12ed836);
 
 	UPotentialResourceWidget_C_Construct_Params params;
 
@@ -114,7 +119,8 @@ void UPotentialResourceWidget_C::Construct()
 
 void UPotentialResourceWidget_C::HandleTranslateAndFadeUpFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.HandleTranslateAndFadeUpFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30e4d47b);
 
 	UPotentialResourceWidget_C_HandleTranslateAndFadeUpFinished_Params params;
 
@@ -133,7 +139,8 @@ void UPotentialResourceWidget_C::HandleTranslateAndFadeUpFinished()
 
 void UPotentialResourceWidget_C::ExecuteUbergraph_PotentialResourceWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.ExecuteUbergraph_PotentialResourceWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x934f0dbf);
 
 	UPotentialResourceWidget_C_ExecuteUbergraph_PotentialResourceWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -151,7 +158,8 @@ void UPotentialResourceWidget_C::ExecuteUbergraph_PotentialResourceWidget(int En
 
 void UPotentialResourceWidget_C::FinishedShowing__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PotentialResourceWidget.PotentialResourceWidget_C.FinishedShowing__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59d45831);
 
 	UPotentialResourceWidget_C_FinishedShowing__DelegateSignature_Params params;
 

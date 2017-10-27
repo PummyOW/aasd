@@ -21,7 +21,8 @@ namespace SDK
 
 bool UGCNStatic_MantisStrike_C::OnExecute(class AActor** MyTarget, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNStatic_MantisStrike.GCNStatic_MantisStrike_C.OnExecute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7db33bf);
 
 	UGCNStatic_MantisStrike_C_OnExecute_Params params;
 	params.MyTarget = MyTarget;

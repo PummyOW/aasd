@@ -19,7 +19,8 @@ namespace SDK
 
 void UResults_PlayerScoreRow_C::InitializeHomeBasePower(const struct FUniqueNetIdRepl& PlayerID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializeHomeBasePower");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe725fdf2);
 
 	UResults_PlayerScoreRow_C_InitializeHomeBasePower_Params params;
 	params.PlayerID = PlayerID;
@@ -40,7 +41,8 @@ void UResults_PlayerScoreRow_C::InitializeHomeBasePower(const struct FUniqueNetI
 
 void UResults_PlayerScoreRow_C::InitializePlayerName(class UFortUIScoreReport* ScoreReport, int ScoreReportReferece)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializePlayerName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x893ec4cb);
 
 	UResults_PlayerScoreRow_C_InitializePlayerName_Params params;
 	params.ScoreReport = ScoreReport;
@@ -62,7 +64,8 @@ void UResults_PlayerScoreRow_C::InitializePlayerName(class UFortUIScoreReport* S
 
 void UResults_PlayerScoreRow_C::InitializeScores(class UFortUIScoreReport* InScoreReport, int InScoreReportIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializeScores");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6774511c);
 
 	UResults_PlayerScoreRow_C_InitializeScores_Params params;
 	params.InScoreReport = InScoreReport;
@@ -81,7 +84,8 @@ void UResults_PlayerScoreRow_C::InitializeScores(class UFortUIScoreReport* InSco
 
 void UResults_PlayerScoreRow_C::InitializeBackground()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.InitializeBackground");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55b6e69d);
 
 	UResults_PlayerScoreRow_C_InitializeBackground_Params params;
 
@@ -101,7 +105,8 @@ void UResults_PlayerScoreRow_C::InitializeBackground()
 
 void UResults_PlayerScoreRow_C::Initialize(class UFortUIScoreReport* ScoreReport, int ScoreReportIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4c54689);
 
 	UResults_PlayerScoreRow_C_Initialize_Params params;
 	params.ScoreReport = ScoreReport;
@@ -122,7 +127,8 @@ void UResults_PlayerScoreRow_C::Initialize(class UFortUIScoreReport* ScoreReport
 
 void UResults_PlayerScoreRow_C::Manual_Pre_Construct(bool bIsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.Manual Pre Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf023daad);
 
 	UResults_PlayerScoreRow_C_Manual_Pre_Construct_Params params;
 	params.bIsDesignTime = bIsDesignTime;
@@ -142,7 +148,8 @@ void UResults_PlayerScoreRow_C::Manual_Pre_Construct(bool bIsDesignTime)
 
 void UResults_PlayerScoreRow_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd435a7f5);
 
 	UResults_PlayerScoreRow_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -162,7 +169,8 @@ void UResults_PlayerScoreRow_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_PlayerScoreRow_C::ExecuteUbergraph_Results_PlayerScoreRow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreRow.Results_PlayerScoreRow_C.ExecuteUbergraph_Results_PlayerScoreRow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5eeecedb);
 
 	UResults_PlayerScoreRow_C_ExecuteUbergraph_Results_PlayerScoreRow_Params params;
 	params.EntryPoint = EntryPoint;

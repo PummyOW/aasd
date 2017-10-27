@@ -17,7 +17,8 @@ namespace SDK
 
 void UScrollingTextButton_C::SetInitialMouseKeyboardStyle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.SetInitialMouseKeyboardStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1998dd7e);
 
 	UScrollingTextButton_C_SetInitialMouseKeyboardStyle_Params params;
 
@@ -34,7 +35,8 @@ void UScrollingTextButton_C::SetInitialMouseKeyboardStyle()
 
 void UScrollingTextButton_C::UpdateTextStyle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.UpdateTextStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29f80838);
 
 	UScrollingTextButton_C_UpdateTextStyle_Params params;
 
@@ -53,7 +55,8 @@ void UScrollingTextButton_C::UpdateTextStyle()
 
 void UScrollingTextButton_C::SetContentAlignment(TEnumAsByte<EHorizontalAlignment> ContentAlignment)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.SetContentAlignment");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdafcaff);
 
 	UScrollingTextButton_C_SetContentAlignment_Params params;
 	params.ContentAlignment = ContentAlignment;
@@ -71,7 +74,8 @@ void UScrollingTextButton_C::SetContentAlignment(TEnumAsByte<EHorizontalAlignmen
 
 void UScrollingTextButton_C::UpdateContentAlignment()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.UpdateContentAlignment");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e4edd7a);
 
 	UScrollingTextButton_C_UpdateContentAlignment_Params params;
 
@@ -90,7 +94,8 @@ void UScrollingTextButton_C::UpdateContentAlignment()
 
 void UScrollingTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.SetMouseKeyboardStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9eb32da8);
 
 	UScrollingTextButton_C_SetMouseKeyboardStyle_Params params;
 	params.ControllerInputStyle = ControllerInputStyle;
@@ -110,7 +115,8 @@ void UScrollingTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInput
 
 void UScrollingTextButton_C::UpdateStyle(bool UsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.UpdateStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa66a493f);
 
 	UScrollingTextButton_C_UpdateStyle_Params params;
 	params.UsingGamepad = UsingGamepad;
@@ -128,7 +134,8 @@ void UScrollingTextButton_C::UpdateStyle(bool UsingGamepad)
 
 void UScrollingTextButton_C::UpdateText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.UpdateText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6225e855);
 
 	UScrollingTextButton_C_UpdateText_Params params;
 
@@ -147,7 +154,8 @@ void UScrollingTextButton_C::UpdateText()
 
 void UScrollingTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.SetControllerStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb01d9f74);
 
 	UScrollingTextButton_C_SetControllerStyle_Params params;
 	params.ControllerInputStyle = ControllerInputStyle;
@@ -167,7 +175,8 @@ void UScrollingTextButton_C::SetControllerStyle(class UClass* ControllerInputSty
 
 void UScrollingTextButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.UpdateTextAndStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4198867f);
 
 	UScrollingTextButton_C_UpdateTextAndStyle_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -185,7 +194,8 @@ void UScrollingTextButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 
 void UScrollingTextButton_C::InitializeButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.InitializeButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6e5cc15);
 
 	UScrollingTextButton_C_InitializeButton_Params params;
 
@@ -204,7 +214,8 @@ void UScrollingTextButton_C::InitializeButton()
 
 void UScrollingTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd36de7d0);
 
 	UScrollingTextButton_C_Set_Icon_Params params;
 	params.IconBrush = IconBrush;
@@ -224,7 +235,8 @@ void UScrollingTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UScrollingTextButton_C::Set_Text(const struct FText& ButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c188a9a);
 
 	UScrollingTextButton_C_Set_Text_Params params;
 	params.ButtonText = ButtonText;
@@ -242,7 +254,8 @@ void UScrollingTextButton_C::Set_Text(const struct FText& ButtonText)
 
 void UScrollingTextButton_C::OnCurrentTextStyleChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.OnCurrentTextStyleChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b242637);
 
 	UScrollingTextButton_C_OnCurrentTextStyleChanged_Params params;
 
@@ -261,7 +274,8 @@ void UScrollingTextButton_C::OnCurrentTextStyleChanged()
 
 void UScrollingTextButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde3ffed1);
 
 	UScrollingTextButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -281,7 +295,8 @@ void UScrollingTextButton_C::PreConstruct(bool* IsDesignTime)
 
 void UScrollingTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.SetTabLabelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x933e9168);
 
 	UScrollingTextButton_C_SetTabLabelInfo_Params params;
 	params.TabLabelInfo = TabLabelInfo;
@@ -301,7 +316,8 @@ void UScrollingTextButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInf
 
 void UScrollingTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62b9a45e);
 
 	UScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -321,7 +337,8 @@ void UScrollingTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBo
 
 void UScrollingTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle* NewTriggeredAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.OnTriggeredInputActionChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb10db8b9);
 
 	UScrollingTextButton_C_OnTriggeredInputActionChanged_Params params;
 	params.NewTriggeredAction = NewTriggeredAction;
@@ -341,7 +358,8 @@ void UScrollingTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowH
 
 void UScrollingTextButton_C::OnActionProgress(float* HeldPercent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.OnActionProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1f206e3);
 
 	UScrollingTextButton_C_OnActionProgress_Params params;
 	params.HeldPercent = HeldPercent;
@@ -359,7 +377,8 @@ void UScrollingTextButton_C::OnActionProgress(float* HeldPercent)
 
 void UScrollingTextButton_C::OnActionComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.OnActionComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb527609f);
 
 	UScrollingTextButton_C_OnActionComplete_Params params;
 
@@ -376,7 +395,8 @@ void UScrollingTextButton_C::OnActionComplete()
 
 void UScrollingTextButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x517ee67a);
 
 	UScrollingTextButton_C_Construct_Params params;
 
@@ -395,7 +415,8 @@ void UScrollingTextButton_C::Construct()
 
 void UScrollingTextButton_C::ExecuteUbergraph_ScrollingTextButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScrollingTextButton.ScrollingTextButton_C.ExecuteUbergraph_ScrollingTextButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc59b9a8d);
 
 	UScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton_Params params;
 	params.EntryPoint = EntryPoint;

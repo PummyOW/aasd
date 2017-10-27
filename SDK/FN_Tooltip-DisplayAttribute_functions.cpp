@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UTooltip_DisplayAttribute_C::GetToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.GetToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2003a856);
 
 	UTooltip_DisplayAttribute_C_GetToolTipWidget_Params params;
 
@@ -38,7 +39,8 @@ class UWidget* UTooltip_DisplayAttribute_C::GetToolTipWidget()
 
 void UTooltip_DisplayAttribute_C::UpdateValueText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.UpdateValueText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf39b274a);
 
 	UTooltip_DisplayAttribute_C_UpdateValueText_Params params;
 
@@ -55,7 +57,8 @@ void UTooltip_DisplayAttribute_C::UpdateValueText()
 
 void UTooltip_DisplayAttribute_C::Update_Base___Buff_Colors()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.Update Base & Buff Colors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb64d5bc0);
 
 	UTooltip_DisplayAttribute_C_Update_Base___Buff_Colors_Params params;
 
@@ -72,7 +75,8 @@ void UTooltip_DisplayAttribute_C::Update_Base___Buff_Colors()
 
 void UTooltip_DisplayAttribute_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7bad3434);
 
 	UTooltip_DisplayAttribute_C_Update_Params params;
 
@@ -89,7 +93,8 @@ void UTooltip_DisplayAttribute_C::Update()
 
 void UTooltip_DisplayAttribute_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc314c9e);
 
 	UTooltip_DisplayAttribute_C_Construct_Params params;
 
@@ -106,7 +111,8 @@ void UTooltip_DisplayAttribute_C::Construct()
 
 void UTooltip_DisplayAttribute_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1026_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1026_OnButtonHoverEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0e4414d);
 
 	UTooltip_DisplayAttribute_C_BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1026_OnButtonHoverEvent__DelegateSignature_Params params;
 
@@ -123,7 +129,8 @@ void UTooltip_DisplayAttribute_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent
 
 void UTooltip_DisplayAttribute_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_OnButtonHoverEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2df8383);
 
 	UTooltip_DisplayAttribute_C_BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_OnButtonHoverEvent__DelegateSignature_Params params;
 
@@ -140,7 +147,8 @@ void UTooltip_DisplayAttribute_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent
 
 void UTooltip_DisplayAttribute_C::DisplayAttributeChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.DisplayAttributeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x864a6e3f);
 
 	UTooltip_DisplayAttribute_C_DisplayAttributeChanged_Params params;
 
@@ -159,7 +167,8 @@ void UTooltip_DisplayAttribute_C::DisplayAttributeChanged()
 
 void UTooltip_DisplayAttribute_C::ValueChanged(float* Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.ValueChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f741d52);
 
 	UTooltip_DisplayAttribute_C_ValueChanged_Params params;
 	params.Delta = Delta;
@@ -177,7 +186,8 @@ void UTooltip_DisplayAttribute_C::ValueChanged(float* Delta)
 
 void UTooltip_DisplayAttribute_C::PreviewStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.PreviewStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf79631d4);
 
 	UTooltip_DisplayAttribute_C_PreviewStarted_Params params;
 
@@ -194,7 +204,8 @@ void UTooltip_DisplayAttribute_C::PreviewStarted()
 
 void UTooltip_DisplayAttribute_C::PreviewEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.PreviewEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc4ec087);
 
 	UTooltip_DisplayAttribute_C_PreviewEnded_Params params;
 
@@ -213,7 +224,8 @@ void UTooltip_DisplayAttribute_C::PreviewEnded()
 
 void UTooltip_DisplayAttribute_C::ExecuteUbergraph_Tooltip_DisplayAttribute(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-DisplayAttribute.Tooltip-DisplayAttribute_C.ExecuteUbergraph_Tooltip-DisplayAttribute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ad705c7);
 
 	UTooltip_DisplayAttribute_C_ExecuteUbergraph_Tooltip_DisplayAttribute_Params params;
 	params.EntryPoint = EntryPoint;

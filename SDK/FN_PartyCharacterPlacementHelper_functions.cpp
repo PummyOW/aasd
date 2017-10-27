@@ -19,7 +19,8 @@ namespace SDK
 
 void APartyCharacterPlacementHelper_C::OnPartyDataChanged(struct FFortTeamMemberInfo* MemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnPartyDataChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c593b00);
 
 	APartyCharacterPlacementHelper_C_OnPartyDataChanged_Params params;
 
@@ -41,7 +42,8 @@ void APartyCharacterPlacementHelper_C::OnPartyDataChanged(struct FFortTeamMember
 
 void APartyCharacterPlacementHelper_C::CompletedQuestPrerequisites(bool* bCompleted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.CompletedQuestPrerequisites");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ed06f99);
 
 	APartyCharacterPlacementHelper_C_CompletedQuestPrerequisites_Params params;
 
@@ -63,7 +65,8 @@ void APartyCharacterPlacementHelper_C::CompletedQuestPrerequisites(bool* bComple
 
 void APartyCharacterPlacementHelper_C::IsInLobby(bool* IsInLobby)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.IsInLobby");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb2323a);
 
 	APartyCharacterPlacementHelper_C_IsInLobby_Params params;
 
@@ -85,7 +88,8 @@ void APartyCharacterPlacementHelper_C::IsInLobby(bool* IsInLobby)
 
 void APartyCharacterPlacementHelper_C::PlayLobbyAnimation(int PartyMemberIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.PlayLobbyAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75949afb);
 
 	APartyCharacterPlacementHelper_C_PlayLobbyAnimation_Params params;
 	params.PartyMemberIndex = PartyMemberIndex;
@@ -103,7 +107,8 @@ void APartyCharacterPlacementHelper_C::PlayLobbyAnimation(int PartyMemberIndex)
 
 void APartyCharacterPlacementHelper_C::OnLobbyDisconnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnLobbyDisconnected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32393a51);
 
 	APartyCharacterPlacementHelper_C_OnLobbyDisconnected_Params params;
 
@@ -120,7 +125,8 @@ void APartyCharacterPlacementHelper_C::OnLobbyDisconnected()
 
 void APartyCharacterPlacementHelper_C::RefreshWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.RefreshWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c71b5fb);
 
 	APartyCharacterPlacementHelper_C_RefreshWidgets_Params params;
 
@@ -137,7 +143,8 @@ void APartyCharacterPlacementHelper_C::RefreshWidgets()
 
 void APartyCharacterPlacementHelper_C::InitializeWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.InitializeWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x102a4700);
 
 	APartyCharacterPlacementHelper_C_InitializeWidgets_Params params;
 
@@ -156,7 +163,8 @@ void APartyCharacterPlacementHelper_C::InitializeWidgets()
 
 void APartyCharacterPlacementHelper_C::OnLobbyPlayerUnhovered(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnLobbyPlayerUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x710c58f7);
 
 	APartyCharacterPlacementHelper_C_OnLobbyPlayerUnhovered_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -176,7 +184,8 @@ void APartyCharacterPlacementHelper_C::OnLobbyPlayerUnhovered(int PlayerIndex)
 
 void APartyCharacterPlacementHelper_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnTeamMemberStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67c89fdc);
 
 	APartyCharacterPlacementHelper_C_OnTeamMemberStateChanged_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -196,7 +205,8 @@ void APartyCharacterPlacementHelper_C::OnTeamMemberStateChanged(const struct FFo
 
 void APartyCharacterPlacementHelper_C::OnTeamMemberRemoved(int TeamMemberRemovedInt)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnTeamMemberRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa40e698f);
 
 	APartyCharacterPlacementHelper_C_OnTeamMemberRemoved_Params params;
 	params.TeamMemberRemovedInt = TeamMemberRemovedInt;
@@ -216,7 +226,8 @@ void APartyCharacterPlacementHelper_C::OnTeamMemberRemoved(int TeamMemberRemoved
 
 void APartyCharacterPlacementHelper_C::OnTeamMemberAdded(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnTeamMemberAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x160f5721);
 
 	APartyCharacterPlacementHelper_C_OnTeamMemberAdded_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -237,7 +248,8 @@ void APartyCharacterPlacementHelper_C::OnTeamMemberAdded(const struct FFortTeamM
 
 void APartyCharacterPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera NewCamera, EFrontEndCamera OldCamera)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnFrontEndCameraChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11c5133);
 
 	APartyCharacterPlacementHelper_C_OnFrontEndCameraChanged_Params params;
 	params.NewCamera = NewCamera;
@@ -256,7 +268,8 @@ void APartyCharacterPlacementHelper_C::OnFrontEndCameraChanged(EFrontEndCamera N
 
 void APartyCharacterPlacementHelper_C::OnLobbyStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnLobbyStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c196557);
 
 	APartyCharacterPlacementHelper_C_OnLobbyStarted_Params params;
 
@@ -273,7 +286,8 @@ void APartyCharacterPlacementHelper_C::OnLobbyStarted()
 
 void APartyCharacterPlacementHelper_C::InitializePadUI()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.InitializePadUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe19211a);
 
 	APartyCharacterPlacementHelper_C_InitializePadUI_Params params;
 
@@ -290,7 +304,8 @@ void APartyCharacterPlacementHelper_C::InitializePadUI()
 
 void APartyCharacterPlacementHelper_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb96bf6e9);
 
 	APartyCharacterPlacementHelper_C_Initialize_Params params;
 
@@ -307,7 +322,8 @@ void APartyCharacterPlacementHelper_C::Initialize()
 
 void APartyCharacterPlacementHelper_C::InitializeContextEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.InitializeContextEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71ae050d);
 
 	APartyCharacterPlacementHelper_C_InitializeContextEvents_Params params;
 
@@ -326,7 +342,8 @@ void APartyCharacterPlacementHelper_C::InitializeContextEvents()
 
 void APartyCharacterPlacementHelper_C::OnLobbyPlayerUnselected(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnLobbyPlayerUnselected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89e31159);
 
 	APartyCharacterPlacementHelper_C_OnLobbyPlayerUnselected_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -346,7 +363,8 @@ void APartyCharacterPlacementHelper_C::OnLobbyPlayerUnselected(int PlayerIndex)
 
 void APartyCharacterPlacementHelper_C::OnLobbyPlayerSelected(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnLobbyPlayerSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b75458c);
 
 	APartyCharacterPlacementHelper_C_OnLobbyPlayerSelected_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -366,7 +384,8 @@ void APartyCharacterPlacementHelper_C::OnLobbyPlayerSelected(int PlayerIndex)
 
 void APartyCharacterPlacementHelper_C::OnLobbyPlayerHovered(int PlayerIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.OnLobbyPlayerHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ff7c2ac);
 
 	APartyCharacterPlacementHelper_C_OnLobbyPlayerHovered_Params params;
 	params.PlayerIndex = PlayerIndex;
@@ -384,7 +403,8 @@ void APartyCharacterPlacementHelper_C::OnLobbyPlayerHovered(int PlayerIndex)
 
 void APartyCharacterPlacementHelper_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ba4f020);
 
 	APartyCharacterPlacementHelper_C_UserConstructionScript_Params params;
 
@@ -401,7 +421,8 @@ void APartyCharacterPlacementHelper_C::UserConstructionScript()
 
 void APartyCharacterPlacementHelper_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d217947);
 
 	APartyCharacterPlacementHelper_C_ReceiveBeginPlay_Params params;
 
@@ -422,7 +443,8 @@ void APartyCharacterPlacementHelper_C::ReceiveBeginPlay()
 
 void APartyCharacterPlacementHelper_C::HandleClientEvent_StoreTabClosed(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.HandleClientEvent_StoreTabClosed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95655b6b);
 
 	APartyCharacterPlacementHelper_C_HandleClientEvent_StoreTabClosed_Params params;
 	params.EventSource = EventSource;
@@ -446,7 +468,8 @@ void APartyCharacterPlacementHelper_C::HandleClientEvent_StoreTabClosed(class UO
 
 void APartyCharacterPlacementHelper_C::HandleClientEvent_StoreTabSelected(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.HandleClientEvent_StoreTabSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd26c568);
 
 	APartyCharacterPlacementHelper_C_HandleClientEvent_StoreTabSelected_Params params;
 	params.EventSource = EventSource;
@@ -468,7 +491,8 @@ void APartyCharacterPlacementHelper_C::HandleClientEvent_StoreTabSelected(class 
 
 void APartyCharacterPlacementHelper_C::ExecuteUbergraph_PartyCharacterPlacementHelper(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.ExecuteUbergraph_PartyCharacterPlacementHelper");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad67d683);
 
 	APartyCharacterPlacementHelper_C_ExecuteUbergraph_PartyCharacterPlacementHelper_Params params;
 	params.EntryPoint = EntryPoint;
@@ -486,7 +510,8 @@ void APartyCharacterPlacementHelper_C::ExecuteUbergraph_PartyCharacterPlacementH
 
 void APartyCharacterPlacementHelper_C::NewEventDispatcher_0__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PartyCharacterPlacementHelper.PartyCharacterPlacementHelper_C.NewEventDispatcher_0__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe12bd0da);
 
 	APartyCharacterPlacementHelper_C_NewEventDispatcher_0__DelegateSignature_Params params;
 

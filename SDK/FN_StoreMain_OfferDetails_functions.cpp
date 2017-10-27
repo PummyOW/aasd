@@ -17,7 +17,8 @@ namespace SDK
 
 void UStoreMain_OfferDetails_C::PopDetails()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.PopDetails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e7e035c);
 
 	UStoreMain_OfferDetails_C_PopDetails_Params params;
 
@@ -34,7 +35,8 @@ void UStoreMain_OfferDetails_C::PopDetails()
 
 void UStoreMain_OfferDetails_C::Init()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8224a2f);
 
 	UStoreMain_OfferDetails_C_Init_Params params;
 
@@ -53,7 +55,8 @@ void UStoreMain_OfferDetails_C::Init()
 
 void UStoreMain_OfferDetails_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x969eba7e);
 
 	UStoreMain_OfferDetails_C_HandleBack_Params params;
 
@@ -73,7 +76,8 @@ void UStoreMain_OfferDetails_C::HandleBack(bool* PassThrough)
 
 void UStoreMain_OfferDetails_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6a4f29b);
 
 	UStoreMain_OfferDetails_C_OnActivated_Params params;
 
@@ -90,7 +94,8 @@ void UStoreMain_OfferDetails_C::OnActivated()
 
 void UStoreMain_OfferDetails_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x78ad6c20);
 
 	UStoreMain_OfferDetails_C_OnDeactivated_Params params;
 
@@ -109,7 +114,8 @@ void UStoreMain_OfferDetails_C::OnDeactivated()
 
 void UStoreMain_OfferDetails_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaecb9def);
 
 	UStoreMain_OfferDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -129,7 +135,8 @@ void UStoreMain_OfferDetails_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEven
 
 void UStoreMain_OfferDetails_C::HandlePurchaseComplete(bool bSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.HandlePurchaseComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2cbe473);
 
 	UStoreMain_OfferDetails_C_HandlePurchaseComplete_Params params;
 	params.bSuccess = bSuccess;
@@ -147,7 +154,8 @@ void UStoreMain_OfferDetails_C::HandlePurchaseComplete(bool bSuccess)
 
 void UStoreMain_OfferDetails_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x504583ec);
 
 	UStoreMain_OfferDetails_C_Construct_Params params;
 
@@ -164,7 +172,8 @@ void UStoreMain_OfferDetails_C::Construct()
 
 void UStoreMain_OfferDetails_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa59f5713);
 
 	UStoreMain_OfferDetails_C_Destruct_Params params;
 
@@ -183,7 +192,8 @@ void UStoreMain_OfferDetails_C::Destruct()
 
 void UStoreMain_OfferDetails_C::ExecuteUbergraph_StoreMain_OfferDetails(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.ExecuteUbergraph_StoreMain_OfferDetails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x718fbd8a);
 
 	UStoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails_Params params;
 	params.EntryPoint = EntryPoint;

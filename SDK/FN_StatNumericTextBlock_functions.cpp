@@ -19,7 +19,8 @@ namespace SDK
 
 void UStatNumericTextBlock_C::SetComparisonState(EFortBuffState Buff_State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatNumericTextBlock.StatNumericTextBlock_C.SetComparisonState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf4cc85b);
 
 	UStatNumericTextBlock_C_SetComparisonState_Params params;
 	params.Buff_State = Buff_State;
@@ -37,7 +38,8 @@ void UStatNumericTextBlock_C::SetComparisonState(EFortBuffState Buff_State)
 
 void UStatNumericTextBlock_C::UpdateComparison()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatNumericTextBlock.StatNumericTextBlock_C.UpdateComparison");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d3a0f3d);
 
 	UStatNumericTextBlock_C_UpdateComparison_Params params;
 
@@ -54,7 +56,8 @@ void UStatNumericTextBlock_C::UpdateComparison()
 
 void UStatNumericTextBlock_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatNumericTextBlock.StatNumericTextBlock_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95f28ac8);
 
 	UStatNumericTextBlock_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UStatNumericTextBlock_C::Construct()
 
 void UStatNumericTextBlock_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatNumericTextBlock.StatNumericTextBlock_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa8f3b457);
 
 	UStatNumericTextBlock_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -93,7 +97,8 @@ void UStatNumericTextBlock_C::PreConstruct(bool* IsDesignTime)
 
 void UStatNumericTextBlock_C::ExecuteUbergraph_StatNumericTextBlock(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatNumericTextBlock.StatNumericTextBlock_C.ExecuteUbergraph_StatNumericTextBlock");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x648fa6e4);
 
 	UStatNumericTextBlock_C_ExecuteUbergraph_StatNumericTextBlock_Params params;
 	params.EntryPoint = EntryPoint;

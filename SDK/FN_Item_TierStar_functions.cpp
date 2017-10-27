@@ -17,7 +17,8 @@ namespace SDK
 
 void UItem_TierStar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Item_TierStar.Item_TierStar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7508037e);
 
 	UItem_TierStar_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UItem_TierStar_C::Construct()
 
 void UItem_TierStar_C::ExecuteUbergraph_Item_TierStar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Item_TierStar.Item_TierStar_C.ExecuteUbergraph_Item_TierStar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73dd2dad);
 
 	UItem_TierStar_C_ExecuteUbergraph_Item_TierStar_Params params;
 	params.EntryPoint = EntryPoint;

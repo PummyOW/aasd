@@ -19,7 +19,8 @@ namespace SDK
 
 void UActiveModifierItemHUD_C::AssignIcon(const struct FSlateBrush& inIconSlateBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifierItemHUD.ActiveModifierItemHUD_C.AssignIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a69e877);
 
 	UActiveModifierItemHUD_C_AssignIcon_Params params;
 	params.inIconSlateBrush = inIconSlateBrush;

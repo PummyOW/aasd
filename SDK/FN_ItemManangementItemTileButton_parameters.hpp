@@ -119,6 +119,11 @@ struct UItemManangementItemTileButton_C_Construct_Params
 {
 };
 
+// Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleItemChangedBP
+struct UItemManangementItemTileButton_C_HandleItemChangedBP_Params
+{
+};
+
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.ExecuteUbergraph_ItemManangementItemTileButton
 struct UItemManangementItemTileButton_C_ExecuteUbergraph_ItemManangementItemTileButton_Params
 {

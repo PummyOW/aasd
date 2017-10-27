@@ -19,7 +19,8 @@ namespace SDK
 
 void UTutorialWindow_C::SetDescription(const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialWindow.TutorialWindow_C.SetDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb25b7649);
 
 	UTutorialWindow_C_SetDescription_Params params;
 	params.Description = Description;
@@ -39,7 +40,8 @@ void UTutorialWindow_C::SetDescription(const struct FText& Description)
 
 void UTutorialWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialWindow.TutorialWindow_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3540df99);
 
 	UTutorialWindow_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -59,7 +61,8 @@ void UTutorialWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_Comm
 
 void UTutorialWindow_C::ExecuteUbergraph_TutorialWindow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialWindow.TutorialWindow_C.ExecuteUbergraph_TutorialWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6962a69);
 
 	UTutorialWindow_C_ExecuteUbergraph_TutorialWindow_Params params;
 	params.EntryPoint = EntryPoint;
@@ -77,7 +80,8 @@ void UTutorialWindow_C::ExecuteUbergraph_TutorialWindow(int EntryPoint)
 
 void UTutorialWindow_C::OnRequestRetry__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialWindow.TutorialWindow_C.OnRequestRetry__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e345cf6);
 
 	UTutorialWindow_C_OnRequestRetry__DelegateSignature_Params params;
 

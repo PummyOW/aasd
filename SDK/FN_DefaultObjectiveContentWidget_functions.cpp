@@ -19,7 +19,8 @@ namespace SDK
 
 void UDefaultObjectiveContentWidget_C::GetHeightEstimate(float* Height)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.GetHeightEstimate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e51ae12);
 
 	UDefaultObjectiveContentWidget_C_GetHeightEstimate_Params params;
 
@@ -41,7 +42,8 @@ void UDefaultObjectiveContentWidget_C::GetHeightEstimate(float* Height)
 
 void UDefaultObjectiveContentWidget_C::HandleTimerComponentUpdated(class UFortMissionTimerComponent* InTimerComponent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.HandleTimerComponentUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23502c3a);
 
 	UDefaultObjectiveContentWidget_C_HandleTimerComponentUpdated_Params params;
 	params.InTimerComponent = InTimerComponent;
@@ -61,7 +63,8 @@ void UDefaultObjectiveContentWidget_C::HandleTimerComponentUpdated(class UFortMi
 
 void UDefaultObjectiveContentWidget_C::CreateRichTextBlock(const struct FText& Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.CreateRichTextBlock");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1d0043);
 
 	UDefaultObjectiveContentWidget_C_CreateRichTextBlock_Params params;
 	params.Text = Text;
@@ -81,7 +84,8 @@ void UDefaultObjectiveContentWidget_C::CreateRichTextBlock(const struct FText& T
 
 void UDefaultObjectiveContentWidget_C::GetRichTextBlock(class UMissionRichText_C** MissionRichTextBlock)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.GetRichTextBlock");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d8f7bad);
 
 	UDefaultObjectiveContentWidget_C_GetRichTextBlock_Params params;
 
@@ -101,7 +105,8 @@ void UDefaultObjectiveContentWidget_C::GetRichTextBlock(class UMissionRichText_C
 
 void UDefaultObjectiveContentWidget_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda4ab614);
 
 	UDefaultObjectiveContentWidget_C_Update_Params params;
 
@@ -121,7 +126,8 @@ void UDefaultObjectiveContentWidget_C::Update()
 
 void UDefaultObjectiveContentWidget_C::Setup(class AFortObjectiveBase* Objective, bool bInConfigureAsHUD)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.Setup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2af5686a);
 
 	UDefaultObjectiveContentWidget_C_Setup_Params params;
 	params.Objective = Objective;
@@ -143,7 +149,8 @@ void UDefaultObjectiveContentWidget_C::Setup(class AFortObjectiveBase* Objective
 
 void UDefaultObjectiveContentWidget_C::HandleObjectiveStatusChanged(class AFortObjectiveBase* Objective, EFortObjectiveStatus NewStatus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.HandleObjectiveStatusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf90de64);
 
 	UDefaultObjectiveContentWidget_C_HandleObjectiveStatusChanged_Params params;
 	params.Objective = Objective;
@@ -165,7 +172,8 @@ void UDefaultObjectiveContentWidget_C::HandleObjectiveStatusChanged(class AFortO
 
 void UDefaultObjectiveContentWidget_C::HandleObjectiveVisibilityChanged(class AFortObjectiveBase* Objective, bool bNewVisibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.HandleObjectiveVisibilityChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b3c2ed6);
 
 	UDefaultObjectiveContentWidget_C_HandleObjectiveVisibilityChanged_Params params;
 	params.Objective = Objective;
@@ -186,7 +194,8 @@ void UDefaultObjectiveContentWidget_C::HandleObjectiveVisibilityChanged(class AF
 
 void UDefaultObjectiveContentWidget_C::HandleUpdate(class AFortMissionState* MissionState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.HandleUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38842a3e);
 
 	UDefaultObjectiveContentWidget_C_HandleUpdate_Params params;
 	params.MissionState = MissionState;
@@ -206,7 +215,8 @@ void UDefaultObjectiveContentWidget_C::HandleUpdate(class AFortMissionState* Mis
 
 void UDefaultObjectiveContentWidget_C::ExecuteUbergraph_DefaultObjectiveContentWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DefaultObjectiveContentWidget.DefaultObjectiveContentWidget_C.ExecuteUbergraph_DefaultObjectiveContentWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7abc3d6);
 
 	UDefaultObjectiveContentWidget_C_ExecuteUbergraph_DefaultObjectiveContentWidget_Params params;
 	params.EntryPoint = EntryPoint;

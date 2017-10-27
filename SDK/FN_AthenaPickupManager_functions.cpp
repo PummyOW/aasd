@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaPickupManager_C::UpdateKeybinds()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.UpdateKeybinds");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa910701f);
 
 	UAthenaPickupManager_C_UpdateKeybinds_Params params;
 
@@ -34,7 +35,8 @@ void UAthenaPickupManager_C::UpdateKeybinds()
 
 void UAthenaPickupManager_C::RefreshCounts()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.RefreshCounts");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a7ed9d0);
 
 	UAthenaPickupManager_C_RefreshCounts_Params params;
 
@@ -54,7 +56,8 @@ void UAthenaPickupManager_C::RefreshCounts()
 
 void UAthenaPickupManager_C::HandleItemPickedUp(class UFortWorldItem* NewItem, int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.HandleItemPickedUp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa92deae3);
 
 	UAthenaPickupManager_C_HandleItemPickedUp_Params params;
 	params.NewItem = NewItem;
@@ -75,7 +78,8 @@ void UAthenaPickupManager_C::HandleItemPickedUp(class UFortWorldItem* NewItem, i
 
 void UAthenaPickupManager_C::HandleMessageExpired(class UFortUIMessageItemWidget* Message_Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.HandleMessageExpired");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e74cd89);
 
 	UAthenaPickupManager_C_HandleMessageExpired_Params params;
 	params.Message_Item = Message_Item;
@@ -93,7 +97,8 @@ void UAthenaPickupManager_C::HandleMessageExpired(class UFortUIMessageItemWidget
 
 void UAthenaPickupManager_C::TryGetNextItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.TryGetNextItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb81fb638);
 
 	UAthenaPickupManager_C_TryGetNextItem_Params params;
 
@@ -110,7 +115,8 @@ void UAthenaPickupManager_C::TryGetNextItem()
 
 void UAthenaPickupManager_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88a301fe);
 
 	UAthenaPickupManager_C_Construct_Params params;
 
@@ -127,7 +133,8 @@ void UAthenaPickupManager_C::Construct()
 
 void UAthenaPickupManager_C::HandleWorldItemsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.HandleWorldItemsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94154843);
 
 	UAthenaPickupManager_C_HandleWorldItemsChanged_Params params;
 
@@ -147,7 +154,8 @@ void UAthenaPickupManager_C::HandleWorldItemsChanged()
 
 void UAthenaPickupManager_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.HandleWorldItemListChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x641e4ff6);
 
 	UAthenaPickupManager_C_HandleWorldItemListChanged_Params params;
 	params.ItemsAdded = ItemsAdded;
@@ -166,9 +174,28 @@ void UAthenaPickupManager_C::HandleWorldItemListChanged(TArray<class UFortWorldI
 
 void UAthenaPickupManager_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x306fd0bd);
 
 	UAthenaPickupManager_C_Destruct_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaPickupManager.AthenaPickupManager_C.HandleBuildingMaterialChanged
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaPickupManager_C::HandleBuildingMaterialChanged()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1eb1e6a6);
+
+	UAthenaPickupManager_C_HandleBuildingMaterialChanged_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -185,7 +212,8 @@ void UAthenaPickupManager_C::Destruct()
 
 void UAthenaPickupManager_C::ExecuteUbergraph_AthenaPickupManager(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaPickupManager.AthenaPickupManager_C.ExecuteUbergraph_AthenaPickupManager");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x789a4a93);
 
 	UAthenaPickupManager_C_ExecuteUbergraph_AthenaPickupManager_Params params;
 	params.EntryPoint = EntryPoint;

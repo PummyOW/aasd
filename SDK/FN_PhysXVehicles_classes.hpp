@@ -81,7 +81,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class PhysXVehicles.WheeledVehicleMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9734c826);
 		return ptr;
 	}
 
@@ -119,7 +120,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class PhysXVehicles.SimpleWheeledVehicleMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbbe156c);
 		return ptr;
 	}
 
@@ -145,7 +147,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class PhysXVehicles.WheeledVehicleMovementComponent4W");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79fe4edd);
 		return ptr;
 	}
 
@@ -164,7 +167,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class PhysXVehicles.TireConfig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc209385c);
 		return ptr;
 	}
 
@@ -182,7 +186,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class PhysXVehicles.VehicleAnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff9361ca);
 		return ptr;
 	}
 
@@ -236,7 +241,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class PhysXVehicles.VehicleWheel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe7a8a289);
 		return ptr;
 	}
 
@@ -257,7 +263,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class PhysXVehicles.WheeledVehicle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc020a8e2);
 		return ptr;
 	}
 

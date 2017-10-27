@@ -19,7 +19,8 @@ namespace SDK
 
 void ACheckExpeditionRewardsAction_C::Find_First_Valid_Player_Controller(class AFortPlayerController** FoundPC1)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Find First Valid Player Controller");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b397455);
 
 	ACheckExpeditionRewardsAction_C_Find_First_Valid_Player_Controller_Params params;
 
@@ -41,7 +42,8 @@ void ACheckExpeditionRewardsAction_C::Find_First_Valid_Player_Controller(class A
 
 void ACheckExpeditionRewardsAction_C::Is_FrontEndRewards_Running(bool* bRunning)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Is FrontEndRewards Running");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba379160);
 
 	ACheckExpeditionRewardsAction_C_Is_FrontEndRewards_Running_Params params;
 
@@ -63,7 +65,8 @@ void ACheckExpeditionRewardsAction_C::Is_FrontEndRewards_Running(bool* bRunning)
 
 void ACheckExpeditionRewardsAction_C::HandleRewardsClaimError(class UFrontEndRewards_Widget_C* RewardsWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.HandleRewardsClaimError");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2ad5a33);
 
 	ACheckExpeditionRewardsAction_C_HandleRewardsClaimError_Params params;
 	params.RewardsWidget = RewardsWidget;
@@ -81,7 +84,8 @@ void ACheckExpeditionRewardsAction_C::HandleRewardsClaimError(class UFrontEndRew
 
 void ACheckExpeditionRewardsAction_C::Clear()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Clear");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x224f5f94);
 
 	ACheckExpeditionRewardsAction_C_Clear_Params params;
 
@@ -100,7 +104,8 @@ void ACheckExpeditionRewardsAction_C::Clear()
 
 void ACheckExpeditionRewardsAction_C::HandleRewardsClaimed(class UFrontEndRewards_Widget_C* RewardsWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.HandleRewardsClaimed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d7e3074);
 
 	ACheckExpeditionRewardsAction_C_HandleRewardsClaimed_Params params;
 	params.RewardsWidget = RewardsWidget;
@@ -118,7 +123,8 @@ void ACheckExpeditionRewardsAction_C::HandleRewardsClaimed(class UFrontEndReward
 
 void ACheckExpeditionRewardsAction_C::PopulateExpeditionRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.PopulateExpeditionRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a94170e);
 
 	ACheckExpeditionRewardsAction_C_PopulateExpeditionRewards_Params params;
 
@@ -135,7 +141,8 @@ void ACheckExpeditionRewardsAction_C::PopulateExpeditionRewards()
 
 void ACheckExpeditionRewardsAction_C::PopulateRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.PopulateRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1abe5fb9);
 
 	ACheckExpeditionRewardsAction_C_PopulateRewards_Params params;
 
@@ -152,7 +159,8 @@ void ACheckExpeditionRewardsAction_C::PopulateRewards()
 
 void ACheckExpeditionRewardsAction_C::OpenFrontEndRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.OpenFrontEndRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd30339ef);
 
 	ACheckExpeditionRewardsAction_C_OpenFrontEndRewards_Params params;
 
@@ -169,7 +177,8 @@ void ACheckExpeditionRewardsAction_C::OpenFrontEndRewards()
 
 void ACheckExpeditionRewardsAction_C::PopulateCompletedQuests()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.PopulateCompletedQuests");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfb3f4a1f);
 
 	ACheckExpeditionRewardsAction_C_PopulateCompletedQuests_Params params;
 
@@ -188,7 +197,8 @@ void ACheckExpeditionRewardsAction_C::PopulateCompletedQuests()
 
 void ACheckExpeditionRewardsAction_C::GetCompletedQuests(TArray<class UFortQuestItem*>* Completed_Quests)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.GetCompletedQuests");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5303a4cf);
 
 	ACheckExpeditionRewardsAction_C_GetCompletedQuests_Params params;
 
@@ -208,7 +218,8 @@ void ACheckExpeditionRewardsAction_C::GetCompletedQuests(TArray<class UFortQuest
 
 void ACheckExpeditionRewardsAction_C::CompleteRewardsAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.CompleteRewardsAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3a416ca);
 
 	ACheckExpeditionRewardsAction_C_CompleteRewardsAction_Params params;
 
@@ -225,7 +236,8 @@ void ACheckExpeditionRewardsAction_C::CompleteRewardsAction()
 
 void ACheckExpeditionRewardsAction_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0943126);
 
 	ACheckExpeditionRewardsAction_C_UserConstructionScript_Params params;
 
@@ -244,7 +256,8 @@ void ACheckExpeditionRewardsAction_C::UserConstructionScript()
 
 void ACheckExpeditionRewardsAction_C::Execute(struct FFortScriptedActionParams* Params)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Execute");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea732d82);
 
 	ACheckExpeditionRewardsAction_C_Execute_Params params;
 	params.Params = Params;
@@ -262,7 +275,8 @@ void ACheckExpeditionRewardsAction_C::Execute(struct FFortScriptedActionParams* 
 
 void ACheckExpeditionRewardsAction_C::Handle_Rewards_Running()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Handle Rewards Running");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44abae86);
 
 	ACheckExpeditionRewardsAction_C_Handle_Rewards_Running_Params params;
 
@@ -281,7 +295,8 @@ void ACheckExpeditionRewardsAction_C::Handle_Rewards_Running()
 
 void ACheckExpeditionRewardsAction_C::ExecuteUbergraph_CheckExpeditionRewardsAction(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.ExecuteUbergraph_CheckExpeditionRewardsAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e941da4);
 
 	ACheckExpeditionRewardsAction_C_ExecuteUbergraph_CheckExpeditionRewardsAction_Params params;
 	params.EntryPoint = EntryPoint;

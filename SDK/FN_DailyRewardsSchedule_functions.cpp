@@ -17,7 +17,8 @@ namespace SDK
 
 void UDailyRewardsSchedule_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewardsSchedule.DailyRewardsSchedule_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e67638a);
 
 	UDailyRewardsSchedule_C_Construct_Params params;
 
@@ -34,7 +35,8 @@ void UDailyRewardsSchedule_C::Construct()
 
 void UDailyRewardsSchedule_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewardsSchedule.DailyRewardsSchedule_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf06a251);
 
 	UDailyRewardsSchedule_C_Destruct_Params params;
 
@@ -53,7 +55,8 @@ void UDailyRewardsSchedule_C::Destruct()
 
 void UDailyRewardsSchedule_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewardsSchedule.DailyRewardsSchedule_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58089d41);
 
 	UDailyRewardsSchedule_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -73,7 +76,8 @@ void UDailyRewardsSchedule_C::PreConstruct(bool* IsDesignTime)
 
 void UDailyRewardsSchedule_C::ExecuteUbergraph_DailyRewardsSchedule(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewardsSchedule.DailyRewardsSchedule_C.ExecuteUbergraph_DailyRewardsSchedule");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92a454bd);
 
 	UDailyRewardsSchedule_C_ExecuteUbergraph_DailyRewardsSchedule_Params params;
 	params.EntryPoint = EntryPoint;

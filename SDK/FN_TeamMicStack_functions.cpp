@@ -17,7 +17,8 @@ namespace SDK
 
 void UTeamMicStack_C::ClearContents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.ClearContents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13ec5f30);
 
 	UTeamMicStack_C_ClearContents_Params params;
 
@@ -36,7 +37,8 @@ void UTeamMicStack_C::ClearContents()
 
 void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo* TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.AppendTeamMember");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1e433ce);
 
 	UTeamMicStack_C_AppendTeamMember_Params params;
 
@@ -59,7 +61,8 @@ void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo* TeamMemberInf
 
 void UTeamMicStack_C::ShiftTeamMembers(int Index, struct FFortTeamMemberInfo* TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.ShiftTeamMembers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb76de973);
 
 	UTeamMicStack_C_ShiftTeamMembers_Params params;
 	params.Index = Index;
@@ -82,7 +85,8 @@ void UTeamMicStack_C::ShiftTeamMembers(int Index, struct FFortTeamMemberInfo* Te
 
 void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& Member_Info)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.HandleTeamMemberChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56ea6008);
 
 	UTeamMicStack_C_HandleTeamMemberChanged_Params params;
 	params.Member_Info = Member_Info;
@@ -102,7 +106,8 @@ void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& 
 
 void UTeamMicStack_C::HandleTeamMemberRemoved(int Member_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.HandleTeamMemberRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90be70a8);
 
 	UTeamMicStack_C_HandleTeamMemberRemoved_Params params;
 	params.Member_Index = Member_Index;
@@ -120,7 +125,8 @@ void UTeamMicStack_C::HandleTeamMemberRemoved(int Member_Index)
 
 void UTeamMicStack_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf72c485e);
 
 	UTeamMicStack_C_Construct_Params params;
 
@@ -137,7 +143,8 @@ void UTeamMicStack_C::Construct()
 
 void UTeamMicStack_C::HandlePartyLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.HandlePartyLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88cd38f8);
 
 	UTeamMicStack_C_HandlePartyLeft_Params params;
 
@@ -156,7 +163,8 @@ void UTeamMicStack_C::HandlePartyLeft()
 
 void UTeamMicStack_C::ExecuteUbergraph_TeamMicStack(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TeamMicStack.TeamMicStack_C.ExecuteUbergraph_TeamMicStack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfcd60463);
 
 	UTeamMicStack_C_ExecuteUbergraph_TeamMicStack_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UScoreBarsScoreMessageItem_C::OnAppearAnimationFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.OnAppearAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6acae115);
 
 	UScoreBarsScoreMessageItem_C_OnAppearAnimationFinished_Params params;
 
@@ -34,7 +35,8 @@ void UScoreBarsScoreMessageItem_C::OnAppearAnimationFinished()
 
 void UScoreBarsScoreMessageItem_C::ClearScoreValueWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.ClearScoreValueWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcfd8f09b);
 
 	UScoreBarsScoreMessageItem_C_ClearScoreValueWidget_Params params;
 
@@ -53,7 +55,8 @@ void UScoreBarsScoreMessageItem_C::ClearScoreValueWidget()
 
 void UScoreBarsScoreMessageItem_C::GetScoreValueWidget(class UWidget** Widget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.GetScoreValueWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a402ab4);
 
 	UScoreBarsScoreMessageItem_C_GetScoreValueWidget_Params params;
 
@@ -77,7 +80,8 @@ void UScoreBarsScoreMessageItem_C::GetScoreValueWidget(class UWidget** Widget)
 
 void UScoreBarsScoreMessageItem_C::Setup(int Base_Delta, const struct FText& Name_Text, class UScoreMessageNumber_C* In_Score_Widget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.Setup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c1e439a);
 
 	UScoreBarsScoreMessageItem_C_Setup_Params params;
 	params.Base_Delta = Base_Delta;
@@ -97,7 +101,8 @@ void UScoreBarsScoreMessageItem_C::Setup(int Base_Delta, const struct FText& Nam
 
 void UScoreBarsScoreMessageItem_C::UpdateValues()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.UpdateValues");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ecff986);
 
 	UScoreBarsScoreMessageItem_C_UpdateValues_Params params;
 
@@ -116,7 +121,8 @@ void UScoreBarsScoreMessageItem_C::UpdateValues()
 
 void UScoreBarsScoreMessageItem_C::OnStackSizeChanged(int* OldStackSize)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.OnStackSizeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb6dfabd);
 
 	UScoreBarsScoreMessageItem_C_OnStackSizeChanged_Params params;
 	params.OldStackSize = OldStackSize;
@@ -134,7 +140,8 @@ void UScoreBarsScoreMessageItem_C::OnStackSizeChanged(int* OldStackSize)
 
 void UScoreBarsScoreMessageItem_C::OnBeginRemove()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.OnBeginRemove");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5068f26f);
 
 	UScoreBarsScoreMessageItem_C_OnBeginRemove_Params params;
 
@@ -153,7 +160,8 @@ void UScoreBarsScoreMessageItem_C::OnBeginRemove()
 
 void UScoreBarsScoreMessageItem_C::ExecuteUbergraph_ScoreBarsScoreMessageItem(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ScoreBarsScoreMessageItem.ScoreBarsScoreMessageItem_C.ExecuteUbergraph_ScoreBarsScoreMessageItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd09c1337);
 
 	UScoreBarsScoreMessageItem_C_ExecuteUbergraph_ScoreBarsScoreMessageItem_Params params;
 	params.EntryPoint = EntryPoint;

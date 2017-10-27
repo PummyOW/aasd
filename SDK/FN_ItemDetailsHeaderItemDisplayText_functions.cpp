@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(struct FText* DisplayName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.GetDisplayName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17acfefc);
 
 	UItemDetailsHeaderItemDisplayText_C_GetDisplayName_Params params;
 
@@ -34,14 +35,15 @@ void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(struct FText* DisplayNa
 }
 
 
-// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToCompareWithSet
+// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToDetailSet
 // (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 
-void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSet()
+void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e323025);
 
-	UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToCompareWithSet_Params params;
+	UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToDetailSet_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -51,14 +53,15 @@ void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSe
 }
 
 
-// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToDetailSet
+// Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToCompareWithSet
 // (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 
-void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToDetailSet()
+void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3820b117);
 
-	UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToDetailSet_Params params;
+	UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToCompareWithSet_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -75,7 +78,8 @@ void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderItemDisplayText_C::ExecuteUbergraph_ItemDetailsHeaderItemDisplayText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x646d0105);
 
 	UItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText_Params params;
 	params.EntryPoint = EntryPoint;

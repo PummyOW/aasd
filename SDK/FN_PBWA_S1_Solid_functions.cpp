@@ -17,7 +17,8 @@ namespace SDK
 
 void APBWA_S1_Solid_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PBWA_S1_Solid.PBWA_S1_Solid_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7a0405c);
 
 	APBWA_S1_Solid_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void APBWA_S1_Solid_C::UserConstructionScript()
 
 void APBWA_S1_Solid_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PBWA_S1_Solid.PBWA_S1_Solid_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc7c2983);
 
 	APBWA_S1_Solid_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +55,8 @@ void APBWA_S1_Solid_C::ReceiveBeginPlay()
 
 void APBWA_S1_Solid_C::ExecuteUbergraph_PBWA_S1_Solid(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PBWA_S1_Solid.PBWA_S1_Solid_C.ExecuteUbergraph_PBWA_S1_Solid");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xde7c1fc4);
 
 	APBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid_Params params;
 	params.EntryPoint = EntryPoint;

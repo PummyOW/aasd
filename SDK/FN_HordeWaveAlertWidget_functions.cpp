@@ -22,7 +22,8 @@ namespace SDK
 
 void UHordeWaveAlertWidget_C::OnWaveStarted(const struct FText& LevelText, int Level, const struct FText& WaveText, int WaveNum)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnWaveStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3518bfa0);
 
 	UHordeWaveAlertWidget_C_OnWaveStarted_Params params;
 	params.LevelText = LevelText;
@@ -46,7 +47,8 @@ void UHordeWaveAlertWidget_C::OnWaveStarted(const struct FText& LevelText, int L
 
 void UHordeWaveAlertWidget_C::OnWaveCompleted(int Wave, TArray<struct FFortItemInstanceQuantityPair> Rewards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnWaveCompleted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf083153c);
 
 	UHordeWaveAlertWidget_C_OnWaveCompleted_Params params;
 	params.Wave = Wave;
@@ -67,7 +69,8 @@ void UHordeWaveAlertWidget_C::OnWaveCompleted(int Wave, TArray<struct FFortItemI
 
 void UHordeWaveAlertWidget_C::OnHordeTierInitialized_Event_1(TArray<struct FFortItemInstanceQuantityPair> Items)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnHordeTierInitialized_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x642224e7);
 
 	UHordeWaveAlertWidget_C_OnHordeTierInitialized_Event_1_Params params;
 	params.Items = Items;
@@ -87,7 +90,8 @@ void UHordeWaveAlertWidget_C::OnHordeTierInitialized_Event_1(TArray<struct FFort
 
 void UHordeWaveAlertWidget_C::OnWaveModifiersAdded(TArray<class UFortGameplayModifierItemDefinition*> Modifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnWaveModifiersAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeadadbfd);
 
 	UHordeWaveAlertWidget_C_OnWaveModifiersAdded_Params params;
 	params.Modifiers = Modifiers;
@@ -105,7 +109,8 @@ void UHordeWaveAlertWidget_C::OnWaveModifiersAdded(TArray<class UFortGameplayMod
 
 void UHordeWaveAlertWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x604ca018);
 
 	UHordeWaveAlertWidget_C_Construct_Params params;
 
@@ -122,7 +127,8 @@ void UHordeWaveAlertWidget_C::Construct()
 
 void UHordeWaveAlertWidget_C::OnModifierAppearanceAnimComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnModifierAppearanceAnimComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e3123dd);
 
 	UHordeWaveAlertWidget_C_OnModifierAppearanceAnimComplete_Params params;
 
@@ -139,7 +145,8 @@ void UHordeWaveAlertWidget_C::OnModifierAppearanceAnimComplete()
 
 void UHordeWaveAlertWidget_C::OnAllModifiersPresented()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnAllModifiersPresented");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77521527);
 
 	UHordeWaveAlertWidget_C_OnAllModifiersPresented_Params params;
 
@@ -156,7 +163,8 @@ void UHordeWaveAlertWidget_C::OnAllModifiersPresented()
 
 void UHordeWaveAlertWidget_C::OnAppearanceDisappearanceAnimComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnAppearanceDisappearanceAnimComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a154bac);
 
 	UHordeWaveAlertWidget_C_OnAppearanceDisappearanceAnimComplete_Params params;
 
@@ -173,7 +181,8 @@ void UHordeWaveAlertWidget_C::OnAppearanceDisappearanceAnimComplete()
 
 void UHordeWaveAlertWidget_C::OnModifierDisappearanceAnimComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnModifierDisappearanceAnimComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf61d069b);
 
 	UHordeWaveAlertWidget_C_OnModifierDisappearanceAnimComplete_Params params;
 
@@ -190,7 +199,8 @@ void UHordeWaveAlertWidget_C::OnModifierDisappearanceAnimComplete()
 
 void UHordeWaveAlertWidget_C::OnAppearanceDisappearanceAnimComplete_Quick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.OnAppearanceDisappearanceAnimComplete_Quick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51d0a638);
 
 	UHordeWaveAlertWidget_C_OnAppearanceDisappearanceAnimComplete_Quick_Params params;
 
@@ -209,7 +219,8 @@ void UHordeWaveAlertWidget_C::OnAppearanceDisappearanceAnimComplete_Quick()
 
 void UHordeWaveAlertWidget_C::ExecuteUbergraph_HordeWaveAlertWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HordeWaveAlertWidget.HordeWaveAlertWidget_C.ExecuteUbergraph_HordeWaveAlertWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67dc7604);
 
 	UHordeWaveAlertWidget_C_ExecuteUbergraph_HordeWaveAlertWidget_Params params;
 	params.EntryPoint = EntryPoint;

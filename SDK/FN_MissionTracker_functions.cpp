@@ -17,7 +17,8 @@ namespace SDK
 
 void UMissionTracker_C::HandlePinnedQuestsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTracker.MissionTracker_C.HandlePinnedQuestsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe459d196);
 
 	UMissionTracker_C_HandlePinnedQuestsChanged_Params params;
 
@@ -36,7 +37,8 @@ void UMissionTracker_C::HandlePinnedQuestsChanged()
 
 bool UMissionTracker_C::HasVisibleMission()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTracker.MissionTracker_C.HasVisibleMission");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d27d8a1);
 
 	UMissionTracker_C_HasVisibleMission_Params params;
 
@@ -55,7 +57,8 @@ bool UMissionTracker_C::HasVisibleMission()
 
 void UMissionTracker_C::UpdateVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTracker.MissionTracker_C.UpdateVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56006764);
 
 	UMissionTracker_C_UpdateVisibility_Params params;
 
@@ -72,7 +75,8 @@ void UMissionTracker_C::UpdateVisibility()
 
 void UMissionTracker_C::HandleQuestsUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTracker.MissionTracker_C.HandleQuestsUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc63b8629);
 
 	UMissionTracker_C_HandleQuestsUpdated_Params params;
 
@@ -89,7 +93,8 @@ void UMissionTracker_C::HandleQuestsUpdated()
 
 void UMissionTracker_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTracker.MissionTracker_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7651482a);
 
 	UMissionTracker_C_Construct_Params params;
 
@@ -106,7 +111,8 @@ void UMissionTracker_C::Construct()
 
 void UMissionTracker_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTracker.MissionTracker_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3b72171);
 
 	UMissionTracker_C_Destruct_Params params;
 
@@ -125,7 +131,8 @@ void UMissionTracker_C::Destruct()
 
 void UMissionTracker_C::ExecuteUbergraph_MissionTracker(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTracker.MissionTracker_C.ExecuteUbergraph_MissionTracker");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd77b9881);
 
 	UMissionTracker_C_ExecuteUbergraph_MissionTracker_Params params;
 	params.EntryPoint = EntryPoint;

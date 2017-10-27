@@ -19,7 +19,8 @@ namespace SDK
 
 bool UPartyMemberState::IsPartyLeader()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Party.PartyMemberState.IsPartyLeader");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaee1a37b);
 
 	UPartyMemberState_IsPartyLeader_Params params;
 
@@ -41,7 +42,8 @@ bool UPartyMemberState::IsPartyLeader()
 
 bool UPartyMemberState::IsLocalPlayer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Party.PartyMemberState.IsLocalPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66aaf3ea);
 
 	UPartyMemberState_IsLocalPlayer_Params params;
 

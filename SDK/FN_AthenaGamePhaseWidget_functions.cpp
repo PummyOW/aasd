@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaGamePhaseWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseWidget.AthenaGamePhaseWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77406e32);
 
 	UAthenaGamePhaseWidget_C_Construct_Params params;
 
@@ -37,7 +38,8 @@ void UAthenaGamePhaseWidget_C::Construct()
 
 void UAthenaGamePhaseWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseWidget.AthenaGamePhaseWidget_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ed5ced0);
 
 	UAthenaGamePhaseWidget_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -58,7 +60,8 @@ void UAthenaGamePhaseWidget_C::Tick(struct FGeometry* MyGeometry, float* InDelta
 
 void UAthenaGamePhaseWidget_C::ExecuteUbergraph_AthenaGamePhaseWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseWidget.AthenaGamePhaseWidget_C.ExecuteUbergraph_AthenaGamePhaseWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b5571ad);
 
 	UAthenaGamePhaseWidget_C_ExecuteUbergraph_AthenaGamePhaseWidget_Params params;
 	params.EntryPoint = EntryPoint;

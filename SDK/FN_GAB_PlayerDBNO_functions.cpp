@@ -19,7 +19,8 @@ namespace SDK
 
 void UGAB_PlayerDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.InitializeDeathHitDirection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4558d915);
 
 	UGAB_PlayerDBNO_C_InitializeDeathHitDirection_Params params;
 	params.EventHitData = EventHitData;
@@ -37,7 +38,8 @@ void UGAB_PlayerDBNO_C::InitializeDeathHitDirection(const struct FGameplayEventD
 
 void UGAB_PlayerDBNO_C::OnCancelled_4B0F8658452931EE3B297A9E70C9C496()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.OnCancelled_4B0F8658452931EE3B297A9E70C9C496");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3fff2784);
 
 	UGAB_PlayerDBNO_C_OnCancelled_4B0F8658452931EE3B297A9E70C9C496_Params params;
 
@@ -54,7 +56,8 @@ void UGAB_PlayerDBNO_C::OnCancelled_4B0F8658452931EE3B297A9E70C9C496()
 
 void UGAB_PlayerDBNO_C::OnInterrupted_4B0F8658452931EE3B297A9E70C9C496()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.OnInterrupted_4B0F8658452931EE3B297A9E70C9C496");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xacfc0245);
 
 	UGAB_PlayerDBNO_C_OnInterrupted_4B0F8658452931EE3B297A9E70C9C496_Params params;
 
@@ -71,7 +74,8 @@ void UGAB_PlayerDBNO_C::OnInterrupted_4B0F8658452931EE3B297A9E70C9C496()
 
 void UGAB_PlayerDBNO_C::OnBlendOut_4B0F8658452931EE3B297A9E70C9C496()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.OnBlendOut_4B0F8658452931EE3B297A9E70C9C496");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72107c32);
 
 	UGAB_PlayerDBNO_C_OnBlendOut_4B0F8658452931EE3B297A9E70C9C496_Params params;
 
@@ -88,7 +92,8 @@ void UGAB_PlayerDBNO_C::OnBlendOut_4B0F8658452931EE3B297A9E70C9C496()
 
 void UGAB_PlayerDBNO_C::OnCompleted_4B0F8658452931EE3B297A9E70C9C496()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.OnCompleted_4B0F8658452931EE3B297A9E70C9C496");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38109266);
 
 	UGAB_PlayerDBNO_C_OnCompleted_4B0F8658452931EE3B297A9E70C9C496_Params params;
 
@@ -107,7 +112,8 @@ void UGAB_PlayerDBNO_C::OnCompleted_4B0F8658452931EE3B297A9E70C9C496()
 
 void UGAB_PlayerDBNO_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd56a4758);
 
 	UGAB_PlayerDBNO_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -127,7 +133,8 @@ void UGAB_PlayerDBNO_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* E
 
 void UGAB_PlayerDBNO_C::ExecuteUbergraph_GAB_PlayerDBNO(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GAB_PlayerDBNO.GAB_PlayerDBNO_C.ExecuteUbergraph_GAB_PlayerDBNO");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x95862ff8);
 
 	UGAB_PlayerDBNO_C_ExecuteUbergraph_GAB_PlayerDBNO_Params params;
 	params.EntryPoint = EntryPoint;

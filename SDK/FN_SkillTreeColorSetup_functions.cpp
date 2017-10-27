@@ -22,7 +22,8 @@ namespace SDK
 
 void USkillTreeColorSetup_C::STATIC_SkillTreeBGSetup(const struct FSkillTreePageColors& Page_Color, TEnumAsByte<ESkillTreePages> Pages, class UMaterialInstanceDynamic* Mid, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SkillTreeColorSetup.SkillTreeColorSetup_C.SkillTreeBGSetup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5835bbe);
 
 	USkillTreeColorSetup_C_SkillTreeBGSetup_Params params;
 	params.Page_Color = Page_Color;

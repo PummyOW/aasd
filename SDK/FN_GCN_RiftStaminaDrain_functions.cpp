@@ -20,7 +20,8 @@ namespace SDK
 
 void AGCN_RiftStaminaDrain_C::OnWhileActiveParticleSystemDeactivate(class UParticleSystemComponent** WhileActiveParticleSysComponent, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C.OnWhileActiveParticleSystemDeactivate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf31bb49c);
 
 	AGCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemDeactivate_Params params;
 	params.WhileActiveParticleSysComponent = WhileActiveParticleSysComponent;
@@ -42,7 +43,8 @@ void AGCN_RiftStaminaDrain_C::OnWhileActiveParticleSystemDeactivate(class UParti
 
 void AGCN_RiftStaminaDrain_C::OnWhileActiveParticleSystemActivate(class UParticleSystemComponent** WhileActiveParticleSysComponent, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C.OnWhileActiveParticleSystemActivate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a48d755);
 
 	AGCN_RiftStaminaDrain_C_OnWhileActiveParticleSystemActivate_Params params;
 	params.WhileActiveParticleSysComponent = WhileActiveParticleSysComponent;
@@ -61,7 +63,8 @@ void AGCN_RiftStaminaDrain_C::OnWhileActiveParticleSystemActivate(class UParticl
 
 void AGCN_RiftStaminaDrain_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_RiftStaminaDrain.GCN_RiftStaminaDrain_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d9db626);
 
 	AGCN_RiftStaminaDrain_C_UserConstructionScript_Params params;
 

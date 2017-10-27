@@ -19,7 +19,8 @@ namespace SDK
 
 class UTexture2D* UTwitchNotification_C::GetImageOverride()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TwitchNotification.TwitchNotification_C.GetImageOverride");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33bd4a14);
 
 	UTwitchNotification_C_GetImageOverride_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UCollectionBarTopIcon_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBarTopIcon.CollectionBarTopIcon_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91b26ba0);
 
 	UCollectionBarTopIcon_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UCollectionBarTopIcon_C::Construct()
 
 void UCollectionBarTopIcon_C::ExecuteUbergraph_CollectionBarTopIcon(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBarTopIcon.CollectionBarTopIcon_C.ExecuteUbergraph_CollectionBarTopIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e55acda);
 
 	UCollectionBarTopIcon_C_ExecuteUbergraph_CollectionBarTopIcon_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UTwitchLoginModalWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_72_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TwitchLoginModalWidget.TwitchLoginModalWidget_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_72_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0b569c4);
 
 	UTwitchLoginModalWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_72_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -39,7 +40,8 @@ void UTwitchLoginModalWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEven
 
 void UTwitchLoginModalWidget_C::ExecuteUbergraph_TwitchLoginModalWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TwitchLoginModalWidget.TwitchLoginModalWidget_C.ExecuteUbergraph_TwitchLoginModalWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb87e7ece);
 
 	UTwitchLoginModalWidget_C_ExecuteUbergraph_TwitchLoginModalWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -57,7 +59,8 @@ void UTwitchLoginModalWidget_C::ExecuteUbergraph_TwitchLoginModalWidget(int Entr
 
 void UTwitchLoginModalWidget_C::OnCancelButtonClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TwitchLoginModalWidget.TwitchLoginModalWidget_C.OnCancelButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x685b521a);
 
 	UTwitchLoginModalWidget_C_OnCancelButtonClicked__DelegateSignature_Params params;
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UWaveModifiersWidget_C::PresentNextModifier()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersWidget.WaveModifiersWidget_C.PresentNextModifier");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf480a904);
 
 	UWaveModifiersWidget_C_PresentNextModifier_Params params;
 
@@ -37,7 +38,8 @@ void UWaveModifiersWidget_C::PresentNextModifier()
 
 void UWaveModifiersWidget_C::OnModifiersAdded(bool StartPresentationImmediately, TArray<class UFortGameplayModifierItemDefinition*>* Modifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersWidget.WaveModifiersWidget_C.OnModifiersAdded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d7a9fd0);
 
 	UWaveModifiersWidget_C_OnModifiersAdded_Params params;
 	params.StartPresentationImmediately = StartPresentationImmediately;
@@ -58,7 +60,8 @@ void UWaveModifiersWidget_C::OnModifiersAdded(bool StartPresentationImmediately,
 
 void UWaveModifiersWidget_C::OnAllModifiersPresented__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WaveModifiersWidget.WaveModifiersWidget_C.OnAllModifiersPresented__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3b1cfa0);
 
 	UWaveModifiersWidget_C_OnAllModifiersPresented__DelegateSignature_Params params;
 

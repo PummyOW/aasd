@@ -19,7 +19,8 @@ namespace SDK
 
 void UFriendCodePC_C::GetFriendCodeUrl(struct FText* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodePC.FriendCodePC_C.GetFriendCodeUrl");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xddd2bd69);
 
 	UFriendCodePC_C_GetFriendCodeUrl_Params params;
 
@@ -39,7 +40,8 @@ void UFriendCodePC_C::GetFriendCodeUrl(struct FText* Result)
 
 void UFriendCodePC_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodePC.FriendCodePC_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e2fa9be);
 
 	UFriendCodePC_C_Construct_Params params;
 
@@ -59,7 +61,8 @@ void UFriendCodePC_C::Construct()
 
 void UFriendCodePC_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodePC.FriendCodePC_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8326acd5);
 
 	UFriendCodePC_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -80,7 +83,8 @@ void UFriendCodePC_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointer
 
 void UFriendCodePC_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodePC.FriendCodePC_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3b41c72);
 
 	UFriendCodePC_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -98,7 +102,8 @@ void UFriendCodePC_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UFriendCodePC_C::OnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodePC.FriendCodePC_C.OnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28a097c3);
 
 	UFriendCodePC_C_OnClicked_Params params;
 
@@ -117,7 +122,8 @@ void UFriendCodePC_C::OnClicked()
 
 void UFriendCodePC_C::ExecuteUbergraph_FriendCodePC(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FriendCodePC.FriendCodePC_C.ExecuteUbergraph_FriendCodePC");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f0a43d7);
 
 	UFriendCodePC_C_ExecuteUbergraph_FriendCodePC_Params params;
 	params.EntryPoint = EntryPoint;

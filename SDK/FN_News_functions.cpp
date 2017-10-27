@@ -19,7 +19,8 @@ namespace SDK
 
 void UNews_C::UpdateInfoPanel(const struct FText& BodyText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function News.News_C.UpdateInfoPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11a60ce8);
 
 	UNews_C_UpdateInfoPanel_Params params;
 	params.BodyText = BodyText;
@@ -37,7 +38,8 @@ void UNews_C::UpdateInfoPanel(const struct FText& BodyText)
 
 void UNews_C::Init()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function News.News_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e24fd97);
 
 	UNews_C_Init_Params params;
 
@@ -56,7 +58,8 @@ void UNews_C::Init()
 
 void UNews_C::PopulateEntries(bool* IsEmpty)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function News.News_C.PopulateEntries");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7eb08611);
 
 	UNews_C_PopulateEntries_Params params;
 
@@ -78,7 +81,8 @@ void UNews_C::PopulateEntries(bool* IsEmpty)
 
 void UNews_C::AddEntry(const struct FText& inEntryText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function News.News_C.AddEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5034a44a);
 
 	UNews_C_AddEntry_Params params;
 	params.inEntryText = inEntryText;
@@ -98,7 +102,8 @@ void UNews_C::AddEntry(const struct FText& inEntryText)
 
 void UNews_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function News.News_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x42084882);
 
 	UNews_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -116,7 +121,8 @@ void UNews_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClic
 
 void UNews_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function News.News_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3edb094);
 
 	UNews_C_Construct_Params params;
 
@@ -135,7 +141,8 @@ void UNews_C::Construct()
 
 void UNews_C::ExecuteUbergraph_News(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function News.News_C.ExecuteUbergraph_News");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24eb1684);
 
 	UNews_C_ExecuteUbergraph_News_Params params;
 	params.EntryPoint = EntryPoint;

@@ -39,7 +39,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BluGlow_MorphAnimation.BluGlow_MorphAnimation_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd586fadb);
 		return ptr;
 	}
 

@@ -21,7 +21,8 @@ namespace SDK
 
 bool AGCNL_GM_OnLowHealth_Enrage_C::OnRemove(class AActor** MyTarget, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_OnLowHealth_Enrage.GCNL_GM_OnLowHealth_Enrage_C.OnRemove");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e1bdaa8);
 
 	AGCNL_GM_OnLowHealth_Enrage_C_OnRemove_Params params;
 	params.MyTarget = MyTarget;
@@ -46,7 +47,8 @@ bool AGCNL_GM_OnLowHealth_Enrage_C::OnRemove(class AActor** MyTarget, struct FGa
 
 bool AGCNL_GM_OnLowHealth_Enrage_C::OnActive(class AActor** MyTarget, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_OnLowHealth_Enrage.GCNL_GM_OnLowHealth_Enrage_C.OnActive");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x493cc70e);
 
 	AGCNL_GM_OnLowHealth_Enrage_C_OnActive_Params params;
 	params.MyTarget = MyTarget;
@@ -67,7 +69,8 @@ bool AGCNL_GM_OnLowHealth_Enrage_C::OnActive(class AActor** MyTarget, struct FGa
 
 void AGCNL_GM_OnLowHealth_Enrage_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_OnLowHealth_Enrage.GCNL_GM_OnLowHealth_Enrage_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74d5a398);
 
 	AGCNL_GM_OnLowHealth_Enrage_C_UserConstructionScript_Params params;
 

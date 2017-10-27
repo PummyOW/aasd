@@ -17,7 +17,8 @@ namespace SDK
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::StopCurrentConversation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.StopCurrentConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc152e17);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_StopCurrentConversation_Params params;
 
@@ -34,7 +35,8 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::StopCurrentConversation
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::PlayCurrentConversation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.PlayCurrentConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd62ff845);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_PlayCurrentConversation_Params params;
 
@@ -51,7 +53,8 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::PlayCurrentConversation
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b280aa4);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_UserConstructionScript_Params params;
 
@@ -71,7 +74,8 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::UserConstructionScript(
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnConversationFinished(struct FFortConversationSentence* FinishingSentence, int* FinishingSentenceSentenceIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnConversationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80b79d7);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_OnConversationFinished_Params params;
 	params.FinishingSentence = FinishingSentence;
@@ -93,7 +97,8 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnConversationFinished(
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnSentenceStarted(struct FFortConversationSentence* Sentence, int* SentenceIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnSentenceStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe52729f6);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_OnSentenceStarted_Params params;
 	params.Sentence = Sentence;
@@ -114,7 +119,8 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnSentenceStarted(struc
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5c87859);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards_Params params;
 	params.EntryPoint = EntryPoint;
@@ -132,7 +138,8 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::ExecuteUbergraph_Announ
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnCurrentConversationFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnCurrentConversationFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12d69897);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_OnCurrentConversationFinished__DelegateSignature_Params params;
 
@@ -151,7 +158,8 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnCurrentConversationFi
 
 void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnNewSentence__DelegateSignature(const struct FFortConversationSentence& Sentence)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.OnNewSentence__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3af85a38);
 
 	AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_OnNewSentence__DelegateSignature_Params params;
 	params.Sentence = Sentence;

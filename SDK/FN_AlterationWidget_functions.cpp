@@ -17,7 +17,8 @@ namespace SDK
 
 void UAlterationWidget_C::SetEvolutionDetails()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.SetEvolutionDetails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc55bb80);
 
 	UAlterationWidget_C_SetEvolutionDetails_Params params;
 
@@ -34,7 +35,8 @@ void UAlterationWidget_C::SetEvolutionDetails()
 
 void UAlterationWidget_C::UpdateRaritySwitcherVisiblity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.UpdateRaritySwitcherVisiblity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x541fd745);
 
 	UAlterationWidget_C_UpdateRaritySwitcherVisiblity_Params params;
 
@@ -51,7 +53,8 @@ void UAlterationWidget_C::UpdateRaritySwitcherVisiblity()
 
 void UAlterationWidget_C::SetLevelText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.SetLevelText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xddcc601e);
 
 	UAlterationWidget_C_SetLevelText_Params params;
 
@@ -68,7 +71,8 @@ void UAlterationWidget_C::SetLevelText()
 
 void UAlterationWidget_C::InitText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.InitText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8443672);
 
 	UAlterationWidget_C_InitText_Params params;
 
@@ -85,7 +89,8 @@ void UAlterationWidget_C::InitText()
 
 void UAlterationWidget_C::InitIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.InitIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4149a508);
 
 	UAlterationWidget_C_InitIcon_Params params;
 
@@ -104,7 +109,8 @@ void UAlterationWidget_C::InitIcon()
 
 bool UAlterationWidget_C::ShouldFadeAlteration()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.ShouldFadeAlteration");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40c2cf5d);
 
 	UAlterationWidget_C_ShouldFadeAlteration_Params params;
 
@@ -125,7 +131,8 @@ bool UAlterationWidget_C::ShouldFadeAlteration()
 
 struct FLinearColor UAlterationWidget_C::GetHighlightColor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.GetHighlightColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68158cea);
 
 	UAlterationWidget_C_GetHighlightColor_Params params;
 
@@ -144,7 +151,8 @@ struct FLinearColor UAlterationWidget_C::GetHighlightColor()
 
 void UAlterationWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5186d24);
 
 	UAlterationWidget_C_Construct_Params params;
 
@@ -163,7 +171,8 @@ void UAlterationWidget_C::Construct()
 
 void UAlterationWidget_C::ExecuteUbergraph_AlterationWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AlterationWidget.AlterationWidget_C.ExecuteUbergraph_AlterationWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x714d178e);
 
 	UAlterationWidget_C_ExecuteUbergraph_AlterationWidget_Params params;
 	params.EntryPoint = EntryPoint;

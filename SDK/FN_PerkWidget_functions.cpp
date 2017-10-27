@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UPerkWidget_C::CreateToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.CreateToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7272713c);
 
 	UPerkWidget_C_CreateToolTipWidget_Params params;
 
@@ -38,7 +39,8 @@ class UWidget* UPerkWidget_C::CreateToolTipWidget()
 
 void UPerkWidget_C::InitializeTextInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.InitializeTextInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd872780);
 
 	UPerkWidget_C_InitializeTextInfo_Params params;
 
@@ -55,7 +57,8 @@ void UPerkWidget_C::InitializeTextInfo()
 
 void UPerkWidget_C::HighlightBadge()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.HighlightBadge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6bcf9572);
 
 	UPerkWidget_C_HighlightBadge_Params params;
 
@@ -74,7 +77,8 @@ void UPerkWidget_C::HighlightBadge()
 
 void UPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.GetPerkStat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24b1e947);
 
 	UPerkWidget_C_GetPerkStat_Params params;
 
@@ -94,7 +98,8 @@ void UPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat)
 
 void UPerkWidget_C::ShowTierImage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.ShowTierImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9723bd47);
 
 	UPerkWidget_C_ShowTierImage_Params params;
 
@@ -111,7 +116,8 @@ void UPerkWidget_C::ShowTierImage()
 
 void UPerkWidget_C::SetupBadge()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.SetupBadge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xccdbd1b7);
 
 	UPerkWidget_C_SetupBadge_Params params;
 
@@ -128,7 +134,8 @@ void UPerkWidget_C::SetupBadge()
 
 void UPerkWidget_C::InitializeHeroBonusIcon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.InitializeHeroBonusIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1dfbbfe5);
 
 	UPerkWidget_C_InitializeHeroBonusIcon_Params params;
 
@@ -145,7 +152,8 @@ void UPerkWidget_C::InitializeHeroBonusIcon()
 
 void UPerkWidget_C::InitializeTextOnlyPerk()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.InitializeTextOnlyPerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb46ce75e);
 
 	UPerkWidget_C_InitializeTextOnlyPerk_Params params;
 
@@ -164,7 +172,8 @@ void UPerkWidget_C::InitializeTextOnlyPerk()
 
 void UPerkWidget_C::ShouldFadePerk(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.ShouldFadePerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1bca66a8);
 
 	UPerkWidget_C_ShouldFadePerk_Params params;
 
@@ -186,7 +195,8 @@ void UPerkWidget_C::ShouldFadePerk(bool* Result)
 
 void UPerkWidget_C::GetHighlightColor(struct FLinearColor* Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.GetHighlightColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2217a548);
 
 	UPerkWidget_C_GetHighlightColor_Params params;
 
@@ -208,7 +218,8 @@ void UPerkWidget_C::GetHighlightColor(struct FLinearColor* Color)
 
 void UPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.GetTierAbilityBrush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2646081b);
 
 	UPerkWidget_C_GetTierAbilityBrush_Params params;
 
@@ -228,7 +239,8 @@ void UPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush)
 
 void UPerkWidget_C::InitializeAbilityPerk()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.InitializeAbilityPerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc03ad005);
 
 	UPerkWidget_C_InitializeAbilityPerk_Params params;
 
@@ -245,7 +257,8 @@ void UPerkWidget_C::InitializeAbilityPerk()
 
 void UPerkWidget_C::InitializeBasicPerk()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.InitializeBasicPerk");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12533249);
 
 	UPerkWidget_C_InitializeBasicPerk_Params params;
 
@@ -264,7 +277,8 @@ void UPerkWidget_C::InitializeBasicPerk()
 
 void UPerkWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14deda6d);
 
 	UPerkWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -282,7 +296,8 @@ void UPerkWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UPerkWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa92ba716);
 
 	UPerkWidget_C_Construct_Params params;
 
@@ -301,7 +316,8 @@ void UPerkWidget_C::Construct()
 
 void UPerkWidget_C::ExecuteUbergraph_PerkWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PerkWidget.PerkWidget_C.ExecuteUbergraph_PerkWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10faaf17);
 
 	UPerkWidget_C_ExecuteUbergraph_PerkWidget_Params params;
 	params.EntryPoint = EntryPoint;

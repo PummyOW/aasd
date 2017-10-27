@@ -17,7 +17,8 @@ namespace SDK
 
 void UTooltipHeroBonuses_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipHeroBonuses.TooltipHeroBonuses_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6300e9ee);
 
 	UTooltipHeroBonuses_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UTooltipHeroBonuses_C::Construct()
 
 void UTooltipHeroBonuses_C::ExecuteUbergraph_TooltipHeroBonuses(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipHeroBonuses.TooltipHeroBonuses_C.ExecuteUbergraph_TooltipHeroBonuses");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7ea90b25);
 
 	UTooltipHeroBonuses_C_ExecuteUbergraph_TooltipHeroBonuses_Params params;
 	params.EntryPoint = EntryPoint;

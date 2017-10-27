@@ -21,7 +21,8 @@ namespace SDK
 
 bool UAnimNotify_FootStep_C::Received_Notify(class USkeletalMeshComponent** MeshComp, class UAnimSequenceBase** Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AnimNotify_FootStep.AnimNotify_FootStep_C.Received_Notify");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c10446);
 
 	UAnimNotify_FootStep_C_Received_Notify_Params params;
 	params.MeshComp = MeshComp;

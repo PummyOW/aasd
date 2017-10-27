@@ -19,7 +19,8 @@ namespace SDK
 
 void URejoinWindow_C::OnButtonClicked(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.OnButtonClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b115fa9);
 
 	URejoinWindow_C_OnButtonClicked_Params params;
 	params.Button = Button;
@@ -37,7 +38,8 @@ void URejoinWindow_C::OnButtonClicked(class UCommonButton* Button)
 
 void URejoinWindow_C::CenterFirstButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.CenterFirstButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7d519a4);
 
 	URejoinWindow_C_CenterFirstButton_Params params;
 
@@ -54,7 +56,8 @@ void URejoinWindow_C::CenterFirstButton()
 
 void URejoinWindow_C::InitializeRejoinWindow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.InitializeRejoinWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x670a7764);
 
 	URejoinWindow_C_InitializeRejoinWindow_Params params;
 
@@ -73,7 +76,8 @@ void URejoinWindow_C::InitializeRejoinWindow()
 
 void URejoinWindow_C::ShowInitalScreen(float TimeoutSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.ShowInitalScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d919c93);
 
 	URejoinWindow_C_ShowInitalScreen_Params params;
 	params.TimeoutSeconds = TimeoutSeconds;
@@ -95,7 +99,8 @@ void URejoinWindow_C::ShowInitalScreen(float TimeoutSeconds)
 
 void URejoinWindow_C::ShowRetryScreen(const struct FText& Failure, float TimeoutSeconds, bool AllowRetry)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.ShowRetryScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7924c98c);
 
 	URejoinWindow_C_ShowRetryScreen_Params params;
 	params.Failure = Failure;
@@ -115,7 +120,8 @@ void URejoinWindow_C::ShowRetryScreen(const struct FText& Failure, float Timeout
 
 void URejoinWindow_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6caa7c8);
 
 	URejoinWindow_C_Construct_Params params;
 
@@ -132,7 +138,8 @@ void URejoinWindow_C::Construct()
 
 void URejoinWindow_C::OnTimeoutTimeReached()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.OnTimeoutTimeReached");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6f3e562);
 
 	URejoinWindow_C_OnTimeoutTimeReached_Params params;
 
@@ -151,7 +158,8 @@ void URejoinWindow_C::OnTimeoutTimeReached()
 
 void URejoinWindow_C::ExecuteUbergraph_RejoinWindow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.ExecuteUbergraph_RejoinWindow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29372bf6);
 
 	URejoinWindow_C_ExecuteUbergraph_RejoinWindow_Params params;
 	params.EntryPoint = EntryPoint;
@@ -169,7 +177,8 @@ void URejoinWindow_C::ExecuteUbergraph_RejoinWindow(int EntryPoint)
 
 void URejoinWindow_C::OnRequestRejoinRetry__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.OnRequestRejoinRetry__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f8dd23);
 
 	URejoinWindow_C_OnRequestRejoinRetry__DelegateSignature_Params params;
 
@@ -186,7 +195,8 @@ void URejoinWindow_C::OnRequestRejoinRetry__DelegateSignature()
 
 void URejoinWindow_C::OnRequestAbandon__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RejoinWindow.RejoinWindow_C.OnRequestAbandon__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e12e6af);
 
 	URejoinWindow_C_OnRequestAbandon__DelegateSignature_Params params;
 

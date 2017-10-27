@@ -21,7 +21,8 @@ namespace SDK
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNearBox(const struct FVector& BoxMin, const struct FVector& BoxMax, float* VolumePlayerCoveragePercentage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.CalculatePlayerPositionNearBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5135f954);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_CalculatePlayerPositionNearBox_Params params;
 	params.BoxMin = BoxMin;
@@ -43,7 +44,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdfbbdd0);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_UserConstructionScript_Params params;
 
@@ -60,7 +62,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::UserConstructionScript()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.Ramp Up down values on death__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4764c57);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_Ramp_Up_down_values_on_death__FinishedFunc_Params params;
 
@@ -77,7 +80,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_dea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.Ramp Up down values on death__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8293a662);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_Ramp_Up_down_values_on_death__UpdateFunc_Params params;
 
@@ -96,7 +100,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_dea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15ba3ddd);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -116,7 +121,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ReceiveTick(float* DeltaSe
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatCloudsChanged(TArray<struct FThreatLocationInfo>* ThreatLocationInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.OnThreatCloudsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xacae180e);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_OnThreatCloudsChanged_Params params;
 	params.ThreatLocationInfo = ThreatLocationInfo;
@@ -134,7 +140,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatCloudsChanged(TArr
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnWorldReady()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.OnWorldReady");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x85a8c321);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_OnWorldReady_Params params;
 
@@ -151,7 +158,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnWorldReady()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::VFX_RainTracePeriodic()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.VFX_RainTracePeriodic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb6472e2);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_VFX_RainTracePeriodic_Params params;
 
@@ -168,7 +176,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::VFX_RainTracePeriodic()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::StartTraceTimer()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.StartTraceTimer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2e81f6f);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_StartTraceTimer_Params params;
 
@@ -185,7 +194,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::StartTraceTimer()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ForceUpdateLensEffect()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.ForceUpdateLensEffect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa723a16c);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_ForceUpdateLensEffect_Params params;
 
@@ -204,7 +214,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ForceUpdateLensEffect()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfafe888f);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint_Params params;
 	params.EntryPoint = EntryPoint;
@@ -222,7 +233,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ExecuteUbergraph_ThreatPos
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher0__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.NewEventDispatcher0__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8122ab4d);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_NewEventDispatcher0__DelegateSignature_Params params;
 
@@ -239,7 +251,8 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher0__Deleg
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.NewEventDispatcher__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87d69b69);
 
 	AThreatPostProcessManagerAndParticleBlueprint_C_NewEventDispatcher__DelegateSignature_Params params;
 

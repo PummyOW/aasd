@@ -17,7 +17,8 @@ namespace SDK
 
 void UBuildWatermark_C::Update_Watermark()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildWatermark.BuildWatermark_C.Update Watermark");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf16aac0a);
 
 	UBuildWatermark_C_Update_Watermark_Params params;
 
@@ -34,7 +35,8 @@ void UBuildWatermark_C::Update_Watermark()
 
 void UBuildWatermark_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildWatermark.BuildWatermark_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x298b6276);
 
 	UBuildWatermark_C_Construct_Params params;
 
@@ -53,7 +55,8 @@ void UBuildWatermark_C::Construct()
 
 void UBuildWatermark_C::ExecuteUbergraph_BuildWatermark(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildWatermark.BuildWatermark_C.ExecuteUbergraph_BuildWatermark");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d042d21);
 
 	UBuildWatermark_C_ExecuteUbergraph_BuildWatermark_Params params;
 	params.EntryPoint = EntryPoint;

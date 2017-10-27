@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemInspectUpgradeCallout_C::IsEvolutionReady(bool* EvolutionReady)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.IsEvolutionReady");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x445fb1df);
 
 	UItemInspectUpgradeCallout_C_IsEvolutionReady_Params params;
 
@@ -39,7 +40,8 @@ void UItemInspectUpgradeCallout_C::IsEvolutionReady(bool* EvolutionReady)
 
 void UItemInspectUpgradeCallout_C::ShowEvolutionInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.ShowEvolutionInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1703a3e7);
 
 	UItemInspectUpgradeCallout_C_ShowEvolutionInfo_Params params;
 
@@ -56,7 +58,8 @@ void UItemInspectUpgradeCallout_C::ShowEvolutionInfo()
 
 void UItemInspectUpgradeCallout_C::ShowUpgradeInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.ShowUpgradeInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79f6d93c);
 
 	UItemInspectUpgradeCallout_C_ShowUpgradeInfo_Params params;
 
@@ -75,7 +78,8 @@ void UItemInspectUpgradeCallout_C::ShowUpgradeInfo()
 
 void UItemInspectUpgradeCallout_C::IsUpgradeReady(bool* UpgradeReady)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.IsUpgradeReady");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a08d43a);
 
 	UItemInspectUpgradeCallout_C_IsUpgradeReady_Params params;
 
@@ -95,7 +99,8 @@ void UItemInspectUpgradeCallout_C::IsUpgradeReady(bool* UpgradeReady)
 
 void UItemInspectUpgradeCallout_C::RefreshOnUpgrade()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.RefreshOnUpgrade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44eeb3d5);
 
 	UItemInspectUpgradeCallout_C_RefreshOnUpgrade_Params params;
 
@@ -112,7 +117,8 @@ void UItemInspectUpgradeCallout_C::RefreshOnUpgrade()
 
 void UItemInspectUpgradeCallout_C::EnableUpgrade()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.EnableUpgrade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d7568b2);
 
 	UItemInspectUpgradeCallout_C_EnableUpgrade_Params params;
 
@@ -129,7 +135,8 @@ void UItemInspectUpgradeCallout_C::EnableUpgrade()
 
 void UItemInspectUpgradeCallout_C::DisableUpgrade()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.DisableUpgrade");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcbdc6253);
 
 	UItemInspectUpgradeCallout_C_DisableUpgrade_Params params;
 
@@ -146,7 +153,8 @@ void UItemInspectUpgradeCallout_C::DisableUpgrade()
 
 void UItemInspectUpgradeCallout_C::OnShow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.OnShow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x602b8723);
 
 	UItemInspectUpgradeCallout_C_OnShow_Params params;
 
@@ -165,7 +173,8 @@ void UItemInspectUpgradeCallout_C::OnShow()
 
 void UItemInspectUpgradeCallout_C::SetItemToRepresent(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.SetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7867b431);
 
 	UItemInspectUpgradeCallout_C_SetItemToRepresent_Params params;
 	params.Item = Item;
@@ -183,7 +192,8 @@ void UItemInspectUpgradeCallout_C::SetItemToRepresent(class UFortItem* Item)
 
 void UItemInspectUpgradeCallout_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83fada34);
 
 	UItemInspectUpgradeCallout_C_Refresh_Params params;
 
@@ -202,7 +212,8 @@ void UItemInspectUpgradeCallout_C::Refresh()
 
 void UItemInspectUpgradeCallout_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_257_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_257_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x887208db);
 
 	UItemInspectUpgradeCallout_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_257_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -222,7 +233,8 @@ void UItemInspectUpgradeCallout_C::BndEvt__IconTextButton_K2Node_ComponentBoundE
 
 void UItemInspectUpgradeCallout_C::BndEvt__EvolveButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.BndEvt__EvolveButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d6bcc82);
 
 	UItemInspectUpgradeCallout_C_BndEvt__EvolveButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -242,7 +254,8 @@ void UItemInspectUpgradeCallout_C::BndEvt__EvolveButton_K2Node_ComponentBoundEve
 
 void UItemInspectUpgradeCallout_C::ExecuteUbergraph_ItemInspectUpgradeCallout(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.ExecuteUbergraph_ItemInspectUpgradeCallout");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5bff3f6);
 
 	UItemInspectUpgradeCallout_C_ExecuteUbergraph_ItemInspectUpgradeCallout_Params params;
 	params.EntryPoint = EntryPoint;
@@ -260,7 +273,8 @@ void UItemInspectUpgradeCallout_C::ExecuteUbergraph_ItemInspectUpgradeCallout(in
 
 void UItemInspectUpgradeCallout_C::OnRequestUpgrade__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.OnRequestUpgrade__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc608bcfc);
 
 	UItemInspectUpgradeCallout_C_OnRequestUpgrade__DelegateSignature_Params params;
 

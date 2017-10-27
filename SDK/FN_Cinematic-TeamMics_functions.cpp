@@ -19,7 +19,8 @@ namespace SDK
 
 void UCinematic_TeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic-TeamMics.Cinematic-TeamMics_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5846de6a);
 
 	UCinematic_TeamMics_C_Update_Params params;
 	params.UpdatedMemberInfo = UpdatedMemberInfo;
@@ -37,7 +38,8 @@ void UCinematic_TeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemb
 
 void UCinematic_TeamMics_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic-TeamMics.Cinematic-TeamMics_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56379168);
 
 	UCinematic_TeamMics_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UCinematic_TeamMics_C::Construct()
 
 void UCinematic_TeamMics_C::ExecuteUbergraph_Cinematic_TeamMics(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic-TeamMics.Cinematic-TeamMics_C.ExecuteUbergraph_Cinematic-TeamMics");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf1a04e6);
 
 	UCinematic_TeamMics_C_ExecuteUbergraph_Cinematic_TeamMics_Params params;
 	params.EntryPoint = EntryPoint;

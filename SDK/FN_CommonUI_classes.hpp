@@ -22,110 +22,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUserWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7a7440a6);
 		return ptr;
 	}
 
 
 	void SetConsumePointerInput(bool bInConsumePointerInput);
-};
-
-
-// Class CommonUI.CommonTabListWidget
-// 0x00C8 (0x0300 - 0x0238)
-class UCommonTabListWidget : public UCommonUserWidget
-{
-public:
-	struct FScriptMulticastDelegate                    OnTabSelected;                                            // 0x0238(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnTabButtonCreated;                                       // 0x0248(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnTabButtonRemoved;                                       // 0x0258(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FDataTableRowHandle                         NextTabInputActionData;                                   // 0x0268(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	struct FDataTableRowHandle                         PreviousTabInputActionData;                               // 0x0278(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	bool                                               bAutoListenForInput;                                      // 0x0288(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0289(0x0007) MISSED OFFSET
-	class UCommonWidgetSwitcher*                       LinkedSwitcher;                                           // 0x0290(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	TMap<struct FName, struct FCommonRegisteredTabInfo> RegisteredTabsByID;                                       // 0x0298(0x0050) (CPF_ZeroConstructor)
-	class UCommonButtonGroup*                          TabButtonGroup;                                           // 0x02E8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x02F0(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTabListWidget");
-		return ptr;
-	}
-
-
-	void SetTabEnabled(const struct FName& TabNameID, bool bEnable);
-	void SetListeningForInput(bool bShouldListen);
-	void SetLinkedSwitcher(class UCommonWidgetSwitcher* CommonSwitcher);
-	bool SelectTabByID(const struct FName& TabNameID, bool bSuppressClickFeedback);
-	bool RemoveTab(const struct FName& TabNameID);
-	void RemoveAllTabs();
-	bool RegisterTab(const struct FName& TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget);
-	void OnTabSelected__DelegateSignature(const struct FName& TabId);
-	void OnTabButtonRemoved__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
-	void OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
-	void HandleTabRemoved(const struct FName& TabNameID, class UCommonButton* TabButton);
-	void HandleTabCreated(const struct FName& TabNameID, class UCommonButton* TabButton);
-	void HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int ButtonIndex);
-	void HandlePreviousTabInputAction(bool* bPassThrough);
-	void HandlePreLinkedSwitcherChanged_BP();
-	void HandlePostLinkedSwitcherChanged_BP();
-	void HandleNextTabInputAction(bool* bPassThrough);
-	int GetTabCount();
-	class UCommonButton* GetTabButtonByID(const struct FName& TabNameID);
-	class UCommonWidgetSwitcher* GetLinkedSwitcher();
-	struct FName GetActiveTab();
-	void DisableTabWithReason(const struct FName& TabNameID, const struct FText& Reason);
-};
-
-
-// Class CommonUI.CommonActivatablePanel
-// 0x01A8 (0x03E0 - 0x0238)
-class UCommonActivatablePanel : public UCommonUserWidget
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0238(0x0008) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnWidgetActivated;                                        // 0x0240(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnWidgetDeactivated;                                      // 0x0250(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData01[0x100];                                     // 0x0260(0x0100) MISSED OFFSET
-	bool                                               bConsumeAllActions;                                       // 0x0360(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bExposeActionsExternally;                                 // 0x0361(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bShouldBypassStack;                                       // 0x0362(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7D];                                      // 0x0363(0x007D) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonActivatablePanel");
-		return ptr;
-	}
-
-
-	void SetInputActionHandlerWithProgress(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
-	void SetInputActionHandler(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent);
-	void SetActionHandlerStateWithDisabledCommitEvent(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
-	void SetActionHandlerStateFromHandleWithDisabledCommitEvent(const struct FDataTableRowHandle& InputActionRow, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
-	void SetActionHandlerStateFromHandle(const struct FDataTableRowHandle& InputActionRow, EInputActionState State);
-	void SetActionHandlerState(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State);
-	void RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
-	void RemoveAllInputActionHandlers();
-	void PopPanel();
-	void OnInputModeChanged(bool bUsingGamepad);
-	void OnDeactivated();
-	void OnBeginOutro();
-	void OnBeginIntro();
-	void OnActivated();
-	bool IsIntroed();
-	bool IsActivated();
-	bool HasInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
-	bool GetInputActions(TArray<struct FCommonInputActionHandlerData>* InputActionDataRows);
-	void EndOutro();
-	void EndIntro();
-	void BeginOutro();
-	void BeginIntro();
-	void AddInputActionNoHandler(class UDataTable* DataTable, const struct FName& RowName);
-	void AddInputActionHandlerWithProgress(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
-	void AddInputActionHandler(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent);
 };
 
 
@@ -165,7 +68,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaba0959f);
 		return ptr;
 	}
 
@@ -218,116 +122,53 @@ public:
 };
 
 
-// Class CommonUI.CommonWidgetGroupBase
-// 0x0000 (0x0028 - 0x0028)
-class UCommonWidgetGroupBase : public UObject
+// Class CommonUI.CommonActivatablePanel
+// 0x01A8 (0x03E0 - 0x0238)
+class UCommonActivatablePanel : public UCommonUserWidget
 {
 public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0238(0x0008) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnWidgetActivated;                                        // 0x0240(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnWidgetDeactivated;                                      // 0x0250(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData01[0x100];                                     // 0x0260(0x0100) MISSED OFFSET
+	bool                                               bConsumeAllActions;                                       // 0x0360(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bExposeActionsExternally;                                 // 0x0361(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShouldBypassStack;                                       // 0x0362(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7D];                                      // 0x0363(0x007D) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetGroupBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b59e1e3);
 		return ptr;
 	}
 
 
-	void RemoveWidget(class UWidget* InWidget);
-	void RemoveAll();
-	void AddWidget(class UWidget* InWidget);
-};
-
-
-// Class CommonUI.CommonButtonGroup
-// 0x0070 (0x0098 - 0x0028)
-class UCommonButtonGroup : public UCommonWidgetGroupBase
-{
-public:
-	struct FScriptMulticastDelegate                    OnSelectedButtonChanged;                                  // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnHoveredButtonChanged;                                   // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnButtonClicked;                                          // 0x0048(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnButtonDoubleClicked;                                    // 0x0058(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnSelectionCleared;                                       // 0x0068(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	bool                                               bSelectionRequired;                                       // 0x0078(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1F];                                      // 0x0079(0x001F) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButtonGroup");
-		return ptr;
-	}
-
-
-	void SetSelectionRequired(bool bRequireSelection);
-	void SelectPreviousButton(bool bAllowWrap);
-	void SelectNextButton(bool bAllowWrap);
-	void SelectButtonAtIndex(int ButtonIndex);
-	void OnSelectionStateChanged(class UCommonButton* BaseButton, bool bIsSelected);
-	void OnHandleButtonDoubleClicked(class UCommonButton* BaseButton);
-	void OnHandleButtonClicked(class UCommonButton* BaseButton);
-	void OnButtonUnhovered(class UCommonButton* BaseButton);
-	void OnButtonHovered(class UCommonButton* BaseButton);
-	bool HasAnyButtons();
-	int GetSelectedButtonIndex();
-	class UCommonButton* GetButtonAtIndex(int Index);
-	int FindButtonIndex(class UCommonButton* ButtonToFind);
-	void DeselectAll();
-};
-
-
-// Class CommonUI.CommonTextBlock
-// 0x0050 (0x0298 - 0x0248)
-class UCommonTextBlock : public UTextBlock
-{
-public:
-	class UClass*                                      Style;                                                    // 0x0248(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      ScrollStyle;                                              // 0x0250(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x40];                                      // 0x0258(0x0040) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTextBlock");
-		return ptr;
-	}
-
-
-	void SetWrapTextWidth(int InWrapTextAt);
-	void SetStyle(class UClass* InStyle);
-	void SetScrollStyle(class UClass* InScrollStyle);
-	void SetProperties(class UClass* InStyle, class UClass* InScrollStyle);
-	void ResetScrollState();
-};
-
-
-// Class CommonUI.CommonNumericTextBlock
-// 0x0088 (0x0320 - 0x0298)
-class UCommonNumericTextBlock : public UCommonTextBlock
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0298(0x0008) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnOutroEvent;                                             // 0x02A0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnInterpolationEndedEvent;                                // 0x02B0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	float                                              CurrentNumericValue;                                      // 0x02C0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               IsPercentage;                                             // 0x02C4(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x3];                                       // 0x02C5(0x0003) MISSED OFFSET
-	struct FCommonNumberFormattingOptions              FormattingSpecification;                                  // 0x02C8(0x0014) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	float                                              EaseOutInterpolationExponent;                             // 0x02DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              InterpolationUpdateInterval;                              // 0x02E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PostInterpolationShrinkDuration;                          // 0x02E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x38];                                      // 0x02E8(0x0038) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonNumericTextBlock");
-		return ptr;
-	}
-
-
-	void SetCurrentValue(float NewValue);
-	void OnOutro__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock);
-	void OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, bool HadCompleted);
-	bool IsInterpolatingNumericValue();
-	void InterpolateToValue(float TargetValue, float MaximumInterpolationDuration, float MinimumChangeRate, float OutroOffset);
-	float GetTargetValue();
+	void SetInputActionHandlerWithProgress(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
+	void SetInputActionHandler(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent);
+	void SetActionHandlerStateWithDisabledCommitEvent(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
+	void SetActionHandlerStateFromHandleWithDisabledCommitEvent(const struct FDataTableRowHandle& InputActionRow, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
+	void SetActionHandlerStateFromHandle(const struct FDataTableRowHandle& InputActionRow, EInputActionState State);
+	void SetActionHandlerState(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State);
+	void RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
+	void RemoveAllInputActionHandlers();
+	void PopPanel();
+	void OnInputModeChanged(bool bUsingGamepad);
+	void OnDeactivated();
+	void OnBeginOutro();
+	void OnBeginIntro();
+	void OnActivated();
+	bool IsIntroed();
+	bool IsActivated();
+	bool HasInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
+	bool GetInputActions(TArray<struct FCommonInputActionHandlerData>* InputActionDataRows);
+	void EndOutro();
+	void EndIntro();
+	void BeginOutro();
+	void BeginIntro();
+	void AddInputActionNoHandler(class UDataTable* DataTable, const struct FName& RowName);
+	void AddInputActionHandlerWithProgress(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
+	void AddInputActionHandler(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent);
 };
 
 
@@ -358,7 +199,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonListView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9ee3e40);
 		return ptr;
 	}
 
@@ -401,12 +243,181 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTileView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc124b40);
 		return ptr;
 	}
 
 
 	void SetItemWidth(float NewWidth);
+};
+
+
+// Class CommonUI.CommonTabListWidget
+// 0x00C8 (0x0300 - 0x0238)
+class UCommonTabListWidget : public UCommonUserWidget
+{
+public:
+	struct FScriptMulticastDelegate                    OnTabSelected;                                            // 0x0238(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnTabButtonCreated;                                       // 0x0248(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnTabButtonRemoved;                                       // 0x0258(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FDataTableRowHandle                         NextTabInputActionData;                                   // 0x0268(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FDataTableRowHandle                         PreviousTabInputActionData;                               // 0x0278(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	bool                                               bAutoListenForInput;                                      // 0x0288(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0289(0x0007) MISSED OFFSET
+	class UCommonWidgetSwitcher*                       LinkedSwitcher;                                           // 0x0290(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	TMap<struct FName, struct FCommonRegisteredTabInfo> RegisteredTabsByID;                                       // 0x0298(0x0050) (CPF_ZeroConstructor)
+	class UCommonButtonGroup*                          TabButtonGroup;                                           // 0x02E8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x02F0(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5bb2c0b4);
+		return ptr;
+	}
+
+
+	void SetTabVisibility(const struct FName& TabNameID, ESlateVisibility NewVisibility);
+	void SetTabEnabled(const struct FName& TabNameID, bool bEnable);
+	void SetListeningForInput(bool bShouldListen);
+	void SetLinkedSwitcher(class UCommonWidgetSwitcher* CommonSwitcher);
+	bool SelectTabByID(const struct FName& TabNameID, bool bSuppressClickFeedback);
+	bool RemoveTab(const struct FName& TabNameID);
+	void RemoveAllTabs();
+	bool RegisterTab(const struct FName& TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget);
+	void OnTabSelected__DelegateSignature(const struct FName& TabId);
+	void OnTabButtonRemoved__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
+	void OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
+	void HandleTabRemoved(const struct FName& TabNameID, class UCommonButton* TabButton);
+	void HandleTabCreated(const struct FName& TabNameID, class UCommonButton* TabButton);
+	void HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int ButtonIndex);
+	void HandlePreviousTabInputAction(bool* bPassThrough);
+	void HandlePreLinkedSwitcherChanged_BP();
+	void HandlePostLinkedSwitcherChanged_BP();
+	void HandleNextTabInputAction(bool* bPassThrough);
+	int GetTabCount();
+	class UCommonButton* GetTabButtonByID(const struct FName& TabNameID);
+	class UCommonWidgetSwitcher* GetLinkedSwitcher();
+	struct FName GetActiveTab();
+	void DisableTabWithReason(const struct FName& TabNameID, const struct FText& Reason);
+};
+
+
+// Class CommonUI.CommonWidgetGroupBase
+// 0x0000 (0x0028 - 0x0028)
+class UCommonWidgetGroupBase : public UObject
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0fa672f);
+		return ptr;
+	}
+
+
+	void RemoveWidget(class UWidget* InWidget);
+	void RemoveAll();
+	void AddWidget(class UWidget* InWidget);
+};
+
+
+// Class CommonUI.CommonButtonGroup
+// 0x0070 (0x0098 - 0x0028)
+class UCommonButtonGroup : public UCommonWidgetGroupBase
+{
+public:
+	struct FScriptMulticastDelegate                    OnSelectedButtonChanged;                                  // 0x0028(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnHoveredButtonChanged;                                   // 0x0038(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnButtonClicked;                                          // 0x0048(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnButtonDoubleClicked;                                    // 0x0058(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnSelectionCleared;                                       // 0x0068(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	bool                                               bSelectionRequired;                                       // 0x0078(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x1F];                                      // 0x0079(0x001F) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c917ec4);
+		return ptr;
+	}
+
+
+	void SetSelectionRequired(bool bRequireSelection);
+	void SelectPreviousButton(bool bAllowWrap);
+	void SelectNextButton(bool bAllowWrap);
+	void SelectButtonAtIndex(int ButtonIndex);
+	void OnSelectionStateChanged(class UCommonButton* BaseButton, bool bIsSelected);
+	void OnHandleButtonDoubleClicked(class UCommonButton* BaseButton);
+	void OnHandleButtonClicked(class UCommonButton* BaseButton);
+	void OnButtonUnhovered(class UCommonButton* BaseButton);
+	void OnButtonHovered(class UCommonButton* BaseButton);
+	bool HasAnyButtons();
+	int GetSelectedButtonIndex();
+	class UCommonButton* GetButtonAtIndex(int Index);
+	int FindButtonIndex(class UCommonButton* ButtonToFind);
+	void DeselectAll();
+};
+
+
+// Class CommonUI.CommonTextBlock
+// 0x0050 (0x0298 - 0x0248)
+class UCommonTextBlock : public UTextBlock
+{
+public:
+	class UClass*                                      Style;                                                    // 0x0248(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      ScrollStyle;                                              // 0x0250(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x40];                                      // 0x0258(0x0040) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x77cb5d85);
+		return ptr;
+	}
+
+
+	void SetWrapTextWidth(int InWrapTextAt);
+	void SetStyle(class UClass* InStyle);
+	void SetScrollStyle(class UClass* InScrollStyle);
+	void SetProperties(class UClass* InStyle, class UClass* InScrollStyle);
+	void ResetScrollState();
+};
+
+
+// Class CommonUI.CommonNumericTextBlock
+// 0x0088 (0x0320 - 0x0298)
+class UCommonNumericTextBlock : public UCommonTextBlock
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0298(0x0008) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnOutroEvent;                                             // 0x02A0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnInterpolationEndedEvent;                                // 0x02B0(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	float                                              CurrentNumericValue;                                      // 0x02C0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               IsPercentage;                                             // 0x02C4(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x3];                                       // 0x02C5(0x0003) MISSED OFFSET
+	struct FCommonNumberFormattingOptions              FormattingSpecification;                                  // 0x02C8(0x0014) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	float                                              EaseOutInterpolationExponent;                             // 0x02DC(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              InterpolationUpdateInterval;                              // 0x02E0(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PostInterpolationShrinkDuration;                          // 0x02E4(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x38];                                      // 0x02E8(0x0038) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f54d26c);
+		return ptr;
+	}
+
+
+	void SetCurrentValue(float NewValue);
+	void OnOutro__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock);
+	void OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, bool HadCompleted);
+	bool IsInterpolatingNumericValue();
+	void InterpolateToValue(float TargetValue, float MaximumInterpolationDuration, float MinimumChangeRate, float OutroOffset);
+	float GetTargetValue();
 };
 
 
@@ -419,7 +430,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.AnalogSlider");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9988ccf);
 		return ptr;
 	}
 
@@ -434,7 +446,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonActionHandlerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2f70a20);
 		return ptr;
 	}
 
@@ -456,7 +469,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonActionWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d8bb119);
 		return ptr;
 	}
 
@@ -478,7 +492,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonBorderStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c86a334);
 		return ptr;
 	}
 
@@ -500,7 +515,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonBorder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfa980b81);
 		return ptr;
 	}
 
@@ -528,7 +544,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonVisibilityWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a9a4103);
 		return ptr;
 	}
 
@@ -564,7 +581,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButtonStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2fabc742);
 		return ptr;
 	}
 
@@ -602,7 +620,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButtonInternal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca4856e0);
 		return ptr;
 	}
 
@@ -618,7 +637,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonCustomNavigation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc063afc0);
 		return ptr;
 	}
 
@@ -636,7 +656,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonGlobalInputHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x703ef45a);
 		return ptr;
 	}
 
@@ -658,14 +679,17 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonInputManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fe023ea);
 		return ptr;
 	}
 
 
+	void SuspendStartingOperationProcessing();
 	bool StopListeningForExistingHeldAction(const struct FDataTableRowHandle& InputActionDataRow, const struct FScriptDelegate& CompleteEvent, const struct FScriptDelegate& ProgressEvent);
 	bool StartListeningForExistingHeldAction(const struct FDataTableRowHandle& InputActionDataRow, const struct FScriptDelegate& CompleteEvent, const struct FScriptDelegate& ProgressEvent);
 	void SetGlobalInputHandlerPriorityFilter(int InFilterPriority);
+	void ResumeStartingOperationProcessing();
 	void PushActivatablePanel(class UCommonActivatablePanel* ActivatablePanel, bool bIntroPanel, bool bOutroPanelBelow);
 	void PopActivatablePanel(class UCommonActivatablePanel* ActivatablePanel);
 	bool IsPanelOnStack(class UCommonActivatablePanel* InPanel);
@@ -693,7 +717,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonLoadGuard");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdce70972);
 		return ptr;
 	}
 
@@ -717,7 +742,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonLazyImage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd1d28db8);
 		return ptr;
 	}
 
@@ -739,7 +765,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonListViewNullItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a7d678a);
 		return ptr;
 	}
 
@@ -757,7 +784,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTreeView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3caf395c);
 		return ptr;
 	}
 
@@ -777,7 +805,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonPoolableWidgetInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f5d8bc6);
 		return ptr;
 	}
 
@@ -795,7 +824,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonListItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb64003a);
 		return ptr;
 	}
 
@@ -820,7 +850,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonObjectListItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79c90c23);
 		return ptr;
 	}
 
@@ -847,7 +878,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTextStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36a77825);
 		return ptr;
 	}
 
@@ -875,10 +907,32 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTextScrollStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfcfb22f4);
 		return ptr;
 	}
 
+};
+
+
+// Class CommonUI.CommonDateTimeTextBlock
+// 0x0020 (0x02B8 - 0x0298)
+class UCommonDateTimeTextBlock : public UCommonTextBlock
+{
+public:
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0298(0x0020) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde86618c);
+		return ptr;
+	}
+
+
+	void SetTimespanValue(const struct FTimespan& InTimespan);
+	void SetDateTimeValue(const struct FDateTime& InDateTime, bool bShowAsCountdown);
+	struct FDateTime GetDateTime();
 };
 
 
@@ -899,7 +953,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUIContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82eaca32);
 		return ptr;
 	}
 
@@ -924,7 +979,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUILibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57121b46);
 		return ptr;
 	}
 
@@ -949,7 +1005,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUISettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbec45716);
 		return ptr;
 	}
 
@@ -971,7 +1028,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonRotator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf2c04ca);
 		return ptr;
 	}
 
@@ -995,7 +1053,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonInputReflector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76d9d75b);
 		return ptr;
 	}
 
@@ -1023,7 +1082,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetSwitcher");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2eaeb4a2);
 		return ptr;
 	}
 
@@ -1052,7 +1112,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetCarousel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50eb5fd5);
 		return ptr;
 	}
 
@@ -1076,7 +1137,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetStack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9bce9d29);
 		return ptr;
 	}
 

@@ -19,7 +19,8 @@ namespace SDK
 
 void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ea1c7f2);
 
 	UStoreMain_Root_C_HandleBack_Params params;
 
@@ -39,7 +40,8 @@ void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 
 void UStoreMain_Root_C::AboutToEnterChat()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.AboutToEnterChat");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29dcc411);
 
 	UStoreMain_Root_C_AboutToEnterChat_Params params;
 
@@ -56,7 +58,8 @@ void UStoreMain_Root_C::AboutToEnterChat()
 
 void UStoreMain_Root_C::AboutToPushDetails()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.AboutToPushDetails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61ae06df);
 
 	UStoreMain_Root_C_AboutToPushDetails_Params params;
 
@@ -75,7 +78,8 @@ void UStoreMain_Root_C::AboutToPushDetails()
 
 void UStoreMain_Root_C::IsOffersScrollBoxActive(bool* Return_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.IsOffersScrollBoxActive");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cdac844);
 
 	UStoreMain_Root_C_IsOffersScrollBoxActive_Params params;
 
@@ -95,7 +99,8 @@ void UStoreMain_Root_C::IsOffersScrollBoxActive(bool* Return_Value)
 
 void UStoreMain_Root_C::SetFocus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.SetFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a341ed1);
 
 	UStoreMain_Root_C_SetFocus_Params params;
 
@@ -114,7 +119,8 @@ void UStoreMain_Root_C::SetFocus()
 
 void UStoreMain_Root_C::AddOffer(class UFortMtxStoreOfferBase* MtxOffer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.AddOffer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9d13e4c);
 
 	UStoreMain_Root_C_AddOffer_Params params;
 	params.MtxOffer = MtxOffer;
@@ -132,7 +138,8 @@ void UStoreMain_Root_C::AddOffer(class UFortMtxStoreOfferBase* MtxOffer)
 
 void UStoreMain_Root_C::NoOffersAvailable()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.NoOffersAvailable");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63755b16);
 
 	UStoreMain_Root_C_NoOffersAvailable_Params params;
 
@@ -149,7 +156,8 @@ void UStoreMain_Root_C::NoOffersAvailable()
 
 void UStoreMain_Root_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef18f88f);
 
 	UStoreMain_Root_C_OnActivated_Params params;
 
@@ -168,7 +176,8 @@ void UStoreMain_Root_C::OnActivated()
 
 void UStoreMain_Root_C::OnMtxOfferGenerated(class UFortMtxStoreOfferBase** MtxOffer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.OnMtxOfferGenerated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda895d2);
 
 	UStoreMain_Root_C_OnMtxOfferGenerated_Params params;
 	params.MtxOffer = MtxOffer;
@@ -186,7 +195,8 @@ void UStoreMain_Root_C::OnMtxOfferGenerated(class UFortMtxStoreOfferBase** MtxOf
 
 void UStoreMain_Root_C::OnOffersGenerated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.OnOffersGenerated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbef6c326);
 
 	UStoreMain_Root_C_OnOffersGenerated_Params params;
 
@@ -203,7 +213,8 @@ void UStoreMain_Root_C::OnOffersGenerated()
 
 void UStoreMain_Root_C::OnStartReadingOffers()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.OnStartReadingOffers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x348e4463);
 
 	UStoreMain_Root_C_OnStartReadingOffers_Params params;
 
@@ -220,7 +231,8 @@ void UStoreMain_Root_C::OnStartReadingOffers()
 
 void UStoreMain_Root_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x951efd84);
 
 	UStoreMain_Root_C_OnDeactivated_Params params;
 
@@ -237,7 +249,8 @@ void UStoreMain_Root_C::OnDeactivated()
 
 void UStoreMain_Root_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34cf1d7f);
 
 	UStoreMain_Root_C_Destruct_Params params;
 
@@ -254,7 +267,8 @@ void UStoreMain_Root_C::Destruct()
 
 void UStoreMain_Root_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bd63b30);
 
 	UStoreMain_Root_C_Construct_Params params;
 
@@ -273,7 +287,8 @@ void UStoreMain_Root_C::Construct()
 
 void UStoreMain_Root_C::ExecuteUbergraph_StoreMain_Root(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StoreMain_Root.StoreMain_Root_C.ExecuteUbergraph_StoreMain_Root");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe17f387a);
 
 	UStoreMain_Root_C_ExecuteUbergraph_StoreMain_Root_Params params;
 	params.EntryPoint = EntryPoint;

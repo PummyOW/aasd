@@ -17,7 +17,8 @@ namespace SDK
 
 void UBP_SimpleItemWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SimpleItemWidget.BP_SimpleItemWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x337f832e);
 
 	UBP_SimpleItemWidget_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UBP_SimpleItemWidget_C::Construct()
 
 void UBP_SimpleItemWidget_C::ExecuteUbergraph_BP_SimpleItemWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_SimpleItemWidget.BP_SimpleItemWidget_C.ExecuteUbergraph_BP_SimpleItemWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2d474a3);
 
 	UBP_SimpleItemWidget_C_ExecuteUbergraph_BP_SimpleItemWidget_Params params;
 	params.EntryPoint = EntryPoint;

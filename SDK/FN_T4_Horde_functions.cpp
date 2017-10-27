@@ -19,7 +19,8 @@ namespace SDK
 
 void UT4_Horde_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T4_Horde.T4_Horde_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12fa7297);
 
 	UT4_Horde_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -37,7 +38,8 @@ void UT4_Horde_C::PreConstruct(bool* IsDesignTime)
 
 void UT4_Horde_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T4_Horde.T4_Horde_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc644c608);
 
 	UT4_Horde_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UT4_Horde_C::Construct()
 
 void UT4_Horde_C::ExecuteUbergraph_T4_Horde(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function T4_Horde.T4_Horde_C.ExecuteUbergraph_T4_Horde");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb58f5c42);
 
 	UT4_Horde_C_ExecuteUbergraph_T4_Horde_Params params;
 	params.EntryPoint = EntryPoint;

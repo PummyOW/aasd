@@ -17,7 +17,8 @@ namespace SDK
 
 void UDeathWidget_C::ShowExtraLivesText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.ShowExtraLivesText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2d58a56);
 
 	UDeathWidget_C_ShowExtraLivesText_Params params;
 
@@ -34,7 +35,8 @@ void UDeathWidget_C::ShowExtraLivesText()
 
 void UDeathWidget_C::SetRespawnTimerText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.SetRespawnTimerText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d1051b7);
 
 	UDeathWidget_C_SetRespawnTimerText_Params params;
 
@@ -51,7 +53,8 @@ void UDeathWidget_C::SetRespawnTimerText()
 
 void UDeathWidget_C::OnRespawnTimerUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.OnRespawnTimerUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd385e724);
 
 	UDeathWidget_C_OnRespawnTimerUpdate_Params params;
 
@@ -71,7 +74,8 @@ void UDeathWidget_C::OnRespawnTimerUpdate()
 
 void UDeathWidget_C::ConfigureRespawnTimer(float ServerRespawnTime, float ServerResurrectTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.ConfigureRespawnTimer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ebd7042);
 
 	UDeathWidget_C_ConfigureRespawnTimer_Params params;
 	params.ServerRespawnTime = ServerRespawnTime;
@@ -92,7 +96,8 @@ void UDeathWidget_C::ConfigureRespawnTimer(float ServerRespawnTime, float Server
 
 void UDeathWidget_C::OnPawnDied(struct FFortPlayerDeathReport* DeathReport)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.OnPawnDied");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa3056804);
 
 	UDeathWidget_C_OnPawnDied_Params params;
 
@@ -112,7 +117,8 @@ void UDeathWidget_C::OnPawnDied(struct FFortPlayerDeathReport* DeathReport)
 
 void UDeathWidget_C::OnPawnSpawned()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.OnPawnSpawned");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xccbc9ec);
 
 	UDeathWidget_C_OnPawnSpawned_Params params;
 
@@ -129,7 +135,8 @@ void UDeathWidget_C::OnPawnSpawned()
 
 void UDeathWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce6315e);
 
 	UDeathWidget_C_Construct_Params params;
 
@@ -148,7 +155,8 @@ void UDeathWidget_C::Construct()
 
 void UDeathWidget_C::ExecuteUbergraph_DeathWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DeathWidget.DeathWidget_C.ExecuteUbergraph_DeathWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e8f982f);
 
 	UDeathWidget_C_ExecuteUbergraph_DeathWidget_Params params;
 	params.EntryPoint = EntryPoint;

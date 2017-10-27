@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaViewTargetHitPointBar_C::UpdateDBNOState(bool IsDBNO)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateDBNOState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70cc521e);
 
 	UAthenaViewTargetHitPointBar_C_UpdateDBNOState_Params params;
 	params.IsDBNO = IsDBNO;
@@ -37,7 +38,8 @@ void UAthenaViewTargetHitPointBar_C::UpdateDBNOState(bool IsDBNO)
 
 void UAthenaViewTargetHitPointBar_C::UpdateVolatileForUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateVolatileForUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6d2e56e);
 
 	UAthenaViewTargetHitPointBar_C_UpdateVolatileForUpdate_Params params;
 
@@ -54,7 +56,8 @@ void UAthenaViewTargetHitPointBar_C::UpdateVolatileForUpdate()
 
 void UAthenaViewTargetHitPointBar_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2faf46f0);
 
 	UAthenaViewTargetHitPointBar_C_Update_Params params;
 
@@ -71,7 +74,8 @@ void UAthenaViewTargetHitPointBar_C::Update()
 
 void UAthenaViewTargetHitPointBar_C::Update_Delta_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Update Delta Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65d34c69);
 
 	UAthenaViewTargetHitPointBar_C_Update_Delta_Bar_Params params;
 
@@ -88,7 +92,8 @@ void UAthenaViewTargetHitPointBar_C::Update_Delta_Bar()
 
 void UAthenaViewTargetHitPointBar_C::Initialize_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Initialize Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x323519fe);
 
 	UAthenaViewTargetHitPointBar_C_Initialize_Bar_Params params;
 
@@ -107,7 +112,8 @@ void UAthenaViewTargetHitPointBar_C::Initialize_Bar()
 
 void UAthenaViewTargetHitPointBar_C::UpdateCurrentValueWithoutReason(float Current)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateCurrentValueWithoutReason");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x760d011a);
 
 	UAthenaViewTargetHitPointBar_C_UpdateCurrentValueWithoutReason_Params params;
 	params.Current = Current;
@@ -125,7 +131,8 @@ void UAthenaViewTargetHitPointBar_C::UpdateCurrentValueWithoutReason(float Curre
 
 void UAthenaViewTargetHitPointBar_C::Update_Fill_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Update Fill Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7bf59224);
 
 	UAthenaViewTargetHitPointBar_C_Update_Fill_Bar_Params params;
 
@@ -145,7 +152,8 @@ void UAthenaViewTargetHitPointBar_C::Update_Fill_Bar()
 
 void UAthenaViewTargetHitPointBar_C::UpdateCurrentValue(float Current, EFortHitPointModificationReason Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateCurrentValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb121aece);
 
 	UAthenaViewTargetHitPointBar_C_UpdateCurrentValue_Params params;
 	params.Current = Current;
@@ -166,7 +174,8 @@ void UAthenaViewTargetHitPointBar_C::UpdateCurrentValue(float Current, EFortHitP
 
 void UAthenaViewTargetHitPointBar_C::UpdateMaxValue(float Max)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.UpdateMaxValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7fec6bcd);
 
 	UAthenaViewTargetHitPointBar_C_UpdateMaxValue_Params params;
 	params.Max = Max;
@@ -184,7 +193,8 @@ void UAthenaViewTargetHitPointBar_C::UpdateMaxValue(float Max)
 
 void UAthenaViewTargetHitPointBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc12751aa);
 
 	UAthenaViewTargetHitPointBar_C_Construct_Params params;
 
@@ -203,7 +213,8 @@ void UAthenaViewTargetHitPointBar_C::Construct()
 
 void UAthenaViewTargetHitPointBar_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5b3ad21);
 
 	UAthenaViewTargetHitPointBar_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -224,7 +235,8 @@ void UAthenaViewTargetHitPointBar_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaViewTargetHitPointBar_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x238133d8);
 
 	UAthenaViewTargetHitPointBar_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -245,7 +257,8 @@ void UAthenaViewTargetHitPointBar_C::Tick(struct FGeometry* MyGeometry, float* I
 
 void UAthenaViewTargetHitPointBar_C::ExecuteUbergraph_AthenaViewTargetHitPointBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaViewTargetHitPointBar.AthenaViewTargetHitPointBar_C.ExecuteUbergraph_AthenaViewTargetHitPointBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81550510);
 
 	UAthenaViewTargetHitPointBar_C_ExecuteUbergraph_AthenaViewTargetHitPointBar_Params params;
 	params.EntryPoint = EntryPoint;

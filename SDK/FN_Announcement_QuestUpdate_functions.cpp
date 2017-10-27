@@ -19,7 +19,8 @@ namespace SDK
 
 void UAnnouncement_QuestUpdate_C::UpdateWidgetData(class AFortClientAnnouncement** Announcement)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_QuestUpdate.Announcement_QuestUpdate_C.UpdateWidgetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x906ff166);
 
 	UAnnouncement_QuestUpdate_C_UpdateWidgetData_Params params;
 	params.Announcement = Announcement;
@@ -39,7 +40,8 @@ void UAnnouncement_QuestUpdate_C::UpdateWidgetData(class AFortClientAnnouncement
 
 void UAnnouncement_QuestUpdate_C::AllUpdatesFinished(class UQuestUpdateEntry_C* UpdateWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_QuestUpdate.Announcement_QuestUpdate_C.AllUpdatesFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9273bbfa);
 
 	UAnnouncement_QuestUpdate_C_AllUpdatesFinished_Params params;
 	params.UpdateWidget = UpdateWidget;
@@ -59,7 +61,8 @@ void UAnnouncement_QuestUpdate_C::AllUpdatesFinished(class UQuestUpdateEntry_C* 
 
 void UAnnouncement_QuestUpdate_C::ExecuteUbergraph_Announcement_QuestUpdate(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Announcement_QuestUpdate.Announcement_QuestUpdate_C.ExecuteUbergraph_Announcement_QuestUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbfa517ac);
 
 	UAnnouncement_QuestUpdate_C_ExecuteUbergraph_Announcement_QuestUpdate_Params params;
 	params.EntryPoint = EntryPoint;

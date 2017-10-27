@@ -20,7 +20,8 @@ namespace SDK
 
 void UPopupCenterMessageWidget_C::OnModalDisplayed(ECenterPopupMessageStateEnum* NewState, class UCommonActivatablePanel** ModalPopup)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PopupCenterMessageWidget.PopupCenterMessageWidget_C.OnModalDisplayed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x558ad508);
 
 	UPopupCenterMessageWidget_C_OnModalDisplayed_Params params;
 	params.NewState = NewState;
@@ -39,7 +40,8 @@ void UPopupCenterMessageWidget_C::OnModalDisplayed(ECenterPopupMessageStateEnum*
 
 void UPopupCenterMessageWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PopupCenterMessageWidget.PopupCenterMessageWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76b2e686);
 
 	UPopupCenterMessageWidget_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UPopupCenterMessageWidget_C::Construct()
 
 void UPopupCenterMessageWidget_C::UpdateStateEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PopupCenterMessageWidget.PopupCenterMessageWidget_C.UpdateStateEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb39fb629);
 
 	UPopupCenterMessageWidget_C_UpdateStateEvent_Params params;
 
@@ -73,7 +76,8 @@ void UPopupCenterMessageWidget_C::UpdateStateEvent()
 
 void UPopupCenterMessageWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PopupCenterMessageWidget.PopupCenterMessageWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdfeb95);
 
 	UPopupCenterMessageWidget_C_Destruct_Params params;
 
@@ -92,7 +96,8 @@ void UPopupCenterMessageWidget_C::Destruct()
 
 void UPopupCenterMessageWidget_C::ExecuteUbergraph_PopupCenterMessageWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PopupCenterMessageWidget.PopupCenterMessageWidget_C.ExecuteUbergraph_PopupCenterMessageWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4ddcd11);
 
 	UPopupCenterMessageWidget_C_ExecuteUbergraph_PopupCenterMessageWidget_Params params;
 	params.EntryPoint = EntryPoint;

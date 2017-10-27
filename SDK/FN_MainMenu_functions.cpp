@@ -17,7 +17,8 @@ namespace SDK
 
 void UMainMenu_C::ConfigureSubGameWidgets()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.ConfigureSubGameWidgets");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9df2bdba);
 
 	UMainMenu_C_ConfigureSubGameWidgets_Params params;
 
@@ -36,7 +37,8 @@ void UMainMenu_C::ConfigureSubGameWidgets()
 
 void UMainMenu_C::Set_Icon_Button_List_Column_Width(bool IsUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.Set Icon Button List Column Width");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcbeb0ae2);
 
 	UMainMenu_C_Set_Icon_Button_List_Column_Width_Params params;
 	params.IsUsingGamepad = IsUsingGamepad;
@@ -54,7 +56,8 @@ void UMainMenu_C::Set_Icon_Button_List_Column_Width(bool IsUsingGamepad)
 
 void UMainMenu_C::BindDelegates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BindDelegates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e38895e);
 
 	UMainMenu_C_BindDelegates_Params params;
 
@@ -71,7 +74,8 @@ void UMainMenu_C::BindDelegates()
 
 void UMainMenu_C::ProcessFriendCodes()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.ProcessFriendCodes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d3ab764);
 
 	UMainMenu_C_ProcessFriendCodes_Params params;
 
@@ -91,7 +95,8 @@ void UMainMenu_C::ProcessFriendCodes()
 
 void UMainMenu_C::OnIssueFriendCodes(bool Success, struct FFriendCode* FriendCode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.OnIssueFriendCodes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa37b03f1);
 
 	UMainMenu_C_OnIssueFriendCodes_Params params;
 	params.Success = Success;
@@ -114,7 +119,8 @@ void UMainMenu_C::OnIssueFriendCodes(bool Success, struct FFriendCode* FriendCod
 
 void UMainMenu_C::GetTotalNumFriendCodes(int* Num_Codes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.GetTotalNumFriendCodes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xea94b86b);
 
 	UMainMenu_C_GetTotalNumFriendCodes_Params params;
 
@@ -137,7 +143,8 @@ void UMainMenu_C::GetTotalNumFriendCodes(int* Num_Codes)
 
 void UMainMenu_C::OnQueryUnredeemedFriendCodes(bool Success, TArray<struct FFriendCode>* FriendCodes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.OnQueryUnredeemedFriendCodes");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1d31344);
 
 	UMainMenu_C_OnQueryUnredeemedFriendCodes_Params params;
 	params.Success = Success;
@@ -158,7 +165,8 @@ void UMainMenu_C::OnQueryUnredeemedFriendCodes(bool Success, TArray<struct FFrie
 
 void UMainMenu_C::RefreshFriendCodesButton()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.RefreshFriendCodesButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7bb2406);
 
 	UMainMenu_C_RefreshFriendCodesButton_Params params;
 
@@ -177,7 +185,8 @@ void UMainMenu_C::RefreshFriendCodesButton()
 
 void UMainMenu_C::HandlePartyStateChanged(EFortPartyState New_State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandlePartyStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1007952);
 
 	UMainMenu_C_HandlePartyStateChanged_Params params;
 	params.New_State = New_State;
@@ -195,7 +204,8 @@ void UMainMenu_C::HandlePartyStateChanged(EFortPartyState New_State)
 
 void UMainMenu_C::HandleMatchmakingStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleMatchmakingStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1ceb4ba);
 
 	UMainMenu_C_HandleMatchmakingStarted_Params params;
 
@@ -212,7 +222,8 @@ void UMainMenu_C::HandleMatchmakingStarted()
 
 void UMainMenu_C::HandleLobbyDisconnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleLobbyDisconnected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd61f7756);
 
 	UMainMenu_C_HandleLobbyDisconnected_Params params;
 
@@ -229,7 +240,8 @@ void UMainMenu_C::HandleLobbyDisconnected()
 
 void UMainMenu_C::HandleLobbyStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleLobbyStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa293c2c2);
 
 	UMainMenu_C_HandleLobbyStarted_Params params;
 
@@ -248,7 +260,8 @@ void UMainMenu_C::HandleLobbyStarted()
 
 void UMainMenu_C::HandleMatchmakingComplete(EMatchmakingCompleteResult Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleMatchmakingComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d4e84a6);
 
 	UMainMenu_C_HandleMatchmakingComplete_Params params;
 	params.Result = Result;
@@ -268,7 +281,8 @@ void UMainMenu_C::HandleMatchmakingComplete(EMatchmakingCompleteResult Result)
 
 void UMainMenu_C::HandleActiveInvitesAmountChanged(int ActiveInvitesAmount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleActiveInvitesAmountChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49ac6bbd);
 
 	UMainMenu_C_HandleActiveInvitesAmountChanged_Params params;
 	params.ActiveInvitesAmount = ActiveInvitesAmount;
@@ -288,7 +302,8 @@ void UMainMenu_C::HandleActiveInvitesAmountChanged(int ActiveInvitesAmount)
 
 void UMainMenu_C::HandlePartyTypeChanged(EPartyType Party_Type)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandlePartyTypeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x632f63d5);
 
 	UMainMenu_C_HandlePartyTypeChanged_Params params;
 	params.Party_Type = Party_Type;
@@ -306,7 +321,8 @@ void UMainMenu_C::HandlePartyTypeChanged(EPartyType Party_Type)
 
 void UMainMenu_C::HandlePartyJoined()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandlePartyJoined");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x304181c4);
 
 	UMainMenu_C_HandlePartyJoined_Params params;
 
@@ -326,7 +342,8 @@ void UMainMenu_C::HandlePartyJoined()
 
 void UMainMenu_C::HandlePartybarUIFeatureChanged(EFortUIFeature Feature, EFortUIFeatureState FeatureState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandlePartybarUIFeatureChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdcfc1b56);
 
 	UMainMenu_C_HandlePartybarUIFeatureChanged_Params params;
 	params.Feature = Feature;
@@ -347,7 +364,8 @@ void UMainMenu_C::HandlePartybarUIFeatureChanged(EFortUIFeature Feature, EFortUI
 
 void UMainMenu_C::HandleRemotePlayerRemoved(int RemovedIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleRemotePlayerRemoved");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb888be4);
 
 	UMainMenu_C_HandleRemotePlayerRemoved_Params params;
 	params.RemovedIndex = RemovedIndex;
@@ -367,7 +385,8 @@ void UMainMenu_C::HandleRemotePlayerRemoved(int RemovedIndex)
 
 void UMainMenu_C::HandleRemotePlayerStateChanged(const struct FFortTeamMemberInfo& NewMemberState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleRemotePlayerStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe0983d9);
 
 	UMainMenu_C_HandleRemotePlayerStateChanged_Params params;
 	params.NewMemberState = NewMemberState;
@@ -385,7 +404,8 @@ void UMainMenu_C::HandleRemotePlayerStateChanged(const struct FFortTeamMemberInf
 
 void UMainMenu_C::HandlePartyLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandlePartyLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2850a84);
 
 	UMainMenu_C_HandlePartyLeft_Params params;
 
@@ -404,7 +424,8 @@ void UMainMenu_C::HandlePartyLeft()
 
 void UMainMenu_C::HandleLocalPlayerStateChanged(struct FFortTeamMemberInfo* MemberState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleLocalPlayerStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3615ab94);
 
 	UMainMenu_C_HandleLocalPlayerStateChanged_Params params;
 
@@ -427,7 +448,8 @@ void UMainMenu_C::HandleLocalPlayerStateChanged(struct FFortTeamMemberInfo* Memb
 
 void UMainMenu_C::HandlePrivacySelected(EPartyType PartyPrivacyType, bool FriendsOfFriends)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandlePrivacySelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61a11fa8);
 
 	UMainMenu_C_HandlePrivacySelected_Params params;
 	params.PartyPrivacyType = PartyPrivacyType;
@@ -446,7 +468,8 @@ void UMainMenu_C::HandlePrivacySelected(EPartyType PartyPrivacyType, bool Friend
 
 void UMainMenu_C::OpenPartyPrivacy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.OpenPartyPrivacy");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9080c84b);
 
 	UMainMenu_C_OpenPartyPrivacy_Params params;
 
@@ -463,7 +486,8 @@ void UMainMenu_C::OpenPartyPrivacy()
 
 void UMainMenu_C::OpenPartyInvites()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.OpenPartyInvites");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f532111);
 
 	UMainMenu_C_OpenPartyInvites_Params params;
 
@@ -483,7 +507,8 @@ void UMainMenu_C::OpenPartyInvites()
 
 void UMainMenu_C::SetPrivacyButtonData(class UTexture2D* Image, const struct FText& Button_Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.SetPrivacyButtonData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2089d8f);
 
 	UMainMenu_C_SetPrivacyButtonData_Params params;
 	params.Image = Image;
@@ -505,7 +530,8 @@ void UMainMenu_C::SetPrivacyButtonData(class UTexture2D* Image, const struct FTe
 
 void UMainMenu_C::UpdatePrivacyButton(EPartyType Overide_Party_Type, bool Use_Overide_Party_Type)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.UpdatePrivacyButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcbdef66c);
 
 	UMainMenu_C_UpdatePrivacyButton_Params params;
 	params.Overide_Party_Type = Overide_Party_Type;
@@ -526,7 +552,8 @@ void UMainMenu_C::UpdatePrivacyButton(EPartyType Overide_Party_Type, bool Use_Ov
 
 void UMainMenu_C::IsOutpostOwner(bool* OutpostOwner)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.IsOutpostOwner");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73dee734);
 
 	UMainMenu_C_IsOutpostOwner_Params params;
 
@@ -546,7 +573,8 @@ void UMainMenu_C::IsOutpostOwner(bool* OutpostOwner)
 
 void UMainMenu_C::PushDailyRewards()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.PushDailyRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x238302e);
 
 	UMainMenu_C_PushDailyRewards_Params params;
 
@@ -563,7 +591,8 @@ void UMainMenu_C::PushDailyRewards()
 
 void UMainMenu_C::ProcessPartyBar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.ProcessPartyBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe01c20a1);
 
 	UMainMenu_C_ProcessPartyBar_Params params;
 
@@ -580,7 +609,8 @@ void UMainMenu_C::ProcessPartyBar()
 
 void UMainMenu_C::UpdateButtonStates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.UpdateButtonStates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d1e854a);
 
 	UMainMenu_C_UpdateButtonStates_Params params;
 
@@ -599,7 +629,8 @@ void UMainMenu_C::UpdateButtonStates()
 
 void UMainMenu_C::UpdateDescriptionText(const struct FText& HelpText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.UpdateDescriptionText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f48ebd3);
 
 	UMainMenu_C_UpdateDescriptionText_Params params;
 	params.HelpText = HelpText;
@@ -617,7 +648,8 @@ void UMainMenu_C::UpdateDescriptionText(const struct FText& HelpText)
 
 void UMainMenu_C::InitializeMainMenu()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.InitializeMainMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda0e16bb);
 
 	UMainMenu_C_InitializeMainMenu_Params params;
 
@@ -634,7 +666,8 @@ void UMainMenu_C::InitializeMainMenu()
 
 void UMainMenu_C::SetupTestUI()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.SetupTestUI");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcd28decc);
 
 	UMainMenu_C_SetupTestUI_Params params;
 
@@ -654,7 +687,8 @@ void UMainMenu_C::SetupTestUI()
 
 void UMainMenu_C::DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c0267a7);
 
 	UMainMenu_C_DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0_Params params;
 	params.Result = Result;
@@ -676,7 +710,8 @@ void UMainMenu_C::DialogResult_6DDAC27E47A3D5A11BE436A3ED3ADEA0(EFortDialogResul
 
 void UMainMenu_C::DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7(EFortDialogResult Result, const struct FName& ResultName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5a787b6);
 
 	UMainMenu_C_DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7_Params params;
 	params.Result = Result;
@@ -697,7 +732,8 @@ void UMainMenu_C::DialogResult_5FDF347E45DFDFC5D3596B9DA0EB60E7(EFortDialogResul
 
 void UMainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98906b1d);
 
 	UMainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -717,7 +753,8 @@ void UMainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClick
 
 void UMainMenu_C::BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5cd9e01);
 
 	UMainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -737,7 +774,8 @@ void UMainMenu_C::BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_737_Comm
 
 void UMainMenu_C::BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x57e663a7);
 
 	UMainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -757,7 +795,8 @@ void UMainMenu_C::BndEvt__MessagesButton_K2Node_ComponentBoundEvent_761_CommonBu
 
 void UMainMenu_C::BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0638db2);
 
 	UMainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -777,7 +816,8 @@ void UMainMenu_C::BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_1102_Com
 
 void UMainMenu_C::BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6537c2de);
 
 	UMainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -797,7 +837,8 @@ void UMainMenu_C::BndEvt__MessagesButton_K2Node_ComponentBoundEvent_1129_CommonB
 
 void UMainMenu_C::BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17938c31);
 
 	UMainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -817,7 +858,8 @@ void UMainMenu_C::BndEvt__TestUIButton_K2Node_ComponentBoundEvent_1157_CommonBut
 
 void UMainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6bd7bc8);
 
 	UMainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -837,7 +879,8 @@ void UMainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_338_CommonButtonCl
 
 void UMainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5279dc45);
 
 	UMainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -857,7 +900,8 @@ void UMainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_375_CommonButtonClick
 
 void UMainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26856327);
 
 	UMainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -877,7 +921,8 @@ void UMainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_467_CommonBu
 
 void UMainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67039300);
 
 	UMainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -897,7 +942,8 @@ void UMainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_508_CommonButton
 
 void UMainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68e06853);
 
 	UMainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -917,7 +963,8 @@ void UMainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_545_CommonButton
 
 void UMainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf610a19f);
 
 	UMainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -937,7 +984,8 @@ void UMainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_584_CommonBu
 
 void UMainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x258dda38);
 
 	UMainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -957,7 +1005,8 @@ void UMainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_626_CommonButtonCl
 
 void UMainMenu_C::BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ae37f8e);
 
 	UMainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -975,7 +1024,8 @@ void UMainMenu_C::BndEvt__TestUIButton_K2Node_ComponentBoundEvent_737_CommonButt
 
 void UMainMenu_C::SetCenterWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.SetCenterWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee0b2572);
 
 	UMainMenu_C_SetCenterWidget_Params params;
 
@@ -994,7 +1044,8 @@ void UMainMenu_C::SetCenterWidget()
 
 void UMainMenu_C::LeaveUnhovered(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.LeaveUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81fbfe22);
 
 	UMainMenu_C_LeaveUnhovered_Params params;
 	params.Button = Button;
@@ -1014,7 +1065,8 @@ void UMainMenu_C::LeaveUnhovered(class UCommonButton* Button)
 
 void UMainMenu_C::LeaveGameHovered(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.LeaveGameHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9143e3a3);
 
 	UMainMenu_C_LeaveGameHovered_Params params;
 	params.Button = Button;
@@ -1032,7 +1084,8 @@ void UMainMenu_C::LeaveGameHovered(class UCommonButton* Button)
 
 void UMainMenu_C::BindLeaveHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BindLeaveHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70037f00);
 
 	UMainMenu_C_BindLeaveHovered_Params params;
 
@@ -1049,7 +1102,8 @@ void UMainMenu_C::BindLeaveHovered()
 
 void UMainMenu_C::BindLeaveUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BindLeaveUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x18d416ab);
 
 	UMainMenu_C_BindLeaveUnhovered_Params params;
 
@@ -1068,7 +1122,8 @@ void UMainMenu_C::BindLeaveUnhovered()
 
 void UMainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80d3384b);
 
 	UMainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1088,7 +1143,8 @@ void UMainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_643_CommonButtonClick
 
 void UMainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8caad25);
 
 	UMainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1108,7 +1164,8 @@ void UMainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonBu
 
 void UMainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5adba55e);
 
 	UMainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1128,7 +1185,8 @@ void UMainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_232_CommonButt
 
 void UMainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x78d73bc5);
 
 	UMainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1148,7 +1206,8 @@ void UMainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_282_CommonButt
 
 void UMainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd4c683a);
 
 	UMainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1168,7 +1227,8 @@ void UMainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButt
 
 void UMainMenu_C::BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x629f4242);
 
 	UMainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_250_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1188,7 +1248,8 @@ void UMainMenu_C::BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_25
 
 void UMainMenu_C::BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b03822e);
 
 	UMainMenu_C_BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1208,7 +1269,8 @@ void UMainMenu_C::BndEvt__DailyRewardsButton_K2Node_ComponentBoundEvent_134_Comm
 
 void UMainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe00c3a1);
 
 	UMainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1228,7 +1290,8 @@ void UMainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonCl
 
 void UMainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9715a5cc);
 
 	UMainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1248,7 +1311,8 @@ void UMainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonBut
 
 void UMainMenu_C::BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3fbc7bd);
 
 	UMainMenu_C_BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1268,7 +1332,8 @@ void UMainMenu_C::BndEvt__TestUIButton_K2Node_ComponentBoundEvent_189_CommonButt
 
 void UMainMenu_C::BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84cd073);
 
 	UMainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_420_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1288,7 +1353,8 @@ void UMainMenu_C::BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_42
 
 void UMainMenu_C::BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51003e19);
 
 	UMainMenu_C_BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_457_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1308,7 +1374,8 @@ void UMainMenu_C::BndEvt__ButtonOutpostPermissions_K2Node_ComponentBoundEvent_45
 
 void UMainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c702626);
 
 	UMainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1328,7 +1395,8 @@ void UMainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButton
 
 void UMainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6cfe578);
 
 	UMainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1348,7 +1416,8 @@ void UMainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_459_CommonButton
 
 void UMainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58057484);
 
 	UMainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1368,7 +1437,8 @@ void UMainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_419_CommonButton
 
 void UMainMenu_C::BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9197c1db);
 
 	UMainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1388,7 +1458,8 @@ void UMainMenu_C::BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_328_Commo
 
 void UMainMenu_C::BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10987ab4);
 
 	UMainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1408,7 +1479,8 @@ void UMainMenu_C::BndEvt__BoostsButton_K2Node_ComponentBoundEvent_184_CommonButt
 
 void UMainMenu_C::BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9c35fdd1);
 
 	UMainMenu_C_BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1428,7 +1500,8 @@ void UMainMenu_C::BndEvt__MessagesButton_K2Node_ComponentBoundEvent_48_CommonBut
 
 void UMainMenu_C::BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58f5807);
 
 	UMainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1448,7 +1521,8 @@ void UMainMenu_C::BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_0_CommonButto
 
 void UMainMenu_C::BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14b3706);
 
 	UMainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1466,7 +1540,8 @@ void UMainMenu_C::BndEvt__PartyInvites_K2Node_ComponentBoundEvent_1_CommonButton
 
 void UMainMenu_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7dac71c1);
 
 	UMainMenu_C_Destruct_Params params;
 
@@ -1485,7 +1560,8 @@ void UMainMenu_C::Destruct()
 
 void UMainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8ff3f4c);
 
 	UMainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1505,7 +1581,8 @@ void UMainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonCl
 
 void UMainMenu_C::BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x596322d5);
 
 	UMainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1525,7 +1602,8 @@ void UMainMenu_C::BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11929_CommonBu
 
 void UMainMenu_C::BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x317a1315);
 
 	UMainMenu_C_BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1545,7 +1623,8 @@ void UMainMenu_C::BndEvt__PartyInvites_K2Node_ComponentBoundEvent_11976_CommonBu
 
 void UMainMenu_C::BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb832bab1);
 
 	UMainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1565,7 +1644,8 @@ void UMainMenu_C::BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12023_CommonB
 
 void UMainMenu_C::BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee1650f);
 
 	UMainMenu_C_BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1585,7 +1665,8 @@ void UMainMenu_C::BndEvt__PrivacyButton_K2Node_ComponentBoundEvent_12072_CommonB
 
 void UMainMenu_C::BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x42106b8c);
 
 	UMainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1605,7 +1686,8 @@ void UMainMenu_C::BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12121_CommonBu
 
 void UMainMenu_C::BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82ca740);
 
 	UMainMenu_C_BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1625,7 +1707,8 @@ void UMainMenu_C::BndEvt__BoostsButton_K2Node_ComponentBoundEvent_12172_CommonBu
 
 void UMainMenu_C::BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f7d4768);
 
 	UMainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1645,7 +1728,8 @@ void UMainMenu_C::BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12223_Com
 
 void UMainMenu_C::BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd80a1cc6);
 
 	UMainMenu_C_BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1663,7 +1747,8 @@ void UMainMenu_C::BndEvt__InviteCodesButton_K2Node_ComponentBoundEvent_12276_Com
 
 void UMainMenu_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8247071a);
 
 	UMainMenu_C_Construct_Params params;
 
@@ -1682,7 +1767,8 @@ void UMainMenu_C::Construct()
 
 void UMainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32379406);
 
 	UMainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1702,7 +1788,8 @@ void UMainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_131_CommonBut
 
 void UMainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c1056d8);
 
 	UMainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1720,7 +1807,8 @@ void UMainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_186_CommonBut
 
 void UMainMenu_C::HandleChangeGameModeHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleChangeGameModeHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2507124b);
 
 	UMainMenu_C_HandleChangeGameModeHovered_Params params;
 
@@ -1737,7 +1825,8 @@ void UMainMenu_C::HandleChangeGameModeHovered()
 
 void UMainMenu_C::HandleChangeGameModeUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.HandleChangeGameModeUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1c1d01c);
 
 	UMainMenu_C_HandleChangeGameModeUnhovered_Params params;
 
@@ -1756,7 +1845,8 @@ void UMainMenu_C::HandleChangeGameModeUnhovered()
 
 void UMainMenu_C::Handle_Game_Mode_Unhovered(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.Handle Game Mode Unhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc2409864);
 
 	UMainMenu_C_Handle_Game_Mode_Unhovered_Params params;
 	params.Button = Button;
@@ -1776,7 +1866,8 @@ void UMainMenu_C::Handle_Game_Mode_Unhovered(class UCommonButton* Button)
 
 void UMainMenu_C::Handle_Game_Mode_Hovered(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.Handle Game Mode Hovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf5eb0a3);
 
 	UMainMenu_C_Handle_Game_Mode_Hovered_Params params;
 	params.Button = Button;
@@ -1796,7 +1887,8 @@ void UMainMenu_C::Handle_Game_Mode_Hovered(class UCommonButton* Button)
 
 void UMainMenu_C::BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature(bool Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update Visibility__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc9b32a8);
 
 	UMainMenu_C_BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visibility__DelegateSignature_Params params;
 	params.Visibility = Visibility;
@@ -1816,7 +1908,8 @@ void UMainMenu_C::BndEvt__LeaveButton_K2Node_ComponentBoundEvent_144_Update_Visi
 
 void UMainMenu_C::BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60088ed);
 
 	UMainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_481_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1836,7 +1929,8 @@ void UMainMenu_C::BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_48
 
 void UMainMenu_C::BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda8fee24);
 
 	UMainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_543_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1856,7 +1950,8 @@ void UMainMenu_C::BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_54
 
 void UMainMenu_C::BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72712da0);
 
 	UMainMenu_C_BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_600_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1876,7 +1971,8 @@ void UMainMenu_C::BndEvt__AthenaPartyPrivacyButton_K2Node_ComponentBoundEvent_60
 
 void UMainMenu_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x43c061f6);
 
 	UMainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -1896,7 +1992,8 @@ void UMainMenu_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_Comm
 
 void UMainMenu_C::ExecuteUbergraph_MainMenu(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6cb0351);
 
 	UMainMenu_C_ExecuteUbergraph_MainMenu_Params params;
 	params.EntryPoint = EntryPoint;
@@ -1914,7 +2011,8 @@ void UMainMenu_C::ExecuteUbergraph_MainMenu(int EntryPoint)
 
 void UMainMenu_C::OnRequestShowFeedbackWidget__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainMenu.MainMenu_C.OnRequestShowFeedbackWidget__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8bc0132c);
 
 	UMainMenu_C_OnRequestShowFeedbackWidget__DelegateSignature_Params params;
 

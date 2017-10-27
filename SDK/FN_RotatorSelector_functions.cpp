@@ -19,7 +19,8 @@ namespace SDK
 
 void URotatorSelector_C::Update_Options(TArray<struct FText>* NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.Update Options");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5de942f6);
 
 	URotatorSelector_C_Update_Options_Params params;
 
@@ -39,7 +40,8 @@ void URotatorSelector_C::Update_Options(TArray<struct FText>* NewParam)
 
 void URotatorSelector_C::Center_on_Widget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.Center on Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3e1a81f5);
 
 	URotatorSelector_C_Center_on_Widget_Params params;
 
@@ -61,7 +63,8 @@ void URotatorSelector_C::Center_on_Widget()
 
 void URotatorSelector_C::Initialize(const struct FText& Display_Text, const struct FText& Hover_Text, class UCommonTextBlock* Tab_Tooltip, TArray<struct FText>* Options)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b0e9b81);
 
 	URotatorSelector_C_Initialize_Params params;
 	params.Display_Text = Display_Text;
@@ -86,7 +89,8 @@ void URotatorSelector_C::Initialize(const struct FText& Display_Text, const stru
 
 void URotatorSelector_C::Update_Row_Selector(int Currently_Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.Update Row Selector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdaaafb57);
 
 	URotatorSelector_C_Update_Row_Selector_Params params;
 	params.Currently_Selected = Currently_Selected;
@@ -104,7 +108,8 @@ void URotatorSelector_C::Update_Row_Selector(int Currently_Selected)
 
 void URotatorSelector_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x470b8aa6);
 
 	URotatorSelector_C_Construct_Params params;
 
@@ -123,7 +128,8 @@ void URotatorSelector_C::Construct()
 
 void URotatorSelector_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb63069a);
 
 	URotatorSelector_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -144,7 +150,8 @@ void URotatorSelector_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void URotatorSelector_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2fe7ac7d);
 
 	URotatorSelector_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -165,7 +172,8 @@ void URotatorSelector_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoin
 
 void URotatorSelector_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefc57eb0);
 
 	URotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature_Params params;
 	params.Value = Value;
@@ -185,7 +193,8 @@ void URotatorSelector_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRota
 
 void URotatorSelector_C::ExecuteUbergraph_RotatorSelector(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3357dcfd);
 
 	URotatorSelector_C_ExecuteUbergraph_RotatorSelector_Params params;
 	params.EntryPoint = EntryPoint;
@@ -205,7 +214,8 @@ void URotatorSelector_C::ExecuteUbergraph_RotatorSelector(int EntryPoint)
 
 void URotatorSelector_C::Selection_Changed__DelegateSignature(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatorSelector.RotatorSelector_C.Selection Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f77cb32);
 
 	URotatorSelector_C_Selection_Changed__DelegateSignature_Params params;
 	params.Selected_Index = Selected_Index;

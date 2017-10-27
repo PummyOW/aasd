@@ -13,14 +13,15 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass ItemTransformSlotItemPicker.ItemTransformSlotItemPicker_C
-// 0x0000 (0x02A0 - 0x02A0)
+// 0x0000 (0x02A8 - 0x02A8)
 class UItemTransformSlotItemPicker_C : public UFortTransformSlotItemPicker
 {
 public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ItemTransformSlotItemPicker.ItemTransformSlotItemPicker_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x434bb791);
 		return ptr;
 	}
 

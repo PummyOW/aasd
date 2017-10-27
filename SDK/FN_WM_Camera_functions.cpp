@@ -17,7 +17,8 @@ namespace SDK
 
 void AWM_Camera_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x892982b8);
 
 	AWM_Camera_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AWM_Camera_C::UserConstructionScript()
 
 void AWM_Camera_C::TL_CameraActivateAnim__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.TL_CameraActivateAnim__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7bb8f4d);
 
 	AWM_Camera_C_TL_CameraActivateAnim__FinishedFunc_Params params;
 
@@ -51,7 +53,8 @@ void AWM_Camera_C::TL_CameraActivateAnim__FinishedFunc()
 
 void AWM_Camera_C::TL_CameraActivateAnim__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.TL_CameraActivateAnim__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf8364bdc);
 
 	AWM_Camera_C_TL_CameraActivateAnim__UpdateFunc_Params params;
 
@@ -68,7 +71,8 @@ void AWM_Camera_C::TL_CameraActivateAnim__UpdateFunc()
 
 void AWM_Camera_C::TL_CameraDeactivateAnim__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.TL_CameraDeactivateAnim__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5c10fd8);
 
 	AWM_Camera_C_TL_CameraDeactivateAnim__FinishedFunc_Params params;
 
@@ -85,7 +89,8 @@ void AWM_Camera_C::TL_CameraDeactivateAnim__FinishedFunc()
 
 void AWM_Camera_C::TL_CameraDeactivateAnim__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.TL_CameraDeactivateAnim__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x220216c1);
 
 	AWM_Camera_C_TL_CameraDeactivateAnim__UpdateFunc_Params params;
 
@@ -102,7 +107,8 @@ void AWM_Camera_C::TL_CameraDeactivateAnim__UpdateFunc()
 
 void AWM_Camera_C::CameraNoise__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.CameraNoise__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8705dd22);
 
 	AWM_Camera_C_CameraNoise__FinishedFunc_Params params;
 
@@ -119,7 +125,8 @@ void AWM_Camera_C::CameraNoise__FinishedFunc()
 
 void AWM_Camera_C::CameraNoise__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.CameraNoise__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb106bd2f);
 
 	AWM_Camera_C_CameraNoise__UpdateFunc_Params params;
 
@@ -136,7 +143,8 @@ void AWM_Camera_C::CameraNoise__UpdateFunc()
 
 void AWM_Camera_C::CameraActivateAnim()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.CameraActivateAnim");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8856a7f2);
 
 	AWM_Camera_C_CameraActivateAnim_Params params;
 
@@ -153,7 +161,8 @@ void AWM_Camera_C::CameraActivateAnim()
 
 void AWM_Camera_C::StopWiggle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.StopWiggle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc637d8b0);
 
 	AWM_Camera_C_StopWiggle_Params params;
 
@@ -170,7 +179,8 @@ void AWM_Camera_C::StopWiggle()
 
 void AWM_Camera_C::CameraDeactivateAnim()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.CameraDeactivateAnim");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2385bb03);
 
 	AWM_Camera_C_CameraDeactivateAnim_Params params;
 
@@ -187,7 +197,8 @@ void AWM_Camera_C::CameraDeactivateAnim()
 
 void AWM_Camera_C::CameraWiggle()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.CameraWiggle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54b7750d);
 
 	AWM_Camera_C_CameraWiggle_Params params;
 
@@ -204,7 +215,8 @@ void AWM_Camera_C::CameraWiggle()
 
 void AWM_Camera_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef0b7b92);
 
 	AWM_Camera_C_OnDeactivated_Params params;
 
@@ -221,7 +233,8 @@ void AWM_Camera_C::OnDeactivated()
 
 void AWM_Camera_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x39a6d3dd);
 
 	AWM_Camera_C_OnActivated_Params params;
 
@@ -240,7 +253,8 @@ void AWM_Camera_C::OnActivated()
 
 void AWM_Camera_C::ExecuteUbergraph_WM_Camera(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WM_Camera.WM_Camera_C.ExecuteUbergraph_WM_Camera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbdde5c2b);
 
 	AWM_Camera_C_ExecuteUbergraph_WM_Camera_Params params;
 	params.EntryPoint = EntryPoint;

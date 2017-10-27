@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_IngameMap_SceneCaptureBlurryNew_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_IngameMap_SceneCaptureBlurryNew.B_IngameMap_SceneCaptureBlurryNew_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c32eb18);
 
 	AB_IngameMap_SceneCaptureBlurryNew_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AB_IngameMap_SceneCaptureBlurryNew_C::UserConstructionScript()
 
 void AB_IngameMap_SceneCaptureBlurryNew_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_IngameMap_SceneCaptureBlurryNew.B_IngameMap_SceneCaptureBlurryNew_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8787118f);
 
 	AB_IngameMap_SceneCaptureBlurryNew_C_ReceiveBeginPlay_Params params;
 
@@ -53,7 +55,8 @@ void AB_IngameMap_SceneCaptureBlurryNew_C::ReceiveBeginPlay()
 
 void AB_IngameMap_SceneCaptureBlurryNew_C::ExecuteUbergraph_B_IngameMap_SceneCaptureBlurryNew(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_IngameMap_SceneCaptureBlurryNew.B_IngameMap_SceneCaptureBlurryNew_C.ExecuteUbergraph_B_IngameMap_SceneCaptureBlurryNew");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c8468f4);
 
 	AB_IngameMap_SceneCaptureBlurryNew_C_ExecuteUbergraph_B_IngameMap_SceneCaptureBlurryNew_Params params;
 	params.EntryPoint = EntryPoint;

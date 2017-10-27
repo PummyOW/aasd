@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemManagementCompareModeBox_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61b8f2e2);
 
 	UItemManagementCompareModeBox_C_HandleBack_Params params;
 
@@ -39,7 +40,8 @@ void UItemManagementCompareModeBox_C::HandleBack(bool* PassThrough)
 
 void UItemManagementCompareModeBox_C::UpdateFocusedItems()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.UpdateFocusedItems");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d5847);
 
 	UItemManagementCompareModeBox_C_UpdateFocusedItems_Params params;
 
@@ -56,7 +58,8 @@ void UItemManagementCompareModeBox_C::UpdateFocusedItems()
 
 void UItemManagementCompareModeBox_C::HandleDifferentItemToDetailSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.HandleDifferentItemToDetailSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1162f4eb);
 
 	UItemManagementCompareModeBox_C_HandleDifferentItemToDetailSetBP_Params params;
 
@@ -73,7 +76,8 @@ void UItemManagementCompareModeBox_C::HandleDifferentItemToDetailSetBP()
 
 void UItemManagementCompareModeBox_C::HandleDifferentItemToCompareSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.HandleDifferentItemToCompareSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a4fb611);
 
 	UItemManagementCompareModeBox_C_HandleDifferentItemToCompareSetBP_Params params;
 
@@ -90,7 +94,8 @@ void UItemManagementCompareModeBox_C::HandleDifferentItemToCompareSetBP()
 
 void UItemManagementCompareModeBox_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe3b6f4e0);
 
 	UItemManagementCompareModeBox_C_Construct_Params params;
 
@@ -107,7 +112,8 @@ void UItemManagementCompareModeBox_C::Construct()
 
 void UItemManagementCompareModeBox_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc630433f);
 
 	UItemManagementCompareModeBox_C_OnActivated_Params params;
 
@@ -124,7 +130,8 @@ void UItemManagementCompareModeBox_C::OnActivated()
 
 void UItemManagementCompareModeBox_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x325990f4);
 
 	UItemManagementCompareModeBox_C_OnDeactivated_Params params;
 
@@ -143,7 +150,8 @@ void UItemManagementCompareModeBox_C::OnDeactivated()
 
 void UItemManagementCompareModeBox_C::ExecuteUbergraph_ItemManagementCompareModeBox(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementCompareModeBox.ItemManagementCompareModeBox_C.ExecuteUbergraph_ItemManagementCompareModeBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa945855e);
 
 	UItemManagementCompareModeBox_C_ExecuteUbergraph_ItemManagementCompareModeBox_Params params;
 	params.EntryPoint = EntryPoint;

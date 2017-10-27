@@ -17,7 +17,8 @@ namespace SDK
 
 void UFrontEndRewards_Queue_C::TickIconInit()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.TickIconInit");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb33b2731);
 
 	UFrontEndRewards_Queue_C_TickIconInit_Params params;
 
@@ -34,7 +35,8 @@ void UFrontEndRewards_Queue_C::TickIconInit()
 
 void UFrontEndRewards_Queue_C::StartInitAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.StartInitAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d1e183b);
 
 	UFrontEndRewards_Queue_C_StartInitAnimation_Params params;
 
@@ -53,7 +55,8 @@ void UFrontEndRewards_Queue_C::StartInitAnimation()
 
 void UFrontEndRewards_Queue_C::SlideIcon(class URewardsIcon_C* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.SlideIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe35271d1);
 
 	UFrontEndRewards_Queue_C_SlideIcon_Params params;
 	params.Icon = Icon;
@@ -71,7 +74,8 @@ void UFrontEndRewards_Queue_C::SlideIcon(class URewardsIcon_C* Icon)
 
 void UFrontEndRewards_Queue_C::StartDequeueAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.StartDequeueAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8568f59);
 
 	UFrontEndRewards_Queue_C_StartDequeueAnimation_Params params;
 
@@ -88,7 +92,8 @@ void UFrontEndRewards_Queue_C::StartDequeueAnimation()
 
 void UFrontEndRewards_Queue_C::TickIconSlide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.TickIconSlide");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc249b25a);
 
 	UFrontEndRewards_Queue_C_TickIconSlide_Params params;
 
@@ -107,7 +112,8 @@ void UFrontEndRewards_Queue_C::TickIconSlide()
 
 void UFrontEndRewards_Queue_C::HandleIconHideAnimationFinished(class URewardsIcon_C* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.HandleIconHideAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76ee1992);
 
 	UFrontEndRewards_Queue_C_HandleIconHideAnimationFinished_Params params;
 	params.Icon = Icon;
@@ -127,7 +133,8 @@ void UFrontEndRewards_Queue_C::HandleIconHideAnimationFinished(class URewardsIco
 
 void UFrontEndRewards_Queue_C::PopIcon(class URewardsIcon_C** OutIcon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.PopIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ff80a9b);
 
 	UFrontEndRewards_Queue_C_PopIcon_Params params;
 
@@ -147,7 +154,8 @@ void UFrontEndRewards_Queue_C::PopIcon(class URewardsIcon_C** OutIcon)
 
 void UFrontEndRewards_Queue_C::RandomizeDesignView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.RandomizeDesignView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8071ff9);
 
 	UFrontEndRewards_Queue_C_RandomizeDesignView_Params params;
 
@@ -166,7 +174,8 @@ void UFrontEndRewards_Queue_C::RandomizeDesignView()
 
 void UFrontEndRewards_Queue_C::CloneIconList(TArray<class URewardsIcon_C*>* IconListClone)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.CloneIconList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8a1a1ad);
 
 	UFrontEndRewards_Queue_C_CloneIconList_Params params;
 
@@ -186,7 +195,8 @@ void UFrontEndRewards_Queue_C::CloneIconList(TArray<class URewardsIcon_C*>* Icon
 
 void UFrontEndRewards_Queue_C::ClearQueue()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.ClearQueue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70a28697);
 
 	UFrontEndRewards_Queue_C_ClearQueue_Params params;
 
@@ -205,7 +215,8 @@ void UFrontEndRewards_Queue_C::ClearQueue()
 
 void UFrontEndRewards_Queue_C::DequeueReward(class UFortRewardNotificationData** OutReward)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.DequeueReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7289fe6);
 
 	UFrontEndRewards_Queue_C_DequeueReward_Params params;
 
@@ -229,7 +240,8 @@ void UFrontEndRewards_Queue_C::DequeueReward(class UFortRewardNotificationData**
 
 void UFrontEndRewards_Queue_C::QueueReward(class UFortRewardNotificationData* RewardItem, bool IsDesignTime, class URewardsIcon_C** OutIcon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.QueueReward");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a2c8615);
 
 	UFrontEndRewards_Queue_C_QueueReward_Params params;
 	params.RewardItem = RewardItem;
@@ -253,7 +265,8 @@ void UFrontEndRewards_Queue_C::QueueReward(class UFortRewardNotificationData* Re
 
 void UFrontEndRewards_Queue_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe030db55);
 
 	UFrontEndRewards_Queue_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -273,7 +286,8 @@ void UFrontEndRewards_Queue_C::PreConstruct(bool* IsDesignTime)
 
 void UFrontEndRewards_Queue_C::ExecuteUbergraph_FrontEndRewards_Queue(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_Queue.FrontEndRewards_Queue_C.ExecuteUbergraph_FrontEndRewards_Queue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x20ff35c9);
 
 	UFrontEndRewards_Queue_C_ExecuteUbergraph_FrontEndRewards_Queue_Params params;
 	params.EntryPoint = EntryPoint;

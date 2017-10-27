@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_TeamScoreRow_C::ShowValidResidualScores()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.ShowValidResidualScores");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x85ba34b6);
 
 	UResults_TeamScoreRow_C_ShowValidResidualScores_Params params;
 
@@ -34,7 +35,8 @@ void UResults_TeamScoreRow_C::ShowValidResidualScores()
 
 void UResults_TeamScoreRow_C::SkipToFinalState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.SkipToFinalState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61cc0eca);
 
 	UResults_TeamScoreRow_C_SkipToFinalState_Params params;
 
@@ -51,7 +53,8 @@ void UResults_TeamScoreRow_C::SkipToFinalState()
 
 void UResults_TeamScoreRow_C::SetSkippingToEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.SetSkippingToEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef23ecaa);
 
 	UResults_TeamScoreRow_C_SetSkippingToEnd_Params params;
 
@@ -71,7 +74,8 @@ void UResults_TeamScoreRow_C::SetSkippingToEnd()
 
 void UResults_TeamScoreRow_C::Initialize(class UFortUIScoreReport* InScoreReport, float PlayRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xafeeaf01);
 
 	UResults_TeamScoreRow_C_Initialize_Params params;
 	params.InScoreReport = InScoreReport;
@@ -90,7 +94,8 @@ void UResults_TeamScoreRow_C::Initialize(class UFortUIScoreReport* InScoreReport
 
 void UResults_TeamScoreRow_C::Intro_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.Intro Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x800e9446);
 
 	UResults_TeamScoreRow_C_Intro_Sequence_Params params;
 
@@ -107,7 +112,8 @@ void UResults_TeamScoreRow_C::Intro_Sequence()
 
 void UResults_TeamScoreRow_C::BndEvt__Anim_Absorb_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.BndEvt__Anim_Absorb_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef1bad);
 
 	UResults_TeamScoreRow_C_BndEvt__Anim_Absorb_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -124,7 +130,8 @@ void UResults_TeamScoreRow_C::BndEvt__Anim_Absorb_K2Node_ComponentBoundEvent_1_O
 
 void UResults_TeamScoreRow_C::Count_Up_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.Count Up Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca343a36);
 
 	UResults_TeamScoreRow_C_Count_Up_Sequence_Params params;
 
@@ -141,7 +148,8 @@ void UResults_TeamScoreRow_C::Count_Up_Sequence()
 
 void UResults_TeamScoreRow_C::BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_5_CountUpFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_5_CountUpFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6fb4e7b4);
 
 	UResults_TeamScoreRow_C_BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_5_CountUpFinished__DelegateSignature_Params params;
 
@@ -158,7 +166,8 @@ void UResults_TeamScoreRow_C::BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_5_
 
 void UResults_TeamScoreRow_C::Count_Down_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.Count Down Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x827b3e6f);
 
 	UResults_TeamScoreRow_C_Count_Down_Sequence_Params params;
 
@@ -175,7 +184,8 @@ void UResults_TeamScoreRow_C::Count_Down_Sequence()
 
 void UResults_TeamScoreRow_C::BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_0_CountDownFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_0_CountDownFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e3afcc6);
 
 	UResults_TeamScoreRow_C_BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_0_CountDownFinished__DelegateSignature_Params params;
 
@@ -192,7 +202,8 @@ void UResults_TeamScoreRow_C::BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_0_
 
 void UResults_TeamScoreRow_C::BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_1_IntroFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_1_IntroFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55689150);
 
 	UResults_TeamScoreRow_C_BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_1_IntroFinished__DelegateSignature_Params params;
 
@@ -209,7 +220,8 @@ void UResults_TeamScoreRow_C::BndEvt__TeamScoreBox_K2Node_ComponentBoundEvent_1_
 
 void UResults_TeamScoreRow_C::Stop_Count_Down_Absorption()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.Stop Count Down Absorption");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22af1845);
 
 	UResults_TeamScoreRow_C_Stop_Count_Down_Absorption_Params params;
 
@@ -228,7 +240,8 @@ void UResults_TeamScoreRow_C::Stop_Count_Down_Absorption()
 
 void UResults_TeamScoreRow_C::ExecuteUbergraph_Results_TeamScoreRow(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.ExecuteUbergraph_Results_TeamScoreRow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5006f13);
 
 	UResults_TeamScoreRow_C_ExecuteUbergraph_Results_TeamScoreRow_Params params;
 	params.EntryPoint = EntryPoint;
@@ -246,7 +259,8 @@ void UResults_TeamScoreRow_C::ExecuteUbergraph_Results_TeamScoreRow(int EntryPoi
 
 void UResults_TeamScoreRow_C::CountDownFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.CountDownFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb858ed05);
 
 	UResults_TeamScoreRow_C_CountDownFinished__DelegateSignature_Params params;
 
@@ -263,7 +277,8 @@ void UResults_TeamScoreRow_C::CountDownFinished__DelegateSignature()
 
 void UResults_TeamScoreRow_C::CountUpFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeamScoreRow.Results_TeamScoreRow_C.CountUpFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x827a5800);
 
 	UResults_TeamScoreRow_C_CountUpFinished__DelegateSignature_Params params;
 

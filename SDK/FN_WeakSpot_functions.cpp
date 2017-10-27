@@ -17,7 +17,8 @@ namespace SDK
 
 void AWeakSpot_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ad79640);
 
 	AWeakSpot_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AWeakSpot_C::UserConstructionScript()
 
 void AWeakSpot_C::ScaleDownParticleTL__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.ScaleDownParticleTL__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e0ca277);
 
 	AWeakSpot_C_ScaleDownParticleTL__FinishedFunc_Params params;
 
@@ -51,7 +53,8 @@ void AWeakSpot_C::ScaleDownParticleTL__FinishedFunc()
 
 void AWeakSpot_C::ScaleDownParticleTL__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.ScaleDownParticleTL__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x53759502);
 
 	AWeakSpot_C_ScaleDownParticleTL__UpdateFunc_Params params;
 
@@ -68,7 +71,8 @@ void AWeakSpot_C::ScaleDownParticleTL__UpdateFunc()
 
 void AWeakSpot_C::OnStartDirectionEffect()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.OnStartDirectionEffect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5939b8c);
 
 	AWeakSpot_C_OnStartDirectionEffect_Params params;
 
@@ -85,7 +89,8 @@ void AWeakSpot_C::OnStartDirectionEffect()
 
 void AWeakSpot_C::OnHitCrack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.OnHitCrack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e1a28b);
 
 	AWeakSpot_C_OnHitCrack_Params params;
 
@@ -102,7 +107,8 @@ void AWeakSpot_C::OnHitCrack()
 
 void AWeakSpot_C::OnFadeOut()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.OnFadeOut");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1d11326);
 
 	AWeakSpot_C_OnFadeOut_Params params;
 
@@ -119,7 +125,8 @@ void AWeakSpot_C::OnFadeOut()
 
 void AWeakSpot_C::HideMesh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.HideMesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c841054);
 
 	AWeakSpot_C_HideMesh_Params params;
 
@@ -138,7 +145,8 @@ void AWeakSpot_C::HideMesh()
 
 void AWeakSpot_C::ExecuteUbergraph_WeakSpot(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function WeakSpot.WeakSpot_C.ExecuteUbergraph_WeakSpot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb262af7b);
 
 	AWeakSpot_C_ExecuteUbergraph_WeakSpot_Params params;
 	params.EntryPoint = EntryPoint;

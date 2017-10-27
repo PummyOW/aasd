@@ -19,7 +19,8 @@ namespace SDK
 
 void UZoneDayCompletion_ScoreBlock_C::SetScore(int New_Score)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.SetScore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe21282d);
 
 	UZoneDayCompletion_ScoreBlock_C_SetScore_Params params;
 	params.New_Score = New_Score;
@@ -37,7 +38,8 @@ void UZoneDayCompletion_ScoreBlock_C::SetScore(int New_Score)
 
 void UZoneDayCompletion_ScoreBlock_C::On_Count_Finished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.On Count Finished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5fe1fcb1);
 
 	UZoneDayCompletion_ScoreBlock_C_On_Count_Finished_Params params;
 
@@ -54,7 +56,8 @@ void UZoneDayCompletion_ScoreBlock_C::On_Count_Finished()
 
 void UZoneDayCompletion_ScoreBlock_C::Outro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.Outro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9dd4138);
 
 	UZoneDayCompletion_ScoreBlock_C_Outro_Params params;
 
@@ -71,7 +74,8 @@ void UZoneDayCompletion_ScoreBlock_C::Outro()
 
 void UZoneDayCompletion_ScoreBlock_C::Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94203663);
 
 	UZoneDayCompletion_ScoreBlock_C_Intro_Params params;
 
@@ -91,7 +95,8 @@ void UZoneDayCompletion_ScoreBlock_C::Intro()
 
 void UZoneDayCompletion_ScoreBlock_C::Increment(int New_Score, float Interpolation_Length)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.Increment");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9eeed75a);
 
 	UZoneDayCompletion_ScoreBlock_C_Increment_Params params;
 	params.New_Score = New_Score;
@@ -110,7 +115,8 @@ void UZoneDayCompletion_ScoreBlock_C::Increment(int New_Score, float Interpolati
 
 void UZoneDayCompletion_ScoreBlock_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe093ed36);
 
 	UZoneDayCompletion_ScoreBlock_C_Construct_Params params;
 
@@ -127,7 +133,8 @@ void UZoneDayCompletion_ScoreBlock_C::Construct()
 
 void UZoneDayCompletion_ScoreBlock_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_35_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_35_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81fb5d75);
 
 	UZoneDayCompletion_ScoreBlock_C_BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_35_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -146,7 +153,8 @@ void UZoneDayCompletion_ScoreBlock_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEv
 
 void UZoneDayCompletion_ScoreBlock_C::BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature(class UFortNumericTextBlock* NumericTextBlock)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6504639);
 
 	UZoneDayCompletion_ScoreBlock_C_BndEvt__NumericTextScore_K2Node_ComponentBoundEvent_51_FortCountingFinished__DelegateSignature_Params params;
 	params.NumericTextBlock = NumericTextBlock;
@@ -164,7 +172,8 @@ void UZoneDayCompletion_ScoreBlock_C::BndEvt__NumericTextScore_K2Node_ComponentB
 
 void UZoneDayCompletion_ScoreBlock_C::BndEvt__Anim_OverfillOff_K2Node_ComponentBoundEvent_54_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.BndEvt__Anim_OverfillOff_K2Node_ComponentBoundEvent_54_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d25d330);
 
 	UZoneDayCompletion_ScoreBlock_C_BndEvt__Anim_OverfillOff_K2Node_ComponentBoundEvent_54_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -181,7 +190,8 @@ void UZoneDayCompletion_ScoreBlock_C::BndEvt__Anim_OverfillOff_K2Node_ComponentB
 
 void UZoneDayCompletion_ScoreBlock_C::BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_3546_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_3546_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a1ef7ec);
 
 	UZoneDayCompletion_ScoreBlock_C_BndEvt__Anim_Outro_K2Node_ComponentBoundEvent_3546_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -200,7 +210,8 @@ void UZoneDayCompletion_ScoreBlock_C::BndEvt__Anim_Outro_K2Node_ComponentBoundEv
 
 void UZoneDayCompletion_ScoreBlock_C::ExecuteUbergraph_ZoneDayCompletion_ScoreBlock(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.ExecuteUbergraph_ZoneDayCompletion_ScoreBlock");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9109a327);
 
 	UZoneDayCompletion_ScoreBlock_C_ExecuteUbergraph_ZoneDayCompletion_ScoreBlock_Params params;
 	params.EntryPoint = EntryPoint;
@@ -218,7 +229,8 @@ void UZoneDayCompletion_ScoreBlock_C::ExecuteUbergraph_ZoneDayCompletion_ScoreBl
 
 void UZoneDayCompletion_ScoreBlock_C::OutroComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.OutroComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a7ebdc8);
 
 	UZoneDayCompletion_ScoreBlock_C_OutroComplete__DelegateSignature_Params params;
 
@@ -235,7 +247,8 @@ void UZoneDayCompletion_ScoreBlock_C::OutroComplete__DelegateSignature()
 
 void UZoneDayCompletion_ScoreBlock_C::IncrementComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.IncrementComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b553b3a);
 
 	UZoneDayCompletion_ScoreBlock_C_IncrementComplete__DelegateSignature_Params params;
 
@@ -252,7 +265,8 @@ void UZoneDayCompletion_ScoreBlock_C::IncrementComplete__DelegateSignature()
 
 void UZoneDayCompletion_ScoreBlock_C::IntroComplete__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ZoneDayCompletion_ScoreBlock.ZoneDayCompletion_ScoreBlock_C.IntroComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf853b8b5);
 
 	UZoneDayCompletion_ScoreBlock_C_IntroComplete__DelegateSignature_Params params;
 

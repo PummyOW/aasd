@@ -17,7 +17,8 @@ namespace SDK
 
 void UTabAudioOptions_C::InitializeData()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.InitializeData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2b7da85);
 
 	UTabAudioOptions_C_InitializeData_Params params;
 
@@ -34,7 +35,8 @@ void UTabAudioOptions_C::InitializeData()
 
 void UTabAudioOptions_C::Update_Data()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.Update Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb515a4c0);
 
 	UTabAudioOptions_C_Update_Data_Params params;
 
@@ -51,7 +53,8 @@ void UTabAudioOptions_C::Update_Data()
 
 void UTabAudioOptions_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa48ad282);
 
 	UTabAudioOptions_C_Construct_Params params;
 
@@ -68,7 +71,8 @@ void UTabAudioOptions_C::Construct()
 
 void UTabAudioOptions_C::UpdateOptionsTab()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.UpdateOptionsTab");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8402f9f);
 
 	UTabAudioOptions_C_UpdateOptionsTab_Params params;
 
@@ -87,7 +91,8 @@ void UTabAudioOptions_C::UpdateOptionsTab()
 
 void UTabAudioOptions_C::BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature(float Slider_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4e7a8c3);
 
 	UTabAudioOptions_C_BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_SliderChanged__DelegateSignature_Params params;
 	params.Slider_Value = Slider_Value;
@@ -107,7 +112,8 @@ void UTabAudioOptions_C::BndEvt__SoundFXVolume_K2Node_ComponentBoundEvent_0_Slid
 
 void UTabAudioOptions_C::BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature(float Slider_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x663e9eb7);
 
 	UTabAudioOptions_C_BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_SliderChanged__DelegateSignature_Params params;
 	params.Slider_Value = Slider_Value;
@@ -127,7 +133,8 @@ void UTabAudioOptions_C::BndEvt__MusicVolume_K2Node_ComponentBoundEvent_2_Slider
 
 void UTabAudioOptions_C::BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature(float Slider_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a7acef8);
 
 	UTabAudioOptions_C_BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_SliderChanged__DelegateSignature_Params params;
 	params.Slider_Value = Slider_Value;
@@ -147,7 +154,8 @@ void UTabAudioOptions_C::BndEvt__DialogVolume_K2Node_ComponentBoundEvent_11_Slid
 
 void UTabAudioOptions_C::BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature(float Slider_Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb9475b6);
 
 	UTabAudioOptions_C_BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_SliderChanged__DelegateSignature_Params params;
 	params.Slider_Value = Slider_Value;
@@ -165,7 +173,8 @@ void UTabAudioOptions_C::BndEvt__ChatVolume_K2Node_ComponentBoundEvent_15_Slider
 
 void UTabAudioOptions_C::CenterOnTab()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.CenterOnTab");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4847558);
 
 	UTabAudioOptions_C_CenterOnTab_Params params;
 
@@ -184,7 +193,8 @@ void UTabAudioOptions_C::CenterOnTab()
 
 void UTabAudioOptions_C::BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96be9d5f);
 
 	UTabAudioOptions_C_BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selection_Changed__DelegateSignature_Params params;
 	params.Selected_Index = Selected_Index;
@@ -204,7 +214,8 @@ void UTabAudioOptions_C::BndEvt__Subtitles_K2Node_ComponentBoundEvent_45_Selecti
 
 void UTabAudioOptions_C::BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c7fadc9);
 
 	UTabAudioOptions_C_BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection_Changed__DelegateSignature_Params params;
 	params.Selected_Index = Selected_Index;
@@ -224,7 +235,8 @@ void UTabAudioOptions_C::BndEvt__Quality_K2Node_ComponentBoundEvent_43_Selection
 
 void UTabAudioOptions_C::BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3dcedd3);
 
 	UTabAudioOptions_C_BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_Selection_Changed__DelegateSignature_Params params;
 	params.Selected_Index = Selected_Index;
@@ -244,7 +256,8 @@ void UTabAudioOptions_C::BndEvt__VoiceChatEnable_K2Node_ComponentBoundEvent_18_S
 
 void UTabAudioOptions_C::BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature(int Selected_Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb253ed6b);
 
 	UTabAudioOptions_C_BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_36_Selection_Changed__DelegateSignature_Params params;
 	params.Selected_Index = Selected_Index;
@@ -264,7 +277,8 @@ void UTabAudioOptions_C::BndEvt__VoiceChatPushToTalk_K2Node_ComponentBoundEvent_
 
 void UTabAudioOptions_C::ExecuteUbergraph_TabAudioOptions(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TabAudioOptions.TabAudioOptions_C.ExecuteUbergraph_TabAudioOptions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1929953c);
 
 	UTabAudioOptions_C_ExecuteUbergraph_TabAudioOptions_Params params;
 	params.EntryPoint = EntryPoint;

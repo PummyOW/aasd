@@ -25,11 +25,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51d37a89);
 		return ptr;
 	}
 
 
+	void On_Team_Talking_Changed(TArray<bool>* Team_Talking);
 	void On_Team_Reviving_Changed(TArray<bool>* Team_Reviving);
 	void On_Team_DBNO_Changed(TArray<bool>* DBNOStates);
 	void Construct();

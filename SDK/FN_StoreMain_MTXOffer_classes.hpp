@@ -37,7 +37,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass StoreMain_MTXOffer.StoreMain_MTXOffer_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb945bf45);
 		return ptr;
 	}
 

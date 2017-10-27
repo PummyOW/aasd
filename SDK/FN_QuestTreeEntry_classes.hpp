@@ -41,7 +41,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass QuestTreeEntry.QuestTreeEntry_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7211dc9);
 		return ptr;
 	}
 
@@ -66,6 +67,7 @@ public:
 	void OnHovered();
 	void OnQuestSeen_Event_1(class UFortQuestItem* Quest);
 	void Destruct();
+	void OnDeselected();
 	void ExecuteUbergraph_QuestTreeEntry(int EntryPoint);
 };
 

@@ -14,6 +14,11 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMaximizeShowing
+struct UAthenaQuickbarSecondary_C_HandleMaximizeShowing_Params
+{
+};
+
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleShowHideRail
 struct UAthenaQuickbarSecondary_C_HandleShowHideRail_Params
 {
@@ -21,11 +26,6 @@ struct UAthenaQuickbarSecondary_C_HandleShowHideRail_Params
 
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMinimizeHiding
 struct UAthenaQuickbarSecondary_C_HandleMinimizeHiding_Params
-{
-};
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleUpdateSlots
-struct UAthenaQuickbarSecondary_C_HandleUpdateSlots_Params
 {
 };
 

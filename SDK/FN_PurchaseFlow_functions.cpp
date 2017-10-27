@@ -19,7 +19,8 @@ namespace SDK
 
 void UPurchaseFlowJSBridge::RequestClose(const struct FString& CloseInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PurchaseFlow.PurchaseFlowJSBridge.RequestClose");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49b3ea1c);
 
 	UPurchaseFlowJSBridge_RequestClose_Params params;
 	params.CloseInfo = CloseInfo;
@@ -40,7 +41,8 @@ void UPurchaseFlowJSBridge::RequestClose(const struct FString& CloseInfo)
 
 void UPurchaseFlowJSBridge::RECEIPT(const struct FPurchaseFlowReceiptParam& RECEIPT)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PurchaseFlow.PurchaseFlowJSBridge.RECEIPT");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x730686d3);
 
 	UPurchaseFlowJSBridge_RECEIPT_Params params;
 	params.RECEIPT = RECEIPT;

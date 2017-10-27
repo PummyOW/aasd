@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_TeleportPadPlayerTop_C::Play_Anim_Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.Play Anim Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6136a80);
 
 	UResults_TeleportPadPlayerTop_C_Play_Anim_Intro_Params params;
 
@@ -38,7 +39,8 @@ void UResults_TeleportPadPlayerTop_C::Play_Anim_Intro()
 
 void UResults_TeleportPadPlayerTop_C::Initialize(const struct FUniqueNetIdRepl& UniqueNetID, class UFortUIScoreReport* ScoreReport, int ScoreReportIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50fdec7b);
 
 	UResults_TeleportPadPlayerTop_C_Initialize_Params params;
 	params.UniqueNetID = UniqueNetID;
@@ -58,7 +60,8 @@ void UResults_TeleportPadPlayerTop_C::Initialize(const struct FUniqueNetIdRepl& 
 
 void UResults_TeleportPadPlayerTop_C::IntroName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.IntroName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b79f694);
 
 	UResults_TeleportPadPlayerTop_C_IntroName_Params params;
 
@@ -77,7 +80,8 @@ void UResults_TeleportPadPlayerTop_C::IntroName()
 
 void UResults_TeleportPadPlayerTop_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x698adcc3);
 
 	UResults_TeleportPadPlayerTop_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -95,7 +99,8 @@ void UResults_TeleportPadPlayerTop_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_TeleportPadPlayerTop_C::Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf98069ad);
 
 	UResults_TeleportPadPlayerTop_C_Intro_Params params;
 
@@ -114,7 +119,8 @@ void UResults_TeleportPadPlayerTop_C::Intro()
 
 void UResults_TeleportPadPlayerTop_C::ExecuteUbergraph_Results_TeleportPadPlayerTop(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_TeleportPadPlayerTop.Results_TeleportPadPlayerTop_C.ExecuteUbergraph_Results_TeleportPadPlayerTop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdb2a3398);
 
 	UResults_TeleportPadPlayerTop_C_ExecuteUbergraph_Results_TeleportPadPlayerTop_Params params;
 	params.EntryPoint = EntryPoint;

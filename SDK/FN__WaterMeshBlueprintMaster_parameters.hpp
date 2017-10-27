@@ -47,12 +47,6 @@ struct A_WaterMeshBlueprintMaster_C_UserConstructionScript_Params
 {
 };
 
-// Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.ReturnWaterHitLocation
-struct A_WaterMeshBlueprintMaster_C_ReturnWaterHitLocation_Params
-{
-	class APlayerPawn_Generic_C*                       CallingActor;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_220_ComponentEndOverlapSignature__DelegateSignature
 struct A_WaterMeshBlueprintMaster_C_BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_220_ComponentEndOverlapSignature__DelegateSignature_Params
 {

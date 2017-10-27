@@ -19,7 +19,8 @@ namespace SDK
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Name(const struct FName& SquadId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c56cee);
 
 	UBP_FortExpeditionVehicleTileItemWidget_C_Set_Name_Params params;
 	params.SquadId = SquadId;
@@ -39,7 +40,8 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Name(const struct FName& Squ
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const struct FName& SquadId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Rating");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x529af7bc);
 
 	UBP_FortExpeditionVehicleTileItemWidget_C_Set_Rating_Params params;
 	params.SquadId = SquadId;
@@ -59,7 +61,8 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Rating(const struct FName& S
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const struct FName& SquadId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfb3ff404);
 
 	UBP_FortExpeditionVehicleTileItemWidget_C_Set_Icon_Params params;
 	params.SquadId = SquadId;
@@ -80,7 +83,8 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(const struct FName& Squ
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::SetData(class UObject** InData, class UCommonListView** OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfad6d839);
 
 	UBP_FortExpeditionVehicleTileItemWidget_C_SetData_Params params;
 	params.InData = InData;
@@ -99,7 +103,8 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::SetData(class UObject** InData, 
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::OnClicked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d993ea3);
 
 	UBP_FortExpeditionVehicleTileItemWidget_C_OnClicked_Params params;
 
@@ -118,7 +123,8 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::OnClicked()
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8886f93f);
 
 	UBP_FortExpeditionVehicleTileItemWidget_C_ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -138,7 +144,8 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::ExecuteUbergraph_BP_FortExpediti
 
 void UBP_FortExpeditionVehicleTileItemWidget_C::OnVehicleSelected__DelegateSignature(const struct FName& SquadId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnVehicleSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4f3b316);
 
 	UBP_FortExpeditionVehicleTileItemWidget_C_OnVehicleSelected__DelegateSignature_Params params;
 	params.SquadId = SquadId;

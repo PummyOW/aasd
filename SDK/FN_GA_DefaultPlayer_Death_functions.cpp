@@ -17,7 +17,8 @@ namespace SDK
 
 void UGA_DefaultPlayer_Death_C::PickDeathMontageSection()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C.PickDeathMontageSection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc9b348e);
 
 	UGA_DefaultPlayer_Death_C_PickDeathMontageSection_Params params;
 
@@ -36,7 +37,8 @@ void UGA_DefaultPlayer_Death_C::PickDeathMontageSection()
 
 void UGA_DefaultPlayer_Death_C::ExecuteUbergraph_GA_DefaultPlayer_Death(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C.ExecuteUbergraph_GA_DefaultPlayer_Death");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81f2a731);
 
 	UGA_DefaultPlayer_Death_C_ExecuteUbergraph_GA_DefaultPlayer_Death_Params params;
 	params.EntryPoint = EntryPoint;

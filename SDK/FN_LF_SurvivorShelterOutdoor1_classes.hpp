@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass LF_SurvivorShelterOutdoor1.LF_SurvivorShelterOutdoor1_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42e9ec53);
 		return ptr;
 	}
 

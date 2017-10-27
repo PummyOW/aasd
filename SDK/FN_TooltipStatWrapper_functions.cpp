@@ -19,7 +19,8 @@ namespace SDK
 
 void UTooltipStatWrapper_C::ShowUpgradeArrow(ESlateVisibility InVisibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWrapper.TooltipStatWrapper_C.ShowUpgradeArrow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d2449c3);
 
 	UTooltipStatWrapper_C_ShowUpgradeArrow_Params params;
 	params.InVisibility = InVisibility;
@@ -37,7 +38,8 @@ void UTooltipStatWrapper_C::ShowUpgradeArrow(ESlateVisibility InVisibility)
 
 void UTooltipStatWrapper_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWrapper.TooltipStatWrapper_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e86346e);
 
 	UTooltipStatWrapper_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UTooltipStatWrapper_C::Construct()
 
 void UTooltipStatWrapper_C::ExecuteUbergraph_TooltipStatWrapper(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TooltipStatWrapper.TooltipStatWrapper_C.ExecuteUbergraph_TooltipStatWrapper");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8838ef57);
 
 	UTooltipStatWrapper_C_ExecuteUbergraph_TooltipStatWrapper_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void AFrontend_Lobby_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Frontend_Lobby.Frontend_Lobby_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f3c4d71);
 
 	AFrontend_Lobby_C_ReceiveBeginPlay_Params params;
 
@@ -36,7 +37,8 @@ void AFrontend_Lobby_C::ReceiveBeginPlay()
 
 void AFrontend_Lobby_C::ExecuteUbergraph_Frontend_Lobby(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Frontend_Lobby.Frontend_Lobby_C.ExecuteUbergraph_Frontend_Lobby");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf0695bc);
 
 	AFrontend_Lobby_C_ExecuteUbergraph_Frontend_Lobby_Params params;
 	params.EntryPoint = EntryPoint;

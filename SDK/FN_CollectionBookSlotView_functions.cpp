@@ -17,7 +17,8 @@ namespace SDK
 
 void UCollectionBookSlotView_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSlotView.CollectionBookSlotView_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34e1b2de);
 
 	UCollectionBookSlotView_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UCollectionBookSlotView_C::Construct()
 
 void UCollectionBookSlotView_C::ExecuteUbergraph_CollectionBookSlotView(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionBookSlotView.CollectionBookSlotView_C.ExecuteUbergraph_CollectionBookSlotView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8da98d3);
 
 	UCollectionBookSlotView_C_ExecuteUbergraph_CollectionBookSlotView_Params params;
 	params.EntryPoint = EntryPoint;

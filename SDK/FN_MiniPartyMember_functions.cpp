@@ -19,7 +19,8 @@ namespace SDK
 
 void UMiniPartyMember_C::HandleMouseHoverVisualState(bool Hover)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.HandleMouseHoverVisualState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeabd5a3f);
 
 	UMiniPartyMember_C_HandleMouseHoverVisualState_Params params;
 	params.Hover = Hover;
@@ -37,7 +38,8 @@ void UMiniPartyMember_C::HandleMouseHoverVisualState(bool Hover)
 
 void UMiniPartyMember_C::OpenPartyFinder()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.OpenPartyFinder");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef9f37b9);
 
 	UMiniPartyMember_C_OpenPartyFinder_Params params;
 
@@ -56,7 +58,8 @@ void UMiniPartyMember_C::OpenPartyFinder()
 
 ESlateVisibility UMiniPartyMember_C::GetLeaderVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.GetLeaderVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73941c3a);
 
 	UMiniPartyMember_C_GetLeaderVisibility_Params params;
 
@@ -77,7 +80,8 @@ ESlateVisibility UMiniPartyMember_C::GetLeaderVisibility()
 
 void UMiniPartyMember_C::UpdateMemberInfo(struct FFortTeamMemberInfo* NewMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.UpdateMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc4c2b4e);
 
 	UMiniPartyMember_C_UpdateMemberInfo_Params params;
 
@@ -97,7 +101,8 @@ void UMiniPartyMember_C::UpdateMemberInfo(struct FFortTeamMemberInfo* NewMemberI
 
 void UMiniPartyMember_C::ShowOpen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.ShowOpen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb3118f40);
 
 	UMiniPartyMember_C_ShowOpen_Params params;
 
@@ -114,7 +119,8 @@ void UMiniPartyMember_C::ShowOpen()
 
 void UMiniPartyMember_C::ShowConnected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.ShowConnected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x140a8efd);
 
 	UMiniPartyMember_C_ShowConnected_Params params;
 
@@ -131,7 +137,8 @@ void UMiniPartyMember_C::ShowConnected()
 
 void UMiniPartyMember_C::ShowConnecting()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.ShowConnecting");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1bd8e46);
 
 	UMiniPartyMember_C_ShowConnecting_Params params;
 
@@ -148,7 +155,8 @@ void UMiniPartyMember_C::ShowConnecting()
 
 void UMiniPartyMember_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9403a1d1);
 
 	UMiniPartyMember_C_Destruct_Params params;
 
@@ -167,7 +175,8 @@ void UMiniPartyMember_C::Destruct()
 
 void UMiniPartyMember_C::OnPlayerInfoChanged(struct FFortTeamMemberInfo* NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.OnPlayerInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe5a7bb5);
 
 	UMiniPartyMember_C_OnPlayerInfoChanged_Params params;
 	params.NewInfo = NewInfo;
@@ -187,7 +196,8 @@ void UMiniPartyMember_C::OnPlayerInfoChanged(struct FFortTeamMemberInfo* NewInfo
 
 void UMiniPartyMember_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf393320b);
 
 	UMiniPartyMember_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -207,7 +217,8 @@ void UMiniPartyMember_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_11
 
 void UMiniPartyMember_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14c7f0);
 
 	UMiniPartyMember_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -227,7 +238,8 @@ void UMiniPartyMember_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_43
 
 void UMiniPartyMember_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbfce473b);
 
 	UMiniPartyMember_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -247,7 +259,8 @@ void UMiniPartyMember_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_55
 
 void UMiniPartyMember_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59b614c1);
 
 	UMiniPartyMember_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -267,7 +280,8 @@ void UMiniPartyMember_C::PreConstruct(bool* IsDesignTime)
 
 void UMiniPartyMember_C::ExecuteUbergraph_MiniPartyMember(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniPartyMember.MiniPartyMember_C.ExecuteUbergraph_MiniPartyMember");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7616654);
 
 	UMiniPartyMember_C_ExecuteUbergraph_MiniPartyMember_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemManagementEquipSlot_C::IsSelected(bool* Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.IsSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x542d39c8);
 
 	UItemManagementEquipSlot_C_IsSelected_Params params;
 
@@ -43,7 +44,8 @@ void UItemManagementEquipSlot_C::IsSelected(bool* Selected)
 
 struct FEventReply UItemManagementEquipSlot_C::OnFocusReceived(struct FGeometry* MyGeometry, struct FFocusEvent* InFocusEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnFocusReceived");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a7ad24d);
 
 	UItemManagementEquipSlot_C_OnFocusReceived_Params params;
 	params.MyGeometry = MyGeometry;
@@ -66,7 +68,8 @@ struct FEventReply UItemManagementEquipSlot_C::OnFocusReceived(struct FGeometry*
 
 void UItemManagementEquipSlot_C::SetSelected(bool Selected)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.SetSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa3848ba);
 
 	UItemManagementEquipSlot_C_SetSelected_Params params;
 	params.Selected = Selected;
@@ -88,7 +91,8 @@ void UItemManagementEquipSlot_C::SetSelected(bool Selected)
 
 void UItemManagementEquipSlot_C::OnDragDetected(struct FGeometry* MyGeometry, struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnDragDetected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x80c71658);
 
 	UItemManagementEquipSlot_C_OnDragDetected_Params params;
 	params.MyGeometry = MyGeometry;
@@ -114,7 +118,8 @@ void UItemManagementEquipSlot_C::OnDragDetected(struct FGeometry* MyGeometry, st
 
 struct FEventReply UItemManagementEquipSlot_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnMouseButtonDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27c850d9);
 
 	UItemManagementEquipSlot_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -140,7 +145,8 @@ struct FEventReply UItemManagementEquipSlot_C::OnMouseButtonDown(struct FGeometr
 
 bool UItemManagementEquipSlot_C::OnDrop(struct FGeometry* MyGeometry, struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnDrop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3697eac3);
 
 	UItemManagementEquipSlot_C_OnDrop_Params params;
 	params.MyGeometry = MyGeometry;
@@ -162,7 +168,8 @@ bool UItemManagementEquipSlot_C::OnDrop(struct FGeometry* MyGeometry, struct FPo
 
 void UItemManagementEquipSlot_C::RefreshItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.RefreshItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5cc46255);
 
 	UItemManagementEquipSlot_C_RefreshItem_Params params;
 
@@ -179,7 +186,8 @@ void UItemManagementEquipSlot_C::RefreshItem()
 
 void UItemManagementEquipSlot_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a893812);
 
 	UItemManagementEquipSlot_C_Construct_Params params;
 
@@ -198,7 +206,8 @@ void UItemManagementEquipSlot_C::Construct()
 
 void UItemManagementEquipSlot_C::OnFocusLost(struct FFocusEvent* InFocusEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnFocusLost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6235b5ee);
 
 	UItemManagementEquipSlot_C_OnFocusLost_Params params;
 	params.InFocusEvent = InFocusEvent;
@@ -218,7 +227,8 @@ void UItemManagementEquipSlot_C::OnFocusLost(struct FFocusEvent* InFocusEvent)
 
 void UItemManagementEquipSlot_C::BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_6_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_6_OnInputMethodChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ee68113);
 
 	UItemManagementEquipSlot_C_BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_6_OnInputMethodChanged__DelegateSignature_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -239,7 +249,8 @@ void UItemManagementEquipSlot_C::BndEvt__InputActionWidget_K2Node_ComponentBound
 
 void UItemManagementEquipSlot_C::OnDragCancelled(struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.OnDragCancelled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffaf68b3);
 
 	UItemManagementEquipSlot_C_OnDragCancelled_Params params;
 	params.PointerEvent = PointerEvent;
@@ -260,7 +271,8 @@ void UItemManagementEquipSlot_C::OnDragCancelled(struct FPointerEvent* PointerEv
 
 void UItemManagementEquipSlot_C::ExecuteUbergraph_ItemManagementEquipSlot(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementEquipSlot.ItemManagementEquipSlot_C.ExecuteUbergraph_ItemManagementEquipSlot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf0e1749);
 
 	UItemManagementEquipSlot_C_ExecuteUbergraph_ItemManagementEquipSlot_Params params;
 	params.EntryPoint = EntryPoint;

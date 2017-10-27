@@ -17,7 +17,8 @@ namespace SDK
 
 void UQuestTalkingHeadWidget_C::UpdateVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.UpdateVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcdad8f3c);
 
 	UQuestTalkingHeadWidget_C_UpdateVisibility_Params params;
 
@@ -36,7 +37,8 @@ void UQuestTalkingHeadWidget_C::UpdateVisibility()
 
 void UQuestTalkingHeadWidget_C::HandleShouldBlockSubtitlePortraitChanged(bool ShouldBlockSubtitlePortrait)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.HandleShouldBlockSubtitlePortraitChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc58657e);
 
 	UQuestTalkingHeadWidget_C_HandleShouldBlockSubtitlePortraitChanged_Params params;
 	params.ShouldBlockSubtitlePortrait = ShouldBlockSubtitlePortrait;
@@ -54,7 +56,8 @@ void UQuestTalkingHeadWidget_C::HandleShouldBlockSubtitlePortraitChanged(bool Sh
 
 void UQuestTalkingHeadWidget_C::HandleTalkingHeadEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.HandleTalkingHeadEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f7df8b2);
 
 	UQuestTalkingHeadWidget_C_HandleTalkingHeadEnd_Params params;
 
@@ -76,7 +79,8 @@ void UQuestTalkingHeadWidget_C::HandleTalkingHeadEnd()
 
 void UQuestTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, const struct FText& Title, const struct FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.HandleTalkingHeadBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf35babe);
 
 	UQuestTalkingHeadWidget_C_HandleTalkingHeadBegin_Params params;
 	params.Image = Image;
@@ -99,7 +103,8 @@ void UQuestTalkingHeadWidget_C::HandleTalkingHeadBegin(class UTexture2D* Image, 
 
 void UQuestTalkingHeadWidget_C::SetTalkingHeadSubtitle(const struct FText& Subtitle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadSubtitle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc34a0d1f);
 
 	UQuestTalkingHeadWidget_C_SetTalkingHeadSubtitle_Params params;
 	params.Subtitle = Subtitle;
@@ -119,7 +124,8 @@ void UQuestTalkingHeadWidget_C::SetTalkingHeadSubtitle(const struct FText& Subti
 
 void UQuestTalkingHeadWidget_C::SetTalkingHeadName(const struct FText& Title)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87cfd096);
 
 	UQuestTalkingHeadWidget_C_SetTalkingHeadName_Params params;
 	params.Title = Title;
@@ -139,7 +145,8 @@ void UQuestTalkingHeadWidget_C::SetTalkingHeadName(const struct FText& Title)
 
 void UQuestTalkingHeadWidget_C::SetTalkingHeadImage(class UTexture2D* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.SetTalkingHeadImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc1ca1ba);
 
 	UQuestTalkingHeadWidget_C_SetTalkingHeadImage_Params params;
 	params.Icon = Icon;
@@ -157,7 +164,8 @@ void UQuestTalkingHeadWidget_C::SetTalkingHeadImage(class UTexture2D* Icon)
 
 void UQuestTalkingHeadWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e420672);
 
 	UQuestTalkingHeadWidget_C_Construct_Params params;
 
@@ -176,7 +184,8 @@ void UQuestTalkingHeadWidget_C::Construct()
 
 void UQuestTalkingHeadWidget_C::ExecuteUbergraph_QuestTalkingHeadWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTalkingHeadWidget.QuestTalkingHeadWidget_C.ExecuteUbergraph_QuestTalkingHeadWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b390921);
 
 	UQuestTalkingHeadWidget_C_ExecuteUbergraph_QuestTalkingHeadWidget_Params params;
 	params.EntryPoint = EntryPoint;

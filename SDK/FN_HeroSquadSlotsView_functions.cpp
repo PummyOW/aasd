@@ -17,7 +17,8 @@ namespace SDK
 
 void UHeroSquadSlotsView_C::UndarkenAllSlots()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadSlotsView.HeroSquadSlotsView_C.UndarkenAllSlots");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e398df7);
 
 	UHeroSquadSlotsView_C_UndarkenAllSlots_Params params;
 
@@ -36,7 +37,8 @@ void UHeroSquadSlotsView_C::UndarkenAllSlots()
 
 void UHeroSquadSlotsView_C::HighlightSlotByIndex(int Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadSlotsView.HeroSquadSlotsView_C.HighlightSlotByIndex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49ec9db2);
 
 	UHeroSquadSlotsView_C_HighlightSlotByIndex_Params params;
 	params.Index = Index;
@@ -57,7 +59,8 @@ void UHeroSquadSlotsView_C::HighlightSlotByIndex(int Index)
 
 void UHeroSquadSlotsView_C::HandleSquadNavigation(const struct FName& SquadId, int SlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadSlotsView.HeroSquadSlotsView_C.HandleSquadNavigation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c3c5917);
 
 	UHeroSquadSlotsView_C_HandleSquadNavigation_Params params;
 	params.SquadId = SquadId;
@@ -81,7 +84,8 @@ void UHeroSquadSlotsView_C::HandleSquadNavigation(const struct FName& SquadId, i
 
 class UFortSquadSlotSelectorButton* UHeroSquadSlotsView_C::CreateAndAddSquadSlotButton(int* SquadSlotIndex, struct FHomebaseSquadSlot* SquadSlotDefinition, class UWidget** OutSquadSlotButtonHost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadSlotsView.HeroSquadSlotsView_C.CreateAndAddSquadSlotButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9aeff0f);
 
 	UHeroSquadSlotsView_C_CreateAndAddSquadSlotButton_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;
@@ -105,7 +109,8 @@ class UFortSquadSlotSelectorButton* UHeroSquadSlotsView_C::CreateAndAddSquadSlot
 
 void UHeroSquadSlotsView_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadSlotsView.HeroSquadSlotsView_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe9369d6a);
 
 	UHeroSquadSlotsView_C_Construct_Params params;
 
@@ -124,7 +129,8 @@ void UHeroSquadSlotsView_C::Construct()
 
 void UHeroSquadSlotsView_C::ExecuteUbergraph_HeroSquadSlotsView(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadSlotsView.HeroSquadSlotsView_C.ExecuteUbergraph_HeroSquadSlotsView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf333c561);
 
 	UHeroSquadSlotsView_C_ExecuteUbergraph_HeroSquadSlotsView_Params params;
 	params.EntryPoint = EntryPoint;

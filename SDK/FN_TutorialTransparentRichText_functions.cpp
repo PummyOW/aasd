@@ -17,7 +17,8 @@ namespace SDK
 
 void UTutorialTransparentRichText_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialTransparentRichText.TutorialTransparentRichText_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca5a247e);
 
 	UTutorialTransparentRichText_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UTutorialTransparentRichText_C::Construct()
 
 void UTutorialTransparentRichText_C::ExecuteUbergraph_TutorialTransparentRichText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function TutorialTransparentRichText.TutorialTransparentRichText_C.ExecuteUbergraph_TutorialTransparentRichText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11de1162);
 
 	UTutorialTransparentRichText_C_ExecuteUbergraph_TutorialTransparentRichText_Params params;
 	params.EntryPoint = EntryPoint;

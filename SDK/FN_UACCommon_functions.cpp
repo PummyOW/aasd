@@ -20,7 +20,8 @@ namespace SDK
 
 void UUACNetComponent::SendPacketToServer(EUACPacketType Type, TArray<unsigned char> Packet)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UACCommon.UACNetComponent.SendPacketToServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11ea60b6);
 
 	UUACNetComponent_SendPacketToServer_Params params;
 	params.Type = Type;
@@ -43,7 +44,8 @@ void UUACNetComponent::SendPacketToServer(EUACPacketType Type, TArray<unsigned c
 
 void UUACNetComponent::SendPacketToClient(EUACPacketType Type, TArray<unsigned char> Packet)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UACCommon.UACNetComponent.SendPacketToClient");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e4eac5a);
 
 	UUACNetComponent_SendPacketToClient_Params params;
 	params.Type = Type;
@@ -63,7 +65,8 @@ void UUACNetComponent::SendPacketToClient(EUACPacketType Type, TArray<unsigned c
 
 void UUACNetComponent::SendClientHello()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function UACCommon.UACNetComponent.SendClientHello");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74ab56f3);
 
 	UUACNetComponent_SendClientHello_Params params;
 

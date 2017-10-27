@@ -52,7 +52,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ConfirmationWindow.ConfirmationWindow_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2c9a31b);
 		return ptr;
 	}
 

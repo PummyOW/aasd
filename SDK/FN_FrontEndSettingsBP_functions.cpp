@@ -17,7 +17,8 @@ namespace SDK
 
 void AFrontEndSettingsBP_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndSettingsBP.FrontEndSettingsBP_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf21d4de);
 
 	AFrontEndSettingsBP_C_UserConstructionScript_Params params;
 

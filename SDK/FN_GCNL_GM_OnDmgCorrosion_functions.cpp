@@ -20,7 +20,8 @@ namespace SDK
 
 void AGCNL_GM_OnDmgCorrosion_C::OnWhileActiveParticleSystemActivate(class UParticleSystemComponent** WhileActiveParticleSysComponent, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_OnDmgCorrosion.GCNL_GM_OnDmgCorrosion_C.OnWhileActiveParticleSystemActivate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7c24f2d);
 
 	AGCNL_GM_OnDmgCorrosion_C_OnWhileActiveParticleSystemActivate_Params params;
 	params.WhileActiveParticleSysComponent = WhileActiveParticleSysComponent;
@@ -39,7 +40,8 @@ void AGCNL_GM_OnDmgCorrosion_C::OnWhileActiveParticleSystemActivate(class UParti
 
 void AGCNL_GM_OnDmgCorrosion_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_OnDmgCorrosion.GCNL_GM_OnDmgCorrosion_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cd9561e);
 
 	AGCNL_GM_OnDmgCorrosion_C_UserConstructionScript_Params params;
 

@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemCountOverCost_C::Calculate_Total_Item_Def_in_Inventory(class UFortItemDefinition* ItemDefinition, int* Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountOverCost.ItemCountOverCost_C.Calculate Total Item Def in Inventory");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6526f52);
 
 	UItemCountOverCost_C_Calculate_Total_Item_Def_in_Inventory_Params params;
 	params.ItemDefinition = ItemDefinition;
@@ -41,7 +42,8 @@ void UItemCountOverCost_C::Calculate_Total_Item_Def_in_Inventory(class UFortItem
 
 void UItemCountOverCost_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountOverCost.ItemCountOverCost_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1bb912c);
 
 	UItemCountOverCost_C_Update_Params params;
 
@@ -60,7 +62,8 @@ void UItemCountOverCost_C::Update()
 
 struct FLinearColor UItemCountOverCost_C::Get_Meets_Criteria_Color()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountOverCost.ItemCountOverCost_C.Get Meets Criteria Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x938789c9);
 
 	UItemCountOverCost_C_Get_Meets_Criteria_Color_Params params;
 
@@ -79,7 +82,8 @@ struct FLinearColor UItemCountOverCost_C::Get_Meets_Criteria_Color()
 
 void UItemCountOverCost_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountOverCost.ItemCountOverCost_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e7a8866);
 
 	UItemCountOverCost_C_Construct_Params params;
 
@@ -98,7 +102,8 @@ void UItemCountOverCost_C::Construct()
 
 void UItemCountOverCost_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountOverCost.ItemCountOverCost_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd985375d);
 
 	UItemCountOverCost_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -118,7 +123,8 @@ void UItemCountOverCost_C::PreConstruct(bool* IsDesignTime)
 
 void UItemCountOverCost_C::ExecuteUbergraph_ItemCountOverCost(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCountOverCost.ItemCountOverCost_C.ExecuteUbergraph_ItemCountOverCost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77ae3842);
 
 	UItemCountOverCost_C_ExecuteUbergraph_ItemCountOverCost_Params params;
 	params.EntryPoint = EntryPoint;

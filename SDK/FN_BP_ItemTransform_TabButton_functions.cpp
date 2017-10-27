@@ -17,7 +17,8 @@ namespace SDK
 
 void UBP_ItemTransform_TabButton_C::Update_Air_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Update Air Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa687d1fb);
 
 	UBP_ItemTransform_TabButton_C_Update_Air_Vehicles_Params params;
 
@@ -34,7 +35,8 @@ void UBP_ItemTransform_TabButton_C::Update_Air_Vehicles()
 
 void UBP_ItemTransform_TabButton_C::Update_Sea_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Update Sea Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc053cdf8);
 
 	UBP_ItemTransform_TabButton_C_Update_Sea_Vehicles_Params params;
 
@@ -51,7 +53,8 @@ void UBP_ItemTransform_TabButton_C::Update_Sea_Vehicles()
 
 void UBP_ItemTransform_TabButton_C::Update_Land_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Update Land Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f48a862);
 
 	UBP_ItemTransform_TabButton_C_Update_Land_Vehicles_Params params;
 
@@ -68,7 +71,8 @@ void UBP_ItemTransform_TabButton_C::Update_Land_Vehicles()
 
 void UBP_ItemTransform_TabButton_C::Update_All_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Update All Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x106b1d4);
 
 	UBP_ItemTransform_TabButton_C_Update_All_Vehicles_Params params;
 
@@ -85,7 +89,8 @@ void UBP_ItemTransform_TabButton_C::Update_All_Vehicles()
 
 void UBP_ItemTransform_TabButton_C::Update_Available_Vehicles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Update Available Vehicles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8cfb8e0c);
 
 	UBP_ItemTransform_TabButton_C_Update_Available_Vehicles_Params params;
 
@@ -104,7 +109,8 @@ void UBP_ItemTransform_TabButton_C::Update_Available_Vehicles()
 
 void UBP_ItemTransform_TabButton_C::Set_Tab_Id(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Tab Id");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3905246f);
 
 	UBP_ItemTransform_TabButton_C_Set_Tab_Id_Params params;
 	params.TabId = TabId;
@@ -122,7 +128,8 @@ void UBP_ItemTransform_TabButton_C::Set_Tab_Id(const struct FName& TabId)
 
 void UBP_ItemTransform_TabButton_C::Refresh_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Refresh Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xacb266c5);
 
 	UBP_ItemTransform_TabButton_C_Refresh_Bang_State_Params params;
 
@@ -141,7 +148,8 @@ void UBP_ItemTransform_TabButton_C::Refresh_Bang_State()
 
 void UBP_ItemTransform_TabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f3e2d44);
 
 	UBP_ItemTransform_TabButton_C_Set_Icon_Params params;
 	params.IconBrush = IconBrush;
@@ -161,7 +169,8 @@ void UBP_ItemTransform_TabButton_C::Set_Icon(const struct FSlateBrush& IconBrush
 
 void UBP_ItemTransform_TabButton_C::Set_Text(const struct FText& ButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef473e96);
 
 	UBP_ItemTransform_TabButton_C_Set_Text_Params params;
 	params.ButtonText = ButtonText;
@@ -179,7 +188,8 @@ void UBP_ItemTransform_TabButton_C::Set_Text(const struct FText& ButtonText)
 
 void UBP_ItemTransform_TabButton_C::OnCurrentTextStyleChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnCurrentTextStyleChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa495ce63);
 
 	UBP_ItemTransform_TabButton_C_OnCurrentTextStyleChanged_Params params;
 
@@ -198,7 +208,8 @@ void UBP_ItemTransform_TabButton_C::OnCurrentTextStyleChanged()
 
 void UBP_ItemTransform_TabButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc52d8805);
 
 	UBP_ItemTransform_TabButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -218,7 +229,8 @@ void UBP_ItemTransform_TabButton_C::PreConstruct(bool* IsDesignTime)
 
 void UBP_ItemTransform_TabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.SetTabLabelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bbb97ec);
 
 	UBP_ItemTransform_TabButton_C_SetTabLabelInfo_Params params;
 	params.TabLabelInfo = TabLabelInfo;
@@ -236,7 +248,8 @@ void UBP_ItemTransform_TabButton_C::SetTabLabelInfo(const struct FFortTabButtonL
 
 void UBP_ItemTransform_TabButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31d2e19e);
 
 	UBP_ItemTransform_TabButton_C_Construct_Params params;
 
@@ -253,7 +266,8 @@ void UBP_ItemTransform_TabButton_C::Construct()
 
 void UBP_ItemTransform_TabButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcbd59e63);
 
 	UBP_ItemTransform_TabButton_C_OnSelected_Params params;
 
@@ -270,7 +284,8 @@ void UBP_ItemTransform_TabButton_C::OnSelected()
 
 void UBP_ItemTransform_TabButton_C::OnDeselected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnDeselected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86579a96);
 
 	UBP_ItemTransform_TabButton_C_OnDeselected_Params params;
 
@@ -287,7 +302,8 @@ void UBP_ItemTransform_TabButton_C::OnDeselected()
 
 void UBP_ItemTransform_TabButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x986de071);
 
 	UBP_ItemTransform_TabButton_C_OnHovered_Params params;
 
@@ -304,7 +320,8 @@ void UBP_ItemTransform_TabButton_C::OnHovered()
 
 void UBP_ItemTransform_TabButton_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8895c2e);
 
 	UBP_ItemTransform_TabButton_C_OnUnhovered_Params params;
 
@@ -323,7 +340,8 @@ void UBP_ItemTransform_TabButton_C::OnUnhovered()
 
 void UBP_ItemTransform_TabButton_C::ExecuteUbergraph_BP_ItemTransform_TabButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_ItemTransform_TabButton.BP_ItemTransform_TabButton_C.ExecuteUbergraph_BP_ItemTransform_TabButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd394b38f);
 
 	UBP_ItemTransform_TabButton_C_ExecuteUbergraph_BP_ItemTransform_TabButton_Params params;
 	params.EntryPoint = EntryPoint;

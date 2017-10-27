@@ -56,7 +56,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass ScoreBarsWidget.ScoreBarsWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x32ed0ec9);
 		return ptr;
 	}
 

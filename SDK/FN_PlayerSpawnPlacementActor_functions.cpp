@@ -17,7 +17,8 @@ namespace SDK
 
 void APlayerSpawnPlacementActor_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerSpawnPlacementActor.PlayerSpawnPlacementActor_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d93833c);
 
 	APlayerSpawnPlacementActor_C_UserConstructionScript_Params params;
 

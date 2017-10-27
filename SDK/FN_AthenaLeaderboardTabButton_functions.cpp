@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaLeaderboardTabButton_C::ShowText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.ShowText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x925c1fdb);
 
 	UAthenaLeaderboardTabButton_C_ShowText_Params params;
 
@@ -36,7 +37,8 @@ void UAthenaLeaderboardTabButton_C::ShowText()
 
 void UAthenaLeaderboardTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d21188a);
 
 	UAthenaLeaderboardTabButton_C_Set_Icon_Params params;
 	params.IconBrush = IconBrush;
@@ -56,7 +58,8 @@ void UAthenaLeaderboardTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush
 
 void UAthenaLeaderboardTabButton_C::Set_Text(const struct FText& ButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90a6c878);
 
 	UAthenaLeaderboardTabButton_C_Set_Text_Params params;
 	params.ButtonText = ButtonText;
@@ -76,7 +79,8 @@ void UAthenaLeaderboardTabButton_C::Set_Text(const struct FText& ButtonText)
 
 void UAthenaLeaderboardTabButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4209d797);
 
 	UAthenaLeaderboardTabButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -94,7 +98,8 @@ void UAthenaLeaderboardTabButton_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaLeaderboardTabButton_C::OnCurrentTextStyleChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnCurrentTextStyleChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x496ecfed);
 
 	UAthenaLeaderboardTabButton_C_OnCurrentTextStyleChanged_Params params;
 
@@ -113,7 +118,8 @@ void UAthenaLeaderboardTabButton_C::OnCurrentTextStyleChanged()
 
 void UAthenaLeaderboardTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.SetTabLabelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf53058c6);
 
 	UAthenaLeaderboardTabButton_C_SetTabLabelInfo_Params params;
 	params.TabLabelInfo = TabLabelInfo;
@@ -131,7 +137,8 @@ void UAthenaLeaderboardTabButton_C::SetTabLabelInfo(const struct FFortTabButtonL
 
 void UAthenaLeaderboardTabButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d4d5f29);
 
 	UAthenaLeaderboardTabButton_C_OnSelected_Params params;
 
@@ -148,7 +155,8 @@ void UAthenaLeaderboardTabButton_C::OnSelected()
 
 void UAthenaLeaderboardTabButton_C::OnDeselected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnDeselected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc6731a4);
 
 	UAthenaLeaderboardTabButton_C_OnDeselected_Params params;
 
@@ -165,7 +173,8 @@ void UAthenaLeaderboardTabButton_C::OnDeselected()
 
 void UAthenaLeaderboardTabButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f2ed508);
 
 	UAthenaLeaderboardTabButton_C_Construct_Params params;
 
@@ -182,7 +191,8 @@ void UAthenaLeaderboardTabButton_C::Construct()
 
 void UAthenaLeaderboardTabButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x834b2f67);
 
 	UAthenaLeaderboardTabButton_C_OnHovered_Params params;
 
@@ -199,7 +209,8 @@ void UAthenaLeaderboardTabButton_C::OnHovered()
 
 void UAthenaLeaderboardTabButton_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8cbb9a98);
 
 	UAthenaLeaderboardTabButton_C_OnUnhovered_Params params;
 
@@ -218,7 +229,8 @@ void UAthenaLeaderboardTabButton_C::OnUnhovered()
 
 void UAthenaLeaderboardTabButton_C::ExecuteUbergraph_AthenaLeaderboardTabButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.ExecuteUbergraph_AthenaLeaderboardTabButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10ade99a);
 
 	UAthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton_Params params;
 	params.EntryPoint = EntryPoint;

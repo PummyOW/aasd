@@ -17,7 +17,8 @@ namespace SDK
 
 void UAthenaLobbyPlayerPanel_C::Cancel()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.Cancel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe268bded);
 
 	UAthenaLobbyPlayerPanel_C_Cancel_Params params;
 
@@ -36,7 +37,8 @@ void UAthenaLobbyPlayerPanel_C::Cancel()
 
 void UAthenaLobbyPlayerPanel_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnTeamMemberStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd26628c8);
 
 	UAthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -54,7 +56,8 @@ void UAthenaLobbyPlayerPanel_C::OnTeamMemberStateChanged(const struct FFortTeamM
 
 void UAthenaLobbyPlayerPanel_C::InitializeContextEvents()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.InitializeContextEvents");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68cab551);
 
 	UAthenaLobbyPlayerPanel_C_InitializeContextEvents_Params params;
 
@@ -71,7 +74,8 @@ void UAthenaLobbyPlayerPanel_C::InitializeContextEvents()
 
 void UAthenaLobbyPlayerPanel_C::Focus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.Focus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72e1e30d);
 
 	UAthenaLobbyPlayerPanel_C_Focus_Params params;
 
@@ -88,7 +92,8 @@ void UAthenaLobbyPlayerPanel_C::Focus()
 
 void UAthenaLobbyPlayerPanel_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d4ea4d0);
 
 	UAthenaLobbyPlayerPanel_C_Refresh_Params params;
 
@@ -107,7 +112,8 @@ void UAthenaLobbyPlayerPanel_C::Refresh()
 
 void UAthenaLobbyPlayerPanel_C::SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.SetTeamMemberInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c1da654);
 
 	UAthenaLobbyPlayerPanel_C_SetTeamMemberInfo_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -125,7 +131,8 @@ void UAthenaLobbyPlayerPanel_C::SetTeamMemberInfo(const struct FFortTeamMemberIn
 
 void UAthenaLobbyPlayerPanel_C::Initialize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x312e1005);
 
 	UAthenaLobbyPlayerPanel_C_Initialize_Params params;
 
@@ -142,7 +149,8 @@ void UAthenaLobbyPlayerPanel_C::Initialize()
 
 void UAthenaLobbyPlayerPanel_C::OnClosed__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnClosed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0eb7837);
 
 	UAthenaLobbyPlayerPanel_C_OnClosed__DelegateSignature_Params params;
 
@@ -159,7 +167,8 @@ void UAthenaLobbyPlayerPanel_C::OnClosed__DelegateSignature()
 
 void UAthenaLobbyPlayerPanel_C::OnGadgetsClicked__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnGadgetsClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ee53641);
 
 	UAthenaLobbyPlayerPanel_C_OnGadgetsClicked__DelegateSignature_Params params;
 

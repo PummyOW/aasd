@@ -98,7 +98,7 @@ struct UAthenaLeaderboardTab_C_OnUpdateLeaderboardListUI_Params
 {
 	bool*                                              bWasSuccessful;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UFortLeaderboardRowProxyInstance**           LocalUserRow;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FText*                                      ErrorStr;                                                 // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+	struct FText*                                      QueryErrorStr;                                            // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
 };
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateListHeader

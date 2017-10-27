@@ -19,7 +19,8 @@ namespace SDK
 
 void UIconTabButton_C::Update_Bang_State(bool bBangEnabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.Update Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x509539);
 
 	UIconTabButton_C_Update_Bang_State_Params params;
 	params.bBangEnabled = bBangEnabled;
@@ -39,7 +40,8 @@ void UIconTabButton_C::Update_Bang_State(bool bBangEnabled)
 
 void UIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.SetTutorialBorderStyle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x558cbe0c);
 
 	UIconTabButton_C_SetTutorialBorderStyle_Params params;
 	params.BorderStyle = BorderStyle;
@@ -57,7 +59,8 @@ void UIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 
 void UIconTabButton_C::ShowText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.ShowText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3762a745);
 
 	UIconTabButton_C_ShowText_Params params;
 
@@ -76,7 +79,8 @@ void UIconTabButton_C::ShowText()
 
 void UIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bdd6758);
 
 	UIconTabButton_C_Set_Icon_Params params;
 	params.IconBrush = IconBrush;
@@ -96,7 +100,8 @@ void UIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UIconTabButton_C::Set_Text(const struct FText& ButtonText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf84b24e2);
 
 	UIconTabButton_C_Set_Text_Params params;
 	params.ButtonText = ButtonText;
@@ -116,7 +121,8 @@ void UIconTabButton_C::Set_Text(const struct FText& ButtonText)
 
 void UIconTabButton_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9d03ca9);
 
 	UIconTabButton_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -134,7 +140,8 @@ void UIconTabButton_C::PreConstruct(bool* IsDesignTime)
 
 void UIconTabButton_C::OnCurrentTextStyleChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.OnCurrentTextStyleChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b67f9ff);
 
 	UIconTabButton_C_OnCurrentTextStyleChanged_Params params;
 
@@ -153,7 +160,8 @@ void UIconTabButton_C::OnCurrentTextStyleChanged()
 
 void UIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.SetTabLabelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf15c200);
 
 	UIconTabButton_C_SetTabLabelInfo_Params params;
 	params.TabLabelInfo = TabLabelInfo;
@@ -171,7 +179,8 @@ void UIconTabButton_C::SetTabLabelInfo(const struct FFortTabButtonLabelInfo& Tab
 
 void UIconTabButton_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d362987);
 
 	UIconTabButton_C_OnSelected_Params params;
 
@@ -188,7 +197,8 @@ void UIconTabButton_C::OnSelected()
 
 void UIconTabButton_C::OnDeselected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.OnDeselected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa2829a);
 
 	UIconTabButton_C_OnDeselected_Params params;
 
@@ -205,7 +215,8 @@ void UIconTabButton_C::OnDeselected()
 
 void UIconTabButton_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x546a4842);
 
 	UIconTabButton_C_Construct_Params params;
 
@@ -222,7 +233,8 @@ void UIconTabButton_C::Construct()
 
 void UIconTabButton_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfbbd87c5);
 
 	UIconTabButton_C_OnHovered_Params params;
 
@@ -239,7 +251,8 @@ void UIconTabButton_C::OnHovered()
 
 void UIconTabButton_C::OnUnhovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.OnUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda40c942);
 
 	UIconTabButton_C_OnUnhovered_Params params;
 
@@ -256,7 +269,8 @@ void UIconTabButton_C::OnUnhovered()
 
 void UIconTabButton_C::OnEnabled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.OnEnabled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x406319af);
 
 	UIconTabButton_C_OnEnabled_Params params;
 
@@ -273,7 +287,8 @@ void UIconTabButton_C::OnEnabled()
 
 void UIconTabButton_C::OnDisabled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.OnDisabled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bdf8d54);
 
 	UIconTabButton_C_OnDisabled_Params params;
 
@@ -292,7 +307,8 @@ void UIconTabButton_C::OnDisabled()
 
 void UIconTabButton_C::ExecuteUbergraph_IconTabButton(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function IconTabButton.IconTabButton_C.ExecuteUbergraph_IconTabButton");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xacc607b1);
 
 	UIconTabButton_C_ExecuteUbergraph_IconTabButton_Params params;
 	params.EntryPoint = EntryPoint;

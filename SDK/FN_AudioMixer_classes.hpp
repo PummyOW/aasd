@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AudioMixer.SoundEffectLowPassFilterPreset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0a79ae4);
 		return ptr;
 	}
 
@@ -37,7 +38,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AudioMixer.SubmixEffectReverbPreset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbf2ceda);
 		return ptr;
 	}
 
@@ -54,7 +56,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AudioMixer.SubmixEffectSubmixEQPreset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b6b1460);
 		return ptr;
 	}
 
@@ -71,7 +74,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AudioMixer.SubmixEffectTestPreset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c3ea7a);
 		return ptr;
 	}
 
@@ -87,7 +91,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AudioMixer.SynthSound");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x95c911f);
 		return ptr;
 	}
 
@@ -115,7 +120,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class AudioMixer.SynthComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x58d21e5f);
 		return ptr;
 	}
 

@@ -27,7 +27,8 @@ namespace SDK
 
 void UHelpWidget_C::Init(const struct FText& inTitle, const struct FText& inDescription, const struct FText& inStep1_Text, const struct FText& inStep2_Text, const struct FText& inStep3_Text, class UTexture2D* inStep1_Picture, class UTexture2D* inStep2_Picture, class UTexture2D* inStep3_Picture, int inNumOfSteps)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HelpWidget.HelpWidget_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x989d2443);
 
 	UHelpWidget_C_Init_Params params;
 	params.inTitle = inTitle;
@@ -55,7 +56,8 @@ void UHelpWidget_C::Init(const struct FText& inTitle, const struct FText& inDesc
 
 void UHelpWidget_C::BndEvt__ButtonClose_K2Node_ComponentBoundEvent_28_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HelpWidget.HelpWidget_C.BndEvt__ButtonClose_K2Node_ComponentBoundEvent_28_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6f5aa99);
 
 	UHelpWidget_C_BndEvt__ButtonClose_K2Node_ComponentBoundEvent_28_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -73,7 +75,8 @@ void UHelpWidget_C::BndEvt__ButtonClose_K2Node_ComponentBoundEvent_28_CommonButt
 
 void UHelpWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HelpWidget.HelpWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6fd7f390);
 
 	UHelpWidget_C_Construct_Params params;
 
@@ -92,7 +95,8 @@ void UHelpWidget_C::Construct()
 
 void UHelpWidget_C::ExecuteUbergraph_HelpWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HelpWidget.HelpWidget_C.ExecuteUbergraph_HelpWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefd2231c);
 
 	UHelpWidget_C_ExecuteUbergraph_HelpWidget_Params params;
 	params.EntryPoint = EntryPoint;

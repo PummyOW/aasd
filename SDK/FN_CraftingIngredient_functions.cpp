@@ -19,7 +19,8 @@ namespace SDK
 
 void UCraftingIngredient_C::ShowDivider(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CraftingIngredient.CraftingIngredient_C.ShowDivider");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ec59075);
 
 	UCraftingIngredient_C_ShowDivider_Params params;
 	params.Show = Show;
@@ -39,7 +40,8 @@ void UCraftingIngredient_C::ShowDivider(bool Show)
 
 class UWidget* UCraftingIngredient_C::Get_Tooltip()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CraftingIngredient.CraftingIngredient_C.Get Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3de24b4e);
 
 	UCraftingIngredient_C_Get_Tooltip_Params params;
 
@@ -58,7 +60,8 @@ class UWidget* UCraftingIngredient_C::Get_Tooltip()
 
 void UCraftingIngredient_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CraftingIngredient.CraftingIngredient_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac9f5dc6);
 
 	UCraftingIngredient_C_Refresh_Params params;
 
@@ -75,7 +78,8 @@ void UCraftingIngredient_C::Refresh()
 
 void UCraftingIngredient_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CraftingIngredient.CraftingIngredient_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e89b588);
 
 	UCraftingIngredient_C_Construct_Params params;
 
@@ -94,7 +98,8 @@ void UCraftingIngredient_C::Construct()
 
 void UCraftingIngredient_C::ExecuteUbergraph_CraftingIngredient(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CraftingIngredient.CraftingIngredient_C.ExecuteUbergraph_CraftingIngredient");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf9eee6e6);
 
 	UCraftingIngredient_C_ExecuteUbergraph_CraftingIngredient_Params params;
 	params.EntryPoint = EntryPoint;

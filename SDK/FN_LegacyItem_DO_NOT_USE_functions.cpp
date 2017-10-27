@@ -22,7 +22,8 @@ namespace SDK
 
 bool ULegacyItem_DO_NOT_USE_C::OnDrop(struct FGeometry* MyGeometry, struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDrop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6ac6d6f);
 
 	ULegacyItem_DO_NOT_USE_C_OnDrop_Params params;
 	params.MyGeometry = MyGeometry;
@@ -44,7 +45,8 @@ bool ULegacyItem_DO_NOT_USE_C::OnDrop(struct FGeometry* MyGeometry, struct FPoin
 
 void ULegacyItem_DO_NOT_USE_C::Update_Base_Opacity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Base Opacity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x809c8a98);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Base_Opacity_Params params;
 
@@ -63,7 +65,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Base_Opacity()
 
 void ULegacyItem_DO_NOT_USE_C::Update_Activatable_State(bool Activatable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Activatable State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92f51b65);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Activatable_State_Params params;
 	params.Activatable = Activatable;
@@ -81,7 +84,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Activatable_State(bool Activatable)
 
 void ULegacyItem_DO_NOT_USE_C::Update_Rating_Tag()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Rating Tag");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe04eb7d3);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Rating_Tag_Params params;
 
@@ -103,7 +107,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Rating_Tag()
 
 void ULegacyItem_DO_NOT_USE_C::Get_Texture2D_From_Multi_Size_Brush(const struct FFortMultiSizeBrush& Multi_Size_Brush, TEnumAsByte<EFortBrushSize> Brush_Size, class UTexture2D** Texture2D, bool* Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Texture2D From Multi Size Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x18d6284c);
 
 	ULegacyItem_DO_NOT_USE_C_Get_Texture2D_From_Multi_Size_Brush_Params params;
 	params.Multi_Size_Brush = Multi_Size_Brush;
@@ -129,7 +134,8 @@ void ULegacyItem_DO_NOT_USE_C::Get_Texture2D_From_Multi_Size_Brush(const struct 
 
 int ULegacyItem_DO_NOT_USE_C::Get_Num_in_Stack()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Num in Stack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52e7f8c2);
 
 	ULegacyItem_DO_NOT_USE_C_Get_Num_in_Stack_Params params;
 
@@ -151,7 +157,8 @@ int ULegacyItem_DO_NOT_USE_C::Get_Num_in_Stack()
 
 void ULegacyItem_DO_NOT_USE_C::Set_Display_Style(bool Override_Display_Style, TEnumAsByte<EItemDisplayStyle> DisplayStyle)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Display Style");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8fefceb4);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Display_Style_Params params;
 	params.Override_Display_Style = Override_Display_Style;
@@ -170,7 +177,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Display_Style(bool Override_Display_Style, TE
 
 void ULegacyItem_DO_NOT_USE_C::Hide_Subtype_Icons()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Hide Subtype Icons");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcedff477);
 
 	ULegacyItem_DO_NOT_USE_C_Hide_Subtype_Icons_Params params;
 
@@ -190,7 +198,8 @@ void ULegacyItem_DO_NOT_USE_C::Hide_Subtype_Icons()
 
 void ULegacyItem_DO_NOT_USE_C::Set_Primary_Icon_Visibility(bool Override_Icon_Visibility, ESlateVisibility Item_Icon_Visibility)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Primary Icon Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e0c4b56);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Primary_Icon_Visibility_Params params;
 	params.Override_Icon_Visibility = Override_Icon_Visibility;
@@ -214,7 +223,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Primary_Icon_Visibility(bool Override_Icon_Vi
 
 void ULegacyItem_DO_NOT_USE_C::Set_Subtype_Icons___Ammo_Color(bool Override_Secondary_Icon_Color, const struct FLinearColor& Secondary_Icon_Override_Color, bool Override_Tertiary_Icon_Color, const struct FLinearColor& Tertiary_Icon_Override_Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Subtype Icons & Ammo Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c1c1c3a);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Subtype_Icons___Ammo_Color_Params params;
 	params.Override_Secondary_Icon_Color = Override_Secondary_Icon_Color;
@@ -239,7 +249,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Subtype_Icons___Ammo_Color(bool Override_Seco
 
 struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDoubleClick(struct FGeometry* InMyGeometry, struct FPointerEvent* InMouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDoubleClick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe47ff3f2);
 
 	ULegacyItem_DO_NOT_USE_C_OnMouseButtonDoubleClick_Params params;
 	params.InMyGeometry = InMyGeometry;
@@ -262,7 +273,8 @@ struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDoubleClick(struct FGe
 
 void ULegacyItem_DO_NOT_USE_C::Resize(TEnumAsByte<EFortBrushSize> Brush_Size)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Resize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4e1b8cb);
 
 	ULegacyItem_DO_NOT_USE_C_Resize_Params params;
 	params.Brush_Size = Brush_Size;
@@ -280,7 +292,8 @@ void ULegacyItem_DO_NOT_USE_C::Resize(TEnumAsByte<EFortBrushSize> Brush_Size)
 
 void ULegacyItem_DO_NOT_USE_C::Refresh()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Refresh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9afb834);
 
 	ULegacyItem_DO_NOT_USE_C_Refresh_Params params;
 
@@ -299,7 +312,8 @@ void ULegacyItem_DO_NOT_USE_C::Refresh()
 
 void ULegacyItem_DO_NOT_USE_C::Set_Stack_Count(int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Stack Count");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1fbefdc8);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Stack_Count_Params params;
 	params.Count = Count;
@@ -319,7 +333,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Stack_Count(int Count)
 
 void ULegacyItem_DO_NOT_USE_C::Set_Durability(float Durability)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Durability");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf8c1cc6);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Durability_Params params;
 	params.Durability = Durability;
@@ -337,7 +352,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Durability(float Durability)
 
 void ULegacyItem_DO_NOT_USE_C::Update_Cooldown_Meter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Cooldown Meter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c82c50c);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Cooldown_Meter_Params params;
 
@@ -354,7 +370,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Cooldown_Meter()
 
 void ULegacyItem_DO_NOT_USE_C::Update_Durability_Meter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Durability Meter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x49589392);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Durability_Meter_Params params;
 
@@ -374,7 +391,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Durability_Meter()
 
 void ULegacyItem_DO_NOT_USE_C::Set_Tooltip_Header(const struct FText& Header_Text, class USlateBrushAsset* Icon_Brush)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Tooltip Header");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd108a6b3);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Tooltip_Header_Params params;
 	params.Header_Text = Header_Text;
@@ -396,7 +414,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Tooltip_Header(const struct FText& Header_Tex
 
 class UWidget* ULegacyItem_DO_NOT_USE_C::Get_Item_Tooltip(int OverrideStackCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Item Tooltip");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x433777b3);
 
 	ULegacyItem_DO_NOT_USE_C_Get_Item_Tooltip_Params params;
 	params.OverrideStackCount = OverrideStackCount;
@@ -419,7 +438,8 @@ class UWidget* ULegacyItem_DO_NOT_USE_C::Get_Item_Tooltip(int OverrideStackCount
 
 void ULegacyItem_DO_NOT_USE_C::Set_Display_Mode(EFortUIState Current_UI_State, bool Cursor_Mode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Display Mode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf42cf0ec);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Display_Mode_Params params;
 	params.Current_UI_State = Current_UI_State;
@@ -440,7 +460,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Display_Mode(EFortUIState Current_UI_State, b
 
 void ULegacyItem_DO_NOT_USE_C::Set_Ammo_Count(int Count)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Ammo Count");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67bff270);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Ammo_Count_Params params;
 	params.Count = Count;
@@ -458,7 +479,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Ammo_Count(int Count)
 
 void ULegacyItem_DO_NOT_USE_C::Update_Subtype_Icons___Ammo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Subtype Icons & Ammo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa48b5a4);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Subtype_Icons___Ammo_Params params;
 
@@ -478,7 +500,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Subtype_Icons___Ammo()
 
 void ULegacyItem_DO_NOT_USE_C::Get_Display_Style(EFortItemType Item_Type, TEnumAsByte<EItemDisplayStyle>* Style)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Display Style");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17a4c358);
 
 	ULegacyItem_DO_NOT_USE_C_Get_Display_Style_Params params;
 	params.Item_Type = Item_Type;
@@ -499,7 +522,8 @@ void ULegacyItem_DO_NOT_USE_C::Get_Display_Style(EFortItemType Item_Type, TEnumA
 
 void ULegacyItem_DO_NOT_USE_C::Update_Tier_Badge()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Tier Badge");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x596997d9);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Tier_Badge_Params params;
 
@@ -516,7 +540,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Tier_Badge()
 
 void ULegacyItem_DO_NOT_USE_C::Update_Primary_Icon()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Primary Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46278359);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Primary_Icon_Params params;
 
@@ -536,7 +561,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Primary_Icon()
 
 void ULegacyItem_DO_NOT_USE_C::Get_Item_Texture_Set(TEnumAsByte<EItemDisplayStyle> Display_Style, struct FItemTextureSet* Texture_Set)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Get Item Texture Set");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ce1e397);
 
 	ULegacyItem_DO_NOT_USE_C_Get_Item_Texture_Set_Params params;
 	params.Display_Style = Display_Style;
@@ -557,7 +583,8 @@ void ULegacyItem_DO_NOT_USE_C::Get_Item_Texture_Set(TEnumAsByte<EItemDisplayStyl
 
 void ULegacyItem_DO_NOT_USE_C::Update_Size_Box()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Size Box");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe99916d8);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Size_Box_Params params;
 
@@ -578,7 +605,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Size_Box()
 
 void ULegacyItem_DO_NOT_USE_C::OnDragDetected(struct FGeometry* MyGeometry, struct FPointerEvent* PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnDragDetected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7938b79c);
 
 	ULegacyItem_DO_NOT_USE_C_OnDragDetected_Params params;
 	params.MyGeometry = MyGeometry;
@@ -604,7 +632,8 @@ void ULegacyItem_DO_NOT_USE_C::OnDragDetected(struct FGeometry* MyGeometry, stru
 
 struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDown(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseButtonDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x916da565);
 
 	ULegacyItem_DO_NOT_USE_C_OnMouseButtonDown_Params params;
 	params.MyGeometry = MyGeometry;
@@ -625,7 +654,8 @@ struct FEventReply ULegacyItem_DO_NOT_USE_C::OnMouseButtonDown(struct FGeometry*
 
 void ULegacyItem_DO_NOT_USE_C::Update_All()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update All");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x879a701d);
 
 	ULegacyItem_DO_NOT_USE_C_Update_All_Params params;
 
@@ -642,7 +672,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_All()
 
 void ULegacyItem_DO_NOT_USE_C::Update_Stack_Counter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Stack Counter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc74a0b8);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Stack_Counter_Params params;
 
@@ -661,7 +692,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Stack_Counter()
 
 void ULegacyItem_DO_NOT_USE_C::Set_Item_Data(class UFortItem* Item_Data)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Set Item Data");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf179aaa);
 
 	ULegacyItem_DO_NOT_USE_C_Set_Item_Data_Params params;
 	params.Item_Data = Item_Data;
@@ -679,7 +711,8 @@ void ULegacyItem_DO_NOT_USE_C::Set_Item_Data(class UFortItem* Item_Data)
 
 void ULegacyItem_DO_NOT_USE_C::Update_Base_Material()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Update Base Material");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b8ebebe);
 
 	ULegacyItem_DO_NOT_USE_C_Update_Base_Material_Params params;
 
@@ -696,7 +729,8 @@ void ULegacyItem_DO_NOT_USE_C::Update_Base_Material()
 
 void ULegacyItem_DO_NOT_USE_C::BPOnItemChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.BPOnItemChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1294c815);
 
 	ULegacyItem_DO_NOT_USE_C_BPOnItemChanged_Params params;
 
@@ -713,7 +747,8 @@ void ULegacyItem_DO_NOT_USE_C::BPOnItemChanged()
 
 void ULegacyItem_DO_NOT_USE_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe103b53e);
 
 	ULegacyItem_DO_NOT_USE_C_Construct_Params params;
 
@@ -732,7 +767,8 @@ void ULegacyItem_DO_NOT_USE_C::Construct()
 
 void ULegacyItem_DO_NOT_USE_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe12d8765);
 
 	ULegacyItem_DO_NOT_USE_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -752,7 +788,8 @@ void ULegacyItem_DO_NOT_USE_C::PreConstruct(bool* IsDesignTime)
 
 void ULegacyItem_DO_NOT_USE_C::BPOnItemSet(class UFortItem** NewItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.BPOnItemSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd9b883cd);
 
 	ULegacyItem_DO_NOT_USE_C_BPOnItemSet_Params params;
 	params.NewItem = NewItem;
@@ -774,7 +811,8 @@ void ULegacyItem_DO_NOT_USE_C::BPOnItemSet(class UFortItem** NewItem)
 
 void ULegacyItem_DO_NOT_USE_C::OnCursorModeChanged(bool bCursorModeEnabled, const struct FName& ActionName, class UUserWidget* CursorModeContentWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnCursorModeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa49fc1bd);
 
 	ULegacyItem_DO_NOT_USE_C_OnCursorModeChanged_Params params;
 	params.bCursorModeEnabled = bCursorModeEnabled;
@@ -797,7 +835,8 @@ void ULegacyItem_DO_NOT_USE_C::OnCursorModeChanged(bool bCursorModeEnabled, cons
 
 void ULegacyItem_DO_NOT_USE_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0508b55);
 
 	ULegacyItem_DO_NOT_USE_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -818,7 +857,8 @@ void ULegacyItem_DO_NOT_USE_C::OnMouseEnter(struct FGeometry* MyGeometry, struct
 
 void ULegacyItem_DO_NOT_USE_C::BPOnCooldownSecondsChanged(int* NewCooldownSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.BPOnCooldownSecondsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe8e9a5f4);
 
 	ULegacyItem_DO_NOT_USE_C_BPOnCooldownSecondsChanged_Params params;
 	params.NewCooldownSeconds = NewCooldownSeconds;
@@ -838,7 +878,8 @@ void ULegacyItem_DO_NOT_USE_C::BPOnCooldownSecondsChanged(int* NewCooldownSecond
 
 void ULegacyItem_DO_NOT_USE_C::BPOnActivatableChanged(bool* bNewActivatable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.BPOnActivatableChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x57417ef8);
 
 	ULegacyItem_DO_NOT_USE_C_BPOnActivatableChanged_Params params;
 	params.bNewActivatable = bNewActivatable;
@@ -858,7 +899,8 @@ void ULegacyItem_DO_NOT_USE_C::BPOnActivatableChanged(bool* bNewActivatable)
 
 void ULegacyItem_DO_NOT_USE_C::ExecuteUbergraph_LegacyItem_DO_NOT_USE(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyItem_DO_NOT_USE.LegacyItem_DO_NOT_USE_C.ExecuteUbergraph_LegacyItem_DO_NOT_USE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8589842b);
 
 	ULegacyItem_DO_NOT_USE_C_ExecuteUbergraph_LegacyItem_DO_NOT_USE_Params params;
 	params.EntryPoint = EntryPoint;

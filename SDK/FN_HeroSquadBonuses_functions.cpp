@@ -19,7 +19,8 @@ namespace SDK
 
 void UHeroSquadBonuses_C::OnSquadSlotSelected(int SquadSlotIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function HeroSquadBonuses.HeroSquadBonuses_C.OnSquadSlotSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8564c713);
 
 	UHeroSquadBonuses_C_OnSquadSlotSelected_Params params;
 	params.SquadSlotIndex = SquadSlotIndex;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UBP_BannerEditorTile_C::Mark_Item_as_Seen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.Mark Item as Seen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd13a6314);
 
 	UBP_BannerEditorTile_C_Mark_Item_as_Seen_Params params;
 
@@ -34,7 +35,8 @@ void UBP_BannerEditorTile_C::Mark_Item_as_Seen()
 
 void UBP_BannerEditorTile_C::Update_Bang_State()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.Update Bang State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b50a8f5);
 
 	UBP_BannerEditorTile_C_Update_Bang_State_Params params;
 
@@ -54,7 +56,8 @@ void UBP_BannerEditorTile_C::Update_Bang_State()
 
 void UBP_BannerEditorTile_C::SetData(class UObject** InData, class UCommonListView** OwningList)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xccede0e9);
 
 	UBP_BannerEditorTile_C_SetData_Params params;
 	params.InData = InData;
@@ -73,7 +76,8 @@ void UBP_BannerEditorTile_C::SetData(class UObject** InData, class UCommonListVi
 
 void UBP_BannerEditorTile_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4942ed4e);
 
 	UBP_BannerEditorTile_C_Construct_Params params;
 
@@ -92,7 +96,8 @@ void UBP_BannerEditorTile_C::Construct()
 
 void UBP_BannerEditorTile_C::HandleBannerIconLoadGuardFinished(class UObject* Object)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.HandleBannerIconLoadGuardFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x27e74305);
 
 	UBP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished_Params params;
 	params.Object = Object;
@@ -110,7 +115,8 @@ void UBP_BannerEditorTile_C::HandleBannerIconLoadGuardFinished(class UObject* Ob
 
 void UBP_BannerEditorTile_C::OnSelected()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.OnSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0607393);
 
 	UBP_BannerEditorTile_C_OnSelected_Params params;
 
@@ -127,7 +133,8 @@ void UBP_BannerEditorTile_C::OnSelected()
 
 void UBP_BannerEditorTile_C::OnHovered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.OnHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45f52c81);
 
 	UBP_BannerEditorTile_C_OnHovered_Params params;
 
@@ -146,7 +153,8 @@ void UBP_BannerEditorTile_C::OnHovered()
 
 void UBP_BannerEditorTile_C::ExecuteUbergraph_BP_BannerEditorTile(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.ExecuteUbergraph_BP_BannerEditorTile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7ee669);
 
 	UBP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile_Params params;
 	params.EntryPoint = EntryPoint;
@@ -164,7 +172,8 @@ void UBP_BannerEditorTile_C::ExecuteUbergraph_BP_BannerEditorTile(int EntryPoint
 
 void UBP_BannerEditorTile_C::BannerTileBangUpdated__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_BannerEditorTile.BP_BannerEditorTile_C.BannerTileBangUpdated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6626e943);
 
 	UBP_BannerEditorTile_C_BannerTileBangUpdated__DelegateSignature_Params params;
 

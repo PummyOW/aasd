@@ -19,7 +19,8 @@ namespace SDK
 
 void UInteraction_DefenderBeacon_C::CheckAmmoValid(bool* AmmoValid)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.CheckAmmoValid");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x172d315b);
 
 	UInteraction_DefenderBeacon_C_CheckAmmoValid_Params params;
 
@@ -39,7 +40,8 @@ void UInteraction_DefenderBeacon_C::CheckAmmoValid(bool* AmmoValid)
 
 void UInteraction_DefenderBeacon_C::DisplayWeaponType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.DisplayWeaponType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x39fb9a1b);
 
 	UInteraction_DefenderBeacon_C_DisplayWeaponType_Params params;
 
@@ -56,7 +58,8 @@ void UInteraction_DefenderBeacon_C::DisplayWeaponType()
 
 void UInteraction_DefenderBeacon_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf7d8a8d6);
 
 	UInteraction_DefenderBeacon_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UInteraction_DefenderBeacon_C::Construct()
 
 void UInteraction_DefenderBeacon_C::UpdateDefenderBeaconWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.UpdateDefenderBeaconWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5765851);
 
 	UInteraction_DefenderBeacon_C_UpdateDefenderBeaconWidget_Params params;
 
@@ -90,7 +94,8 @@ void UInteraction_DefenderBeacon_C::UpdateDefenderBeaconWidget()
 
 void UInteraction_DefenderBeacon_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a07e585);
 
 	UInteraction_DefenderBeacon_C_Destruct_Params params;
 
@@ -110,7 +115,8 @@ void UInteraction_DefenderBeacon_C::Destruct()
 
 void UInteraction_DefenderBeacon_C::OnDefenderEquippedWeapon(class AFortWeapon* NewWeapon, class AFortWeapon* OldWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.OnDefenderEquippedWeapon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf41d207a);
 
 	UInteraction_DefenderBeacon_C_OnDefenderEquippedWeapon_Params params;
 	params.NewWeapon = NewWeapon;
@@ -131,7 +137,8 @@ void UInteraction_DefenderBeacon_C::OnDefenderEquippedWeapon(class AFortWeapon* 
 
 void UInteraction_DefenderBeacon_C::ExecuteUbergraph_Interaction_DefenderBeacon(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Interaction_DefenderBeacon.Interaction_DefenderBeacon_C.ExecuteUbergraph_Interaction_DefenderBeacon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56393629);
 
 	UInteraction_DefenderBeacon_C_ExecuteUbergraph_Interaction_DefenderBeacon_Params params;
 	params.EntryPoint = EntryPoint;

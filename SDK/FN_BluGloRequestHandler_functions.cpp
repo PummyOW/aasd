@@ -17,7 +17,8 @@ namespace SDK
 
 void UBluGloRequestHandler_C::BuildLocationsRandomly()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloRequestHandler.BluGloRequestHandler_C.BuildLocationsRandomly");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa94f7ff3);
 
 	UBluGloRequestHandler_C_BuildLocationsRandomly_Params params;
 
@@ -36,7 +37,8 @@ void UBluGloRequestHandler_C::BuildLocationsRandomly()
 
 void UBluGloRequestHandler_C::BuildLocationsFromQueryLocations(TArray<struct FVector>* QueryResultLocations)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloRequestHandler.BluGloRequestHandler_C.BuildLocationsFromQueryLocations");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x970e6547);
 
 	UBluGloRequestHandler_C_BuildLocationsFromQueryLocations_Params params;
 
@@ -59,7 +61,8 @@ void UBluGloRequestHandler_C::BuildLocationsFromQueryLocations(TArray<struct FVe
 
 void UBluGloRequestHandler_C::EQSQueryFinished(class UEnvQueryInstanceBlueprintWrapper* QueryInstance, TEnumAsByte<EEnvQueryStatus> QueryStatus)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloRequestHandler.BluGloRequestHandler_C.EQSQueryFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61de417e);
 
 	UBluGloRequestHandler_C_EQSQueryFinished_Params params;
 	params.QueryInstance = QueryInstance;
@@ -82,7 +85,8 @@ void UBluGloRequestHandler_C::EQSQueryFinished(class UEnvQueryInstanceBlueprintW
 
 void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int NumBluGloToSpawn, class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloRequestHandler.BluGloRequestHandler_C.InitializeBluGloRequestHandler");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84ae08e1);
 
 	UBluGloRequestHandler_C_InitializeBluGloRequestHandler_Params params;
 	params.NumBluGloToSpawn = NumBluGloToSpawn;
@@ -104,7 +108,8 @@ void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int NumBluGloToSpaw
 
 void UBluGloRequestHandler_C::ExecuteUbergraph_BluGloRequestHandler(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloRequestHandler.BluGloRequestHandler_C.ExecuteUbergraph_BluGloRequestHandler");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9b1966b);
 
 	UBluGloRequestHandler_C_ExecuteUbergraph_BluGloRequestHandler_Params params;
 	params.EntryPoint = EntryPoint;
@@ -128,7 +133,8 @@ void UBluGloRequestHandler_C::ExecuteUbergraph_BluGloRequestHandler(int EntryPoi
 
 void UBluGloRequestHandler_C::OnBluGloQueryFinished__DelegateSignature(class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid, TEnumAsByte<EEnvQueryStatus> QueryStatus, class UEnvQueryInstanceBlueprintWrapper* QueryInstance, int NumBluGloToSpawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGloRequestHandler.BluGloRequestHandler_C.OnBluGloQueryFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb036634);
 
 	UBluGloRequestHandler_C_OnBluGloQueryFinished__DelegateSignature_Params params;
 	params.ActorToSpawnFrom = ActorToSpawnFrom;

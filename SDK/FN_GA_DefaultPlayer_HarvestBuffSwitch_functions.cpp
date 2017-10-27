@@ -19,7 +19,8 @@ namespace SDK
 
 void UGA_DefaultPlayer_HarvestBuffSwitch_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6e20182);
 
 	UGA_DefaultPlayer_HarvestBuffSwitch_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -39,7 +40,8 @@ void UGA_DefaultPlayer_HarvestBuffSwitch_C::K2_ActivateAbilityFromEvent(struct F
 
 void UGA_DefaultPlayer_HarvestBuffSwitch_C::ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_HarvestBuffSwitch.GA_DefaultPlayer_HarvestBuffSwitch_C.ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb97c7423);
 
 	UGA_DefaultPlayer_HarvestBuffSwitch_C_ExecuteUbergraph_GA_DefaultPlayer_HarvestBuffSwitch_Params params;
 	params.EntryPoint = EntryPoint;

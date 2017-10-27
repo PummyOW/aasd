@@ -19,7 +19,8 @@ namespace SDK
 
 void UResults_PlayerScoreBox_C::GetIsValidScoreBox(bool* bIsValidScoreBox)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.GetIsValidScoreBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x761221f6);
 
 	UResults_PlayerScoreBox_C_GetIsValidScoreBox_Params params;
 
@@ -41,7 +42,8 @@ void UResults_PlayerScoreBox_C::GetIsValidScoreBox(bool* bIsValidScoreBox)
 
 void UResults_PlayerScoreBox_C::SetIsValidScoreBox(bool bIsValidScoreBox)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.SetIsValidScoreBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7382abf2);
 
 	UResults_PlayerScoreBox_C_SetIsValidScoreBox_Params params;
 	params.bIsValidScoreBox = bIsValidScoreBox;
@@ -59,7 +61,8 @@ void UResults_PlayerScoreBox_C::SetIsValidScoreBox(bool bIsValidScoreBox)
 
 void UResults_PlayerScoreBox_C::SetSkippingToEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.SetSkippingToEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0123e4);
 
 	UResults_PlayerScoreBox_C_SetSkippingToEnd_Params params;
 
@@ -78,7 +81,8 @@ void UResults_PlayerScoreBox_C::SetSkippingToEnd()
 
 void UResults_PlayerScoreBox_C::SetIsBestScore(bool bIsBestScore)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.SetIsBestScore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x320b7891);
 
 	UResults_PlayerScoreBox_C_SetIsBestScore_Params params;
 	params.bIsBestScore = bIsBestScore;
@@ -99,7 +103,8 @@ void UResults_PlayerScoreBox_C::SetIsBestScore(bool bIsBestScore)
 
 void UResults_PlayerScoreBox_C::Initialize(int Score, float PlayRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38a491ef);
 
 	UResults_PlayerScoreBox_C_Initialize_Params params;
 	params.Score = Score;
@@ -120,7 +125,8 @@ void UResults_PlayerScoreBox_C::Initialize(int Score, float PlayRate)
 
 void UResults_PlayerScoreBox_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc68e3f7);
 
 	UResults_PlayerScoreBox_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -138,7 +144,8 @@ void UResults_PlayerScoreBox_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_PlayerScoreBox_C::Intro_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.Intro Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1f4adb74);
 
 	UResults_PlayerScoreBox_C_Intro_Sequence_Params params;
 
@@ -155,7 +162,8 @@ void UResults_PlayerScoreBox_C::Intro_Sequence()
 
 void UResults_PlayerScoreBox_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36d6f59);
 
 	UResults_PlayerScoreBox_C_BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -172,7 +180,8 @@ void UResults_PlayerScoreBox_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_
 
 void UResults_PlayerScoreBox_C::Count_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.Count Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc4f53e1);
 
 	UResults_PlayerScoreBox_C_Count_Sequence_Params params;
 
@@ -189,7 +198,8 @@ void UResults_PlayerScoreBox_C::Count_Sequence()
 
 void UResults_PlayerScoreBox_C::Skipped_Count_Interpolation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.Skipped Count Interpolation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e68cd68);
 
 	UResults_PlayerScoreBox_C_Skipped_Count_Interpolation_Params params;
 
@@ -209,7 +219,8 @@ void UResults_PlayerScoreBox_C::Skipped_Count_Interpolation()
 
 void UResults_PlayerScoreBox_C::BndEvt__TextScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature(class UCommonNumericTextBlock* NumericTextBlock, bool HadCompleted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.BndEvt__TextScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3118b073);
 
 	UResults_PlayerScoreBox_C_BndEvt__TextScore_K2Node_ComponentBoundEvent_0_OnInterpolationEnded__DelegateSignature_Params params;
 	params.NumericTextBlock = NumericTextBlock;
@@ -230,7 +241,8 @@ void UResults_PlayerScoreBox_C::BndEvt__TextScore_K2Node_ComponentBoundEvent_0_O
 
 void UResults_PlayerScoreBox_C::ExecuteUbergraph_Results_PlayerScoreBox(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_PlayerScoreBox.Results_PlayerScoreBox_C.ExecuteUbergraph_Results_PlayerScoreBox");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed85a522);
 
 	UResults_PlayerScoreBox_C_ExecuteUbergraph_Results_PlayerScoreBox_Params params;
 	params.EntryPoint = EntryPoint;

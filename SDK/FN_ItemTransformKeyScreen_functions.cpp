@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemTransformKeyScreen_C::Determine_Tab_List_Title(const struct FName& TabNameID, struct FText* Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Determine Tab List Title");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28617ab7);
 
 	UItemTransformKeyScreen_C_Determine_Tab_List_Title_Params params;
 	params.TabNameID = TabNameID;
@@ -44,7 +45,8 @@ void UItemTransformKeyScreen_C::Determine_Tab_List_Title(const struct FName& Tab
 
 void UItemTransformKeyScreen_C::Determine_Key_Types_to_See(const struct FName& TabNameID, EConversionControlKeyRequest* RequestType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Determine Key Types to See");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x856adfa2);
 
 	UItemTransformKeyScreen_C_Determine_Key_Types_to_See_Params params;
 	params.TabNameID = TabNameID;
@@ -65,7 +67,8 @@ void UItemTransformKeyScreen_C::Determine_Key_Types_to_See(const struct FName& T
 
 void UItemTransformKeyScreen_C::NavigateToFirstItem()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.NavigateToFirstItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3740ff68);
 
 	UItemTransformKeyScreen_C_NavigateToFirstItem_Params params;
 
@@ -84,7 +87,8 @@ void UItemTransformKeyScreen_C::NavigateToFirstItem()
 
 void UItemTransformKeyScreen_C::NavigateToSelectedItem(class UFortItem* InItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.NavigateToSelectedItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1e61d13);
 
 	UItemTransformKeyScreen_C_NavigateToSelectedItem_Params params;
 	params.InItem = InItem;
@@ -104,7 +108,8 @@ void UItemTransformKeyScreen_C::NavigateToSelectedItem(class UFortItem* InItem)
 
 void UItemTransformKeyScreen_C::Get_Selected_Item(class UFortItem** SelectedKey)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Get Selected Item");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b1050e9);
 
 	UItemTransformKeyScreen_C_Get_Selected_Item_Params params;
 
@@ -124,7 +129,8 @@ void UItemTransformKeyScreen_C::Get_Selected_Item(class UFortItem** SelectedKey)
 
 void UItemTransformKeyScreen_C::ResetScreen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.ResetScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6163ff9c);
 
 	UItemTransformKeyScreen_C_ResetScreen_Params params;
 
@@ -143,7 +149,8 @@ void UItemTransformKeyScreen_C::ResetScreen()
 
 void UItemTransformKeyScreen_C::HandleItemSelected(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.HandleItemSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfdfe5f7);
 
 	UItemTransformKeyScreen_C_HandleItemSelected_Params params;
 	params.Item = Item;
@@ -161,7 +168,8 @@ void UItemTransformKeyScreen_C::HandleItemSelected(class UFortItem* Item)
 
 void UItemTransformKeyScreen_C::SetupKeyList()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.SetupKeyList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f17163b);
 
 	UItemTransformKeyScreen_C_SetupKeyList_Params params;
 
@@ -180,7 +188,8 @@ void UItemTransformKeyScreen_C::SetupKeyList()
 
 void UItemTransformKeyScreen_C::RebuildKeyList(EConversionControlKeyRequest RequestType)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.RebuildKeyList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37087185);
 
 	UItemTransformKeyScreen_C_RebuildKeyList_Params params;
 	params.RequestType = RequestType;
@@ -198,7 +207,8 @@ void UItemTransformKeyScreen_C::RebuildKeyList(EConversionControlKeyRequest Requ
 
 void UItemTransformKeyScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xceaba0c6);
 
 	UItemTransformKeyScreen_C_Construct_Params params;
 
@@ -217,7 +227,8 @@ void UItemTransformKeyScreen_C::Construct()
 
 void UItemTransformKeyScreen_C::BndEvt__ItemTransformKeyPicker_K2Node_ComponentBoundEvent_189_OnItemSelectionEvent__DelegateSignature(class UFortItem* SelectedItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.BndEvt__ItemTransformKeyPicker_K2Node_ComponentBoundEvent_189_OnItemSelectionEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8e200f7);
 
 	UItemTransformKeyScreen_C_BndEvt__ItemTransformKeyPicker_K2Node_ComponentBoundEvent_189_OnItemSelectionEvent__DelegateSignature_Params params;
 	params.SelectedItem = SelectedItem;
@@ -237,7 +248,8 @@ void UItemTransformKeyScreen_C::BndEvt__ItemTransformKeyPicker_K2Node_ComponentB
 
 void UItemTransformKeyScreen_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef630b25);
 
 	UItemTransformKeyScreen_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_17_OnTabSelected__DelegateSignature_Params params;
 	params.TabId = TabId;
@@ -255,7 +267,8 @@ void UItemTransformKeyScreen_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundE
 
 void UItemTransformKeyScreen_C::HandleHomebaseInventoryChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.HandleHomebaseInventoryChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10d3c4a7);
 
 	UItemTransformKeyScreen_C_HandleHomebaseInventoryChanged_Params params;
 
@@ -274,7 +287,8 @@ void UItemTransformKeyScreen_C::HandleHomebaseInventoryChanged()
 
 void UItemTransformKeyScreen_C::ExecuteUbergraph_ItemTransformKeyScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.ExecuteUbergraph_ItemTransformKeyScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4634b53);
 
 	UItemTransformKeyScreen_C_ExecuteUbergraph_ItemTransformKeyScreen_Params params;
 	params.EntryPoint = EntryPoint;
@@ -292,7 +306,8 @@ void UItemTransformKeyScreen_C::ExecuteUbergraph_ItemTransformKeyScreen(int Entr
 
 void UItemTransformKeyScreen_C::OnKeyConfirmed__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.OnKeyConfirmed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c66276b);
 
 	UItemTransformKeyScreen_C_OnKeyConfirmed__DelegateSignature_Params params;
 
@@ -311,7 +326,8 @@ void UItemTransformKeyScreen_C::OnKeyConfirmed__DelegateSignature()
 
 void UItemTransformKeyScreen_C::OnKeySelected__DelegateSignature(class UFortItem* Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformKeyScreen.ItemTransformKeyScreen_C.OnKeySelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b214e75);
 
 	UItemTransformKeyScreen_C_OnKeySelected__DelegateSignature_Params params;
 	params.Key = Key;

@@ -20,7 +20,8 @@ namespace SDK
 
 void UAthenaEquipProgress_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaEquipProgress.AthenaEquipProgress_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32a33564);
 
 	UAthenaEquipProgress_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -39,7 +40,8 @@ void UAthenaEquipProgress_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTi
 
 void UAthenaEquipProgress_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaEquipProgress.AthenaEquipProgress_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeea0f33e);
 
 	UAthenaEquipProgress_C_Construct_Params params;
 
@@ -60,7 +62,8 @@ void UAthenaEquipProgress_C::Construct()
 
 void UAthenaEquipProgress_C::OnUIGameplayCue_Event_1(const struct FName& CueName, TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaEquipProgress.AthenaEquipProgress_C.OnUIGameplayCue_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a7616);
 
 	UAthenaEquipProgress_C_OnUIGameplayCue_Event_1_Params params;
 	params.CueName = CueName;
@@ -80,7 +83,8 @@ void UAthenaEquipProgress_C::OnUIGameplayCue_Event_1(const struct FName& CueName
 
 void UAthenaEquipProgress_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaEquipProgress.AthenaEquipProgress_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f973ffd);
 
 	UAthenaEquipProgress_C_Destruct_Params params;
 
@@ -99,7 +103,8 @@ void UAthenaEquipProgress_C::Destruct()
 
 void UAthenaEquipProgress_C::ExecuteUbergraph_AthenaEquipProgress(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaEquipProgress.AthenaEquipProgress_C.ExecuteUbergraph_AthenaEquipProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47921beb);
 
 	UAthenaEquipProgress_C_ExecuteUbergraph_AthenaEquipProgress_Params params;
 	params.EntryPoint = EntryPoint;

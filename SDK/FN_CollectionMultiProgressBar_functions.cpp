@@ -17,7 +17,8 @@ namespace SDK
 
 void UCollectionMultiProgressBar_C::PlayFlashAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.PlayFlashAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x297f974b);
 
 	UCollectionMultiProgressBar_C_PlayFlashAnimation_Params params;
 
@@ -34,7 +35,8 @@ void UCollectionMultiProgressBar_C::PlayFlashAnimation()
 
 void UCollectionMultiProgressBar_C::UpdateVisibleBar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.UpdateVisibleBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x624d3e6f);
 
 	UCollectionMultiProgressBar_C_UpdateVisibleBar_Params params;
 
@@ -53,7 +55,8 @@ void UCollectionMultiProgressBar_C::UpdateVisibleBar()
 
 void UCollectionMultiProgressBar_C::Update(int AchievedCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d8190aa);
 
 	UCollectionMultiProgressBar_C_Update_Params params;
 	params.AchievedCount = AchievedCount;
@@ -74,7 +77,8 @@ void UCollectionMultiProgressBar_C::Update(int AchievedCount)
 
 void UCollectionMultiProgressBar_C::Setup(int AchievedCount, TArray<struct FCollectionMissionBadgeDisplayInfo>* InBarInfos)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.Setup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89643240);
 
 	UCollectionMultiProgressBar_C_Setup_Params params;
 	params.AchievedCount = AchievedCount;
@@ -95,7 +99,8 @@ void UCollectionMultiProgressBar_C::Setup(int AchievedCount, TArray<struct FColl
 
 void UCollectionMultiProgressBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7e3cba8);
 
 	UCollectionMultiProgressBar_C_Construct_Params params;
 
@@ -114,7 +119,8 @@ void UCollectionMultiProgressBar_C::Construct()
 
 void UCollectionMultiProgressBar_C::ExecuteUbergraph_CollectionMultiProgressBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function CollectionMultiProgressBar.CollectionMultiProgressBar_C.ExecuteUbergraph_CollectionMultiProgressBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f63628);
 
 	UCollectionMultiProgressBar_C_ExecuteUbergraph_CollectionMultiProgressBar_Params params;
 	params.EntryPoint = EntryPoint;

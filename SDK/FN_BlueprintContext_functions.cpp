@@ -21,7 +21,8 @@ namespace SDK
 
 class UBlueprintContextBase* UBlueprintContextLibrary::STATIC_GetContext(class UObject* ContextObject, class UClass* Class)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BlueprintContext.BlueprintContextLibrary.GetContext");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1fa2835d);
 
 	UBlueprintContextLibrary_GetContext_Params params;
 	params.ContextObject = ContextObject;

@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemTransformRequiredItems_C::UpdateItems(class UFortItem* TransformKey, int SacrificePoints)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemTransformRequiredItems.ItemTransformRequiredItems_C.UpdateItems");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x278ce30);
 
 	UItemTransformRequiredItems_C_UpdateItems_Params params;
 	params.TransformKey = TransformKey;

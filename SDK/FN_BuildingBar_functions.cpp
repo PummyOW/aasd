@@ -19,7 +19,8 @@ namespace SDK
 
 void UBuildingBar_C::UpdateBuildingTrap(class ABuildingTrap* BuildingTrap)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.UpdateBuildingTrap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb1325755);
 
 	UBuildingBar_C_UpdateBuildingTrap_Params params;
 	params.BuildingTrap = BuildingTrap;
@@ -39,7 +40,8 @@ void UBuildingBar_C::UpdateBuildingTrap(class ABuildingTrap* BuildingTrap)
 
 void UBuildingBar_C::Set_Display_Mode(EFortBuildingInteraction Display_Mode)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Set Display Mode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7d3ba1c);
 
 	UBuildingBar_C_Set_Display_Mode_Params params;
 	params.Display_Mode = Display_Mode;
@@ -57,7 +59,8 @@ void UBuildingBar_C::Set_Display_Mode(EFortBuildingInteraction Display_Mode)
 
 void UBuildingBar_C::Update_Durability_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update Durability Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xccef3f36);
 
 	UBuildingBar_C_Update_Durability_Text_Params params;
 
@@ -76,7 +79,8 @@ void UBuildingBar_C::Update_Durability_Text()
 
 void UBuildingBar_C::Update_Current_Durability_Value(float CurrentDurability)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update Current Durability Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d7ef74f);
 
 	UBuildingBar_C_Update_Current_Durability_Value_Params params;
 	params.CurrentDurability = CurrentDurability;
@@ -96,7 +100,8 @@ void UBuildingBar_C::Update_Current_Durability_Value(float CurrentDurability)
 
 void UBuildingBar_C::Update_Max_Durability_Value(float Max)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update Max Durability Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf42ff4c);
 
 	UBuildingBar_C_Update_Max_Durability_Value_Params params;
 	params.Max = Max;
@@ -114,7 +119,8 @@ void UBuildingBar_C::Update_Max_Durability_Value(float Max)
 
 void UBuildingBar_C::Initialize_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Initialize Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x52ef18b2);
 
 	UBuildingBar_C_Initialize_Bar_Params params;
 
@@ -133,7 +139,8 @@ void UBuildingBar_C::Initialize_Bar()
 
 void UBuildingBar_C::Set_Timer(bool Enabled)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Set Timer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xedd2f1ca);
 
 	UBuildingBar_C_Set_Timer_Params params;
 	params.Enabled = Enabled;
@@ -151,7 +158,8 @@ void UBuildingBar_C::Set_Timer(bool Enabled)
 
 void UBuildingBar_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64613d04);
 
 	UBuildingBar_C_Update_Params params;
 
@@ -168,7 +176,8 @@ void UBuildingBar_C::Update()
 
 void UBuildingBar_C::Update_HP_Delta_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update HP Delta Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x641de46d);
 
 	UBuildingBar_C_Update_HP_Delta_Bar_Params params;
 
@@ -185,7 +194,8 @@ void UBuildingBar_C::Update_HP_Delta_Bar()
 
 void UBuildingBar_C::Update_HP_Fill_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update HP Fill Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x531f9678);
 
 	UBuildingBar_C_Update_HP_Fill_Bar_Params params;
 
@@ -204,7 +214,8 @@ void UBuildingBar_C::Update_HP_Fill_Bar()
 
 void UBuildingBar_C::Update_Current_HP_Value(float Current)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update Current HP Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6838ef12);
 
 	UBuildingBar_C_Update_Current_HP_Value_Params params;
 	params.Current = Current;
@@ -224,7 +235,8 @@ void UBuildingBar_C::Update_Current_HP_Value(float Current)
 
 void UBuildingBar_C::Update_Max_HP_Value(float Max)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Update Max HP Value");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x362c2f59);
 
 	UBuildingBar_C_Update_Max_HP_Value_Params params;
 	params.Max = Max;
@@ -244,7 +256,8 @@ void UBuildingBar_C::Update_Max_HP_Value(float Max)
 
 void UBuildingBar_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70aa3e15);
 
 	UBuildingBar_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -262,7 +275,8 @@ void UBuildingBar_C::PreConstruct(bool* IsDesignTime)
 
 void UBuildingBar_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7ca9fad);
 
 	UBuildingBar_C_Destruct_Params params;
 
@@ -281,7 +295,8 @@ void UBuildingBar_C::Destruct()
 
 void UBuildingBar_C::ExecuteUbergraph_BuildingBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BuildingBar.BuildingBar_C.ExecuteUbergraph_BuildingBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1080b36);
 
 	UBuildingBar_C_ExecuteUbergraph_BuildingBar_Params params;
 	params.EntryPoint = EntryPoint;

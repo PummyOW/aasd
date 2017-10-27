@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GCNS_Constructor_ElectrifiedFloors.GCNS_Constructor_ElectrifiedFloors_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf35f055);
 		return ptr;
 	}
 

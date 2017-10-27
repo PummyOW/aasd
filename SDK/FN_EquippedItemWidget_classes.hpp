@@ -37,7 +37,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass EquippedItemWidget.EquippedItemWidget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b5635e1);
 		return ptr;
 	}
 

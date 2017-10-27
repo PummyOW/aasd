@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCaptureInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x95858334);
 		return ptr;
 	}
 
@@ -35,7 +36,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCaptureProtocolSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae3e832c);
 		return ptr;
 	}
 
@@ -60,7 +62,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0440143);
 		return ptr;
 	}
 
@@ -75,7 +78,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.AutomatedLevelSequenceCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd25ded16);
 		return ptr;
 	}
 
@@ -93,7 +97,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.LevelCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27d38483);
 		return ptr;
 	}
 
@@ -108,7 +113,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.MovieSceneCaptureEnvironment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x17682d62);
 		return ptr;
 	}
 
@@ -127,7 +133,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.FrameGrabberProtocolSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd10c9468);
 		return ptr;
 	}
 
@@ -142,7 +149,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.BmpImageCaptureSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd7214dc);
 		return ptr;
 	}
 
@@ -159,7 +167,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.ImageCaptureSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a62c477);
 		return ptr;
 	}
 
@@ -181,7 +190,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.CompositionGraphCaptureSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3caa1172);
 		return ptr;
 	}
 
@@ -200,7 +210,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneCapture.VideoCaptureSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa1afe9e9);
 		return ptr;
 	}
 

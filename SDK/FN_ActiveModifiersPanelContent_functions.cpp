@@ -19,7 +19,8 @@ namespace SDK
 
 void UActiveModifiersPanelContent_C::Init(TArray<class UFortGameplayModifierItemDefinition*>* inModifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.Init");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2c4ac4d);
 
 	UActiveModifiersPanelContent_C_Init_Params params;
 
@@ -39,7 +40,8 @@ void UActiveModifiersPanelContent_C::Init(TArray<class UFortGameplayModifierItem
 
 void UActiveModifiersPanelContent_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a89157a);
 
 	UActiveModifiersPanelContent_C_Construct_Params params;
 
@@ -58,7 +60,8 @@ void UActiveModifiersPanelContent_C::Construct()
 
 void UActiveModifiersPanelContent_C::ExecuteUbergraph_ActiveModifiersPanelContent(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ActiveModifiersPanelContent.ActiveModifiersPanelContent_C.ExecuteUbergraph_ActiveModifiersPanelContent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3fae4d84);
 
 	UActiveModifiersPanelContent_C_ExecuteUbergraph_ActiveModifiersPanelContent_Params params;
 	params.EntryPoint = EntryPoint;

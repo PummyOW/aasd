@@ -23,7 +23,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SubtitlesWidgets.FortMediaSubtitlesPlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d5b0ab2);
 		return ptr;
 	}
 
@@ -47,7 +48,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class SubtitlesWidgets.SubtitleDisplay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x87fae5d9);
 		return ptr;
 	}
 

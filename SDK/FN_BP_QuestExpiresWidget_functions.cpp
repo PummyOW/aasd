@@ -19,7 +19,8 @@ namespace SDK
 
 void UBP_QuestExpiresWidget_C::GetFortPC(class AFortPlayerController** AsFort_Player_Controller)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.GetFortPC");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8c17c0d5);
 
 	UBP_QuestExpiresWidget_C_GetFortPC_Params params;
 
@@ -41,7 +42,8 @@ void UBP_QuestExpiresWidget_C::GetFortPC(class AFortPlayerController** AsFort_Pl
 
 void UBP_QuestExpiresWidget_C::Refresh_Expiration_Timer(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.Refresh Expiration Timer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e97a948);
 
 	UBP_QuestExpiresWidget_C_Refresh_Expiration_Timer_Params params;
 	params.Quest = Quest;
@@ -61,7 +63,8 @@ void UBP_QuestExpiresWidget_C::Refresh_Expiration_Timer(class UFortQuestItem* Qu
 
 void UBP_QuestExpiresWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5d9778e5);
 
 	UBP_QuestExpiresWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -81,7 +84,8 @@ void UBP_QuestExpiresWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UBP_QuestExpiresWidget_C::SetData(class UFortQuestItem** InItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.SetData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5c409d9);
 
 	UBP_QuestExpiresWidget_C_SetData_Params params;
 	params.InItem = InItem;
@@ -99,7 +103,8 @@ void UBP_QuestExpiresWidget_C::SetData(class UFortQuestItem** InItem)
 
 void UBP_QuestExpiresWidget_C::OnQuestExpirationUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.OnQuestExpirationUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26cfe72e);
 
 	UBP_QuestExpiresWidget_C_OnQuestExpirationUpdated_Params params;
 
@@ -118,7 +123,8 @@ void UBP_QuestExpiresWidget_C::OnQuestExpirationUpdated()
 
 void UBP_QuestExpiresWidget_C::ExecuteUbergraph_BP_QuestExpiresWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.ExecuteUbergraph_BP_QuestExpiresWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9deec272);
 
 	UBP_QuestExpiresWidget_C_ExecuteUbergraph_BP_QuestExpiresWidget_Params params;
 	params.EntryPoint = EntryPoint;

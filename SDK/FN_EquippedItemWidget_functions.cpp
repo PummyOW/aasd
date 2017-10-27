@@ -20,7 +20,8 @@ namespace SDK
 
 void UEquippedItemWidget_C::GetCurrentAmmoText(int CurrentAmmoCount, struct FText* CurrentAmmoText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.GetCurrentAmmoText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3d0e0fdb);
 
 	UEquippedItemWidget_C_GetCurrentAmmoText_Params params;
 	params.CurrentAmmoCount = CurrentAmmoCount;
@@ -41,7 +42,8 @@ void UEquippedItemWidget_C::GetCurrentAmmoText(int CurrentAmmoCount, struct FTex
 
 void UEquippedItemWidget_C::UpdateResourceCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.UpdateResourceCount");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45c4331);
 
 	UEquippedItemWidget_C_UpdateResourceCount_Params params;
 
@@ -61,7 +63,8 @@ void UEquippedItemWidget_C::UpdateResourceCount()
 
 void UEquippedItemWidget_C::UpdateCurrentAmmo(int LocalCount, int LocalRemaining)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.UpdateCurrentAmmo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc597907d);
 
 	UEquippedItemWidget_C_UpdateCurrentAmmo_Params params;
 	params.LocalCount = LocalCount;
@@ -80,7 +83,8 @@ void UEquippedItemWidget_C::UpdateCurrentAmmo(int LocalCount, int LocalRemaining
 
 void UEquippedItemWidget_C::UpdateAmmoCapacity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.UpdateAmmoCapacity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16067736);
 
 	UEquippedItemWidget_C_UpdateAmmoCapacity_Params params;
 
@@ -99,7 +103,8 @@ void UEquippedItemWidget_C::UpdateAmmoCapacity()
 
 void UEquippedItemWidget_C::UpdateWidgetColor(bool HasAmmo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.UpdateWidgetColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ccb5249);
 
 	UEquippedItemWidget_C_UpdateWidgetColor_Params params;
 	params.HasAmmo = HasAmmo;
@@ -117,7 +122,8 @@ void UEquippedItemWidget_C::UpdateWidgetColor(bool HasAmmo)
 
 void UEquippedItemWidget_C::UpdateVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.UpdateVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb51e2fd4);
 
 	UEquippedItemWidget_C_UpdateVisibility_Params params;
 
@@ -134,7 +140,8 @@ void UEquippedItemWidget_C::UpdateVisibility()
 
 void UEquippedItemWidget_C::FullUpdateResourceDisplay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.FullUpdateResourceDisplay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa10c9463);
 
 	UEquippedItemWidget_C_FullUpdateResourceDisplay_Params params;
 
@@ -151,7 +158,8 @@ void UEquippedItemWidget_C::FullUpdateResourceDisplay()
 
 void UEquippedItemWidget_C::FullUpdateAmmoDisplay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.FullUpdateAmmoDisplay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94569901);
 
 	UEquippedItemWidget_C_FullUpdateAmmoDisplay_Params params;
 
@@ -168,7 +176,8 @@ void UEquippedItemWidget_C::FullUpdateAmmoDisplay()
 
 void UEquippedItemWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x50adaefa);
 
 	UEquippedItemWidget_C_Construct_Params params;
 
@@ -188,7 +197,8 @@ void UEquippedItemWidget_C::Construct()
 
 void UEquippedItemWidget_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.OnWeaponEquipped");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37da9377);
 
 	UEquippedItemWidget_C_OnWeaponEquipped_Params params;
 	params.NewWeapon = NewWeapon;
@@ -210,7 +220,8 @@ void UEquippedItemWidget_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class
 
 void UEquippedItemWidget_C::OnLocalAmmoChanged(int LocalCount, int LocalRemaining)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.OnLocalAmmoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x757bdf29);
 
 	UEquippedItemWidget_C_OnLocalAmmoChanged_Params params;
 	params.LocalCount = LocalCount;
@@ -229,7 +240,8 @@ void UEquippedItemWidget_C::OnLocalAmmoChanged(int LocalCount, int LocalRemainin
 
 void UEquippedItemWidget_C::OnWorldItemsChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.OnWorldItemsChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x667d0e8);
 
 	UEquippedItemWidget_C_OnWorldItemsChanged_Params params;
 
@@ -246,7 +258,8 @@ void UEquippedItemWidget_C::OnWorldItemsChanged()
 
 void UEquippedItemWidget_C::OnBuildingMaterialCycled()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.OnBuildingMaterialCycled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22c48a3d);
 
 	UEquippedItemWidget_C_OnBuildingMaterialCycled_Params params;
 
@@ -265,7 +278,8 @@ void UEquippedItemWidget_C::OnBuildingMaterialCycled()
 
 void UEquippedItemWidget_C::ExecuteUbergraph_EquippedItemWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function EquippedItemWidget.EquippedItemWidget_C.ExecuteUbergraph_EquippedItemWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x28efe499);
 
 	UEquippedItemWidget_C_ExecuteUbergraph_EquippedItemWidget_Params params;
 	params.EntryPoint = EntryPoint;

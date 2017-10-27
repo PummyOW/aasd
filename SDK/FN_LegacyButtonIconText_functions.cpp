@@ -17,7 +17,8 @@ namespace SDK
 
 void ULegacyButtonIconText_C::Outro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Outro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x969c8d86);
 
 	ULegacyButtonIconText_C_Outro_Params params;
 
@@ -34,7 +35,8 @@ void ULegacyButtonIconText_C::Outro()
 
 void ULegacyButtonIconText_C::Intro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Intro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ae03cb1);
 
 	ULegacyButtonIconText_C_Intro_Params params;
 
@@ -53,7 +55,8 @@ void ULegacyButtonIconText_C::Intro()
 
 void ULegacyButtonIconText_C::Toggle(bool Show_Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Toggle");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87c42829);
 
 	ULegacyButtonIconText_C_Toggle_Params params;
 	params.Show_Button = Show_Button;
@@ -73,7 +76,8 @@ void ULegacyButtonIconText_C::Toggle(bool Show_Button)
 
 void ULegacyButtonIconText_C::Set_Alignment(TEnumAsByte<ETextJustify> Align)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Set Alignment");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29c2c438);
 
 	ULegacyButtonIconText_C_Set_Alignment_Params params;
 	params.Align = Align;
@@ -91,7 +95,8 @@ void ULegacyButtonIconText_C::Set_Alignment(TEnumAsByte<ETextJustify> Align)
 
 void ULegacyButtonIconText_C::Update_Size_Box()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Update Size Box");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae254e72);
 
 	ULegacyButtonIconText_C_Update_Size_Box_Params params;
 
@@ -110,7 +115,8 @@ void ULegacyButtonIconText_C::Update_Size_Box()
 
 struct FSlateColor ULegacyButtonIconText_C::Get_Primary_Color()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Get Primary Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45d7960c);
 
 	ULegacyButtonIconText_C_Get_Primary_Color_Params params;
 
@@ -131,7 +137,8 @@ struct FSlateColor ULegacyButtonIconText_C::Get_Primary_Color()
 
 struct FLinearColor ULegacyButtonIconText_C::Get_Secondary_Color()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Get Secondary Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64805ee0);
 
 	ULegacyButtonIconText_C_Get_Secondary_Color_Params params;
 
@@ -150,7 +157,8 @@ struct FLinearColor ULegacyButtonIconText_C::Get_Secondary_Color()
 
 void ULegacyButtonIconText_C::Update_Padding()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Update Padding");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc688d69);
 
 	ULegacyButtonIconText_C_Update_Padding_Params params;
 
@@ -170,7 +178,8 @@ void ULegacyButtonIconText_C::Update_Padding()
 
 void ULegacyButtonIconText_C::Set_Icon(const struct FSlateBrush& InBrush, bool RefreshPadding)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Set Icon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3289226a);
 
 	ULegacyButtonIconText_C_Set_Icon_Params params;
 	params.InBrush = InBrush;
@@ -192,7 +201,8 @@ void ULegacyButtonIconText_C::Set_Icon(const struct FSlateBrush& InBrush, bool R
 
 void ULegacyButtonIconText_C::Set_Text(const struct FText& InText, bool RefreshPadding)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.Set Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x524de358);
 
 	ULegacyButtonIconText_C_Set_Text_Params params;
 	params.InText = InText;
@@ -213,7 +223,8 @@ void ULegacyButtonIconText_C::Set_Text(const struct FText& InText, bool RefreshP
 
 void ULegacyButtonIconText_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe058f7);
 
 	ULegacyButtonIconText_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -234,7 +245,8 @@ void ULegacyButtonIconText_C::PreConstruct(bool* IsDesignTime)
 
 void ULegacyButtonIconText_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe37d18ab);
 
 	ULegacyButtonIconText_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -255,7 +267,8 @@ void ULegacyButtonIconText_C::OnMouseEnter(struct FGeometry* MyGeometry, struct 
 
 void ULegacyButtonIconText_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b6fb254);
 
 	ULegacyButtonIconText_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -275,7 +288,8 @@ void ULegacyButtonIconText_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void ULegacyButtonIconText_C::ExecuteUbergraph_LegacyButtonIconText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.ExecuteUbergraph_LegacyButtonIconText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6d31706);
 
 	ULegacyButtonIconText_C_ExecuteUbergraph_LegacyButtonIconText_Params params;
 	params.EntryPoint = EntryPoint;
@@ -295,7 +309,8 @@ void ULegacyButtonIconText_C::ExecuteUbergraph_LegacyButtonIconText(int EntryPoi
 
 void ULegacyButtonIconText_C::On_Mouse_Hovered_Changed__DelegateSignature(bool Is_Hovered)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LegacyButtonIconText.LegacyButtonIconText_C.On Mouse Hovered Changed__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8f60435);
 
 	ULegacyButtonIconText_C_On_Mouse_Hovered_Changed__DelegateSignature_Params params;
 	params.Is_Hovered = Is_Hovered;

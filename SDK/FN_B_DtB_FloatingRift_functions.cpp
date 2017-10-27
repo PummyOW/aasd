@@ -17,7 +17,8 @@ namespace SDK
 
 void AB_DtB_FloatingRift_C::OnRep_bIsRiftArcsActive_()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.OnRep_bIsRiftArcsActive?");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5a2815b3);
 
 	AB_DtB_FloatingRift_C_OnRep_bIsRiftArcsActive__Params params;
 
@@ -34,7 +35,8 @@ void AB_DtB_FloatingRift_C::OnRep_bIsRiftArcsActive_()
 
 void AB_DtB_FloatingRift_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4fbed7a);
 
 	AB_DtB_FloatingRift_C_UserConstructionScript_Params params;
 
@@ -58,7 +60,8 @@ void AB_DtB_FloatingRift_C::UserConstructionScript()
 
 void AB_DtB_FloatingRift_C::BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66d0ddf5);
 
 	AB_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -86,7 +89,8 @@ void AB_DtB_FloatingRift_C::BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEv
 
 void AB_DtB_FloatingRift_C::BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7cc12ecb);
 
 	AB_DtB_FloatingRift_C_BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -107,7 +111,8 @@ void AB_DtB_FloatingRift_C::BndEvt__RiftArcTriggerVolume_K2Node_ComponentBoundEv
 
 void AB_DtB_FloatingRift_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16d0883d);
 
 	AB_DtB_FloatingRift_C_ReceiveBeginPlay_Params params;
 
@@ -131,7 +136,8 @@ void AB_DtB_FloatingRift_C::ReceiveBeginPlay()
 
 void AB_DtB_FloatingRift_C::BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41b71e2c);
 
 	AB_DtB_FloatingRift_C_BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_ComponentBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -167,7 +173,8 @@ void AB_DtB_FloatingRift_C::BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_Com
 
 void AB_DtB_FloatingRift_C::HandleMissionEvent_NewPlayer(const struct FGuid& MissionGuid, const struct FGameplayTagContainer& ObjectiveHandle, class UFortMissionEventParams* Params, bool DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* EventFocus, class UDataAsset* EventContent, class AActor* EventInstigator, int GenericInt, float GenericFloat, const struct FText& GenericText, const struct FGameplayTagContainer& GameplayTags, const struct FFortMissionEvent& MissionEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.HandleMissionEvent_NewPlayer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc339bf5);
 
 	AB_DtB_FloatingRift_C_HandleMissionEvent_NewPlayer_Params params;
 	params.MissionGuid = MissionGuid;
@@ -203,7 +210,8 @@ void AB_DtB_FloatingRift_C::HandleMissionEvent_NewPlayer(const struct FGuid& Mis
 
 void AB_DtB_FloatingRift_C::BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa361ac0);
 
 	AB_DtB_FloatingRift_C_BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoundEvent_70_ComponentBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -230,7 +238,8 @@ void AB_DtB_FloatingRift_C::BndEvt__DispatcherCallOutVolume_K2Node_ComponentBoun
 
 void AB_DtB_FloatingRift_C::BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature(const struct FName& EventName, float EmitterTime, int ParticleCount)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc40d28f9);
 
 	AB_DtB_FloatingRift_C_BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_ParticleBurstSignature__DelegateSignature_Params params;
 	params.EventName = EventName;
@@ -252,7 +261,8 @@ void AB_DtB_FloatingRift_C::BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_
 
 void AB_DtB_FloatingRift_C::ExecuteUbergraph_B_DtB_FloatingRift(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.ExecuteUbergraph_B_DtB_FloatingRift");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee5f6f9a);
 
 	AB_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift_Params params;
 	params.EntryPoint = EntryPoint;
@@ -272,7 +282,8 @@ void AB_DtB_FloatingRift_C::ExecuteUbergraph_B_DtB_FloatingRift(int EntryPoint)
 
 void AB_DtB_FloatingRift_C::CallOutVolumeOverlap__DelegateSignature(class AFortPlayerPawn* FortPlayerPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.CallOutVolumeOverlap__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcfd17505);
 
 	AB_DtB_FloatingRift_C_CallOutVolumeOverlap__DelegateSignature_Params params;
 	params.FortPlayerPawn = FortPlayerPawn;
@@ -292,7 +303,8 @@ void AB_DtB_FloatingRift_C::CallOutVolumeOverlap__DelegateSignature(class AFortP
 
 void AB_DtB_FloatingRift_C::RiftLocated__DelegateSignature(class AFortPlayerPawn* FortPlayPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.RiftLocated__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9543ae9);
 
 	AB_DtB_FloatingRift_C_RiftLocated__DelegateSignature_Params params;
 	params.FortPlayPawn = FortPlayPawn;

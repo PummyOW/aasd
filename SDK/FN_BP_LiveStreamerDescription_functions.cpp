@@ -19,7 +19,8 @@ namespace SDK
 
 void UBP_LiveStreamerDescription_C::GetBroadcasterName(struct FText* BroadcasterName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.GetBroadcasterName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94697216);
 
 	UBP_LiveStreamerDescription_C_GetBroadcasterName_Params params;
 
@@ -41,7 +42,8 @@ void UBP_LiveStreamerDescription_C::GetBroadcasterName(struct FText* Broadcaster
 
 void UBP_LiveStreamerDescription_C::SetViewerQuestText(const struct FText& NewText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.SetViewerQuestText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e0b5d86);
 
 	UBP_LiveStreamerDescription_C_SetViewerQuestText_Params params;
 	params.NewText = NewText;
@@ -59,7 +61,8 @@ void UBP_LiveStreamerDescription_C::SetViewerQuestText(const struct FText& NewTe
 
 void UBP_LiveStreamerDescription_C::Update_Viewer_Note_Visibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Update Viewer Note Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e72d1ae);
 
 	UBP_LiveStreamerDescription_C_Update_Viewer_Note_Visibility_Params params;
 
@@ -76,7 +79,8 @@ void UBP_LiveStreamerDescription_C::Update_Viewer_Note_Visibility()
 
 void UBP_LiveStreamerDescription_C::Setup_Broadcaster_Name()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Setup Broadcaster Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83ed0673);
 
 	UBP_LiveStreamerDescription_C_Setup_Broadcaster_Name_Params params;
 
@@ -95,7 +99,8 @@ void UBP_LiveStreamerDescription_C::Setup_Broadcaster_Name()
 
 void UBP_LiveStreamerDescription_C::Is_Viewer_Quest(bool* ViewerQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Is Viewer Quest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd615268d);
 
 	UBP_LiveStreamerDescription_C_Is_Viewer_Quest_Params params;
 
@@ -117,7 +122,8 @@ void UBP_LiveStreamerDescription_C::Is_Viewer_Quest(bool* ViewerQuest)
 
 void UBP_LiveStreamerDescription_C::Update_Visibility(class UFortQuestItemDefinition* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Update Visibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa61b9098);
 
 	UBP_LiveStreamerDescription_C_Update_Visibility_Params params;
 	params.Item = Item;
@@ -137,7 +143,8 @@ void UBP_LiveStreamerDescription_C::Update_Visibility(class UFortQuestItemDefini
 
 void UBP_LiveStreamerDescription_C::Set_Quest(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_LiveStreamerDescription.BP_LiveStreamerDescription_C.Set Quest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc034b06b);
 
 	UBP_LiveStreamerDescription_C_Set_Quest_Params params;
 	params.Quest = Quest;

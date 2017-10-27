@@ -19,7 +19,8 @@ namespace SDK
 
 void AB_Fragment_Container_C::ForceFeedbackInteract(bool Soft)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.ForceFeedbackInteract");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b06d599);
 
 	AB_Fragment_Container_C_ForceFeedbackInteract_Params params;
 	params.Soft = Soft;
@@ -37,7 +38,8 @@ void AB_Fragment_Container_C::ForceFeedbackInteract(bool Soft)
 
 void AB_Fragment_Container_C::OnRep_IsOrbTaken()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.OnRep_IsOrbTaken");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b875572);
 
 	AB_Fragment_Container_C_OnRep_IsOrbTaken_Params params;
 
@@ -54,7 +56,8 @@ void AB_Fragment_Container_C::OnRep_IsOrbTaken()
 
 void AB_Fragment_Container_C::OnRep_IsOn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.OnRep_IsOn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4f6aef69);
 
 	AB_Fragment_Container_C_OnRep_IsOn_Params params;
 
@@ -73,7 +76,8 @@ void AB_Fragment_Container_C::OnRep_IsOn()
 
 void AB_Fragment_Container_C::SetOutlander(class AActor* NewOutlander)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.SetOutlander");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfac17107);
 
 	AB_Fragment_Container_C_SetOutlander_Params params;
 	params.NewOutlander = NewOutlander;
@@ -93,7 +97,8 @@ void AB_Fragment_Container_C::SetOutlander(class AActor* NewOutlander)
 
 void AB_Fragment_Container_C::SetAwake(bool NewAwake)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.SetAwake");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82e1b59c);
 
 	AB_Fragment_Container_C_SetAwake_Params params;
 	params.NewAwake = NewAwake;
@@ -111,7 +116,8 @@ void AB_Fragment_Container_C::SetAwake(bool NewAwake)
 
 void AB_Fragment_Container_C::UpdateShouldTick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.UpdateShouldTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1904260);
 
 	AB_Fragment_Container_C_UpdateShouldTick_Params params;
 
@@ -131,7 +137,8 @@ void AB_Fragment_Container_C::UpdateShouldTick()
 
 struct FText AB_Fragment_Container_C::BlueprintGetFailedInteractionString(class AFortPawn** InteractingPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.BlueprintGetFailedInteractionString");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9648f120);
 
 	AB_Fragment_Container_C_BlueprintGetFailedInteractionString_Params params;
 	params.InteractingPawn = InteractingPawn;
@@ -151,7 +158,8 @@ struct FText AB_Fragment_Container_C::BlueprintGetFailedInteractionString(class 
 
 void AB_Fragment_Container_C::OnRep_IsOpen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.OnRep_IsOpen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbeaada06);
 
 	AB_Fragment_Container_C_OnRep_IsOpen_Params params;
 
@@ -168,7 +176,8 @@ void AB_Fragment_Container_C::OnRep_IsOpen()
 
 void AB_Fragment_Container_C::DelayedDestroy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.DelayedDestroy");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x194aa035);
 
 	AB_Fragment_Container_C_DelayedDestroy_Params params;
 
@@ -185,7 +194,8 @@ void AB_Fragment_Container_C::DelayedDestroy()
 
 void AB_Fragment_Container_C::OnRep_BuffType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.OnRep_BuffType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59deae21);
 
 	AB_Fragment_Container_C_OnRep_BuffType_Params params;
 
@@ -205,7 +215,8 @@ void AB_Fragment_Container_C::OnRep_BuffType()
 
 struct FText AB_Fragment_Container_C::BlueprintGetInteractionString(class AFortPawn** InteractingPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.BlueprintGetInteractionString");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3224e8e5);
 
 	AB_Fragment_Container_C_BlueprintGetInteractionString_Params params;
 	params.InteractingPawn = InteractingPawn;
@@ -228,7 +239,8 @@ struct FText AB_Fragment_Container_C::BlueprintGetInteractionString(class AFortP
 
 bool AB_Fragment_Container_C::BlueprintCanInteract(class AFortPawn** InteractingPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.BlueprintCanInteract");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdebfdc0a);
 
 	AB_Fragment_Container_C_BlueprintCanInteract_Params params;
 	params.InteractingPawn = InteractingPawn;
@@ -248,7 +260,8 @@ bool AB_Fragment_Container_C::BlueprintCanInteract(class AFortPawn** Interacting
 
 void AB_Fragment_Container_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x59c6a302);
 
 	AB_Fragment_Container_C_UserConstructionScript_Params params;
 
@@ -265,7 +278,8 @@ void AB_Fragment_Container_C::UserConstructionScript()
 
 void AB_Fragment_Container_C::VerticalMovementTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.VerticalMovementTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x307807c3);
 
 	AB_Fragment_Container_C_VerticalMovementTimeline__FinishedFunc_Params params;
 
@@ -282,7 +296,8 @@ void AB_Fragment_Container_C::VerticalMovementTimeline__FinishedFunc()
 
 void AB_Fragment_Container_C::VerticalMovementTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.VerticalMovementTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd41927be);
 
 	AB_Fragment_Container_C_VerticalMovementTimeline__UpdateFunc_Params params;
 
@@ -299,7 +314,8 @@ void AB_Fragment_Container_C::VerticalMovementTimeline__UpdateFunc()
 
 void AB_Fragment_Container_C::VerticalMovementTimeline__Up__EventFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.VerticalMovementTimeline__Up__EventFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7259924);
 
 	AB_Fragment_Container_C_VerticalMovementTimeline__Up__EventFunc_Params params;
 
@@ -316,7 +332,8 @@ void AB_Fragment_Container_C::VerticalMovementTimeline__Up__EventFunc()
 
 void AB_Fragment_Container_C::VerticalMovementTimeline__down__EventFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.VerticalMovementTimeline__down__EventFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5049d099);
 
 	AB_Fragment_Container_C_VerticalMovementTimeline__down__EventFunc_Params params;
 
@@ -333,7 +350,8 @@ void AB_Fragment_Container_C::VerticalMovementTimeline__down__EventFunc()
 
 void AB_Fragment_Container_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4a1f415);
 
 	AB_Fragment_Container_C_ReceiveBeginPlay_Params params;
 
@@ -358,7 +376,8 @@ void AB_Fragment_Container_C::ReceiveBeginPlay()
 
 void AB_Fragment_Container_C::OnDeathServer(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AController** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.OnDeathServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32011881);
 
 	AB_Fragment_Container_C_OnDeathServer_Params params;
 	params.Damage = Damage;
@@ -384,7 +403,8 @@ void AB_Fragment_Container_C::OnDeathServer(float* Damage, struct FGameplayTagCo
 
 void AB_Fragment_Container_C::BlueprintOnInteract(class AFortPawn** InteractingPawn)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.BlueprintOnInteract");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0d9c783);
 
 	AB_Fragment_Container_C_BlueprintOnInteract_Params params;
 	params.InteractingPawn = InteractingPawn;
@@ -402,7 +422,8 @@ void AB_Fragment_Container_C::BlueprintOnInteract(class AFortPawn** InteractingP
 
 void AB_Fragment_Container_C::ActivateFX()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.ActivateFX");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74143a24);
 
 	AB_Fragment_Container_C_ActivateFX_Params params;
 
@@ -426,7 +447,8 @@ void AB_Fragment_Container_C::ActivateFX()
 
 void AB_Fragment_Container_C::BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64b98189);
 
 	AB_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_108_ComponentBeginOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -454,7 +476,8 @@ void AB_Fragment_Container_C::BndEvt__Awaken_Collision_K2Node_ComponentBoundEven
 
 void AB_Fragment_Container_C::BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_111_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int OtherBodyIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_111_ComponentEndOverlapSignature__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7b4ee17);
 
 	AB_Fragment_Container_C_BndEvt__Awaken_Collision_K2Node_ComponentBoundEvent_111_ComponentEndOverlapSignature__DelegateSignature_Params params;
 	params.OverlappedComponent = OverlappedComponent;
@@ -477,7 +500,8 @@ void AB_Fragment_Container_C::BndEvt__Awaken_Collision_K2Node_ComponentBoundEven
 
 void AB_Fragment_Container_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6627ba63);
 
 	AB_Fragment_Container_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -495,7 +519,8 @@ void AB_Fragment_Container_C::ReceiveTick(float* DeltaSeconds)
 
 void AB_Fragment_Container_C::MoveUp()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.MoveUp");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b252429);
 
 	AB_Fragment_Container_C_MoveUp_Params params;
 
@@ -512,7 +537,8 @@ void AB_Fragment_Container_C::MoveUp()
 
 void AB_Fragment_Container_C::PowerDown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.PowerDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8466e0c);
 
 	AB_Fragment_Container_C_PowerDown_Params params;
 
@@ -529,7 +555,8 @@ void AB_Fragment_Container_C::PowerDown()
 
 void AB_Fragment_Container_C::MoveDown()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.MoveDown");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a9bb972);
 
 	AB_Fragment_Container_C_MoveDown_Params params;
 
@@ -546,7 +573,8 @@ void AB_Fragment_Container_C::MoveDown()
 
 void AB_Fragment_Container_C::ShowOnMiniMap()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.ShowOnMiniMap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x696b5a3e);
 
 	AB_Fragment_Container_C_ShowOnMiniMap_Params params;
 
@@ -563,7 +591,8 @@ void AB_Fragment_Container_C::ShowOnMiniMap()
 
 void AB_Fragment_Container_C::StartHide()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.StartHide");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f78510f);
 
 	AB_Fragment_Container_C_StartHide_Params params;
 
@@ -580,7 +609,8 @@ void AB_Fragment_Container_C::StartHide()
 
 void AB_Fragment_Container_C::Reset_Activation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.Reset_Activation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8828ce99);
 
 	AB_Fragment_Container_C_Reset_Activation_Params params;
 
@@ -597,7 +627,8 @@ void AB_Fragment_Container_C::Reset_Activation()
 
 void AB_Fragment_Container_C::BlueprintOnBeginInteract()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.BlueprintOnBeginInteract");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d602396);
 
 	AB_Fragment_Container_C_BlueprintOnBeginInteract_Params params;
 
@@ -614,7 +645,8 @@ void AB_Fragment_Container_C::BlueprintOnBeginInteract()
 
 void AB_Fragment_Container_C::MultiFeedback()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.MultiFeedback");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6eb6ee55);
 
 	AB_Fragment_Container_C_MultiFeedback_Params params;
 
@@ -631,7 +663,8 @@ void AB_Fragment_Container_C::MultiFeedback()
 
 void AB_Fragment_Container_C::SoftFeedback()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.SoftFeedback");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74fe7aa0);
 
 	AB_Fragment_Container_C_SoftFeedback_Params params;
 
@@ -650,7 +683,8 @@ void AB_Fragment_Container_C::SoftFeedback()
 
 void AB_Fragment_Container_C::ExecuteUbergraph_B_Fragment_Container(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Fragment_Container.B_Fragment_Container_C.ExecuteUbergraph_B_Fragment_Container");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf7be904);
 
 	AB_Fragment_Container_C_ExecuteUbergraph_B_Fragment_Container_Params params;
 	params.EntryPoint = EntryPoint;

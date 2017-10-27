@@ -22,7 +22,8 @@ namespace SDK
 
 void UBannerLibrary_C::STATIC_UpdateBannerMeshMaterialForUniqueId_New(class UMaterialInstanceDynamic* Material_Instance_Dynamic, bool UseIconMask, const struct FUniqueNetIdRepl& UniqueId, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerLibrary.BannerLibrary_C.UpdateBannerMeshMaterialForUniqueId_New");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda019e0e);
 
 	UBannerLibrary_C_UpdateBannerMeshMaterialForUniqueId_New_Params params;
 	params.Material_Instance_Dynamic = Material_Instance_Dynamic;
@@ -50,7 +51,8 @@ void UBannerLibrary_C::STATIC_UpdateBannerMeshMaterialForUniqueId_New(class UMat
 
 void UBannerLibrary_C::STATIC_Get_Icon_Texture_and_Colors(const struct FString& BannerIconId, const struct FString& BannerColorId, class UObject* __WorldContext, class UTexture2D** Icon, struct FLinearColor* PrimaryColor, struct FLinearColor* Secondary_Color)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerLibrary.BannerLibrary_C.Get Icon Texture and Colors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfedb8946);
 
 	UBannerLibrary_C_Get_Icon_Texture_and_Colors_Params params;
 	params.BannerIconId = BannerIconId;
@@ -82,7 +84,8 @@ void UBannerLibrary_C::STATIC_Get_Icon_Texture_and_Colors(const struct FString& 
 
 void UBannerLibrary_C::STATIC_UpdateMaterial_New(class UImage* Banner_material, const struct FFortHomeBaseInfo& Image_info, bool Is_Icon, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerLibrary.BannerLibrary_C.UpdateMaterial_New");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x237e54b4);
 
 	UBannerLibrary_C_UpdateMaterial_New_Params params;
 	params.Banner_material = Banner_material;
@@ -108,7 +111,8 @@ void UBannerLibrary_C::STATIC_UpdateMaterial_New(class UImage* Banner_material, 
 
 void UBannerLibrary_C::STATIC_UpdateBannerMeshMaterial_New(class UMaterialInstanceDynamic* Material_Instance_Dynamic, bool UseIconMask, class AFortPlayerState* InstigatorPlayerState, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerLibrary.BannerLibrary_C.UpdateBannerMeshMaterial_New");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9dddf39);
 
 	UBannerLibrary_C_UpdateBannerMeshMaterial_New_Params params;
 	params.Material_Instance_Dynamic = Material_Instance_Dynamic;
@@ -133,7 +137,8 @@ void UBannerLibrary_C::STATIC_UpdateBannerMeshMaterial_New(class UMaterialInstan
 
 void UBannerLibrary_C::STATIC_UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic* Material, class UTexture* Icon, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerLibrary.BannerLibrary_C.UpdateBannerIconOnMaterial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8333bd31);
 
 	UBannerLibrary_C_UpdateBannerIconOnMaterial_Params params;
 	params.Material = Material;
@@ -158,7 +163,8 @@ void UBannerLibrary_C::STATIC_UpdateBannerIconOnMaterial(class UMaterialInstance
 
 void UBannerLibrary_C::STATIC_UpdateBannerColorOnMaterial(class UMaterialInstanceDynamic* Material, const struct FLinearColor& PrimaryBGColor, const struct FLinearColor& SecondaryBGColor, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerLibrary.BannerLibrary_C.UpdateBannerColorOnMaterial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x306bed9f);
 
 	UBannerLibrary_C_UpdateBannerColorOnMaterial_Params params;
 	params.Material = Material;
@@ -186,7 +192,8 @@ void UBannerLibrary_C::STATIC_UpdateBannerColorOnMaterial(class UMaterialInstanc
 
 void UBannerLibrary_C::STATIC_GenericUpdateMaterial(class UMaterialInstanceDynamic* Target, class UTexture* BannerIcon, const struct FLinearColor& BG_PrimaryColor, const struct FLinearColor& BG_SecondaryColor, class UTexture* ShapeIcon, class UObject* __WorldContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BannerLibrary.BannerLibrary_C.GenericUpdateMaterial");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9ec6f3a);
 
 	UBannerLibrary_C_GenericUpdateMaterial_Params params;
 	params.Target = Target;

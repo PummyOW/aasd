@@ -21,7 +21,8 @@ namespace SDK
 
 void UNearestPlayerContext_C::ProvideSingleLocation(class UObject** QuerierObject, class AActor** QuerierActor, struct FVector* ResultingLocation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NearestPlayerContext.NearestPlayerContext_C.ProvideSingleLocation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7b55dc17);
 
 	UNearestPlayerContext_C_ProvideSingleLocation_Params params;
 	params.QuerierObject = QuerierObject;

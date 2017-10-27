@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaHitPointBar_C::UpdateDBNOState(bool bIsDBNO)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.UpdateDBNOState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac67f72e);
 
 	UAthenaHitPointBar_C_UpdateDBNOState_Params params;
 	params.bIsDBNO = bIsDBNO;
@@ -37,7 +38,8 @@ void UAthenaHitPointBar_C::UpdateDBNOState(bool bIsDBNO)
 
 void UAthenaHitPointBar_C::UpdateHealthType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.UpdateHealthType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13865f02);
 
 	UAthenaHitPointBar_C_UpdateHealthType_Params params;
 
@@ -54,7 +56,8 @@ void UAthenaHitPointBar_C::UpdateHealthType()
 
 void UAthenaHitPointBar_C::UpdateVolatileForUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.UpdateVolatileForUpdate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3103e65e);
 
 	UAthenaHitPointBar_C_UpdateVolatileForUpdate_Params params;
 
@@ -71,7 +74,8 @@ void UAthenaHitPointBar_C::UpdateVolatileForUpdate()
 
 void UAthenaHitPointBar_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e7ef0c0);
 
 	UAthenaHitPointBar_C_Update_Params params;
 
@@ -88,7 +92,8 @@ void UAthenaHitPointBar_C::Update()
 
 void UAthenaHitPointBar_C::Update_Delta_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.Update Delta Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x239c4c39);
 
 	UAthenaHitPointBar_C_Update_Delta_Bar_Params params;
 
@@ -105,7 +110,8 @@ void UAthenaHitPointBar_C::Update_Delta_Bar()
 
 void UAthenaHitPointBar_C::Initialize_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.Initialize Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6781204e);
 
 	UAthenaHitPointBar_C_Initialize_Bar_Params params;
 
@@ -124,7 +130,8 @@ void UAthenaHitPointBar_C::Initialize_Bar()
 
 void UAthenaHitPointBar_C::UpdateCurrentValueWithoutReason(float Current)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.UpdateCurrentValueWithoutReason");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x809f090a);
 
 	UAthenaHitPointBar_C_UpdateCurrentValueWithoutReason_Params params;
 	params.Current = Current;
@@ -142,7 +149,8 @@ void UAthenaHitPointBar_C::UpdateCurrentValueWithoutReason(float Current)
 
 void UAthenaHitPointBar_C::Update_Fill_Bar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.Update Fill Bar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e464674);
 
 	UAthenaHitPointBar_C_Update_Fill_Bar_Params params;
 
@@ -162,7 +170,8 @@ void UAthenaHitPointBar_C::Update_Fill_Bar()
 
 void UAthenaHitPointBar_C::UpdateCurrentValue(float Current, EFortHitPointModificationReason Reason)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.UpdateCurrentValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x872b29e);
 
 	UAthenaHitPointBar_C_UpdateCurrentValue_Params params;
 	params.Current = Current;
@@ -183,7 +192,8 @@ void UAthenaHitPointBar_C::UpdateCurrentValue(float Current, EFortHitPointModifi
 
 void UAthenaHitPointBar_C::UpdateMaxValue(float Max)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.UpdateMaxValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf567ac7d);
 
 	UAthenaHitPointBar_C_UpdateMaxValue_Params params;
 	params.Max = Max;
@@ -203,7 +213,8 @@ void UAthenaHitPointBar_C::UpdateMaxValue(float Max)
 
 void UAthenaHitPointBar_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd19b231);
 
 	UAthenaHitPointBar_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -221,7 +232,8 @@ void UAthenaHitPointBar_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaHitPointBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x87f33e9a);
 
 	UAthenaHitPointBar_C_Construct_Params params;
 
@@ -241,7 +253,8 @@ void UAthenaHitPointBar_C::Construct()
 
 void UAthenaHitPointBar_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd5ce5668);
 
 	UAthenaHitPointBar_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -262,7 +275,8 @@ void UAthenaHitPointBar_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime
 
 void UAthenaHitPointBar_C::ExecuteUbergraph_AthenaHitPointBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaHitPointBar.AthenaHitPointBar_C.ExecuteUbergraph_AthenaHitPointBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3de00464);
 
 	UAthenaHitPointBar_C_ExecuteUbergraph_AthenaHitPointBar_Params params;
 	params.EntryPoint = EntryPoint;

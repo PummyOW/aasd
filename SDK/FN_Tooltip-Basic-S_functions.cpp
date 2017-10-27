@@ -19,7 +19,8 @@ namespace SDK
 
 struct FSlateBrush UTooltip_Basic_S_C::Get_Icon_Brush()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Icon Brush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6103180);
 
 	UTooltip_Basic_S_C_Get_Icon_Brush_Params params;
 
@@ -40,7 +41,8 @@ struct FSlateBrush UTooltip_Basic_S_C::Get_Icon_Brush()
 
 struct FText UTooltip_Basic_S_C::Get_Header_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Header Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a688e05);
 
 	UTooltip_Basic_S_C_Get_Header_Text_Params params;
 
@@ -61,7 +63,8 @@ struct FText UTooltip_Basic_S_C::Get_Header_Text()
 
 struct FText UTooltip_Basic_S_C::Get_Body_Text()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Body Text");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa588dd8);
 
 	UTooltip_Basic_S_C_Get_Body_Text_Params params;
 
@@ -80,7 +83,8 @@ struct FText UTooltip_Basic_S_C::Get_Body_Text()
 
 void UTooltip_Basic_S_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Basic-S.Tooltip-Basic-S_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe49e7556);
 
 	UTooltip_Basic_S_C_Construct_Params params;
 
@@ -99,7 +103,8 @@ void UTooltip_Basic_S_C::Construct()
 
 void UTooltip_Basic_S_C::ExecuteUbergraph_Tooltip_Basic_S(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Tooltip-Basic-S.Tooltip-Basic-S_C.ExecuteUbergraph_Tooltip-Basic-S");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7acdcd);
 
 	UTooltip_Basic_S_C_ExecuteUbergraph_Tooltip_Basic_S_Params params;
 	params.EntryPoint = EntryPoint;

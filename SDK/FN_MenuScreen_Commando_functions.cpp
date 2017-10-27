@@ -17,7 +17,8 @@ namespace SDK
 
 void UMenuScreen_Commando_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Commando_AnimGraphNode_BlendListByEnum_A3E599E943E9B22B3BC78EA28C49C57B()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MenuScreen_Commando.MenuScreen_Commando_C.EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Commando_AnimGraphNode_BlendListByEnum_A3E599E943E9B22B3BC78EA28C49C57B");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61304e68);
 
 	UMenuScreen_Commando_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Commando_AnimGraphNode_BlendListByEnum_A3E599E943E9B22B3BC78EA28C49C57B_Params params;
 
@@ -34,7 +35,8 @@ void UMenuScreen_Commando_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScr
 
 void UMenuScreen_Commando_C::AnimNotify_playFacialAnim()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MenuScreen_Commando.MenuScreen_Commando_C.AnimNotify_playFacialAnim");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xeb80bf1b);
 
 	UMenuScreen_Commando_C_AnimNotify_playFacialAnim_Params params;
 
@@ -51,7 +53,8 @@ void UMenuScreen_Commando_C::AnimNotify_playFacialAnim()
 
 void UMenuScreen_Commando_C::UserFocus()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MenuScreen_Commando.MenuScreen_Commando_C.UserFocus");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb26004aa);
 
 	UMenuScreen_Commando_C_UserFocus_Params params;
 
@@ -68,7 +71,8 @@ void UMenuScreen_Commando_C::UserFocus()
 
 void UMenuScreen_Commando_C::AnimNotify_LeftB()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MenuScreen_Commando.MenuScreen_Commando_C.AnimNotify_LeftB");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x26ed730d);
 
 	UMenuScreen_Commando_C_AnimNotify_LeftB_Params params;
 
@@ -87,7 +91,8 @@ void UMenuScreen_Commando_C::AnimNotify_LeftB()
 
 void UMenuScreen_Commando_C::ExecuteUbergraph_MenuScreen_Commando(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MenuScreen_Commando.MenuScreen_Commando_C.ExecuteUbergraph_MenuScreen_Commando");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2317cec7);
 
 	UMenuScreen_Commando_C_ExecuteUbergraph_MenuScreen_Commando_Params params;
 	params.EntryPoint = EntryPoint;
@@ -105,7 +110,8 @@ void UMenuScreen_Commando_C::ExecuteUbergraph_MenuScreen_Commando(int EntryPoint
 
 void UMenuScreen_Commando_C::MenuScreenDispatcher__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MenuScreen_Commando.MenuScreen_Commando_C.MenuScreenDispatcher__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1698698);
 
 	UMenuScreen_Commando_C_MenuScreenDispatcher__DelegateSignature_Params params;
 

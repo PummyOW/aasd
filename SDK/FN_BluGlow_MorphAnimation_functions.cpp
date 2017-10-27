@@ -17,7 +17,8 @@ namespace SDK
 
 void ABluGlow_MorphAnimation_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe57ca662);
 
 	ABluGlow_MorphAnimation_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void ABluGlow_MorphAnimation_C::UserConstructionScript()
 
 void ABluGlow_MorphAnimation_C::Timeline_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.Timeline_0__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x58a2acef);
 
 	ABluGlow_MorphAnimation_C_Timeline_0__FinishedFunc_Params params;
 
@@ -51,7 +53,8 @@ void ABluGlow_MorphAnimation_C::Timeline_0__FinishedFunc()
 
 void ABluGlow_MorphAnimation_C::Timeline_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.Timeline_0__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73f4a61a);
 
 	ABluGlow_MorphAnimation_C_Timeline_0__UpdateFunc_Params params;
 
@@ -68,7 +71,8 @@ void ABluGlow_MorphAnimation_C::Timeline_0__UpdateFunc()
 
 void ABluGlow_MorphAnimation_C::Timeline_0__ChangeTargetFrame__EventFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.Timeline_0__ChangeTargetFrame__EventFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b823e65);
 
 	ABluGlow_MorphAnimation_C_Timeline_0__ChangeTargetFrame__EventFunc_Params params;
 
@@ -85,7 +89,8 @@ void ABluGlow_MorphAnimation_C::Timeline_0__ChangeTargetFrame__EventFunc()
 
 void ABluGlow_MorphAnimation_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74af7df5);
 
 	ABluGlow_MorphAnimation_C_ReceiveBeginPlay_Params params;
 
@@ -104,7 +109,8 @@ void ABluGlow_MorphAnimation_C::ReceiveBeginPlay()
 
 void ABluGlow_MorphAnimation_C::ExecuteUbergraph_BluGlow_MorphAnimation(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.ExecuteUbergraph_BluGlow_MorphAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf49fba7e);
 
 	ABluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation_Params params;
 	params.EntryPoint = EntryPoint;

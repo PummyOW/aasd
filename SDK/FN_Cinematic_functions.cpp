@@ -19,7 +19,8 @@ namespace SDK
 
 void UCinematic_C::GetAudioTrackIndex(int* AudioTrack)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.GetAudioTrackIndex");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x930a82de);
 
 	UCinematic_C_GetAudioTrackIndex_Params params;
 
@@ -39,7 +40,8 @@ void UCinematic_C::GetAudioTrackIndex(int* AudioTrack)
 
 void UCinematic_C::StopAndClearSubtitles()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.StopAndClearSubtitles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x16ba214);
 
 	UCinematic_C_StopAndClearSubtitles_Params params;
 
@@ -59,7 +61,8 @@ void UCinematic_C::StopAndClearSubtitles()
 
 void UCinematic_C::ClearOldSubtitlesIfNecessary(bool NewSubtitlesExist, class UFortMediaSubtitlesPlayer* NewSubtitles)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.ClearOldSubtitlesIfNecessary");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2f5f02e);
 
 	UCinematic_C_ClearOldSubtitlesIfNecessary_Params params;
 	params.NewSubtitlesExist = NewSubtitlesExist;
@@ -80,7 +83,8 @@ void UCinematic_C::ClearOldSubtitlesIfNecessary(bool NewSubtitlesExist, class UF
 
 void UCinematic_C::SetMoviePlaying(bool MoviePlaying)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.SetMoviePlaying");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b788c27);
 
 	UCinematic_C_SetMoviePlaying_Params params;
 	params.MoviePlaying = MoviePlaying;
@@ -100,7 +104,8 @@ void UCinematic_C::SetMoviePlaying(bool MoviePlaying)
 
 void UCinematic_C::ClearMovieWidget(class UFortMovieWidget** MovieWidgetToClear)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.ClearMovieWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bb06ac6);
 
 	UCinematic_C_ClearMovieWidget_Params params;
 
@@ -122,7 +127,8 @@ void UCinematic_C::ClearMovieWidget(class UFortMovieWidget** MovieWidgetToClear)
 
 void UCinematic_C::ClearMovieSlot(class UPanelWidget** MovieSlotToClear)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.ClearMovieSlot");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4923f6ee);
 
 	UCinematic_C_ClearMovieSlot_Params params;
 
@@ -145,7 +151,8 @@ void UCinematic_C::ClearMovieSlot(class UPanelWidget** MovieSlotToClear)
 
 class UWidget* UCinematic_C::PopContentWidgetInternal(struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.PopContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5ddfc64);
 
 	UCinematic_C_PopContentWidgetInternal_Params params;
 	params.State = State;
@@ -165,7 +172,8 @@ class UWidget* UCinematic_C::PopContentWidgetInternal(struct FContentPushState* 
 
 void UCinematic_C::SkipMovie()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.SkipMovie");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f3e2322);
 
 	UCinematic_C_SkipMovie_Params params;
 
@@ -182,7 +190,8 @@ void UCinematic_C::SkipMovie()
 
 void UCinematic_C::ClearMovie()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.ClearMovie");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa80709a);
 
 	UCinematic_C_ClearMovie_Params params;
 
@@ -204,7 +213,8 @@ void UCinematic_C::ClearMovie()
 
 void UCinematic_C::ShowMovie(class UMediaSource* MediaSource, class UMediaSoundWave* MediaSoundWave, class UNamedSlot** MovieSlot, class UMovieWidget_C** MovieWidget)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.ShowMovie");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8ea062c);
 
 	UCinematic_C_ShowMovie_Params params;
 	params.MediaSource = MediaSource;
@@ -228,7 +238,8 @@ void UCinematic_C::ShowMovie(class UMediaSource* MediaSource, class UMediaSoundW
 
 void UCinematic_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6948bb2);
 
 	UCinematic_C_Construct_Params params;
 
@@ -249,7 +260,8 @@ void UCinematic_C::Construct()
 
 void UCinematic_C::HandleClientEvent_QueueCinematic(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.HandleClientEvent_QueueCinematic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15e4d20f);
 
 	UCinematic_C_HandleClientEvent_QueueCinematic_Params params;
 	params.EventSource = EventSource;
@@ -269,7 +281,8 @@ void UCinematic_C::HandleClientEvent_QueueCinematic(class UObject* EventSource, 
 
 void UCinematic_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd8ee029);
 
 	UCinematic_C_Destruct_Params params;
 
@@ -286,7 +299,8 @@ void UCinematic_C::Destruct()
 
 void UCinematic_C::HandleEndReached()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.HandleEndReached");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x40417fca);
 
 	UCinematic_C_HandleEndReached_Params params;
 
@@ -307,7 +321,8 @@ void UCinematic_C::HandleEndReached()
 
 void UCinematic_C::HandleClientEvent_SkipCinematic(class UObject* EventSource, class UObject* EventFocus, const struct FFortClientEvent& ClientEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.HandleClientEvent_SkipCinematic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65512a5d);
 
 	UCinematic_C_HandleClientEvent_SkipCinematic_Params params;
 	params.EventSource = EventSource;
@@ -330,7 +345,8 @@ void UCinematic_C::HandleClientEvent_SkipCinematic(class UObject* EventSource, c
 
 void UCinematic_C::PushContentWidgetInternal(class UWidget** Widget, struct FContentPushState* State)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.PushContentWidgetInternal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cba58dd);
 
 	UCinematic_C_PushContentWidgetInternal_Params params;
 	params.Widget = Widget;
@@ -351,7 +367,8 @@ void UCinematic_C::PushContentWidgetInternal(class UWidget** Widget, struct FCon
 
 void UCinematic_C::OnEnterState(EFortUIState* PreviousUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.OnEnterState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1b9cf165);
 
 	UCinematic_C_OnEnterState_Params params;
 	params.PreviousUIState = PreviousUIState;
@@ -371,7 +388,8 @@ void UCinematic_C::OnEnterState(EFortUIState* PreviousUIState)
 
 void UCinematic_C::OnExitState(EFortUIState* NextUIState)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.OnExitState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa8315dcb);
 
 	UCinematic_C_OnExitState_Params params;
 	params.NextUIState = NextUIState;
@@ -389,7 +407,8 @@ void UCinematic_C::OnExitState(EFortUIState* NextUIState)
 
 void UCinematic_C::OnMediaEvent()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.OnMediaEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7075dd70);
 
 	UCinematic_C_OnMediaEvent_Params params;
 
@@ -408,7 +427,8 @@ void UCinematic_C::OnMediaEvent()
 
 void UCinematic_C::ExecuteUbergraph_Cinematic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Cinematic.Cinematic_C.ExecuteUbergraph_Cinematic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe78d31ce);
 
 	UCinematic_C_ExecuteUbergraph_Cinematic_Params params;
 	params.EntryPoint = EntryPoint;

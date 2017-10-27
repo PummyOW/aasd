@@ -14,6 +14,25 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.HideParticleComponentsAttachedToMesh
+struct UMissionBlueprintFunctionLibrary_C_HideParticleComponentsAttachedToMesh_Params
+{
+	class UStaticMeshComponent*                        MeshComponent;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UObject*                                     __WorldContext;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               SuccessfullyDeactivatedParticle;                          // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.HasPlayerCompletedQuestObjective
+struct UMissionBlueprintFunctionLibrary_C_HasPlayerCompletedQuestObjective_Params
+{
+	class AFortPlayerController*                       PlayerController;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortQuestItemDefinition*                    QuestReference;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FName                                       QuestBackendObjectiveName;                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UObject*                                     __WorldContext;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class AFortPlayerController*                       PlayerControllerOut;                                      // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               CompletedQuestObjective;                                  // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function MissionBlueprintFunctionLibrary.MissionBlueprintFunctionLibrary_C.GetContributingControllersNearActor
 struct UMissionBlueprintFunctionLibrary_C_GetContributingControllersNearActor_Params
 {

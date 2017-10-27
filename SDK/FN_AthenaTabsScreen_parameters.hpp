@@ -55,6 +55,13 @@ struct UAthenaTabsScreen_C_OnDeactivated_Params
 {
 };
 
+// Function AthenaTabsScreen.AthenaTabsScreen_C.HandleTabContentCreated
+struct UAthenaTabsScreen_C_HandleTabContentCreated_Params
+{
+	struct FName                                       TabId;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UCommonUserWidget*                           TabWidget;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function AthenaTabsScreen.AthenaTabsScreen_C.ExecuteUbergraph_AthenaTabsScreen
 struct UAthenaTabsScreen_C_ExecuteUbergraph_AthenaTabsScreen_Params
 {

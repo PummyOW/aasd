@@ -17,7 +17,8 @@ namespace SDK
 
 void UResults_CommanderXPBar_C::DebugSections()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.DebugSections");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa00f1cb4);
 
 	UResults_CommanderXPBar_C_DebugSections_Params params;
 
@@ -36,7 +37,8 @@ void UResults_CommanderXPBar_C::DebugSections()
 
 class UWidget* UResults_CommanderXPBar_C::Get_ProgressBarNew_ToolTipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.Get_ProgressBarNew_ToolTipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x85ef31e6);
 
 	UResults_CommanderXPBar_C_Get_ProgressBarNew_ToolTipWidget_Params params;
 
@@ -57,7 +59,8 @@ class UWidget* UResults_CommanderXPBar_C::Get_ProgressBarNew_ToolTipWidget()
 
 void UResults_CommanderXPBar_C::GetHoveredProgressBarSection(struct FName* XpSectionName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.GetHoveredProgressBarSection");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3be69a23);
 
 	UResults_CommanderXPBar_C_GetHoveredProgressBarSection_Params params;
 
@@ -80,7 +83,8 @@ void UResults_CommanderXPBar_C::GetHoveredProgressBarSection(struct FName* XpSec
 
 void UResults_CommanderXPBar_C::UpdateProgressBarPercent(const struct FName& ParameterName, float ProgressBarPercent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.UpdateProgressBarPercent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa2e5f13b);
 
 	UResults_CommanderXPBar_C_UpdateProgressBarPercent_Params params;
 	params.ParameterName = ParameterName;
@@ -99,7 +103,8 @@ void UResults_CommanderXPBar_C::UpdateProgressBarPercent(const struct FName& Par
 
 void UResults_CommanderXPBar_C::RandomizeDesignView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.RandomizeDesignView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6daa849);
 
 	UResults_CommanderXPBar_C_RandomizeDesignView_Params params;
 
@@ -116,7 +121,8 @@ void UResults_CommanderXPBar_C::RandomizeDesignView()
 
 void UResults_CommanderXPBar_C::updateXpType()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.updateXpType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41810034);
 
 	UResults_CommanderXPBar_C_updateXpType_Params params;
 
@@ -133,7 +139,8 @@ void UResults_CommanderXPBar_C::updateXpType()
 
 void UResults_CommanderXPBar_C::clearXpBar()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.clearXpBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f011299);
 
 	UResults_CommanderXPBar_C_clearXpBar_Params params;
 
@@ -152,7 +159,8 @@ void UResults_CommanderXPBar_C::clearXpBar()
 
 void UResults_CommanderXPBar_C::PlayAnimationCommon(class UWidgetAnimation* Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.PlayAnimationCommon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3f98be56);
 
 	UResults_CommanderXPBar_C_PlayAnimationCommon_Params params;
 	params.Animation = Animation;
@@ -170,7 +178,8 @@ void UResults_CommanderXPBar_C::PlayAnimationCommon(class UWidgetAnimation* Anim
 
 void UResults_CommanderXPBar_C::SkipToFinalState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.SkipToFinalState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37c63152);
 
 	UResults_CommanderXPBar_C_SkipToFinalState_Params params;
 
@@ -187,7 +196,8 @@ void UResults_CommanderXPBar_C::SkipToFinalState()
 
 void UResults_CommanderXPBar_C::SetSkippingToEnd()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.SetSkippingToEnd");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a9b85b2);
 
 	UResults_CommanderXPBar_C_SetSkippingToEnd_Params params;
 
@@ -207,7 +217,8 @@ void UResults_CommanderXPBar_C::SetSkippingToEnd()
 
 void UResults_CommanderXPBar_C::Initialize(class UFortUIScoreReport* InScoreReport, float PlayRate)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.Initialize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4163bc39);
 
 	UResults_CommanderXPBar_C_Initialize_Params params;
 	params.InScoreReport = InScoreReport;
@@ -226,7 +237,8 @@ void UResults_CommanderXPBar_C::Initialize(class UFortUIScoreReport* InScoreRepo
 
 void UResults_CommanderXPBar_C::UpdateCount()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.UpdateCount");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0081e99);
 
 	UResults_CommanderXPBar_C_UpdateCount_Params params;
 
@@ -243,7 +255,8 @@ void UResults_CommanderXPBar_C::UpdateCount()
 
 void UResults_CommanderXPBar_C::Intro_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.Intro Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe9da9ae);
 
 	UResults_CommanderXPBar_C_Intro_Sequence_Params params;
 
@@ -260,7 +273,8 @@ void UResults_CommanderXPBar_C::Intro_Sequence()
 
 void UResults_CommanderXPBar_C::Count_Sequence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.Count Sequence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc59297b);
 
 	UResults_CommanderXPBar_C_Count_Sequence_Params params;
 
@@ -277,7 +291,8 @@ void UResults_CommanderXPBar_C::Count_Sequence()
 
 void UResults_CommanderXPBar_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x999a341f);
 
 	UResults_CommanderXPBar_C_BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -294,7 +309,8 @@ void UResults_CommanderXPBar_C::BndEvt__Anim_Intro_K2Node_ComponentBoundEvent_0_
 
 void UResults_CommanderXPBar_C::On_Count_Finished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.On Count Finished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b0b0b99);
 
 	UResults_CommanderXPBar_C_On_Count_Finished_Params params;
 
@@ -313,7 +329,8 @@ void UResults_CommanderXPBar_C::On_Count_Finished()
 
 void UResults_CommanderXPBar_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca0d6945);
 
 	UResults_CommanderXPBar_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -331,7 +348,8 @@ void UResults_CommanderXPBar_C::PreConstruct(bool* IsDesignTime)
 
 void UResults_CommanderXPBar_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe4598ede);
 
 	UResults_CommanderXPBar_C_Construct_Params params;
 
@@ -350,7 +368,8 @@ void UResults_CommanderXPBar_C::Construct()
 
 void UResults_CommanderXPBar_C::ExecuteUbergraph_Results_CommanderXPBar(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.ExecuteUbergraph_Results_CommanderXPBar");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xebf0cee3);
 
 	UResults_CommanderXPBar_C_ExecuteUbergraph_Results_CommanderXPBar_Params params;
 	params.EntryPoint = EntryPoint;
@@ -368,7 +387,8 @@ void UResults_CommanderXPBar_C::ExecuteUbergraph_Results_CommanderXPBar(int Entr
 
 void UResults_CommanderXPBar_C::CountIncrement__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.CountIncrement__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x932455c6);
 
 	UResults_CommanderXPBar_C_CountIncrement__DelegateSignature_Params params;
 
@@ -385,7 +405,8 @@ void UResults_CommanderXPBar_C::CountIncrement__DelegateSignature()
 
 void UResults_CommanderXPBar_C::IntroFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.IntroFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f100030);
 
 	UResults_CommanderXPBar_C_IntroFinished__DelegateSignature_Params params;
 
@@ -404,7 +425,8 @@ void UResults_CommanderXPBar_C::IntroFinished__DelegateSignature()
 
 void UResults_CommanderXPBar_C::LeveledUp__DelegateSignature(int NewLevel)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.LeveledUp__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48ea0a76);
 
 	UResults_CommanderXPBar_C_LeveledUp__DelegateSignature_Params params;
 	params.NewLevel = NewLevel;
@@ -422,7 +444,8 @@ void UResults_CommanderXPBar_C::LeveledUp__DelegateSignature(int NewLevel)
 
 void UResults_CommanderXPBar_C::CountFinished__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Results_CommanderXPBar.Results_CommanderXPBar_C.CountFinished__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd915451);
 
 	UResults_CommanderXPBar_C_CountFinished__DelegateSignature_Params params;
 

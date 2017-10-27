@@ -17,7 +17,8 @@ namespace SDK
 
 void ABP_VictoryDrone_C::NotifyTeleportFinishedTriggered()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.NotifyTeleportFinishedTriggered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86f85a7a);
 
 	ABP_VictoryDrone_C_NotifyTeleportFinishedTriggered_Params params;
 
@@ -34,7 +35,8 @@ void ABP_VictoryDrone_C::NotifyTeleportFinishedTriggered()
 
 void ABP_VictoryDrone_C::PlaySpawnOutAnim()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.PlaySpawnOutAnim");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6984d311);
 
 	ABP_VictoryDrone_C_PlaySpawnOutAnim_Params params;
 
@@ -51,7 +53,8 @@ void ABP_VictoryDrone_C::PlaySpawnOutAnim()
 
 void ABP_VictoryDrone_C::InitDrone()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.InitDrone");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd11fefb5);
 
 	ABP_VictoryDrone_C_InitDrone_Params params;
 
@@ -68,7 +71,8 @@ void ABP_VictoryDrone_C::InitDrone()
 
 void ABP_VictoryDrone_C::TriggerPlayerSpawnEffects()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.TriggerPlayerSpawnEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf256dba3);
 
 	ABP_VictoryDrone_C_TriggerPlayerSpawnEffects_Params params;
 
@@ -85,7 +89,8 @@ void ABP_VictoryDrone_C::TriggerPlayerSpawnEffects()
 
 void ABP_VictoryDrone_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ce4570);
 
 	ABP_VictoryDrone_C_UserConstructionScript_Params params;
 
@@ -102,7 +107,8 @@ void ABP_VictoryDrone_C::UserConstructionScript()
 
 void ABP_VictoryDrone_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82878117);
 
 	ABP_VictoryDrone_C_ReceiveBeginPlay_Params params;
 
@@ -122,7 +128,8 @@ void ABP_VictoryDrone_C::ReceiveBeginPlay()
 
 void ABP_VictoryDrone_C::OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.OnSpawnOutAnimEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63106110);
 
 	ABP_VictoryDrone_C_OnSpawnOutAnimEnded_Params params;
 	params.Montage = Montage;
@@ -143,7 +150,8 @@ void ABP_VictoryDrone_C::OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool b
 
 void ABP_VictoryDrone_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf17d4cbd);
 
 	ABP_VictoryDrone_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -163,7 +171,8 @@ void ABP_VictoryDrone_C::ReceiveTick(float* DeltaSeconds)
 
 void ABP_VictoryDrone_C::ExecuteUbergraph_BP_VictoryDrone(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.ExecuteUbergraph_BP_VictoryDrone");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73354618);
 
 	ABP_VictoryDrone_C_ExecuteUbergraph_BP_VictoryDrone_Params params;
 	params.EntryPoint = EntryPoint;
@@ -183,7 +192,8 @@ void ABP_VictoryDrone_C::ExecuteUbergraph_BP_VictoryDrone(int EntryPoint)
 
 void ABP_VictoryDrone_C::SpawnOutAnimEndedDispatcher__DelegateSignature(class ABP_VictoryDrone_C* Drone)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_VictoryDrone.BP_VictoryDrone_C.SpawnOutAnimEndedDispatcher__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e86b0ad);
 
 	ABP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature_Params params;
 	params.Drone = Drone;

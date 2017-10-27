@@ -19,7 +19,8 @@ namespace SDK
 
 ESlateVisibility UToastWidget_C::GetOpenButtonVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.GetOpenButtonVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x44c9c53d);
 
 	UToastWidget_C_GetOpenButtonVisibility_Params params;
 
@@ -38,7 +39,8 @@ ESlateVisibility UToastWidget_C::GetOpenButtonVisibility()
 
 void UToastWidget_C::StartIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.StartIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc82a0dc9);
 
 	UToastWidget_C_StartIntro_Params params;
 
@@ -58,7 +60,8 @@ void UToastWidget_C::StartIntro()
 
 void UToastWidget_C::ShowText(const struct FText& Text, class UCommonTextBlock* TextBlock)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.ShowText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x272ba019);
 
 	UToastWidget_C_ShowText_Params params;
 	params.Text = Text;
@@ -79,7 +82,8 @@ void UToastWidget_C::ShowText(const struct FText& Text, class UCommonTextBlock* 
 
 void UToastWidget_C::SetToast(class UFortUINotification* Toast)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.SetToast");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b875906);
 
 	UToastWidget_C_SetToast_Params params;
 	params.Toast = Toast;
@@ -97,7 +101,8 @@ void UToastWidget_C::SetToast(class UFortUINotification* Toast)
 
 void UToastWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe94a0d2e);
 
 	UToastWidget_C_Construct_Params params;
 
@@ -114,7 +119,8 @@ void UToastWidget_C::Construct()
 
 void UToastWidget_C::HandleIntroFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.HandleIntroFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x175c8f53);
 
 	UToastWidget_C_HandleIntroFinished_Params params;
 
@@ -131,7 +137,8 @@ void UToastWidget_C::HandleIntroFinished()
 
 void UToastWidget_C::HandleOutroFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.HandleOutroFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6597e58);
 
 	UToastWidget_C_HandleOutroFinished_Params params;
 
@@ -148,7 +155,8 @@ void UToastWidget_C::HandleOutroFinished()
 
 void UToastWidget_C::HandleAnimationDelay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.HandleAnimationDelay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e2c92d6);
 
 	UToastWidget_C_HandleAnimationDelay_Params params;
 
@@ -168,7 +176,8 @@ void UToastWidget_C::HandleAnimationDelay()
 
 void UToastWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4430745);
 
 	UToastWidget_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -189,7 +198,8 @@ void UToastWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerE
 
 void UToastWidget_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98c49582);
 
 	UToastWidget_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -209,7 +219,8 @@ void UToastWidget_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UToastWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0c3751c);
 
 	UToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -229,7 +240,8 @@ void UToastWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButto
 
 void UToastWidget_C::ExecuteUbergraph_ToastWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.ExecuteUbergraph_ToastWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79c9f9cc);
 
 	UToastWidget_C_ExecuteUbergraph_ToastWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -247,7 +259,8 @@ void UToastWidget_C::ExecuteUbergraph_ToastWidget(int EntryPoint)
 
 void UToastWidget_C::OnFinishedToast__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ToastWidget.ToastWidget_C.OnFinishedToast__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1a07a3e);
 
 	UToastWidget_C_OnFinishedToast__DelegateSignature_Params params;
 

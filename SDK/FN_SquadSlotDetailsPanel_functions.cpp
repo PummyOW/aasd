@@ -17,7 +17,8 @@ namespace SDK
 
 void USquadSlotDetailsPanel_C::Set_Scroll_Box_to_Nav_Scroll_Widget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.Set Scroll Box to Nav Scroll Widget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12b21b84);
 
 	USquadSlotDetailsPanel_C_Set_Scroll_Box_to_Nav_Scroll_Widget_Params params;
 
@@ -37,7 +38,8 @@ void USquadSlotDetailsPanel_C::Set_Scroll_Box_to_Nav_Scroll_Widget()
 
 void USquadSlotDetailsPanel_C::GetRestrictionReasonsAsText(TArray<EFortSquadSlottingRestrictionReason>* Reasons, struct FText* Text)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.GetRestrictionReasonsAsText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a384c31);
 
 	USquadSlotDetailsPanel_C_GetRestrictionReasonsAsText_Params params;
 
@@ -59,7 +61,8 @@ void USquadSlotDetailsPanel_C::GetRestrictionReasonsAsText(TArray<EFortSquadSlot
 
 void USquadSlotDetailsPanel_C::UpdateSkillTreeButtonVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.UpdateSkillTreeButtonVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4752ee7);
 
 	USquadSlotDetailsPanel_C_UpdateSkillTreeButtonVisibility_Params params;
 
@@ -76,7 +79,8 @@ void USquadSlotDetailsPanel_C::UpdateSkillTreeButtonVisibility()
 
 void USquadSlotDetailsPanel_C::HandleDifferentSquadSlotSetBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.HandleDifferentSquadSlotSetBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x423e2e10);
 
 	USquadSlotDetailsPanel_C_HandleDifferentSquadSlotSetBP_Params params;
 
@@ -93,7 +97,8 @@ void USquadSlotDetailsPanel_C::HandleDifferentSquadSlotSetBP()
 
 void USquadSlotDetailsPanel_C::HandleSquadSlotStateChangedBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.HandleSquadSlotStateChangedBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4c82be6);
 
 	USquadSlotDetailsPanel_C_HandleSquadSlotStateChangedBP_Params params;
 
@@ -112,7 +117,8 @@ void USquadSlotDetailsPanel_C::HandleSquadSlotStateChangedBP()
 
 void USquadSlotDetailsPanel_C::BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2dcdb02f);
 
 	USquadSlotDetailsPanel_C_BndEvt__ShowInSkillTreeButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -130,7 +136,8 @@ void USquadSlotDetailsPanel_C::BndEvt__ShowInSkillTreeButton_K2Node_ComponentBou
 
 void USquadSlotDetailsPanel_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91b4d8be);
 
 	USquadSlotDetailsPanel_C_Construct_Params params;
 
@@ -147,7 +154,8 @@ void USquadSlotDetailsPanel_C::Construct()
 
 void USquadSlotDetailsPanel_C::HandleSquadSlotRestrictionFactorsChangedBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.HandleSquadSlotRestrictionFactorsChangedBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a8e0d2f);
 
 	USquadSlotDetailsPanel_C_HandleSquadSlotRestrictionFactorsChangedBP_Params params;
 
@@ -166,7 +174,8 @@ void USquadSlotDetailsPanel_C::HandleSquadSlotRestrictionFactorsChangedBP()
 
 void USquadSlotDetailsPanel_C::ExecuteUbergraph_SquadSlotDetailsPanel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function SquadSlotDetailsPanel.SquadSlotDetailsPanel_C.ExecuteUbergraph_SquadSlotDetailsPanel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11ff4277);
 
 	USquadSlotDetailsPanel_C_ExecuteUbergraph_SquadSlotDetailsPanel_Params params;
 	params.EntryPoint = EntryPoint;

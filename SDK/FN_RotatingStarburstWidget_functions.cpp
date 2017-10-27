@@ -20,7 +20,8 @@ namespace SDK
 
 void URotatingStarburstWidget_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatingStarburstWidget.RotatingStarburstWidget_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x467101ac);
 
 	URotatingStarburstWidget_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -41,7 +42,8 @@ void URotatingStarburstWidget_C::Tick(struct FGeometry* MyGeometry, float* InDel
 
 void URotatingStarburstWidget_C::ExecuteUbergraph_RotatingStarburstWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function RotatingStarburstWidget.RotatingStarburstWidget_C.ExecuteUbergraph_RotatingStarburstWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8adb38f7);
 
 	URotatingStarburstWidget_C_ExecuteUbergraph_RotatingStarburstWidget_Params params;
 	params.EntryPoint = EntryPoint;

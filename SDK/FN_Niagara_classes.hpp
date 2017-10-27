@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x336d3996);
 		return ptr;
 	}
 
@@ -40,7 +41,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x33599188);
 		return ptr;
 	}
 
@@ -55,7 +57,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraDataInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba7402c8);
 		return ptr;
 	}
 
@@ -71,7 +74,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraDataInterfaceCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x644559d9);
 		return ptr;
 	}
 
@@ -87,7 +91,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraDataInterfaceVectorCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xefa5c622);
 		return ptr;
 	}
 
@@ -103,7 +108,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraDataInterfaceColorCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x824b82ba);
 		return ptr;
 	}
 
@@ -121,7 +127,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaccf3b84);
 		return ptr;
 	}
 
@@ -136,7 +143,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraEffectRendererProperties");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2fc528c6);
 		return ptr;
 	}
 
@@ -152,7 +160,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraMeshRendererProperties");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca95578e);
 		return ptr;
 	}
 
@@ -167,7 +176,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraRibbonRendererProperties");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc73b793d);
 		return ptr;
 	}
 
@@ -185,7 +195,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraSpriteRendererProperties");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66e8689e);
 		return ptr;
 	}
 
@@ -212,7 +223,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraScript");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5fafd116);
 		return ptr;
 	}
 
@@ -227,7 +239,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraEventReceiverEmitterAction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3792e9e6);
 		return ptr;
 	}
 
@@ -244,7 +257,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraEventReceiverEmitterAction_SpawnParticles");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3f0fcb27);
 		return ptr;
 	}
 
@@ -273,7 +287,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraEmitterProperties");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x719a54a4);
 		return ptr;
 	}
 
@@ -288,7 +303,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb88dae4);
 		return ptr;
 	}
 
@@ -307,7 +323,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraScriptSourceBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d12dd56);
 		return ptr;
 	}
 
@@ -322,7 +339,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82e84f50);
 		return ptr;
 	}
 
@@ -340,7 +358,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Niagara.NiagaraSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x93e88ea0);
 		return ptr;
 	}
 

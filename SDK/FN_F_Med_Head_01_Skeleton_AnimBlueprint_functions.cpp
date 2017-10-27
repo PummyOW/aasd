@@ -17,7 +17,8 @@ namespace SDK
 
 void UF_Med_Head_01_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_BlendListByBool_34C24EC14C087D4CDC73CDB02E3DA5AF()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function F_Med_Head_01_Skeleton_AnimBlueprint.F_Med_Head_01_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_BlendListByBool_34C24EC14C087D4CDC73CDB02E3DA5AF");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd27809ca);
 
 	UF_Med_Head_01_Skeleton_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_BlendListByBool_34C24EC14C087D4CDC73CDB02E3DA5AF_Params params;
 
@@ -34,7 +35,8 @@ void UF_Med_Head_01_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_Execute
 
 void UF_Med_Head_01_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_CopyPoseFromMesh_7578003E4B46F65767573F97536A9D09()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function F_Med_Head_01_Skeleton_AnimBlueprint.F_Med_Head_01_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_CopyPoseFromMesh_7578003E4B46F65767573F97536A9D09");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x34224cf6);
 
 	UF_Med_Head_01_Skeleton_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_CopyPoseFromMesh_7578003E4B46F65767573F97536A9D09_Params params;
 
@@ -51,7 +53,8 @@ void UF_Med_Head_01_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_Execute
 
 void UF_Med_Head_01_Skeleton_AnimBlueprint_C::Playface()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function F_Med_Head_01_Skeleton_AnimBlueprint.F_Med_Head_01_Skeleton_AnimBlueprint_C.Playface");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56799d80);
 
 	UF_Med_Head_01_Skeleton_AnimBlueprint_C_Playface_Params params;
 
@@ -68,7 +71,8 @@ void UF_Med_Head_01_Skeleton_AnimBlueprint_C::Playface()
 
 void UF_Med_Head_01_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_CopyPoseFromMesh_8B223DDB4D6C5B4B573337BD037B3EA5()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function F_Med_Head_01_Skeleton_AnimBlueprint.F_Med_Head_01_Skeleton_AnimBlueprint_C.EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_CopyPoseFromMesh_8B223DDB4D6C5B4B573337BD037B3EA5");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x697c1ba7);
 
 	UF_Med_Head_01_Skeleton_AnimBlueprint_C_EvaluateGraphExposedInputs_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_AnimGraphNode_CopyPoseFromMesh_8B223DDB4D6C5B4B573337BD037B3EA5_Params params;
 
@@ -85,7 +89,8 @@ void UF_Med_Head_01_Skeleton_AnimBlueprint_C::EvaluateGraphExposedInputs_Execute
 
 void UF_Med_Head_01_Skeleton_AnimBlueprint_C::BlueprintInitializeAnimation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function F_Med_Head_01_Skeleton_AnimBlueprint.F_Med_Head_01_Skeleton_AnimBlueprint_C.BlueprintInitializeAnimation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaea859f6);
 
 	UF_Med_Head_01_Skeleton_AnimBlueprint_C_BlueprintInitializeAnimation_Params params;
 
@@ -104,7 +109,8 @@ void UF_Med_Head_01_Skeleton_AnimBlueprint_C::BlueprintInitializeAnimation()
 
 void UF_Med_Head_01_Skeleton_AnimBlueprint_C::ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function F_Med_Head_01_Skeleton_AnimBlueprint.F_Med_Head_01_Skeleton_AnimBlueprint_C.ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21c2f562);
 
 	UF_Med_Head_01_Skeleton_AnimBlueprint_C_ExecuteUbergraph_F_Med_Head_01_Skeleton_AnimBlueprint_Params params;
 	params.EntryPoint = EntryPoint;

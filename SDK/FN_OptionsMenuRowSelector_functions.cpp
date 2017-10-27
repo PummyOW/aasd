@@ -19,7 +19,8 @@ namespace SDK
 
 void UOptionsMenuRowSelector_C::Button_Hovered(class UCommonButton* Button_Hovered)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Button Hovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45b806d2);
 
 	UOptionsMenuRowSelector_C_Button_Hovered_Params params;
 	params.Button_Hovered = Button_Hovered;
@@ -37,7 +38,8 @@ void UOptionsMenuRowSelector_C::Button_Hovered(class UCommonButton* Button_Hover
 
 void UOptionsMenuRowSelector_C::Deselect_All_Rows()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Deselect All Rows");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x43319b5a);
 
 	UOptionsMenuRowSelector_C_Deselect_All_Rows_Params params;
 
@@ -56,7 +58,8 @@ void UOptionsMenuRowSelector_C::Deselect_All_Rows()
 
 void UOptionsMenuRowSelector_C::Update_Row_Selector(int Tab_Number)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Update Row Selector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1c914d3);
 
 	UOptionsMenuRowSelector_C_Update_Row_Selector_Params params;
 	params.Tab_Number = Tab_Number;
@@ -80,7 +83,8 @@ void UOptionsMenuRowSelector_C::Update_Row_Selector(int Tab_Number)
 
 void UOptionsMenuRowSelector_C::Initialize_Row_Selector(const struct FText& Row_Text, bool Require_Selection, class UCommonTextBlock* Tab_Tooltip, TArray<struct FText>* Buttons, TArray<struct FText>* Hover_Texts)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Initialize Row Selector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22323648);
 
 	UOptionsMenuRowSelector_C_Initialize_Row_Selector_Params params;
 	params.Row_Text = Row_Text;
@@ -105,7 +109,8 @@ void UOptionsMenuRowSelector_C::Initialize_Row_Selector(const struct FText& Row_
 
 void UOptionsMenuRowSelector_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f099d32);
 
 	UOptionsMenuRowSelector_C_Construct_Params params;
 
@@ -125,7 +130,8 @@ void UOptionsMenuRowSelector_C::Construct()
 
 void UOptionsMenuRowSelector_C::OnSelectedButtonChanged_Event_1(class UCommonButton* AssociatedButton, int ButtonIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.OnSelectedButtonChanged_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0a21b8c);
 
 	UOptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_1_Params params;
 	params.AssociatedButton = AssociatedButton;
@@ -146,7 +152,8 @@ void UOptionsMenuRowSelector_C::OnSelectedButtonChanged_Event_1(class UCommonBut
 
 void UOptionsMenuRowSelector_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb54ec7f6);
 
 	UOptionsMenuRowSelector_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -164,7 +171,8 @@ void UOptionsMenuRowSelector_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UOptionsMenuRowSelector_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8f1678a9);
 
 	UOptionsMenuRowSelector_C_Destruct_Params params;
 
@@ -183,7 +191,8 @@ void UOptionsMenuRowSelector_C::Destruct()
 
 void UOptionsMenuRowSelector_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9699839);
 
 	UOptionsMenuRowSelector_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -203,7 +212,8 @@ void UOptionsMenuRowSelector_C::PreConstruct(bool* IsDesignTime)
 
 void UOptionsMenuRowSelector_C::ExecuteUbergraph_OptionsMenuRowSelector(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.ExecuteUbergraph_OptionsMenuRowSelector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x615e826d);
 
 	UOptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector_Params params;
 	params.EntryPoint = EntryPoint;
@@ -223,7 +233,8 @@ void UOptionsMenuRowSelector_C::ExecuteUbergraph_OptionsMenuRowSelector(int Entr
 
 void UOptionsMenuRowSelector_C::Selector_Button_Selected__DelegateSignature(int Tab_Id)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.Selector Button Selected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6169fc92);
 
 	UOptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature_Params params;
 	params.Tab_Id = Tab_Id;

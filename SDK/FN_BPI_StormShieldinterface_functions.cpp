@@ -20,7 +20,8 @@ namespace SDK
 
 void UBPI_StormShieldInterface_C::GetOutpostReadyState(bool* ReadyToExpand, bool* ReadyToInstallAmplifier)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BPI_StormShieldinterface.BPI_StormShieldInterface_C.GetOutpostReadyState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x718f7dff);
 
 	UBPI_StormShieldInterface_C_GetOutpostReadyState_Params params;
 
@@ -44,7 +45,8 @@ void UBPI_StormShieldInterface_C::GetOutpostReadyState(bool* ReadyToExpand, bool
 
 void UBPI_StormShieldInterface_C::CanLeaveOutpost(bool* AllowedToLeave)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BPI_StormShieldinterface.BPI_StormShieldInterface_C.CanLeaveOutpost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd19dcc58);
 
 	UBPI_StormShieldInterface_C_CanLeaveOutpost_Params params;
 

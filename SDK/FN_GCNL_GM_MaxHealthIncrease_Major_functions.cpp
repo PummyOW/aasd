@@ -21,7 +21,8 @@ namespace SDK
 
 bool AGCNL_GM_MaxHealthIncrease_Major_C::OnActive(class AActor** MyTarget, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_MaxHealthIncrease_Major.GCNL_GM_MaxHealthIncrease_Major_C.OnActive");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x612b5efe);
 
 	AGCNL_GM_MaxHealthIncrease_Major_C_OnActive_Params params;
 	params.MyTarget = MyTarget;
@@ -42,7 +43,8 @@ bool AGCNL_GM_MaxHealthIncrease_Major_C::OnActive(class AActor** MyTarget, struc
 
 void AGCNL_GM_MaxHealthIncrease_Major_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCNL_GM_MaxHealthIncrease_Major.GCNL_GM_MaxHealthIncrease_Major_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x25d89248);
 
 	AGCNL_GM_MaxHealthIncrease_Major_C_UserConstructionScript_Params params;
 

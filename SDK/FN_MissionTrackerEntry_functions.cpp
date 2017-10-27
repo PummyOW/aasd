@@ -17,7 +17,8 @@ namespace SDK
 
 void UMissionTrackerEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTrackerEntry.MissionTrackerEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda9fa0ce);
 
 	UMissionTrackerEntry_C_Construct_Params params;
 
@@ -29,31 +30,15 @@ void UMissionTrackerEntry_C::Construct()
 }
 
 
-// Function MissionTrackerEntry.MissionTrackerEntry_C.OnMissionSet
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UMissionTrackerEntry_C::OnMissionSet()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTrackerEntry.MissionTrackerEntry_C.OnMissionSet");
-
-	UMissionTrackerEntry_C_OnMissionSet_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function MissionTrackerEntry.MissionTrackerEntry_C.ExecuteUbergraph_MissionTrackerEntry
-// (FUNC_HasDefaults)
+// ()
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 void UMissionTrackerEntry_C::ExecuteUbergraph_MissionTrackerEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTrackerEntry.MissionTrackerEntry_C.ExecuteUbergraph_MissionTrackerEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4604f8ab);
 
 	UMissionTrackerEntry_C_ExecuteUbergraph_MissionTrackerEntry_Params params;
 	params.EntryPoint = EntryPoint;
@@ -71,7 +56,8 @@ void UMissionTrackerEntry_C::ExecuteUbergraph_MissionTrackerEntry(int EntryPoint
 
 void UMissionTrackerEntry_C::WidgetVisibilityChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionTrackerEntry.MissionTrackerEntry_C.WidgetVisibilityChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c87ec7c);
 
 	UMissionTrackerEntry_C_WidgetVisibilityChanged__DelegateSignature_Params params;
 

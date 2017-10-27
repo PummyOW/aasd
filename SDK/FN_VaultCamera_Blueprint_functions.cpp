@@ -17,7 +17,8 @@ namespace SDK
 
 void AVaultCamera_Blueprint_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9dbcd2c0);
 
 	AVaultCamera_Blueprint_C_UserConstructionScript_Params params;
 
@@ -36,7 +37,8 @@ void AVaultCamera_Blueprint_C::UserConstructionScript()
 
 void AVaultCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbef81c46);
 
 	AVaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8_Params params;
 	params.Key = Key;
@@ -56,7 +58,8 @@ void AVaultCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_8
 
 void AVaultCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30ff8b81);
 
 	AVaultCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7_Params params;
 	params.Key = Key;
@@ -76,7 +79,8 @@ void AVaultCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7
 
 void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4015d039);
 
 	AVaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6_Params params;
 	params.Key = Key;
@@ -96,7 +100,8 @@ void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_6(
 
 void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5(const struct FKey& Key)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66184aa2);
 
 	AVaultCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5_Params params;
 	params.Key = Key;
@@ -116,7 +121,8 @@ void AVaultCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_5(
 
 void AVaultCamera_Blueprint_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7867d4d);
 
 	AVaultCamera_Blueprint_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -134,7 +140,8 @@ void AVaultCamera_Blueprint_C::ReceiveTick(float* DeltaSeconds)
 
 void AVaultCamera_Blueprint_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7c735345);
 
 	AVaultCamera_Blueprint_C_OnActivated_Params params;
 
@@ -151,7 +158,8 @@ void AVaultCamera_Blueprint_C::OnActivated()
 
 void AVaultCamera_Blueprint_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4d8119a);
 
 	AVaultCamera_Blueprint_C_OnDeactivated_Params params;
 
@@ -170,7 +178,8 @@ void AVaultCamera_Blueprint_C::OnDeactivated()
 
 void AVaultCamera_Blueprint_C::ExecuteUbergraph_VaultCamera_Blueprint(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function VaultCamera_Blueprint.VaultCamera_Blueprint_C.ExecuteUbergraph_VaultCamera_Blueprint");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2bd54d90);
 
 	AVaultCamera_Blueprint_C_ExecuteUbergraph_VaultCamera_Blueprint_Params params;
 	params.EntryPoint = EntryPoint;

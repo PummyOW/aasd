@@ -19,7 +19,8 @@ namespace SDK
 
 void UGA_DefaultPlayer_BuildingCreated_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData* EventData)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_BuildingCreated.GA_DefaultPlayer_BuildingCreated_C.K2_ActivateAbilityFromEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbedb2aea);
 
 	UGA_DefaultPlayer_BuildingCreated_C_K2_ActivateAbilityFromEvent_Params params;
 	params.EventData = EventData;
@@ -39,7 +40,8 @@ void UGA_DefaultPlayer_BuildingCreated_C::K2_ActivateAbilityFromEvent(struct FGa
 
 void UGA_DefaultPlayer_BuildingCreated_C::ExecuteUbergraph_GA_DefaultPlayer_BuildingCreated(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GA_DefaultPlayer_BuildingCreated.GA_DefaultPlayer_BuildingCreated_C.ExecuteUbergraph_GA_DefaultPlayer_BuildingCreated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x713cd3af);
 
 	UGA_DefaultPlayer_BuildingCreated_C_ExecuteUbergraph_GA_DefaultPlayer_BuildingCreated_Params params;
 	params.EntryPoint = EntryPoint;

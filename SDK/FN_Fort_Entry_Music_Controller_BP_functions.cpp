@@ -17,7 +17,8 @@ namespace SDK
 
 void AFort_Entry_Music_Controller_BP_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x902f5154);
 
 	AFort_Entry_Music_Controller_BP_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AFort_Entry_Music_Controller_BP_C::UserConstructionScript()
 
 void AFort_Entry_Music_Controller_BP_C::Music_Login_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Login_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32ac296);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Login_FadeIn_Params params;
 
@@ -51,7 +53,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Login_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_Store_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Store_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff462faa);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Store_FadeIn_Params params;
 
@@ -68,7 +71,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Store_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_Lobby_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Lobby_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8adfa78f);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Lobby_FadeIn_Params params;
 
@@ -85,7 +89,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Lobby_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_WorldOverview_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_WorldOverview_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47cdfd44);
 
 	AFort_Entry_Music_Controller_BP_C_Music_WorldOverview_FadeIn_Params params;
 
@@ -102,7 +107,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_WorldOverview_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_HomeBase_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_HomeBase_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93775f);
 
 	AFort_Entry_Music_Controller_BP_C_Music_HomeBase_FadeIn_Params params;
 
@@ -119,7 +125,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_HomeBase_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_Hexmap_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Hexmap_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8b2bf1c);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Hexmap_FadeIn_Params params;
 
@@ -136,7 +143,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Hexmap_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_Heroes_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Heroes_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9ab7266d);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Heroes_FadeIn_Params params;
 
@@ -153,7 +161,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Heroes_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_Vault_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Vault_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa90efd63);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Vault_FadeIn_Params params;
 
@@ -170,7 +179,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Vault_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::Music_Store_CardIntro_Fadein()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Store_CardIntro_Fadein");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8e804281);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Store_CardIntro_Fadein_Params params;
 
@@ -187,7 +197,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Store_CardIntro_Fadein()
 
 void AFort_Entry_Music_Controller_BP_C::Store_Transition_To_Purchase()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Store_Transition_To_Purchase");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbf11dc1a);
 
 	AFort_Entry_Music_Controller_BP_C_Store_Transition_To_Purchase_Params params;
 
@@ -204,7 +215,8 @@ void AFort_Entry_Music_Controller_BP_C::Store_Transition_To_Purchase()
 
 void AFort_Entry_Music_Controller_BP_C::Store_Llama_HangingOut()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Store_Llama_HangingOut");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94eecc27);
 
 	AFort_Entry_Music_Controller_BP_C_Store_Llama_HangingOut_Params params;
 
@@ -221,7 +233,8 @@ void AFort_Entry_Music_Controller_BP_C::Store_Llama_HangingOut()
 
 void AFort_Entry_Music_Controller_BP_C::Store_CardpackSummaryOpenAndLoop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Store_CardpackSummaryOpenAndLoop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ad7d531);
 
 	AFort_Entry_Music_Controller_BP_C_Store_CardpackSummaryOpenAndLoop_Params params;
 
@@ -238,7 +251,8 @@ void AFort_Entry_Music_Controller_BP_C::Store_CardpackSummaryOpenAndLoop()
 
 void AFort_Entry_Music_Controller_BP_C::Store_HitLlamaAndLoop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Store_HitLlamaAndLoop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d092198);
 
 	AFort_Entry_Music_Controller_BP_C_Store_HitLlamaAndLoop_Params params;
 
@@ -255,7 +269,8 @@ void AFort_Entry_Music_Controller_BP_C::Store_HitLlamaAndLoop()
 
 void AFort_Entry_Music_Controller_BP_C::Store_Intro_Loop()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Store_Intro_Loop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf13c228e);
 
 	AFort_Entry_Music_Controller_BP_C_Store_Intro_Loop_Params params;
 
@@ -272,7 +287,8 @@ void AFort_Entry_Music_Controller_BP_C::Store_Intro_Loop()
 
 void AFort_Entry_Music_Controller_BP_C::VBucks_Menu_Enter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.VBucks_Menu_Enter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9a07cd2);
 
 	AFort_Entry_Music_Controller_BP_C_VBucks_Menu_Enter_Params params;
 
@@ -289,7 +305,8 @@ void AFort_Entry_Music_Controller_BP_C::VBucks_Menu_Enter()
 
 void AFort_Entry_Music_Controller_BP_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd884ea8b);
 
 	AFort_Entry_Music_Controller_BP_C_ReceiveBeginPlay_Params params;
 
@@ -308,7 +325,8 @@ void AFort_Entry_Music_Controller_BP_C::ReceiveBeginPlay()
 
 void AFort_Entry_Music_Controller_BP_C::On_Sub_Game_Changed(ESubGame SubGame)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.On Sub Game Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x735e4374);
 
 	AFort_Entry_Music_Controller_BP_C_On_Sub_Game_Changed_Params params;
 	params.SubGame = SubGame;
@@ -326,7 +344,8 @@ void AFort_Entry_Music_Controller_BP_C::On_Sub_Game_Changed(ESubGame SubGame)
 
 void AFort_Entry_Music_Controller_BP_C::Music_Lobby_Athena_FadeIn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Music_Lobby_Athena_FadeIn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a9b442b);
 
 	AFort_Entry_Music_Controller_BP_C_Music_Lobby_Athena_FadeIn_Params params;
 
@@ -345,7 +364,8 @@ void AFort_Entry_Music_Controller_BP_C::Music_Lobby_Athena_FadeIn()
 
 void AFort_Entry_Music_Controller_BP_C::ExecuteUbergraph_Fort_Entry_Music_Controller_BP(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.ExecuteUbergraph_Fort_Entry_Music_Controller_BP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa243ad8d);
 
 	AFort_Entry_Music_Controller_BP_C_ExecuteUbergraph_Fort_Entry_Music_Controller_BP_Params params;
 	params.EntryPoint = EntryPoint;

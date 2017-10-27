@@ -19,7 +19,8 @@ namespace SDK
 
 void ULoginAccountSelect_C::BndEvt__EpicLoginButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginAccountSelect.LoginAccountSelect_C.BndEvt__EpicLoginButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc08b575d);
 
 	ULoginAccountSelect_C_BndEvt__EpicLoginButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -39,7 +40,8 @@ void ULoginAccountSelect_C::BndEvt__EpicLoginButton_K2Node_ComponentBoundEvent_0
 
 void ULoginAccountSelect_C::BndEvt__PlayStationLoginButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginAccountSelect.LoginAccountSelect_C.BndEvt__PlayStationLoginButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xffbb2065);
 
 	ULoginAccountSelect_C_BndEvt__PlayStationLoginButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -59,7 +61,8 @@ void ULoginAccountSelect_C::BndEvt__PlayStationLoginButton_K2Node_ComponentBound
 
 void ULoginAccountSelect_C::BndEvt__XBoxLoginButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginAccountSelect.LoginAccountSelect_C.BndEvt__XBoxLoginButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7e8f4dab);
 
 	ULoginAccountSelect_C_BndEvt__XBoxLoginButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -77,7 +80,8 @@ void ULoginAccountSelect_C::BndEvt__XBoxLoginButton_K2Node_ComponentBoundEvent_2
 
 void ULoginAccountSelect_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginAccountSelect.LoginAccountSelect_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x739452b5);
 
 	ULoginAccountSelect_C_OnActivated_Params params;
 
@@ -96,7 +100,8 @@ void ULoginAccountSelect_C::OnActivated()
 
 void ULoginAccountSelect_C::ExecuteUbergraph_LoginAccountSelect(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function LoginAccountSelect.LoginAccountSelect_C.ExecuteUbergraph_LoginAccountSelect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b858357);
 
 	ULoginAccountSelect_C_ExecuteUbergraph_LoginAccountSelect_Params params;
 	params.EntryPoint = EntryPoint;

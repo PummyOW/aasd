@@ -19,7 +19,8 @@ namespace SDK
 
 void UFrontEndRewards_ChoiceRewards_C::HandleResizeFinished(class URewards_ItemCard_C* Card)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.HandleResizeFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b7a2b47);
 
 	UFrontEndRewards_ChoiceRewards_C_HandleResizeFinished_Params params;
 	params.Card = Card;
@@ -37,7 +38,8 @@ void UFrontEndRewards_ChoiceRewards_C::HandleResizeFinished(class URewards_ItemC
 
 void UFrontEndRewards_ChoiceRewards_C::AddInputActions()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.AddInputActions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5486851);
 
 	UFrontEndRewards_ChoiceRewards_C_AddInputActions_Params params;
 
@@ -56,7 +58,8 @@ void UFrontEndRewards_ChoiceRewards_C::AddInputActions()
 
 void UFrontEndRewards_ChoiceRewards_C::HandleInspectAction(bool* Committed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.HandleInspectAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74065a4d);
 
 	UFrontEndRewards_ChoiceRewards_C_HandleInspectAction_Params params;
 
@@ -76,7 +79,8 @@ void UFrontEndRewards_ChoiceRewards_C::HandleInspectAction(bool* Committed)
 
 void UFrontEndRewards_ChoiceRewards_C::HandleTransitionInComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.HandleTransitionInComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3e82098);
 
 	UFrontEndRewards_ChoiceRewards_C_HandleTransitionInComplete_Params params;
 
@@ -93,7 +97,8 @@ void UFrontEndRewards_ChoiceRewards_C::HandleTransitionInComplete()
 
 void UFrontEndRewards_ChoiceRewards_C::Reset()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.Reset");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x424cd7a8);
 
 	UFrontEndRewards_ChoiceRewards_C_Reset_Params params;
 
@@ -112,7 +117,8 @@ void UFrontEndRewards_ChoiceRewards_C::Reset()
 
 void UFrontEndRewards_ChoiceRewards_C::PopulateFromCardList(TArray<class URewards_ItemCard_C*>* Cards)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.PopulateFromCardList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x709e1a27);
 
 	UFrontEndRewards_ChoiceRewards_C_PopulateFromCardList_Params params;
 
@@ -132,7 +138,8 @@ void UFrontEndRewards_ChoiceRewards_C::PopulateFromCardList(TArray<class UReward
 
 void UFrontEndRewards_ChoiceRewards_C::HideConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.HideConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4518928c);
 
 	UFrontEndRewards_ChoiceRewards_C_HideConfirmation_Params params;
 
@@ -149,7 +156,8 @@ void UFrontEndRewards_ChoiceRewards_C::HideConfirmation()
 
 void UFrontEndRewards_ChoiceRewards_C::ShowConfirmation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.ShowConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfbbeb5ab);
 
 	UFrontEndRewards_ChoiceRewards_C_ShowConfirmation_Params params;
 
@@ -166,7 +174,8 @@ void UFrontEndRewards_ChoiceRewards_C::ShowConfirmation()
 
 void UFrontEndRewards_ChoiceRewards_C::ConfirmChoice()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.ConfirmChoice");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc283c8c);
 
 	UFrontEndRewards_ChoiceRewards_C_ConfirmChoice_Params params;
 
@@ -183,7 +192,8 @@ void UFrontEndRewards_ChoiceRewards_C::ConfirmChoice()
 
 void UFrontEndRewards_ChoiceRewards_C::SetCanvasSize()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.SetCanvasSize");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83b2dc4a);
 
 	UFrontEndRewards_ChoiceRewards_C_SetCanvasSize_Params params;
 
@@ -200,7 +210,8 @@ void UFrontEndRewards_ChoiceRewards_C::SetCanvasSize()
 
 void UFrontEndRewards_ChoiceRewards_C::SetSelectedItemDescription()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.SetSelectedItemDescription");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17060a2f);
 
 	UFrontEndRewards_ChoiceRewards_C_SetSelectedItemDescription_Params params;
 
@@ -219,7 +230,8 @@ void UFrontEndRewards_ChoiceRewards_C::SetSelectedItemDescription()
 
 void UFrontEndRewards_ChoiceRewards_C::HandleCardClicked(class URewards_ItemCard_C* ItemCard)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.HandleCardClicked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9c0f192);
 
 	UFrontEndRewards_ChoiceRewards_C_HandleCardClicked_Params params;
 	params.ItemCard = ItemCard;
@@ -237,7 +249,8 @@ void UFrontEndRewards_ChoiceRewards_C::HandleCardClicked(class URewards_ItemCard
 
 void UFrontEndRewards_ChoiceRewards_C::SelectPreviousCard()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.SelectPreviousCard");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac717452);
 
 	UFrontEndRewards_ChoiceRewards_C_SelectPreviousCard_Params params;
 
@@ -254,7 +267,8 @@ void UFrontEndRewards_ChoiceRewards_C::SelectPreviousCard()
 
 void UFrontEndRewards_ChoiceRewards_C::SelectNextCard()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.SelectNextCard");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7cde5492);
 
 	UFrontEndRewards_ChoiceRewards_C_SelectNextCard_Params params;
 
@@ -273,7 +287,8 @@ void UFrontEndRewards_ChoiceRewards_C::SelectNextCard()
 
 void UFrontEndRewards_ChoiceRewards_C::SelectCard(int NewSelection)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.SelectCard");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x99fe928d);
 
 	UFrontEndRewards_ChoiceRewards_C_SelectCard_Params params;
 	params.NewSelection = NewSelection;
@@ -293,7 +308,8 @@ void UFrontEndRewards_ChoiceRewards_C::SelectCard(int NewSelection)
 
 void UFrontEndRewards_ChoiceRewards_C::SetCardSelected(class URewards_ItemCard_C* Card)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.SetCardSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca7ffe64);
 
 	UFrontEndRewards_ChoiceRewards_C_SetCardSelected_Params params;
 	params.Card = Card;
@@ -311,7 +327,8 @@ void UFrontEndRewards_ChoiceRewards_C::SetCardSelected(class URewards_ItemCard_C
 
 void UFrontEndRewards_ChoiceRewards_C::InitDesignView()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.InitDesignView");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93f5de0c);
 
 	UFrontEndRewards_ChoiceRewards_C_InitDesignView_Params params;
 
@@ -328,7 +345,8 @@ void UFrontEndRewards_ChoiceRewards_C::InitDesignView()
 
 void UFrontEndRewards_ChoiceRewards_C::AdjustCardPositions()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.AdjustCardPositions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9267784);
 
 	UFrontEndRewards_ChoiceRewards_C_AdjustCardPositions_Params params;
 
@@ -347,7 +365,8 @@ void UFrontEndRewards_ChoiceRewards_C::AdjustCardPositions()
 
 void UFrontEndRewards_ChoiceRewards_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda2c0345);
 
 	UFrontEndRewards_ChoiceRewards_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -367,7 +386,8 @@ void UFrontEndRewards_ChoiceRewards_C::PreConstruct(bool* IsDesignTime)
 
 void UFrontEndRewards_ChoiceRewards_C::BndEvt__ButtonSure_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.BndEvt__ButtonSure_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71b3e343);
 
 	UFrontEndRewards_ChoiceRewards_C_BndEvt__ButtonSure_K2Node_ComponentBoundEvent_41_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -387,7 +407,8 @@ void UFrontEndRewards_ChoiceRewards_C::BndEvt__ButtonSure_K2Node_ComponentBoundE
 
 void UFrontEndRewards_ChoiceRewards_C::BndEvt__ButtonNope_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.BndEvt__ButtonNope_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0d24a6f);
 
 	UFrontEndRewards_ChoiceRewards_C_BndEvt__ButtonNope_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -405,7 +426,8 @@ void UFrontEndRewards_ChoiceRewards_C::BndEvt__ButtonNope_K2Node_ComponentBoundE
 
 void UFrontEndRewards_ChoiceRewards_C::TransitionInBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.TransitionInBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed3f3bba);
 
 	UFrontEndRewards_ChoiceRewards_C_TransitionInBegin_Params params;
 
@@ -422,7 +444,8 @@ void UFrontEndRewards_ChoiceRewards_C::TransitionInBegin()
 
 void UFrontEndRewards_ChoiceRewards_C::TransitionOutBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.TransitionOutBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbeb746a9);
 
 	UFrontEndRewards_ChoiceRewards_C_TransitionOutBegin_Params params;
 
@@ -439,7 +462,8 @@ void UFrontEndRewards_ChoiceRewards_C::TransitionOutBegin()
 
 void UFrontEndRewards_ChoiceRewards_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x587b1cde);
 
 	UFrontEndRewards_ChoiceRewards_C_Construct_Params params;
 
@@ -456,7 +480,8 @@ void UFrontEndRewards_ChoiceRewards_C::Construct()
 
 void UFrontEndRewards_ChoiceRewards_C::OnNavigationLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnNavigationLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f5845);
 
 	UFrontEndRewards_ChoiceRewards_C_OnNavigationLeft_Params params;
 
@@ -473,7 +498,8 @@ void UFrontEndRewards_ChoiceRewards_C::OnNavigationLeft()
 
 void UFrontEndRewards_ChoiceRewards_C::OnNavigationRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnNavigationRight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74dd0d68);
 
 	UFrontEndRewards_ChoiceRewards_C_OnNavigationRight_Params params;
 
@@ -490,7 +516,8 @@ void UFrontEndRewards_ChoiceRewards_C::OnNavigationRight()
 
 void UFrontEndRewards_ChoiceRewards_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe33da775);
 
 	UFrontEndRewards_ChoiceRewards_C_OnActivated_Params params;
 
@@ -507,7 +534,8 @@ void UFrontEndRewards_ChoiceRewards_C::OnActivated()
 
 void UFrontEndRewards_ChoiceRewards_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5938cca);
 
 	UFrontEndRewards_ChoiceRewards_C_OnDeactivated_Params params;
 
@@ -524,7 +552,8 @@ void UFrontEndRewards_ChoiceRewards_C::OnDeactivated()
 
 void UFrontEndRewards_ChoiceRewards_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.CustomEvent_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd88d5126);
 
 	UFrontEndRewards_ChoiceRewards_C_CustomEvent_1_Params params;
 
@@ -541,7 +570,8 @@ void UFrontEndRewards_ChoiceRewards_C::CustomEvent_1()
 
 void UFrontEndRewards_ChoiceRewards_C::CustomEvent_2()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.CustomEvent_2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb28ad6bd);
 
 	UFrontEndRewards_ChoiceRewards_C_CustomEvent_2_Params params;
 
@@ -558,7 +588,8 @@ void UFrontEndRewards_ChoiceRewards_C::CustomEvent_2()
 
 void UFrontEndRewards_ChoiceRewards_C::OnPrimaryAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnPrimaryAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35764684);
 
 	UFrontEndRewards_ChoiceRewards_C_OnPrimaryAction_Params params;
 
@@ -577,7 +608,8 @@ void UFrontEndRewards_ChoiceRewards_C::OnPrimaryAction()
 
 void UFrontEndRewards_ChoiceRewards_C::ExecuteUbergraph_FrontEndRewards_ChoiceRewards(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.ExecuteUbergraph_FrontEndRewards_ChoiceRewards");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a56da4b);
 
 	UFrontEndRewards_ChoiceRewards_C_ExecuteUbergraph_FrontEndRewards_ChoiceRewards_Params params;
 	params.EntryPoint = EntryPoint;
@@ -598,7 +630,8 @@ void UFrontEndRewards_ChoiceRewards_C::ExecuteUbergraph_FrontEndRewards_ChoiceRe
 
 void UFrontEndRewards_ChoiceRewards_C::OnRewardSelected__DelegateSignature(int Index, class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_ChoiceRewards.FrontEndRewards_ChoiceRewards_C.OnRewardSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x230935e5);
 
 	UFrontEndRewards_ChoiceRewards_C_OnRewardSelected__DelegateSignature_Params params;
 	params.Index = Index;

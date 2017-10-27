@@ -20,7 +20,8 @@ namespace SDK
 
 void AGCN_BluGloPylon_Energy_Activate_C::OnStartParticleSystemSpawned(class UParticleSystemComponent** SpawnedParticleSysComponent, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_BluGloPylon_Energy_Activate.GCN_BluGloPylon_Energy_Activate_C.OnStartParticleSystemSpawned");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc1bb6a5);
 
 	AGCN_BluGloPylon_Energy_Activate_C_OnStartParticleSystemSpawned_Params params;
 	params.SpawnedParticleSysComponent = SpawnedParticleSysComponent;
@@ -39,7 +40,8 @@ void AGCN_BluGloPylon_Energy_Activate_C::OnStartParticleSystemSpawned(class UPar
 
 void AGCN_BluGloPylon_Energy_Activate_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_BluGloPylon_Energy_Activate.GCN_BluGloPylon_Energy_Activate_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3dea1ddc);
 
 	AGCN_BluGloPylon_Energy_Activate_C_UserConstructionScript_Params params;
 

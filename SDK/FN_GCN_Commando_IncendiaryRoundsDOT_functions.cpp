@@ -17,7 +17,8 @@ namespace SDK
 
 void AGCN_Commando_IncendiaryRoundsDOT_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_Commando_IncendiaryRoundsDOT.GCN_Commando_IncendiaryRoundsDOT_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b0daa5c);
 
 	AGCN_Commando_IncendiaryRoundsDOT_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AGCN_Commando_IncendiaryRoundsDOT_C::UserConstructionScript()
 
 void AGCN_Commando_IncendiaryRoundsDOT_C::ReceiveDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_Commando_IncendiaryRoundsDOT.GCN_Commando_IncendiaryRoundsDOT_C.ReceiveDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7f5d17fb);
 
 	AGCN_Commando_IncendiaryRoundsDOT_C_ReceiveDestroyed_Params params;
 
@@ -53,7 +55,8 @@ void AGCN_Commando_IncendiaryRoundsDOT_C::ReceiveDestroyed()
 
 void AGCN_Commando_IncendiaryRoundsDOT_C::ExecuteUbergraph_GCN_Commando_IncendiaryRoundsDOT(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function GCN_Commando_IncendiaryRoundsDOT.GCN_Commando_IncendiaryRoundsDOT_C.ExecuteUbergraph_GCN_Commando_IncendiaryRoundsDOT");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2866f73d);
 
 	AGCN_Commando_IncendiaryRoundsDOT_C_ExecuteUbergraph_GCN_Commando_IncendiaryRoundsDOT_Params params;
 	params.EntryPoint = EntryPoint;

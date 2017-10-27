@@ -19,7 +19,8 @@ namespace SDK
 
 void UMissionDetailsModifierList_C::CreateDebugModifiers(TArray<class UFortGameplayModifierItemDefinition*>* Modifiers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionDetailsModifierList.MissionDetailsModifierList_C.CreateDebugModifiers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e2d4e50);
 
 	UMissionDetailsModifierList_C_CreateDebugModifiers_Params params;
 
@@ -46,7 +47,8 @@ void UMissionDetailsModifierList_C::CreateDebugModifiers(TArray<class UFortGamep
 
 void UMissionDetailsModifierList_C::PopulateModifiers(bool UseTrunctatedList, class UClass* NameTextStyle, class UClass* DescriptionTextStyle, bool Show_Descriptions, bool UseSmallIcons, TArray<class UFortGameplayModifierItemDefinition*>* ModifierItems)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionDetailsModifierList.MissionDetailsModifierList_C.PopulateModifiers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f85caa7);
 
 	UMissionDetailsModifierList_C_PopulateModifiers_Params params;
 	params.UseTrunctatedList = UseTrunctatedList;

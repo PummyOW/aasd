@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaGamePhaseChangeWidget_C::PlayGamePhaseAlertSound(EAthenaGamePhaseStep Index)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.PlayGamePhaseAlertSound");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98a803f3);
 
 	UAthenaGamePhaseChangeWidget_C_PlayGamePhaseAlertSound_Params params;
 	params.Index = Index;
@@ -41,7 +42,8 @@ void UAthenaGamePhaseChangeWidget_C::PlayGamePhaseAlertSound(EAthenaGamePhaseSte
 
 void UAthenaGamePhaseChangeWidget_C::UpdateMessaging(EAthenaGamePhaseStep* Step, struct FText* MESSAGE, struct FText* TimeText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.UpdateMessaging");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac36fd04);
 
 	UAthenaGamePhaseChangeWidget_C_UpdateMessaging_Params params;
 	params.Step = Step;
@@ -63,7 +65,8 @@ void UAthenaGamePhaseChangeWidget_C::UpdateMessaging(EAthenaGamePhaseStep* Step,
 
 void UAthenaGamePhaseChangeWidget_C::OnAnimationFinished(class UWidgetAnimation** Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.OnAnimationFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6cc08438);
 
 	UAthenaGamePhaseChangeWidget_C_OnAnimationFinished_Params params;
 	params.Animation = Animation;
@@ -83,7 +86,8 @@ void UAthenaGamePhaseChangeWidget_C::OnAnimationFinished(class UWidgetAnimation*
 
 void UAthenaGamePhaseChangeWidget_C::GamePhaseStepChanged(EAthenaGamePhaseStep* Step)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.GamePhaseStepChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7c501c4);
 
 	UAthenaGamePhaseChangeWidget_C_GamePhaseStepChanged_Params params;
 	params.Step = Step;
@@ -103,7 +107,8 @@ void UAthenaGamePhaseChangeWidget_C::GamePhaseStepChanged(EAthenaGamePhaseStep* 
 
 void UAthenaGamePhaseChangeWidget_C::ExecuteUbergraph_AthenaGamePhaseChangeWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaGamePhaseChangeWidget.AthenaGamePhaseChangeWidget_C.ExecuteUbergraph_AthenaGamePhaseChangeWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd589645);
 
 	UAthenaGamePhaseChangeWidget_C_ExecuteUbergraph_AthenaGamePhaseChangeWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -14,6 +14,18 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function QuantitySelector.QuantitySelector_C.SetCurrentValue
+struct UQuantitySelector_C_SetCurrentValue_Params
+{
+	int                                                NewValue;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function QuantitySelector.QuantitySelector_C.GetCurrentValue
+struct UQuantitySelector_C_GetCurrentValue_Params
+{
+	int                                                CurrentValue;                                             // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function QuantitySelector.QuantitySelector_C.SetupForInputMode
 struct UQuantitySelector_C_SetupForInputMode_Params
 {

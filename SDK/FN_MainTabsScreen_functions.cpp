@@ -19,7 +19,8 @@ namespace SDK
 
 void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Determine If Any non-MTX offers are purchasable");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8557d097);
 
 	UMainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable_Params params;
 
@@ -43,7 +44,8 @@ void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* Sh
 
 void UMainTabsScreen_C::CheckDisplayCriteria(TEnumAsByte<EStoreOfferCosts> InCustomStoreOfferCost, const struct FCardPackOffer& InCardPackOffer, bool* bPassedDisplayCriteria)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.CheckDisplayCriteria");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda9473ec);
 
 	UMainTabsScreen_C_CheckDisplayCriteria_Params params;
 	params.InCustomStoreOfferCost = InCustomStoreOfferCost;
@@ -68,7 +70,8 @@ void UMainTabsScreen_C::CheckDisplayCriteria(TEnumAsByte<EStoreOfferCosts> InCus
 
 void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, TEnumAsByte<EStoreOfferCosts>* OutCustomStoreOfferCost)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.GetCustomStoreOfferCost");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf85373e6);
 
 	UMainTabsScreen_C_GetCustomStoreOfferCost_Params params;
 	params.InCardPackOffer = InCardPackOffer;
@@ -93,7 +96,8 @@ void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InC
 
 void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>* inOfferArray, struct FCardPackOffer* outPriorityOffer, bool* FoundOffer)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.CheckHighestPriorityOffer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa95ed571);
 
 	UMainTabsScreen_C_CheckHighestPriorityOffer_Params params;
 
@@ -119,7 +123,8 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>*
 
 void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Get Valid Offers");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa681ec2);
 
 	UMainTabsScreen_C_Get_Valid_Offers_Params params;
 
@@ -141,7 +146,8 @@ void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers)
 
 bool UMainTabsScreen_C::Is_Transform_Feature_Unlocked()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Is Transform Feature Unlocked");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xec2ca6de);
 
 	UMainTabsScreen_C_Is_Transform_Feature_Unlocked_Params params;
 
@@ -162,7 +168,8 @@ bool UMainTabsScreen_C::Is_Transform_Feature_Unlocked()
 
 void UMainTabsScreen_C::HandleCardPackStore(const struct FName& TabId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.HandleCardPackStore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4e7e69f9);
 
 	UMainTabsScreen_C_HandleCardPackStore_Params params;
 	params.TabId = TabId;
@@ -182,7 +189,8 @@ void UMainTabsScreen_C::HandleCardPackStore(const struct FName& TabId)
 
 void UMainTabsScreen_C::HandleMtxStore(const struct FName& Tab_Id)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.HandleMtxStore");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0f9df37);
 
 	UMainTabsScreen_C_HandleMtxStore_Params params;
 	params.Tab_Id = Tab_Id;
@@ -200,7 +208,8 @@ void UMainTabsScreen_C::HandleMtxStore(const struct FName& Tab_Id)
 
 void UMainTabsScreen_C::Handle_Unclaimed_Resources_Updated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Handle Unclaimed Resources Updated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x11f2a545);
 
 	UMainTabsScreen_C_Handle_Unclaimed_Resources_Updated_Params params;
 
@@ -219,7 +228,8 @@ void UMainTabsScreen_C::Handle_Unclaimed_Resources_Updated()
 
 void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Toggle Unclaimed Research Timer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81006da7);
 
 	UMainTabsScreen_C_Toggle_Unclaimed_Research_Timer_Params params;
 	params.Enable = Enable;
@@ -239,7 +249,8 @@ void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable)
 
 void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Determine Unclaimed Resources at Threshold");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdaeb92bf);
 
 	UMainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold_Params params;
 
@@ -262,7 +273,8 @@ void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result)
 
 bool UMainTabsScreen_C::Are_Any_Nodes_Available_For_Purchase(const struct FName& NodePageId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Are Any Nodes Available For Purchase");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc45ee35);
 
 	UMainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase_Params params;
 	params.NodePageId = NodePageId;
@@ -284,7 +296,8 @@ bool UMainTabsScreen_C::Are_Any_Nodes_Available_For_Purchase(const struct FName&
 
 void UMainTabsScreen_C::Update_Skills_Tab_Button_Bang(const struct FName& Tab)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Update Skills Tab Button Bang");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc81f56e3);
 
 	UMainTabsScreen_C_Update_Skills_Tab_Button_Bang_Params params;
 	params.Tab = Tab;
@@ -304,7 +317,8 @@ void UMainTabsScreen_C::Update_Skills_Tab_Button_Bang(const struct FName& Tab)
 
 void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(const struct FName& Tab)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Update Store Tab Button Bang");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba0c034e);
 
 	UMainTabsScreen_C_Update_Store_Tab_Button_Bang_Params params;
 	params.Tab = Tab;
@@ -324,7 +338,8 @@ void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(const struct FName& Tab)
 
 void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Are Any Inventory Items Unseen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ebb2ef1);
 
 	UMainTabsScreen_C_Are_Any_Inventory_Items_Unseen_Params params;
 
@@ -346,7 +361,8 @@ void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen)
 
 void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Are Any Transform Keys Unseen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6758f193);
 
 	UMainTabsScreen_C_Are_Any_Transform_Keys_Unseen_Params params;
 
@@ -368,7 +384,8 @@ void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen)
 
 void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Get FortPC");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x443f47e5);
 
 	UMainTabsScreen_C_Get_FortPC_Params params;
 
@@ -391,7 +408,8 @@ void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC)
 
 void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountItem* TransformKey, class UFortAccountItem** OutItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Get Item from Transform Seen State");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d84ac96);
 
 	UMainTabsScreen_C_Get_Item_from_Transform_Seen_State_Params params;
 	params.TransformKey = TransformKey;
@@ -414,7 +432,8 @@ void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountIte
 
 void UMainTabsScreen_C::Update_Armory_Tab_Button_Bang(const struct FName& Tab)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Update Armory Tab Button Bang");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x615e3d33);
 
 	UMainTabsScreen_C_Update_Armory_Tab_Button_Bang_Params params;
 	params.Tab = Tab;
@@ -434,7 +453,8 @@ void UMainTabsScreen_C::Update_Armory_Tab_Button_Bang(const struct FName& Tab)
 
 void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(const struct FName& Tab)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Update Quest Tab Button Bang");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5644d37);
 
 	UMainTabsScreen_C_Update_Quest_Tab_Button_Bang_Params params;
 	params.Tab = Tab;
@@ -454,7 +474,8 @@ void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(const struct FName& Tab)
 
 void UMainTabsScreen_C::Update_Tab_Button_Bangs(const struct FName& InTab)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Update Tab Button Bangs");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x387b470);
 
 	UMainTabsScreen_C_Update_Tab_Button_Bangs_Params params;
 	params.InTab = InTab;
@@ -474,7 +495,8 @@ void UMainTabsScreen_C::Update_Tab_Button_Bangs(const struct FName& InTab)
 
 void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(const struct FName& Tab)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Update Hero Tab Button Bang");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdda5dad5);
 
 	UMainTabsScreen_C_Update_Hero_Tab_Button_Bang_Params params;
 	params.Tab = Tab;
@@ -494,7 +516,8 @@ void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(const struct FName& Tab)
 
 void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(const struct FName& Tab)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Update Squad Tab Button Bang");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0a3f937);
 
 	UMainTabsScreen_C_Update_Squad_Tab_Button_Bang_Params params;
 	params.Tab = Tab;
@@ -514,7 +537,8 @@ void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(const struct FName& Tab)
 
 void UMainTabsScreen_C::HandleTabSelected(const struct FName& TabName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.HandleTabSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x10aa01e7);
 
 	UMainTabsScreen_C_HandleTabSelected_Params params;
 	params.TabName = TabName;
@@ -535,7 +559,8 @@ void UMainTabsScreen_C::HandleTabSelected(const struct FName& TabName)
 
 void UMainTabsScreen_C::HandleTabCreated(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.HandleTabCreated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe9bd8c4);
 
 	UMainTabsScreen_C_HandleTabCreated_Params params;
 	params.TabId = TabId;
@@ -554,7 +579,8 @@ void UMainTabsScreen_C::HandleTabCreated(const struct FName& TabId, class UCommo
 
 void UMainTabsScreen_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7d2c9b);
 
 	UMainTabsScreen_C_OnActivated_Params params;
 
@@ -574,7 +600,8 @@ void UMainTabsScreen_C::OnActivated()
 
 void UMainTabsScreen_C::CustomEvent(const struct FName& TabId, class UCommonButton* TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.CustomEvent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xee952080);
 
 	UMainTabsScreen_C_CustomEvent_Params params;
 	params.TabId = TabId;
@@ -593,7 +620,8 @@ void UMainTabsScreen_C::CustomEvent(const struct FName& TabId, class UCommonButt
 
 void UMainTabsScreen_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x290adec);
 
 	UMainTabsScreen_C_Construct_Params params;
 
@@ -610,7 +638,8 @@ void UMainTabsScreen_C::Construct()
 
 void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.OnHomebaseInventoryUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca80cc6d);
 
 	UMainTabsScreen_C_OnHomebaseInventoryUpdated_Params params;
 
@@ -627,7 +656,8 @@ void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
 
 void UMainTabsScreen_C::HandleRefreshSkillTreeNodePage()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.HandleRefreshSkillTreeNodePage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ddd3a26);
 
 	UMainTabsScreen_C_HandleRefreshSkillTreeNodePage_Params params;
 
@@ -644,7 +674,8 @@ void UMainTabsScreen_C::HandleRefreshSkillTreeNodePage()
 
 void UMainTabsScreen_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2849c513);
 
 	UMainTabsScreen_C_Destruct_Params params;
 
@@ -663,7 +694,8 @@ void UMainTabsScreen_C::Destruct()
 
 void UMainTabsScreen_C::OnQuestSeen_Event_1(class UFortQuestItem* Quest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.OnQuestSeen_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d512f9c);
 
 	UMainTabsScreen_C_OnQuestSeen_Event_1_Params params;
 	params.Quest = Quest;
@@ -681,7 +713,8 @@ void UMainTabsScreen_C::OnQuestSeen_Event_1(class UFortQuestItem* Quest)
 
 void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.SquadSlotMarkedAsSeen_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x51e43b51);
 
 	UMainTabsScreen_C_SquadSlotMarkedAsSeen_Event_1_Params params;
 
@@ -700,7 +733,8 @@ void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_1()
 
 void UMainTabsScreen_C::HandleMainTabSelected(struct FName* TabNameID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.HandleMainTabSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74efbf7a);
 
 	UMainTabsScreen_C_HandleMainTabSelected_Params params;
 	params.TabNameID = TabNameID;
@@ -721,7 +755,8 @@ void UMainTabsScreen_C::HandleMainTabSelected(struct FName* TabNameID)
 
 void UMainTabsScreen_C::HandleMainTabCreated(struct FName* TabNameID, class UCommonButton** TabButton)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.HandleMainTabCreated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x934e96cb);
 
 	UMainTabsScreen_C_HandleMainTabCreated_Params params;
 	params.TabNameID = TabNameID;
@@ -742,7 +777,8 @@ void UMainTabsScreen_C::HandleMainTabCreated(struct FName* TabNameID, class UCom
 
 void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MainTabsScreen.MainTabsScreen_C.ExecuteUbergraph_MainTabsScreen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45e88582);
 
 	UMainTabsScreen_C_ExecuteUbergraph_MainTabsScreen_Params params;
 	params.EntryPoint = EntryPoint;

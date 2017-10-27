@@ -19,7 +19,8 @@ namespace SDK
 
 struct FText UJournalQuestDetails_C::Get_Streaming_Attached_Quest_Name()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.Get Streaming Attached Quest Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf97883a2);
 
 	UJournalQuestDetails_C_Get_Streaming_Attached_Quest_Name_Params params;
 
@@ -40,7 +41,8 @@ struct FText UJournalQuestDetails_C::Get_Streaming_Attached_Quest_Name()
 
 void UJournalQuestDetails_C::Is_Streaming_Quest(bool* bStreamingQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.Is Streaming Quest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc5eb045);
 
 	UJournalQuestDetails_C_Is_Streaming_Quest_Params params;
 
@@ -62,7 +64,8 @@ void UJournalQuestDetails_C::Is_Streaming_Quest(bool* bStreamingQuest)
 
 void UJournalQuestDetails_C::Get_Quest_Item_Def(class UFortQuestItemDefinition** AsFort_Quest_Item_Definition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.Get Quest Item Def");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c6c7ad9);
 
 	UJournalQuestDetails_C_Get_Quest_Item_Def_Params params;
 
@@ -84,7 +87,8 @@ void UJournalQuestDetails_C::Get_Quest_Item_Def(class UFortQuestItemDefinition**
 
 void UJournalQuestDetails_C::Set_Quest_Display_Name(const struct FText& InText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.Set Quest Display Name");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1c4d565a);
 
 	UJournalQuestDetails_C_Set_Quest_Display_Name_Params params;
 	params.InText = InText;
@@ -104,7 +108,8 @@ void UJournalQuestDetails_C::Set_Quest_Display_Name(const struct FText& InText)
 
 void UJournalQuestDetails_C::IsQuestAudioPlaying(bool* IsQuestAudioPlaying)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.IsQuestAudioPlaying");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62b063d7);
 
 	UJournalQuestDetails_C_IsQuestAudioPlaying_Params params;
 
@@ -128,7 +133,8 @@ void UJournalQuestDetails_C::IsQuestAudioPlaying(bool* IsQuestAudioPlaying)
 
 void UJournalQuestDetails_C::StartConversation(class UFortConversation* Conversation, class UFortQuestItem* QuestItem, bool IsOutro_)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.StartConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0fe9644);
 
 	UJournalQuestDetails_C_StartConversation_Params params;
 	params.Conversation = Conversation;
@@ -148,7 +154,8 @@ void UJournalQuestDetails_C::StartConversation(class UFortConversation* Conversa
 
 void UJournalQuestDetails_C::StopConversation()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.StopConversation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4616f9fe);
 
 	UJournalQuestDetails_C_StopConversation_Params params;
 
@@ -163,13 +170,16 @@ void UJournalQuestDetails_C::StopConversation()
 // Function JournalQuestDetails.JournalQuestDetails_C.AbandonQuest
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // bool                           questAbandoned_                (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void UJournalQuestDetails_C::AbandonQuest(bool* questAbandoned_)
+void UJournalQuestDetails_C::AbandonQuest(class UFortQuestItem* QuestToAbandon, bool* questAbandoned_)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.AbandonQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76ce08ec);
 
 	UJournalQuestDetails_C_AbandonQuest_Params params;
+	params.QuestToAbandon = QuestToAbandon;
 
 	auto flags = fn->FunctionFlags;
 
@@ -187,7 +197,8 @@ void UJournalQuestDetails_C::AbandonQuest(bool* questAbandoned_)
 
 void UJournalQuestDetails_C::UpdatePanelInfo()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.UpdatePanelInfo");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8196fb2a);
 
 	UJournalQuestDetails_C_UpdatePanelInfo_Params params;
 
@@ -204,7 +215,8 @@ void UJournalQuestDetails_C::UpdatePanelInfo()
 
 void UJournalQuestDetails_C::UpdatePlayButtonState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.UpdatePlayButtonState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd9484ad);
 
 	UJournalQuestDetails_C_UpdatePlayButtonState_Params params;
 
@@ -221,7 +233,8 @@ void UJournalQuestDetails_C::UpdatePlayButtonState()
 
 void UJournalQuestDetails_C::UpdateButtonStates()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.UpdateButtonStates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb4b296ea);
 
 	UJournalQuestDetails_C_UpdateButtonStates_Params params;
 
@@ -238,7 +251,8 @@ void UJournalQuestDetails_C::UpdateButtonStates()
 
 void UJournalQuestDetails_C::HandleOnEndSpokenDialog()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.HandleOnEndSpokenDialog");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b932893);
 
 	UJournalQuestDetails_C_HandleOnEndSpokenDialog_Params params;
 
@@ -260,7 +274,8 @@ void UJournalQuestDetails_C::HandleOnEndSpokenDialog()
 
 void UJournalQuestDetails_C::HandleOnBeginSpokenDialog(class UTexture2D* Image, const struct FText& Title, const struct FText& Subtitle, EFortAnnouncementDisplayPreference DisplayPreference)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.HandleOnBeginSpokenDialog");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41b9280b);
 
 	UJournalQuestDetails_C_HandleOnBeginSpokenDialog_Params params;
 	params.Image = Image;
@@ -281,7 +296,8 @@ void UJournalQuestDetails_C::HandleOnBeginSpokenDialog(class UTexture2D* Image, 
 
 void UJournalQuestDetails_C::Setup()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.Setup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff0b9136);
 
 	UJournalQuestDetails_C_Setup_Params params;
 
@@ -298,7 +314,8 @@ void UJournalQuestDetails_C::Setup()
 
 void UJournalQuestDetails_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x577920ba);
 
 	UJournalQuestDetails_C_Construct_Params params;
 
@@ -315,7 +332,8 @@ void UJournalQuestDetails_C::Construct()
 
 void UJournalQuestDetails_C::HandleCurrentQuestChangedBP()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.HandleCurrentQuestChangedBP");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4410580c);
 
 	UJournalQuestDetails_C_HandleCurrentQuestChangedBP_Params params;
 
@@ -334,7 +352,8 @@ void UJournalQuestDetails_C::HandleCurrentQuestChangedBP()
 
 void UJournalQuestDetails_C::ExecuteUbergraph_JournalQuestDetails(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.ExecuteUbergraph_JournalQuestDetails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb04e543c);
 
 	UJournalQuestDetails_C_ExecuteUbergraph_JournalQuestDetails_Params params;
 	params.EntryPoint = EntryPoint;
@@ -352,7 +371,8 @@ void UJournalQuestDetails_C::ExecuteUbergraph_JournalQuestDetails(int EntryPoint
 
 void UJournalQuestDetails_C::OnSpokenDialogEnded__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function JournalQuestDetails.JournalQuestDetails_C.OnSpokenDialogEnded__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x74058b01);
 
 	UJournalQuestDetails_C_OnSpokenDialogEnded__DelegateSignature_Params params;
 

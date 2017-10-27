@@ -14,6 +14,12 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function ItemInspectScreen.ItemInspectScreen_C.SetInspectModeForChildPanels
+struct UItemInspectScreen_C_SetInspectModeForChildPanels_Params
+{
+	EFortItemInspectionMode                            NewInspectMode;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function ItemInspectScreen.ItemInspectScreen_C.SetTabButtonStyle
 struct UItemInspectScreen_C_SetTabButtonStyle_Params
 {
@@ -24,12 +30,6 @@ struct UItemInspectScreen_C_SetTabButtonStyle_Params
 struct UItemInspectScreen_C_ShowPreviewHeader_Params
 {
 	bool                                               ShowPreviewLabel;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function ItemInspectScreen.ItemInspectScreen_C.Handle3DView
-struct UItemInspectScreen_C_Handle3DView_Params
-{
-	bool                                               PassThrough;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function ItemInspectScreen.ItemInspectScreen_C.RefreshCallout
@@ -162,17 +162,17 @@ struct UItemInspectScreen_C_BndEvt__ItemInspectUpgradeConfirmation_K2Node_Compon
 {
 };
 
-// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature
-struct UItemInspectScreen_C_BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature_Params
-{
-};
-
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature
 struct UItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_9_FortOnItemChangedDelegate__DelegateSignature_Params
 {
 	bool                                               bItemChanged;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bAmmoChanged;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bIngredientsChanged;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature
+struct UItemInspectScreen_C_BndEvt__ItemInspectUpgradeConfirmation_K2Node_ComponentBoundEvent_0_OnUpgradeConfirm__DelegateSignature_Params
+{
 };
 
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__InspectedItem_K2Node_ComponentBoundEvent_10_FortOnItemDestroyedDelegate__DelegateSignature
@@ -183,18 +183,6 @@ struct UItemInspectScreen_C_BndEvt__InspectedItem_K2Node_ComponentBoundEvent_10_
 // Function ItemInspectScreen.ItemInspectScreen_C.Construct
 struct UItemInspectScreen_C_Construct_Params
 {
-};
-
-// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature
-struct UItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_0_OnEvolutionOptionHovered__DelegateSignature_Params
-{
-	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature
-struct UItemInspectScreen_C_BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_1_OnEvolutionOptionUnhovered__DelegateSignature_Params
-{
-	class UFortItem*                                   Item;                                                     // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function ItemInspectScreen.ItemInspectScreen_C.BndEvt__ItemInspectEvolutionConfirmation_K2Node_ComponentBoundEvent_2_OnEvolutionOptionSelected__DelegateSignature

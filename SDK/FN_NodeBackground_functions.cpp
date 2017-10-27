@@ -17,7 +17,8 @@ namespace SDK
 
 void UNodeBackground_C::SetBackgroundColor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NodeBackground.NodeBackground_C.SetBackgroundColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91e289a2);
 
 	UNodeBackground_C_SetBackgroundColor_Params params;
 
@@ -36,7 +37,8 @@ void UNodeBackground_C::SetBackgroundColor()
 
 void UNodeBackground_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NodeBackground.NodeBackground_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2101d285);
 
 	UNodeBackground_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -54,7 +56,8 @@ void UNodeBackground_C::PreConstruct(bool* IsDesignTime)
 
 void UNodeBackground_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NodeBackground.NodeBackground_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x18b6b11e);
 
 	UNodeBackground_C_Construct_Params params;
 
@@ -73,7 +76,8 @@ void UNodeBackground_C::Construct()
 
 void UNodeBackground_C::ExecuteUbergraph_NodeBackground(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function NodeBackground.NodeBackground_C.ExecuteUbergraph_NodeBackground");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2a893d7);
 
 	UNodeBackground_C_ExecuteUbergraph_NodeBackground_Params params;
 	params.EntryPoint = EntryPoint;

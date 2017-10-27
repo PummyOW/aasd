@@ -30,11 +30,13 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda2e522f);
 		return ptr;
 	}
 
 
+	void TryAndShowDropTarget();
 	void IsSelected(bool* Selected);
 	struct FEventReply OnFocusReceived(struct FGeometry* MyGeometry, struct FFocusEvent* InFocusEvent);
 	void SetSelected(bool Selected);

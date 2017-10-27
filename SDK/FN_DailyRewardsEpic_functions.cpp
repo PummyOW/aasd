@@ -17,7 +17,8 @@ namespace SDK
 
 void UDailyRewardsEpic_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewardsEpic.DailyRewardsEpic_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3428ec6);
 
 	UDailyRewardsEpic_C_Construct_Params params;
 
@@ -36,7 +37,8 @@ void UDailyRewardsEpic_C::Construct()
 
 void UDailyRewardsEpic_C::ExecuteUbergraph_DailyRewardsEpic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function DailyRewardsEpic.DailyRewardsEpic_C.ExecuteUbergraph_DailyRewardsEpic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9a6fe0d);
 
 	UDailyRewardsEpic_C_ExecuteUbergraph_DailyRewardsEpic_Params params;
 	params.EntryPoint = EntryPoint;

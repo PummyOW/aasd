@@ -17,7 +17,8 @@ namespace SDK
 
 void UFrontEndRewards_EpicQuest_C::MarkQuestAsSeen()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.MarkQuestAsSeen");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9082412f);
 
 	UFrontEndRewards_EpicQuest_C_MarkQuestAsSeen_Params params;
 
@@ -34,7 +35,8 @@ void UFrontEndRewards_EpicQuest_C::MarkQuestAsSeen()
 
 void UFrontEndRewards_EpicQuest_C::HandleTransitionInComplete()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.HandleTransitionInComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbe88fe60);
 
 	UFrontEndRewards_EpicQuest_C_HandleTransitionInComplete_Params params;
 
@@ -53,7 +55,8 @@ void UFrontEndRewards_EpicQuest_C::HandleTransitionInComplete()
 
 void UFrontEndRewards_EpicQuest_C::HandleContinueAction(bool* Committed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.HandleContinueAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x793145e8);
 
 	UFrontEndRewards_EpicQuest_C_HandleContinueAction_Params params;
 
@@ -75,7 +78,8 @@ void UFrontEndRewards_EpicQuest_C::HandleContinueAction(bool* Committed)
 
 void UFrontEndRewards_EpicQuest_C::PopulateFromQuest(class UFortQuestItem* InQuest)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.PopulateFromQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x418fc3ad);
 
 	UFrontEndRewards_EpicQuest_C_PopulateFromQuest_Params params;
 	params.InQuest = InQuest;
@@ -93,7 +97,8 @@ void UFrontEndRewards_EpicQuest_C::PopulateFromQuest(class UFortQuestItem* InQue
 
 void UFrontEndRewards_EpicQuest_C::TransitionInBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.TransitionInBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4630fcb2);
 
 	UFrontEndRewards_EpicQuest_C_TransitionInBegin_Params params;
 
@@ -110,7 +115,8 @@ void UFrontEndRewards_EpicQuest_C::TransitionInBegin()
 
 void UFrontEndRewards_EpicQuest_C::TransitionOutBegin()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.TransitionOutBegin");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf98b0861);
 
 	UFrontEndRewards_EpicQuest_C_TransitionOutBegin_Params params;
 
@@ -127,7 +133,8 @@ void UFrontEndRewards_EpicQuest_C::TransitionOutBegin()
 
 void UFrontEndRewards_EpicQuest_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4164286);
 
 	UFrontEndRewards_EpicQuest_C_Construct_Params params;
 
@@ -144,7 +151,8 @@ void UFrontEndRewards_EpicQuest_C::Construct()
 
 void UFrontEndRewards_EpicQuest_C::OnPrimaryAction()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.OnPrimaryAction");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5fb2886c);
 
 	UFrontEndRewards_EpicQuest_C_OnPrimaryAction_Params params;
 
@@ -163,7 +171,8 @@ void UFrontEndRewards_EpicQuest_C::OnPrimaryAction()
 
 void UFrontEndRewards_EpicQuest_C::ExecuteUbergraph_FrontEndRewards_EpicQuest(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.ExecuteUbergraph_FrontEndRewards_EpicQuest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a3ef2e3);
 
 	UFrontEndRewards_EpicQuest_C_ExecuteUbergraph_FrontEndRewards_EpicQuest_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass GE_Map_Commando_Defense_ShieldStrength_ShieldRegen.GE_Map_Commando_Defense_ShieldStrength_ShieldRegen_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ca29e33);
 		return ptr;
 	}
 

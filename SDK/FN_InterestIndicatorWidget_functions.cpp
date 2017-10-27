@@ -20,7 +20,8 @@ namespace SDK
 
 void UInterestIndicatorWidget_C::RemovePointOfInterest(class AActor* PointOfInterest, bool* Removed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterestIndicatorWidget.InterestIndicatorWidget_C.RemovePointOfInterest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9619321e);
 
 	UInterestIndicatorWidget_C_RemovePointOfInterest_Params params;
 	params.PointOfInterest = PointOfInterest;
@@ -45,7 +46,8 @@ void UInterestIndicatorWidget_C::RemovePointOfInterest(class AActor* PointOfInte
 
 void UInterestIndicatorWidget_C::InitPointOfInterest(class AActor* PointOfInterest, const struct FText& DisplayText, class UTexture2D* DisplayImage)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterestIndicatorWidget.InterestIndicatorWidget_C.InitPointOfInterest");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6c5e170);
 
 	UInterestIndicatorWidget_C_InitPointOfInterest_Params params;
 	params.PointOfInterest = PointOfInterest;
@@ -67,7 +69,8 @@ void UInterestIndicatorWidget_C::InitPointOfInterest(class AActor* PointOfIntere
 
 void UInterestIndicatorWidget_C::SetDisplayImage(class UTexture2D* Icon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterestIndicatorWidget.InterestIndicatorWidget_C.SetDisplayImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x127b87cc);
 
 	UInterestIndicatorWidget_C_SetDisplayImage_Params params;
 	params.Icon = Icon;
@@ -87,7 +90,8 @@ void UInterestIndicatorWidget_C::SetDisplayImage(class UTexture2D* Icon)
 
 void UInterestIndicatorWidget_C::SetDisplayText(const struct FText& Description)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterestIndicatorWidget.InterestIndicatorWidget_C.SetDisplayText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa5b6378);
 
 	UInterestIndicatorWidget_C_SetDisplayText_Params params;
 	params.Description = Description;
@@ -105,7 +109,8 @@ void UInterestIndicatorWidget_C::SetDisplayText(const struct FText& Description)
 
 void UInterestIndicatorWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterestIndicatorWidget.InterestIndicatorWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5da671aa);
 
 	UInterestIndicatorWidget_C_Construct_Params params;
 
@@ -122,7 +127,8 @@ void UInterestIndicatorWidget_C::Construct()
 
 void UInterestIndicatorWidget_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterestIndicatorWidget.InterestIndicatorWidget_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d4d41f1);
 
 	UInterestIndicatorWidget_C_Destruct_Params params;
 
@@ -141,7 +147,8 @@ void UInterestIndicatorWidget_C::Destruct()
 
 void UInterestIndicatorWidget_C::ExecuteUbergraph_InterestIndicatorWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function InterestIndicatorWidget.InterestIndicatorWidget_C.ExecuteUbergraph_InterestIndicatorWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b7ec938);
 
 	UInterestIndicatorWidget_C_ExecuteUbergraph_InterestIndicatorWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -21,7 +21,8 @@ namespace SDK
 
 bool UBP_AnimNotify_CameraShake_C::Received_Notify(class USkeletalMeshComponent** MeshComp, class UAnimSequenceBase** Animation)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C.Received_Notify");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65de39c2);
 
 	UBP_AnimNotify_CameraShake_C_Received_Notify_Params params;
 	params.MeshComp = MeshComp;
